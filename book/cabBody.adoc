@@ -1071,7 +1071,7 @@ image::images/backbox-wing-bolts-2.png[""]
 
 The wing screws are important for safety, so be sure to lay the groundwork for them by installing the T-nuts. Even if you're installing a latch on the back of the backbox, you should still use the wing screws and T-nuts, since most latches aren't strong enough to truly secure the backbox.
 
-[#installLegBoltBrackets]
+
 [#legBoltBraces]
 === Corner braces for the leg bolts
 
@@ -1122,7 +1122,7 @@ Corner joins, viewed from the front. This type of join leaves a seam along one f
 
 (For purists, I have to confess that my design has a discrepancy from the original WPC design, which is that the joinery at the bottom of the back wall is different. The original WPC back wall simply butts up against the floor, whereas my design uses a rabbet to match the other three sides of the back wall. This is obviously an inconspicuous area - I didn't even notice the deviation until some time after publishing this chapter - and I can't think of any way the difference affects function. The rabbet is perhaps a bit stronger, and works as a glue joint, whereas the original butt join requires nailing. Williams might have used the original butt join simply for manufacturing convenience: it's more forgiving of measurement errors, in that you don't have to get the bottom and back pieces to line up precisely. If you want to modify my plan to reinstate the original design, cut the back wall 3/8" taller, make the floor piece 1/2" less deep, and omit the rabbet at the back of the floor.)
 
-[#transliteGuideTrim]
+
 [#backboxTrim]
 ====  Translite and DMD guides
 
@@ -1220,7 +1220,7 @@ image::images/backbox-sides-routing.png[""]
 
 The routing at the back edge assumes you're using ½" plywood for the back wall. If you're using a different thickness, simply increase the width of the groove to match the thickness of your back wall.
 
-
+[#backboxTop]
 ====  Backbox top
 
 The top of the backbox has a few special features:
@@ -1378,7 +1378,7 @@ Add the remaining side panel.
 
 image::images/assemble-cab-4.png[""]
 
-
+[#installLegBoltBrackets]
 ====  Leg brackets
 
 The next step is to install the leg brackets. The brackets will be permanently installed in the cabinet, so this is a one-time step that you won't have to repeat when you want to attach or remove the legs.
@@ -1569,7 +1569,7 @@ image::images/backbox-brace-3.png[""]
 
 Alternative reinforcement using generic hardware-store corner braces, fastened with wood screws. Be sure to keep the braces behind the translite plane (5" from the back wall), so that they're not visible.
 
-
+[#transliteGuideTrim]
 ====  Translite/DMD guides
 
 The WPC backbox has some little wood blocks along the walls that act as guides for the translite and DMD/speaker panel. These might or might not be interesting to you for your virtual cab, because a virtual backbox is a little different from a real one. Specifically, our backbox uses a TV in place of the normal translite, and in some cases a single TV replaces both the translite and DMD panel.

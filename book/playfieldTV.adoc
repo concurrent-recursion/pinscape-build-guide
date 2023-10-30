@@ -27,7 +27,7 @@ In either case, whether you're picking a TV to fit your cabinet or sizing your c
 
 Note that the *width* of the TV isn't a constraint in most cases. Normal pinball playfields are considerably more elongated than 16:9 TVs, so any TV that fits into the available cabinet width will easily fit front-to-back, with room to spare.
 
-image::/resources/TVFitToCab.png[""]
+image::images/TVFitToCab.png[""]
 
 
 == Leftover front-to-back space

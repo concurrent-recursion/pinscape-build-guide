@@ -252,7 +252,6 @@ image::images/lockbar-into-receiver.png[""]
 
 image::images/receiver-in-position.png[""]
 
-[#FireButtonWithStandardLockbar]
 [#lockbarFireButton]
 === Fire button
 
@@ -278,6 +277,7 @@ As far as I can tell, there's no such thing as a "generic" lockbar-with-button. 
 
 Feedback request: I'd sure like to know if there are any *generic* lockbar-with-button options ( _with_ the button hole, in the standard _chrome finish_ , and _without_ any game-specific badging). Please pass along a pointer if you know of such a product available commercially. Also, if you've personally modified a _regular_ lockbar and receiver combo to include a Fire button, I'd like to hear about how you did that and how well it turned out. I'd be thrilled to have detailed conversion plans to add to this section. The options above seem regrettably limiting.
 
+[#FireButtonWithStandardLockbar]
 *Option 2: Add a Fire button to a regular lockbar.* It's possible to install a Fire button in a standard Williams lockbar and receiver, but you have to modify some of the parts and do some custom assembly work.
 
 Parts:
