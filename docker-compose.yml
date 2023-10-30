@@ -5,7 +5,9 @@ services:
     volumes:
       - ./book:/pinscape-build-guide/book:ro
       - ./Gemfile:/pinscape-build-guide/Gemfile:ro
+      - ./Makefile:/pinscape-build-guide/Makefile:ro
       - ./dist:/pinscape-build-guide/dist
       - ./.ruby-version:/pinscape-build-guide/.ruby-version:ro
     working_dir: /pinscape-build-guide
-    entrypoint: /bin/bash
+    stdin_open: true
+    tty: true

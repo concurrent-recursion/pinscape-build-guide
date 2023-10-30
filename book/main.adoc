@@ -17,8 +17,10 @@
 :linkcss:
 :copycss:
 
+:sectnums!:
 include::legal.adoc[]
 
+:sectnums:
 == Part One. Preliminaries
 :leveloffset: +2
 include::intro.adoc[]
@@ -270,6 +272,8 @@ include::troubleshooting.adoc[]
 :leveloffset: -2
 
 == Appendices
+
+image::images/appendix.png[alt="Photo of extra ball button"]
 :leveloffset: +2
 [appendix]
 include::kl25zPinOut.adoc[]

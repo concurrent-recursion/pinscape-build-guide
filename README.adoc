@@ -1,6 +1,6 @@
 = Pinscape Pinball Build Guide
 
-This project is an Asciidoc conversion of link:http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php?sid=toc[MJR's Pinscape v2 Build Guide]. Each chapter is a separate adoc file, and the main file that includes all of the chapters is `main.adoc` , it contains the book metadata and the processing directives that control the output.
+This project is an Asciidoc conversion of link:http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php?sid=toc[MJR's Pinscape v2 Build Guide]. Each chapter is a separate adoc file, and the main file that includes all the chapters is `main.adoc` , it contains the book metadata and the processing directives that control the output.
 
 == Building the book
 
@@ -10,3 +10,11 @@ This project uses Ruby to build the pdf, epub, and HTML versions of the book. In
 . Run `bundle install` to install ruby dependencies
 . Run `make` to generate epub, pdf, and html. The book files will be created in the `/dist` directory
 
+== Building with Docker
+
+. Run `docker compose up -d` , this will start a ruby container
+. Run `docker exec ruby bash` , this will get an interactive shell inside the ruby container
+. Run `bundle install` to install the ruby gems
+. To build/rebuild the book run `make clean html epub pdf`
+
+The built book files will be in the `/dist` directory in the project

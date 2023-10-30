@@ -1,0 +1,23 @@
+name: Book Workflow
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: make
+      - uses: actions/upload-artifact@v3
+        with:
+          name: epub
+          path: dist/epub
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pdf
+          path: dist/pdf
+      - uses: actions/upload-artifact@v3
+        with:
+          name: html
+          path: dist/html

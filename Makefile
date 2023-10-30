@@ -6,18 +6,18 @@ all: epub pdf html
 epub:
 	bundle exec asciidoctor-epub3 \
 		book/main.adoc \
-		-o dist/$(FILENAME)-$(VERSION).epub
+		-o dist/epub/$(FILENAME)-$(VERSION).epub
 
 pdf:
 	bundle exec asciidoctor-pdf \
 		book/main.adoc \
-		-o dist/$(FILENAME)-$(VERSION).pdf
+		-o dist/pdf/$(FILENAME)-$(VERSION).pdf
 		
 html:
 	bundle exec asciidoctor -b html5 \
 		book/main.adoc \
-		-o dist/$(FILENAME)-$(VERSION).html; \
-	cp -r book/images dist/
+		-o dist/html/$(FILENAME)-$(VERSION).html; \
+	cp -r book/images dist/html
 
 clean:
 	rm -rf dist/*

@@ -7,7 +7,7 @@ The diagram below will, I hope, clear up some of that fog, especially the unknow
 This is a big-picture view, but it's also loaded with details that you can view interactively. Roll over any component with the mouse (or tap it) to learn more about it. There are also some general notes following the diagram. But don't feel like you have to cram for a quiz: we'll cover everything in the chart in much greater depth in later sections.
 
 
-image::images/architecture.png[""]
+image::images/architecture.png[alt="Diagram showing all components of a virtual pinball cabinet"]
 
 == Feature Details
 

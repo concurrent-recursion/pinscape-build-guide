@@ -406,8 +406,7 @@ You should now test and calibrate the plunger. Return to the home screen in the 
 
 If the sensor is working properly, click the Calibrate button in the plunger viewer window to begin the calibration process, and follow the on-screen instructions.
 
-If the sensor doesn't seem to be working, go back to the Settings screen and double-check the sensor pin assignments. Make sure that none of the pins are marked with warning icons (image:images/pinwarn.png[""]
-). If you see any warnings, click on the icon for details. In most cases, the problem will be that you've assigned the same pin to multiple functions. If so, go to the other place the pin is assigned, and clear that entry by setting it to "Not Connected".
+If the sensor doesn't seem to be working, go back to the Settings screen and double-check the sensor pin assignments. Make sure that none of the pins are marked with warning icons (image:images/pinwarn.png[alt="warning symbol"]). If you see any warnings, click on the icon for details. In most cases, the problem will be that you've assigned the same pin to multiple functions. If so, go to the other place the pin is assigned, and clear that entry by setting it to "Not Connected".
 
 If the software setup looks okay, check the physical wiring. Inspect each wire and make sure that it goes to the proper pin on each end (KL25Z and sensor board). Check that each GPIO port assignment on the settings page matches up with the physical pin on the KL25Z and connects to the corresponding terminal on the sensor board.
 

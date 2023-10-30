@@ -35,39 +35,39 @@ If you want to take advantage of VP's multiple soundtracks, you need to provide 
 
 Most people use the same speaker placement that the real machines used in the 1980s and 90s (and that newer titles still use today, for the most part), with the main speakers mounted on a separate panel at the bottom of the backbox. With this setup, all sound effects (including the playfield mechanical effects) are played back through this single set of speakers.
 
-image::images/basic-audio-system.png[""]
+image::images/basic-audio-system.png[alt="Diagram of pinball cabinet indicating speaker placement"]
 
 To implement this, you need:
 
-** The two backbox speakers, typically 4" or 5.25" full-range car speakers
-** The subwoofer, typically a 6" to 7" car speaker
-** A 2.1-channel amplifier (two main channels plus a subwoofer channel)
+* The two backbox speakers, typically 4" or 5.25" full-range car speakers
+* The subwoofer, typically a 6" to 7" car speaker
+* A 2.1-channel amplifier (two main channels plus a subwoofer channel)
 
 A separate sound card isn't needed as long as your PC motherboard has built-in audio.
 
 *  *Music speakers plus separate monophonic playfield speakers:* This is the next step up. We keep the backbox speakers and subwoofer from the basic stereo system, and add one or two speakers inside the cabinet, under the TV. These are for the playfield effects. The added in-cab speakers should be placed somewhere around the middle of the cabinet.
 
-image::images/playfield-effects-speakers.png[""]
+image::images/playfield-effects-speakers.png[alt="Diagram showing playfield effect speaker placement"]
 
 This setup makes mechanical effects sound like they're coming from the playfield, but they all sound like they're coming from the middle of the playfield, with no attempt to place them at different positions spatially. VP will only play back monophonic playfield effects with this setup, even if you have two speakers, because VP requires four speakers if you want to use the full spatial placement feature.
 
 To implement this, you need everything from the basic system, plus:
 
-** The in-cab speaker or speakers, typically small speakers or "exciters"
-** Another 2-channel or 2.1-channel amplifier
-** A second sound card, only if your PC motherboard doesn't have at least 5.1-channel surround sound audio output
+* The in-cab speaker or speakers, typically small speakers or "exciters"
+* Another 2-channel or 2.1-channel amplifier
+* A second sound card, only if your PC motherboard doesn't have at least 5.1-channel surround sound audio output
 
 I wouldn't recommend this approach for a new build, as the four-speaker set up is not much more work to implement and provides much greater functionality. This one- or two-speaker setup is really only something you would have before VP had the surround sound ability.
 
 *  *Separate music speakers and playfield surround speakers:* This is the most powerful setup. We keep the backbox speakers and subwoofer from the basic stereo system, and we add _four_ speakers inside the cabinet, placed near the corners. This lets VP balance the volume among the four in-cab speakers to make it sound like each mechanical effect is coming from a precise position on the playfield.
 
-image::images/playfield-surround-speakers.png[""]
+image::images/playfield-surround-speakers.png[alt="Diagram showing exciter placement"]
 
 To implement this, you need everything from the basic system, plus:
 
-** Four in-cab speakers, typically "exciters"
-** Two additional 2-channel or 2.1-channel amplifiers, or a 4-channel amplifier
-** A second sound card, only if your PC motherboard doesn't have 7.1-channel surround sound audio output
+* Four in-cab speakers, typically "exciters"
+* Two additional 2-channel or 2.1-channel amplifiers, or a 4-channel amplifier
+* A second sound card, only if your PC motherboard doesn't have 7.1-channel surround sound audio output
 
 This is the setup I'd recommend, if you have the budget for the extra equipment. Separating the mechanical effects and playing them back through in-cab speakers makes a subtle but noticeable difference. This isn't the most dramatic upgrade you can make, so I wouldn't prioritize it above, say, some of my favorite tactile devices (flashers, shakers, fans, replay knockers). But it's definitely a nice upgrade for a well-equipped cab.
 
@@ -86,7 +86,7 @@ A lot of people worry that Windows will get confused if you add a sound card in 
 
 The 4" and 5.25" size specs are standard car speaker sizes. These are "nominal" sizes that refer to the cutout size needed. If you shop on Amazon or elsewhere for car speakers, most products will conform to the standard sizes. There are lots of other standard sizes and shapes - what you're looking for is the circular type, with a circular aperture and a set of four mounting holes in a square pattern around the perimeter. It should be obvious from the pictures when shopping.
 
-image::images/car-speaker-id.png[""]
+image::images/car-speaker-id.png[alt="Diagram describing mounting hole location based on speaker diameter"]
 
 The subwoofer is less constrained on size. Anything from 6" to 8" with a round aperture should work. You could even go larger, but remember that space in the cab will be somewhat limited when you have everything installed.
 
@@ -133,22 +133,22 @@ The advantage of an amp designed for 2.1 channels it that it should have a built
 
 Here's how you wire a 2.1-channel amplifier:
 
-image::images/2.1-channel-wiring.png[""]
+image::images/2.1-channel-wiring.png[alt="Diagram showing wiring for 2.1 channel sound wiring"]
 
-NOTE: some amplifiers use 1/8" stereo jacks for inputs instead of RCA connectors. Substitute a cable with 1/8" stereo plugs at both ends in that case.
+NOTE: Some amplifiers use 1/8" stereo jacks for inputs instead of RCA connectors. Substitute a cable with 1/8" stereo plugs at both ends in that case.
 
 As far as Windows is concerned, there are only two speakers in this setup, even though you have three (left, right, subwoofer). This works because the amplifier has the crossover circuit that divides the signal between the main speakers and the subwoofer. To configure the speakers in Windows, tell Windows that you have "full-range" speakers for the left and right speakers:
 
 * Press Windows+R, type *mmsys.cpl* , press Enter
 * Select the Playback tab
 * Select your speakers from the list
-* Click *Configure* image:images/configure-speakers-1.png[""]
+* Click *Configure* image:images/configure-speakers-1.png[alt="Screenshot of windows sound settings, configure button"]
 
-* Select *7.1 surround* (even if you're not actually using surround speakers). Click Next.image:images/configure-speakers-1a.png[""]
+* Select *7.1 surround* (even if you're not actually using surround speakers). Click Next.image:images/configure-speakers-1a.png[alt="Screenshot of windows speaker setup"]
 
-*  *Un-check* Subwoofer and Center. Check-mark Side Pair and Rear Pair if you're using playfield effects speakers, un-check them if not. Click Next.image:images/configure-speakers-2a.png[""]
+*  *Un-check* Subwoofer and Center. Check-mark Side Pair and Rear Pair if you're using playfield effects speakers, un-check them if not. Click Next.image:images/configure-speakers-2a.png[alt="Screenshot of windows surround speaker options"]
 
-* Make sure *Front left and right* is checked for Full-range speakers image:images/configure-speakers-2.png[""]
+* Make sure *Front left and right* is checked for Full-range speakers image:images/configure-speakers-2.png[alt="Screenshot of windows full range speaker configuration"]
 
 * Click Next then click Finish
 
@@ -166,7 +166,7 @@ Why would you want to do this? Because it gives you more options when shopping f
 
 Here's how you'd wire a 2-channel amp and a separate subwoofer monoblock amp:
 
-image::images/2-plus-mono-amp-wiring.png[""]
+image::images/2-plus-mono-amp-wiring.png[alt="Diagram showing wiring for 2 channel amp and mono amp"]
 
 NOTE: some amplifiers use 1/8" stereo jacks for their inputs instead of RCA connectors. Substitute a cable with 1/8" stereo plugs at both ends in that case.
 
@@ -176,7 +176,7 @@ Be sure to read the section below on configuring Windows for separate subwoofer 
 
 Here's how you'd wire a 4-channel car amplifier:
 
-image::images/4-channel-amp-wiring.png[""]
+image::images/4-channel-amp-wiring.png[alt="Diagram showing wiring of 4 channel amplifier"]
 
 ====  Notes on the separate amplifier plans
 
@@ -200,19 +200,18 @@ Here's the procedure:
 * Press Windows+R, type *mmsys.cpl* , press Enter
 * Select the Playback tab
 * Select your speakers from the list
-* Click *Configure* image:images/configure-speakers-1.png[""]
+* Click *Configure* image:images/configure-speakers-1.png[alt="Screenshot showing windows sound setup, configure button"]
 
-* Select *7.1 surround* (even if you're not actually using surround speakers). Click Next.image:images/configure-speakers-1a.png[""]
+* Select *7.1 surround* (even if you're not actually using surround speakers). Click Next.image:images/configure-speakers-1a.png[alt="Screenshot of windows speaker setup"]
 
-*  *Check* Subwoofer, *Un-check* Center. Check-mark Side Pair and Rear Pair if you're using playfield effects speakers, un-check them if not. Click Next.image:images/configure-speakers-3a.png[""]
+*  *Check* Subwoofer, *Un-check* Center. Check-mark Side Pair and Rear Pair if you're using playfield effects speakers, un-check them if not. Click Next.image:images/configure-speakers-3a.png[alt="Screenshot of windows surround speaker setup"]
 
-*  *Un-check* Front left and right in the Full-range speakers list image:images/configure-speakers-3.png[""]
+*  *Un-check* Front left and right in the Full-range speakers list image:images/configure-speakers-3.png[alt="Screenshot of windows surround speaker full range speaker selection"]
 
 * Click Next then click Finish
-* Back in the playback device list, click on the *Properties* button image:images/configure-speakers-4.png[""]
+* Back in the playback device list, click on the *Properties* button image:images/configure-speakers-4.png["Screenshot showing windows sound setup, Properties button"]
 
-* Go to the *Enhancements* tab image:images/configure-speakers-4a.png[""]
-
+* Go to the *Enhancements* tab image:images/configure-speakers-4a.png["Screenshot showing windows Bass Management"]
 ** Check-mark *Immediate Mode*
 ** Check-mark *Bass Management* in the list
 * Click OK
@@ -279,7 +278,7 @@ I don't know of anyone who's done this, but a home stereo receiver could potenti
 
 In addition to the main backbox speakers, a separate set of speakers can be placed inside the cabinet, usually under the TV where they can't be seen, to reproduce "mechanical" sound effects - the sounds made by things on the playfield, like the ball rolling around and bumping into things, flippers flipping, bumpers bumping, and so on.
 
-image::images/playfield-effects-speakers-2.png[""]
+image::images/playfield-effects-speakers-2.png[alt="Diagram of pinball cabinet playfield effect speaker location, top-down"]
 
 Newer versions of Visual Pinball have support for a "surround sound" system for the playfield effects. This isn't quite the same as a home theater surround sound setup, where you'd place speakers at the sides and back of the room to create a 360° sound field that surrounds the listener on all sides. For a pin cab, we borrow the same multi-channel technology they use in home theaters, but instead of using it to surround the listener, we use it to make the sound effects sound like they're coming from specific points on the playfield. So the thing we're "surrounding" is the playfield, not the listener. As such, we place the speakers as shown above, at the corners of the playfield area inside the cabinet.
 
@@ -332,7 +331,7 @@ Exciters are designed to mount on flat surfaces. The side walls of the cabinet a
 
 The wiring plan for the playfield speakers is very similar to the plan for the backbox speakers. The main difference is that we need two of the 2-channel amps now, since we have four speakers on four separate audio channels. It's most convenient to think of these as two pairs of stereo speakers - a stereo pair at the front and a stereo pair at the back. Each stereo pair connects to one of the amps, using the normal Left/Right stereo hookups on the amps.
 
-image::images/playfield-effects-wiring-1.png[""]
+image::images/playfield-effects-wiring-1.png[alt="Diagram showing wiring for two 2 channel amplifiers"]
 
 Key features to note:
 
@@ -344,13 +343,13 @@ Key features to note:
 
 What's up with that bizarre wiring with the *Front* speakers connected to the *Rear* surround jack on the PC? I know it sounds crazy. The way to make sense of it is to think about the way surround sound works in a *home theater* setup. The surround sound feature in Windows is all designed around the home theater way of thinking. Home theater people think in terms of a speaker layout like this, with the listener at the center, and speakers placed around the perimeter of the room:
 
-image::images/home-theater-speaker-layout.png[""]
+image::images/home-theater-speaker-layout.png[alt="Diagram showing home theater surround sound playment"]
 
 This is how Windows sees the 7.1 audio format. The format is designed with home theaters in mind, so it assumes this particular spatial layout. This is an overhead view; the figure at the center is the listener.
 
 Windows is very attached to the idea that the speakers have this specific spatial layout. When the Visual Pinball developers were adding the surround sound feature, they had to work with that layout. So how does this map onto a pin cab most easily? Like this:
 
-image::images/home-theater-to-pinball-mapping.png[""]
+image::images/home-theater-to-pinball-mapping.png[alt="Diagram showing surround sound speaker placement overlayed with pinball cabinet"]
 
 So hopefully the twisted logic becomes more apparent now:
 
@@ -368,11 +367,11 @@ Also note that the "Front Center" speaker in the Windows layout isn't used at al
 * Press Windows+R, type *mmsys.cpl* , press Enter
 * Select the Playback tab
 * Select your speakers from the list
-* Click *Configure* image:images/configure-speakers-1.png[""]
+* Click *Configure* image:images/configure-speakers-1.png[alt="Screenshot showing windows sound setup, configure button"]
 
-* Select *7.1 surround* . Click Next.image:images/configure-speakers-1a.png[""]
+* Select *7.1 surround* . Click Next.image:images/configure-speakers-1a.png[alt="Screenshot of windows speaker setup"]
 
-*  *Check* Side Pair and Rear Pair. *Un-check* Center. Leave Subwoofer as before, according to how you set it up for the main backbox speakers. Click Next.image:images/configure-speakers-3c.png[""]
+*  *Check* Side Pair and Rear Pair. *Un-check* Center. Leave Subwoofer as before, according to how you set it up for the main backbox speakers. Click Next.image:images/configure-speakers-3c.png[alt="Screenshot of windows surround sound channel selection screen"]
 
 * Leave the "full-range" settings as before, according to how you set it up for the main backbox speakers. Click next.
 * Click Next then click Finish
@@ -385,7 +384,7 @@ Also note that the "Front Center" speaker in the Windows layout isn't used at al
 * In the *Backglass specific Sound Device* , select the same device
 * In the *Multi-channel output* section, select *7.1 Surround*
 
-image::images/vp-surround-setup.png[""]
+image::images/vp-surround-setup.png[alt="Screenshot of Visual Pinball Audio Options"]
 
 If that little homage to Orwell saying "Front is rear, black is white, war is peace" that you see in the parentheses after "7.1 Surround" seems confusing, it's because VP is trying to explain the whole speaker layout in 10 words or less to fit the dialog box. Here's what it's trying to say:
 
@@ -448,8 +447,8 @@ If you have a really good amplifier and good wiring, you might be able to turn t
 
 To test that this setting is loud enough for normal use:
 
-* Turn the Windows master volume level all the way down, using the volume controls in the "system tray" at the bottom of the screen image:images/system-tray-speaker-icon.png[""]
-image::images/volume-to-zero.png[""]
+* Turn the Windows master volume level all the way down, using the volume controls in the "system tray" at the bottom of the screen image:images/system-tray-speaker-icon.png[alt="Screenshot of windows system tray, showing volume icon"]
+image:images/volume-to-zero.png[alt="Screenshot of windows volume slider at 0%"]
 
 * Play some sample music in your a media player, just to test the level
 * Gradually turn up the Windows master volume until it's as loud as the loudest level you'll likely want to use for pinball simulations
@@ -507,7 +506,7 @@ The last step in setting up software volume control is to map the physical butto
 
 If you're using the Pinscape Controller as your key encoder, you can find these keys here on the little mini-keyboard that pops up when you assign keys in the Config Tool:
 
-image::images/ps-volume-keys.png[""]
+image::images/ps-volume-keys.png[alt="Screenshot of config tool volume adjustment keys"]
 
 For other key encoders, look for similar icons, or look for the key names Volume Up, Volume Down, and Mute.
 
