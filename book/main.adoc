@@ -1,0 +1,306 @@
+= _The New_ Pinscape Build Guide: A comprehensive how-to guide to building a virtual pinball machine
+:doctype: book
+:author: Michael Roberts
+:email: mjr_@hotmail.com
+:license-url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+:license-title: CC BY-NC-SA 4.0
+:revnumber: 2.1.0
+:revdate: October 31st, 2023
+:description: Guide to building a virtual pinball cabinet
+:sectnums:
+:toc: left
+:toclevels: 2
+:icons: font
+:lang: en
+:source-highlighter: rouge
+:favicon: resources/pinball_icon.ico
+:linkcss:
+:copycss:
+
+include::legal.adoc[]
+
+== Part One. Preliminaries
+:leveloffset: +2
+include::intro.adoc[]
+
+include::whatIs.adoc[]
+
+include::architecture.adoc[]
+
+include::resources.adoc[]
+:leveloffset: -2
+== Part Two. Planning and Building the Cabinet
+:leveloffset: +2
+include::roadmap.adoc[]
+
+include::serviceability.adoc[]
+
+include::playfieldTV.adoc[]
+
+include::backboxTV.adoc[]
+
+include::dmdDevice.adoc[]
+
+include::pc.adoc[]
+
+include::powerSwitching.adoc[]
+
+include::ioControllers.adoc[]
+
+include::pcsetup.adoc[]
+
+include::windows.adoc[]
+
+include::software.adoc[]
+
+include::b2s.adoc[]
+
+include::optimizing.adoc[]
+
+include::tableFixup.adoc[]
+
+include::cabTools.adoc[]
+
+include::cabParts.adoc[]
+
+include::cabBody.adoc[]
+
+include::cabArt.adoc[]
+
+include::cabHardware.adoc[]
+
+include::backboxHardware.adoc[]
+
+include::cabGrounding.adoc[]
+
+include::insideTheCab.adoc[]
+
+include::pcInstall.adoc[]
+
+include::fans.adoc[]
+
+include::playfieldMounting.adoc[]
+
+include::backboxTVInstall.adoc[]
+
+include::dmdAssembly.adoc[]
+
+include::dmdAssemblyOriginal.adoc[]
+
+include::dmdAssemblyWPC95.adoc[]
+
+include::cabButtons.adoc[]
+
+include::cabButtonWiring.adoc[]
+
+include::tilt.adoc[]
+
+include::plunger.adoc[]
+
+include::plungerSetup.adoc[]
+
+include::tablePlungerFixup.adoc[]
+
+include::coinDoor.adoc[]
+
+include::audio.adoc[]
+
+include::toppers.adoc[]
+
+include::extras.adoc[]
+:leveloffset: -2
+
+
+== Part Three. Feedback Devices
+:leveloffset: +2
+
+include::feedbackDevices.adoc[]
+
+include::powerSupplies.adoc[]
+
+include::DOF.adoc[]
+
+include::feedbackWiring.adoc[]
+
+include::psOutputsExp.adoc[]
+
+include::psOutputsStandalone.adoc[]
+
+include::ledwiz.adoc[]
+
+include::sainsmart.adoc[]
+
+include::ledResistors.adoc[]
+
+include::diodes.adoc[]
+
+include::coilTimers.adoc[]
+
+include::buttonLamps.adoc[]
+
+include::flashers.adoc[]
+
+include::beacons.adoc[]
+
+include::lightStrips.adoc[]
+
+include::contactors.adoc[]
+
+include::knockers.adoc[]
+
+include::shakers.adoc[]
+
+include::gearMotors.adoc[]
+
+include::blowers.adoc[]
+
+include::chimes.adoc[]
+
+include::addressableLightStrips.adoc[]
+:leveloffset: -2
+
+
+== Part Four. A Crash Course in Electronics
+:leveloffset: +2
+
+include::elecOverview.adoc[]
+
+include::staticSafety.adoc[]
+
+include::pcbTips.adoc[]
+
+include::compov.adoc[]
+
+include::schematics.adoc[]
+
+include::wire.adoc[]
+
+include::resistors.adoc[]
+
+include::capacitors.adoc[]
+
+include::cmpdiodes.adoc[]
+
+include::leds.adoc[]
+
+include::relays.adoc[]
+
+include::transistors.adoc[]
+
+include::mosfets.adoc[]
+
+include::icchips.adoc[]
+
+include::connectors.adoc[]
+
+include::pinHeaders.adoc[]
+
+include::crimpPins.adoc[]
+
+include::ribbonCables.adoc[]
+
+include::fuses.adoc[]
+:leveloffset: -2
+
+
+== Part Five. The Pinscape Controller
+:leveloffset: +2
+
+include::pscOverview.adoc[]
+
+include::expan.adoc[]
+
+include::psTools.adoc[]
+
+include::kl25zHardwareSetup.adoc[]
+
+include::kl25zSoftwareSetup.adoc[]
+
+include::statusLights.adoc[]
+
+include::partslist.adoc[]
+
+include::eurotrans.adoc[]
+
+include::expanFab.adoc[]
+
+include::expanAssembly.adoc[]
+
+include::expanPower.adoc[]
+
+include::expanTesting.adoc[]
+
+include::expanDebug.adoc[]
+
+include::expanConnect.adoc[]
+
+include::nudge.adoc[]
+
+include::plungerBreakout.adoc[]
+
+include::tsl1410.adoc[]
+
+include::pot.adoc[]
+
+include::VCNL4010.adoc[]
+
+include::aedr8300.adoc[]
+
+include::tcd1103.adoc[]
+
+include::vl6180x.adoc[]
+
+include::calbtn.adoc[]
+
+include::plungerConfig.adoc[]
+
+include::zblaunch.adoc[]
+
+include::buttons.adoc[]
+
+include::outputs.adoc[]
+
+include::irRemote.adoc[]
+
+include::nightmode.adoc[]
+
+include::tvon.adoc[]
+
+include::troubleshooting.adoc[]
+:leveloffset: -2
+
+== Appendices
+:leveloffset: +2
+[appendix]
+include::kl25zPinOut.adoc[]
+[appendix]
+include::modSummary.adoc[]
+[appendix]
+include::plungerTech.adoc[]
+[appendix]
+include::magnaSaveButtons.adoc[]
+[appendix]
+include::dofDeviceList.adoc[]
+[appendix]
+include::dofEventCodes.adoc[]
+[appendix]
+include::CustomizeDOF.adoc[]
+[appendix]
+include::CoinDoorBoardPlans.adoc[]
+[appendix]
+include::plywoodCuttingPlans.adoc[]
+[appendix]
+include::cabBodyQuickRef.adoc[]
+[appendix]
+include::woodworkingTips.adoc[]
+[appendix]
+include::lockMiterI.adoc[]
+[appendix]
+include::lockMiterII.adoc[]
+[appendix]
+include::cornerBraceCutting.adoc[]
+[appendix]
+include::shakerPlan.adoc[]
+[appendix]
+include::endnotes.adoc[]
+

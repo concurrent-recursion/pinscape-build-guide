@@ -1,0 +1,3551 @@
+= Electronic Parts List
+
+
+
+
+This section lists all of the electronics needed for each Pinscape Controller subsystem.
+
+The ID column lists the "reference designator" for each component as it appears in the schematics. That's just an arbitrary ID assigned for cross-referencing between the schematic and the parts list. Each ID is unique within its board, but has no meaning outside of that. These same IDs are also printed on the circuit boards next to the parts, so that you can match up the physical components on the boards to schematics and the parts list.
+
+Note that the parts lists don't include any of the custom PCBs (printed circuit boards), such as the expansion boards. These have to be custom fabricated, which is of course a different process than ordering off-the-shelf parts. We explain how to do get these made in xref:expanFab.adoc[Fabricating the Expansion Boards] .
+
+== Optional elements
+
+The parts lists below reflect the "default" configurations for the expansion boards. There are some variations possible in how you build the boards, though, including some things you can just leave out if you don't need them. The list itself has a lot of footnotes that describe alternate parts or mention when something is optional, so you pay attention to the notes while building out your shopping cart.
+
+In addition, you might want to read through "Optional elements" in xref:expanAssembly.adoc#optionalBoardElements[Building the Expansion Boards] . That section explains how you can omit some of the features entirely, which for the most part is a simple matter of not installing the parts involved in the feature. That can save you a little time and effort for functions you don't need, and you can save on the parts cost by omitting the unnecessary items from your shopping cart.
+
+== Warning on TLC5940NT
+
+The TLC5940NT chip, which is central to the design of the Main Board and Power Board, is no longer in production. That means that you can't buy it from mainstream electronics suppliers like Mouser and DigiKey. However, the chip _is_ still available from sellers on eBay and Aliexpress. There seems to be an ongoing bottomless supply of the chip on those venues, which is both good news and bad news. The good news is that it means we can still build these boards, and apparently will be able to do so for the foreseeable future. The bad news is that the only way these chips can still be coming to market after being discontinued for so long is that someone is making unauthorized gray-market knockoffs. Chip counterfeiters aren't known for holding themselves to the highest quality standards. Indeed, reports on the forums suggest that the Dead-On-Arrival rate for these chips is quite high lately. There's not much you can do about it other than take your chances and hope you get a good batch. The only consolation is that the chips are pretty cheap, so the financial loss isn't huge if you do get a bad batch. But the cost in your time for the soldering and desoldering could be huge if you don't use sockets - please do use sockets for these chips so that it's easy to swap them out if necessary.
+
+If you use the Shopping List tool below to generate an order list to upload to Mouser, the tool will show a warning that the list doesn't include the TLC5940NT, to remind you that you'll have to order those separately.
+
+I would have redesigned the boards around an in-production substitute chip a long time ago if such a thing existed, but alas, there simply are no similar chips available. Every similar chip that's currently in production is in what's known as SMD (surface-mount device) packaging, which is designed for robotic assembly and is difficult to solder by hand. I deliberately designed entirely around parts that can be soldered by hand, since one of the main goals of these boards is that you can build them yourself. So we're stuck with the gray-market TLC5940NT.
+
+== Substitutions
+
+The lists below provide specific manufacturer part numbers for all components, with link:https://www.mouser.com/[Mouser.com] links to the parts.
+
+These are *reference* parts only, not requirements. It's perfectly fine to buy the exact parts listed, but it's also perfectly fine to substitute equivalent parts wherever you wish. The main reason we list specific parts is to save you time shopping. There are so many options available for some of the parts that it can take quite a while to narrow the selection based on the specs alone.
+
+If you have any trouble finding the specific part numbers listed, or they're out of stock at your preferred vendor, you should be able to find substitutes for most of the parts. And if you're in a shopping mood, you might be able to find cheaper alternatives. We've tried to select the cheapest suitable option in each case, but prices of course vary over time and at different vendors.
+
+Here are some guidelines for selecting substitutions:
+
+* In all cases, make sure that the physical package is compatible. Make sure the pin or lead wire layout matches, and check the size to make sure the replacement isn't too big to fit the space on the board. Physically smaller parts are usually okay; bigger parts might not fit.
+* Resistors with the same resistance (Ohms) value are usually interchangeable. However, if there's also a wattage rating listed, you must use a part with the specified wattage rating or higher. If no wattage is listed in the table, you can assume a default of 1/4W. (Most through-hole resistors are 1/4W or higher anyway, which is why we don't bother mentioning the wattage in those cases.)
+* Capacitors with the same capacitance (µF or nF) value *and* the same type ("electrolytic" or "ceramic") are usually interchangeable. "Ceramic" and "disc" capacitors are the same type. Tantalum capacitors are *not* interchangeable with ceramic/disk, even if they have the same capacitance value.
+* The NPN and PNP transistors we use can be replaced with most other "small signal switching" transistors. The polarity (NPN or PNP) must always match. Pay attention to the ordering of the "legs", since that can be different even if the physical package looks identical.
+* IC chips usually need to be the exact parts listed. In some cases, though, several manufacturers make compatible equivalents. These will generally have the same number with a different letter prefix. For example, there are equivalent xx847 optocoupler chips from several manufacturers, with names like PC847, K847, LTV-847.
+
+More detailed advice on selecting substitute parts can be found in the chapters on the individual component types in our electronics overview section, xref:electronics.adoc[A Crash Course in Electronics] . Start at xref:compov.adoc[Field Guide to Components] and follow the links to the chapters on the various components.
+
+== Ribbon cables
+
+Some of the connections to and between the expansion boards are most easily handled with "ribbon cables". These are the type of flat, multi-conductor cables that you see inside PCs to connect some of the internal components together.
+
+The places I recommend ribbon cables are:
+
+* The connection between the main board and power board (main board "PWM OUT" to power board "PWM IN")
+* The connection between the main board and the chime board ("Chime Out" to "Chime In")
+* The connection between the main board and the plunger sensor
+* The connection from the main board to your flasher LEDs
+
+Ribbon cabling isn't an absolute requirement for any of these, but I'd recommended it over other options (especially crimp housings), because it's cheaper and easier, and it makes cleaner data connections.
+
+You can buy pre-assembled ribbon cables, but it's hard to find them for anything other than the most common sizes used in PCs. Fortunately, it's fairly easy to build your own. That's cheaper than buying pre-made cables, and it lets you build the exact length you need and with the number of conductors you need.
+
+The parts list assumes that you're going to be building your own custom ribbon cables where needed. As such, it lists the *connectors* needed at the end of each required ribbon cable. However, it doesn't list the *wire* . The wire is a generic part that you can find anywhere, and you'll want to figure out what length you need, so we leave it up to you to select the wire.
+
+See xref:ribbonCables.adoc[Ribbon Cables] for details on buying the wire and attaching the connectors to the cables.
+
+== Shopping list builder
+The list below is formatted for printing. Click the button for a more interactive view that will let you select parts, fill in quantities, and create an ordering list that you can upload to different vendor sites to fill in your shopping cart without having to find everything manually.
+
+btn:[Create shopping list]
+
+
+== Create a shopping list
+
+To save you some time, this page can partially automate the process of ordering components from some of the popular vendors.
+
+*Step 1.* Start by selecting the subsystems you want to include in your order. Check the box next to each subsystem you want to include, and adjust the quantities as necessary. You can adjust individual line item quantities as well if desired.
+
+*Please take note* of items marked as "Alternate" in the Notes column. These components have multiple options, so you'll want to review these and choose the option(s) you want. There are notes for each of these explaining the options and how to choose.
+
+*After you've selected parts and quantities* , click a button below for instructions on ordering from your preferred vendor.
+
+btn:[Order at Mouser]  btn:[Other Vendors]  btn:[Cancel]
+
+*Step 2.* We're now going to create a BOM (Bill of Materials) at Mouser based on the parts you've selected. A BOM is basically a saved shopping cart, and the nice part is that we can create it by uploading the data in the text box below rather than finding each part by hand.
+
+* Go to link:https://www.mouser.com/bomtool/[mouser.com/bomtool]
+* Click *Import a new BOM*
+* Log in. If you don't already have a Mouser account, create one now.
+* You should now be on the BOM import page. Look for the "Copy/Paste Import" option. Click the "click here" button in that section. That should display a big text entry box.
+* Copy all of the text in the box below and paste it into text box on the Mouser page.
+* Click the *Import BOM* button on the Mouser page
+
+* Mouser will now lead you through several steps. You can use the defaults on each step - just keep clicking *Continue* . The last step takes a couple of minutes because this is where the server looks up all of the parts in its database.
+After you get through all of the steps, Mouser should show you the complete BOM as a list of parts with descriptions, quantities, and prices. You can now place your order by clicking the *Order All* button at the bottom. This will copy everything in the BOM to the regular shopping cart. Go through the checkout process to complete the purchase.
+
+*Step 2.* The list below shows the parts you'll need. You can use equivalent parts from other manufacturers if you prefer; the manufacturer part numbers are just shown for reference purposes, to make it easier to look up the specs on each part.
+
+
+btn:[Copy to clipboard]
+
+btn:[Print this list]
+
+
+
+*Step 3.* The following parts aren't available from Mouser or the other major vendors. You'll have to order them separately.
+
+
+[#standaloneBom]
+KL25Z Microcontroller (Standalone)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|FRDM1
+|KL25Z microcontroller board
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=841-FREEDOM-KL25Z.html[841-FREEDOM-KL25Z]
+|
+
+|
+|
+|USB1
+|USB Cable, USB A to Mini-B, 1.8M, black
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-88732-8802.html[538-88732-8802]
+|Qty 2; footnote:partNote1[You only need one USB cable to connect the KL25Z during routine use, but I recommend getting two. This lets you leave the programming port plugged in all the time, so you can install firmware updates without having to open up your cabinet and move cables around.]
+
+|
+|
+|J1
+|2x08 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760846.html[855-M20-9760846]
+|
+
+|
+|
+|J1
+|2x08 crimp pin wire housing, mates with 855-M20-9760846
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070800.html[855-M20-1070800]
+| footnote:connector[A plug or socket designed to connect to a mating pin header (or the like) on one of the circuit boards. These are usually listed in the sections for the *connected* devices rather than with the circuit boards that they plug into. For example, the connector that plugs into the "plunger" header on the expansion board is listed in the parts section for the plunger rather than with the expansion board. We group them this way so that you only have to buy parts for the sections you're actually building.]
+
+|
+|
+|J1
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 16; footnote:connectorpins[This is a set of contact terminals needed as part of the connector listed for the item.]
+
+|
+|
+|J2
+|2x10 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9761046.html[855-M20-9761046]
+| footnote:connector[]
+
+|
+|
+|J2
+|2x10 crimp pin wire housing, mates with 855-M20-9761046
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1071000.html[855-M20-1071000]
+| footnote:connector[]
+
+|
+|
+|J2
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 20; footnote:connectorpins[] 
+
+|
+|
+|J9
+|2x08 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760846.html[855-M20-9760846]
+|
+
+|
+|
+|J9
+|2x08 crimp pin wire housing, mates with 855-M20-9760846
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070800.html[855-M20-1070800]
+| footnote:connector[] 
+
+|
+|
+|J9
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 16; footnote:connectorpins[] 
+
+|
+|
+|J10
+|2x06 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760646.html[855-M20-9760646]
+|
+
+|
+|
+|J10
+|2x06 crimp pin wire housing, mates with 855-M20-9760646
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070600.html[855-M20-1070600]
+| footnote:connector[] 
+
+|
+|
+|J10
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 12; footnote:connectorpins[] 
+
+|===
+
+Main Board (KL25Z Interface)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|C1
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C2
+|150nF (0.15uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=581-SR205E154MAR.html[581-SR205E154MAR]
+|
+
+|
+|
+|C4
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C5
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C6
+|4.7uF capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=810-FG14X5R1H475KRT0.html[810-FG14X5R1H475KRT0]
+|
+
+|
+|
+|C7
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C8
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C9
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C11
+|100uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=667-ECA-1AM101I.html[667-ECA-1AM101I]
+|
+
+|
+|
+|C12
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|D1
+|1N4007 diode
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=621-1N4007.html[621-1N4007]
+|
+
+|
+|
+|FRDM1
+|2x10 pin socket, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-7831046.html[855-M20-7831046]
+|
+
+|
+|
+|FRDM1
+|2x08 pin socket, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-7830846.html[855-M20-7830846]
+|
+
+|
+|
+|FRDM1
+|2x08 pin socket, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-7830846.html[855-M20-7830846]
+|
+
+|
+|
+|FRDM1
+|2x06 pin socket, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-7830646.html[855-M20-7830646]
+|
+
+|
+|
+|FRDM1
+|KL25Z microcontroller board
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=841-FREEDOM-KL25Z.html[841-FREEDOM-KL25Z]
+|
+
+|
+|
+|FRDM1
+|2x10 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9761046.html[855-M20-9761046]
+|
+
+|
+|
+|FRDM1
+|2x08 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760846.html[855-M20-9760846]
+|Qty 2
+
+|
+|
+|FRDM1
+|2x06 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760646.html[855-M20-9760646]
+|
+
+|
+|
+|IC1
+|TLC5940NT PWM controller IC (28-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=595-TLC5940NT.html[595-TLC5940NT]
+| footnote:partNote2[ Be aware that *you can't buy the TLC5940NT at Mouser* or other mainstream electronics suppliers, but you can still buy it on eBay and Aliexpress. Texas Instruments stopped manufacturing the chip many years ago, and the supply of genuine parts has long since dried up. Fortunately, that doesn't stop the "gray market" sellers on eBay and Aliexpress, and the chip continues to be readily available in those venues. The chip has been out of official production for so long that the ones you can buy now are almost certainly unauthorized knockoffs, and (as you might expect) the Dead-On-Arrival rate is reportedly pretty high lately. You might want to order extras in case you get bad chips in your batch. Unfortunately, there's no similar through-hole chip current available to use as a substitute, so we're stuck for now with the sometimes problematic knockoffs.]
+
+|
+|
+|IC1
+|28-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-9.html[571-1-2199298-9]
+| footnote:icsocket[Optional socket for IC. You can solder the IC directly to the circuit board if you prefer, or you can use a socket. The main benefit of a socket is that it makes it easy to replace a defective or damaged chip. Chips soldered directly to the board can be quite difficult to remove.] ; Optional
+
+|
+|
+|IC2
+|TLC5940NT PWM controller IC (28-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=595-TLC5940NT.html[595-TLC5940NT]
+| footnote:partNote2[] 
+
+|
+|
+|IC2
+|28-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-9.html[571-1-2199298-9]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC5
+|ULN2064BN Quad Darlington array (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-ULN2064B.html[511-ULN2064B]
+|
+
+|
+|
+|IC5
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC6
+|ULN2064BN Quad Darlington array (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-ULN2064B.html[511-ULN2064B]
+|
+
+|
+|
+|IC6
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC7
+|ULN2064BN Quad Darlington array (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-ULN2064B.html[511-ULN2064B]
+|
+
+|
+|
+|IC7
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC8
+|ULN2064BN Quad Darlington array (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-ULN2064B.html[511-ULN2064B]
+|
+
+|
+|
+|IC8
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC11
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC12
+|LD1117AV33 voltage regulator, 3.3V
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-LD1117AV33.html[511-LD1117AV33]
+|
+
+|
+|
+|JP1
+|2x13 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9761346.html[855-M20-9761346]
+|
+
+|
+|
+|JP1
+|2x13 pin wire housing (0.1"), mates with 855-M20-9761346
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=649-65239-013LF.html[649-65239-013LF]
+| footnote:connector[] 
+
+|
+|
+|JP1
+|Crimp pin for Amphenol FCI 65239-xxxx wire housing
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=649-76357-301LF.html[649-76357-301LF]
+|Qty 26; footnote:connectorpins[] 
+
+|
+|
+|JP2
+|2x04 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760446.html[855-M20-9760446]
+|
+
+|
+|
+|JP3
+|2x02 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760246.html[855-M20-9760246]
+|
+
+|
+|
+|JP4
+|2x03 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9980346.html[855-M20-9980346]
+|
+
+|
+|
+|JP4
+|2x03 crimp pin wire housing, mates with 855-M20-9760346
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070300.html[855-M20-1070300]
+| footnote:connector[] 
+
+|
+|
+|JP4
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 6; footnote:connectorpins[] 
+
+|
+|
+|JP5
+|2x05 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760546.html[855-M20-9760546]
+|
+
+|
+|
+|JP6
+|2x05 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760546.html[855-M20-9760546]
+|
+
+|
+|
+|JP7
+|2-pin header (0.1") with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-23-2021.html[538-22-23-2021]
+|
+
+|
+|
+|JP7
+|2-pin wire housing (0.1"), mates with 538-22-23-2021; 2695 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-01-2021.html[538-22-01-2021]
+| footnote:connector[] 
+
+|
+|
+|JP7
+|2.54mm crimp terminals for Molex 2695 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0114.html[538-08-50-0114]
+|Qty 2; footnote:connectorpins[] 
+
+|
+|
+|JP8
+|2x09 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=649-77313-101-18LF.html[649-77313-101-18LF]
+|
+
+|
+|
+|JP8
+|2x09 crimp pin wire housing, mates with 855-M20-9760946
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070900.html[855-M20-1070900]
+| footnote:connector[] 
+
+|
+|
+|JP8
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 18; footnote:connectorpins[] 
+
+|
+|
+|JP9
+|2-pin header (0.1") with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-23-2021.html[538-22-23-2021]
+| footnote:partNote3[This part is listed with a Molex connector, with a plain 1x2 pin header also included as an alternative. You can use either one, but the Molex connector is recommended because it has a friction lock that keeps the connected cable in place more securely. Plain 2-pin connectors in this size tend to come loose easily in a high-vibration environment like a pin cab.]
+
+|
+|
+|JP9
+|2-pin wire housing (0.1"), mates with 538-22-23-2021; 2695 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-01-2021.html[538-22-01-2021]
+| footnote:connector[] 
+
+|
+|
+|JP9
+|2.54mm crimp terminals for Molex 2695 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0114.html[538-08-50-0114]
+|Qty 2; footnote:connectorpins[] 
+
+|
+|
+|JP9
+|1x02 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9990246.html[855-M20-9990246]
+| footnote:partNote3[] ; footnote:alernate[This part is an optional substitution for the other listed part(s) for the same item. See the item notes for details.]
+
+|
+|
+|JP9
+|1x02 crimp pin wire housing, mates with 855-M20-9990246
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1060200.html[855-M20-1060200]
+| footnote:alternate[This part is an optional substitution for the other listed part(s) for the same item. See the item notes for details.] ; footnote:connector[]
+
+|
+|
+|JP9
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 2; footnote:alternate[] ; footnote:connectorpins[] 
+
+|
+|
+|JP10
+|4-pin header (3.96mm) with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4040.html[538-26-60-4040]
+|
+
+|
+|
+|JP10
+|4-pin wire housing (3.96mm), mates with 538-26-60-4040; 2139 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3041.html[538-09-50-3041]
+| footnote:connector[] 
+
+|
+|
+|JP10
+|3.96mm crimp terminals for Molex 2139 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0106.html[538-08-50-0106]
+|Qty 4; footnote:connectorpins[] 
+
+|
+|
+|JP11
+|2x08 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760846.html[855-M20-9760846]
+|
+
+|
+|
+|JP11
+|2x08 pin IDC socket, mates with 0.1" pin header
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=164-9008-E.html[164-9008-E]
+|Qty 2; footnote:connector[] 
+
+|
+|
+|JP12
+|2x02 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760246.html[855-M20-9760246]
+|
+
+|
+|
+|JP12
+|2x02 crimp pin wire housing, mates with 855-M20-9760246
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070200.html[855-M20-1070200]
+| footnote:connector[] 
+
+|
+|
+|K1
+|Omron G5V-2 PCB relay
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=653-G5V-2-DC5.html[653-G5V-2-DC5]
+|
+
+|
+|
+|OK1
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK1
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK2
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK2
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK3
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK3
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK4
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK4
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK5
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK13
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK14
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK15
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|Q1
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[Any similar N-channel MOSFET can be substituted, so you can choose something based on price and availability. This part is used for logic circuit power switching, which is a basic task that many MOSFETs can perform. Substitutions must have the same physical package (TO-220-3) and pin layout (pins in G-D-S order) so that they'll fit the space on the PCB. In terms of electrical specs, the key features are low on-state resistance, in the 100 milli-Ohm range or below, and drain voltage (V~DS~) and current (I~D~) limits high enough for the output devices you plan to attach. We drive the gate with 12V, so the device must be fully switched on at 12V and V~GS~~max~ must be at least 12V. We recommend drain current limits of at least 6A @ 30V. These specs are fairly undemanding, so you should be able to find many options. Recommended alternatives: FQP30N06L (or almost anything in the FQPxxN06L series), BUK7575-55A.]
+
+|
+|
+|R1
+|10K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1002.html[660-MS1/4DCT52R1002]
+|
+
+|
+|
+|R2
+|4K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R4021F.html[660-MF1/4DCT52R4021F]
+|
+
+|
+|
+|R3
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R4
+|10K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1002.html[660-MS1/4DCT52R1002]
+|
+
+|
+|
+|R5
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+| footnote:partNote5[This resistor sets the current limit for the RGB flipper button LED outputs. Select a resistor according to the forward current of your LEDs. If you're using link:http://www.nicemite.com/[Lightmite] boards with two RGB LEDs, set this for 60mA.
++
+* 10mA → 4K ohm resistor
+* 20mA → 2.2K
+* 30mA → 1.3K
+* 40mA → 1K
+* 50mA → 780 ohms
+* *60mA → 680 ohms (use for Lightmites)
+]
+
+|
+|
+|R5
+|4K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R4021F.html[660-MF1/4DCT52R4021F]
+| footnote:partNote5[] ; footnote:alternate[] 
+
+|
+|
+|R5
+|1.3K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R1301F.html[660-MF1/4DCT52R1301F]
+| footnote:partNote5[] ; footnote:alternate[] 
+
+|
+|
+|R5
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+| footnote:partNote5[] ; footnote:alternate[] 
+
+|
+|
+|R5
+|787 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R7870F.html[660-MF1/4DCT52R7870F]
+| footnote:partNote5[] ; footnote:alternate[] 
+
+|
+|
+|R5
+|680 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R6800F.html[660-MF1/4DCT52R6800F]
+| footnote:partNote5[] ; footnote:alternate[] 
+
+|
+|
+|R6
+|1M ohm resistor (7mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R7
+|220 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R2200F.html[660-MF1/4DCT52R2200F]
+|
+
+|
+|
+|R8
+|2.2M ohm resistor (7mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=270-2.2M-RC.html[270-2.2M-RC]
+|
+
+|
+|
+|R9
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R10
+|100K ohm resistor (7mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R11
+|27 ohm resistor, 1/2W
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=279-LR1F27R.html[279-LR1F27R]
+| footnote:partNote6[Select a resistor according to the IR LED(s) used for the TV ON feature, if any. For the reference 100mA LED:
+
+* For one LED: use 39 ohms 1/2 Watt
+* For two LEDs in series: use 27 ohm 1/2 Watt
+
+Omit the resistor if no LED will be connected.] 
+
+|
+|
+|R11
+|39 ohm resistor, 1/2W
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=594-5073NW39R00J.html[594-5073NW39R00J]
+| footnote:partNote6[] ; footnote:alternate[] 
+
+|
+|
+|R12
+|100K ohm resistor (7mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R13
+|47 ohm resistor (7mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R14
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R16
+|10K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1002.html[660-MS1/4DCT52R1002]
+|
+
+|
+|
+|R18
+|47 ohm resistor (7mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R36
+|560 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=594-SFR16S0005600FR5.html[594-SFR16S0005600FR5]
+|
+
+|
+|
+|R37
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R38
+|220 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R2200F.html[660-MF1/4DCT52R2200F]
+|
+
+|
+|
+|R39
+|560 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=594-SFR16S0005600FR5.html[594-SFR16S0005600FR5]
+|
+
+|
+|
+|R40
+|10K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1002.html[660-MS1/4DCT52R1002]
+|
+
+|
+|
+|R41
+|4.7K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R4701.html[660-MS1/4DCT52R4701]
+|
+
+|
+|
+|R42
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R43
+|82 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=603-MFR-25FRF52-82R.html[603-MFR-25FRF52-82R]
+|
+
+|
+|
+|R44
+|4.7K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R4701.html[660-MS1/4DCT52R4701]
+|
+
+|
+|
+|R46
+|10K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1002.html[660-MS1/4DCT52R1002]
+|
+
+|
+|
+|R47
+|22K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R223G.html[660-MF1/4LCT52R223G]
+|
+
+|
+|
+|R49
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|T1
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[If you're in Europe, it might be more convenient to substitute transistor type BC337 for each 2N4401, and type BC327 for each 2N4403. The BC3xx types are reportedly easier to find in Europe. See link:http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php?sid=eurotrans[European Transistor Substitutions.]]
+
+|
+|
+|T2
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T3
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T4
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T5
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T6
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T7
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T8
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|U$2
+|TSOP384 Infrared receiver, 38kHz
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=78-TSOP38438.html[78-TSOP38438]
+|
+
+|
+|
+|USB1
+|USB Cable, USB A to Mini-B, 1.8M, black
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-88732-8802.html[538-88732-8802]
+|Qty 2; footnote:partNote1[]
+
+|
+|
+|LED1
+|Infrared (IR) emitter LED, 100mA, 25 degree beam
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=782-TSAL6400.html[782-TSAL6400]
+|Qty 2; footnote:partNote8[Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all of the TVs.]
+
+|===
+
+Power BoardQuantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|C1
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C2
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C6
+|4.7uF capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=810-FG14X5R1H475KRT0.html[810-FG14X5R1H475KRT0]
+|
+
+|
+|
+|C11
+|100uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=667-ECA-1AM101I.html[667-ECA-1AM101I]
+|
+
+|
+|
+|C12
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|IC1
+|TLC5940NT PWM controller IC (28-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=595-TLC5940NT.html[595-TLC5940NT]
+| footnote:partNote2[] 
+
+|
+|
+|IC1
+|28-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-9.html[571-1-2199298-9]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC2
+|TLC5940NT PWM controller IC (28-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=595-TLC5940NT.html[595-TLC5940NT]
+| footnote:partNote2[] 
+
+|
+|
+|IC2
+|28-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-9.html[571-1-2199298-9]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|IC12
+|LD1117AV33 voltage regulator, 3.3V
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-LD1117AV33.html[511-LD1117AV33]
+|
+
+|
+|
+|JP1
+|2-pin header (0.1") with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-23-2021.html[538-22-23-2021]
+|
+
+|
+|
+|JP1
+|2-pin wire housing (0.1"), mates with 538-22-23-2021; 2695 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-01-2021.html[538-22-01-2021]
+| footnote:connector[] 
+
+|
+|
+|JP1
+|2.54mm crimp terminals for Molex 2695 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0114.html[538-08-50-0114]
+|Qty 2; footnote:connectorpins[] 
+
+|
+|
+|JP2
+|2x05 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760546.html[855-M20-9760546]
+|
+
+|
+|
+|JP2
+|2x05 pin IDC socket, mates with 0.1" pin header
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=164-9006-E.html[164-9006-E]
+|Qty 2; footnote:connector[] 
+
+|
+|
+|JP3
+|2x05 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760546.html[855-M20-9760546]
+|
+
+|
+|
+|JP4
+|4-pin header (3.96mm) with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4040.html[538-26-60-4040]
+|
+
+|
+|
+|JP4
+|4-pin wire housing (3.96mm), mates with 538-26-60-4040; 2139 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3041.html[538-09-50-3041]
+| footnote:connector[] 
+
+|
+|
+|JP4
+|3.96mm crimp terminals for Molex 2139 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0106.html[538-08-50-0106]
+|Qty 4; footnote:connectorpins[] 
+
+|
+|
+|JP5
+|1x16 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9991646.html[855-M20-9991646]
+|
+
+|
+|
+|JP5
+|1x08 crimp pin wire housing, mates with 855-M20-9990846
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1060800.html[855-M20-1060800]
+|Qty 2; footnote:connector[] 
+
+|
+|
+|JP5
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 16; footnote:connectorpins[] 
+
+|
+|
+|JP6
+|1x16 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9991646.html[855-M20-9991646]
+|
+
+|
+|
+|JP6
+|1x08 crimp pin wire housing, mates with 855-M20-9990846
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1060800.html[855-M20-1060800]
+|Qty 2; footnote:connector[] 
+
+|
+|
+|JP6
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 16; footnote:connectorpins[] 
+
+|
+|
+|OK1
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK1
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK2
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK2
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK3
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK3
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK4
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK4
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK5
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK5
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK6
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK6
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK7
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK7
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|OK8
+|PC847 quad optocoupler (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-847.html[859-LTV-847]
+|
+
+|
+|
+|OK8
+|16-pin DIP IC socket
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=571-1-2199298-4.html[571-1-2199298-4]
+| footnote:icsocket[] ; Optional
+
+|
+|
+|Q1A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q1B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q1C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q1D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q2A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q2B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q2C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q2D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q3A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q3B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q3C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q3D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q4A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q4B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q4C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q4D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q5A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q5B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q5C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q5D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q6A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q6B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q6C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q6D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q7A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q7B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q7C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q7D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q8A
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q8B
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q8C
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q8D
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|R1
+|10K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R103J.html[660-MF1/4LCT52R103J]
+|
+
+|
+|
+|R2
+|4K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R4021F.html[660-MF1/4DCT52R4021F]
+|
+
+|
+|
+|R3
+|4K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R4021F.html[660-MF1/4DCT52R4021F]
+|
+
+|
+|
+|R4
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R5
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R6
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R7
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R8
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R9
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R10
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R11
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R12
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R13
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R14
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R15
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R16
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R17
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R18
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R19
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R20
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R21
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R22
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R23
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R24
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R25
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R26
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R27
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R28
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R29
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R30
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R31
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R32
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R33
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R34
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R35
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R36
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R37
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R38
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R39
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R40
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R41
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R42
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R43
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R44
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R45
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R46
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R47
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R48
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R49
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R50
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R51
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R52
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R53
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R54
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R55
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R56
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R57
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R58
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R59
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R60
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R61
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R62
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R63
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R64
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R65
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R66
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R67
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|===
+
+Chime BoardQuantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|C1
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C2
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C3
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C4
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C5
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C6
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C7
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C8
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C9
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C10
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C11
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C12
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C13
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C14
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C15
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C16
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C17
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C18
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C19
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C20
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C21
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C22
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C23
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C24
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C25
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C26
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C27
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C28
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C29
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C30
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C31
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|C32
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|C33
+|1uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=80-ESK105M100AC3FA.html[80-ESK105M100AC3FA]
+|
+
+|
+|
+|IC1
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC2
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC3
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC4
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC5
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC6
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC7
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|IC8
+|74HC595 8-bit shift register (16-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=595-SN74HC595N.html[595-SN74HC595N]
+|
+
+|
+|
+|IC9
+|ICM7555 timer IC (8-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=968-ICM7555IPAZ.html[968-ICM7555IPAZ]
+|
+
+|
+|
+|JP1
+|2x05 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760546.html[855-M20-9760546]
+|
+
+|
+|
+|JP1
+|2x05 pin IDC socket, mates with 0.1" pin header
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=164-9006-E.html[164-9006-E]
+|Qty 2; footnote:connector[] 
+
+|
+|
+|JP2
+|2x05 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760546.html[855-M20-9760546]
+|
+
+|
+|
+|JP7
+|2-pin header (0.1") with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-23-2021.html[538-22-23-2021]
+|
+
+|
+|
+|JP7
+|2-pin wire housing (0.1"), mates with 538-22-23-2021; 2695 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-22-01-2021.html[538-22-01-2021]
+| footnote:connector[] 
+
+|
+|
+|JP7
+|2.54mm crimp terminals for Molex 2695 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0114.html[538-08-50-0114]
+|Qty 2; footnote:connectorpins[] 
+
+|
+|
+|JP9
+|1x08 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9990846.html[855-M20-9990846]
+|
+
+|
+|
+|JP9
+|1x08 crimp pin wire housing, mates with 855-M20-9990846
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1060800.html[855-M20-1060800]
+| footnote:connector[] 
+
+|
+|
+|JP9
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 8; footnote:connectorpins[] 
+
+|
+|
+|JP10
+|4-pin header (3.96mm) with friction lock
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4040.html[538-26-60-4040]
+|
+
+|
+|
+|JP10
+|4-pin wire housing (3.96mm), mates with 538-26-60-4040; 2139 series
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3041.html[538-09-50-3041]
+| footnote:connector[] 
+
+|
+|
+|JP10
+|3.96mm crimp terminals for Molex 2139 series wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-08-50-0106.html[538-08-50-0106]
+|Qty 4; footnote:connectorpins[] 
+
+|
+|
+|OK1
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK2
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK3
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK4
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK5
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK6
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK7
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|OK8
+|PC817 optocoupler (4-pin DIP)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=859-LTV-817.html[859-LTV-817]
+|
+
+|
+|
+|Q1
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q2
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q3
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q4
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q5
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q6
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q7
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|Q8
+|FQP13N06L N-channel MOSFET (TO-220 package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-FQP13N06L.html[512-FQP13N06L]
+| footnote:partNote4[] 
+
+|
+|
+|R1
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R2
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R3
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R4
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R5
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R6
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R7
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R8
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R9
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R10
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R11
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R12
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R13
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R14
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R15
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R16
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R17
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R18
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R19
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R20
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R21
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R22
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R23
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R24
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R25
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R26
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R27
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R28
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R29
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R30
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R31
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R32
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R33
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R34
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R35
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R36
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R37
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R38
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R39
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R40
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R41
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R42
+|47 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R43
+|1K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MS1/4DCT52R1001.html[660-MS1/4DCT52R1001]
+|
+
+|
+|
+|R44
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R45
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R46
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R47
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R48
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R49
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R50
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R51
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R52
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R53
+|1M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1004.html[660-MFS1/4DCT52R1004]
+|
+
+|
+|
+|R54
+|2.2M resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4LCT52R225G.html[660-MF1/4LCT52R225G]
+|
+
+|
+|
+|R55
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R56
+|100K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DC1003F.html[660-MFS1/4DC1003F]
+|
+
+|
+|
+|R57
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R58
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R59
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R60
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R61
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R62
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R63
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|R64
+|47 ohm resistor (5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R47R0.html[660-MFS1/4DCT52R47R0]
+|
+
+|
+|
+|T1
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[If you're in Europe, it might be more convenient to substitute transistor type BC337 for each 2N4401, and type BC327 for each 2N4403. The BC3xx types are reportedly easier to find in Europe. See link:http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php?sid=eurotrans[European Transistor Substitutions] ]
+
+|
+|
+|T2
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T3
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T4
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T5
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T6
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T7
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T8
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T9
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T10
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T11
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T12
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T13
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T14
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T15
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|T16
+|2N4403 PNP transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4403TFR.html[512-2N4403TFR]
+| footnote:partNote7[] 
+
+|===
+
+[#tcd1103PartsList]
+Plunger Sensor (TSL1410R linear photo sensor array)Quantity:
+
+NOTE: The TSL1410/12 sensors were discontinued by the manufacturer in 2016 and are no longer available anywhere that I'm aware of. This section is therefore of historical interest only. I'm keeping it in the guide for the sake of completeness, and on the off chance that someone discovers a dusty old carton full of unsold TSL1410's buried at the back of a shelf in a warehouse somewhere, and puts them up for sale on eBay, or the even more remote chance that the manufacturer does another run at some point. But for now, I'm sorry to say that these devices can't be bought at any price, so new cabinet builders will have to look to the other plunger sensor options instead.
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|U1
+|AMS TSL1410R linear photo sensor array, 1280-pixel
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=856-TSL1410R.html[856-TSL1410R]
+|
+
+|
+|
+|U1
+|AMS TSL1412S linear photo sensor array, 1536-pixel
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=856-TSL1412S.html[856-TSL1412S]
+| footnote:partNote9[The 1410R and 1412S are almost identical sensors. The Pinscape software is compatible with both. The key difference is that the 1412S has more pixels, which makes it slightly longer, as the pixel pitch is the same in both devices. The greater length of the 1412S allows more margin of error positioning the sensor, but it also means it takes up more space in the cabinet, which might constrain positioning for the playfield TV. Also, the 1412S is usually more expensive than the 1410R.] ; footnote:alternate[]
+
+|
+|
+|C1
+|100nF (0.1uF) capacitor (ceramic, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=21RZ310-RC.html[21RZ310-RC]
+|
+
+|
+|
+|JP1
+|Ribbon cable PCB connector, 2x4 position
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-91577-1308.html[538-91577-1308]
+| footnote:partNote10[This part is only needed if you plan to use a ribbon cable to connect the sensor to the expansion boards, or to the Plunger Breakout Board if you're using a standalone KL25Z. The ribbon cable is optional, as you can use hook-up wire instead. But I recommend the ribbon cable; it's easier to assemble and provides a cleaner data signal connection] ; footnote:partNote11[This part is only needed if you're going to use my adapter circuit board (described in the plunger chapter), and you're going to use a ribbon cable to connect the sensor to the expansion boards or the Plunger Breakout Board. You can use individual hookup wires instead if you prefer, although the ribbon cable is easier if you're using the adapter board, and it provides a cleaner signal path for the high-speed data signals used by this sensor]
+
+|
+|
+|JP2
+|2x04 pin IDC socket, mates with 0.1" pin header
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=710-61200823021.html[710-61200823021]
+| footnote:partNote10[]
+
+|===
+
+Plunger Sensor (Potentiometer)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|R1
+|Slide potentiometer, 10K ohm, 100mm travel
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=688-RSA0N11S9A0K.html[688-RSA0N11S9A0K]
+|
+
+|
+|
+|JP2
+|2x04 crimp pin wire housing, mates with 855-M20-9760446
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[855-M20-1070400]
+| footnote:expboardsonly[This part is only needed if you're using the expansion boards. It's not needed for a stand-alone KL25Z setup] ; footnote:connector[] 
+
+|
+|
+|JP2
+|0.1" crimp pins for M20-106xxxx/107xxxx wire housings
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[855-M20-1160042]
+|Qty 8; footnote:expboardsonly[] ; footnote:connectorpins[] 
+
+|===
+
+Plunger Sensor (AEDR-8300 optical encoder)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|JP1
+|Ribbon cable PCB connector, 2x4 position
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-91577-1308.html[538-91577-1308]
+| footnote:partNote10[]
+
+|
+|
+|JP2
+|2x04 pin IDC socket, mates with 0.1" pin header
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=710-61200823021.html[710-61200823021]
+| footnote:partNote10[]
+
+|
+|
+|OK1
+|AEDR-8300 optical encoder, 75 LPI
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=630-AEDR-8300-1K2.html[630-AEDR-8300-1K2]
+|
+
+|
+|
+|R1
+|220 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MF1/4DCT52R2200F.html[660-MF1/4DCT52R2200F]
+|
+
+|
+|
+|R2
+|2.7K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2701.html[660-MFS1/4DCT52R2701]
+|
+
+|
+|
+|R3
+|2.7K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2701.html[660-MFS1/4DCT52R2701]
+|
+
+|===
+
+
+Plunger Sensor (TCD1103 linear image sensor)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|C1
+|0.1uF capacitor, 25V, MLCC, SMD 0402
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=77-VJ0402Y104KXXCWBC.html[77-VJ0402Y104KXXCWBC]
+|
+
+|
+|
+|C2
+|10uF capacitor, 25V, aluminum electrolytic, SMD
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=710-865080440002.html[710-865080440002]
+|
+
+|
+|
+|IC1
+|Toshiba TCD1103GFG linear image sensor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=757-TCD1103GFG8ZAA.html[757-TCD1103GFG8ZAA]
+|
+
+|
+|
+|IC2
+|74HC04D hex inverter
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=771-HC04D652.html[771-HC04D652]
+|
+
+|
+|
+|JP1
+|Ribbon cable PCB connector, 2x4 position
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-91577-1308.html[538-91577-1308]
+| footnote:partNote10[]
+
+|
+|
+|JP2
+|2x04 pin IDC socket, mates with 0.1" pin header
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=710-61200823021.html[710-61200823021]
+| footnote:partNote10[]
+
+|
+|
+|Q1
+|2SA1162-Y PNP transistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=757-2SA1162-YLF.html[757-2SA1162-YLF]
+|
+
+|
+|
+|R1
+|150 Ohm resistor, SMD 0805
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=603-RC0805FR-07150RL.html[603-RC0805FR-07150RL]
+|
+
+|
+|
+|R2
+|150 Ohm resistor, SMD 0805
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=603-RC0805FR-07150RL.html[603-RC0805FR-07150RL]
+|
+
+|
+|
+|R3
+|2.2K resistor, SMD 8085
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=603-RC0805FR-072K2L.html[603-RC0805FR-072K2L]
+|
+
+|===
+
+Plunger Calibration Button (Standalone)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|S1
+|Illuminated momentary pushbutton switch, blue LED
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=612-WBL2UOABQR05CLR.html[612-WBL2UOABQR05CLR]
+|
+
+|
+|
+|Q1
+|2N4401 NPN transistor (TO92-EBC package)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=512-2N4401TFR.html[512-2N4401TFR]
+| footnote:partNote7[] 
+
+|
+|
+|R1
+|2.2K resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R2201.html[660-MFS1/4DCT52R2201]
+|
+
+|
+|
+|R2
+|82 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=603-MFR-25FRF52-82R.html[603-MFR-25FRF52-82R]
+|
+
+|===
+
+Plunger Calibration Button (Expansion Boards)Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|S1
+|Illuminated momentary pushbutton switch, blue LED
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=612-WBL2UOABQR05CLR.html[612-WBL2UOABQR05CLR]
+|
+
+|
+|
+|JP3
+|2x02 crimp pin wire housing, mates with 855-M20-9760246
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070200.html[855-M20-1070200]
+| footnote:connector[] 
+
+|===
+
+
+Williams Coin Door 13-pin Connector Board - version 2Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|C1
+|10uF electrolytic capacitor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=667-ECA-1EM100I.html[667-ECA-1EM100I]
+|
+
+|
+|
+|C2
+|10uF electrolytic capacitor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=667-ECA-1EM100I.html[667-ECA-1EM100I]
+|
+
+|
+|
+|IC1
+|LD1086BV-DG adjustable voltage regulator
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=511-LD1086BV-DG.html[511-LD1086BV-DG]
+|
+
+|
+|
+|JP1
+|Phoenix Contact screw terminal, 9 positions, 0.1" pitch
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=651-1725724.html[651-1725724]
+|
+
+|
+|
+|JP2
+|Phoenix Contact screw terminal, 4 positions, 0.1" pitch
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=651-1725672.html[651-1725672]
+|
+
+|
+|
+|JP3
+|Molex 13-pin header, 3.96mm pitch
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4130.html[538-26-60-4130]
+|
+
+|
+|
+|R1
+|120 Ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=660-MFS1/4DCT52R1200.html[660-MFS1/4DCT52R1200]
+|
+
+|
+|
+|R2
+|487 ohm resistor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=603-MFR-25FBF52-487R.html[603-MFR-25FBF52-487R]
+|
+
+|===
+
+
+Williams Coin Door 13-pin Connector Board - version 1Quantity:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Buy|Qty|ID|Description|Mouser #|Notes
+
+|
+|
+|C1
+|0.33uF electrolytic capacitor
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=710-860010772003.html[710-860010772003]
+|
+
+|
+|
+|C11
+|22uF capacitor (electrolytic, vertical, 2.5mm lead spacing)
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=667-ECA-1EM220I.html[667-ECA-1EM220I]
+|
+
+|
+|
+|JP1
+|1x10 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9991046.html[855-M20-9991046]
+|
+
+|
+|
+|JP2
+|1x02 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9990246.html[855-M20-9990246]
+|
+
+|
+|
+|JP3
+|1x02 pin header, vertical (0.1")
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9990246.html[855-M20-9990246]
+|
+
+|
+|
+|Q1
+|6.3V voltage regulator, 1.5A
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=513-NJM2396F63.html[513-NJM2396F63]
+|
+
+|
+|
+|X1
+|Molex 13-pin header, 3.96mm pitch
+| link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4130.html[538-26-60-4130]
+|
+
+|===
+
+xref:[Note 1] : You only need one USB cable to connect the KL25Z during routine use, but I recommend getting two. This lets you leave the programming port plugged in all the time, so you can install firmware updates without having to open up your cabinet and move cables around.
+
+xref:[Note 2] : Be aware that *you can't buy the TLC5940NT at Mouser* or other mainstream electronics suppliers, but you can still buy it on eBay and Aliexpress. Texas Instruments stopped manufacturing the chip many years ago, and the supply of genuine parts has long since dried up. Fortunately, that doesn't stop the "gray market" sellers on eBay and Aliexpress, and the chip continues to be readily available in those venues. The chip has been out of official production for so long that the ones you can buy now are almost certainly unauthorized knockoffs, and (as you might expect) the Dead-On-Arrival rate is reportedly pretty high lately. You might want to order extras in case you get bad chips in your batch. Unfortunately, there's no similar through-hole chip current available to use as a substitute, so we're stuck for now with the sometimes problematic knockoffs.
+
+xref:[Note 3] : This part is listed with a Molex connector, with a plain 1x2 pin header also included as an alternative. You can use either one, but the Molex connector is recommended because it has a friction lock that keeps the connected cable in place more securely. Plain 2-pin connectors in this size tend to come loose easily in a high-vibration environment like a pin cab.
+
+xref:[Note 4] : Any similar N-channel MOSFET can be substituted, so you can choose something based on price and availability. This part is used for logic circuit power switching, which is a basic task that many MOSFETs can perform. Substitutions must have the same physical package (TO-220-3) and pin layout (pins in G-D-S order) so that they'll fit the space on the PCB. In terms of electrical specs, the key features are low on-state resistance, in the 100 milli-Ohm range or below, and drain voltage (V~DS~ ) and current (I~D~ ) limits high enough for the output devices you plan to attach. We drive the gate with 12V, so the device must be fully switched on at 12V and V~GS~max~~ must be at least 12V. We recommend drain current limits of at least 6A @ 30V. These specs are fairly undemanding, so you should be able to find many options. Recommended alternatives: FQP30N06L (or almost anything in the FQPxxN06L series), BUK7575-55A.
+
+xref:[Note 5] : This resistor sets the current limit for the RGB flipper button LED outputs. Select a resistor according to the forward current of your LEDs. If you're using link:https://www.nicemite.com/[Lightmite] boards with two RGB LEDs, set this for 60mA.
+
+* 10mA → 4K ohm resistor
+* 20mA → 2.2K
+* 30mA → 1.3K
+* 40mA → 1K
+* 50mA → 780 ohms
+* 60mA → 680 ohms (use for Lightmites)
+
+xref:[Note 6] : Select a resistor according to the IR LED(s) used for the TV ON feature, if any. For the reference 100mA LED:
+
+* For one LED: use 39 ohms 1/2 Watt
+* For two LEDs in series: use 27 ohm 1/2 WattOmit the resistor if no LED will be connected.
+
+xref:[Note 7] : If you're in Europe, it might be more convenient to substitute transistor type BC337 for each 2N4401, and type BC327 for each 2N4403. The BC3xx types are reportedly easier to find in Europe. See xref:eurotrans.adoc[European Transistor Substitutions] .
+
+xref:[Note 8] : Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all of the TVs.
+
+xref:[Note 9] : The 1410R and 1412S are almost identical sensors. The Pinscape software is compatible with both. The key difference is that the 1412S has more pixels, which makes it slightly longer, as the pixel pitch is the same in both devices. The greater length of the 1412S allows more margin of error positioning the sensor, but it also means it takes up more space in the cabinet, which might constrain positioning for the playfield TV. Also, the 1412S is usually more expensive than the 1410R.
+
+xref:[Note 10] : This part is only needed if you plan to use a ribbon cable to connect the sensor to the expansion boards, or to the Plunger Breakout Board if you're using a standalone KL25Z. The ribbon cable is optional, as you can use hook-up wire instead. But I recommend the ribbon cable; it's easier to assemble and provides a cleaner data signal connection.
+
+xref:[Note 11] : This part is only needed if you're going to use my adapter circuit board (described in the plunger chapter), and you're going to use a ribbon cable to connect the sensor to the expansion boards or the Plunger Breakout Board. You can use individual hookup wires instead if you prefer, although the ribbon cable is easier if you're using the adapter board, and it provides a cleaner signal path for the high-speed data signals used by this sensor.
+
+xref:[Alternate] : This part is an optional substitution for the other listed part(s) for the same item. See the item notes for details.
+
+xref:[Exp. Boards Only] : This part is only needed if you're using the expansion boards. It's not needed for a stand-alone KL25Z setup.
+
+xref:[Connector] : A plug or socket designed to connect to a mating pin header (or the like) on one of the circuit boards. These are usually listed in the sections for the *connected* devices rather than with the circuit boards that they plug into. For example, the connector that plugs into the "plunger" header on the expansion board is listed in the parts section for the plunger rather than with the expansion board. We group them this way so that you only have to buy parts for the sections you're actually building.
+
+xref:[Connector Pins] : This is a set of contact terminals needed as part of the connector listed for the item.
+
+xref:[IC Socket] : Optional socket for IC. You can solder the IC directly to the circuit board if you prefer, or you can use a socket. The main benefit of a socket is that it makes it easy to replace a defective or damaged chip. Chips soldered directly to the board can be quite difficult to remove.

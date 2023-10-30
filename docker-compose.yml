@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  ruby:
+    image: ruby
+    volumes:
+      - ./book:/pinscape-build-guide/book:ro
+      - ./Gemfile:/pinscape-build-guide/Gemfile:ro
+      - ./dist:/pinscape-build-guide/dist
+      - ./.ruby-version:/pinscape-build-guide/.ruby-version:ro
+    working_dir: /pinscape-build-guide
+    entrypoint: /bin/bash

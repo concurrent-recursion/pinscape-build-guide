@@ -1,4 +1,0 @@
-
-
-image::resources/blueprint.png[""]
-

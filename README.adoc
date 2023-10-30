@@ -1,0 +1,12 @@
+= Pinscape Pinball Build Guide
+
+This project is an Asciidoc conversion of link:http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php?sid=toc[MJR's Pinscape v2 Build Guide]. Each chapter is a separate adoc file, and the main file that includes all of the chapters is `main.adoc` , it contains the book metadata and the processing directives that control the output.
+
+== Building the book
+
+This project uses Ruby to build the pdf, epub, and HTML versions of the book. In order to build this project, you will need to install ruby development environment
+
+. From the project directory
+. Run `bundle install` to install ruby dependencies
+. Run `make` to generate epub, pdf, and html. The book files will be created in the `/dist` directory
+
