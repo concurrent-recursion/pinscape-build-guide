@@ -1,0 +1,41 @@
+= VP Customizations Summary
+
+For your convenience in setting up a new cab, restoring a backup, or restoring settings up after a software update, here we present a quick summary of all of the VP customizations recommended throughout the book. You can find more details in the referenced chapters.
+
+== What/where are "VP core scripts"?
+
+Where we mention "VP core scripts", we're talking about the shared Visual Basic script files that most VP tables use. These are plain text files with names ending in *.vbs* , and you can find them in the *Scripts* sub-folder of your Visual Pinball install folder. You can use Notepad or a programmer's text editor of your choice to edit them.
+
+== Tilt bob
+
+Synopsis: Configure VP to work with a real tilt bob
+
+Details: xref:tilt.adoc#VPTiltBobConfig[Nudge & Tilt]
+
+Key encoder device setup: Program your key encoder to use the *T* key on the keyboard for your tilt bob input
+
+VP script setup:
+
+* If you're using VP version 10.4 or later, find the file *NudgePlugIn_mjrAccelAndTilt.vbs* in your VP Scripts folder, and rename it to *NudgePlugIn.vbs*
+* If you're using an older version of VP (before 10.4), download my link:http://mjrnet.org/pinscape/downloads/NudgePlugIn.vbs.html[NudgePlugIn.vbs] script and put it in your VP Tables folder. (Don't use this version with VP 10.4 or later - use the updated version that comes with VP instead.)
+
+== Coin door switch
+
+Synopsis: Configure VP to work with a real coin door switch
+
+Full details: xref:coinDoor.adoc#CoinDoorSwitchInVP[Coin Door]
+
+VP keyboard preferences: Run VP and bring up the keyboard dialog (select Preferences > Keys on the menu). Make sure that *Add Credit* is assigned to the *3* key, and that *Add Credit 2* is assigned to *4* .
+
+Key encoder setup: In your key encoder, assign the coin door switch to the *End* key on the keyboard, if possible, because that's VP's immutable default. If your key encoder can only send joystick button presses, that also works, but you must set the joystick button mapping in VP: bring up the *Keyboard* preferences dialog, find the *Coin door (End)* item, and select the appropriate joystick button number in the drop list.
+
+VP scripts: If you wired your coin door switch the recommended "new" way, as a simple On/Off switch rather than as some kind of "toggle mode" contraption, edit the core VP core script *VPMKeys.vbs* as follows.
+
+Find these original lines:
+
+toggleKeyCoinDoor = True' If true then...inverseKeyCoinDoor = False' If false then...
+
+...and change them to read:
+
+toggleKeyCoinDoor =False' If true then...inverseKeyCoinDoor =True' If false then...
+

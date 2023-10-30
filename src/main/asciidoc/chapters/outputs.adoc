@@ -1,0 +1,7 @@
+= Pinscape Feedback Outputs
+
+Extensive coverage of the various feedback toys, including what to buy and how to wire them, can be found in xref:feedbackSect.adoc[Feedback Devices] . That includes sections on wiring the Pinscape feedback output ports:
+
+*  xref:psOutputsExp.adoc[Pinscape Outputs Setup (Expansion Boards)]
+*  xref:psOutputsStandalone.adoc[Pinscape Outputs Setup (Standalone KL25Z)]
+

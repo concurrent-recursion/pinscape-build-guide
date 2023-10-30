@@ -1,0 +1,81 @@
+= Field Guide to Components
+
+Or, how to recognize electronic parts from quite a long way away. Here's a quick visual reference guide to the major components used in the Pinscape expansion boards. We'll cover each category in greater detail in the chapters that follow.
+
+Note that the example photos are just that - examples. All of these parts come in an almost infinite variety of shapes, sizes, and colors. These photos should at least look similar to most of the parts used in the Pinscape projects, but there's a lot of variation even in that limited scope, so don't worry if you don't see an exact picture of one of the parts you're using.
+
+[cols="1,1,1"]
+|===
+|Description|Examples|Schematic symbols
+
+| xref:resistors.adoc[Resistor]
+
+Resistance value in Ohms (Ω)
+
+| image:resources/miscResistors.png[""]
+
+|image:resources/schematic-resistor-1.png[""]
+
+| xref:capacitors.adoc[Capacitor (ceramic disc)]
+
+Capacitance value in Farads (F); ceramic capacitors are unpolarized
+
+|image:resources/miscDiscCaps.png[""]
+
+|image:resources/schematic-capacitor-unpolarized.png[""]
+
+| xref:capacitors.adoc[Capacitor (electrolytic)]
+
+Capacitance value in Farads (F); electrolytic capacitors are polarized (one lead is "+")
+
+|image:resources/miscElectrolyticCaps.png[""]
+
+|image:resources/schematic-capacitor-polarized.png[""]
+
+| xref:cmpdiodes.adoc[Diode]
+|image:resources/miscDiodes.png[""]
+
+|image:resources/schematic-diode-1.png[""]
+
+| xref:leds.adoc[LED] (light-emitting diode)
+|image:resources/misc-leds.png[""]
+
+|image:resources/schematic-led-1.png[""]
+
+| xref:transistors.adoc[Transistor (bipolar)]
+|image:resources/to-92.png[""]
+
+|image:resources/schematic-transistor-1.png[""]
+
+| xref:transistors.adoc#darlingtons[Transistor (Darlington)]
+|image:resources/miscDarlingtons.png[""]
+
+|image:resources/schematic-darlington-1.png[""]
+
+| xref:mosfets.adoc[Transistor (MOSFET)]
+|image:resources/to-220.png[""]
+
+|image:resources/schematic-mosfet-1.png[""]
+
+| xref:icchips.adoc[Integrated Circuit (IC) chip]
+|image:resources/misc-ics.png[""]
+
+|image:resources/SchematicTLC5940NT.png[""]
+
+| xref:icchips.adoc#ic-PC817[Optocoupler]
+|image:resources/pc817-small.png[""]
+
+|image:resources/schematic-opto-1.png[""]
+
+| xref:relays.adoc[Relay]
+|image:resources/miscRelays.png[""]
+
+|image:resources/schematic-relay-1.png[""]
+
+| xref:pinHeaders.adoc[Pin headers]
+|image:resources/pinHeaderSample.png[""]
+
+|image:resources/schematic-pinheader-1.png[""]
+
+|===
+

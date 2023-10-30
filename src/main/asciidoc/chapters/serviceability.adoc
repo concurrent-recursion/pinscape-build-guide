@@ -1,0 +1,66 @@
+= Serviceable Design
+
+Real pinball machines have numerous design elements that are there purely for the sake of serviceability - that is, to make the machines easier to repair, upgrade, and maintain. These features are often the products of a series of refinements that wouldn't have been obvious without experience, and a lot them are hidden, internal features that you wouldn't even realize are there when you're just playing the games.
+
+It's not surprising that serviceability is such a high priority for the pinball manufacturers when you consider who their customer is. The thing to realize is that players are _not_ their customer. Players are only the "end users". The _customer_ is the commercial operator who buys the machines for their arcades and routes. The player mostly wants machines that are fun to play. An operator certainly cares about that, too, because an arcade game earns quarters by being fun to play. But what the operator cares even more about is high reliability and low repair costs. A machine that's down for repairs isn't earning quarters no matter how much fun it is.
+
+Some of things that they do in real pinball machines to make them serviceable translate readily into the world of virtual cabs, where we can copy them to get the same benefits. But new virtual cab builders are often unaware of how the real machines work, so they don't know there's a good design they can copy - instead they make things up as they go. And of course the first time you build _anything_ , you're likely to come up with quick-and-dirty ways to solve immediate problems without considering the longer-term costs. So I want to point out a few of the serviceability features in the real machines that we can leverage for virtual use, so that you're aware of them, and so you can keep them in mind as you plan your build.
+
+== What makes a machine serviceable
+
+Before we get to implementation details, let's look at what serviceability really means in the abstract. These are what I consider the key goals of a serviceable design:
+
+* Accessibility. You should be able to access everything in the machine easily, without having to destroy anything, without having to de-construct anything, and ideally without any tools.
+* Modularity. You should be able to remove and replace most individual parts or subsystems without having to destroy anything, and with as little work as possible. Electrical connections should be pluggable, for example, rather than being hard-wired or soldered; parts should be secured with removable/reusable fasteners like screws, rather than permanently glued or nailed.
+
+== Specific recommendations
+
+With the abstract goals above in mind, here are some concrete recommendations for how to achieve them, based in part on how the real machines accomplish the same ends. Things are different in a virtual cab, naturally, but some of the ideas from the real machines carry over surprisingly well.
+
+=== Liftable playfield
+
+The real machines are set up so that the playfield can be tilted up from the front and lifted all the way up to lean against the backbox. This lets you access the entire interior of the main cabinet and the entire underside of the playfield _without taking anything apart_ . It's like popping the hood of a car to get to the engine. It lets you get in and out quickly. Minor jobs remain minor because it only takes a few seconds to open the machine up.
+
+In my opinion, this is the ideal way to arrange a virtual cab as well. Accessing the interior of the main cabinet is at least as important in a virtual cab as a real machine, as that's where we typically install the PC motherboard and most of the feedback devices. In the virtual cab, it's the main TV (in place of the playfield) that needs to tilt up and out of the way like a car hood.
+
+This is why I always advise against any design that involves the main TV being difficult or impossible to remove, such as installing the TV in routed grooves along the side walls.
+
+=== Removable TVs
+
+On the real machines, the playfield not only tilts up and out of the way, but can also be removed entirely. They even make this fairly easy: the playfield isn't actually permanently attached, but is only resting on the pivots that let it tilt up, so remove it is just a matter of lifting it off the pivots.
+
+In a virtual machine, it's equally important to make the TVs removable. They are of necessity at the very front of every part of the machine, so you need to get past them to get to anything else. If it's hard to remove any of the TVs, it's hard to service what's behind it.
+
+For the playfield TV, the ideal as far as I'm concerned is to installed it analogously to a real playfield, with the same ability to tilt it up for smaller jobs and remove it entirely for larger jobs.
+
+The backbox TV(s) should likewise be removable, and like the playfield TV, this should be possible without a lot of disassembly and certainly non-destructively (meaning you shouldn't have to rip off the sides or cut any new holes anywhere).
+
+If you're using a separate DMD TV, that should of course be removable as well. This one is usually easy to make modular, at least, since it's so small.
+
+=== Foldable backbox
+
+On the real machines, the backbox is attached to the main body with a hinge that lets it fold forward, so that it lies flat on top of the main cabinet. This is a key feature to make it practical to transport the machine, since it's too tall, top-heavy, and fragile to move it with the backbox upright.
+
+Some pin cab builders figure that they can just remove the backbox if they ever need to move the machine. Consider the amount of wiring that you'd have to disconnect to do that, and the risk of breaking something when redoing the wiring. If a folding backbox is impossible because of the geometry of your backbox TV, then at the very least, be sure that the wiring connectors are all modular, so that it's quick and reliable to reconnect the wiring.
+
+=== Modular wiring connectors
+
+Real pinball machines have lots of wiring internally, with many interconnections. (Stern Pinball has estimated that there's about half a mile of wire in a typical Stern machine from the 2000s. It might even be a bit higher in the 1990s machines, since they used lower-tech electronics to implement a similar feature complexity.) The real machines deal with their many connection points mostly by using plug-and-socket connectors.
+
+In the 1990s machines, they made heavy use of a few different connector types made by Molex. You see the term "Molex connector" used almost generically as though it referred to some specific physical plug type, but it's actually a particularly unhelpful term when you're searching for parts. Molex the company makes a huge array of diverse connector types, so "Molex connector" can refer to all sorts of things. If you want to be helpful when describing a particular connector to someone, you need to give them a Molex part number or at least the Molex product line name.
+
+Pluggable connectors of the sort used in the real machines have two important virtues:
+
+* You can easily connect and disconnect them at any time
+* You can't get a connection wrong when re-connecting something, because the plug only fits in the one place where it's supposed to go
+
+Most virtual pin cab builders intuitively recognize the important of modular wiring - of using some kind of removable connectors rather than soldering everything together permanently. But many new pin cab builders gravitate towards screw-terminal blocks, and in my opinion, those don't quite achieve the full goal here. Terminal blocks do avoid the need for permanently soldered connections, so they address the first point above right, but they miss the mark on the second point. Consider what happens if you have a couple of terminal blocks for wiring a particular part, and you disconnect the wiring: where do the wires go when it's time to reconnect them?
+
+Proper pluggable connectors of the sort we're talking about are definitely a bit more work to set up than screw terminals. But they're great once they're in place, because you can arrange things so it's practically impossible to plug things in the wrong way. These connectors can also be time-consuming to select during the design phase, because there are so many options available. I'm convinced you could build a nice engineering career on a solid knowledge of the Molex catalog and of which connector to use when. I've tried to make your job here a little easier via pointers to some good basic options in xref:connectors.adoc[Connectors] .
+
+There are three clever techniques used in the real machines to make the connections "idiot-proof", which are worth cribbing when you're wiring your virtual cab:
+
+* Whenever possible, use a unique connector type. It's impossible to plug a nine-prong Molex .062" plug into an eight-prong socket. If there's only one nine-prong Molex .062" plug and one nine-prong socket in the whole build, that's one connection that you can't plug back in to the wrong place.
+* Wherever you have to use the same connector type more than once, use a "keyed" connector. That means that you snip off one pin on the plug side, and block the corresponding socket on the receptacle side. If you try to plug the wrong 9-pin plug into the wrong 9-pin receptacle, that wrong plug won't have the right pin clipped, so it won't fit into the blocked socket.
+* Use plug-and-socket connectors that only plug in one way, so that you can't accidentally plug something in backwards. You get this benefit automatically for connector types that have asymmetrical shapes. All of the Molex .062 and .093 connectors are inherently designed this way, for example.
+

@@ -1,0 +1,108 @@
+= Tools
+
+You'll need a few tools to build the Pinscape projects. Most of these are the basics that you'd need for any electronics project. This section lists what you'll need and has some recommendations for the more specialized items.
+
+== Where to buy
+
+link:https://www.pololu.com/[Pololu] is a great resource for specialized electronics tools. They hand-pick everything they sell specifically for its utility to robotics and Arduino hobbyists, which makes it much easier to find suitable items here than at a general retailed like Amazon, where you have to sort through a lot of less relevant offerings.
+
+link:https://www.amazon.com/[Amazon] , has a much wider range of options than a specialized shop like Pololu, which is both a plus and a minus - a minus in that it's harder to find the items that are particularly for our kind of project.
+
+Hardware stores and home stores like Home Depot and Lowe's are good sources for the basic hardware items like screwdrivers and pliers. They're not as good for electronics tools, since they don't carry many of those in the first place, and what they do carry is aimed at electricians doing house wiring rather than at computer-type electronics.
+
+== Miscellaneous workspace tools
+
+Good things to have on hand in your work area:
+
+* Magnifying glass
+* Strong light
+
+== Screwdrivers
+
+A good basic assortment of screwdrivers is pretty essential in everyday life, so you probably already have this one covered. You'll just need a range of sizes of Phillips and flat-head screwdrivers.
+
+For electronics projects, the smaller sizes are most useful, particularly Philips #1 and #2. It's also helpful to have a set of small optician/eyeglass screwdrivers on hand.
+
+== Needle-nose pliers
+
+Another toolbox basic. You don't need anything special here; a basic set from a hardware store should be fine.
+
+== Tweezers
+
+Not essential, but handy to have when assembling circuit boards. Look for the anti-static (ESD safe) type - that will turn up options suitable for electronics work. I find the type with a curved or angled tip especially useful.
+
+== Wire cutters
+
+This is another everyday toolbox basic, but the type in your toolbox might be more suited for the large-gauge wire used in house wiring. You might want to pick up a smaller cutter more suited to the small-gauge (20-24 AWG) used for most Pinscape and pin cab wiring. Look for a "flush cut" type. Hakko makes a few "micro cutters" that work nicely.
+
+== Wire stripper
+
+This is a tool that removes the insulation from a length of wire. This is another one that you might have in your toolbox for everyday jobs around the house, but as with wire cutters, the one in your toolbox might be mostly for larger-gauge house wiring. Look for a wire stripper that has slots specifically for wire gauges 16, 18, 20, 22, and 24.
+
+== "Dupont" cables
+
+For testing purposes, it's extremely handy to have a collection of "Dupont" cables on hand. These are hookup wires with male and/or female 0.1" pin header connectors attached at each end. They're great for testing the expansion boards, because they make it easy to test a connection to any individual pin on any header. Most of the connectors on the expansion boards use the same 0.1" pins that the Dupont connectors are for.
+
+You can find sets of these cables on eBay for extremely cheap, if you're willing to wait a month for shipping from China. The same cables are also available at all of the hobby robotics Web stores - Pololu, SparkFun, Adafruit, etc, and of course from Amazon. Search for "Dupont cable" at any of those sites. You'll also see them described as "breadboard jumper wires".
+
+Pick up a full set with all of the gender combinations - male-to-male, female-to-female, and male-to-female.
+
+== Alligator clip cables
+
+Also for testing purposes, you might want to pick up a set of cables with "alligator clips" at the ends. Alligator clips are just little spring-loaded metal clips that you can connect to wires, pins, and terminals of just about any kind, so they're great for making temporary, ad hoc connections when testing.
+
+You can find these at all of the same places where the Dupont cables are sold.
+
+== Voltmeter/Multimeter
+
+It's not strictly necessary as a build tool, but a multimeter is pretty essential for debugging. All of my EE friends swear by their Fluke meters, and I agree that they're probably the best. But the Fluke meters are really expensive, and my own experience is that the cheaper brands are just fine for hobbyist electronics like a pin cab project. You can find perfectly good meters for under $20.
+
+Look for a model that can measure the following:
+
+* Volts DC
+* Volts AC
+* milliAmps/Amps DC
+* Ohms (resistance)
+* Continuity testing (preferably with an audible signal)
+
+The cheapest models have "manual ranging", meaning that you have to set a dial to a range of values that you want to measure. For example, the dial might have a series of DC voltage settings with labels labels like 100mV, 1000mV, 10V, 100V, etc. This means that you have to set the dial to the range you expect to measure. In contrast, an auto-ranging meter has a single dial setting for "Volts DC", and automatically figures out the right range to use to display each reading.
+
+I'd recommend going with an auto-ranging meter, since they're easier to use, and they're not much more expensive than the manual type.
+
+[#solderingTools]
+== Soldering tools
+
+You'll need a soldering tool of some kind for just about any pin cab build. If you're building the Pinscape expansion boards or any other circuit boards, you'll obviously be doing some soldering work. But even if you're not building any circuit boards, you'll probably run into at least a few places in your cab where you'll need to solder a couple of wires together or solder a wire to a terminal.
+
+There are two very different types of soldering tools: soldering irons and soldering stations. A soldering iron is a cheap tool (about $10) for household jobs; a soldering station is a more expensive professional tool ($100 and up) for electronics work.
+
+A soldering iron is fine if you're not building any circuit boards; it'll be adequate for a few miscellaneous connections in a cab. If you're planning to do any circuit board assembly, however, I strongly recommend investing in a soldering station. This is one of those cases where the right tool makes the job much easier, and makes your work product much better.
+
+The big difference between a soldering station and an iron is that a station has a thermostat that precisely maintains a temperature on the tip, and has an adjustable temperature setting. This alone makes a world of difference, since having the tip at a consistent temperature makes the solder behave predictably. Soldering stations also heat up much more quickly than irons, typically in 30-60 seconds, and they tell you when they're ready, so there's less waiting around and no guesswork. The stations also tend to use much higher quality tips than basic soldering irons do, and the tips can be changed for different types of work.
+
+There are two models in the $100 range that seem to be the "standards" among hobbyists: the *Hakko FX888D* and the *Weller WE1010NA* . Both have similar features and are widely used. I use the Hakko and have been quite happy with it.
+
+=== Desoldering pump ("solder sucker")
+
+This is a tool to _remove_ solder, so that you can remove a previously soldered part (to replace a dead part, for example) or just remove excess solder if you apply too much.
+
+This is more of a nice-to-have than a must, but it can come in handy.
+
+The type I've had the best luck with is what's known as a manual de-soldering pump or "solder sucker". This is a fairly cheap tool, but pretty effective. You can find these on Amazon for $10 to $25.
+
+The other cheap option is "solder wick", which is supposed to soak up solder, but I've never had very good luck with this.
+
+There are also dedicated de-soldering stations, with powered solder pumps. These are in the same price class as soldering stations, so I wouldn't buy one for occasional hobby electronics. But I'd definitely consider one if I did a lot of repair work, since the manual tools require a great deal of patience when they work at all. The powered de-soldering stations are supposed to be vastly better, as power tools usually are.
+
+=== Solder
+
+It might seem like "solder is solder", but some types of solder actually work much better than others. This is another case where the right tool will give you better results regardless of skill level.
+
+The reason for the variability is that solder is actually a pretty complicated formulation. It's a mixture of metal alloys and "flux", which is a chemical that affects how the solder behaves when melted. The mixture of metals controls the melting point of the solder, and the flux controls how the molten solder flows, coheres, and and adheres to wires and surfaces. Different formulations are appropriate for different jobs; the type you'll find at Home Depot really doesn't work all that well for fine electronics work.
+
+My top pick is *Kester 44 Rosin Core 63/37* solder in the .031" size. This is an all-around great solder for circuit board work.
+
+== Crimp tool
+
+If you're planning to assemble any hand-made connectors using crimp-pin housings, a crimping tool is essential. See xref:crimpPins.adoc[Crimp Pins] for tool recommendations.
+

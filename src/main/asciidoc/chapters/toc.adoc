@@ -1,0 +1,276 @@
+
+
+xref:preliminaries.adoc[Part One.Preliminaries] image:resources/startButton.jpg[""]
+
+xref:intro.adoc[1{empty}.Preface]
+
+xref:whatIs.adoc[2{empty}.What is a pin cab?]
+
+xref:architecture.adoc[3{empty}.A Visual Guide to the Virtual Pinball Cabinet]
+
+xref:resources.adoc[4{empty}.Resources]
+
+xref:cabPlanning.adoc[Part Two.Planning and Building the Cabinet] image:resources/blueprint.png[""]
+
+xref:roadmap.adoc[5{empty}.Road Map]
+
+xref:serviceability.adoc[6{empty}.Serviceable Design]
+
+xref:playfieldTV.adoc[7{empty}.Selecting a Playfield TV]
+
+xref:backboxTV.adoc[8{empty}.Selecting a Backbox TV]
+
+xref:dmdDevice.adoc[9{empty}.Selecting a DMD Device]
+
+xref:pc.adoc[10.Designing the PC]
+
+xref:powerSwitching.adoc[11.Power Switching]
+
+xref:ioControllers.adoc[12.I/O Controllers]
+
+xref:pcsetup.adoc[13.PC Hardware Setup]
+
+xref:windows.adoc[14.Windows Setup]
+
+xref:software.adoc[15.Pinball Software Setup]
+
+xref:b2s.adoc[16.Backglass Software Setup]
+
+xref:optimizing.adoc[17.Optimizing Performance]
+
+xref:tableFixup.adoc[18.Customizing VP Tables]
+
+xref:cabTools.adoc[19.Cabinet Building Tools]
+
+xref:cabParts.adoc[20.Cabinet Parts List]
+
+xref:cabBody.adoc[21.Cabinet Body]
+
+xref:cabArt.adoc[22.Cabinet Art]
+
+xref:cabHardware.adoc[23.Cabinet Hardware Installation]
+
+xref:backboxHardware.adoc[24.Backbox Hardware Installation]
+
+xref:cabGrounding.adoc[25.Cabinet Grounding]
+
+xref:insideTheCab.adoc[26.Inside the Cabinet]
+
+xref:pcInstall.adoc[27.Installing the PC]
+
+xref:fans.adoc[28.Cooling Fans]
+
+xref:playfieldMounting.adoc[29.Playfield TV Mounting]
+
+xref:backboxTVInstall.adoc[30.Backbox TV Mounting]
+
+xref:dmdAssembly.adoc[31.Speaker/DMD Panel]
+
+xref:dmdAssemblyOriginal.adoc[32.Original WPC Speaker Panel]
+
+xref:dmdAssemblyWPC95.adoc[33.WPC-95 Speaker Panel]
+
+xref:cabButtons.adoc[34.Cabinet Buttons]
+
+xref:cabButtonWiring.adoc[35.Button Wiring]
+
+xref:tilt.adoc[36.Nudge & Tilt]
+
+xref:plunger.adoc[37.Plunger]
+
+xref:plungerSetup.adoc[38.Plunger Setup on the PC]
+
+xref:tablePlungerFixup.adoc[39.Fixing VP Plungers]
+
+xref:coinDoor.adoc[40.Coin Door]
+
+xref:audio.adoc[41.Audio Systems]
+
+xref:toppers.adoc[42.Backbox Toppers]
+
+xref:extras.adoc[43.Finishing Touches]
+
+xref:feedbackSect.adoc[Part Three.Feedback Devices] image:resources/feedback.png[""]
+
+xref:feedbackDevices.adoc[44.Feedback Devices Overview]
+
+xref:powerSupplies.adoc[45.Power Supplies for Feedback]
+
+xref:DOF.adoc[46.DOF Setup]
+
+xref:feedbackWiring.adoc[47.Feedback Device Wiring]
+
+xref:psOutputsExp.adoc[48.Pinscape Outputs Setup (Expansion Boards)]
+
+xref:psOutputsStandalone.adoc[49.Pinscape Outputs Setup (Standalone KL25Z)]
+
+xref:ledwiz.adoc[50.LedWiz Setup]
+
+xref:sainsmart.adoc[51.SainSmart Relay Board Setup]
+
+xref:ledResistors.adoc[52.LED Resistors]
+
+xref:diodes.adoc[53.Coil Diodes]
+
+xref:coilTimers.adoc[54.Coil Timers]
+
+xref:buttonLamps.adoc[55.Button Lamps]
+
+xref:flashers.adoc[56.Flashers and Strobes]
+
+xref:beacons.adoc[57.Beacons]
+
+xref:lightStrips.adoc[58.Undercab Lighting]
+
+xref:contactors.adoc[59.Flippers, Bumpers, and Slingshots]
+
+xref:knockers.adoc[60.Replay Knockers]
+
+xref:shakers.adoc[61.Shaker motors]
+
+xref:gearMotors.adoc[62.Gear motors]
+
+xref:blowers.adoc[63.Fans]
+
+xref:chimes.adoc[64.Chimes and Bells]
+
+xref:addressableLightStrips.adoc[65.Addressable Light Strips]
+
+xref:electronics.adoc[Part Four.A Crash Course in Electronics] image:resources/electronics.png[""]
+
+xref:elecOverview.adoc[66.Electronics Overview]
+
+xref:staticSafety.adoc[67.Static Electricity Precautions]
+
+xref:pcbTips.adoc[68.Circuit board assembly tips]
+
+xref:compov.adoc[69.Field Guide to Components]
+
+xref:schematics.adoc[70.Schematics]
+
+xref:wire.adoc[71.Wire]
+
+xref:resistors.adoc[72.Resistors]
+
+xref:capacitors.adoc[73.Capacitors]
+
+xref:cmpdiodes.adoc[74.Diodes]
+
+xref:leds.adoc[75.LEDs]
+
+xref:relays.adoc[76.Relays]
+
+xref:transistors.adoc[77.Transistors]
+
+xref:mosfets.adoc[78.MOSFETs]
+
+xref:icchips.adoc[79.IC Chips]
+
+xref:connectors.adoc[80.Connectors]
+
+xref:pinHeaders.adoc[81.0.1" Pin Headers]
+
+xref:crimpPins.adoc[82.Crimp Pins]
+
+xref:ribbonCables.adoc[83.Ribbon Cables]
+
+xref:fuses.adoc[84.Fuses]
+
+xref:psc.adoc[Part Five.The Pinscape Controller] image:resources/mainboardCloseup.png[""]
+
+xref:pscOverview.adoc[85.Pinscape Controller Overview]
+
+xref:expan.adoc[86.Expansion Boards Overview]
+
+xref:psTools.adoc[87.Tools]
+
+xref:kl25zHardwareSetup.adoc[88.KL25Z Hardware Setup]
+
+xref:kl25zSoftwareSetup.adoc[89.KL25Z Software Setup]
+
+xref:statusLights.adoc[90.KL25Z Status Lights]
+
+xref:partslist.adoc[91.Electronic Parts List]
+
+xref:eurotrans.adoc[92.European Transistor Substitutions]
+
+xref:expanFab.adoc[93.Fabricating the Expansion Boards]
+
+xref:expanAssembly.adoc[94.Building the Expansion Boards]
+
+xref:expanPower.adoc[95.Expansion Board Power Cables]
+
+xref:expanTest.adoc[96.Initial Expansion Board Testing]
+
+xref:expanDebug.adoc[97.Debugging the Expansion Boards]
+
+xref:expanConnect.adoc[98.Connecting the Expansion Boards]
+
+xref:nudge.adoc[99.Accelerometer (Nudge) Setup]
+
+xref:plungerBreakout.adoc[100.Plunger Sensor Breakout Board]
+
+xref:tsl1410.adoc[101.Plunger Setup (TSL1410R Optical Sensor)]
+
+xref:pot.adoc[102.Plunger Setup (Potentiometer)]
+
+xref:VCNL4010.adoc[103.Plunger Setup (VCNL4010 Proximity Sensor)]
+
+xref:aedr8300.adoc[104.Plunger Setup (AEDR-8300 Encoder)]
+
+xref:tcd1103.adoc[105.Plunger Setup (TCD1103)]
+
+xref:vl6180x.adoc[106.Plunger Setup (VL6180X Distance Sensor)]
+
+xref:calbtn.adoc[107.Pinscape Plunger Calibration Button]
+
+xref:plungerConfig.adoc[108.Pinscape Config Tool Plunger Setup]
+
+xref:zblaunch.adoc[109.ZB Launch Ball]
+
+xref:buttons.adoc[110.Pinscape Button Inputs]
+
+xref:outputs.adoc[111.Pinscape Feedback Outputs]
+
+xref:irRemote.adoc[112.IR Remote Control]
+
+xref:nightmode.adoc[113.Pinscape Night Mode]
+
+xref:tvon.adoc[114.TV ON Switch]
+
+xref:troubleshooting.adoc[115.Troubleshooting]
+
+xref:appendices.adoc[Appendices] image:resources/appendix.png[""]
+
+xref:kl25zPinOut.adoc[Appendix 1.KL25Z Pin Out]
+
+xref:modSummary.adoc[Appendix 2.VP Customizations Summary]
+
+xref:plungerTech.adoc[Appendix 3.Plunger Sensor Technical Notes]
+
+xref:magnaSaveButtons.adoc[Appendix 4.Tables with MagnaSave Buttons]
+
+xref:dofDeviceList.adoc[Appendix 5.DOF Config Tool Device Descriptions]
+
+xref:dofEventCodes.adoc[Appendix 6.DOF Event Codes]
+
+xref:CustomizeDOF.adoc[Appendix 7.Customizing a table's DOF effects]
+
+xref:CoinDoorBoardPlans.adoc[Appendix 8.Coin Door Interface Board]
+
+xref:plywoodCuttingPlans.adoc[Appendix 9.Plywood Cutting Plans for Cabinet Construction]
+
+xref:cabBodyQuickRef.adoc[Appendix 10.Cabinet Construction Quick Reference]
+
+xref:woodworkingTips.adoc[Appendix 11.A Few Woodworking Tips]
+
+xref:lockMiterI.adoc[Appendix 12.Lock Miter I: The Plywood-Friendly Way]
+
+xref:lockMiterII.adoc[Appendix 13.Lock Miter II: The Special Router Bit Way]
+
+xref:cornerBraceCutting.adoc[Appendix 14.How to Make Corner Braces (and other wood prism shapes)]
+
+xref:shakerPlan.adoc[Appendix 15.A DIY shaker motor plan]
+
+xref:endnotes.adoc[End Notes]
+

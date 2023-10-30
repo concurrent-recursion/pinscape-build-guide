@@ -1,0 +1,102 @@
+= Road Map
+
+Building a virtual pin cab is a big project. You shouldn't go into it thinking it's the light work of a couple of weekends. But it's also not an impossibly huge job, even though it can seem that way at times - especially during the research phase when you're trying to get your arms around all of the details.
+
+Good organizers always say that the way to tackle a big job is to break it down into smaller pieces until the pieces are manageable. So let's look at the main sub-tasks that go into a pin cab build.
+
+You don't have to attack these sub-tasks in the exact order listed here. Even so, we've tried to put things in a reasonable order that'll make the build process efficient. Some tasks are easier if others have been completed first, so you might find yourself backtracking or putting a job on hold if you tackle some of the later tasks on our list before completing some of the earlier ones.
+
+== Decide on the cabinet dimensions and TV size
+
+You don't have to plan out your entire system in advance, but one thing you should settle early is the overall scale of your build and the size of TV you're going to use. Many other decisions depend upon the exact cabinet dimensions and the amount of space the TV will occupy, so you'll save yourself a lot of backtracking if you have hard numbers for these from the very beginning.
+
+The thing that makes TV sizing tricky is that you can only buy TVs in certain sizes. Ideally, you'd be able to design and build your cabinet without giving too much thought to a TV, and then just drop in a suitable TV when the time comes. But when that time comes, you might find that all of the models you like are 1" too wide to fit, and the next size down is 4" narrower than you wanted.
+
+This leads some cab builders to start by picking a TV, and then tailor the cabinet to fit the TV like a glove. But that's not for everyone. If you plan to re-use an old pinball cabinet or buy an off-the-shelf cabinet kit, you're stuck with standard dimensions. You might also want to use standard dimensions for the sake of faithful simulation, or simply because the cabinet hardware parts (lockdown bars, side rails) are cheapest and easiest to find in the standard sizes.
+
+The same issues apply to a lesser extent to the backbox TV, although most cab builders aren't as concerned about an exact fit here since it's hardly the focal point of the game. My advice is to figure out the backbox TV separately after deciding on the main TV and cabinet dimensions.
+
+We go into this in more detail in xref:playfieldTV.adoc[Selecting a Playfield TV] .
+
+== Go shopping
+
+Once you know the basic scale of your system, you can start buying the main components. We provide a master part list for a fully decked-out cabinet in xref:cabParts.adoc[Cabinet Parts List] . You can choose a subset from that list that fits your own goals and budget.
+
+Even with our master parts list to work from, you'll still have to do some original research, particularly for selecting the TV monitors and the PC components. There are too many options for both to allow simple one-size-fits-all recommendations, plus those product categories move so quickly that any concrete advice we could offer would be obsolete before you read this. Fortunately, apart from the TV and PC, a lot of the rest of the cabinet can be built out of standard parts. The real pinball machine manufacturers were very cost-conscious, which drove them to build their games on common platforms with mostly interchangeable parts. The exterior shell of a virtual cab is almost identical to a real pinball (or can be, at least, depending on your design goals), so we can build our cabs out of those same interchangeable parts.
+
+== Build the PC
+
+Now that you have some of the groundwork laid, you can start actually building something. Most cab builders like to start with the PC, probably because it's the most familiar territory to PC gamers. Plus it provides some (relatively) instant gratification, since it doesn't take too much work to get a new PC up and running.
+
+If you've ever built your own desktop PC from scratch, you'll know exactly what's involved in building the PC inside your pin cab. The main work required is the research needed to pick out the parts: motherboard, CPU, graphics card, power supply, memory, hard disk. We'll tell you all the parts you need in xref:pc.adoc[Designing the PC] , and we'll offer some advice about how to select them, but you'll still have to do the research to select the exact components you want. Once you pick out the parts, it's pretty easy these days to do the actual assembly.
+
+== Set up the main PC software
+
+The next step after building the PC is usually installing the core software, including the operating system and some pinball simulators. Most of the popular pinball software runs only on Windows, so that's the OS that almost all pin cabs use. We'll cover how to install the main pinball players in xref:software.adoc[Pinball Software Setup] .
+
+== Build the cabinet body
+
+Now we come to the cabinet itself, in the literal sense of the wood box that houses everything. This part of the build can be as simple as buying a new or used cabinet that's already assembled, or as elaborate as doing the woodworking from scratch. We'll cover the various options in xref:cabBody.adoc[Cabinet Body] .
+
+== Design and install the artwork
+
+A pin cab is a significant piece of furniture to have in your house, so it's worth putting some effort into its exterior appearance. Some cab builders opt for a natural wood look to better fit in a domestic environment, and some choose a simple one-color paint job. For most of us, though, the aim is to replicate the look of a real pinball machine, which means using custom artwork in the distinctive graphic style of the real machines. One great way to get a thoroughly authentic look is with digitally printed decals. We'll cover the options in xref:cabArt.adoc[Cabinet Art] .
+
+This is one of those steps where the order is fairly important. You'll want to get the artwork in place before you start installing the cabinet hardware or any of the insides of the machine.
+
+== Assemble the cabinet hardware
+
+Once you have the wood shell of the cabinet built and finished with artwork, you can install the "hardware" - the side rails, lockdown bar, coin door, legs, and the parts that attach the backbox to the main body. We'll go over the standard equipment and how to install it all in xref:cabHardware.adoc[Cabinet Hardware Installation] .
+
+== Set up your power supplies
+
+You'll need a standard PC power supply to power the motherboard and other PC components. If you're installing any feedback devices, you'll need additional power supplies for those. We'll explain what you need in terms of power supplies for the various components in xref:powerSupplies.adoc[] .
+
+Most cab builders also like to set up a power distribution system that turns power on and off across the whole system with a single button. We'll explain how to do this in xref:powerSwitching.adoc[Power Switching] .
+
+This is all basic infrastructure that the rest of your system will depend upon, so it's a good idea to get this figured out and installed now, before installing any of the electronics. Another reason to do this early is that the power supplies take up a lot of space - it's good to reserve the space they'll need early so you don't find yourself having to move things around later to make room.
+
+== Install the PC in the cabinet
+
+You can now finalize the PC installation inside the cab body. If you haven't already put together the computer components, this is a good time to finish that up.
+
+Mounting the PC in the cabinet is usually straightforward. The main decision to make is what kind of enclosure you want to use: some people use a regular desktop case, but most cab builders use the cabinet itself as the "case", simply mounting the motherboard and other components to the cabinet floor or walls. We cover the possibilities in xref:pc.adoc[Designing the PC] .
+
+== Install the TVs
+
+I think it's better to get the TV installed fairly early in the build process, but a lot of cab builders feel it needs to go in last, because it covers the whole top of the cabinet.
+
+In either case, you should at least map out exactly where the TV will go before getting too much further, so that you can plan around its space requirements when installing everything else.
+
+My recommendation is to install the TV in such a way that it can be easily removed at any time. If you do that, you can get everything in place for it early on, which will give you a very concrete idea of the space you need to carve out for it in the cab. But you can leave it out of the cab while installing the power supplies and feedback systems, so that you have easy access to the interior, knowing that you can pop the TV back in place when the time comes. And if you make the install/uninstall process easy enough, you can pop it in just to test clearances and fit from time to time.
+
+We'll look at options for installing the playfield TV, including advice about how to maintain easy access to the cabinet, in xref:playfieldMounting.adoc[Playfield TV Mounting] . That chapter includes a detailed plan for how to install the TV that achieves the goal of easy installation and removal, as well as allowing access to the cabinet interior for most jobs without even removing the TV.
+
+Most cabs also have a second and possibly third TV in the backbox, for the backglass and score/DMD display. We'll look at how to install those in xref:backboxTVInstall.adoc[Backbox TV Mounting] and xref:dmdAssembly.adoc[Speaker/DMD Panel] .
+
+== Install buttons
+
+You'll probably want to install and wire your cabinet buttons shortly after getting the cabinet assembled and the PC working, both for the sake of early play testing and because it's easier to do the installation work while the cabinet is still fairly empty. We'll go over which buttons you need and how to install them in xref:cabButtons.adoc[Cabinet Buttons] .
+
+== Set up I/O controllers
+
+I/O controllers are separate components - usually USB devices - that handle the connections between the PC and the unique devices in a virtual pin cab: buttons, plunger, accelerometer (for nudging), flashing lights, and mechanical and tactile feedback devices.
+
+You don't have to set up all of the I/O controllers or functions at once. At this stage in the build, though, you'll at least want to set up the button input controller (also known as the key encoder), so that you can test out the newly installed cabinet buttons.
+
+We'll look at the various controller functions and which devices you need in xref:ioControllers.adoc[I/O Controllers] .
+
+== Install a plunger
+
+The plunger can be installed at any point in the build, but you'll want to get it in place before you finalize the TV installation. The space in the plunger area is tight (even on a real machine), so it's worthwhile to do some measuring and planning. The plunger is close to the flipper buttons, and on a virtual cab it competes for space with the TV. We'll cover the details of installing the basic physical plunger as well as the options for connecting it to the software in xref:plunger.adoc[Plunger] .
+
+== Install feedback devices
+
+You'll probably find that you'll install the feedback devices in stages, rather than as all at once. Output controllers control devices individually, so you can easily set up a few now and add more later.
+
+We'll cover the common types of devices, and how to set them up, in xref:feedbackDevices.adoc[Feedback Devices Overview] .
+
+== Set up the sound system
+
+The audio system in a pin cab is essentially just a PC desktop speaker system, but it has some special considerations. The main one is that most cab builders want to place the speaker drivers in the same places they go in the standard 1990s cabinet design. You can also embellish your system by using two independent audio systems - one for music and one for mechanical sound effects - or even a tactile subwoofer like the ones popular for home theaters and gaming chairs. We'll cover the options in xref:audio.adoc[Audio Systems] .
+

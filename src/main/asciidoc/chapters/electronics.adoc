@@ -1,0 +1,4 @@
+
+
+image::resources/electronics.png[""]
+

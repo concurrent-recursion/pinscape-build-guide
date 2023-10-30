@@ -1,0 +1,255 @@
+= Troubleshooting
+
+Here are some miscellaneous tips for troubleshooting, based on problems that people have reported in the forums.
+
+Quick index:
+
+*  xref:#button6Problems[Button #6 isn't working]
+*  xref:#usbDisconnects[USB disconnects]
+*  xref:#powerOnFlash[Solenoids/flashers fire briefly when powering on the system]
+*  xref:#tvPowerOn[The TV ON feature doesn't turn the TV on at system startup]
+*  xref:#ballBouncesOnPlunger[Ball bounces around on the plunger in VP]
+*  xref:#zbLaunchBallByItself[ZB Launch Ball launches by itself]
+*  xref:#zbLaunchBallNotWorking[ZB Launch Ball doesn't work at all]
+*  xref:#missingJoystickButtons[Buttons/axes are missing in joystick control panel]
+*  xref:#flakyFlippers[Flipper buttons are flaky]
+*  xref:#nudgeDoesntWork[Nudging doesn't work in VP]
+*  xref:#dofEffectsNudgeBall[DOF effects or sound effects make the ball fly around in VP]
+*  xref:DOF.adoc#DOFTroubleshooting[General DOF troubleshooting]
+
+[#button6Problems]
+== Button input #6 isn't working
+
+Symptom: all of your other buttons are working, but button #6 won't generate any key presses on the PC, no matter which key you map it to.
+
+The usual reason this happens is that you're using the Expansion Boards, but your KL25Z is still configured with the default pin settings. By default, the firmware is configured for the standalone KL25Z setup, with no expansion boards. The button wiring is _almost_ identical between the expansion boards and the standalone setup. But it differs in one place: button #6 is wired to a different GPIO pin on the expansion boards. (This wasn't an arbitrary change just to make your life more difficult; the GPIO port that button #6 uses in the standalone setup is needed for another purpose in the expansion boards.)
+
+The quick solution is to go to the top of the Settings page in the Config Tool, where you set the system type. If it's currently set to Standalone KL25Z, change it to Expansion Boards. While you're at it, make sure to set the correct number of each type of board you're using. Click "Program KL25Z" at the bottom and let the device reset.
+
+If that doesn't fix it, you might have a wiring problem or some other configuration issue. For help, see:
+
+* "Button inputs" in xref:expanDebug.adoc#debugButtonInputs[Debugging the Expansion Boards]
+*  xref:buttons.adoc[Pinscape Button Inputs]
+
+[#usbDisconnects]
+== USB devices disconnect or reset
+
+Symptom: Pinscape or other USB devices disconnect or reboot themselves when they shouldn't.
+
+For example, you're in the middle of playing a game in VP, and you hear that Windows bleep-bloop tone meaning that a USB device has been unplugged, or your button inputs just stop working, or your plunger stops working, or DOF output stops working.
+
+The right approach to debugging this depends on how it's happening, so read on for the common scenarios.
+
+=== It happens completely at random
+
+"Completely at random" means that you can get the disconnects to happen when nothing at all is going on. You're not touching the computer, and there's no software loaded, just the Windows desktop.
+
+If you _feel_ like the problem is random, but you're always doing something with the computer when it happens, you should actually try that idle scenario we just described to find out if your hunch is correct. Just leave the computer running idle for a while and see if you observe any disconnects. If you can leave it running idle for a long time _without_ any disconnects, then the disconnect is probably being triggered by some specific cause. In that case you should try to figure out what that trigger is. The most common triggers have to do with DOF devices - shaker motors, replay knockers, solenoids, etc. See below for more on that.
+
+But let's say that it _is_ completely random: you can indeed observe Pinscape disconnecting sporadically when nothing at all is happening on the computer. The most likely problem in this case is a USB compatibility problem between the KL25Z and your motherboard. These sorts of problems are extremely difficult to diagnose with any analytical certainty, so we have to resort to what I call "shotgun debugging", where you throw a bunch of fixes at the problem and see if anything helps:
+
+* Try plugging the KL25Z in through a USB hub instead of plugging it directly into your computer. The best bet seems to be a powered USB 2 hub. This seems to be by far the #1 fix for compatibility issues, so if this doesn't help, the problem might not be a compatibility conflict after all.
+* Make sure your Windows USB device drivers are up-to-date. Open Device Manager and go through the list of Universal Serial Bus controllers, particularly the "Generic USB Hub" and "USB Root Hub" devices. Try updating drivers via Properties > Driver tab > "Update driver".
+* You might also just have something flaky somewhere in the system, like a loose USB cable or a bad solder connection. Check USB cables and any soldered wire connections you've set up, just to make sure you can't spot anything that looks suspicious.
+
+=== It happens every time my shaker motor/replay knocker/something else fires
+
+Symptom: Pinscape (or another USB device) disconnects from USB every time your tactile feedback toys activate while playing a game in VP. For example, this might happen when your shaker motor runs. It might happen reliably or sporadically.
+
+The most likely cause is electrical interference, caused by voltage spikes from those high-power solenoid or motor devices. Computers and logic devices like Pinscape are sensitive to tiny changes in voltage, so it's inherently difficult to combine logic devices and high-power solenoid devices in a single system the way we do in a pin cab. But there are some well-established ways of "filtering" the electrical noise so that the logic circuits won't go haywire.
+
+*  *Diodes:* The #1 cause of electrical interference in virtual pin cabs is the "flyback" voltage that coils and motors produce when they switch off. So the first thing to do is make absolutely sure that you have diodes properly installed in all of your inductive devices: motors, solenoids, contactors, relays, replay knockers, chime coils, bells. You need diodes for everything like this, even small relays used for switching. Read xref:diodes.adoc[Coil Diodes] if you haven't already installed diodes on everything that needs them. If you have already installed them, it might be worth checking that they're all connected properly and that none of them have come loose. It's best if they're permanently soldered into the wiring so that you can't accidentally disconnect them.
+*  *Separate power supplies:* It's best to not to connect any feedback devices to your PC power supply. Use a separate power supply for feedback devices instead.
+*  *Make sure power supply grounds are interconnected:* See xref:powerSupplies.adoc[Power Supplies for Feedback] for details. Double-check that the ground connections between the power supplies are all solid - check for any wires that might have come loose or might not be firmly connected.
+*  *Add a small capacitor (for solenoids):* If the problem seems to be coming from a particular solenoid, relay, contactor, or other solenoid-like device, and you're sure the diode is installed correctly and solidly connected, try adding a small disc capacitor, perhaps 0.1µF. Use a disc capacitor, not electrolytic; these are unpolarized, so you don't have to worry about which direction it goes. Connect it exactly the same way as the diode, across the input leads to the solenoid. Leave the diode in place as well, of course. (So the diode and capacitor will be "in parallel" with each other, if you know that electrical term.)
+*  *Add a motor EMI filter:* Motors generate their own unique kind of electrical interference in addition to the flyback voltage. This isn't commonly needed in a virtual pin cab, but it might be worth a try if nothing else helps: add a pair of small inductors, also known as chokes, in series with the motor. Place the first one in series with the positive voltage power connection to the motor, and the second in series with the connection to the feedback device controller. Try 4.7 µH inductors, with an amperage rating higher than the motor's actual amperage. (µH stands for micro-Henry, a measure of inductance.) Here's an example:
+
+Coilcraft DR0608-472L 4.7µH, 5.8A radial inductor - link:https://www.mouser.com/search/ProductDetail.aspx?R=994-DR0608-472L.html[at Mouser]
+
+See "Electrical Interference" in xref:shakers.adoc#shakerElectricalInterference[Shaker motors] for a sample wiring diagram.
+
+*  *Get a bigger power supply:* This is also uncommmon, but the problem might be that you're "browning out" your whole system by overloading the feedback device power supply. This can cause the voltage levels to fluctuate, which can manifest as USB disconnects or other computer problems. A larger power supply might help by keeping the voltage level more stable. "Larger" means a higher total wattage rating.
+*  *Try a different power supply:* It might also help to simply try a _different_ power supply for your feedback devices. Power supplies have their own power line filtering internally, and some of these work better than others. It might be that your feedback power supply just isn't blocking enough of the electrical noise from your solenoids and motors, and the noise is finding its way into your PC circuitry through the common power wiring.
+
+=== It seems to happen when motors/solenoids fire, but not every the time
+
+Symptom: The disconnects seem to happen when you're in the middle of game in VP and there's lots of action with the DOF toys, like when a bunch of bumper contactors fire in a short period.
+
+This is almost certainly the same sort of problem as "It happens every time..." above. Try the same fixes listed there. These sorts of problems are actually more likely to be sporadic than to happen every time, so a degree of randomness doesn't change the likely causes.
+
+[#tvPowerOn]
+== The TV ON feature doesn't turn the TV on at system startup
+
+Symptom: The TV isn't turning on at system startup, even though you've programmed the TV ON feature to send IR commands to the TV, or connected a relay to the TV's ON button.
+
+The first thing to check is that the IR commands or TV relay are working at all. Both can be exercised via the Pinscape Config Tool:
+
+* For the relay switch, use the TV Relay Tester dialog, which can be accessed from the Config Tool's main screen
+* For the IR remote transmitter, go the Settings page, scroll down to the IR Remote Control section, and use the "test" button next to the command code you want to try sending
+
+If the relay and/or IR transmitter are working in test mode, the next thing to test is that the "power detection" circuit is working correctly. If you're using the expansion boards, the power detection circuit is built in. But - and this is important - if you're using a standalone KL25Z, you have to build the power detection circuit separately. See "Power sensing circuit" in xref:tvon.adoc#powerSensingCircuit[TV ON Switch] for the circuit plans. The TV ON system depends upon this extra circuit, so if you didn't build one, that's probably why the TV on feature isn't working.
+
+To test the power detection circuit, you have to watch the KL25Z's on-board diagnostic LED while powering your system on. It should show *slow blue blinking* during the TV ON delay period - typically about five seconds - immediately after you power on the system. The delay time is programmable via the Config Tool, so you should see the slow blue blinking for the amount of time you programmed. If the LED doesn't show the slow blue blinking, the power sensing circuit probably isn't working correctly. Check the wiring and the configuration settings for the TV ON section in the Config Tool.
+
+The final suggestion I have, if everything above checks out, is to try a longer delay period in the TV ON settings. The purpose of the delay period is to give your TV time to "reboot" after the 120V power is connected. Remember that we've set things up so that the TV is effectively unplugged when your pin cab is powered down; when you turn the pin cab on, it's like plugging the TV back into the wall socket. Most modern TVs need several seconds to gather their wits when you plug them in. They usually don't respond to any IR commands or button presses during this time. That's what the programmable TV ON delay period is all about: it's to give your TV time to boot up and start listening for IR commands and button presses. The exact time required varies by model, so what works for me might not work for you. So you should try a longer delay time to see if your TV just needs more time to become responsive after power is connected.
+
+[#powerOnFlash]
+== Solenoids/flashers fire briefly when powering on the system
+
+Symptom: When you turn on power to the system, some of the feedback devices energize briefly. For example, the flashes all flash white briefly, or you hear contactors or solenoids fire for just a moment. This might happen sporadically or consistently.
+
+Cause: In all likelihood, especially if it's sporadic (that is, it only happens on a fraction of power-ups, at random), it's just a design limitation in the controller. (Or perhaps a design flaw, depending on how you look at it.) Some output controllers power up with the output channels in a random state, so some ports might be activated when you first turn on the power. This should only be momentary, because the controller's software should deactivate all ports as soon as it starts up, but the software usually takes a few moments to get going after the power comes on. The random activation happens in this brief window. The Pinscape expansion boards and LedWiz both exhibit this behavior.
+
+Solution: My "solution" is to just ignore it. As long as the misfire events are only momentary, they're not going to damage anything. It can be a little alarming if a bunch of noise-making devices like solenoids all fire at once, but other than rattling your nerves, a momentary activation won't damage the devices; they're built to fire repeatedly and frequently during normal play, after all.
+
+The ideal way to fix it would be to change the design of the controller device to eliminate the random startup state. That's obviously not feasible with a commercial device, and unfortunately I wasn't able to find a way to address it in the Pinscape boards. The random startup state there comes from the PWM chips we use, and working around it would have required added circuitry, which I couldn't find room for.
+
+An alternative fix that _is_ feasible to pursue, if the glitch bothers you enough, is to add a delay timer to the power supplies for the feedback devices. The idea is to prevent the feedback device power supplies from powering up until after the controller has finished initializing. Without power, the flashers and solenoids won't be able to fire, no matter what the state of the output controller ports. You can find multi-function relay timers on eBay that can do this. With a power-on delay timer, you could wire the mains (120V) power to the feedback power supplies through the timer relay, so that the feedback devices don't receive any power until after the controller is fully initialized. A few seconds should be sufficient.
+
+[#ballBouncesOnPlunger]
+== Ball bounces around on plunger in VP
+
+Symptom: the ball bounces around wildly in VP when it's sitting in the plunger lane, even when I'm not touching the plunger, and maybe even launches itself. It stops when I pull back the plunger.
+
+This is usually a problem with plunger calibration.
+
+* First, make sure that you *don't* have any Windows joystick control panel calibration in effect. Everyone tries the Windows joystick calibration process because it just sounds like something you should do, right? But it's actually designed for joysticks, _real joysticks_ , the kind with a stick and some buttons on top, and Pinscape isn't one of those. It only pretends to be a joystick for the sake of the software interface. The Windows calibration process wreaks havoc with Pinscape and makes all of its input wildly random and wildly wrong. If you've ever run it, it will make your nudge and plunger inputs act erratically. One of the common symptoms is that the ball bounces around in the plunger chute; another is that the nudge input is crazy.
+
+Fortunately, it's really easy to undo the damage from past calibration attempts. Even if you're not sure that you've ever run calibration, do this:
+
+** Press Windows+R, type *joy.cpl* , press Enter
+** Find *Pinscape Controller* in the list and double-click
+** Click the *Settings* tab
+** Click *Reset to defaults*
+* Now make sure that you've gone through the *Pinscape Config Tool* plunger calibration process. This is a whole separate calibration scheme from the Windows joystick calibration - the Windows scheme is for real joysticks, and this one is specifically for plungers.
+** Run the Pinscape Config Tool
+** Find the device and click the Plunger icon
+** Click the Calibrate button
+** Follow the on-screen steps to perform the calibration
+
+Note that you shouldn't have to repeat the calibration process as long as you don't mess with the physical plunger setup. If you make any physical adjustments to the sensor, or you reinstall the plunger itself for some reason, you should repeat the calibration. You can also repeat it any time it seems out of whack, as sensors can change electrically over time, but it's not something you should have to do with any frequency.
+
+* If the ball is still bouncing around, and you can also see the plunger itself jumping around erratically (while you're not touching anything), you might have to add some "jitter filtering". Go back to the Pinscape Config Tool and click the plunger icon again. Without touching the plunger, is the green bar in the sensor viewer dancing around visibly? If so, try increasing the "jitter filter" number until the random motion stabilizes.
+
+The jitter filter is there to smooth out the random motion that can come from analog sensors like potentiometers and IR distance sensors. Analog sensors tend to have a little bit of variation from one reading to the next, even when the plunger is perfectly still, because a digital reading from an analog sensor is always an approximation. Each approximation tends to be a little different from the previous one. That shows up as random motion, which I call "jitter". The jitter filter smooths that out by ignoring small variations in readings - exactly how small is determined by the "window size" you specify. A larger window smooths out larger variations - but at the expense of less accurate readings. You want the window to be as small as possible, just enough to smooth out the visible random motion in VP.
+
+[#zbLaunchBallByItself]
+== ZB Launch Ball launches the ball by itself
+
+Symptom: In games where ZB Launch Ball is used, the ball keeps launching by itself, before I do anything with the plunger.
+
+This is usually caused by the same problem as "Ball bounces around on plunger" above. The ZB Launch Ball feature works by detecting when the plunger moves in front of the resting position. If the plunger isn't calibrated properly or has too much random sensor jitter, Pinscape can get false readings that it interprets as the kind of forward push that activates the ball launch. Try the fixes for the bouncing ball problem above.
+
+Also refer to "Troubleshooting" in xref:zblaunch.adoc#zblTroubleshooting[ZB Launch Ball] .
+
+[#zbLaunchBallNotWorking]
+== ZB Launch Ball isn't working at all
+
+Symptom: The ZB Launch Ball feature is enabled, but it won't work. The ball won't launch in plunger-less games.
+
+The ZB Launch Ball feature only works when DOF activates it, which means that the table you're running in Visual Pinball has to be configured properly in DOF.
+
+See "Troubleshooting" in xref:zblaunch.adoc#zblTroubleshooting[ZB Launch Ball] for steps to try.
+
+[#missingJoystickButtons]
+== Buttons/axes are missing in the Windows joystick control panel
+
+Symptom: When you go to the Windows joystick control panel ("Set up USB Game Controllers") and look at the Pinscape device, it looks weird. For example, it doesn't show all of the X, Y, and Z joystick axes, or it doesn't show 32 buttons.
+
+This is caused by corrupted device information in the Windows registry, which can happen if there's a problem during the initial USB connection setup when you plug in the Pinscape device. The annoying thing is that Windows caches the corrupted information, so if you have a connection problem at any point, it can leave cruft behind that keeps showing up even when the connection later succeeds.
+
+To fix this, you have to delete the corrupted registry key with RegEdit. You might need to run RegEdit in Administrator mode to do this - if RegEdit shows a permissions error when you try to delete the key, or if the key just won't go away permanently when you delete it, try exiting RegEdit and running it again by right-clicking RegEdit and selecting "Run as Administrator" from the menu.
+
+Here's the procedure:
+
+* Disconnect all of your Pinscape devices
+* Open RegEdit
+* Navigate to this key:
+
+HKEY_CURRENT_USER\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput
+
+* Find all of the sub-keys that look like one of these ("xxxx" can be any sequence of four letters or digits):
+
+VID_FAFA&PID_xxxx +VID_1209&PID_EAEA
+
+* Open each matching key, and delete its *Calibration* subkey
+* Exit RegEdit
+
+Plug the Pinscape device back in and check again in the joystick control panel. It will hopefully show the correct controls now. If not, try the whole process again with "Run as Administrator" (if you didn't already). If even that doesn't work, try the whole thing again, and reboot the computer after exiting RegEdit. Rebooting really shouldn't be necessary, but sometimes things stick in Windows caches until you do, so try it as a last resort.
+
+Here's a little background information, in case you're wondering what those VID/PID keys are and why you're looking for these particular ones.
+
+The *VID_xxxx&PID_xxxx* keys are tied to the device's USB ID, which is something you can select in the Config Tool. Most people leave it with the default setting, which uses an LedWiz-compatible USB ID, which appears in the registry with the *VID_FAFA* prefix mentioned above. So that's the most common thing to look for. You'll only see the *VID_1209* key if you intentionally changed the USB ID to use the non-LedWiz "Pinscape" USB code instead. (The Config Tool also allows you to select a completely custom code, but that's not something you'd do in normal use - it's really only for people who want to repurpose the firmware code for something other than virtual pinball. But on the off chance that you are using a completely custom USB ID, then you'd have to look for a VID_xxxx&PID_xxxx key matching your custom ID, instead of one of the standard ones listed above.)
+
+You'll probably see a bunch of other VID_xxxx&PID_xxxx entries in your registry as well. Those are for other, unrelated devices, such as other joysticks or gamepads. You can ignore those for the purposes of this procedure.
+
+The *Calibration* subkeys that we're deleting come from the DirectInput subsystem, which caches a bunch of information about gaming devices when they're first plugged in. This information comes from the device itself, so basically, Windows is asking the device about itself and then storing (in the registry) its own copy of the information. The point is to avoid having to repeat the data exchange every time you reboot Windows, to speed up reboots. It's fine when everything works perfectly, but it can cause problems if the initial information exchange has any sort of USB communications glitch. If anything gets garbled in the initial exchange, Windows just goes ahead and stores the garbled data, and never bothers to check again to see if a correction is necessary. I personally think this is a bad design on Microsoft's part, since USB errors are common enough that the initial exchange actually does get garbled once in a while. The "wrong number of buttons" or "wrong number of axes" problem is exactly how this manifests - Windows ran into an error when first interrogating the device, and then made the erroneous information permanent by storing it in the registry. The procedure we're doing here simply deletes the cached information and forces Windows to interrogate the device again the next time you plug it in. With luck, the data exchange process won't run into any errors on the new attempt, and Windows will store the correct information.
+
+[#flakyFlippers]
+== Flipper buttons are flaky
+
+Symptom: Your leaf-switch flipper buttons don't work reliably. You might see this as random auto-repeat keys on the PC, extra keystrokes while you're holding down the buttons, or other intermittent behavior.
+
+You should start by checking your other cabinet buttons to make sure they're not also exhibiting similar behavior. In particular, compare the behavior to any buttons you have that use microswitches rather than leaf switches. (Microswitches are the little plastic boxes with the switch assembly fully enclosed inside. The standard pinball "Start" buttons use this kind of switch.)
+
+If your microswitch buttons are also acting flaky, the problem is probably with either your key encoder or with the wiring between the switches and the key encoder. Check the wiring, particularly the "common" or "ground" connection that all of the buttons share. Also check your key encoder's instructions to make sure that you've wired it correctly and that you've done any necessary software setup for it on the PC.
+
+If it's _only_ the leaf switches that are acting flaky, I'd still start by double-checking the wiring to make sure it's solid. Assuming the wiring looks good, there are a few things you can try.
+
+First, make sure you have the right kind of switches. There are actually two kinds of leaf switches, for different purposes, and it's important to have the right type in a pin cab. Some leaf switches are designed for high-voltage power connections, and some are designed for low-voltage data connections. A pin cab requires the low-voltage type. If you bought your leaf switches from a pinball vendor like Pinball Life or Marco Specialties, and they were sold specifically as *flipper button* switches, they might well be the high-voltage type, because many of the real pinball machines that use leaf switches for the flipper buttons are wired so that the switches directly control the 50V flipper coils. Those high-voltage switches have contact points made of tungsten, because it's tough and durable enough to withstand the high voltages. In contrast, low-voltage leaf switches have gold-plated contact points. Gold is a better conductor than tungsten, which is why it's better for a low-voltage data switch, and why it's the type needed for a pin cab. Tungsten contact points aren't conductive enough for reliable low-voltage switching, so they can make the buttons flaky when used in a pin cab. Tungsten also oxidizes over time, which further reduces its conductivity, so tungsten switches might work fine at first but start acting up after they've been deployed a while. This can sometimes explain situations where your switch problems only appeared recently or seem to be getting gradually worse.
+
+You should be able to tell which type of leaf switches you have by visual inspection. Take a close look at the little disks at the ends of the switch leaves - those are the contact points. Tungsten contact points look dull and dark in color, whereas gold-plated contacts are shiny and light-colored. If you think you have the high-voltage tungsten type, you should try replacing them with the low-voltage gold type. The last I checked, VirtuaPin only sells the gold type, so you're probably safe if you bought your switches there. But Marco Specialties, Pinball Life, and all of the other pinball parts vendors sell both types, so you have to be careful when ordering to buy the low-voltage, gold-plated type.
+
+Second, you might need to adjust the gaps between the contacts. Leaf switches are notoriously finicky this way, and even brand new ones might need to be adjusted when first installed.
+
+See "Adjusting the switch gap" in xref:insideTheCab.adoc#leafSwitchGapAdjustment[Inside the Cabinet] for instructions.
+
+Third, you might simply try cleaning the contact points. This is necessary from time to time in real pinball machines because of the copious grime generated by all of the mechanical action, but it shouldn't be as much of an issue in a virtual pin cab. If you do suspect that dirty contacts are making the switches flaky, try gently cleaning the contact points with a Q-tip dipped in rubbing alcohol. *Don't* use anything abrasive and don't clean too aggressively. The gold on the low-voltage contacts is an extremely thin plating layer that can easily be removed by abrasion.
+
+[#nudgeDoesntWork]
+== Nudging doesn't work in VP
+
+Symptom: nudging isn't working at all in Visual Pinball. There's no effect on the ball when I give the cabinet a good nudge.
+
+This is mostly likely a problem in the VP configuration.
+
+* Go back through the VP nudge setup procedure in xref:tilt.adoc#VPNudgeConfig[Nudge & Tilt]
+* Make sure the axis settings in the VP dialog match your device's axis settings. Most nudge devices use the X and Y axes by default for nudging, but double-check that in your device setup. The Pinscape Config Tool lets you switch to the Rx and Ry (rotational) axes instead, so if you made that change in the Pinscape setup, you'll have to make the same change in the VP setup. The two setups don't have any way to talk to each other on their own.
+* If you have other joystick devices in your system (actual joysticks, or other devices like Pinscape that _pretend_ to be joysticks), try removing all of the other ones. VP isn't very good at handling multiple joysticks. Even if you don't want to remove the others permanently, at least try this as a test to see if it fixes the problem. If that fixes it, there are a few possible approaches to dealing with the conflict while keeping the other devices in your system:
+** Check the other devices to see if you can disable their joystick functions while keeping their other capabilities.
+** Check the other devices to see if you can change the joystick axes they're using. In particular, see if you can get them to stop sending any data on the X and Y axes. You might be able to tell the other devices to use the rotational Rx and Ry axes, for example.
+** If you're using Pinscape, use the Pinscape Config Tool to change the Pinscape accelerometer to use the Rx and Ry rotation axes. Make the same change in the VP setup.
+** Microsoft has a tool called Device Console, or *DevCon* , that can selectively enable and disable individual devices from a batch script. Some people have resolved conflicts by creating a batch script that disables conflicting devices just before each VP launch, and re-enables the devices after VP exits. You can find DevCon in the Microsoft Windows Driver Kit.
+
+[#dofEffectsNudgeBall]
+== Vibrations or sound effects make the ball fly around in VP
+
+Symptom: The ball flies around or veers off course in Visual Pinball whenever a solenoid fires, or when the shaker motor fires, or when a loud noise comes through the subwoofer.
+
+The problem is probably that your accelerometer is picking up the vibration from the feedback devices or speakers, and VP is reading it as "nudge" input. There are two reasons this could be happening:
+
+* The first, and by far most common, is that your accelerometer settings in VP are configured to be much too sensitive. The solution is to reduce the "gain" settings until the vibration stops affecting the simulated ball motion.
+
+Almost everyone initially sets the accelerometer gain in VP to a setting that's way too high, based on a natural desire to see your new toy in action. Specifically, everyone wants to see the ball react in VP, clearly and conspicuously, when they nudge the cabinet. The problem is that most of us have bad intuition about just how hard a nudge it should take to affect the ball. In VP, we're all used to a light tap on the space bar making the ball jump about a foot, so we get the idea that the same should hold for accelerometer nudges. If you try this on a real pinball, trapping the ball on the flipper and giving the machine a few pushes, you'll find that a good hard shove won't even budge the ball. The ball will not jump a foot no matter what you do. Pinball machines are heavy, and the balls alone weigh about a pound apiece. It takes a lot of energy to get them to go anywhere. If you try this experiment with a real machine some time, you'll find that real machines don't react with nearly as much zeal as the VP space bar makes you expect.
+
+The right way to solve problems with over-active nudge feedback is, in nearly all cases, simply to turn down the gain. Turn it down until the devices stop interfering. The nudge will feel a little dead at first, especially if you're more calibrated for PC pinball with space-bar nudging than you are for real pinball machines. But it _should_ feel that way if you value realism at all. You should still be able to see an effect, but it should be subtle, and it should take some real cabinet motion to appreciably affect the ball's trajectory.
+
+See "What about interference from the shaker or subwoofer?" in xref:tilt.adoc#nudgeInterference[Nudge & Tilt] .
+
+* The second, much less common reason is that the KL25Z isn't secured tightly enough the cabinet. The device should be attached in such a way that it moves exactly as the cabinet moves, because the whole point is to read the cabinet's motion and pass it to the software as accurately as possible. It should be secured tightly to a rigid surface like the floor of the cabinet. Make sure that the KL25Z isn't loose, and that it's attached to something that can't move around on its own. It shouldn't be attached to a flexible or springy surface.
+
+Some people on the forums have suggested cushioning the accelerometer with foam padding or something like that to reduce the vibration it receives. I don't like that approach, because it actually defeats the purpose of the accelerometer. You *want* the accelerometer to pick up the cabinet's motion - that's what it's there for. If you mechanically isolate it from the cabinet's motion, you'll reduce the accuracy. Sure, if you put it on a bookshelf across the room, it'll stop reacting to the subwoofer - but it'll also stop reacting to the cabinet's motion. What you want is a rigid connection to the cabinet that makes the accelerometer move in lock-step with the cabinet.
+
+Some additional tips:
+
+* Make sure that you haven't ever used Windows joystick calibration on your nudge device. Windows joystick calibration is for joysticks. Nudge devices aren't actually joysticks - they only pretend to be, to make the software setup easier. The Windows joystick calibration wreaks havoc on accelerometers; it makes their readings erratic and non-linear. If you've *ever* run the Windows joystick calibration procedure, or you're not absolutely sure you haven't:
+** Press Windows+R, type *joy.cpl* , press Enter
+** Find *Pinscape Controller* (or your nudge device, if something else) in the list and double-click it
+** Click the *Settings* tab
+** Click *Reset to defaults*
+*  *Don't* use dead zones in any of the configuration dialogs for nudging or joystick setup. Dead zones can seem at first glance like a way to solve nervous jitter from small vibrations, but if you think about it a little more, it's easy to see what's wrong with the dead-zone approach. Dead zones are inherently non-linear: with a dead zone, you get no response at all up to a threshold, and suddenly you get a big response. What you really want is for a small nudge to produce a small response and a big nudge to produce a big response. Everything should be proportional. If small vibrations are producing too much of a response, what that really means is that the big nudges are also producing too much of a response - in other words, _everything_ is producing too big a response, because the gain factor in VP is amplifying everything too much. That's most visible with the small nudges because it's more obvious when those are hyper-exaggerated. The solution isn't to ignore the small nudges, but rather to use them to calibrate the gain factor, by turning down the gain until the small vibrations don't cause noticeable or excessive responses. If you've ever set a dead-zone in the Visual Pinball dialogs or anywhere else, I'd immediately set them all back to zero. The only VP setting you should adjust to get the nudging force right is the *gain* .
+
+== DOF Troubleshooting
+
+See xref:DOF.adoc#DOFTroubleshooting[Troubleshooting your DOF setup] .
+

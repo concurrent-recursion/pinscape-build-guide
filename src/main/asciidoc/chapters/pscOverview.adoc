@@ -1,0 +1,56 @@
+= Pinscape Controller Overview
+
+This section leads you through the process of assembling the Pinscape expansion boards, setting up the KL25Z controller board, and setting up the software.
+
+Here are the main steps involved:
+
+* Buy a Freescale Freedom-KL25Z controller board. This is a retail product that sells for about $15 to $20 at any of the major electronics vendors. You can also find it on eBay and Amazon, but it's usually more expensive there. The KL25Z board is required for all systems, whether or not you're using the expansion board. It's included on the xref:partslist.adoc[electronics parts list] , so you can order it along with any other components you need. This board comes fully assembled and ready to use.
+* If you're going to build the Pinscape expansion boards, get hold of the blank printed circuit boards (PCBs) for the expansion boards. You can have a set fabricated by a PCB factory by sending them the freely available design files. You don't need any special electronics knowledge to do that; we'll explain the process. Alternatively, you might be able to get a set of pre-made boards from someone else in the pin cab community who made a batch for sharing.
+* Buy the electronic components required for the expansion boards or any other external electronics you're going to include, such as a plunger sensor. Almost all of the components for the various options are fairly generic items that you can buy from any electronics vendor. We'll give you a complete list of parts with ordering links.
+* Set up the Pinscape software on the KL25Z. You can do this before you build the expansion boards, plunger sensor, or other electronics, because the KL25Z can do some things on its own. If you're not in any hurry, you can also wait until after building any other
+* Configure your KL25Z settings to match your hardware setup. This is done through a Windows program called the Pinscape Config Tool.
+* Gather the necessary tools for building the expansion boards. We'll tell you what you need and provide buying recommendations for anything you don't already have at hand.
+* Solder the components into the boards. You'll need basic soldering skills to do this, but you won't need any advanced electronics knowledge. We'll provide detailed instructions to make it as much of a "paint by numbers" job as we can.
+* Connect the expansion boards to the KL25Z, to one another, and to your cabinet buttons, plunger sensor, and feedback devices.
+
+== What to buy
+
+I hear from a lot of people who find themselves a little confused at this point about exactly what you have to buy, and what you have to build, to get this project going. The list of things to buy is outlined in broad strokes above, and in excruciating detail in the xref:partslist.adoc[electronic parts list] , but that's a lot of material to go through. And there are several rather different ways to approach this project, which makes it even harder to sort out. So let's take a look at the most common scenarios, and spell out what's involved in terms of shopping.
+
+=== Option 1: Standalone KL25Z (no expansion boards)
+
+The KL25Z on its own can handle button inputs, accelerometer-based nudging, and it can connect to any of the plunger sensor options that the Pinscape software supports. It can also control feedback devices if you add separate external booster circuits for each device.
+
+The shopping list for the standalone KL25Z is pretty simple: you really just need the KL25Z itself. The KL25Z is a retail product that comes fully assembled. You can find it at the electronics vendors like Mouser, as well as general retailers like Amazon and eBay. (A few people have asked if I sell these; I don't.)
+
+One small qualification to "comes fully assembled": the KL25Z doesn't come with "pin headers" for plugging in cable connectors, because they wanted to leave your wiring options open. I recommend adding standard pin headers so that you can use it with standard plug-in connectors. This requires buying the pin header parts and soldering them to the board. It's an easy bit of soldering, and the required parts are listed under "KL25Z Microcontroller (standalone)" in xref:partslist.adoc#standaloneBom[Electronic Parts List] .
+
+=== Option 2: DIY Expansion boards
+
+The expansion boards give you all of the features of the standalone KL25Z version, and add an expandable set of output ports for feedback devices, plus built-in support for IR remote control signals to power on your TVs and monitors during system startup. The feedback device ports can support all of the common pin cab feedback devices without any additional circuitry, including motors, solenoids, contactors, and high-current LEDs.
+
+There are three types of expansion boards (the main board that interfaces to the KL25Z, the "MOSFET power board" that can control high-power feedback devices like solenoids and motors, and the "chime board", for controlling certain types of pinball coils that have to be protected from long periods of continuous activation). The main board is always required, and the other two boards can be used in any combination (including two or more of each), according to how many output devices of each type that you plan to attach.
+
+The shopping list for the DIY expansion boards includes the KL25Z, the blank circuit boards for your selected expansion boards, and a big list of electronic components (resistors, capacitors, transistors, IC chips, etc.) that have to be soldered into the blank boards.
+
+The electronic components are all laid out in the xref:partslist.adoc[parts list] . There's a section for each board, so you just go through those and include the parts listed for each board you're including in your system. You can get everything on the list from an electronics vendor like Mouser or DigiKey.
+
+The blank circuit boards are custom-designed, so you have to get those made by a PCB maker. They're not something you can buy off-the-shelf from Mouser or Amazon. The plans for them are "open source", so anyone can have them made by any PCB maker of their choosing. There are three main ways to get them:
+
+* Have a set made on demand by a PCB maker. There are lots of PCB companies that cater to hobbyists, with low prices and minimum order sizes of only 5 to 10 copies of each board. Most of the hobbyist vendors also manage to make the ordering process pretty easy. We provide step-by-step instructions in xref:expanFab.adoc[Fabricating the Expansion Boards] .
+* Participate in a group order with other pin cab builders. Ask on the forums if anyone else is interested, and get together a few people to go in together on an order. This is a way to dispose of the extra copies you'd get in a minimum order from a PCB maker if you don't need all 5 to 10 copies for yourself.
+* If you're in the US, you might be able to get them from me. I've been running a sort of ongoing "group order" for a couple of years now, but it's not the sort of group order most people run, where you have to wait for enough people to join the order in advance; instead, I've just been ordering small batches and sending them out to people on request. I'm not exactly "selling" them; I only charge what the boards cost me (plus shipping). I can't guarantee that I'll always have boards on hand or that I'll continue doing this indefinitely, so get in touch to get the current status. You can reach me on link:https://www.vpforums.org/[vpforums] by private message; my user ID there is *mjr* . With apologies to those outside the United States, I'm afraid that I only ship to US addresses.
+
+=== (Former) Option 3: Oak Micros boards
+
+NOTE: *Oak Micros announced in June 2021 that they're no longer shipping their boards, so the options below are not currently available.* The discontinuation sounds permanent, but I'm going to leave the information below in place for now, if for no other reason than historical reference. I'm sure that the forum threads listed below will be updated if Oak Micros ever resumes selling the boards, so check the threads for current status.
+
+Up until June 2021, Oak Micros offered fully assembled and tested versions of the Pinscape boards. The following options were available:
+
+* Pinscape All-in-One board. This combines all of the functions of the DIY version's main board, power board, and chime board into a single circuit board, which makes it a little more compact and tidier to install than the DIY version. See this thread on vpforums.org for full details: link:https://www.vpforums.org/index.php?showtopic=42631.html[Announcement: Pinscape All-in-One product] .
+* Pinscape Lite board. This is a less expensive board that includes a subset of the DIY board features: 24 input buttons, plunger sensor input, 12 high-power outputs for solenoids and motors (2 with PWM, 10 without), 16 low-power PWM outputs for LEDs, and the standard built-in accelerometer (nudge) sensor. This board isn't expandable, so it's best for mini-cabs and more basic cabs where you only plan to install a limited set of feedback toys. Details: link:https://www.vpforums.org/index.php?showtopic=45071.html[Announcement: Oak Micros Pinscape Lite] .
+
+== Plunger sensors
+
+Regardless of which option you're going with for the Pinscape controller itself, the plunger is a separate matter with a separate parts list. The xref:partslist.adoc[electronic parts list] includes separate sections with the parts needed for each plunger sensor design.
+

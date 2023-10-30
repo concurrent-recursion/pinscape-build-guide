@@ -1,0 +1,85 @@
+= Cabinet Building Tools
+
+It's hard to overstate the importance of using the right tool for a given job. Good tools can make a seemingly difficult task easy, and can let an amateur produce professional-looking results. Here are some recommendations for the tools needed to build a virtual cab.
+
+== Basic hand tools
+
+These core tools are needed for the most basic DIY projects. You'll probably already have most of them on hand for routine home maintenance needs. You'll probably need most of these even if you're starting with a pre-assembled cabinet, and you'll certainly need them if you're assembling a cabinet from a flat-pack kit or from scratch.
+
+* Screwdrivers: a basic set of Phillips and flat-head screwdrivers in assorted sizes
+* Hex nut driver set with assorted English and metric sizes
+* Hammer
+* Pliers
+* Needle-nose pliers
+* Sheet-metal shears
+* Assorted wood and metal files
+
+== Basic power tools
+
+Some basic wood-working power tools are good to have on hand even if you're starting with a pre-assembled cabinet, to facilitate finishing work and simple customizations.
+
+* Drill
+* Assorted drill bits, from ⅛" to ½"
+* Hole saws for your drill, various sizes (3/4", 1", 1⅛", 1⅜") (some people swear by Forstner bits, but I find hole saws are easier to work with for these sizes)
+* Power screwdriver (optional, but makes for less manual labor)
+* Power sander (essential for surface preparation if you're going to apply paint or decals)
+* Jigsaw (not essential, since a router can handle just about any job where a jigsaw would be useful, and a router can often do it better; but a jigsaw is easier for quick-and-dirty cuts)
+
+== Saws
+
+If you're building a pin cab from scratch, you'll need one or more of the following:
+
+* Table saw
+* Track saw
+* Band saw
+
+A track saw is basically a circular saw that runs along a metal track, allowing you to cut nice straight lines at precise locations. This is a great tool for cutting up large sheets of plywood, and for making cuts at arbitrary angles (such as the sloped side walls of a pin cab). A regular circular saw can work for this, too, but it's more difficult to cut perfectly straight lines with finish quality.
+
+Most woodworkers would probably pick the table saw if they could have only one type of saw. Table saws are extremely versatile and are capable of precise, repeatable work. I think the ideal setup is to have _both_ a table saw and a track saw. Table saws are perfect for about 90% of the cuts needed to build a pin cab, but a few of the larger pieces in a pin cab are difficult and cumbersome on a table saw. Track saws excel at handling large pieces.
+
+A band saw can probably do everything a table saw can do. Some woodworkers consider them superior and safer tools. I don't have any experience with band saws myself, so I don't have much of an opinion, but I can appreciate their inherent safety advantages. Band saws don't tend to cause "kickback" (throwing a work piece back at the operator at high speed), which is a major hazard with table saws.
+
+Table saw accessories: If you go with a table saw, there are a couple of accessories that are worth buying along with it.
+
+* Finish blade for plywood. Table saws usually come packaged with coarser blades meant for cutting solid wood. Plywood is more delicate because of its layered structure, so it's better to use a finer-tooth blade. Look for a blade labeled as a "finish" blade or a "plywood" blade - these usually have 40 or more teeth and will produce a smooth edge that will need little or no sanding. The same goes for track saws, but those usually seem to come with finer-tooth blades by default.
+* Push block with a "tunnel" for the blade, such as a Microjig Grr-ripper or Delmar Tools push block. These make it easier and safer to push work pieces through the table saw, especially when making narrow rip cuts (lengthwise down the board).
+
+== Router
+
+If you're building a cabinet from scratch, it's good to have a router on hand. This is useful even if you're building from a kit, since you might want to add extra openings beyond what comes with the kit. A router is a versatile power tool with a high-speed rotating bit that can move over a piece of wood to cut grooves, holes, and edges. Some of the things a router can help you accomplish:
+
+* Cutting custom-shaped holes
+* Forming joinery edges (bevels, miters, rabbets, dados)
+* Cutting grooves
+* Routing out depressions or hollows
+
+If you're starting with a flat-pack kit, most of the cuts and joinery edges should be pre-cut, but a router is still useful for a few tasks that the kits usually leave for you to do. In particular, a router is required to cut the edge grooves needed to install the plastic holders for the playfield glass, and you can also use it to cut custom holes for speakers, fans, and buttons. For this type of light usage, a hand-held router is adequate; good options are available for under $100.
+
+Hand routers come in two main types: fixed-base routers and plunge routers. A plunge router has a spring mechanism that lets you lower the bit straight down into the work piece while keeping the base flat against the work piece; this is useful for routing grooves and cutting openings in the interior of a work piece. Plunge routers usually have a latch that locks in a depth, effectively making it the same as a fixed-based router, so plunge routers are the more versatile of the two types. However, plunge routers won't always fit into router tables (see below), so check compatibility before buying a router and table. Some routers come with both fixed bases and plunge bases that you swap as desired.
+
+Recommended router bits:
+
+* For general hole-cutting and dados, a basic set of straight bits in assorted sizes (1/4", 3/8", 1/2", 3/4").
+* For installing the playfield glass guides, a slot cutter bit with a 3/32" groove width. Freude makes a suitable groove cutter with a 9/16" groove depth and 3/32" grove width (part number 63-106).
+* If you're building a cabinet from scratch, there are special router bits you can use to make certain types of corner joins for the main cabinet. My preference is type of a corner join that doesn't require special bits, as described in xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way] .
+
+Router accessory:
+
+* Circle jig for your hand router. This is an attachment for the router that lets you cut circular openings of just about any size. This is good for cutting large circular openings (larger than a drill bit can make). It's fairly easy to create a circle jig yourself (look it up on Youtube), or you can buy one.
+
+== Router table
+
+Some routing tasks require a table-mounted router, and some are just easier with a table.
+
+If you have a hand router, you can buy a bench-top table that you can attach your existing hand router to. There are several "universal" router tables available that will work with most brands of routers, so you probably don't need to buy a table made especially for your router - it's usually possible to mix and match brands.
+
+== Electronics
+
+* Soldering station. If you're doing even simple electronics work, it's worth investing in a decent soldering station. A soldering station is different from a basic soldering iron in that a station has a thermostat that controls the tip temperature, which maintains consistent soldering conditions. Stations also heat up much more quickly and have much better tips than cheap soldering irons. I'm very happy with my Hakko FX88D (available for under $100). If you've been frustrated in the past trying to do soldering work with a cheap iron, and you think it's because you don't have the right skills, you'll be amazed at your overnight transformation into a soldering genius when you switch to a proper soldering station.
+* Solder. Another thing that will amaze you by improving you soldering skills overnight is to switch to a good solder. The stuff they sell at Home Depot might be okay for plumbing and other rough work, but it's not very good for electronics. The type I like is Kesler 44 63/37 Sn/Pb rosin core solder.
+* Digital multimeter. An essential tool for troubleshooting electronics. The main functions I use regularly are continuity testing, voltage, resistance, and current. Virtually ever meter available will have these basic functions.
+
+One feature you should definitely look for is "auto-ranging". That means that the meter automatically senses the order of magnitude of the reading for each input type (rather than requiring you to select the range with the dial). The cheapest meters (in the $10 range) lack auto-ranging. It's worth a few extra dollars to get this feature.
+
+I don't have any specific brand recommendations. My professional electrical engineer friends have always sworn by their Fluke meters, and I'm sure they're great products, but they're quite pricey. You can find less prestigious brands with similar capabilities for as little as $20. I think that even the cheap meters are pretty good at this point in terms of accuracy and features, thanks to the relentless march of progress on digital electronics, although they probably lack the build quality of the Flukes and other top brands. If you're looking for a meter for occasional hobby use, I'd buy based on price and user reviews.
+

@@ -1,0 +1,101 @@
+= Backglass Software Setup
+
+If your pin cab has a separate backglass monitor, you'll want it to display the appropriate backglass artwork for the current game. And you'll want this to be more than just a still image, since the backglass is an active part of many games, showing information on score, bonus features, etc.
+
+Fortunately, this is well supported in Visual Pinball. VP can display live, animated backglass artwork that synchronizes with the game action. VP requires an add-on program called B2S Backglass Server to do this. B2S works alongside Visual Pinball to display the animated backglass artwork, simulating the same backglass lighting effects, score displays, and animated elements that you'd see on a real machine. B2S is specifically designed for a cabinet setup where you have a separate monitor for the backglass.
+
+To get all of this working, you have to install the B2S software itself, and then there are some extra setup steps required for each table. This chapter explains how to set up the B2S software and configure tables to use it.
+
+== B2S Installation
+
+The first step to getting backglasses working is to install the B2S software itself.
+
+If you installed Visual Pinball using the VP Installer program, B2S should have been installed automatically as part of the setup process, so you're already set.
+
+If you didn't use the VP installer (that is, you installed VP manually from ZIP files or something like that), you'll have to install B2S separately. To find the download:
+
+* Go to link:https://www.vpforums.org/[vpforums.org]
+* Click *Getting Started* the top navigation bar
+* Select *Essential Files* > *Frontends and Addons*
+* Find "B2S Backglass Server" in the file listing
+
+There might be several versions of B2S Backglass Server in the file list. I'd recommend picking the one with the highest version number to make sure you have the latest update. Click the link, which will take you to the download page. That should contain links for downloading the file and for installation instructions. Note that you'll have to create a vpforums account to download a file, if you don't already have one.
+
+Click the "instructions" link on the download page and follow the steps. Here's the basic procedure:
+
+* Unzip all of the files from the downloaded B2S ZIP file into your Visual Pinball\Tables folder.
+* Right-click the file B2SBackglassServer.dll. Select Properties from the menu. Check for a message under the "General" tab saying something like "This file was downloaded from the Internet and has been blocked." If you find this, there should be an "Unblock" button. Click it. If you don't find any such message, no action is required.
+* Right-click the application file B2SBackglassServerRegisterApp.exe. Select *Run as administrator* from the menu.
+* Check the README.TXT file from the downloaded ZIP file for any additional instructions or notes for the version you downloaded.
+
+== Download backglass files
+
+Okay, you've installed B2S, loaded up a game in VP... and didn't see any backglass artwork. That's because installing B2S isn't the last step. You also have to do a little extra work to set up each table. This is work that you'll have to repeat for each new table you download, but fortunately it's only a one-time job for each table.
+
+Most VP table files are distributed without any backglass artwork. Some authors bundle the two together, but in most cases you have to download the backglass file separately.
+
+Fortunately, it's fairly easy to find backglass files. link:https://www.vpforums.org/[vpforums.org] has a large collection:
+
+* Go to link:https://www.vpforums.org/[vpforums.org]
+* Click *Frontend Media & Backglass* on the top navigation bar
+* Click *Backglasses* > *dB2s Animated Backglasses*
+
+Files are listed by table title, so just find the title of the table you're looking for and click through the links to download the file.
+
+=== Are B2S files and .vpt/.vpx files paired?
+
+No. You *don't* have to find the exact matching B2S version for your table. Any B2S for a given title should work with any .vpt/.vpx game for the same title. E.g., you don't need a specially paired B2S for "Funhouse_NightMod_ToyMod_991_v26.vpt"; any B2S for Funhouse should work.
+
+This is the whole reason that the table files and backglass files are usually distributed separately. The B2S files and VP table files are more or less independent in terms of their operation and design. A particular .vpt or .vpx file should work with just about any .directb2s file for the same table. There's no need to find a matching set for a particular version of either.
+
+=== 2-screen and 3-screen versions
+
+Some of B2S backglasses have "2-screen" and "3-screen" variants. The difference is how the speaker/DMD panel graphics are handled:
+
+* A 2-screen backglass includes graphics for the speaker panel as part of the backglass window. This is ideal if you have a single large monitor in your backbox and no separate DMD video monitor or real DMD device.
+* A 3-screen backglass separates the graphics for the backglass area and speaker panel area into different windows, so that you can position the two areas separately on your physical monitor layout. This is ideal if you have a 1990s-style backbox, with a 16:9 monitor at the top, and a separate speaker panel with its own DMD video monitor or real DMD device.
+
+In cases where both types are available, choose the one that matches your physical cab setup. But it's also okay if only one type is available and it's the "wrong" one for your cab. You can always use either format. The worst that happens with the "wrong" format is that the geometry will be a bit distorted because the proportions were designed for a different monitor layout.
+
+== Installing the .directb2s file
+
+After downloading a backglass file, perform these steps:
+
+* Unpack it from the ZIP/RAR container if necessary
+* Put it in your Visual Pinball *Tables* folder (the same folder where you keep your .vpt/.vpx files)
+* Rename the file so that it matches the name of the .vpt/.vpx file you want to use it with, but keeping the .directb2s suffix (e.g., if the table file is called `Funhouse_NightMod_v2.vpx` , rename the B2S file as `Funhouse_NightMod_v2.directb2s` )
+
+It's essential to put the .directb2s file in the same location as the table file and to rename it to match the .vpt/.vpx file name. That's how B2S finds the file. If the name and location aren't matched like this, B2S can't usually locate the file and won't show any backglass artwork.
+
+(B2S does actually have some "fuzzy matching" that tries to find a matching file even if the name doesn't exactly match, but in my experience, that does more harm than good. B2S's fuzzy matching usually just picks something random and wrong, and the fact that it's doing it at all makes it that much harder to figure out why the wrong file is getting picked. The only way to make B2S pick the right file reliably is to give it the exact same name as the table file.)
+
+== Enable B2S on each table
+
+There's one more step before the backglass artwork will appear during a game: you have to enable B2S mode for each individual game. This is a one-time step, but you have to do it separately for each table.
+
+Most VP 10 tables will automatically use B2S if present, so this step isn't usually required for VP 10. However, if you try a VP 10 table and it doesn't work, it might be an unusual case that requires the VP 9 procedure below.
+
+Some later VP 9 tables, from 2016 and later, also will automatically work with B2S.
+
+Given that most VP 10 tables and some VP 9 tables will work "out of the box" without any modification, the first step is to simply fire up the game in VP and see if the backglass appears. If so, you're all set with that game. If not, try this procedure:
+
+* Open the table in the VP editor (see xref:tableFixup.adoc[Customizing VP Tables] )
+* Open the table script (VP 9: *Edit > Script* menu command; VP 10: *View > Script* command)
+* Look for a line like this:
+
+`ConstcController=0' 1=VPinMAME,' 2=UVP backglass server,' 3=B2S backglass server`
+
+* Note that the variable name `cController` might be slightly different, so just look for something that roughly matches that format.
+* If you find such a line, change the "0" to the number listed for B2s (usually 3). Save and run the table. If it successfully displays the backglass, you're set.
+* If you can't find the code above, look for something like this:
+
+`SetController= CreateObject("VPinMAME.Controller")`
+
+* If you find that, replace it with this:
+
+`SetController= CreateObject("B2S.Server")`
+
+* Save the game and try again.
+
+If none of the above helped, and the table is a re-creation of an older EM (electro-mechanical) game from the 1970s or earlier, the game will need more extensive modification to make it work with B2S. The work needed is beyond the scope of this chapter. Your best bet might be to contact the author of the table and request a B2S-capable update, or see if someone else on the forums wants to take it on.
+
