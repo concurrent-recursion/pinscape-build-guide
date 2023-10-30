@@ -23,6 +23,7 @@ GEM
       prawn-table (~> 0.2.0)
       prawn-templates (~> 0.1.0)
       treetop (~> 1.6.0)
+    asciimath (2.0.5)
     concurrent-ruby (1.2.2)
     css_parser (1.16.0)
       addressable
@@ -77,6 +78,7 @@ DEPENDENCIES
   asciidoctor-epub3
   asciidoctor-html5s
   asciidoctor-pdf
+  asciimath
   rouge
 
 BUNDLED WITH

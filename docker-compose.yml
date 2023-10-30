@@ -5,6 +5,7 @@ services:
     volumes:
       - ./book:/pinscape-build-guide/book:ro
       - ./Gemfile:/pinscape-build-guide/Gemfile:ro
+      - ./Gemfile.lock:/pinscape-build-guide/Gemfile.lock
       - ./Makefile:/pinscape-build-guide/Makefile:ro
       - ./dist:/pinscape-build-guide/dist
       - ./.ruby-version:/pinscape-build-guide/.ruby-version:ro
