@@ -109,6 +109,7 @@ You can connect two IR LEDs instead of just one. This can be useful if you need 
 * Connect the first LED's short (-) leg to the second LED's (+) leg. You can run as much wire between the two as needed to position the two LEDs properly.
 * Connect the second LED's short (-) leg to the *IR_LED* connection in the schematic.
 
+[#learnRemoteCodes]
 == Learning IR commands from your remotes
 
 Once you have the hardware installed, you can use the Pinscape Config Tool to learn IR command codes from your remotes. Once Pinscape learns a command code, you can use it for various functions:

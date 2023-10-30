@@ -152,7 +152,7 @@ That will show you a list of devices with their cryptic internal ID strings on t
 
 *Automating it:* You can automate the disable-enable procedure by putting it into a .BAT script. However, keep in mind that you'll have to run the .BAT script with "Run as Administrator" mode.
 
-
+[#joystickAxisSettings]
 === Axis settings
 
 Another way to deal with conflicts is to tell Pinscape to report its input on a different set of axes than it normally uses. This can be useful if you're getting conflicting readings on the two devices in a program that can't distinguish between different joysticks, such as Visual Pinball.

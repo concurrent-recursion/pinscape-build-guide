@@ -64,7 +64,7 @@ If you don't need the locking function, but your backbox has the gap in the trim
 
 If you haven't yet installed the wood trim where the plate goes, I'd simply run a single piece of wood all the way across rather than replicating the gap in the standard plans.
 
-
+[#hingeInstall]
 == Backbox hinges
 
 Real pinball machines are designed with a hinge that lets you tilt the backbox forward until it's lying flat on top of the main cabinet. This is an essential feature if you want to transport a pinball machine, as it would be too tall, top-heavy, and fragile with the backbox in the normal position. And you certainly wouldn't want to remove the backbox every time you moved the machine, as that's a major operation that requires disconnecting a lot of wiring, which always creates a risk of breaking something when you reassemble it.

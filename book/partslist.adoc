@@ -3124,7 +3124,7 @@ Chime BoardQuantity:
 |===
 
 [#tcd1103PartsList]
-Plunger Sensor (TSL1410R linear photo sensor array)Quantity:
+Plunger Sensor (TSL1410R linear photo sensor array)
 
 NOTE: The TSL1410/12 sensors were discontinued by the manufacturer in 2016 and are no longer available anywhere that I'm aware of. This section is therefore of historical interest only. I'm keeping it in the guide for the sake of completeness, and on the off chance that someone discovers a dusty old carton full of unsold TSL1410's buried at the back of a shelf in a warehouse somewhere, and puts them up for sale on eBay, or the even more remote chance that the manufacturer does another run at some point. But for now, I'm sorry to say that these devices can't be bought at any price, so new cabinet builders will have to look to the other plunger sensor options instead.
 
@@ -3169,7 +3169,7 @@ NOTE: The TSL1410/12 sensors were discontinued by the manufacturer in 2016 and a
 
 |===
 
-Plunger Sensor (Potentiometer)Quantity:
+Plunger Sensor (Potentiometer)
 
 [cols="1,1,1,1,1,1"]
 |===
@@ -3198,7 +3198,7 @@ Plunger Sensor (Potentiometer)Quantity:
 
 |===
 
-Plunger Sensor (AEDR-8300 optical encoder)Quantity:
+Plunger Sensor (AEDR-8300 optical encoder)
 
 [cols="1,1,1,1,1,1"]
 |===
@@ -3249,7 +3249,7 @@ Plunger Sensor (AEDR-8300 optical encoder)Quantity:
 |===
 
 
-Plunger Sensor (TCD1103 linear image sensor)Quantity:
+Plunger Sensor (TCD1103 linear image sensor)
 
 [cols="1,1,1,1,1,1"]
 |===
@@ -3327,7 +3327,7 @@ Plunger Sensor (TCD1103 linear image sensor)Quantity:
 
 |===
 
-Plunger Calibration Button (Standalone)Quantity:
+Plunger Calibration Button (Standalone)
 
 [cols="1,1,1,1,1,1"]
 |===
@@ -3363,7 +3363,7 @@ Plunger Calibration Button (Standalone)Quantity:
 
 |===
 
-Plunger Calibration Button (Expansion Boards)Quantity:
+Plunger Calibration Button (Expansion Boards)
 
 [cols="1,1,1,1,1,1"]
 |===
@@ -3385,8 +3385,8 @@ Plunger Calibration Button (Expansion Boards)Quantity:
 
 |===
 
-
-Williams Coin Door 13-pin Connector Board - version 2Quantity:
+[#WilliamsCoinDoorConnectorV2PartsList]
+Williams Coin Door 13-pin Connector Board - version 2
 
 [cols="1,1,1,1,1,1"]
 |===
@@ -3450,8 +3450,8 @@ Williams Coin Door 13-pin Connector Board - version 2Quantity:
 
 |===
 
-
-Williams Coin Door 13-pin Connector Board - version 1Quantity:
+[#WilliamsCoinDoorConnectorPartsList]
+Williams Coin Door 13-pin Connector Board - version 1
 
 [cols="1,1,1,1,1,1"]
 |===

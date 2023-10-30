@@ -423,7 +423,7 @@ For a replacement cab for a real pinball machine, it's best to measure a factory
 
 image::images/front-panel-buttons.png[""]
 
-Reference: xref:cabBody.adoc#frontPaneLButtons[Cab Body - Front panel buttons]
+Reference: xref:cabBody.adoc#frontPanelButtons[Cab Body - Front panel buttons]
 
 == Drill the lockbar receiver and coin door bolts
 
@@ -564,7 +564,7 @@ Drill two 1-1/2" diameter holes near the rear of the main cabinet floor, as show
 
 image::images/main-floor-vents.png[""]
 
-Reference: xref:cabBody.adoc#mainCabFloor[Cab Body - Floor]
+Reference: xref:cabBody.adoc#mainCabFloorPlan[Cab Body - Floor]
 
 == Drill the translite lock T-nuts
 

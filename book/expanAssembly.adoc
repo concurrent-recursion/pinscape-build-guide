@@ -152,7 +152,7 @@ Some of the components on the boards are optional. You only need to install them
 
 Read the "Special note about JP12" above for why you might want to omit this pin header.
 
-
+[#configureSmallLedRegulator]
 === Configuring the "Small LED" current level
 
 The "Small LED" ports on the main board (on pin header JP8) are "constant current" outputs. This means that they have a built-in current limiter that caps the current at a selected level, which allows you to connect LEDs to these outputs *directly* , without any current-limiting resistors. The function of the current-limiting resistors is replaced by the built-in current limiter, eliminating the need to install the resistors separately.

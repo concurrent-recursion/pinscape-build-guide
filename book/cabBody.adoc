@@ -258,7 +258,7 @@ For a DIY project, you're always free to come up with something completely diffe
 
 We provide detailed plans for the WPC design later in this section. Before we get to the plans, though, there are some variations that you might want to consider, so that you can customize the plans for your project's specific goals.
 
-
+[#cabinetWidths]
 ===  Standard and Widebody cabinets
 
 The WPC design is what we usually call the "standard" cabinet, because Williams/Bally/Midway used this for most of the machines they shipped in the 1990s. However, they also used a variation of the plan with a slightly wider main cabinet, to accommodate a larger playfield. This wider variation was used for seven titles in all: _The Twilight Zone_ (1993), _Indiana Jones: The Pinball Adventure_ (1993), _Judge Dredd_ (1993), _Star Trek: The Next Generation_ (1993), _Popeye Saves the Earth_ (1994), _Demolition Man_ (1994), and _Red & Ted's Road Show_ (1994). The official marketing name for these games was "Superpin", but no one ever uses that term; everyone in the virtual pinball world calls these the "widebody" machines.
@@ -471,7 +471,7 @@ The smallish slat near the bottom front attaches to the floor on the real machin
 
 There are numerous ways to divide plywood sheets into the panels making up the cabinet. For some suggested layouts, see xref:plywoodCuttingPlans.adoc[Plywood Cutting Plans for Cabinet Construction] .
 
-
+[#sideWalls]
 === Side walls
 
 Here are the side walls. The views are from the interior of the cabinet, to show details on the joinery routing.
@@ -521,7 +521,7 @@ If you're going to use a custom cashbox that's not the standard size, you should
 
 The original WPC cabinets use a slight chamfer (a 45° bevel) on the outside bottom edges of the side walls, to soften the edge and reduce splintering. This is optional, but it will reduce the chances of snagged clothes and cuts from bumping into the side. See xref:#edgeFinishes[Edge finishes] above.
 
-
+[#legBoltDrilling]
 ====  Leg bolts
 
 The leg bolt holes are a little tricky. The bolts go through the corners at a 45° angle, so they bore through both adjoining walls at each corner. So, as shown in the illustration, the left and right walls only have "half a hole" for each bolt - really more of a semicircular notch.
@@ -593,6 +593,7 @@ Variations:
 * There are at least two other good ways to position the MagnaSave buttons. Some people place them directly below the flipper buttons, and some people prefer them diagonally behind and below the flipper buttons. Both of those patterns have precedents in real pinball machines that had the extra buttons (see xref:magnaSaveButtons.adoc[Tables with MagnaSave Buttons] ). The layout in my diagrams is based on the Williams MagnaSave games from the 1980s, so it's probably the most familiar look to most players, but not everyone likes the feel, due to the stretch to reach the rear buttons. The more vertical layouts are arguably easier to reach, and make it it easier to keep a finger on each button.
 * Williams System 11 games (1980s) placed the flipper buttons about 1/4" higher than shown in my diagrams, which are based on the WPC games (1990s). System 11 games used broader side rails that covered the flipper buttons, so I think the slightly different positioning is purely to accommodate the different rails. I don't think it noticeably affects the feel.
 
+[#glassChannelSlots]
 ====  Glass channel slots
 
 If you're going to install the standard side rails and a glass cover over the playfield, you should also install a set of "glass channels". These are plastic "U"-shaped trim pieces that fit under the side rails, along the left and right edges. These hold the glass at the sides.
@@ -645,7 +646,7 @@ image::images/slot-cutter-execute.jpg[""]
 
 You're all set to cut the slot. Plug the router in. Make sure the board is securely clamped to a horizontal surface. Place the router flat against the board with the bit hanging over the edge right next to the starting point for slot. For safety, always make sure that the bit isn't touching the work piece (or anything else!) when you switch the router on - so position it so that the bit is just clear of the work piece, at the point you want to start the cut, with the base flat against the board. Keep the router base flat against the board at all times throughout this procedure, and hold the router in both hands to keep it steady. When the router is up to speed, gently slide it sideways into the edge of the board to start cutting the slot. The bit's pilot point will automatically stop the bit at the correct slot depth, so just keep sliding it into the edge until it hits the pilot point. Now slowly move the router along the edge of the board, parallel to the edge, keeping the pilot point pressed against the edge, until you reach the end of the span where you want the slot to be. Finally, withdraw the bit from the slot, by sliding the router sideways away from the edge of the board just far enough for the bit to move clear of the slot, then turn off the router.
 
-
+[#frontWall]
 === Front wall
 
 The front wall is the most complex section of the cabinet. It has a whole bunch of things attached: the coin door, several pushbuttons, the plunger, the lockbar, and the leg bolts. There are so many things vying for a limited amount of space that the positioning of each part is pretty constrained; everything fits together like a 3D puzzle.
@@ -670,6 +671,7 @@ The dado at the bottom is for joining with the floor of the cabinet. This is exa
 
 The leg bolts go through the corners of the front face at a 45° angle, just like the way they work with the side walls. Route notches for the bolts exactly as we described earlier for the side walls. Use the same positioning (measured from the bottom edge) as for the front legs on the side pieces. The front notches in the side walls need to align with the notches in the front wall when the cabinet is assembled.
 
+[#frontWallBevel]
 The top edge of the front wall should be cut at a 10° bevel angle, to match the slope of the side walls. This corresponds to a rise of about ⅛ over the thickness of the plywood. In other words, the height at the back face (the side facing the interior of the cabinet) should be about ⅛ taller than the height at the front face (the exterior side), as illustrated below.
 
 
@@ -685,7 +687,7 @@ If you do use the sloping top edge, note that all of the measurements shown in o
 
 The original WPC cabinets use a slight chamfer (a 45° bevel) on the outside bottom edge of the front wall, to soften the edge and reduce splintering. This is optional, but it's a little nicer than a sharp square plywood edge. See xref:#edgeFinishes[Edge finishes] above.
 
-
+[#coinDoorCutout]
 ====  Coin door cutout
 
 The rectangular cutout in the center of the front wall is for a standard pinball coin door. All pinball manufacturers have been using the same coin door dimensions since the 1980s, so just about any coin door made for any modern pinball brand should fit the same cutout. Suzo Happ makes a universal replacement door that fits this template, and you can also still buy the original Entropy coin doors that Wiliams used in their 1980s machines. I'm not as certain that pre-1980s doors are as standardized, so if you have an older coin door, you should measure it before using the diagram below, to make sure it fits.
@@ -710,7 +712,7 @@ If you're using the standard WPC-era parts (a 1990s coin door and a Williams WPC
 
 If you're not using a coin door at all, you should obviously omit the rectangular cutout, as well as the drill holes around the perimeter. Note that the top center hole is shared by the coin door and lockbar receiver, though, so if you're using a standard lockbar receiver, you'll still need to drill that hole even though you don't need it for the coin door.
 
-
+[#lockbarReceiverDrills]
 ====  Lockbar receiver
 
 The three small drill holes shown at the top of the front wall plan are for the carriage bolts that fasten the lockbar receiver to the front wall. (If you're not sure what the receiver is or what it's for, we'll explain more about it shortly.)
@@ -756,7 +758,7 @@ image::images/lockbar-into-receiver.png[""]
 
 The receiver attaches to the inside of the front wall of the cabinet. It's fastened with three carriage bolts. This is what the drill holes at the top of the front wall are for. The center bolt is shared between the coin door and receiver - both parts have holes in this position that align when everything is assembled. This is why the vertical position of the coin door is so important: the coin door aligns with the lockbar receiver, and the receiver has to align with the top of the wall so that the lockbar fits properly.
 
-
+[#frontPanelButtons]
 ====  Front panel buttons
 
 image::images/small-pushbutton.png[""]
@@ -846,7 +848,7 @@ I'd personally avoid the front panel for all of these and place them on the bott
 
 For volume controls, I'd recommend using doubled-up flipper buttons instead of a separate knob (see my link:http://mjrnet.org/pinscape/PinVol.html[PinVol] page for an explanation). But if you really want a separate knob, and you don't want to have to reach under the machine to operate it, one way to make it inconspicuous is to install it in the coin door, by drilling a hole for the knob stem.
 
-
+[#backWall]
 === Rear wall
 
 The rear wall is a lot simpler than the front wall. It just has a couple of openings for cooling vents, and another for the power inlet. Nothing has to align with standard trim pieces here, so the placement of the openings is flexible.
@@ -1070,6 +1072,7 @@ image::images/backbox-wing-bolts-2.png[""]
 The wing screws are important for safety, so be sure to lay the groundwork for them by installing the T-nuts. Even if you're installing a latch on the back of the backbox, you should still use the wing screws and T-nuts, since most latches aren't strong enough to truly secure the backbox.
 
 [#installLegBoltBrackets]
+[#legBoltBraces]
 === Corner braces for the leg bolts
 
 One last detail. We need some corner braces that go under the brackets used to fasten the legs.
@@ -1120,6 +1123,7 @@ Corner joins, viewed from the front. This type of join leaves a seam along one f
 (For purists, I have to confess that my design has a discrepancy from the original WPC design, which is that the joinery at the bottom of the back wall is different. The original WPC back wall simply butts up against the floor, whereas my design uses a rabbet to match the other three sides of the back wall. This is obviously an inconspicuous area - I didn't even notice the deviation until some time after publishing this chapter - and I can't think of any way the difference affects function. The rabbet is perhaps a bit stronger, and works as a glue joint, whereas the original butt join requires nailing. Williams might have used the original butt join simply for manufacturing convenience: it's more forgiving of measurement errors, in that you don't have to get the bottom and back pieces to line up precisely. If you want to modify my plan to reinstate the original design, cut the back wall 3/8" taller, make the floor piece 1/2" less deep, and omit the rabbet at the back of the floor.)
 
 [#transliteGuideTrim]
+[#backboxTrim]
 ====  Translite and DMD guides
 
 The WPC backbox requires some simple rectangular wood strips that acts as guides to hold the translite and speaker/DMD panels in place.
@@ -1192,7 +1196,7 @@ image::images/translite-lock-tnut.png[""]
 
 Simpler alternative: rather than pre-drilling and installing the T-nuts, you can discard the Torx screws that come with the lock plate kit, and attach the lock to the trim with ordinary wood screws instead. That eliminates the need for the T-nuts. The reason they use the machine screws and T-nuts on the commercial machines is to harden the lock against prying. You're probably not as concerned with that in a home-use machine, in which case wood screws are fine. You can install wood screws after the trim is installed, so there's no need for all this prep work if that's what you're going to use.
 
-
+[#transliteLockTrimRouting]
 ====  Extra routing for translite lock
 
 There's a little extra routing you need to do to ensure a good fit for the translite lock. You can skip this if you're not installing a lock.
@@ -1203,7 +1207,7 @@ image::images/backbox-trim-routing.png[""]
 
 This is necessary to leave room for the lock tab when it's in the "locked" position. The tab is slightly wider than the slot, so it needs this extra room on the other side.
 
-
+[#backboxSidesPlan]
 ====  Backbox sides
 
 image::images/backbox-sides.png[""]
@@ -1231,7 +1235,7 @@ image::images/backbox-top.png[""]
 
 Backbox top piece (roof)
 
-
+[#backboxTopBevel]
 image::images/backbox-top-slope.png[""]
 
 To match the slope of the front sides, the front edge of the top piece should be cut at a 7° angle. This is an edge-on view from the left side.
@@ -1253,7 +1257,7 @@ image::images/backbox-bottom.png[""]
 
 Backbox floor
 
-
+[#backboxBottomBevel]
 image::images/backbox-bottom-slope.png[""]
 
 To match the slope of the front walls, cut the front edge at a 7° angle. This is an edge-on view from the left side.
@@ -1274,6 +1278,7 @@ Above: Cutouts in floor of backbox. The rectangular cutout is for passing cables
 
 *Lock bolts:* The 1"-diameter holes on either side of the center cutout are for locking bolts. These should be aligned on the same centers as the corresponding ½" holes in the main cabinet shelf. If you had to move those to accommodate a custom center cutout, move these holes to match. Note that the shelf holes are ½" diameter, whereas the corresponding backbox are 1" diameter. As with the center cutout, the reference point to use for alignment is the centerpoint of the back edge, because that will line up on the shelf and backbox.
 
+[#backboxHingeBolts]
 *Hinge bolts:* The ¼" diameter holes near the outer edges (three on either side) are for carriage bolts that attach the WPC-style hinges to the backbox. Drill these only if you're using the WPC-style hinges.
 
 Important! The positions shown are for a standard-width main cabinet. If you're using a widebody or custom-width cabinet, *or* a custom backbox width, you'll need to refigure the positions. Use this formula:
@@ -1290,6 +1295,7 @@ If you don't want to take chances on getting the measurements perfect before-han
 * Rotate the hinges up into position where they'll attach to the backbox. Make sure the contact area is flush with the bottom of the backbox. Mark bolt hole positions.
 * Take down the backbox and drill at the marked positions.
 
+[#backboxBack]
 ====  Backbox back wall
 
 The back wall of the backbox on the real machines is typically 1/2" plywood (or particle board or MDF, if you prefer). It's a simple rectangular piece, with some holes for passive cooling.
@@ -1469,7 +1475,7 @@ image::images/install-divider-2.png[""]
 
 image::images/install-divider-3.png[""]
 
-
+[#backRails]
 ====  Back rails
 
 If you want to include the back rails, attach them to the back of the cabinet, oriented vertically, near the edges. The exact positioning isn't particularly important, as long as the rails form a stable base for standing the machine on its back, so make any adjustments needed to keep clear of your fan vents and other openings in the back wall.
@@ -1540,7 +1546,7 @@ The back should be flush with the back edges of the adjoining walls when install
 
 In addition to the glue, you can add some finish nails to strengthen the back wall. Use small finish nails, such as 1" #18 brads. Drive them in from the back of the back wall, around the perimeter, set in about 3/16" from the edges. Space them every few inches; four or five nails on each side should be sufficient.
 
-
+[#backboxCornerBracing]
 ====  Corner bracing
 
 The original WPC backboxes had steel braces at the corners to strengthen the joints. The glued corner joints are actually pretty sturdy all by themselves, if you construct them using the rabbeted design described above, but apparently Williams deemed it necessary to add some heavy reinforcement. I'm sure that came from experiences with commercial operators who banged up their machines with rough handling and then complained when they broke.

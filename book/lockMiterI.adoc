@@ -351,7 +351,7 @@ Once you have a good fit with one piece, finish the remaining FRONT/BACK pieces.
 
 That's it - you're done! The corners should all fit together tightly. If any of them are so tight that you have to force them together, try manually sanding the sticking points.
 
-
+[#routerFenceMicroAdjuster]
 == Router fence micro-adjuster
 
 Table saws usually come with rack-and-pinion fences that you can adjust fairly precisely by turning a knob. Router tables, in contrast, usually have much simpler fences, without any adjustment mechanism at all. The fence usually just slides freely on a couple of parallel tracks. You move it by hand to where you want it, then tighten some knobs that hold it in place.
