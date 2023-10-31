@@ -1,3 +1,4 @@
+[#icchips]
 = IC Chips
 
 Integrated circuit (IC) chips are ubiquitous in modern electronics, and you'll find several of them on the Pinscape boards. An IC is essentially a miniature circuit board consisting of a collection of the more basic components (resistors, capacitors, and transistors) that we use elsewhere in our own circuit boards. There are ICs for thousands of different functions and applications, ranging from simple things like resistor arrays to complex computing tasks like running Windows.
@@ -6,7 +7,7 @@ We'll start with some general information that's common to most IC chips, then l
 
 == Static electricity warning
 
-Almost all IC chips are sensitive to static electricity. Refer to xref:staticSafety.adoc[Static Electricity Precautions] for tips on handling static-sensitive parts.
+Almost all IC chips are sensitive to static electricity. Refer to xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] for tips on handling static-sensitive parts.
 
 == Identifying a chip
 

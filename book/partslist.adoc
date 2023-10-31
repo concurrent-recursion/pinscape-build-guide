@@ -5,7 +5,7 @@ This section lists all of the electronics needed for each Pinscape Controller su
 
 The ID column lists the "reference designator" for each component as it appears in the schematics. That's just an arbitrary ID assigned for cross-referencing between the schematic and the parts list. Each ID is unique within its board, but has no meaning outside of that. These same IDs are also printed on the circuit boards next to the parts, so that you can match up the physical components on the boards to schematics and the parts list.
 
-Note that the parts lists don't include any of the custom PCBs (printed circuit boards), such as the expansion boards. These have to be custom fabricated, which is of course a different process than ordering off-the-shelf parts. We explain how to do get these made in xref:expanFab.adoc[Fabricating the Expansion Boards] .
+Note that the parts lists don't include any of the custom PCBs (printed circuit boards), such as the expansion boards. These have to be custom fabricated, which is of course a different process than ordering off-the-shelf parts. We explain how to do get these made in xref:expanFab.adoc#expanFab[Fabricating the Expansion Boards] .
 
 == Optional elements
 
@@ -37,7 +37,7 @@ Here are some guidelines for selecting substitutions:
 * The NPN and PNP transistors we use can be replaced with most other "small signal switching" transistors. The polarity (NPN or PNP) must always match. Pay attention to the ordering of the "legs", since that can be different even if the physical package looks identical.
 * IC chips usually need to be the exact parts listed. In some cases, though, several manufacturers make compatible equivalents. These will generally have the same number with a different letter prefix. For example, there are equivalent xx847 optocoupler chips from several manufacturers, with names like PC847, K847, LTV-847.
 
-More detailed advice on selecting substitute parts can be found in the chapters on the individual component types in our electronics overview section, xref:electronics.adoc[A Crash Course in Electronics] . Start at xref:compov.adoc[Field Guide to Components] and follow the links to the chapters on the various components.
+More detailed advice on selecting substitute parts can be found in the chapters on the individual component types in our electronics overview section, xref:electronics.adoc#electronics[A Crash Course in Electronics] . Start at xref:compov.adoc#compov[Field Guide to Components] and follow the links to the chapters on the various components.
 
 == Ribbon cables
 
@@ -56,7 +56,7 @@ You can buy pre-assembled ribbon cables, but it's hard to find them for anything
 
 The parts list assumes that you're going to be building your own custom ribbon cables where needed. As such, it lists the *connectors* needed at the end of each required ribbon cable. However, it doesn't list the *wire* . The wire is a generic part that you can find anywhere, and you'll want to figure out what length you need, so we leave it up to you to select the wire.
 
-See xref:ribbonCables.adoc[Ribbon Cables] for details on buying the wire and attaching the connectors to the cables.
+See xref:ribbonCables.adoc#ribbonCables[Ribbon Cables] for details on buying the wire and attaching the connectors to the cables.
 
 == Shopping list builder
 The list below is formatted for printing. Click the button for a more interactive view that will let you select parts, fill in quantities, and create an ordering list that you can upload to different vendor sites to fill in your shopping cart without having to find everything manually.
@@ -3528,7 +3528,7 @@ xref:[Note 6] : Select a resistor according to the IR LED(s) used for the TV ON 
 * For one LED: use 39 ohms 1/2 Watt
 * For two LEDs in series: use 27 ohm 1/2 WattOmit the resistor if no LED will be connected.
 
-xref:[Note 7] : If you're in Europe, it might be more convenient to substitute transistor type BC337 for each 2N4401, and type BC327 for each 2N4403. The BC3xx types are reportedly easier to find in Europe. See xref:eurotrans.adoc[European Transistor Substitutions] .
+xref:[Note 7] : If you're in Europe, it might be more convenient to substitute transistor type BC337 for each 2N4401, and type BC327 for each 2N4403. The BC3xx types are reportedly easier to find in Europe. See xref:eurotrans.adoc#eurotrans[European Transistor Substitutions] .
 
 xref:[Note 8] : Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all of the TVs.
 

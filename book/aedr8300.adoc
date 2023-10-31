@@ -1,3 +1,4 @@
+[#aedr8300]
 = Plunger Setup (AEDR-8300 Encoder)
 
 image::images/aedr8300CloseupSmall.png[alt="Photo of AEDR8300 chip"]

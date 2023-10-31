@@ -1,3 +1,4 @@
+[#powerSwitching]
 = Power Switching
 
 When you push the ON button your virtual cab, you want everything to turn on automatically: all the TVs, the audio system, the feedback devices, etc. Likewise, when you're done playing, you don't want to run around shutting everything off separately; you just want to press the OFF button and have the whole thing shut down.
@@ -24,7 +25,7 @@ The standard place on a virtual cab to mount the power button is on the bottom o
 
 === Type of connector use with F_PANEL
 
-The standard F_PANEL connector uses two rows of pins with 0.1" pin spacing. This is a standard type of connector. To learn more about how to build a plug to connect here, see "0.1" pin headers" in xref:connectors.adoc[Connectors] . I'd recommend building a connector using a 0.1" crimp pin housing, as described in that section.
+The standard F_PANEL connector uses two rows of pins with 0.1" pin spacing. This is a standard type of connector. To learn more about how to build a plug to connect here, see "0.1" pin headers" in xref:connectors.adoc#connectors[Connectors] . I'd recommend building a connector using a 0.1" crimp pin housing, as described in that section.
 
 
 == Controlling everything else through the PC
@@ -207,14 +208,14 @@ The big limitation of this hack is that it only works for certain TVs. Many TVs 
 
 If you're using the Pinscape expansion boards, there's a feature built in to help deal with TVs that won't turn on automatically when plugged in. The Pinscape boards have a power sensor that tracks the power supply status, and two mechanisms for sending an ON command to the TV: a relay that can be hard-wired to the TV's On/Off button, and an IR emitter that can be programmed to send the TV's IR remote control command code to turn on. These features can be configured in the Pinscape software to send the TV ON signal (by relay and/or remote) after an adjustable delay interval after the rest of the system powers up, to give the TV a chance to "boot up" and make itself ready to receive commands.
 
-See xref:tvon.adoc[TV ON Switch] for full details.
+See xref:tvon.adoc#tvon[TV ON Switch] for full details.
 
 ====  Solution 5: eBay timer board
 
 You can build your own equivalent of the Pinscape TV ON feature using a type of electronic timer circuit board available on eBay.
 
 
-WARNING: I recommend against using this solution, because it requires taking the TV apart; it's only included here for reference. If possible, use the Pinscape IR transmitter solution instead. See xref:tvon.adoc[TV ON Switch] . The IR approach is non-invasive and fairly easy to build. You can use it even if you're not using Pinscape for anything else.
+WARNING: I recommend against using this solution, because it requires taking the TV apart; it's only included here for reference. If possible, use the Pinscape IR transmitter solution instead. See xref:tvon.adoc#tvon[TV ON Switch] . The IR approach is non-invasive and fairly easy to build. You can use it even if you're not using Pinscape for anything else.
 
 This approach works by simulating a manual button press on the TV's On/Off button, shortly after the system power is turned on. We don't physically press the button, but rather simulate it electronically, by soldering wires to the button's switch contacts and connecting them briefly at the proper moment.
 
@@ -264,7 +265,7 @@ Repeat this process for the second lead. Once both are soldered and held securel
 
 Now you just need to connect the newly attached wires to the timer board relay. Attach the wires to the relay *common (COM)* and *normally open (NO)* terminals on the timer board. (If the relay only has two switch terminals, those are the two to use!)
 
-Finally, to power the relay board itself, connect its DC+ and DC- terminals to the appropriate voltage inputs from the *secondary* ATX power supply. For example, if it requires 5V for power, connect its DC+ input to the red +5V wire on the secondary power supply, and connect its DC- input to the black 0V/Ground wire on the secondary power supply. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice on connecting wires to the power supply.
+Finally, to power the relay board itself, connect its DC+ and DC- terminals to the appropriate voltage inputs from the *secondary* ATX power supply. For example, if it requires 5V for power, connect its DC+ input to the red +5V wire on the secondary power supply, and connect its DC- input to the black 0V/Ground wire on the secondary power supply. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for advice on connecting wires to the power supply.
 
 Note that you *must* use a secondary ATX power supply to power the timer board ( _not_ the main PC power supply), and the secondary power supply must be plugged into the *switched* power strip. That's key to the whole scheme, because the timer board has to be powered up at the same time as the TV in order for the countdown to start at the same time the TV receives power.
 
@@ -272,7 +273,7 @@ Note that you *must* use a secondary ATX power supply to power the timer board (
 
 This works much like the eBay timer board described above, except that it saves you the trouble of tracking down the right item on eBay. The tradeoff is that you have to assemble your own circuit board instead. But you don't have to design the circuit: you can just build it from my plans.
 
-WARNING: As with the eBay timer board, I recommend against using this solution, because it requires taking the TV apart. If possible, use the Pinscape IR transmitter solution instead. See xref:tvon.adoc[TV ON Switch] .
+WARNING: As with the eBay timer board, I recommend against using this solution, because it requires taking the TV apart. If possible, use the Pinscape IR transmitter solution instead. See xref:tvon.adoc#tvon[TV ON Switch] .
 
 You can download the schematic, in EAGLE and PDF format, along with and an EAGLE printed circuit board layout, here:
 
@@ -300,7 +301,7 @@ If the TV turns on, try the test a few more times to make sure the timing is rel
 
 *Connect the board:* Once you have wires connected to the TV's On/Off button, connect the other ends of the wires to one of the "K1" relay switches, on the Normally Open side. If you're connecting directly to the relay, connect to pins *4 and 8* or pins *9 and 13* . The relay in the spec is double-pole, meaning that it can switch two separate televisions on at the same time. That's why you have your choice of which relay pins to connect. If you have a second TV that needs the same treatment, you can simply connect it to the other pair of pins. If you use the PCB design, connect the TV wires to JP12 pins *1 and 2* (labeled "TV1" on the board silkscreen) or pins *3 and 4* ("TV2").
 
-*Connect power to the board:* Finally, connect the power inputs to your *secondary* ATX power supply. As with the eBay timer, the scheme is predicated on the timer getting its power through a source that's switched on at the same time as the TV, because the power-on time is the start of the delay timer countdown. If you're building from the schematic, connect VCC to +5V (a red wire) from the ATX supply, and connect GND to ATX ground (a black wire). If you're using the PCB layout, connect an ATX red wire to the JP7 +5V (marked on the silkscreen), and connect a black wire to JP7 GND. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice on connecting wires to an ATX power supply.
+*Connect power to the board:* Finally, connect the power inputs to your *secondary* ATX power supply. As with the eBay timer, the scheme is predicated on the timer getting its power through a source that's switched on at the same time as the TV, because the power-on time is the start of the delay timer countdown. If you're building from the schematic, connect VCC to +5V (a red wire) from the ATX supply, and connect GND to ATX ground (a black wire). If you're using the PCB layout, connect an ATX red wire to the JP7 +5V (marked on the silkscreen), and connect a black wire to JP7 GND. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for advice on connecting wires to an ATX power supply.
 
 This circuit design is designed for this single function, so there's no need to "program" it as with the eBay timers. All you have to do is plug it in and it should work.
 

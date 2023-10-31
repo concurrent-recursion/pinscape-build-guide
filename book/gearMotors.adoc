@@ -1,3 +1,4 @@
+[#gearMotors]
 = Gear motors
 
 A gear motor can be used in a virtual pin cab to re-create the noise made by the playfield motors found in many real pinball games. A gear motor is just a small DC motor with some step-down gears to reduce the shaft speed.

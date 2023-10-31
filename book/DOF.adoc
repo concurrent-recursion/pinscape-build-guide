@@ -40,7 +40,7 @@ The answer is a qualified Yes. Almost every VP X table has full DOF support buil
 
 == How to install DOF
 
-Before you install DOF, you must first install Visual Pinball and the B2S Backglass program. If you haven't already installed those, go back to xref:software.adoc[Pinball Software Setup] and follow the instructions there. If you're planning to use PinballX as your game selection menu system, you should also install that first.
+Before you install DOF, you must first install Visual Pinball and the B2S Backglass program. If you haven't already installed those, go back to xref:software.adoc#software[Pinball Software Setup] and follow the instructions there. If you're planning to use PinballX as your game selection menu system, you should also install that first.
 
 Once VP, B2S, and PinballX are installed, you're ready to install DOF. You have two options for this: automatic or manual.
 
@@ -176,8 +176,8 @@ If the Status is *Active* and the Last Exception column is empty, congratulation
 
 If you have any of the following controller types, you have to do some additional work to tell DOF how to access them:
 
-*  xref:sainsmart.adoc[SainSmart USB relay board]
-*  xref:addressableLightStrips.adoc[Teensy addressable LED strip controller]
+*  xref:sainsmart.adoc#sainsmart[SainSmart USB relay board]
+*  xref:addressableLightStrips.adoc#addressableLightStrips[Teensy addressable LED strip controller]
 
 If you're not using one of the controllers listed above, you can skip to the next section. Most other controller types *don't* require any extra configuration work on your part, because DOF finds them automatically each time it runs. DOF automatically detects Pinscape, LedWiz, and Pac-Led.
 
@@ -252,7 +252,7 @@ For a Pinscape controller, the page will show 128 ports. You might not have that
 
 To set up the port mappings, all you need to do is go through the ports one by one, and select the device type attached to each port from its drop-down list. If you've already connected your feedback devices to their output ports, hopefully you kept notes on which device was wired to which port! Get out those notes now and enter the same information the Config Tool port list.
 
-If you're not sure what any of the terms in the drop-down list mean, see xref:dofDeviceList.adoc[DOF Config Tool Device Descriptions] . That provides a full list of all of the devices in the drop-down lists, with detailed explanations of how they're usually implemented in virtual cabs. The devices in the drop lists are mostly self-explanatory, but some of them are pretty obscure, plus there's a certain amount of "virtual pinball jargon" that probably won't make much sense if you haven't spent a lot of time in the forums.
+If you're not sure what any of the terms in the drop-down list mean, see xref:dofDeviceList.adoc#dofDeviceList[DOF Config Tool Device Descriptions] . That provides a full list of all of the devices in the drop-down lists, with detailed explanations of how they're usually implemented in virtual cabs. The devices in the drop lists are mostly self-explanatory, but some of them are pretty obscure, plus there's a certain amount of "virtual pinball jargon" that probably won't make much sense if you haven't spent a lot of time in the forums.
 
 Once you enter all of the devices, click Save.
 

@@ -1,4 +1,4 @@
-
+[#kl25zPinOut]
 = KL25Z Pin Out
 
 image::images/kl25zPinOut.png[""]
@@ -26,7 +26,7 @@ The other markings on the diagram alongside the GPIO port names indicate the "ca
 
 == PTD1 and the blue on-board LED
 
-The port labeled PTD1 needs some additional explanation. It's a GPIO port, but it's also hard-wired on the KL25Z to the blue segment of the KL25Z's on-board status LED - the RGB LED that normally shows the Pinscape firmware's current status by flashing various color patterns ( xref:statusLights.adoc[KL25Z Status Lights] ).
+The port labeled PTD1 needs some additional explanation. It's a GPIO port, but it's also hard-wired on the KL25Z to the blue segment of the KL25Z's on-board status LED - the RGB LED that normally shows the Pinscape firmware's current status by flashing various color patterns ( xref:statusLights.adoc#statusLights[KL25Z Status Lights] ).
 
 You can use PTD1 as a feedback device output port if you wish, simply by assigning it to an output port row in the Pinscape Config Tool. If you do, its output port use automatically supersedes the status light usage in the Pinscape firmware, so there won't be any conflict at the software level. However, be aware that the on-board wiring to the blue LED will still be there. The blue LED wiring is a fixed, physical feature of the KL25Z board that can't be changed in software. This means that the blue LED segment will turn ON whenever the PTD1 pin is at a "low" voltage, and OFF whenever PTD1 is "high". So the blue LED will light up when the feedback port is OFF and turn off when the feedback port is ON. You can just ignore that if it doesn't bother you, or you can modify the KL25Z as described below to sever the on-board wiring to the LED.
 

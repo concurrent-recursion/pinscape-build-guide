@@ -1,3 +1,4 @@
+[#wire]
 = Wire
 
 One electrical component that you'll use a lot of in a pin cab is wire. I'd recommend buying about 100' up front if you're setting up a basic cab without feedback devices, and at least 200' if you're installing feedback devices.

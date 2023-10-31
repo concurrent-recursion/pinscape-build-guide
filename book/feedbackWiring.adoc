@@ -17,7 +17,7 @@ So how exactly do we insert an output controller into this picture? The exact de
 
 We're going to start with the "solid-state" controllers - LedWiz, PacLed, and Pinscape. We call these solid-state controllers because they use transistor switches to turn the attached devices on and off. We start with these because they all work roughly the same way, and they all have a fairly simple approach to connecting devices.
 
-The alternative to a solid-state controller is a relay-based controller, such as a SainSmart board. And even for those, most of what we're going to cover for the solid-state controllers applies, which is another reason we're starting with those. We'll cover the specifics of the relay boards later on, but I hope you'll read through the solid state section first to get a mental picture of how all of this works in general terms. Just be aware as you read the solid-state material that there will be a few little differences for the relay boards. We'll provide the exact circuit diagrams for the relay boards in xref:sainsmart.adoc[SainSmart Relay Board Setup] , so treat the circuit diagrams in the solid-state section as "theory" rather than practice.
+The alternative to a solid-state controller is a relay-based controller, such as a SainSmart board. And even for those, most of what we're going to cover for the solid-state controllers applies, which is another reason we're starting with those. We'll cover the specifics of the relay boards later on, but I hope you'll read through the solid state section first to get a mental picture of how all of this works in general terms. Just be aware as you read the solid-state material that there will be a few little differences for the relay boards. We'll provide the exact circuit diagrams for the relay boards in xref:sainsmart.adoc#sainsmart[SainSmart Relay Board Setup] , so treat the circuit diagrams in the solid-state section as "theory" rather than practice.
 
 The same goes if you're using a relay board to "boost" an LedWiz or PacLed's power. I sincerely hope you're not thinking of using a relay board to boost Pinscape's power, though, because the expansion boards are such a better way to do that.
 
@@ -47,7 +47,7 @@ Adding a second device to the controller. The new device is wired just like the 
 
 There are two things to notice here. The first is that, as we pointed out, you don't have to add another connection to the power supply's (-) terminal. The single "ground" connection that you set up when you install the controller is shared by all devices, so adding a new device only requires the two wires: power supply (+) to device (+), and device (-) to output controller port. The second thing to notice is that we "daisy-chained" the power supply connections. We didn't have to run a separate wire all the way from the second device back to the power supply; it's sufficient to connect them through the same wire. This can save you a lot of wire, since you'll probably have a few devices that are fairly far away from the power supply.
 
-This is all well and good if you want to hook up a bunch of devices that run on the same voltage. But what about devices that run on different power supplies that use other voltages? If you already read through xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , you know that you might need as many as five or six different voltages if you're using a diverse mix of devices:
+This is all well and good if you want to hook up a bunch of devices that run on the same voltage. But what about devices that run on different power supplies that use other voltages? If you already read through xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , you know that you might need as many as five or six different voltages if you're using a diverse mix of devices:
 
 * 5V for flasher LEDs
 * 6.3V for incandescent button lamps
@@ -58,7 +58,7 @@ This is all well and good if you want to hook up a bunch of devices that run on 
 
 So how do you hook up all of these different devices, when each one has to be connected to its own power supply? What happens to that common wire back to the (-) on the power supply when we have five power supplies?
 
-Happily, this turns out to be easy. If you go back and review the section on xref:powerSupplies.adoc#InterconnectingGrounds[Interconnecting Grounds] in the Power Supplies chapter, you'll find the answer. You're going to explicitly wire all of your power supply (-) terminals together when you set up the power supplies. So that wire that connects from the controller to the (-) terminal on the one power supply actually connects to the (-) terminal on _all_ of the power supplies. This important power supply setup step is explained in detail in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+Happily, this turns out to be easy. If you go back and review the section on xref:powerSupplies.adoc#InterconnectingGrounds[Interconnecting Grounds] in the Power Supplies chapter, you'll find the answer. You're going to explicitly wire all of your power supply (-) terminals together when you set up the power supplies. So that wire that connects from the controller to the (-) terminal on the one power supply actually connects to the (-) terminal on _all_ of the power supplies. This important power supply setup step is explained in detail in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 Now that we've settled the question of the (-) wire, it becomes straightforward to connect a mix of devices that use different power supplies. You just repeat that same formula for each device and its particular power supply: device (+) to power supply (+), device (-) to output controller port.
 
@@ -75,13 +75,13 @@ Hopefully, it's clear now how this generalizes if you wanted to add a third or f
 
 If you're using a SainSmart USB relay board, or some other type of relays, the wiring plan is _almost_ the same as shown above. There are two slight differences, though.
 
-First, with a relay, you can "cut" _either_ the (+) or (-) supply wire to insert the relay into the circuit, but it's considered better engineering practice to insert the relay into the "+" wire. That's the way it's shown in the diagrams in the xref:sainsmart.adoc[SainSmart Relay Board Setup] , which is part of why I warned you earlier that the relay-based wiring diagrams would look a little different when you got to them. (The reason it's better to cut the (+) wire is that this leaves the device without any live positive voltage connected when it's switched off. That's safer in case you accidentally touch one of the wires, or there's an accidental short circuit.)
+First, with a relay, you can "cut" _either_ the (+) or (-) supply wire to insert the relay into the circuit, but it's considered better engineering practice to insert the relay into the "+" wire. That's the way it's shown in the diagrams in the xref:sainsmart.adoc#sainsmart[SainSmart Relay Board Setup] , which is part of why I warned you earlier that the relay-based wiring diagrams would look a little different when you got to them. (The reason it's better to cut the (+) wire is that this leaves the device without any live positive voltage connected when it's switched off. That's safer in case you accidentally touch one of the wires, or there's an accidental short circuit.)
 
 Second, relay boards _don't_ have that single common ground wire that runs back to the shared (-) terminal interconnects. Instead, you simply insert the relay into the circuit as though it were an ordinary switch (which, in fact, it is!).
 
 image::images/SainSmartBasicWiring.png[""]
 
-See xref:sainsmart.adoc[SainSmart Relay Board Setup] for more details on the SainSmart boards in particular.
+See xref:sainsmart.adoc#sainsmart[SainSmart Relay Board Setup] for more details on the SainSmart boards in particular.
 
 == Device-specific wiring considerations
 

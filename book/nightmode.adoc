@@ -1,3 +1,4 @@
+[#nightmode]
 = Pinscape Night Mode
 
 Night Mode lets you tell the Pinscape controller to shut off the noisy feedback devices in your cabinet, so that you can play games more quietly during late night hours without disturbing neighbors or housemates who are trying to sleep. You can designate specifically which feedback devices are noisy, so that the purely visual devices like flasher lights remain enabled.

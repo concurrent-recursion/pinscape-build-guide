@@ -283,7 +283,7 @@ The "All switch common" pin is daisy-chained to one terminal of each switch and 
 
 The odd man out among the switches is the "slam tilt" wiring, which has its own separate pair of pins rather than connecting through the "common" pin. You can simply connect one of these pins (it doesn't matter which) to the "common", and connect the other to the appropriate button input for the slam tilt switch.
 
-The coin chute lamp pins provide the 6.3V power connections for the lamps that illuminate the coin chutes. These are normally hard-wired to power on a real pinball machine, so I suggest doing the same in a virtual cab. The lamps normally installed are incandescent #555 lamps, which are designed to run on 6.3V but will run (noticeably dimmed) on 5V. Incandescent bulbs aren't polarized, so it doesn't matter which order you connect (+) and (-) on these. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice on adding 6.3V power to your cab. You can connect the coin lamps to your output controller to put them under software control if you wish, but I personally wouldn't bother: it won't add much of a special effect, since the software will just leave them on all the time anyway.
+The coin chute lamp pins provide the 6.3V power connections for the lamps that illuminate the coin chutes. These are normally hard-wired to power on a real pinball machine, so I suggest doing the same in a virtual cab. The lamps normally installed are incandescent #555 lamps, which are designed to run on 6.3V but will run (noticeably dimmed) on 5V. Incandescent bulbs aren't polarized, so it doesn't matter which order you connect (+) and (-) on these. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for advice on adding 6.3V power to your cab. You can connect the coin lamps to your output controller to put them under software control if you wish, but I personally wouldn't bother: it won't add much of a special effect, since the software will just leave them on all the time anyway.
 
 ====  How to connect to the plug
 
@@ -305,7 +305,7 @@ You can create a simple circuit board for this, using the 13-pin header linked a
 
 The board design includes a 6.3V regulator to provide the correct voltage for the coin chute lamps. Just plug in a 12V supply (you can use an ATX power supply for this). The on-board 6.3V regulator can also supply power to up to four additional front panel button lamps, which usually use the same 6.3V bulbs.
 
-Plans for the board and assembly instructions are in the appendix section xref:CoinDoorBoardPlans.adoc[Coin Door Interface Board] .
+Plans for the board and assembly instructions are in the appendix section xref:CoinDoorBoardPlans.adoc#CoinDoorBoardPlans[Coin Door Interface Board] .
 
 ====  "Z" adapter for Williams plug
 
@@ -357,7 +357,7 @@ To integrate this connector into your own wiring, you have basically the same op
 
 === Stern SPIKE connector
 
-The SPIKE-era coin door wiring harness is terminated in two connectors, each female 0.1" pin header connectors that connect to 0.1" single-row pin headers. These are common connectors that you can find easily from electronics vendors; see xref:connectors.adoc[Connectors] for more on these. One of the plugs has the wiring for the service buttons, and the other has the wiring for the coin chutes and slam tilt switch.
+The SPIKE-era coin door wiring harness is terminated in two connectors, each female 0.1" pin header connectors that connect to 0.1" single-row pin headers. These are common connectors that you can find easily from electronics vendors; see xref:connectors.adoc#connectors[Connectors] for more on these. One of the plugs has the wiring for the service buttons, and the other has the wiring for the coin chutes and slam tilt switch.
 
 The first connector, which has the service button wiring, fits a 6-pin, single-row 0.1" header. The pins are arranged as follows. The "Key" is a blocked pin to ensure that you insert the plug in the right direction; this pin must be snipped off on the header to allow the plug to fit.
 
@@ -388,7 +388,7 @@ To integrate these connectors into your own wiring, you have basically the same 
 
 === Creating your own wiring harness
 
-If you buy one of the basic coin door options that requires you to install the wiring yourself, I'd recommend creating your own plug-and-socket connector for it, rather than wiring everything directly to other points in your cab. This will make future maintenance easier. The Molex .063" wire-to-wire connectors are good for this, as they come in a wide variety of pin counts. See xref:connectors.adoc[Connectors] for more on building custom connectors.
+If you buy one of the basic coin door options that requires you to install the wiring yourself, I'd recommend creating your own plug-and-socket connector for it, rather than wiring everything directly to other points in your cab. This will make future maintenance easier. The Molex .063" wire-to-wire connectors are good for this, as they come in a wide variety of pin counts. See xref:connectors.adoc#connectors[Connectors] for more on building custom connectors.
 
 
 == Wiring to the key encoder
@@ -649,7 +649,7 @@ image::images/QQQIcon.png[""]
 
 As described earlier, Visual Pinball is programmed by default for desktop users who use the keyboard to simulate an imaginary coin door, by pressing the End key on the keyboard to "toggle" the door's open/closed status. That's no good for us, since we're using a real coin door with a real position switch. Fortunately, VP can handle this situation as well, but we have to specifically tell it to override the defaults.
 
-If you're already read through xref:software.adoc[Pinball Software Setup] , you might recall my advice to set up a "customization log" - a text file on your cab's desktop where you record special changes you make to your VP setup, so that you can repeat them the next time you update to a new VP version. This is one of those situations! Make a note of the changes you make here.
+If you're already read through xref:software.adoc#software[Pinball Software Setup] , you might recall my advice to set up a "customization log" - a text file on your cab's desktop where you record special changes you make to your VP setup, so that you can repeat them the next time you update to a new VP version. This is one of those situations! Make a note of the changes you make here.
 
 * Make sure no VP windows are open
 * In the Windows desktop, go to your Visual Pinball installation folder

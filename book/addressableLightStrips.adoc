@@ -1,6 +1,7 @@
+[#addressableLightStrips]
 = Addressable Light Strips
 
-Addressable or "smart" light strips are similar to the basic light strips most cab builders use for xref:lightStrips.adoc#undercabLighting[undercab lighting] , but with the added feature that each LED on a smart strip can be set to a different color. That's what "addressable" means: each LED can be addressed - commanded - individually.
+Addressable or "smart" light strips are similar to the basic light strips most cab builders use for xref:lightStrips.adoc#lightStrips[undercab lighting] , but with the added feature that each LED on a smart strip can be set to a different color. That's what "addressable" means: each LED can be addressed - commanded - individually.
 
 In pin cabs, these can be used in a variety of ways, such as:
 
@@ -40,7 +41,7 @@ You can also use WS2811 light strips, but I'd stay away from those because they'
 
 == Power supply
 
-The strips require a 5V power supply. You can use your secondary ATX power supply if you have one, or a dedicated 5V DC supply. See xref:powerSupplies.adoc#_power_supplies_for_feedback[Power Supplies for Feedback] .
+The strips require a 5V power supply. You can use your secondary ATX power supply if you have one, or a dedicated 5V DC supply. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 Make sure that your power supply has enough capacity. Long light strips can consume a surprising amount of power. Computer ATX power supplies are usually sufficient for typical pin cab light strips, but smaller "wall wart" power supplies might not have enough power for long strips.
 
@@ -174,7 +175,7 @@ The link:https://configtool.vpuniverse.com/[DOF Config Tool] provides pre-progra
 
 |RGB Undercab Complex MX
 |Undercab lights
-|Ambient illumination effects for undercab lighting (see xref:lightStrips.adoc#undercabLighting[Undercab Lighting] )
+|Ambient illumination effects for undercab lighting (see xref:lightStrips.adoc#lightStrips[Undercab Lighting] )
 
 |===
 

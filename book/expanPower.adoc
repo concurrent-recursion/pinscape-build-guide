@@ -1,3 +1,4 @@
+[#expanPower]
 = Expansion Board Power Cables
 
 Each of the expansion boards has two connectors that have to be plugged into ATX power supplies. These are designed to work with special, custom power cables that you build as part of the expansion boards. This section explains what's needed and how to build the cables.

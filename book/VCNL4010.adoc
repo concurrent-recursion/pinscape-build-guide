@@ -1,3 +1,4 @@
+[#VCNL4010]
 = Plunger Setup (VCNL4010 Proximity Sensor)
 
 Vishay's VCNL4010 is an IR proximity sensor. It works by projecting pulses of infrared (IR) light in the direction of the target, and measuring the amount of light reflected back. If enough light is reflected back, the chip detects that an object is present within the target range. The brightness of the reflected light can also be used to infer the distance to the target, at least on a relative scale, since an object reflects more light when it's closer to the sensor than when it's farther away. It's this ability to measure distance that makes this interesting as a pin cab plunger sensor: we can use it to track the plunger position by pointing the sensor at the end of the plunger rod and taking distance readings.

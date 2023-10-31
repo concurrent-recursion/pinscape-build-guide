@@ -2,7 +2,7 @@
 
 If you've worked with PCBs before, you should find building the Pinscape boards to be pretty straightforward. The boards can look pretty daunting to build, because there are admittedly a lot of components to install, but all of the components are individually pretty easy to handle. All of them are "through-hole" parts, with wire leads that install through holes in the board. That type of part is easy to solder by hand. (Modern electronics has largely moved to "surface-mount" parts, which are more designed for installation by robots, and can be tricky to solder by hand. I think it's in keeping with our fundamentally retro hobby that these boards use the older style parts that are more human-friendly.)
 
-If this is your first time working with electronics or building printed circuit boards, you might want to browse through our introductory section, xref:electronics.adoc[A Crash Course in Electronics] . The expansive-sounding name notwithstanding, we've tried to keep it focused on the practicalities of building the Pinscape boards, so hopefully it won't waste too much of your time on academic points. Among other things, you'll find help there with reading the markings on the blank circuit boards, so that you can figure out where the parts go, and an introduction to the different component types used in the boards.
+If this is your first time working with electronics or building printed circuit boards, you might want to browse through our introductory section, xref:electronics.adoc#electronics[A Crash Course in Electronics] . The expansive-sounding name notwithstanding, we've tried to keep it focused on the practicalities of building the Pinscape boards, so hopefully it won't waste too much of your time on academic points. Among other things, you'll find help there with reading the markings on the blank circuit boards, so that you can figure out where the parts go, and an introduction to the different component types used in the boards.
 
 The electronics section also some advice on soldering technique (see xref:pcbTips.adoc#solderingTips[Circuit board assembly tips] ), in case you're looking for help with that. I've found this to be an area that a lot of new cab builders are particularly worried about when embarking on this project because of unhappy past experiences with their soldering irons. There's definitely a little bit of technique needed for successful soldering, but it's not all that hard to learn the basics, so I've tried to offer a few tips that will hopefully make things easier this time around.
 
@@ -12,9 +12,9 @@ Before you start the assembly process, look over the "Optional elements" below a
 
 When you're ready to proceed, gather the necessary items:
 
-* The blank PCBs - see xref:expanFab.adoc[Fabricating the Expansion Boards]
+* The blank PCBs - see xref:expanFab.adoc#expanFab[Fabricating the Expansion Boards]
 * The component parts - see xref:partslist.adoc#electronicPartsList[Electronic Parts List]
-* Soldering tools and other miscellaneous tools - see xref:psTools.adoc[Tools]
+* Soldering tools and other miscellaneous tools - see xref:psTools.adoc#psTools[Tools]
 
 Then just start fitting the components into the boards and soldering them in place. There's no particular order that you have to use to install the components, but I usually like to start with the smaller and flatter components and finish with the taller ones, to avoid having to squeeze into tight spaces between the larger parts.
 
@@ -30,37 +30,37 @@ Here's a quick visual reference to the circuit board markings for the various co
 |===
 |Component|Board Markings|Example
 
-| xref:resistors.adoc[Resistor]
+| xref:resistors.adoc#resistors[Resistor]
 |image:images/resistor-pcb-markings-1.png[""]
 
 |image:images/miscResistors.png[""]
 
-| xref:capacitors.adoc[Capacitor (ceramic disc)]
+| xref:capacitors.adoc#capacitors[Capacitor (ceramic disc)]
 |image:images/disc-cap-pcb-markings.png[""]
 
 |image:images/miscDiscCaps.png[""]
 
-| xref:capacitors.adoc[Capacitor (electrolytic)]
+| xref:capacitors.adoc#capacitors[Capacitor (electrolytic)]
 |image:images/electrolytic-pcb-markings.png[""]
 
 |image:images/miscElectrolyticCaps.png[""]
 
-| xref:cmpdiodes.adoc[Diode]
+| xref:cmpdiodes.adoc#cmpdiodes[Diode]
 |image:images/diode-pcb-marking.png[""]
 
 |image:images/miscDiodes.png[""]
 
-| xref:leds.adoc[LED]
+| xref:leds.adoc#leds[LED]
 |image:images/led-pcb-marking.png[""]
 
 |image:images/misc-leds.png[""]
 
-| xref:transistors.adoc[Transistor (TO-92 package)]
+| xref:transistors.adoc#transistors[Transistor (TO-92 package)]
 |image:images/to-92-pcb-outline.png[""]
 
 |image:images/to-92.png[""]
 
-| xref:mosfets.adoc[MOSFET (TO-220 package)]
+| xref:mosfets.adoc#mosfets[MOSFET (TO-220 package)]
 |image:images/moset-pcb-marking.png[""]
 
 |image:images/to-220.png[""]
@@ -70,17 +70,17 @@ Here's a quick visual reference to the circuit board markings for the various co
 
 |image:images/ld1117-front.png[""]
 
-| xref:icchips.adoc[IC chip]
+| xref:icchips.adoc#icchips[IC chip]
 |image:images/ic-chip-pcb-marking-1.png[""]
 
 |image:images/misc-ics.png[""]
 
-| xref:relays.adoc[Relay]
+| xref:relays.adoc#relays[Relay]
 |image:images/relay-pcb-marking.png[""]
 
 |image:images/miscRelays.png[""]
 
-| xref:pinHeaders.adoc[Pin headers]
+| xref:pinHeaders.adoc#pinHeaders[Pin headers]
 |image:images/pinhead-pcb-marking-1.png[""]
 
 |image:images/pinHeaderSample.png[""]

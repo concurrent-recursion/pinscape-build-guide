@@ -1,4 +1,4 @@
-[#powerSuppliesForFeedback]
+[#powerSupplies]
 = Power Supplies for Feedback
 
 Feedback devices require power, so you'll have to provide power supplies in your cabinet for the devices you install.
@@ -387,5 +387,5 @@ If you're already set up DOF, here's how to adjust the shaker strength in softwa
 * Try running the shaker motor via a DOF test table in VP
 * If the shaker effect is still too strong, go back to the config tool and decrease the Shaker Motor Max Intensity setting; if it's too weak, increase the setting
 
-See xref:DOF.adoc[DOF Setup] for more details on setting up DOF, using the Config Tool, and using DOF test tables in VP.
+See xref:DOF.adoc#dofSetup[DOF Setup] for more details on setting up DOF, using the Config Tool, and using DOF test tables in VP.
 

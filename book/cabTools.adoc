@@ -1,3 +1,4 @@
+[#cabTools]
 = Cabinet Building Tools
 
 It's hard to overstate the importance of using the right tool for a given job. Good tools can make a seemingly difficult task easy, and can let an amateur produce professional-looking results. Here are some recommendations for the tools needed to build a virtual cab.

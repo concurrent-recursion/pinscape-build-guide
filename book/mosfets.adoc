@@ -1,14 +1,15 @@
+[#mosfets]
 = MOSFETs
 
 A MOSFET is a type of transistor (that's what the "T" in MOSFET is for). MOSFETs are very different from the older kind of transistor we saw in the last chapter (the bipolar junction transistor or BJT), but they're still called "transistors" because they have the same abilities to amplify and switch signals that all transistors have.
 
 Up until around the 1980s, nearly all transistors used in practical applications were BJTs. That completely changed in the 80s, because the manufacturing processes used to create integrated circuit chips favored MOSFETs. MOSFETs are much more prevalent today as a result. They're also widely used as discrete transistors because of their excellent power efficiency. The Pinscape boards use MOSFETs for the high-power switching needed to control feedback devices, which is an application that MOSFETs are particularly good at.
 
-For more on BJTs and transistors in general, see xref:transistors.adoc[Transistors] .
+For more on BJTs and transistors in general, see xref:transistors.adoc#transistors[Transistors] .
 
 == Static electricity warning
 
-MOSFETs are sensitive to static electricity. Refer to xref:staticSafety.adoc[Static Electricity Precautions] for tips on handling static-sensitive parts.
+MOSFETs are sensitive to static electricity. Refer to xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] for tips on handling static-sensitive parts.
 
 == Types of MOSFETs
 

@@ -1,3 +1,4 @@
+[#pinHeaders]
 =  0.1" Pin Headers
 
 A very common type of connector used on printed circuit boards is the "pin header", so named because it has a series of metal pins that fit into sockets on a mating cable connector. The Pinscape boards use this type of header for most of their external connections.
@@ -71,7 +72,7 @@ The shroud offers some mechanical protection for the pins when the mating cable 
 
 image::images/idc-keying.png[""]
 
-Most IDC connectors (for xref:ribbonCables.adoc[ribbon cables] ) have these keying bumps. Crimp housings sometimes have them and sometimes don't. Crimp housings that don't have the keying bumps will fit perfectly well into keyed shrouds, so there's no compatibility problem, but they'll fit backwards as well as forwards since they don't have the bumps to prevent backwards insertion. So you can use them, but you don't get the orientation sensing of the keyed kind.
+Most IDC connectors (for xref:ribbonCables.adoc#ribbonCables[ribbon cables] ) have these keying bumps. Crimp housings sometimes have them and sometimes don't. Crimp housings that don't have the keying bumps will fit perfectly well into keyed shrouds, so there's no compatibility problem, but they'll fit backwards as well as forwards since they don't have the bumps to prevent backwards insertion. So you can use them, but you don't get the orientation sensing of the keyed kind.
 
 The pins in a 0.1" shrouded header are identical to the pins in a 0.1" plain header, so you can often substitute a shrouded header anywhere a plain header is called for, or vice versa. However, the shroud takes up extra space, so there's not always room for it in a tightly packed board. Before substituting a shrouded header for a plain pin strip, make sure there's not another component (or another header) within the shroud's footprint on the top of the board.
 
@@ -101,7 +102,7 @@ A 0.1" pin header obviously only forms half of a connection. We now need somethi
 
 * Ribbon cables. A ribbon cable is a flat cable with several conductors side-by-side. These are mated with IDC plugs, which is a connector that attaches to a ribbon cable via some little teeth that puncture the insulation and grab the wires. It's easy to assemble custom ribbon cables with these connectors, because you just line up the connector on the cable and squeeze the teeth into place.
  Ribbon cables are ideal when you want to connect two like pin headers on different boards. You don't have to mess around with a bunch of individual hookup wires, and the connectors are quick and fairly easy to install because they install for all of the conductors at once. This is the right choice for the Pinscape board-to-board data connectors, such as the PWM data connection between the main board and the power board.
- See xref:ribbonCables.adoc[Ribbon Cables] for details on buying and building these cables.
+ See xref:ribbonCables.adoc#ribbonCables[Ribbon Cables] for details on buying and building these cables.
 
 
 == 0.1" (2.54mm) crimp pin housings

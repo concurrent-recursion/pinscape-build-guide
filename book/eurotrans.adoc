@@ -1,3 +1,4 @@
+[#eurotrans]
 = European Transistor Substitutions
 
 If you're in Europe, you might find it convenient and cost-saving to use different transistors from the ones specified in the parts list.

@@ -18,7 +18,7 @@ Beacons mounted on my cab's backbox, one red and one blue. These are off-the-she
 
 *Mounting:* Many of the beacons you'll find (including the Peterson 771) come with magnetic bases that are intended to hold the light to the roof of a car. You'll probably want to remove the magnetic base and attach the light to the top of your backbox with screws or other wood fasteners. You could alternatively glue them in place, although I try to avoid glue as it can't be easily removed if you ever need to replace the device.
 
-*Wiring:* Check with your product's documentation to be sure, but anything automotive generally runs on 12V DC. That works well in a pin cab because we usually have a 12V supply available from a secondary ATX power supply; see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for more on that.
+*Wiring:* Check with your product's documentation to be sure, but anything automotive generally runs on 12V DC. That works well in a pin cab because we usually have a 12V supply available from a secondary ATX power supply; see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for more on that.
 
 Follow the generic wiring plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 

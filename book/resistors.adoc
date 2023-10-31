@@ -1,3 +1,4 @@
+[#resistors]
 = Resistors
 
 image::images/miscResistors.png[""]

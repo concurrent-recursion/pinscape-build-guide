@@ -1,3 +1,4 @@
+[#dmdAssembly]
 = Speaker/DMD Panel
 
 The speaker/DMD panel is a fairly complex piece of equipment, and new cab builders can find it challenging to assemble and install. This is one of those features of the real machines that's not well documented anywhere, and it's really not obvious looking at the parts how they're supposed to go together.
@@ -61,6 +62,6 @@ The Stern Spike 2 style is gaining popularity among virtual cab builders because
 
 The details of the two panel types are very different, so we'll break them out into separate chapters:
 
-*  xref:dmdAssemblyOriginal.adoc[Original WPC Speaker Panel]
-*  xref:dmdAssemblyWPC95.adoc[WPC-95 Speaker Panel]
+*  xref:dmdAssemblyOriginal.adoc#dmdAssemblyOriginal[Original WPC Speaker Panel]
+*  xref:dmdAssemblyWPC95.adoc#dmdAssemblyWPC95[WPC-95 Speaker Panel]
 

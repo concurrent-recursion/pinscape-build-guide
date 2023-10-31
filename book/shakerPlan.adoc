@@ -1,8 +1,9 @@
+[#shakerPlan]
 = A DIY shaker motor plan
 
 This section provides instructions for building a pinball shaker motor from scratch, using fairly common and inexpensive parts. The only parts that you have to fabricate yourself are some simple plywood pieces that require only straight cuts and some drilling.
 
-My design is hardly the first or only plan out there - see xref:shakers.adoc#DIYDesigns[DIY Designs] in xref:shakers.adoc[Shaker motors] for a list of other plans published on various forum sites. The reason I developed yet another design is that the existing plans all have something that makes them a little bit challenging to implement, either because they call for an obscure part or because they require some difficult metal fabrication steps. My aim with this plan is to build it entirely with easy-to-find parts and minimal fabrication work, and still match the performance of the commercial shaker units. I also tried to keep the finished price to a minimum. Excluding the motor, the parts in my plan run to about $30; with a motor, the price should come in at about $50 to $60.
+My design is hardly the first or only plan out there - see xref:shakers.adoc#DIYDesigns[DIY Designs] in xref:shakers.adoc#shakers[Shaker motors] for a list of other plans published on various forum sites. The reason I developed yet another design is that the existing plans all have something that makes them a little bit challenging to implement, either because they call for an obscure part or because they require some difficult metal fabrication steps. My aim with this plan is to build it entirely with easy-to-find parts and minimal fabrication work, and still match the performance of the commercial shaker units. I also tried to keep the finished price to a minimum. Excluding the motor, the parts in my plan run to about $30; with a motor, the price should come in at about $50 to $60.
 
 At the moment (2022), there's little cost advantage to building a shaker yourself, since you can buy a complete, ready-to-use unit from Pinball Life for about $100. Even so, I like knowing that there's an easy DIY plan available, in case the retail shaker units become unavailable in the future. The Pinball Life units will eventually sell out, and who knows if they'll restock when that happens. Pinball parts like this historically come and go. I expect there will again come a time when you can't buy these so easily.
 
@@ -43,7 +44,7 @@ The holes around the perimeter of the outer disk should be threaded for machine 
 
 == Parts list
 
-* Motor (12VDC, dual-shaft, 4mm to 6mm shaft, power about 20W-50W, unloaded speed 3000 to 4500 RPM; see xref:shakers.adoc#motorSourcing[Selecting a motor] in xref:shakers.adoc[Shaker motors] )
+* Motor (12VDC, dual-shaft, 4mm to 6mm shaft, power about 20W-50W, unloaded speed 3000 to 4500 RPM; see xref:shakers.adoc#motorSourcing[Selecting a motor] in xref:shakers.adoc#shakers[Shaker motors] )
 *  xref:#shaftHubs[Shaft hubs] , with a central bore matching the motor shaft diameter, quantity 2
 * Machine screws, sized to fit the threaded holes in the shaft hubs (typically M3 or #4-40), 3/4" (20mm) length, quantity 8
 * Lock washers for the screws above, quantity 8 (optional)

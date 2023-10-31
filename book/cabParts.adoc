@@ -388,7 +388,7 @@ Note! This *isn't* typically included in the commercial plunger kits or the "com
 
 Tilt-up playfield TV mounting
 
-Hardware for the tilt-up mechanism described in xref:playfieldMounting.adoc[Playfield TV Mounting] . Only needed for that design (or a a similar design).
+Hardware for the tilt-up mechanism described in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] . Only needed for that design (or a a similar design).
 
 [cols="1,3,1"]
 |===
@@ -503,7 +503,7 @@ Speaker/DMD panel (pre-WPC-95 style)
 
 This is the separate panel at the bottom of the backbox, below the backglass, that you see on real 1990s pinballs. Many virtual cab builders reproduce this look by using the same type of panel, since it gives the machine a modern appearance and also provides an excellent place to put the audio speakers. This whole panel is optional, though; if you prefer the vintage look where the entire backbox is devoted to a single large backglass, you can skip the panel and use a larger backbox TV.
 
-These parts are for the pre-WPC-95 style, used on Williams machines from about 1990 through 1995. A different style was used on later machines, with a single-piece molded plastic panel; those parts are listed below. See xref:dmdAssembly.adoc[Speaker/DMD Panel] for a comparison of the two types.
+These parts are for the pre-WPC-95 style, used on Williams machines from about 1990 through 1995. A different style was used on later machines, with a single-piece molded plastic panel; those parts are listed below. See xref:dmdAssembly.adoc#dmdAssembly[Speaker/DMD Panel] for a comparison of the two types.
 
 [cols="1,3,1"]
 |===
@@ -553,7 +553,7 @@ a|This is the display device that goes in the opening in the middle of the panel
 
 Speaker/DMD panel (WPC-95 style)
 
-These parts are for the WPC-95 style of speaker panel used on Williams machines from 1995 and after. This type of panel is made from molded plastic. Machines from 1990 through 1995 used a different style with an MDF panel and plastic facing printed with graphics; the parts for the older style are listed above. See xref:dmdAssembly.adoc[Speaker/DMD Panel] for a comparison of the two types.
+These parts are for the WPC-95 style of speaker panel used on Williams machines from 1995 and after. This type of panel is made from molded plastic. Machines from 1990 through 1995 used a different style with an MDF panel and plastic facing printed with graphics; the parts for the older style are listed above. See xref:dmdAssembly.adoc#dmdAssembly[Speaker/DMD Panel] for a comparison of the two types.
 
 [cols="1,3,1"]
 |===
@@ -583,7 +583,7 @@ These parts are for the WPC-95 style of speaker panel used on Williams machines 
 
 PC
 
-For the sake of making this list fairly comprehensive, here's a list of the typical PC components you'll need. This is only an outline, though; we must leave it to you to decide on specific products. See xref:pc.adoc[Designing the PC] for guidance.
+For the sake of making this list fairly comprehensive, here's a list of the typical PC components you'll need. This is only an outline, though; we must leave it to you to decide on specific products. See xref:pc.adoc#pc[Designing the PC] for guidance.
 
 [cols="1,3,1"]
 |===
@@ -646,7 +646,7 @@ Power line input
 |1+
 
 |12VDC contactor
-|Not needed if you buy a "smart" power strip. If you buy an ordinary power strip, though, you use a contactor to make it act like a smart one. Route the line power to all devices other than the PC (including the TVs and the feedback device power supplies) through the contactor, and control the contactor via the main PC power supply's 12V output. When the PC is on, the contactor turns on and supplies power to everything else. More on this in xref:powerSwitching.adoc[Power Switching] .
+|Not needed if you buy a "smart" power strip. If you buy an ordinary power strip, though, you use a contactor to make it act like a smart one. Route the line power to all devices other than the PC (including the TVs and the feedback device power supplies) through the contactor, and control the contactor via the main PC power supply's 12V output. When the PC is on, the contactor turns on and supplies power to everything else. More on this in xref:powerSwitching.adoc#powerSwitching[Power Switching] .
 |1
 
 |===
@@ -655,7 +655,7 @@ Buttons
 
 This is a list of the most common buttons needed for a virtual cab. Many cabs have extra buttons beyond these. See xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] for specific products to buy and a more comprehensive list of optional buttons.
 
-Some buttons have light bulbs inside. You can hard-wire these to be always lighted, but most people want the software to be able to control them so that they turn on and off at appropriate times during game play. To do this, you have to treat the lights as _output_ devices, meaning the lights have to be connected to a separate output controller. The button controller only handles the switch part of the button. See xref:feedbackDevices.adoc[Feedback Devices Overview] for more on this.
+Some buttons have light bulbs inside. You can hard-wire these to be always lighted, but most people want the software to be able to control them so that they turn on and off at appropriate times during game play. To do this, you have to treat the lights as _output_ devices, meaning the lights have to be connected to a separate output controller. The button controller only handles the switch part of the button. See xref:feedbackDevices.adoc#feedbackDevices[Feedback Devices Overview] for more on this.
 
 [cols="1,3,1"]
 |===
@@ -729,7 +729,7 @@ The list below shows the basic elements needed in your audio system. There are t
 
 Quick overview: The "primary" audio system is usually a pair of speakers in the backbox plus a subwoofer in the main cabinet. Some cabinets also have a "secondary" system that places a separate set of speakers inside the main cabinet to play back mechanical playfield sound effects (ball rolling sounds, flippers, bumpers, etc). This can use two speakers, two speakers plus a subwoofer, or four speakers for "surround sound". The secondary system can even replace other tactile feedback devices, especially if you're using an "exciter" (also known as a tactile speaker or tactile subwoofer) in place of the regular speakers.
 
-See xref:audio.adoc[Audio Systems] for more details on o the various audio system configurations, and more specific product recommendations.
+See xref:audio.adoc#audio[Audio Systems] for more details on o the various audio system configurations, and more specific product recommendations.
 
 [cols="1,3,1"]
 |===
@@ -772,7 +772,7 @@ See xref:audio.adoc[Audio Systems] for more details on o the various audio syste
 
 Feedback devices
 
-Everything in this section is optional, applying only if you want to include feedback systems on your cab. If you're not sure you want feedback at all, you can build your cabinet without it initially, and add feedback systems later as a retrofit if you change your mind. It's a fairly isolated system that can be worked into a finished cabinet, although like anything else, it's always easier and neater if you plan for it from the outset. For recommendations for specific products and parts, see xref:feedbackDevices.adoc[Feedback Devices Overview] .
+Everything in this section is optional, applying only if you want to include feedback systems on your cab. If you're not sure you want feedback at all, you can build your cabinet without it initially, and add feedback systems later as a retrofit if you change your mind. It's a fairly isolated system that can be worked into a finished cabinet, although like anything else, it's always easier and neater if you plan for it from the outset. For recommendations for specific products and parts, see xref:feedbackDevices.adoc#feedbackDevices[Feedback Devices Overview] .
 
 [cols="1,3,1"]
 |===
@@ -792,7 +792,7 @@ a|Most output controllers can only handle devices with low power, such as LEDs. 
 
 * Zeb's booster board
 * Pinscape expansion boards
-* DIY MOSFET circuit (described in xref:outputs.adoc[Pinscape Feedback Outputs] )
+* DIY MOSFET circuit (described in xref:outputs.adoc#outputs[Pinscape Feedback Outputs] )
 * Relays
 |1
 

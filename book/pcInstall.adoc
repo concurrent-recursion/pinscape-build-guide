@@ -1,3 +1,4 @@
+[#pcInstall]
 = Installing the PC
 
 This section is about physically installing the PC components in your cabinet. It's not about building the PC per se - things like how to plug RAM into the motherboard, connect disks, install the graphics card, connect the power supply cables, and so on. That sort of thing varies depending on the exact mix of parts you're using, so that's more the domain of the instructions that came with your components. What we're going to talk about here is how all of the PC parts fit into the pin cab.
@@ -59,9 +60,9 @@ Considerations if you choose this approach:
 
 image::images/securing-pc-case.png[""]
 
-* You'll need to connect wiring to the PC's soft power button so that you can turn the PC on with the cabinet's power button. (See xref:powerSwitching.adoc[Power Switching] .) I'd find the wires leading to the case power button, and splice my own extra wires onto these, running the extra wires outside the case through an available opening. You can then connect these to your cabinet power button.
+* You'll need to connect wiring to the PC's soft power button so that you can turn the PC on with the cabinet's power button. (See xref:powerSwitching.adoc#powerSwitching[Power Switching] .) I'd find the wires leading to the case power button, and splice my own extra wires onto these, running the extra wires outside the case through an available opening. You can then connect these to your cabinet power button.
 
-Remember that we want to make it easy to remove the whole PC case for maintenance work, so be sure to use some kind of modular, pluggable connector for the switch wiring. Don't hard-wire it. When you want to remove the case, you can just unplug that connector to free the wires. See xref:connectors.adoc[Connectors] .
+Remember that we want to make it easy to remove the whole PC case for maintenance work, so be sure to use some kind of modular, pluggable connector for the switch wiring. Don't hard-wire it. When you want to remove the case, you can just unplug that connector to free the wires. See xref:connectors.adoc#connectors[Connectors] .
 
 === Open-frame case
 

@@ -1,3 +1,4 @@
+[#ribbonCables]
 = Ribbon Cables
 
 A ribbon cable is a flat, insulated cable with some number of conductors side by side, running parallel down the length of the cable. Ribbon cables are ideal when you want to connect two (or more) like connectors together. The flat geometry of the cable makes for good signal propagation in high-speed data connections, which is part of why these cables have long been used in the innards of PC wiring.

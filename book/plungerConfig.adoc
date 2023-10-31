@@ -46,7 +46,7 @@ The calibration procedure is basically a one-time operation - you only have to d
 
 == Calibrating with the calibration button
 
-If you installed a dedicated calibration button, you can also calibrate using the button instead of going through the Config Tool UI. There's no good reason to do that, as the Config Tool has a friendlier UI that shows more information about what's going on, but the button will work, too, if you prefer to use that for some reason. The procedure is described in xref:calbtn.adoc[Pinscape Plunger Calibration Button] .
+If you installed a dedicated calibration button, you can also calibrate using the button instead of going through the Config Tool UI. There's no good reason to do that, as the Config Tool has a friendlier UI that shows more information about what's going on, but the button will work, too, if you prefer to use that for some reason. The procedure is described in xref:calbtn.adoc#calbtn[Pinscape Plunger Calibration Button] .
 
 == Windows calibration = bad!
 

@@ -1,3 +1,4 @@
+[#schematics]
 = Schematics
 
 A schematic is a map of a circuit showing the components and how they're connected to one another.
@@ -136,7 +137,7 @@ Just to be clear, these power supply symbols represent power *inputs* , where yo
 
 == Resistors
 
-A resistor is a simple component that adds electrical resistance (analogous to friction in a mechanical system) to a circuit. See xref:resistors.adoc[Resistors] .
+A resistor is a simple component that adds electrical resistance (analogous to friction in a mechanical system) to a circuit. See xref:resistors.adoc#resistors[Resistors] .
 
 The symbol on a schematic is a jagged line.
 
@@ -161,7 +162,7 @@ A resistor has two connections to the outside world. The schematic symbol shows 
 
 == Capacitors
 
-A capacitor is a simple component that adds electrical capacitance to a circuit, which is similar to a (very) tiny rechargeable battery. See xref:capacitors.adoc[Capacitors] .
+A capacitor is a simple component that adds electrical capacitance to a circuit, which is similar to a (very) tiny rechargeable battery. See xref:capacitors.adoc#capacitors[Capacitors] .
 
 The symbol for a capacitor consists of two parallel lines separated by a small gap, or one straight line and one curved line next to each other. In some cases, there might be a little "+" sign adjacent to the straight line.
 
@@ -193,7 +194,7 @@ There are several other types besides these, but these are the only types you'll
 
 == Diodes
 
-A diode is a semiconductor that only lets current flow in one direction, sort of an electronic one-way valve. See xref:cmpdiodes.adoc[Diodes] .
+A diode is a semiconductor that only lets current flow in one direction, sort of an electronic one-way valve. See xref:cmpdiodes.adoc#cmpdiodes[Diodes] .
 
 The symbol for a diode on a schematic is an arrow with a bar:
 
@@ -217,7 +218,7 @@ And as with a regular diode, an LED symbol will often be accompanied by some sor
 
 == Transistors - bipolar
 
-A bipolar transistor (or bipolar junction transistor, BJT) is a common type of transistor that's used in all sorts of circuitry as a small amplifier or an electronic switch. See xref:transistors.adoc[Transistors] .
+A bipolar transistor (or bipolar junction transistor, BJT) is a common type of transistor that's used in all sorts of circuitry as a small amplifier or an electronic switch. See xref:transistors.adoc#transistors[Transistors] .
 
 The symbol for a transistor consists of a thick bar with three lines sticking out, one straight line on one side, and two diagonal lines on the other side. One of the diagonal lines has an arrow, which might point towards or away from the middle bar.
 
@@ -245,7 +246,7 @@ Transistors have parts list tags just like other components. These most commonly
 
 Transistors are also usually labeled with the semiconductor ID, like a diode is. In the case of a transistor, this usually starts with "2N". You might also see other part numbers, such as the "BC337" in the examples above. When two numbers are listed for one part like this, it indicates _alternative_ parts that you can use - so in the case of T8 above, you could use a 2N4401 or BC337 interchangeably.
 
-Transistors have to be inserted into the circuit with the three prongs in exactly the right order. As with diodes, each prong has a different function, and the part won't work if it's not inserted correctly. There's no standard way of marking a physical transistor to indicate which leg is which - the only way to tell is to look it up in the manufacturer's data sheet. In the case of the Pinscape expansion boards, though, you can tell how to orient the part from the looking at the silk-screened markings on the circuit board; we'll explain that in xref:transistors.adoc[Transistors] .
+Transistors have to be inserted into the circuit with the three prongs in exactly the right order. As with diodes, each prong has a different function, and the part won't work if it's not inserted correctly. There's no standard way of marking a physical transistor to indicate which leg is which - the only way to tell is to look it up in the manufacturer's data sheet. In the case of the Pinscape expansion boards, though, you can tell how to orient the part from the looking at the silk-screened markings on the circuit board; we'll explain that in xref:transistors.adoc#transistors[Transistors] .
 
 == Transistors - Darlington
 
@@ -279,7 +280,7 @@ As with bipolar transistors, there's no standard marking system to identify whic
 
 == IC chips
 
-Integrated Circuit (IC) chips are complex devices consisting of many components packed into a single package. See xref:icchips.adoc[IC Chips] .
+Integrated Circuit (IC) chips are complex devices consisting of many components packed into a single package. See xref:icchips.adoc#icchips[IC Chips] .
 
 ICs are extremely diverse in function and physical packaging, so it's not entirely fair to lump them all into a single category. But there are enough commonalities to how they're handled in schematics that we can make some practical generalizations. For our purposes, an IC is a bit of circuitry all packed into a discrete physical package, with multiple connection points ("pins" or "leads" coming out of the physical chip). The schematic treats an IC as a "black box": a bunch of wires connect it to the outside world, but what's inside is of no concern in the schematic. As a result, the schematic symbols for ICs look pretty much like empty boxes:
 
@@ -348,7 +349,7 @@ Note one other deviation from more generic ICs: the Pinscape schematics use "OK"
 
 == Relays
 
-A relay is an electrically-controlled mechanical switch. An electromagnet in the relay operates a little rocker switch that connects and disconnects another circuit. See xref:relays.adoc[Relays] .
+A relay is an electrically-controlled mechanical switch. An electromagnet in the relay operates a little rocker switch that connects and disconnects another circuit. See xref:relays.adoc#relays[Relays] .
 
 The schematic symbols for a relay vary. Here's the format that we use in the EAGLE plans for the Pinscape boards:
 
@@ -369,13 +370,13 @@ image::images/schematic-relay-2.png[""]
 
 == Connectors and pin headers
 
-Circuit boards need connections to the outside world, usually in the form of some kind of plug-in connector. We provide an overview of some of the most common types, and the ones we use on the Pinscape boards, in xref:connectors.adoc[Connectors] .
+Circuit boards need connections to the outside world, usually in the form of some kind of plug-in connector. We provide an overview of some of the most common types, and the ones we use on the Pinscape boards, in xref:connectors.adoc#connectors[Connectors] .
 
 On a schematic, we draw connectors like this:
 
 image::images/schematic-pinheader-1.png[""]
 
-It looks a bit like a generic IC, but note that the wires all go into the box and connect to little circles. The circles represent the pins on the connector. The numbers next to the circles are the pin numbers, which tell you which pins they correspond to on the physical connector. The pin numbering conventions are different for different parts; we explain our conventions in xref:connectors.adoc[Connectors] . As always with schematic symbols, the order and arrangement of pins shown in the schematic doesn't necessarily correspond to the physical pin layout, so you have to pay attention to the pin numbers.
+It looks a bit like a generic IC, but note that the wires all go into the box and connect to little circles. The circles represent the pins on the connector. The numbers next to the circles are the pin numbers, which tell you which pins they correspond to on the physical connector. The pin numbering conventions are different for different parts; we explain our conventions in xref:connectors.adoc#connectors[Connectors] . As always with schematic symbols, the order and arrangement of pins shown in the schematic doesn't necessarily correspond to the physical pin layout, so you have to pay attention to the pin numbers.
 
 On the Pinscape schematics, most connectors have a "JP" label, for "jumper", as in JP7 or JP15. (Another common convention that you'll see on other schematics is a simple "J" prefix, such as J9.) As usual, this is the reference designator, for looking up the connector in the parts list, and (as usual) it has no meaning other than to serve as a cross-reference. You might also see a manufacturer part number, as in the example above. Some of the connector types are generic enough that you can substitute equivalent parts from other manufacturers, so the part number might only be a suggestion to help you find a matching part. It's always critical to match the total number of pins when substituting parts.
 

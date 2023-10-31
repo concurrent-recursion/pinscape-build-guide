@@ -1,3 +1,4 @@
+[#sainsmart]
 = SainSmart Relay Board Setup
 
 :source-highlighter: rouge
@@ -28,7 +29,7 @@ First, connect the board's power terminals to your PC's power supply, as shown i
 
 image::images/SainSmartPower.png[""]
 
-For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 Second, connect the relay board to the PC via USB. Plug a USB cable into the connector on the board, and plug the other end into an available USB port on your PC/motherboard.
 
@@ -58,7 +59,7 @@ image::images/SainSmartBasicWiring.png[""]
 
 Follow this same plan for any type of feedback device. If the device you're connecting has specifically marked "+" and "-" terminals, be sure to connect the "-" terminal on the device to the "-" connection on the power supply.
 
-Some types of devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc#coilDiodes[Coil Diodes] ), and many types of LEDs require current-limiting resistors (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). We go into much more detail about many of the popular pin cab devices in xref:feedbackSect.adoc[Feedback Devices] .
+Some types of devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc#coilDiodes[Coil Diodes] ), and many types of LEDs require current-limiting resistors (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). We go into much more detail about many of the popular pin cab devices in xref:feedbackSect.adoc#feedbackSect[Feedback Devices] .
 
 === Should I wire (+) or (-) to the relay?
 
@@ -123,7 +124,7 @@ Quick summary:
 
 == Fuses
 
-Some cab builders include a fuse in each SainSmart output circuit. Fuses can help protect an output controller against wiring faults or device malfunctions. I'm usually pretty conservative on these things, so this might be surprising, but I don't think fuses are all that useful with SainSmart outputs. The reason is that these outputs use relays, so they're pretty tough to start with. Fuses are certainly appropriate for solid-state devices like an LedWiz, but I don't think they add much useful protection for a relay board. If want to add them anyway, see xref:fuses.adoc[Fuses] .
+Some cab builders include a fuse in each SainSmart output circuit. Fuses can help protect an output controller against wiring faults or device malfunctions. I'm usually pretty conservative on these things, so this might be surprising, but I don't think fuses are all that useful with SainSmart outputs. The reason is that these outputs use relays, so they're pretty tough to start with. Fuses are certainly appropriate for solid-state devices like an LedWiz, but I don't think they add much useful protection for a relay board. If want to add them anyway, see xref:fuses.adoc#fuses[Fuses] .
 
 == DOF Setup
 
@@ -131,9 +132,9 @@ If you're using my DOF R3++ version, it includes automatic SainSmart board detec
 
 With older DOF versions, SainSmart boards require some extra setup to use with DOF.
 
-If you haven't already set up DOF on your cab, follow the instruction in xref:DOF.adoc[DOF Setup] .
+If you haven't already set up DOF on your cab, follow the instruction in xref:DOF.adoc#dofSetup[DOF Setup] .
 
-After DOF is set up, you have to create and edit a file called *Cabinet.xml* in the *DirectOutput > config* folder. See xref:DOF.adoc#DOFCabinetXmlSetup[Extra controller setup] in xref:DOF.adoc[DOF Setup] for the basics on getting this file started.
+After DOF is set up, you have to create and edit a file called *Cabinet.xml* in the *DirectOutput > config* folder. See xref:DOF.adoc#DOFCabinetXmlSetup[Extra controller setup] in xref:DOF.adoc#dofSetup[DOF Setup] for the basics on getting this file started.
 
 If you're using the template Cabinet.xml file provided with my DOF setup instructions, you should find a section with a pair of lines like this:
 
@@ -247,4 +248,4 @@ Almost done! The one remaining step is to enter your new SainSmart board into yo
 * When done, click Save Config, then click Generate Config to download your updated DOF config files
 * Unzip the downloaded files into your DOF install folder
 
-All of this is described in the xref:DOF.adoc[DOF Setup] section as well.
+All of this is described in the xref:DOF.adoc#dofSetup[DOF Setup] section as well.

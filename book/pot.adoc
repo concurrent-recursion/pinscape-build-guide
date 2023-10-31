@@ -1,3 +1,4 @@
+[#pot]
 = Plunger Setup (Potentiometer)
 
 The easiest type of plunger sensor to build is a sliding potentiometer. A potentiometer (often called a "pot" for short) is basically a continuously variable resistor. The sliding type has a control lever that slides back and forth in a straight line - just like a plunger. By connecting the end of the plunger rod to the potentiometer lever, we can make the lever slide back and forth in sync with the plunger. This in turn makes the potentiometer's electrical resistance change in sync with the plunger position, so by measuring the resistance, we can determine the position. The KL25Z helps us out with this by providing a built-in ADC (analog/digital converter), which can precisely measure the analog voltage on a GPIO pin.
@@ -32,7 +33,7 @@ The xref:partslist.adoc#electronicPartsList[parts list] section has a specific s
 
 The absolute minimum length that will work is 85mm, but I'd look for something in the 100mm range, because that gives you a little leeway at each end to make sure the plunger doesn't bash the lever against the potentiometer's limits.
 
-If you're using the expansion boards, you'll also want to pick up the connector specified in the parts list to make it easier to plug into the boards. If you're using a standalone KL25Z (without the expansion boards), see xref:kl25zHardwareSetup.adoc[KL25Z Hardware Setup] for recommendations on connecting wires to the board.
+If you're using the expansion boards, you'll also want to pick up the connector specified in the parts list to make it easier to plug into the boards. If you're using a standalone KL25Z (without the expansion boards), see xref:kl25zHardwareSetup.adoc#kl25zHardwareSetup[KL25Z Hardware Setup] for recommendations on connecting wires to the board.
 
 == Wiring
 

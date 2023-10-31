@@ -1,8 +1,9 @@
+[#expanTesting]
 = Initial Expansion Board Testing
 
 This section gives you some tests you can perform on your newly built expansion boards to make sure they're working. I'd recommend going through these tests with a new board before installing it in your cabinet, since it's a lot easier to isolate and debug problems before everything is connected. The test procedures here are designed to test each subsystem in isolation (as much as possible).
 
-If anything isn't working properly, the next chapter, xref:expanDebug.adoc[Debugging the Expansion Boards] , offers some ideas for how to diagnose and fix any problems.
+If anything isn't working properly, the next chapter, xref:expanDebug.adoc#expanDebug[Debugging the Expansion Boards] , offers some ideas for how to diagnose and fix any problems.
 
 == Configure the firmware
 
@@ -30,7 +31,7 @@ If you're using a separate power supply, make sure you've hacked it so that it p
 
 For testing purposes, it's okay to just use a single ATX power supply. As we've said before, it's best to use two separate ATX supplies for your full cab setup - one for the PC, a separate one for the feedback devices. And if you have both power supplies conveniently available, you might as well test with the full setup. But it's also okay to use a single power supply for now, since we can do all of the testing with low-power devices.
 
-* The special expansion board power cables, to connect between the ATX power supply and the Pinscape board. Two cables are required - one for the primary power supply connection, one for the secondary power supply connection. The two cables use different connectors (the primary uses a two-pin connector, the secondary uses a four-pin connector). You need both cables, even for testing purposes. See xref:expanPower.adoc[Expansion Board Power Cables] for instructions on assembling the cables.
+* The special expansion board power cables, to connect between the ATX power supply and the Pinscape board. Two cables are required - one for the primary power supply connection, one for the secondary power supply connection. The two cables use different connectors (the primary uses a two-pin connector, the secondary uses a four-pin connector). You need both cables, even for testing purposes. See xref:expanPower.adoc#expanPower[Expansion Board Power Cables] for instructions on assembling the cables.
 * Some "Dupont" cables, for making temporary test connections to the 0.1" pin headers. You can find these on eBay by searching for "Dupont cable", and you can get them from any of the hobby robotics Web stores (Pololu, SparkFun, Adafruit). These are simply hookup wires with individual 0.1" pin header male pins/female sockets attached to the ends. They let you safely plug a wire into any pin on any of the headers to test the connection. It's convenient to have a full set of the different gender combinations - male-to-male, female-to-female, and male-to-female.
 
 If you buy a set of these on eBay, they'll often come as a sort of "ribbon cable", with all of the wires joined together in a flat bundle. For testing purposes, we'll just need a few individual wires, with one pin on each end. You can peel individual wires (or groups of wires) off of the ribbon cable bundles as needed simply by zipping them along the seams between the wires. The insulation should tear easily at the seams. You can pull off individual wires as needed - no need to separate them all up front.
@@ -49,7 +50,7 @@ Similarly, make sure that all power is OFF and that both USB cables to the KL25Z
 
 == Static electricity precautions
 
-It's a good idea to ground yourself from time to time while working with the bare boards. Touching the metal case of a plugged-in ATX power supply is a good way to do that, or the metal back plane of a PC. See xref:staticSafety.adoc[Static Electricity Precautions] .
+It's a good idea to ground yourself from time to time while working with the bare boards. Touching the metal case of a plugged-in ATX power supply is a good way to do that, or the metal back plane of a PC. See xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] .
 
 == Connect the KL25Z and the power supplies
 
@@ -230,7 +231,7 @@ Also try different test cables, in case the ones you're using have bad connector
 
 Using a voltmeter set to Volts DC (VDC), conenct the red probe from your meter to +5V pin on JP8, and the black probe to one of the JP6 PWM OUT pins closest to the edge of the board. (Those are all Ground pins.) This should read 5V. If it doesn't, the problem is in the wiring to the +5V pin.
 
-See xref:expanDebug.adoc[Debugging the Expansion Boards] for further tests.
+See xref:expanDebug.adoc#expanDebug[Debugging the Expansion Boards] for further tests.
 
 == Test the RGB Flasher outputs
 
@@ -329,7 +330,7 @@ The timer _doesn't_ set a _minimum_ ON-time. It only sets a maximum. So if you q
 
 If you've been following our procedures so far, you've now tested all of the major systems on the main board at this point, so you can move on to the power board. Before attaching the power board, power down the system and turn off the ATX power supplies.
 
-Connect the power board to the main board via a 10-pin ribbon cable. See xref:ribbonCables.adoc[Ribbon Cables] if you haven't built this cable yet. This cable connects between *JP6 (PWM OUT)* on the main board and *JP2 (PWM IN)* on the power board.
+Connect the power board to the main board via a 10-pin ribbon cable. See xref:ribbonCables.adoc#ribbonCables[Ribbon Cables] if you haven't built this cable yet. This cable connects between *JP6 (PWM OUT)* on the main board and *JP2 (PWM IN)* on the power board.
 
 *Be sure to align pin 1* on both ends of the cable. I recommend marking a red stripe along one edge down the whole length of the cable, and calling that the Pin 1 side. That makes it easier to get the orientation right at both ends, since all you have to do is align the red stripe with the "Pin 1 arrow" marked on the board at each end.
 
@@ -385,5 +386,5 @@ image::images/2nd-chime-connector.png[""]
 
 == Test the IR transmitter and receiver
 
-If you installed the IR devices, you can test them simply by running through the IR TV control setup procedure in xref:irRemote.adoc[IR Remote Control] . I don't have any more simplified tests to suggest, since there's nothing really to test other than their ability to receive and transmit signals, which the programming procedure will exercise.
+If you installed the IR devices, you can test them simply by running through the IR TV control setup procedure in xref:irRemote.adoc#irRemote[IR Remote Control] . I don't have any more simplified tests to suggest, since there's nothing really to test other than their ability to receive and transmit signals, which the programming procedure will exercise.
 

@@ -1,3 +1,4 @@
+[#staticSafety]
 = Static Electricity Precautions
 
 Some electronic parts are hyper-sensitive to static electricity. You can damage them just by touching them, if your body is charged up with static. This is especially likely in dry climates - if you live somewhere dry, you know how often you get zapped touching metal fixtures. And even if you don't notice blue sparks flying around, you can still have enough static charge on your body to damage IC chips and other especially sensitive devices.

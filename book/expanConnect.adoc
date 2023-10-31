@@ -16,7 +16,7 @@ The "KL25Z port" is the one that Pinscape uses for all of its joystick emulation
 
 All of the expansion boards have *two* power input: one labeled *PC PSU* and one labeled *2ND PSU* . Both of these inputs must be connected to power in order for the boards to operate.
 
-The connectors on the boards use special cables that you can build yourself. See xref:expanPower.adoc[Expansion Board Power Cables] for full instructions.
+The connectors on the boards use special cables that you can build yourself. See xref:expanPower.adoc#expanPower[Expansion Board Power Cables] for full instructions.
 
 The *PC PSU* connector is meant to connect to the ATX power supply that's powering your PC motherboard. You should connect the cable for this connector to a free disk power plug on your PC's power supply.
 
@@ -36,7 +36,7 @@ image::images/expan-power-1psu.png[""]
 
 == Connect the first power board to the main board
 
-Connect the power board to the main board via a 10-pin ribbon cable. See xref:ribbonCables.adoc[Ribbon Cables] if you haven't built this cable yet. This cable connects between *JP6 (PWM OUT)* on the main board and *JP2 (PWM IN)* on the power board.
+Connect the power board to the main board via a 10-pin ribbon cable. See xref:ribbonCables.adoc#ribbonCables[Ribbon Cables] if you haven't built this cable yet. This cable connects between *JP6 (PWM OUT)* on the main board and *JP2 (PWM IN)* on the power board.
 
 *Be sure to align pin 1* on both ends of the cable. I recommend marking a red stripe along one edge down the whole length of the cable, and calling that the Pin 1 side. That makes it easier to get the orientation right at both ends, since all you have to do is align the red stripe with the "Pin 1 arrow" marked on the board at each end.
 
@@ -70,7 +70,7 @@ The plunger sensor connects to the main board pin header marked *PLUNGER (JP2)* 
 
 image::images/plunger-header.png[""]
 
-The easiest and best way to connect to this header is using a ribbon cable. There's a separate chapter for each type of plunger sensor, and each contains instructions for building the ribbon cable connector for that sensor. Also see xref:ribbonCables.adoc[Ribbon Cables] for general instructions on building ribbon cables.
+The easiest and best way to connect to this header is using a ribbon cable. There's a separate chapter for each type of plunger sensor, and each contains instructions for building the ribbon cable connector for that sensor. Also see xref:ribbonCables.adoc#ribbonCables[Ribbon Cables] for general instructions on building ribbon cables.
 
 When connecting the plunger sensor connector, take care to line up the *Pin 1* connection on the plunger sensor with the Pin 1 arrow marked on the main board.
 
@@ -94,13 +94,13 @@ The one pin you probably will want to install up front is the Common wire, since
 
 == TV ON connections
 
-See xref:tvon.adoc[TV ON Switch] for details on connecting the TV ON switch.
+See xref:tvon.adoc#tvon[TV ON Switch] for details on connecting the TV ON switch.
 
 == IR remote control connections
 
-See xref:irRemote.adoc[IR Remote Control] for how to connect the IR remote control emitter.
+See xref:irRemote.adoc#irRemote[IR Remote Control] for how to connect the IR remote control emitter.
 
 == Feedback device connections
 
-See xref:psOutputsExp.adoc[Pinscape Outputs Setup (Expansion Boards)] for how to connect feedback devices to the expansion boards.
+See xref:psOutputsExp.adoc#psOutputsExp[Pinscape Outputs Setup (Expansion Boards)] for how to connect feedback devices to the expansion boards.
 

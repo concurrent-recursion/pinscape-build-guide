@@ -1,8 +1,9 @@
+[#expanDebug]
 = Debugging the Expansion Boards
 
 This section has some things you can try to diagnose and fix any problems you've having with a set of expansion boards.
 
-If you haven't already, you should run through the test procedures in xref:expanTesting.adoc[Initial Expansion Board Testing] . That should give you a clearer idea of what's working and what's not working. That section also includes some basic debugging steps that might solve some simpler problems.
+If you haven't already, you should run through the test procedures in xref:expanTesting.adoc#expanTesting[Initial Expansion Board Testing] . That should give you a clearer idea of what's working and what's not working. That section also includes some basic debugging steps that might solve some simpler problems.
 
 If you go through all of the debugging suggestions for a particular symptom without identifying the problem, let me know. I'd like to include as many causes and fixes as possible, so if you come up with a new one that I haven't covered here, I'd like to add it.
 
@@ -20,7 +21,7 @@ At the risk of belaboring the obvious, it's always good to double-check some of 
 
 * Make sure all power cables are connected. The PC PSU and 2ND PSU connectors must *both* be connected for the boards to function properly.
 * Make sure cables are inserted the right way. For ribbon cables, I always recommend marking one edge of the cable with a red stripe (or something similar), and making sure that the red stripe is on the side with the "Pin 1" marking on the circuit board connector at both ends.
-* Make sure IC chips are inserted the right way. See xref:icchips.adoc[IC Chips] for how to properly orient each type of IC used in the project.
+* Make sure IC chips are inserted the right way. See xref:icchips.adoc#icchips[IC Chips] for how to properly orient each type of IC used in the project.
 * If you're using sockets for the IC chips, visually inspect them and make sure the chips are fully seated, and that all of the pins are inserted. Make sure none of the pins are sticking out the side of the socket or got folded under the chip.
 
 == Visual solder check
@@ -70,7 +71,7 @@ link:http://mjrnet.org/pinscape/expansion_board/download.php[mjrnet.org/pinscape
 * Press and hold the mouse wheel to pan the circuit board view
 * Right-click on pins or circuit traces for a context menu with possible commands for the object
 * On the main menu, select *File* > *Switch to schematic* to view the circuit schematic
-* For help reading the schematic, see xref:schematics.adoc[Schematics]
+* For help reading the schematic, see xref:schematics.adoc#schematics[Schematics]
 
 === How to trace a circuit in EAGLE
 
@@ -92,7 +93,7 @@ Double-check the System Type setting in the Config Tool settings to make sure it
 
 === No buttons are working
 
-If none of the button inputs are working, the CMN (Common) pin on the button input header is the likely culprit, because that's the one connection that all of the inputs share. Check continuity from the CMN pin on the header to a ground pins on the KL25Z, such as J9 pins 12 or 14 (see xref:kl25zPinOut.adoc[Pinout] ).
+If none of the button inputs are working, the CMN (Common) pin on the button input header is the likely culprit, because that's the one connection that all of the inputs share. Check continuity from the CMN pin on the header to a ground pins on the KL25Z, such as J9 pins 12 or 14 (see xref:kl25zPinOut.adoc#kl25zPinOut[Pinout] ).
 
 === Some buttons are working, some aren't
 
@@ -132,7 +133,7 @@ If you installed the TLC5940 chips in sockets, and you have additional TLC5940 c
 
 If that didn't help, it's still possible that you got an entirely bad lot of TLC5940 chips, but hopefully not - I haven't heard from anyone who's had that happen yet. It's more likely that at least some of your chips are good, and that the problem is instead in the wiring.
 
-Make the following continuity tests. I'd recommend having the .BRD file open in EAGLE while you're doing this, since that makes it a lot faster to find the test points on the physical boards. If you prefer, you can refer to the xref:kl25zPinOut.adoc[KL25Z pin-out diagram] to locate the pins on the KL25Z. When we say something like "J1 pin 11" on the KL25Z, we're talking about the location KL25Z's pin headers, not the expansion board headers.
+Make the following continuity tests. I'd recommend having the .BRD file open in EAGLE while you're doing this, since that makes it a lot faster to find the test points on the physical boards. If you prefer, you can refer to the xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z pin-out diagram] to locate the pins on the KL25Z. When we say something like "J1 pin 11" on the KL25Z, we're talking about the location KL25Z's pin headers, not the expansion board headers.
 
 * Pin 17 on *IC1 only* should connect to PIN 26 on IC2
 * Pin 18 on IC1 and IC2 should connect to KL25Z PTA1 (J1 pin 2 on the KL25Z)

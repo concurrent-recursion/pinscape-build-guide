@@ -7,7 +7,7 @@ Analog acceleration sensing adds a whole new kind of "control" to pinball simula
 
 The KL25Z's accelerometer is built-in, and the Pinscape software uses it by default to send readings to the PC. So there's very little to set up on the controller side, other than physically installing the KL25Z to take best advantage of the sensor. There are some options you can set to fine-tune the input, though. And there's a small amount of work needed on the PC side to configure pinball programs to use nudge input.
 
-This section is specifically about setting up Pinscape nudging. You might also want to take a look at xref:tilt.adoc[Nudge & Tilt] , which looks at the subject more generally.
+This section is specifically about setting up Pinscape nudging. You might also want to take a look at xref:tilt.adoc#tilt[Nudge & Tilt] , which looks at the subject more generally.
 
 == Positioning the KL25Z
 

@@ -1,3 +1,4 @@
+[#calbtn]
 = Pinscape Plunger Calibration Button
 
 The Pinscape firmware has a provision for a dedicated, hard-wired button to activate plunger calibration. This was a feature from the very first version, before the Config Tool existed. When the Config Tool came along, the dedicated button became unnecessary, since you can now run the calibration from the Windows UI. But the firmware still lets you connect a physical button for this if you really want to. I don't see any good reason to do so, as the whole process is much friendlier through the Windows UI, but I'll give you a quick guide to setting it up, just in case.

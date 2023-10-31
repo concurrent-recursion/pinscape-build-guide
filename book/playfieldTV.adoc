@@ -1,4 +1,4 @@
-[#selectingPlayfieldTV]
+[#playfieldTV]
 = Selecting a Playfield TV
 
 For most cab builders, the playfield TV is the most important piece of hardware in the system. A pin cab is, after all, fundamentally a video game. The weight of this importance makes it tough to decide on the perfect TV, but it's even more complicated because of the physical constraints of a pin cab, and the special performance demands of video gaming.
@@ -9,7 +9,7 @@ In fact, even "real time" recommendations on the forums can go stale quickly. If
 
 Since I can't give you a list of models to choose from, I'll instead try to offer some advice to help you figure out what to buy. This section attempts to answer the questions that new pin cab builders often have when looking for a TV (and maybe answer some questions you didn't know you should ask).
 
-Note that this chapter is about _selecting_ the playfield TV. We'll get into the details of actually installing it later, in xref:playfieldMounting.adoc[Playfield TV Mounting] .
+Note that this chapter is about _selecting_ the playfield TV. We'll get into the details of actually installing it later, in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] .
 
 == Size constraints
 

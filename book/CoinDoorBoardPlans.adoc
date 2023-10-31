@@ -1,3 +1,4 @@
+[#CoinDoorBoardPlans]
 = Coin Door Interface Board
 
 In the xref:coinDoor.adoc#coinDoor[Coin Door] chapter, we discuss the special wiring plug that the Williams WPC coin door uses. That plug is wired to all of the switches and lamps in the coin door: the coin chute switches that detect when you've inserted a quarter, the slam tilt switch, the service control panel buttons, and the coin slot lamps.
@@ -34,7 +35,7 @@ WARNING: This new version hasn't been tested yet. If you'd like to try building 
 
 The parts list links to Phoenix Contact parts on Mouser.com for the screw terminals, but you can also find cheaper generic versions here: link:https://www.pololu.com/category/177/0.1-2.54-mm-screw-terminal-blocks.html[www.pololu.com/category/177/0.1-2.54-mm-screw-terminal-blocks] .
 
-If you prefer, you can use standard 0.1" straight pin headers in place of the screw terminals. I personally prefer pin headers in most cases, because they mate with pluggable connectors that can be easily plugged and unplugged. With screw terminals, you have to attach each wire separately, which is time-consuming if you have to remove the whole board for any reason. The Phoenix Contact terminals and the standard 0.1" pin headers will both fit physically, so you can use whichever type of connector you prefer. See xref:pinHeaders.adoc[0.1" Pin Headers] for more about those connectors.
+If you prefer, you can use standard 0.1" straight pin headers in place of the screw terminals. I personally prefer pin headers in most cases, because they mate with pluggable connectors that can be easily plugged and unplugged. With screw terminals, you have to attach each wire separately, which is time-consuming if you have to remove the whole board for any reason. The Phoenix Contact terminals and the standard 0.1" pin headers will both fit physically, so you can use whichever type of connector you prefer. See xref:pinHeaders.adoc#pinHeaders[0.1" Pin Headers] for more about those connectors.
 
 If you do opt for 0.1" pin headers, be aware that JP1 can accommodate a 10-pin header, even though the parts list calls for a 9-position screw terminal. I intentionally added drilling for an extra "dummy" pin, so that you can use a 10-pin header. The extra 10th pin isn't connected to anything electrically on the board; it's just there so that a 10-pin header will fit. The reason you might want to use a 10-pin header instead of a 9-pin is that it's hard to find the mating "crimp pin housing" in a 9-pin size, whereas it's easy to find 10-pin housings.
 
@@ -58,7 +59,7 @@ The terminals on JP1 all connect to your key encoder, to allow the switches in t
 * T = Slam tilt switch
 * Co = all-switch common wire
 
-The terminals on JP2 connect to power for the coin slot lamps. There are several ways to connect these terminals, depending on (a) whether or not you installed the 6.3V regulator parts, and (b) whether you want the coin slot lamps to be on all the time or controlled by software on the PC (via xref:DOF.adoc[DOF] ). Here are the instructions for each combination:
+The terminals on JP2 connect to power for the coin slot lamps. There are several ways to connect these terminals, depending on (a) whether or not you installed the 6.3V regulator parts, and (b) whether you want the coin slot lamps to be on all the time or controlled by software on the PC (via xref:DOF.adoc#dofSetup[DOF] ). Here are the instructions for each combination:
 
 *  *With 6.3V regulator, lamps always ON:*
 ** +LAMP not connected, *or* you can use +LAMP as a 6.3V power source for up to four additional #555 bulbs
@@ -100,13 +101,13 @@ WARNING: the regulator chip Q1 is no longer in production, and the electronics v
 
 *To manufacturer the board:* simply upload the .brd file from the plans above to link:https://www.oshpark.com/[OSH Park] , or a different PCB maker or your choice. (Other PCB makers usually require Gerber files rather than .brd files. You can create those with the free version of EAGLE.)
 
-*To build the board _with_ the 6.3V regulator:* Solder all of the listed parts to the board. Connect 12V from your secondary ATX power supply (the one you use for feedback devices: see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] ) to the two-pin header labeled "12V IN". You can use the two-pin header marked *6.3V* as a power supply for other 6.3V button lamps, as long as you don't exceed 1.5A, or a total of 6 incandescent #555 bulbs (including the ones in the coin chutes).
+*To build the board _with_ the 6.3V regulator:* Solder all of the listed parts to the board. Connect 12V from your secondary ATX power supply (the one you use for feedback devices: see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] ) to the two-pin header labeled "12V IN". You can use the two-pin header marked *6.3V* as a power supply for other 6.3V button lamps, as long as you don't exceed 1.5A, or a total of 6 incandescent #555 bulbs (including the ones in the coin chutes).
 
 *To build it _without_ the 6.3V regulator:* Don't install any of the voltage regulator parts (C1, C11, Q1, or the 12V input pin header). Install only the main 13-pin header, the 10-pin header for the switch outputs, and the 2-pin header marked *6.3V* . Connect the 6.3V header on the board to your external 6.3V power supply; this will feed the 6.3V directly to the coin chute lamps.
 
 Once you've built the board, mount it near the coin the door where you can plug in the connector from the door. Plug in the power connection for the coin chute lamps (the 12V input if you included the voltage regulator, or the 6.3V input if you didn't). Plug in the 13-pin connector from the coin door.
 
-To wire the switches to your key encoder, you can either solder wires directly to the pin holes for the switch outputs, or (better) you can install a 10-pin header and connect a mating 1x10-pin plug. See xref:connectors.adoc[Connectors] for details on building the plug using a 0.1" crimp pin 1x10 position housing.
+To wire the switches to your key encoder, you can either solder wires directly to the pin holes for the switch outputs, or (better) you can install a 10-pin header and connect a mating 1x10-pin plug. See xref:connectors.adoc#connectors[Connectors] for details on building the plug using a 0.1" crimp pin 1x10 position housing.
 
 image::images/WilliamsCoinDoorPCBPinOut.png[""]
 The switch outputs on the board are labeled as follows:

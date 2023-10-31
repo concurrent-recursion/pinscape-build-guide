@@ -14,7 +14,7 @@ pdf:
 		-o dist/pdf/$(FILENAME)-$(VERSION).pdf
 		
 html:
-	bundle exec asciidoctor -b html5 \
+	bundle exec asciidoctor -v -b html5 \
 		book/main.adoc \
 		-o dist/html/$(FILENAME)-$(VERSION).html; \
 	cp -r book/images dist/html

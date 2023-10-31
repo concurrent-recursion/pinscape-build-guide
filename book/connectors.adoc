@@ -1,3 +1,4 @@
+[#connectors]
 = Connectors
 
 One of my "design rules" when I built my own cab was that everything should be modular: pieces should be self-contained, and it should be easy to take anything out for servicing or replacement without major surgery, and just as easy to put it back. In the case of the electronics, this meant that nothing should be "hard-wired" into the cabinet. I should never have to cut a wire or unsolder anything just to remove an electronic device. The way to achieve that is to make sure all of the connections in the wiring are made with modular connectors that can be plugged and unplugged, just like a power plug in a wall outlet.
@@ -16,7 +17,7 @@ You plug into the pin headers with matching connectors. In most cases, the conne
 
 Pin headers can be out in the open, as in the top two examples at right, or can be enclosed in a plastic "shroud", like the bottom example at right. The pin spacing is the same either way; the shroud is there primarily to make sure you can't orient the mating plug the wrong way when plugging it in. The little slot you can see in the picture of the shroud at right lines up with bump on the connector, so if you try to insert the connector backwards, the bump hits the other side of the shroud and prevents you from inserting it.
 
-Pin headers and the matching connectors are described in more detail (with product links and installation instructions) in xref:pinHeaders.adoc[0.1" Pin Headers] .
+Pin headers and the matching connectors are described in more detail (with product links and installation instructions) in xref:pinHeaders.adoc#pinHeaders[0.1" Pin Headers] .
 
 
 == PC disk power connectors
@@ -51,7 +52,7 @@ A better way is build your own mating connectors and just plug into them, the wa
 
 Those are crimp-pin housings, so see xref:crimpPins.adoc#crimpPins[Crimp Pins] for instructions on how to assemble them.
 
-Also see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for more on using ATX power supplies for feedback device power.
+Also see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for more on using ATX power supplies for feedback device power.
 
 
 == PC motherboard "front panel" connectors
@@ -62,7 +63,7 @@ Intel defined a standard layout for this connector, so that motherboards and cas
 
 You can plug into these with one of the 0.1" crimp pin housings described above.
 
-See xref:powerSwitching.adoc[Power Switching] for more on the front panel connector and how to set up PC-controlled power switching in your pin cab.
+See xref:powerSwitching.adoc#powerSwitching[Power Switching] for more on the front panel connector and how to set up PC-controlled power switching in your pin cab.
 
 == Molex wire-to-wire connectors
 

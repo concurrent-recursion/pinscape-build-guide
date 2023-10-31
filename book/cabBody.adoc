@@ -10,7 +10,7 @@ Before we get to the building plans, we'll discuss the reasons behind the design
 This section has a lot of background information and digressions on small (sometimes trivial) details, so it's rather lengthy. When you're ready to go out to your workshop and get building, you might prefer a more concise step-by-step list of dimensions and tasks. I've tried to provide something along those lines in a couple of appendices:
 
 *  xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction]
-*  xref:cabBodyQuickRef.adoc[Cabinet Construction Quick Reference]
+*  xref:cabBodyQuickRef.adoc#cabinetConstructionQuickRef[Cabinet Construction Quick Reference]
 
 == Design goals
 
@@ -245,7 +245,7 @@ Most commercial cabinets use a mix of plywood and particle board: plywood for th
 
 I personally prefer to use real pinball parts wherever possible, instead of trying to improvise something out of common hardware parts. It can be a bit more expensive to use the real parts, but they tend to look better, and in many cases they're easier to work with because they're purpose-built for a specialized job. An exception is that many of the fasteners and generic nuts and bolts that you can buy anywhere. But even some of the generic-sounding hardware can be hard to find outside of pinball vendors. Anything that I listed with a Williams part number in the master list ( xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] ) is probably hard to find outside of pinball suppliers.
 
-*Tools:* See xref:cabTools.adoc[Cabinet Building Tools] for recommendations on the woodworking tools you'll need for building the cabinet.
+*Tools:* See xref:cabTools.adoc#cabTools[Cabinet Building Tools] for recommendations on the woodworking tools you'll need for building the cabinet.
 
 == Choosing a cabinet design
 
@@ -304,7 +304,7 @@ When I built my own cab, I chose standard-body dimensions, mostly because I want
 
 As long as we're on the subject of custom widths, we should consider lengths as well.
 
-As with a custom width, the main reason to build to a custom length is make a TV fit exactly. As discussed in xref:playfieldTV.adoc[Selecting a Playfield TV] , a real pinball playfield is much more elongated than a 16:9 TV screen; a typical 1990s era playfield is more like 20:9. So placing a 16:9 TV in a standard-sized cabinet leaves a few inches of dead space at the front and/or rear of the cabinet. Some cab builders don't like that idea because they want to fill every square inch with TV display area.
+As with a custom width, the main reason to build to a custom length is make a TV fit exactly. As discussed in xref:playfieldTV.adoc#playfieldTV[Selecting a Playfield TV] , a real pinball playfield is much more elongated than a 16:9 TV screen; a typical 1990s era playfield is more like 20:9. So placing a 16:9 TV in a standard-sized cabinet leaves a few inches of dead space at the front and/or rear of the cabinet. Some cab builders don't like that idea because they want to fill every square inch with TV display area.
 
 image::images/TVDeadSpace.png[""]
 
@@ -559,7 +559,7 @@ With either method, the holes should end up being a tight fit for the bolts. Tha
 [#flipperButtonDrilling]
 ====  Flipper buttons
 
-Here's the drilling plan for a set of two flipper button holes on each side. The front button in each set is the regular flipper button, and the rear button is the "MagnaSave" button, which is for the benefit of some pinball games that have extra controls beyond the regular flipper buttons. The rear buttons are optional, and not everyone likes them since they're not all that common on real machines, but I think it's good to include them because of the large number of virtual tables that make use of them. See xref:magnaSaveButtons.adoc[Tables with MagnaSave Buttons] for more about these buttons, and a list of some of the tables that use them.
+Here's the drilling plan for a set of two flipper button holes on each side. The front button in each set is the regular flipper button, and the rear button is the "MagnaSave" button, which is for the benefit of some pinball games that have extra controls beyond the regular flipper buttons. The rear buttons are optional, and not everyone likes them since they're not all that common on real machines, but I think it's good to include them because of the large number of virtual tables that make use of them. See xref:magnaSaveButtons.adoc#magnaSaveButtons[Tables with MagnaSave Buttons] for more about these buttons, and a list of some of the tables that use them.
 
 NOTE: Some side rails are wide enough to cover the flipper buttons, in which case they'll come with pre-drilled holes for the buttons. The WPC rails are narrow enough that they sit entirely above the flipper buttons, so they don't need any holes for the buttons. If you're using wide rails that do cover the flipper button area, ignore our drilling locations! Your cabinet flipper button holes need to line up with the ones in the rails. So use the button holes in your rails to determine where to drill.
 
@@ -591,7 +591,7 @@ The original "stepped" pattern lets you fasten the button with a Pal nut, withou
 Variations:
 
 * The rear (MagnaSave) buttons are optional. If you don't want to include them, simply don't drill the holes. The regular flipper buttons go at the same position whether or not you include the MagnaSave buttons.
-* There are at least two other good ways to position the MagnaSave buttons. Some people place them directly below the flipper buttons, and some people prefer them diagonally behind and below the flipper buttons. Both of those patterns have precedents in real pinball machines that had the extra buttons (see xref:magnaSaveButtons.adoc[Tables with MagnaSave Buttons] ). The layout in my diagrams is based on the Williams MagnaSave games from the 1980s, so it's probably the most familiar look to most players, but not everyone likes the feel, due to the stretch to reach the rear buttons. The more vertical layouts are arguably easier to reach, and make it it easier to keep a finger on each button.
+* There are at least two other good ways to position the MagnaSave buttons. Some people place them directly below the flipper buttons, and some people prefer them diagonally behind and below the flipper buttons. Both of those patterns have precedents in real pinball machines that had the extra buttons (see xref:magnaSaveButtons.adoc#magnaSaveButtons[Tables with MagnaSave Buttons] ). The layout in my diagrams is based on the Williams MagnaSave games from the 1980s, so it's probably the most familiar look to most players, but not everyone likes the feel, due to the stretch to reach the rear buttons. The more vertical layouts are arguably easier to reach, and make it it easier to keep a finger on each button.
 * Williams System 11 games (1980s) placed the flipper buttons about 1/4" higher than shown in my diagrams, which are based on the WPC games (1990s). System 11 games used broader side rails that covered the flipper buttons, so I think the slightly different positioning is purely to accommodate the different rails. I don't think it noticeably affects the feel.
 
 [#glassChannelSlots]
@@ -894,7 +894,7 @@ The holes shown in the diagram are for 120mm fans (about 4¾" inches diameter). 
 
 There's nothing magical about our placement of the fan openings, so move them as needed. I recommend keeping them relatively high up on the wall to take advantage of the natural flow of rising warm air. The point is to remove the hottest air from the cabinet, and that will tend to move towards the upper portion of the space.
 
-For more on cooling, see xref:fans.adoc[Cooling Fans] .
+For more on cooling, see xref:fans.adoc#fans[Cooling Fans] .
 
 ====  Other rear wall cutouts
 
@@ -903,7 +903,7 @@ Here are some other optional items that you might want to consider, as long as y
 * Ethernet port. Wired network ports can come in handy even if you're planning to install a Wi-Fi card or powerline Ethernet. The rear of the cabinet adjacent to the power inlet is an excellent place for this. Keystone jacks are useful here. See "External I/O plugs" in xref:pcInstall.adoc#externalIOPlugs[Installing the PC] .
 * USB ports. It's also good to have some external USB ports, and the back of the cab makes a convenient place for a couple of these. As with Ethernet, you can use Keystone jacks. If you're installing a Keystone jack plate for Ethernet anyway, you can make it a 3-gang or 4-gang plate and populate it with a couple of USB ports while you're at it.
 * Keyboard/mouse ports (these are usually just more USB ports). I prefer the floor of the cab near the front, since that's where you'll actually want to use the keyboard and mouse, but the back of the cab will do if you just want a single cluster of ports.
-* Openings to pass wires for light strips on the back of the cab (see xref:lightStrips.adoc[Undercab Lighting] )
+* Openings to pass wires for light strips on the back of the cab (see xref:lightStrips.adoc#lightStrips[Undercab Lighting] )
 
 ====  Back rails
 
@@ -938,7 +938,7 @@ The subwoofer opening is shown at the size used in the WPC machines, but the pos
 
 You should consider changing the diameter of the subwoofer cutout to match the speaker you select. The 5-3/8" diameter cutout is based on the 6" speakers used in the WPC machines. Those are small by modern standards; automotive subwoofers are in the 8"-and-up range. If you do use a larger speaker, it'll sound better if the opening is roughly the same size as the speaker aperture.
 
-The large fan opening towards the front isn't part of the original WPC design. It's a virtual cabinet add-on for our greater cooling needs. This is meant to be an *intake* fan, with a PC case fan mounted on the interior surface and oriented so that it blows air *into* the cab. This helps draw in cool air from the bottom to replace hot air being blown out by the fans at the back. See xref:fans.adoc[Cooling Fans] for more on this subject.
+The large fan opening towards the front isn't part of the original WPC design. It's a virtual cabinet add-on for our greater cooling needs. This is meant to be an *intake* fan, with a PC case fan mounted on the interior surface and oriented so that it blows air *into* the cab. This helps draw in cool air from the bottom to replace hot air being blown out by the fans at the back. See xref:fans.adoc#fans[Cooling Fans] for more on this subject.
 
 As with the fan openings in the back wall, the position and size shown are only suggestions, and there's nothing special about the exact placement shown, other than that it's generally close to the front of the cabinet to promote front-to-back air flow. The opening is sized for a common 120mm PC case fan. Some people think it's better to use two intakes to match the two vents in the back, so you could add a mirror-image opening on the opposite side (near the power button). But I wouldn't go too overboard on adding fan vents, as they eat into the space available for the PC components and other items, plus too many cutouts will weaken the floor.
 
@@ -964,14 +964,14 @@ Before finalizing your floor cutouts, you might want to figure out where you're 
 * If you're going to install the PC in a full case (such as a desktop case or a mid-tower case), you might need to move the subwoofer opening further back to make room.
 * The PC needs good air flow for cooling. The air intake openings should be positioned so that they're close to the PC, and so that they'll be unobstructed. If you're installing the PC in a full case, you should figure out where the case's air intake will end up, and place a floor opening at the same spot, so that the case can draw in outside air directly.
 
-See xref:pcInstall.adoc[Installing the PC] for more on planning the placement of the PC components.
+See xref:pcInstall.adoc#pcInstall[Installing the PC] for more on planning the placement of the PC components.
 
 ====  Other floor cutouts
 
 Here are some ideas for other cutouts you might want to make in the cab floor, as long as you're working on this piece. These aren't things you'll find in the real machines, and there's no particular standard place to put them in a virtual cab, but you can consider making provisions for them if they look useful for your build.
 
 * Keyboard and mouse ports (typically USB). The floor is a good place for ports for input devices that you might want to connect for doing administrative work on the PC, since it's out of sight but within easy reach. I'd pick an area near a front corner, perhaps opposite the power button. Keystone jacks work well for this. See "External I/O plugs" in xref:pcInstall.adoc#externalIOPlugs[Installing the PC] .
-* Openings for undercab light wiring. If you're going to install light strips on the bottom of the cab for ambient lighting, you'll need a small hole somewhere in the floor for the wiring. A 1" diameter hole somewhere along one of the edges is pretty flexible for this purpose. See xref:lightStrips.adoc[Undercab Lighting] .
+* Openings for undercab light wiring. If you're going to install light strips on the bottom of the cab for ambient lighting, you'll need a small hole somewhere in the floor for the wiring. A 1" diameter hole somewhere along one of the edges is pretty flexible for this purpose. See xref:lightStrips.adoc#lightStrips[Undercab Lighting] .
 * Volume buttons or knob. Some people like to put dedicated volume controls somewhere on the cab, and the bottom (somewhere near the front) is a popular choice because it's out of sight but easily reachable. You can use a volume dial here if your amplifier uses one, or an up/down rocker switch. I installed a rocker switch for this purpose on my own cab, wired through the keyboard encoder to send the Volume Up and Volume Down keyboard commands to Windows. On a new build, I'd probably dispense with the extra switch, and use "shifted" flipper buttons in combination with link:http://mjrnet.org/pinscape/PinVol.html[PinVol] .
 
 * Other hidden controls, such as an audio mute button or a "night mode" switch (to silence noisier devices for late night use).
@@ -1249,7 +1249,7 @@ image::images/backbox-top-detail-2.png[""]
 
 Top piece, bottom side, viewed from the back, to show routing detail on the bottom side.
 
-If you're planning to install any "toppers" (decorations on top of the backbox, such as a rotating beacon, fan, bell, or flashers; see xref:toppers.adoc[Backbox Toppers] ), consider pre-drilling any openings in the roof that will be needed for mounting hardware or wiring.
+If you're planning to install any "toppers" (decorations on top of the backbox, such as a rotating beacon, fan, bell, or flashers; see xref:toppers.adoc#toppers[Backbox Toppers] ), consider pre-drilling any openings in the roof that will be needed for mounting hardware or wiring.
 
 [#backboxFloorPlan]
 ====  Backbox floor
@@ -1309,7 +1309,7 @@ Backbox back wall. The holes near the top are for passive ventilation. Note that
 
 The original WPC backboxes used passive ventilation, via seven 1½"-diameter holes along the top of the back wall. ("Passive" meaning that they didn't use fans to circulate air; they relied on natural air flow driven by hot air expanding and rising.)
 
-Some virtual cab builders add powered fans to the backbox for extra cooling. My experience has been that this passive cooling is adequate for the backbox (see xref:fans.adoc[Cooling Fans] ), but some people are concerned about heat from the backbox video displays. If you want to add active cooling, I'd remove the passive vent holes and replace them with one or two larger circular openings for 120mm PC case fans, similarly placed near the top of the back wall. You could also add some intake vents at the bottom, although I don't think that's necessary, as air will be drawn in from the main cabinet through the openings in the backbox floor.
+Some virtual cab builders add powered fans to the backbox for extra cooling. My experience has been that this passive cooling is adequate for the backbox (see xref:fans.adoc#fans[Cooling Fans] ), but some people are concerned about heat from the backbox video displays. If you want to add active cooling, I'd remove the passive vent holes and replace them with one or two larger circular openings for 120mm PC case fans, similarly placed near the top of the back wall. You could also add some intake vents at the bottom, although I don't think that's necessary, as air will be drawn in from the main cabinet through the openings in the backbox floor.
 
 If you add cooling fans, be aware of the space requirements for the other equipment plan to install in the backbox, such as the TV, DMD, replay knocker, and bells.
 
@@ -1325,11 +1325,11 @@ I don't have an alternative set of plans to offer using the back door approach, 
 
 I personally prefer the fixed back wall, instead of a door. The main reason is that it makes the backbox a lot stronger if the back is a solid, fixed panel. I also don't like the idea of using a permanent mounting for any of the TVs, since doing so makes it very difficult to repair or upgrade the machine later. I prefer to install all of the TVs (and other major components) in such a way that you can remove them non-destructively when necessary. In the case of the backbox TV, I favor mounting it so that it can be removed through the front of the backbox, preferably without having to disassemble anything. That removes any need for a back door. It also makes it easy to replace the TV, if that should ever become desirable or necessary.
 
-See xref:backboxTVInstall.adoc[Backbox TV Mounting] for some ideas about how to mount the TV so that it can be removed.
+See xref:backboxTVInstall.adoc#backboxTVInstall[Backbox TV Mounting] for some ideas about how to mount the TV so that it can be removed.
 
 ====  Toppers
 
-If you're installing some kind of "topper" (a decoration on top of the backbox, such as a beacon, fan, bell, or flashers: see xref:toppers.adoc[Backbox Toppers] ), consider pre-drilling any openings needed for the mounting hardware and wiring.
+If you're installing some kind of "topper" (a decoration on top of the backbox, such as a beacon, fan, bell, or flashers: see xref:toppers.adoc#toppers[Backbox Toppers] ), consider pre-drilling any openings needed for the mounting hardware and wiring.
 
 === How to assemble the cabinet
 
@@ -1589,8 +1589,8 @@ If you're planning to use a custom wood cover instead of a translite, you can sk
 Before proceeding with installing these, there are some cases where some of the guides should _not_ be installed:
 
 * If you're not using a standard speaker/DMD panel, don't install the lower guides (the ones at the bottom of the side walls) until you've worked out whether or not you need them. These are designed for the pre-WPC-95 style of speaker panel only, and might not work if you're using a home-brew design of your own.
-* If you're using a WPC-95 speaker panel - the type that's made out of a single piece of molded black plastic - don't install the lower guides. The lower guides are only for the older pre-WPC-95 speaker panel. If you're using a standard panel type but you're not sure whether it's WPC-95 or pre-, consult xref:dmdAssembly.adoc[Speaker/DMD Panel] for help.
-* If you haven't finalized your backbox TV install plan yet, don't install the upper side wall guides. Those get in the way of some TV installation methods. See xref:backboxTVInstall.adoc[Backbox TV Mounting] for more.
+* If you're using a WPC-95 speaker panel - the type that's made out of a single piece of molded black plastic - don't install the lower guides. The lower guides are only for the older pre-WPC-95 speaker panel. If you're using a standard panel type but you're not sure whether it's WPC-95 or pre-, consult xref:dmdAssembly.adoc#dmdAssembly[Speaker/DMD Panel] for help.
+* If you haven't finalized your backbox TV install plan yet, don't install the upper side wall guides. Those get in the way of some TV installation methods. See xref:backboxTVInstall.adoc#backboxTVInstall[Backbox TV Mounting] for more.
 
 Assuming that you're using the standard translite and the early 1990s style of speaker/DMD panel, here's a cutaway view showing the placement of the guides on the sides of the cabinet. Note that the right side wall isn't shown in this view, but (as you would probably expect) has the same two guide pieces shown on the left wall, at the same positions in mirror image.
 

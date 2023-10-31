@@ -1,3 +1,4 @@
+[#serviceability]
 = Serviceable Design
 
 Real pinball machines have numerous design elements that are there purely for the sake of serviceability - that is, to make the machines easier to repair, upgrade, and maintain. These features are often the products of a series of refinements that wouldn't have been obvious without experience, and a lot them are hidden, internal features that you wouldn't even realize are there when you're just playing the games.
@@ -56,7 +57,7 @@ Pluggable connectors of the sort used in the real machines have two important vi
 
 Most virtual pin cab builders intuitively recognize the important of modular wiring - of using some kind of removable connectors rather than soldering everything together permanently. But many new pin cab builders gravitate towards screw-terminal blocks, and in my opinion, those don't quite achieve the full goal here. Terminal blocks do avoid the need for permanently soldered connections, so they address the first point above right, but they miss the mark on the second point. Consider what happens if you have a couple of terminal blocks for wiring a particular part, and you disconnect the wiring: where do the wires go when it's time to reconnect them?
 
-Proper pluggable connectors of the sort we're talking about are definitely a bit more work to set up than screw terminals. But they're great once they're in place, because you can arrange things so it's practically impossible to plug things in the wrong way. These connectors can also be time-consuming to select during the design phase, because there are so many options available. I'm convinced you could build a nice engineering career on a solid knowledge of the Molex catalog and of which connector to use when. I've tried to make your job here a little easier via pointers to some good basic options in xref:connectors.adoc[Connectors] .
+Proper pluggable connectors of the sort we're talking about are definitely a bit more work to set up than screw terminals. But they're great once they're in place, because you can arrange things so it's practically impossible to plug things in the wrong way. These connectors can also be time-consuming to select during the design phase, because there are so many options available. I'm convinced you could build a nice engineering career on a solid knowledge of the Molex catalog and of which connector to use when. I've tried to make your job here a little easier via pointers to some good basic options in xref:connectors.adoc#connectors[Connectors] .
 
 There are three clever techniques used in the real machines to make the connections "idiot-proof", which are worth cribbing when you're wiring your virtual cab:
 

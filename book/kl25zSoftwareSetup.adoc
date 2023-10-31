@@ -19,7 +19,7 @@ If the Config Tool doesn't recognize your device at all, you might need to manua
 
 If all goes well, you should see a Pinscape device listed when you get back to the main menu screen. This will give you options to configure settings and test the device's inputs.
 
-You'll also see the LED on the KL25Z flash a status indicator pattern. Alternating green/yellow or green/blue indicate healthy operation. See xref:statusLights.adoc[KL25Z Status Lights] for the full list of status light patterns.
+You'll also see the LED on the KL25Z flash a status indicator pattern. Alternating green/yellow or green/blue indicate healthy operation. See xref:statusLights.adoc#statusLights[KL25Z Status Lights] for the full list of status light patterns.
 
 
 == KL25Z Boot Loader update

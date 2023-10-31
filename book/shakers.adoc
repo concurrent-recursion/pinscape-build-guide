@@ -1,3 +1,4 @@
+[#shakers]
 = Shaker motors
 
 The shaker motor is one of my favorite feedback toys. It does what the name suggests: it shakes the cabinet when activated. When done properly, the effect is a deep rumble that reverberates through the floor like an earthquake. Appropriately, the first arcade pinball that featured a shaker motor (as far as I know) was the earthquake-themed _Earthshaker_ (Williams, 1989).
@@ -31,7 +32,7 @@ Shakers are simple enough that you can build one yourself for about $50 to $100 
 
 Hare are some detailed DIY plans you can find online:
 
-*  xref:shakerPlan.adoc[My shaker design]
+*  xref:shakerPlan.adoc#shakerPlan[My shaker design]
 *  link:https://www.vpforums.org/index.php?showtopic=14734&p=143713.html[Darkfall's plans on vpforums]
 *  link:https://pinside.com/pinball/forum/topic/building-a-shaker-motor-i-have-a-couple-questions.html[RacerRik's plans on Pinside]
 *  link:https://pinside.com/pinball/forum/topic/my-home-made-shaker.html#post-2408089[Waldo34's plans on Pinside] (a variation on RacerRik's plans)
@@ -151,7 +152,7 @@ If the shaker is still causing excessive nudge interference after you've adjuste
 
 One more thing: please don't use "dead zones" in your accelerometer setup. Dead zones are terrible. They make erratic behavior even more erratic because they create a non-linear "cliff" where there's no response at all at one level, and suddenly a huge response just a hair above that. It's better to stick with purely linear settings, like the "Gain" settings in Visual Pinball.
 
-For more on nudge adjustments, see xref:tilt.adoc[Nudge & Tilt] .
+For more on nudge adjustments, see xref:tilt.adoc#tilt[Nudge & Tilt] .
 
 == Speed adjustment
 

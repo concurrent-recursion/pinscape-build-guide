@@ -1,3 +1,4 @@
+[#knockers]
 = Replay Knockers
 
 The replay knocker is the device in a real machine that makes the loud knock noise when you win a free game, exceed the replay score, etc. This is implemented in the real machines with a solenoid coil positioned in the backbox so that its plunger strikes a metal plate when fired.
@@ -44,7 +45,7 @@ The Williams/Bally knocker assemblies come with a Molex 3-pin .093" cable connec
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-09-1032.html[Molex .093" 3-position receptacle]
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=538-02-09-1119.html[Crimp socket (female)]
 
-If you're using the Pinscape expansion boards, connect this to the "Knocker" pin on the JP9 pin header. This is a "timer protected" output, to prevent the knocker coil from getting stuck on. That protects the coil from overheating in case of software failure. See xref:coilTimers.adoc[Coil Timers] .
+If you're using the Pinscape expansion boards, connect this to the "Knocker" pin on the JP9 pin header. This is a "timer protected" output, to prevent the knocker coil from getting stuck on. That protects the coil from overheating in case of software failure. See xref:coilTimers.adoc#coilTimers[Coil Timers] .
 
 If you're using an LedWiz, you'll have to use a booster circuit of some kind. The replay knocker will draw 3-4A when activated, which exceeds the 500mA (0.5A) maximum for an LedWiz port. You can connect the knocker directly to the Pinscape expansion board's dedicated "Knocker" output, or directly to any Power Board or Chime Board output port.
 

@@ -1,3 +1,4 @@
+[#dofEventCodes]
 = DOF Event Codes
 
 How does Visual Pinball know which flashers to fire when the ball hits a target, or when to turn on the shaker motor?
@@ -12,9 +13,9 @@ image::images/dof-config-tool.png[""]
 
 Those codes are painstakingly hand-crafted for each individual table, to create a pleasing set of effects for each game during play. Thank goodness (or more to the point, thank Arngrim) that someone (Arngrim) _already_ hand-crafted a good set of codes for nearly all of the tables in existence, and put them in the DOF Config Tool's public database for all of us to use. That saves you the work of going through that whole coding process for the many dozens of tables you'll eventually want to install on your cab.
 
-If you're happy with the default DOF effects provided by the Config Tool's database, and you don't want to make any customizations of your own, then you don't have to know anything about how DOF works apart from the basics of installing it on your system, which we covered separately in xref:DOF.adoc[DOF Setup] . But if you do want to customize anything, you'll have to learn what the cryptic DOF codes mean. DOF's documentation has some of this information, but it's incomplete and (in my opinion) poorly organized and almost as cryptic as the codes themselves. So this section is my attempt at a more approachable and more thorough explanation of what the codes mean and how to use them.
+If you're happy with the default DOF effects provided by the Config Tool's database, and you don't want to make any customizations of your own, then you don't have to know anything about how DOF works apart from the basics of installing it on your system, which we covered separately in xref:DOF.adoc#dofSetup[DOF Setup] . But if you do want to customize anything, you'll have to learn what the cryptic DOF codes mean. DOF's documentation has some of this information, but it's incomplete and (in my opinion) poorly organized and almost as cryptic as the codes themselves. So this section is my attempt at a more approachable and more thorough explanation of what the codes mean and how to use them.
 
-The actual procedure for customizing tables in the Config Tool is covered separately, in xref:CustomizeDOF.adoc[Customizing a table's DOF effects] . The present section covers just the syntax that you enter in the Config Tool to make those customizations.
+The actual procedure for customizing tables in the Config Tool is covered separately, in xref:CustomizeDOF.adoc#CustomizeDOF[Customizing a table's DOF effects] . The present section covers just the syntax that you enter in the Config Tool to make those customizations.
 
 == Event/Toy/Port associations
 
@@ -65,7 +66,7 @@ Within each trigger, the first item is always the triggering event. Most trigger
 * A solenoid (e.g., the top bumper or the left slingshot) firing
 * A switch (e.g., the rollover switch in the right outlane) closing
 
-DOF represents most of these game objects with one letter codes: S is for Solenoid, W is for sWitch, L is for Lamp. There's a full list later in this section. There's also a number after the code indicating which specific switch/lamp/whatever we're talking about: S8 in the first line is Solenoid 8. Figuring out the number that corresponds to a given solenoid/lamp/whatever in a given game is a whole separate (and equally cryptic) subject that we'll get into in xref:CustomizeDOF.adoc[Customizing a table's DOF effects] .
+DOF represents most of these game objects with one letter codes: S is for Solenoid, W is for sWitch, L is for Lamp. There's a full list later in this section. There's also a number after the code indicating which specific switch/lamp/whatever we're talking about: S8 in the first line is Solenoid 8. Figuring out the number that corresponds to a given solenoid/lamp/whatever in a given game is a whole separate (and equally cryptic) subject that we'll get into in xref:CustomizeDOF.adoc#CustomizeDOF[Customizing a table's DOF effects] .
 
 So the first event, `S8 300 I32` , means that we fire this effect when Solenoid 8 in the game turns on. The second one, `W37 600 I32` , fires when sWitch 37 closes. And so on.
 
@@ -192,7 +193,7 @@ The first number in the pair in these lines is the "E" event code. The second nu
 
 |L _number_ 
 |L7
-|Lamp. The toy is activated when the given lamp on the table is on. Lamps refer to the individually controlled lights on the playfield or backbox, such as an "Extra Ball When Lit" light or a bumper lamp. The lamp numbers are defined by the particular table, according to the game's original ROM programming. See xref:CustomizeDOF.adoc[Customizing a table's DOF effects] for tips on figuring out which lamp is which for a given table.
+|Lamp. The toy is activated when the given lamp on the table is on. Lamps refer to the individually controlled lights on the playfield or backbox, such as an "Extra Ball When Lit" light or a bumper lamp. The lamp numbers are defined by the particular table, according to the game's original ROM programming. See xref:CustomizeDOF.adoc#CustomizeDOF[Customizing a table's DOF effects] for tips on figuring out which lamp is which for a given table.
 
 |M _number_ 
 |M3
@@ -212,11 +213,11 @@ The first number in the pair in these lines is the "E" event code. The second nu
 
 |S _number_ 
 |S15
-|Solenoid. The toy is activated when the given playfield solenoid is activated. Solenoids refer to (simulated) physical solenoids in the game, such as bumper coils, kick-out coils, and slingshots. The Williams games also controlled the flasher lamps as though they were solenoids (since they required relatively high power), so some solenoid numbers refer to flasher lamps on original playfields. The solenoid numbers are assigned by the game's original ROM programming; see xref:CustomizeDOF.adoc[Customizing a table's DOF effects] .
+|Solenoid. The toy is activated when the given playfield solenoid is activated. Solenoids refer to (simulated) physical solenoids in the game, such as bumper coils, kick-out coils, and slingshots. The Williams games also controlled the flasher lamps as though they were solenoids (since they required relatively high power), so some solenoid numbers refer to flasher lamps on original playfields. The solenoid numbers are assigned by the game's original ROM programming; see xref:CustomizeDOF.adoc#CustomizeDOF[Customizing a table's DOF effects] .
 
 |W _number_ 
 |W9
-|Switch. This toy is activated when the given playfield switch is activated. A switch is usually a (simulated) physical switch on the playfield, like a rollover switch, stand-up target, or bumper contact. The switch numbering is determined by the game's original ROM programming; see xref:CustomizeDOF.adoc[Customizing a table's DOF effects] .
+|Switch. This toy is activated when the given playfield switch is activated. A switch is usually a (simulated) physical switch on the playfield, like a rollover switch, stand-up target, or bumper contact. The switch numbering is determined by the game's original ROM programming; see xref:CustomizeDOF.adoc#CustomizeDOF[Customizing a table's DOF effects] .
 
 |===
 

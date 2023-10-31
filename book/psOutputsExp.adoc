@@ -1,10 +1,11 @@
+[#psOutputsExp]
 = Pinscape Outputs Setup (Expansion Boards)
 
 If you've built a set of expansion boards, you're past the hard part. Connecting output devices is fairly easy. The Pinscape boards use the same basic wiring plan as other solid state controllers, as described in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 
 * Connect a wire from the *positive* terminal of the power supply to the feedback device's positive terminal
 * Connect the feedback device's negative terminal to an output port pin on the Pinscape expansion board
-* As described in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , you should already have connected the power supply's negative terminal to the common ground interconnect for all of the feedback power supplies
+* As described in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , you should already have connected the power supply's negative terminal to the common ground interconnect for all of the feedback power supplies
 
 image::images/psOutBasicWiring.png[""]
 
@@ -46,7 +47,7 @@ Diodes are critical! Coils and motors can damage your PC motherboard and other c
 
 == Fuses
 
-Many cab builders include a fuse in each device output circuit. This isn't strictly necessary, but I think it's a good idea for the higher-powered mechanical devices. Fuses can help protect the Pinscape board from overloads caused by wiring faults and device malfunctions, reducing the chance that the board will be damaged if something like that goes wrong. See xref:fuses.adoc[Fuses] for details.
+Many cab builders include a fuse in each device output circuit. This isn't strictly necessary, but I think it's a good idea for the higher-powered mechanical devices. Fuses can help protect the Pinscape board from overloads caused by wiring faults and device malfunctions, reducing the chance that the board will be damaged if something like that goes wrong. See xref:fuses.adoc#fuses[Fuses] for details.
 
 == Where to connect what
 
@@ -138,7 +139,7 @@ This connector also provides a +5V power supply pin. The idea is that you can co
 
 You don't strictly have to connect flashers to these outputs, although if you're going to use flashers in your system at all, this is the best place to connect them. If you're _not_ using flashers, though, you can re-purpose these outputs for other types of devices, *as long as you stay within the limits of 50V and 1.5A* per output. Don't connect anything that draws more than 1.5A, as that can potentially destroy the IC chips that drive these outputs. For anything that takes more than 1.5A, always use the Power Board outputs instead.
 
-*Main board JP9 (Knocker/Strobe)* has one pin dedicated to the replay knocker, and one pin dedicated to a "strobe" output. These assignments are printed on the board next to the pin header to help you identify which is which. See xref:contactors.adoc[Flippers, Bumpers, and Slingshots] and xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for notes on these device types.
+*Main board JP9 (Knocker/Strobe)* has one pin dedicated to the replay knocker, and one pin dedicated to a "strobe" output. These assignments are printed on the board next to the pin header to help you identify which is which. See xref:contactors.adoc#contactors[Flippers, Bumpers, and Slingshots] and xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for notes on these device types.
 
 The strobe output is driven by exactly the same chip that controls the flasher outputs, so it has the same power limits (50V and 1.5A). You can use it for other purposes besides a strobe if you prefer, as long as you stay within those limits.
 
@@ -146,7 +147,7 @@ The knocker output is driven by a MOSFET that can handle very large loads, which
 
 See the xref:#JP12Warning[warning above] about the proper location of the STROBE output.
 
-*Main board JP8 (Small LED/Opto)* has 16 pins designed for low-power LEDs. These are intended primarily for controlling LEDs in the flipper and MagnaSave buttons; see xref:buttonLamps.adoc[Button Lamps] for how to set those up.
+*Main board JP8 (Small LED/Opto)* has 16 pins designed for low-power LEDs. These are intended primarily for controlling LEDs in the flipper and MagnaSave buttons; see xref:buttonLamps.adoc#buttonLamps[Button Lamps] for how to set those up.
 
 As with the RGB flasher header (JP11), these pins are labeled with color channels - 1R, 1G, 1B, 2R, 2G, 2B, etc. And as with JP11, you're free to ignore the labels if you prefer, but following them will save you a little software setup time.
 
@@ -168,7 +169,7 @@ Power board outputs. These are general-purpose outputs suitable for almost anyth
 
 === Chime board output ports
 
-All 8 of the Chime Board outputs are high-power outputs with time-limiter circuits of the same type used in the replay knocker output on the main board. As with the replay knocker, these are designed to protect pinball coils from software faults on the PC that could leave an output stuck on. They're nominally for "chime units" (see xref:chimes.adoc[Chimes and Bells] ), but they're really appropriate for any sort of standard pinball coil, such as bumpers and slingshots. You wouldn't want to use them with flippers, however, as you certainly do want to allow flippers to be held on for long periods.
+All 8 of the Chime Board outputs are high-power outputs with time-limiter circuits of the same type used in the replay knocker output on the main board. As with the replay knocker, these are designed to protect pinball coils from software faults on the PC that could leave an output stuck on. They're nominally for "chime units" (see xref:chimes.adoc#chimes[Chimes and Bells] ), but they're really appropriate for any sort of standard pinball coil, such as bumpers and slingshots. You wouldn't want to use them with flippers, however, as you certainly do want to allow flippers to be held on for long periods.
 
 image::images/ChimeBoardOutputs.png[""]
 
@@ -230,7 +231,7 @@ The Timer column indicates whether or not the output has a timer circuit that cu
 
 === DOF Setup
 
-To set up your Pinscape unit with DOF, you of course have to install DOF on your PC first. See xref:DOF.adoc[DOF Setup] for instructions.
+To set up your Pinscape unit with DOF, you of course have to install DOF on your PC first. See xref:DOF.adoc#dofSetup[DOF Setup] for instructions.
 
 Once the DOF software is installed, you use the link:https://configtool.vpuniverse.com/[DOF Config Tool] to tell DOF that you have a Pinscape unit, and to tell it which output ports are wired to which feedback devices.
 

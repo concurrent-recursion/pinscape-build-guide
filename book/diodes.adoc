@@ -20,7 +20,7 @@ Fortunately, diodes are simple to install, and you don't need to know anything a
 
 You don't need protective diodes for LEDs, incandescent bulbs, LED strobe lights, or LED light strips.
 
-Diodes are also used in the Pinscape expansion boards, and have many other uses besides coil protection. This chapter is only concerned with the coil protection usage. If you want to know more about diodes as circuit board components, see xref:cmpdiodes.adoc[Diodes] .
+Diodes are also used in the Pinscape expansion boards, and have many other uses besides coil protection. This chapter is only concerned with the coil protection usage. If you want to know more about diodes as circuit board components, see xref:cmpdiodes.adoc#cmpdiodes[Diodes] .
 
 == Don't use diodes with AC devices
 

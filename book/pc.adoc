@@ -1,3 +1,4 @@
+[#pc]
 =  Designing the PC
 
 The core of a pin cab is a PC running Windows. You could theoretically build a pin cab around a Mac, an iPad, a Raspberry Pi, or just about any other sort of computer. But for our purposes in this guide, the only real option is a Windows PC, because that's where all of the software runs.
@@ -248,11 +249,11 @@ Note that there's such a thing as a "small form factor" case. These take up less
 
 
 
-If you skip the case, it's straightforward to mount the motherboard, disk, and power supply to the floor of the cabinet. The only real complication is that the video card and other add-in cards will need some kind of structural support to keep them from working loose from the motherboard slots. One option is a partial case, known as an "I/O panel" or "I/O tray". You can search for these on the Web by looking for terms like "ATX I/O panel" or "mATX motherboard tray" (use "ATX" or "mATAX" according to your motherboard's "form factor" spec). Another option is to fashion your own ad hoc support from wood or sheet metal. We'll look at specifics in  xref:pcInstall.adoc[Installing the PC] .
+If you skip the case, it's straightforward to mount the motherboard, disk, and power supply to the floor of the cabinet. The only real complication is that the video card and other add-in cards will need some kind of structural support to keep them from working loose from the motherboard slots. One option is a partial case, known as an "I/O panel" or "I/O tray". You can search for these on the Web by looking for terms like "ATX I/O panel" or "mATX motherboard tray" (use "ATX" or "mATAX" according to your motherboard's "form factor" spec). Another option is to fashion your own ad hoc support from wood or sheet metal. We'll look at specifics in  xref:pcInstall.adoc#pcInstall[Installing the PC] .
 
 === Fans
 
-PC components and TVs generate heat when running, so you'll want to make sure the cabinet interior is well ventilated. Most cab builders do this by installing a couple of PC case fans in specially cut openings in the floor or back wall of the cabinet. See xref:fans.adoc[Cooling Fans] for more.
+PC components and TVs generate heat when running, so you'll want to make sure the cabinet interior is well ventilated. Most cab builders do this by installing a couple of PC case fans in specially cut openings in the floor or back wall of the cabinet. See xref:fans.adoc#fans[Cooling Fans] for more.
 
 [#pcNetworkConnections]
 === Network
@@ -286,7 +287,7 @@ If you want something a little more elegant and flexible, you can install the ap
 * 1 Keystone snap-in RJ45 Cat6 female-to-female coupler
 * 4-foot standard male-to-male cables for each of the above connections
 
-See xref:pcInstall.adoc[Installing the PC] for installation instructions.
+See xref:pcInstall.adoc#pcInstall[Installing the PC] for installation instructions.
 
 === Optical disks
 

@@ -1,3 +1,4 @@
+[#dmdAssemblyWPC95]
 = WPC-95 Speaker Panel
 
 This chapter goes into the details of the WPC-95 style of speaker/DMD panel, which is the type used in Williams and Bally machines from about 1995 and later. This type of panel is formed from a single piece of injected-molded plastic, in matte black, usually with a Williams or Bally manufacturer logo in metallic paint.
@@ -6,13 +7,13 @@ image::images/dmd-panel-wpc95.png[""]
 
 These panels didn't have any artwork apart from the manufacturer logo, so they're interchangeable across games from the WPC-95 generation.
 
-There's a different style used in Williams/Bally machines made before 1995, which had an MDF core and plastic facing with screen-printed graphics specific to each title. See xref:dmdAssembly.adoc[Speaker/DMD Panel] for more about the two panel types, and see xref:dmdAssemblyOriginal.adoc[Original WPC Speaker Panel] for details on fabricating, assembling, and installing the older style.
+There's a different style used in Williams/Bally machines made before 1995, which had an MDF core and plastic facing with screen-printed graphics specific to each title. See xref:dmdAssembly.adoc#dmdAssembly[Speaker/DMD Panel] for more about the two panel types, and see xref:dmdAssemblyOriginal.adoc#dmdAssemblyOriginal[Original WPC Speaker Panel] for details on fabricating, assembling, and installing the older style.
 
 == Buying or building
 
 It's probably impractical to fabricate your own version of this type of panel. The originals are single-piece injection-molded plastic, which is a process that's very cheap if you're making a lot of copies of something, but expensive if you're just making one. 3D printing can often come to the rescue in a situation like this, but in this case it's probably not workable, since the part so large - 27" wide. A commercial 3D-print service might be able to fabricate an item this large, but it's likely to cost at least twice as much as buying the factory part.
 
-If you really want to create your own panel of this style from scratch, I think you're better off not trying to duplicate the exact construction, but instead faking it a little bit, by building one that _looks like_ this style but uses the construction techniques of the xref:dmdAssemblyOriginal.adoc[older panel style] . You can use the old design to make a panel that looks very much like the WPC-95 style simply by using a matte black plastic piece for the front facing. It'll still be a little different in the details, mostly in that it will lack the beveling around the speaker and display cutouts, but you'd have to look very closely to notice.
+If you really want to create your own panel of this style from scratch, I think you're better off not trying to duplicate the exact construction, but instead faking it a little bit, by building one that _looks like_ this style but uses the construction techniques of the xref:dmdAssemblyOriginal.adoc#dmdAssemblyOriginal[older panel style] . You can use the old design to make a panel that looks very much like the WPC-95 style simply by using a matte black plastic piece for the front facing. It'll still be a little different in the details, mostly in that it will lack the beveling around the speaker and display cutouts, but you'd have to look very closely to notice.
 
 If you want an exact match to the WPC-95 style, you can simply buy one as a replacement part from a pinball supply vendor, such as Marco Specialties or Planetary Pinball. Replacement panels are available with Williams or Bally logos pre-printed in silver or gold. Look for part numbers 04-10382-7A, 04-10382-7B, 04-10374-7A, 04-10374-7G: those are all the same except for the logo selection. They run about $100.
 

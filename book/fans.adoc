@@ -1,3 +1,4 @@
+[#fans]
 = Cooling Fans
 
 The TV and the PC components inside a pin cab generate heat when running, so it's necessary to ventilate the cabinet to keep it cool. Most pin cab builders accomplish this by cutting a couple of air vents in inconspicuous places on the cab and installing fans in the vents to move air through the cabinet.

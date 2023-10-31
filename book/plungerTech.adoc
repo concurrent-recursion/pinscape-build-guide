@@ -1,3 +1,4 @@
+[#plungerTech]
 = Plunger Sensor Technical Notes
 
 Tracking a plunger for pinball simulation is a surprisingly difficult technical challenge. At first glance, it looks like a pretty easy problem with some simple solutions: it's just a linear position sensor, and there are some standard approaches for that. But there are two details to pinball simulation that make the problem harder: you need fine spatial resolution, and you need to be able to take readings quickly.

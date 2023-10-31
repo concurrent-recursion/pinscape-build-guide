@@ -1,14 +1,15 @@
+[#transistors]
 = Transistors
 
 A transistor is a fundamental semiconductor component that acts like an electronic valve, with a control signal that determines how much current can flow through the transistor. This ability can be used for amplifying a small signal into a bigger one and for electronic switching. Virtually all modern electronic computing is based on logic gates constructed from transistors acting as switches.
 
 "Transistor" is an umbrella term for several rather different types of semiconductor devices, based on different physical effects, with considerably different behavior in a circuit. They're all lumped together under the name "transistor" because of the ability they have in common to function as amplifiers and switches.
 
-This chapter is about the *bipolar junction transistor* , which is what people usually mean when they talk about a "transistor" without saying specifically which kind. The BJT was the first type of transistor that was widely produced, and was by far the most widely used until the 1980s, when its dominance was supplanted by a different type called the MOSFET (the subject of the xref:mosfets.adoc[next chapter] ). Even though MOSFETs are more numerous these days (mostly because they're the transistors underlying nearly all integrated circuit chips), BJTs are still foundational to modern electronics, and they're extremely useful devices that are still widely used as discrete components (that is, outside of integrated circuit chips). We're including them in this guide for all of those reasons, but more specifically because the Pinscape boards use a few of them.
+This chapter is about the *bipolar junction transistor* , which is what people usually mean when they talk about a "transistor" without saying specifically which kind. The BJT was the first type of transistor that was widely produced, and was by far the most widely used until the 1980s, when its dominance was supplanted by a different type called the MOSFET (the subject of the xref:mosfets.adoc#mosfets[next chapter] ). Even though MOSFETs are more numerous these days (mostly because they're the transistors underlying nearly all integrated circuit chips), BJTs are still foundational to modern electronics, and they're extremely useful devices that are still widely used as discrete components (that is, outside of integrated circuit chips). We're including them in this guide for all of those reasons, but more specifically because the Pinscape boards use a few of them.
 
 == Static electricity warning
 
-Transistors are sensitive to static electricity. Refer to xref:staticSafety.adoc[Static Electricity Precautions] for tips on handling static-sensitive parts.
+Transistors are sensitive to static electricity. Refer to xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] for tips on handling static-sensitive parts.
 
 == NPN and PNP
 

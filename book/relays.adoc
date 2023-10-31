@@ -1,3 +1,4 @@
+[#relays]
 = Relays
 
 A relay is a mechanical switch controlled by an electromagnet, allowing one circuit to control another circuit. Because the switching is done mechanically, there's no need for the two circuits to be connected electrically, which simplifies control interfaces between incompatible circuit types. One very common use along these lines is controlling a high-voltage AC power line circuit from a low-power DC logic circuit.
@@ -7,7 +8,7 @@ The Pinscape main expansion board includes a relay for the TV switching function
 This chapter is about relays as electronic components in general. There are a couple of specific ways that relays are commonly used in pin cabs that we cover separately in other sections:
 
 * Relays can be used as an interface between the popular LedWiz feedback controller and higher-power devices such as solenoids and motors. The LedWiz can't be directly connected to large devices because of its relatively low power handling limits. Relays can be used to bridge that gap, although there are better alternatives, such as MOSFETs. This is covered in xref:ledwiz.adoc#ledwizSetup[LedWiz Setup] .
-* Some pin cab builders use USB-controlled relay boards from Sainsmart as their output controllers. These are turn-key controllers that let you switch a bank of mechanical relays via USB commands, so they can be used for many of the same functions as an LedWiz. They're covered in xref:sainsmart.adoc[SainSmart Relay Board Setup] .
+* Some pin cab builders use USB-controlled relay boards from Sainsmart as their output controllers. These are turn-key controllers that let you switch a bank of mechanical relays via USB commands, so they can be used for many of the same functions as an LedWiz. They're covered in xref:sainsmart.adoc#sainsmart[SainSmart Relay Board Setup] .
 
 == Protective diodes
 

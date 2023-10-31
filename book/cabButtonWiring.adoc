@@ -73,7 +73,7 @@ Any ordinary stranded hookup wire will work fine here. These are all low-voltage
 
 I like to use a mix of insulation colors to make it easier to trace wires through the cab when necessary. I'd use one color for all of the Common/Ground wires - black, if you want to follow the normal conventions - and a mix of other colors (never the same as the Common/Ground color) for the unique button port wires.
 
-See xref:wire.adoc[Wire] for more on wire selection.
+See xref:wire.adoc#wire[Wire] for more on wire selection.
 
 == Software setup
 
@@ -220,7 +220,7 @@ You should be able to find markings on the plastic body for at least two of the 
 
 If there aren't any markings, or the terminals are laid out differently, you might have to resort to the xref:#experimentalButtonTerminalId[experimental method] described below.
 
-What about the lamp terminals? That's a whole separate subject, because even though the lamp is part of the button assembly, it's controlled by a whole separate electrical system on your virtual cab. That's covered in xref:buttonLamps.adoc[Button Lamps] .
+What about the lamp terminals? That's a whole separate subject, because even though the lamp is part of the button assembly, it's controlled by a whole separate electrical system on your virtual cab. That's covered in xref:buttonLamps.adoc#buttonLamps[Button Lamps] .
 
 === Microswitches
 
@@ -267,7 +267,7 @@ The coin door open button needs a little bit of special treatment in the softwar
 
 You can connect a tilt bob to a button input, to detect TILT conditions the same way a real machine does.
 
-Note that the tilt bob *isn't* there for "nudging" in the simulation. It's far too blunt an instrument for that. The tilt bob is there to serve the same purpose it does in a real machine, which is detect the overly aggressive nudging that counts as cheating. For the kind of nudging where you want to influence the ball motion in the simulation, use an accelerometer. That can differentiate between gentle nudges and hard nudges and everything in between. See xref:tilt.adoc[Nudge & Tilt] for more.
+Note that the tilt bob *isn't* there for "nudging" in the simulation. It's far too blunt an instrument for that. The tilt bob is there to serve the same purpose it does in a real machine, which is detect the overly aggressive nudging that counts as cheating. For the kind of nudging where you want to influence the ball motion in the simulation, use an accelerometer. That can differentiate between gentle nudges and hard nudges and everything in between. See xref:tilt.adoc#tilt[Nudge & Tilt] for more.
 
 To connect a tilt bob, simply connect the two usual wires from the key encoder (Ground/Common and a unique button input) to the two ends of the bob: one to the hanger hook, the other to the ring at the bottom. Standard pinball tilt bob assemblies have screw terminals where you can attach the wires - the arrows below show where.
 

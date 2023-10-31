@@ -1,12 +1,13 @@
+[#tvon]
 = TV ON Switch
 
 The Pinscape Controller has a feature that lets you send a "Power On" command to your TV(s) when the overall system powers up. This feature can solve the problem that some TVs have when used in pin cabs, namely that they don't power on automatically when they're plugged in again after being unplugged.
 
-This feature is only needed if your TV doesn't remember its power state when you plug it back in after it's unplugged, _and_ you're using the sort of one-button power control setup as described in xref:powerSwitching.adoc[Power Switching] . That power control setup effectively unplugs the TVs and other devices from AC power when the PC is off, so each time you turn the PC back on, the TV thinks it's being plugged back in to the wall outlet after being unplugged. Some TVs automatically power up and return to displaying the last video source when this happens, but many just go into standby mode. The Pinscape TV ON feature is meant to solve this problem for TVs that go into standby mode, by explicitly sending a "Power On" command to the TV at system startup to get it back into operation.
+This feature is only needed if your TV doesn't remember its power state when you plug it back in after it's unplugged, _and_ you're using the sort of one-button power control setup as described in xref:powerSwitching.adoc#powerSwitching[Power Switching] . That power control setup effectively unplugs the TVs and other devices from AC power when the PC is off, so each time you turn the PC back on, the TV thinks it's being plugged back in to the wall outlet after being unplugged. Some TVs automatically power up and return to displaying the last video source when this happens, but many just go into standby mode. The Pinscape TV ON feature is meant to solve this problem for TVs that go into standby mode, by explicitly sending a "Power On" command to the TV at system startup to get it back into operation.
 
 == Do I need it?
 
-Before going on, you should make sure you actually need this feature. Some TVs need it and others don't. And regardless of TV, there's no need for it unless you're using one-button power control of the sort described in xref:powerSwitching.adoc[Power Switching] .
+Before going on, you should make sure you actually need this feature. Some TVs need it and others don't. And regardless of TV, there's no need for it unless you're using one-button power control of the sort described in xref:powerSwitching.adoc#powerSwitching[Power Switching] .
 
 Assuming you're using that sort of power switching, here's how to test your TV to see if it needs help powering on at system startup:
 
@@ -30,7 +31,7 @@ Some cab builders try to avoid this whole issue by only buying TVs that pass the
 
 == What this feature doesn't do
 
-The TV ON feature *doesn't* control power at the plug, and it can't turn OFF your TVs. For both of those functions, use the techniques described in xref:powerSwitching.adoc[Power Switching] . The TV ON feature is meant to be used *in conjunction with* the switched power strip described in that chapter. TV ON isn't a replacement for the switched power strip; it's just an add-on to deal with TVs that don't automatically turn back on after being unplugged.
+The TV ON feature *doesn't* control power at the plug, and it can't turn OFF your TVs. For both of those functions, use the techniques described in xref:powerSwitching.adoc#powerSwitching[Power Switching] . The TV ON feature is meant to be used *in conjunction with* the switched power strip described in that chapter. TV ON isn't a replacement for the switched power strip; it's just an add-on to deal with TVs that don't automatically turn back on after being unplugged.
 
 == How it works
 
@@ -83,20 +84,20 @@ If you want to use Pinscape's automatic TV ON system *without* the expansion boa
 
 The first option (a Windows batch script) is easier, but if you prefer to let Pinscape handle things automatically, read on for details on building the power sensing circuit.
 
-Note that this entire scheme depends on following the switched 120V power plan outlined in xref:powerSwitching.adoc[Power Switching] . In order for this to work, you must be using:
+Note that this entire scheme depends on following the switched 120V power plan outlined in xref:powerSwitching.adoc#powerSwitching[Power Switching] . In order for this to work, you must be using:
 
 * A "soft" power switch for the main PC
 * A switched outlet that's controlled by the PC power
 * A secondary ATX power supply that's plugged into the switched outlet, for powering feedback devices and other systems apart from the PC motherboard
 
-If you're already familiar with that design, read on. If not, you should go back and read about it in xref:powerSwitching.adoc[Power Switching] , because some of the material below won't make sense if you're not using the same design for the main power switching system.
+If you're already familiar with that design, read on. If not, you should go back and read about it in xref:powerSwitching.adoc#powerSwitching[Power Switching] , because some of the material below won't make sense if you're not using the same design for the main power switching system.
 
 Here's the schematic for the sensing circuit. Again, this is built in to the expansion boards, so you won't have to build this separately if you're using the expansion boards.
 
 image::images/PSU2PowerSense.png[""]
 
-* Connect GND to a Ground pin on the KL25Z (see xref:kl25zPinOut.adoc[KL25Z Pin Out] )
-* Connect 3V3_KL25Z to a 3.3V pin on the KL25Z (see xref:kl25zPinOut.adoc[KL25Z Pin Out] )
+* Connect GND to a Ground pin on the KL25Z (see xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] )
+* Connect 3V3_KL25Z to a 3.3V pin on the KL25Z (see xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] )
 * Connect GND2 to the *secondary* power supply ground (the one plugged into the switched outlet)
 * Connect +5V_PSU2 to the *secondary* power supply +5V
 * Connect PSU2_STATUS_SENSE to the KL25Z GPIO port assigned as "Power status input" in the Pinscape Config Tool settings
@@ -122,7 +123,7 @@ When you've entered all of the settings, click "Program KL25Z" at the bottom of 
 
 If you're going the IR route, the minimum requirement is an IR transmitter, to send IR commands to your TV(s). But you'll almost certainly want to set up an IR receiver as well, so that Pinscape can "learn" commands from your remotes. It's possible in principle to program the remote control codes by hand, without the learning function, but it's surprisingly difficult to find published information for the exact model of TV you're trying to control. And even if you can find published codes, they're hard to make sense of because no one can agree on a universal standard format. The learning function is by far the easiest way to figure out what codes your exact TV is using, because it lets Pinscape read the codes directly from your remote control.
 
-See xref:irRemote.adoc[IR Remote Control] for instructions on setting up the IR remote control features with Pinscape.
+See xref:irRemote.adoc#irRemote[IR Remote Control] for instructions on setting up the IR remote control features with Pinscape.
 
 Once you've installed the IR transmitter and receiver hardware, you can set up the TV ON feature through IR as follows:
 
@@ -159,7 +160,7 @@ If you're using the expansion boards, the relay switch is built in. If you're no
 
 image::images/TVON-relay.png[""]
 
-* Connect GND to a Ground pin on the KL25Z (see xref:kl25zPinOut.adoc[KL25Z Pin Out] )
+* Connect GND to a Ground pin on the KL25Z (see xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] )
 * Connect +5V_PSU2 to the +5V of your secondary power supply
 * Connect GND2 to the ground (black wire) of your secondary power supply
 * Connect TV_SWITCH to the GPIO pin you're using for the TV relay

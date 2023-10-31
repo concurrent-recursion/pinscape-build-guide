@@ -1,3 +1,4 @@
+[#software]
 = Pinball Software Setup
 
 Now let's look at the software needed to transform this from a plain Windows PC to a pin cab machine.
@@ -98,7 +99,7 @@ Visual Pinball and the other pinball player programs are basically PC video game
 
 To display backglass artwork when playing Visual Pinball games, you need an add-on program called B2S Backglass Server. B2S is installed automatically along with VP if you used the VP Installer. If you set up VP manually, you'll have to install B2S separately.
 
-Getting B2S working takes a few additional steps beyond just installing the software. We cover the details in xref:b2s.adoc[Backglass Software Setup] .
+Getting B2S working takes a few additional steps beyond just installing the software. We cover the details in xref:b2s.adoc#b2s[Backglass Software Setup] .
 
 === Tactile feedback and lights
 
@@ -106,7 +107,7 @@ If you're installing any feedback devices in your cab - solenoids, shaker motors
 
 DOF is an add-on program that lets Visual Pinball and other software access your output controller. DOF acts as the coordinator between the simulated game and the physical feedback devices, to synchronize feedback effects with the game action: firing your flipper solenoids when the flipper flips, activating the shaker motor when the castle is destroyed, etc.
 
-DOF is a fairly big subject, so it gets its own chapter: xref:DOF.adoc[DOF Setup] .
+DOF is a fairly big subject, so it gets its own chapter: xref:DOF.adoc#dofSetup[DOF Setup] .
 
 == PinVol
 
@@ -124,7 +125,7 @@ The most widely used front end currently is PinballX, which is free but closed-s
 
 === PinballY
 
-This is my own project, brand new in late 2018. I tried to make it easy and quick to set up so that you can try it out without a lot of hassle. It's designed specifically for pin cabs, and has built-in integration with most of the pin cab ecosystem, including xref:DOF.adoc[DOF] , real DMD devices, joysticks (for button input), and multiple monitors. It's also highly customizable via a built-in Javascript scripting engine.
+This is my own project, brand new in late 2018. I tried to make it easy and quick to set up so that you can try it out without a lot of hassle. It's designed specifically for pin cabs, and has built-in integration with most of the pin cab ecosystem, including xref:DOF.adoc#dofSetup[DOF] , real DMD devices, joysticks (for button input), and multiple monitors. It's also highly customizable via a built-in Javascript scripting engine.
 
 Downloads and more information are available at the link:http://mjrnet.org/pinscape/PinballY.php[PinballY Project Page] .
 

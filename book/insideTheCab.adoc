@@ -16,15 +16,15 @@ These elements (or some subset of them) form the top layer in the main cabinet.
 
 image::images/inside-playfield.png[""]
 
-The basic arrangement is pretty straightforward, but the details can be surprisingly hairy. First, there's the placement of the TV: do you place it flush with the top of the cab, or recessed like a real playfield? How far in? At what angle? All the way at the front, or set back to make room for the plunger? These are all among the most frequent questions that new cab builders ask. You can see from the diagram what I prefer, but this is a matter of aesthetics, and there are other schools of thought. Second, once you've decided upon the desired look, you still have to implement it physically. That's trickier than it might look, especially if you want to fulfill my admonition to make the machine serviceable ( xref:serviceability.adoc[Serviceable Design] ). Serviceability requires that the TV be easily removed. You can probably guess I'm not in favor of just nailing it in there and calling it done.
+The basic arrangement is pretty straightforward, but the details can be surprisingly hairy. First, there's the placement of the TV: do you place it flush with the top of the cab, or recessed like a real playfield? How far in? At what angle? All the way at the front, or set back to make room for the plunger? These are all among the most frequent questions that new cab builders ask. You can see from the diagram what I prefer, but this is a matter of aesthetics, and there are other schools of thought. Second, once you've decided upon the desired look, you still have to implement it physically. That's trickier than it might look, especially if you want to fulfill my admonition to make the machine serviceable ( xref:serviceability.adoc#serviceability[Serviceable Design] ). Serviceability requires that the TV be easily removed. You can probably guess I'm not in favor of just nailing it in there and calling it done.
 
-There's enough to this subject that we've given it its own chapter, xref:playfieldMounting.adoc[Playfield TV Mounting] .
+There's enough to this subject that we've given it its own chapter, xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] .
 
 It's extremely important to plan out exactly where the TV goes before you start arranging anything else inside the cabinet. The TV assembly forms a ceiling that constrains the vertical space available to everything else, so you need to know where that is.
 
-If possible, you should actually install the TV early on, not just make plans, so that you can see the space it delineates for real rather than just as measurements. But don't do that unless you're using a mounting that's easily removable, because you won't want the TV in the way while you're installing everything else. If you use a mounting system like the one I outline in xref:playfieldMounting.adoc[Playfield TV Mounting] , you'll be able to install and remove the TV with little effort.
+If possible, you should actually install the TV early on, not just make plans, so that you can see the space it delineates for real rather than just as measurements. But don't do that unless you're using a mounting that's easily removable, because you won't want the TV in the way while you're installing everything else. If you use a mounting system like the one I outline in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] , you'll be able to install and remove the TV with little effort.
 
-Some notes on the flasher panel. I've depicted the back panel with the traditional five flasher domes. Each is a clear plastic dome with a 3W RGB LED inside. This is such a ubiquitous setup that the most popular pinball software (Visual Pinball with DOF) is programmed to assume it's there. However, some people replace the five-flasher panel with an array of individually addressable LEDs - sort of a coarse dot-matrix display. The physical setup for that is basically the same; just remove the flasher domes and substitute addressable LED strips or arrays. Some people also do both, by installing a five-flasher panel as shown and adding an addressable LED strip or two, across the top and/or bottom. See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] and xref:addressableLightStrips.adoc[Addressable Light Strips] .
+Some notes on the flasher panel. I've depicted the back panel with the traditional five flasher domes. Each is a clear plastic dome with a 3W RGB LED inside. This is such a ubiquitous setup that the most popular pinball software (Visual Pinball with DOF) is programmed to assume it's there. However, some people replace the five-flasher panel with an array of individually addressable LEDs - sort of a coarse dot-matrix display. The physical setup for that is basically the same; just remove the flasher domes and substitute addressable LED strips or arrays. Some people also do both, by installing a five-flasher panel as shown and adding an addressable LED strip or two, across the top and/or bottom. See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] and xref:addressableLightStrips.adoc#addressableLightStrips[Addressable Light Strips] .
 
 You could also fit one or more light strips across the "lip" (illustrated below) that sits below the backbox shelf. Keep in mind that there's a standard trim piece for the top glass that also affixes here, so check how that will fit before finalizing plans. See "Rear glass trim" in xref:cabHardware.adoc#rearGlassTrim[Cabinet Hardware Installation] .
 
@@ -38,7 +38,7 @@ image::images/inside-power-strips.png[""]
 
 Why at the back? For one thing, that's where the power cord customarily comes in. For another, it's a really good fit for the geometry: most power strips are long and narrow, which is a shape that fits nicely along the bottom of the back wall. And finally, it's good to put something low-maintenance back there, because that area is relatively difficult to reach into once everything's assembled. The very back is blocked from above by the backbox shelf, so it's a little bit of an inconvenience to access. It's just reachable enough for plugging and unplugging AC cords, but you wouldn't want to have to get back there with tools if you can avoid it.
 
-I recommend installing _two_ power strips: a small strip that you'll plug directly into the wall outlet, and a second, larger strip that acts as a "smart" strip, providing power to its outlets only when the PC is powered on. All of the accessories (the TVs, audio amplifiers, and feedback devices) plug into the switched outlets, which lets you turn the whole cab on and off with the PC soft power controls. You can implement the switched outlets by buying a smart power strip (they don't design them for pin cabs specifically, but it's the same idea: they're for turning off your monitors and printers when you're not using the computer), or by building your own. This is all covered in much more detail in its own section, xref:powerSwitching.adoc[Power Switching] .
+I recommend installing _two_ power strips: a small strip that you'll plug directly into the wall outlet, and a second, larger strip that acts as a "smart" strip, providing power to its outlets only when the PC is powered on. All of the accessories (the TVs, audio amplifiers, and feedback devices) plug into the switched outlets, which lets you turn the whole cab on and off with the PC soft power controls. You can implement the switched outlets by buying a smart power strip (they don't design them for pin cabs specifically, but it's the same idea: they're for turning off your monitors and printers when you're not using the computer), or by building your own. This is all covered in much more detail in its own section, xref:powerSwitching.adoc#powerSwitching[Power Switching] .
 
 I'd put the large put strip along the base of the back wall, and mount the smaller strip on the rear wall a little ways above. Put it high enough up that it won't be in the way of the plugs on the main strip. We have enough stuff to pack in here that it's important to think three-dimensionally, so utilize wall space when it makes sense.
 
@@ -56,7 +56,7 @@ After installing the power strips and exhaust fans, there's still a lot of open 
 
 * It's hard to reach after the machine is assembled, as mentioned earlier, due to the way the backbox shelf overhangs this area
 * There will eventually be a bunch of wires and cables that you'll have to route through this area from the backbox
-* If you're using a liftable playfield TV mounting like the one outlined in xref:playfieldMounting.adoc[Playfield TV Mounting] , you'll need to keep most of this space open so that the TV has room to maneuver; plus, the TV overhang will make the space even harder to reach
+* If you're using a liftable playfield TV mounting like the one outlined in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] , you'll need to keep most of this space open so that the TV has room to maneuver; plus, the TV overhang will make the space even harder to reach
 
 After everything else is assembled, you can reconsider this space if there's "just one more thing" you want to install and you can't find space for it anywhere else. At that point you'll have a more concrete idea of the constraints on this space, so it'll be easier to decide if it makes sense to mount anything else here. In my cab, I find this space so hard to access that I wouldn't put anything here besides what we've already covered.
 
@@ -232,11 +232,11 @@ image::images/inside-pc-2.png[""]
 
 We have a little flexibility with the power supply, but only so much: it has to be close enough to the motherboard that the power cables for the motherboard and video card can reach their sockets. The obvious place is just behind the motherboard. That also happens to take good advantage of the space there, which is somewhat constrained by the presence of the subwoofer.
 
-Setting up the PC hardware is a fairly significant project in itself, so we give that its own chapter, xref:pcInstall.adoc[Installing the PC] . That section covers other ways of installing the PC components, such as enclosing them in a conventional desktop case, and goes into more detail about choosing a location and implementing the installation.
+Setting up the PC hardware is a fairly significant project in itself, so we give that its own chapter, xref:pcInstall.adoc#pcInstall[Installing the PC] . That section covers other ways of installing the PC components, such as enclosing them in a conventional desktop case, and goes into more detail about choosing a location and implementing the installation.
 
 == Secondary power supplies
 
-If you're installing feedback devices, you'll need to install power for them. More details can be found in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , but the executive summary is that you can generally cover most of the bases with ATX power supply (that is, a separate unit of the same type used for the PC motherboard's power supply) and one or two generic OEM power supplies for higher voltages (such as 24V and/or 48V).
+If you're installing feedback devices, you'll need to install power for them. More details can be found in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , but the executive summary is that you can generally cover most of the bases with ATX power supply (that is, a separate unit of the same type used for the PC motherboard's power supply) and one or two generic OEM power supplies for higher voltages (such as 24V and/or 48V).
 
 For the secondary ATX PSU, a good location is the mirror image of where we placed the PC power supply: on the other side of the subwoofer. Assuming you centered the subwoofer, there's a nice ATX PSU-sized space on either side, so we might as well use it that way.
 
@@ -260,7 +260,7 @@ If you've been paying attention, you know how important I think it is that you b
 
 == Chime unit
 
-See xref:chimes.adoc[Chimes and Bells] . This is a little percussion instrument that replicates the iconic bings and bongs of the electro-mechanical pinballs from the 1960s and 70s. The best way I know to accurately reproduce the original sound is to find an authentic used chime unit from an old machine, as they have some engineering that's hard to replicate in a DIY design. The real units are quite bulky, though, which limits where we can put them. The only place where a chime unit will fit in our hypothetical fully-loaded cab is in a corner at the back.
+See xref:chimes.adoc#chimes[Chimes and Bells] . This is a little percussion instrument that replicates the iconic bings and bongs of the electro-mechanical pinballs from the 1960s and 70s. The best way I know to accurately reproduce the original sound is to find an authentic used chime unit from an old machine, as they have some engineering that's hard to replicate in a DIY design. The real units are quite bulky, though, which limits where we can put them. The only place where a chime unit will fit in our hypothetical fully-loaded cab is in a corner at the back.
 
 image::images/inside-chimes.png[""]
 
@@ -268,13 +268,13 @@ The original chime units are designed to be mounted to a side wall. Use wood scr
 
 image::images/inside-chimes-2.png[""]
 
-Try to keep the top within about 7" of the floor. This will help avoid any clearance issues with the back of the TV when you lift it up. (Assuming you opt for a liftable TV mounting, as outlined in xref:playfieldMounting.adoc[Playfield TV Mounting] .)
+Try to keep the top within about 7" of the floor. This will help avoid any clearance issues with the back of the TV when you lift it up. (Assuming you opt for a liftable TV mounting, as outlined in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] .)
 
 Much as I don't like hiding things away in the back of the machine, we really don't have much choice when it comes to the chime unit. There's just not enough space anywhere else. If your cab won't be as fully loaded as the one we're developing here, though, you might have some space for it in a more convenient area, so by all means put it somewhere better if possible. I don't think the placement makes any significant difference acoustically. For what it's worth, most of the original machines that used these units also placed them in a corner - typically the right front corner, below the plunger.
 
 == Shaker
 
-See xref:shakers.adoc[Shaker motors] . The shaker is another bulky toy, and in this case it *must* be mounted on the cabinet floor to get the proper effect. Fortunately, we have one large floor section still remaining, mid-cab, opposite the PC motherboard.
+See xref:shakers.adoc#shakers[Shaker motors] . The shaker is another bulky toy, and in this case it *must* be mounted on the cabinet floor to get the proper effect. Fortunately, we have one large floor section still remaining, mid-cab, opposite the PC motherboard.
 
 image::images/inside-shaker.png[""]
 
@@ -282,7 +282,7 @@ Happily, this works out well, as this is just about exactly where we'd put the s
 
 == Gear motor
 
-See xref:gearMotors.adoc[Gear motors] . These are meant to reproduce the sound of the motorized playfield features on many pinballs from the 1980s and 1990s, such as Thing from _The Addams Family_ or the castle gate from _Medieval Madness_ . To localize the sound effect properly, the gear motor should be somewhere towards the back of the cabinet, since the playfield features it's meant to imitate are typically towards the back of the playfield. (The playfield features in question are all unique to each game, so they're all in their own unique locations, but for the most part they're somewhere near the center rear of the playfield.)
+See xref:gearMotors.adoc#gearMotors[Gear motors] . These are meant to reproduce the sound of the motorized playfield features on many pinballs from the 1980s and 1990s, such as Thing from _The Addams Family_ or the castle gate from _Medieval Madness_ . To localize the sound effect properly, the gear motor should be somewhere towards the back of the cabinet, since the playfield features it's meant to imitate are typically towards the back of the playfield. (The playfield features in question are all unique to each game, so they're all in their own unique locations, but for the most part they're somewhere near the center rear of the playfield.)
 
 There are two rather different types of motors that pin cab builders tend to use for these. One type is the small robotics servomotors you can buy on eBay. Those are so compact that space planning really isn't an issue for them. The other popular type is an automotive windshield wiper motor. Those are quite a lot larger, and do require that you block out some space for them. We'll proceed with the assumption that you're working with the larger type and need to find a place for it.
 
@@ -306,7 +306,7 @@ A third option is to place it in a corner at the back:
 
 image::images/inside-gear-motor-3.png[""]
 
-If you go this route, try to keep the top within about 7" of the floor. This will help avoid any clearance issues with the back of the TV when you lift it up. (Assuming you opt for a liftable TV mounting, as outlined in xref:playfieldMounting.adoc[Playfield TV Mounting] .)
+If you go this route, try to keep the top within about 7" of the floor. This will help avoid any clearance issues with the back of the TV when you lift it up. (Assuming you opt for a liftable TV mounting, as outlined in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] .)
 
 As I've said a few times, this isn't a great area to mount just about anything, because it's hard to reach into in an assembled cab. But gear motors tend to be zero-maintenance, so if you have to put something back here, a gear motor isn't the worst choice. What I'd recommend is to use a mounting apparatus that you can remove without tools if necessary. Something like this, perhaps:
 
@@ -350,7 +350,7 @@ image::images/inside-ioctl-4.png[""]
 
 == Fuses
 
-See xref:fuses.adoc[Fuses] . Fuses can be used to protect your output controller from overloads. You don't necessarily have to include a fuse for every device, but it's good to cover the higher power devices, such as motors and solenoids.
+See xref:fuses.adoc#fuses[Fuses] . Fuses can be used to protect your output controller from overloads. You don't necessarily have to include a fuse for every device, but it's good to cover the higher power devices, such as motors and solenoids.
 
 Your output controller might have its own built-in fuse holders, but most of them don't, so fuses usually have to be installed separately. We're going to assume you're installing them separately.
 
@@ -378,7 +378,7 @@ Littlefuse 155 series in-line 3AG fuse holders
 
 == Contactors (and other solenoid simulators)
 
-See xref:contactors.adoc[Flippers, Bumpers, and Slingshots] . The real pinball machines have a lot of powerful solenoids that kick the ball around and actuate other playfield mechanisms. They're are strong enough that you can not only hear them but feel the kick. Virtual pinball software can manage the audio part with recorded audio, although that tends to be a weak imitation that you'd never mistake for the real thing. In a pin cab, we can do better, by simulating the kick of the solenoids with actual solenoids. That can get a lot closer to the real sound, and can also reproduce the tactile effect.
+See xref:contactors.adoc#contactors[Flippers, Bumpers, and Slingshots] . The real pinball machines have a lot of powerful solenoids that kick the ball around and actuate other playfield mechanisms. They're are strong enough that you can not only hear them but feel the kick. Virtual pinball software can manage the audio part with recorded audio, although that tends to be a weak imitation that you'd never mistake for the real thing. In a pin cab, we can do better, by simulating the kick of the solenoids with actual solenoids. That can get a lot closer to the real sound, and can also reproduce the tactile effect.
 
 There are several types of solenoid-based devices that pin cab users employ as substitutes for pinball solenoids: contactors (such as the Siemens type pictured below), automotive starter relays, generic open-frame solenoids, and even real pinball solenoids and their associated mechanisms.
 
@@ -405,7 +405,7 @@ image::images/inside-contactors-1.png[""]
 [#contactorsUnderTheTV]
 === Mounting contactors under the TV
 
-If you're using a liftable TV mounting like the one described in xref:playfieldMounting.adoc[Playfield TV Mounting] , you can move most of these to the bottom side of the TV mounting frame, as illustrated below.
+If you're using a liftable TV mounting like the one described in xref:playfieldMounting.adoc#playfieldMounting[Playfield TV Mounting] , you can move most of these to the bottom side of the TV mounting frame, as illustrated below.
 
 image::images/inside-contactors-2.png[""]
 
@@ -428,7 +428,7 @@ There is one important consideration if you go this route. You'll definitely nee
 
 == In-cab speakers
 
-See xref:audio.adoc[Audio Systems] . We've already covered the subwoofer, which traditionally goes on the floor in the middle of the cab. But many cabs also include a set of mid-range speakers inside the main body. These are usually _in addition to_ the speakers in the backbox, and serve a different purpose. The backbox speakers are there to play the ROM music and voice effects. The speakers in the cab are there to reproduce mechanical sounds that aren't already covered by the solenoids and contactors. For example, the sound of the ball rolling and bumping into things.
+See xref:audio.adoc#audio[Audio Systems] . We've already covered the subwoofer, which traditionally goes on the floor in the middle of the cab. But many cabs also include a set of mid-range speakers inside the main body. These are usually _in addition to_ the speakers in the backbox, and serve a different purpose. The backbox speakers are there to play the ROM music and voice effects. The speakers in the cab are there to reproduce mechanical sounds that aren't already covered by the solenoids and contactors. For example, the sound of the ball rolling and bumping into things.
 
 Visual Pinball has the ability to separate the music from the mechanical effects and play each type of through a separate set of speakers. Playing back the mechanical effects through speakers inside the cabinet makes them seem to come from the playfield, improving the illusion. VP 10 takes this one step further, by supporting a four-speaker "surround sound" arrangement that localizes each sound effect to the right point in the playfield plane.
 
@@ -455,7 +455,7 @@ This produces a decent effect, certainly better than no in-cab speakers at all, 
 
 == Amplifiers
 
-See xref:audio.adoc[Audio Systems] . Unless you're using powered speakers, you'll need some amplifiers. Most pin cab builders use small car amps, since they're compact and (like everything automotive) run on 12VDC power. Most of the cheap units can power a stereo speaker pair or a stereo pair plus subwoofer (the latter being known as a 2.1-channel amp). Many higher-end car amps can power four independent channels.
+See xref:audio.adoc#audio[Audio Systems] . Unless you're using powered speakers, you'll need some amplifiers. Most pin cab builders use small car amps, since they're compact and (like everything automotive) run on 12VDC power. Most of the cheap units can power a stereo speaker pair or a stereo pair plus subwoofer (the latter being known as a 2.1-channel amp). Many higher-end car amps can power four independent channels.
 
 You'll typically need the following:
 
@@ -478,20 +478,20 @@ image::images/inside-backbox-1.png[""]
 Those are all covered in detail in other sections:
 
 * "Creating a translite" in xref:backboxHardware.adoc#creatingTheTranslite[Backbox Hardware Installation]
-*  xref:backboxTV.adoc[Selecting a Backbox TV] (designing the backbox layout and choosing a backbox TV)
-*  xref:backboxTVInstall.adoc[Backbox TV Mounting] (installing the TV)
-*  xref:dmdAssembly.adoc[Speaker/DMD Panel] (fabricating and assembling the speaker/DMD panel)
+*  xref:backboxTV.adoc#backboxTV[Selecting a Backbox TV] (designing the backbox layout and choosing a backbox TV)
+*  xref:backboxTVInstall.adoc#backboxTVInstall[Backbox TV Mounting] (installing the TV)
+*  xref:dmdAssembly.adoc#dmdAssembly[Speaker/DMD Panel] (fabricating and assembling the speaker/DMD panel)
 
 There are some additional items that we can fit into the backbox, mounted on the back wall.
 
 image::images/inside-backbox-2.png[""]
 
-* Replay knocker: typically mounted at the top of the backbox in a corner. The knocker coil is mounted so that the open end points up at the ceiling, with about a 1" gap to the ceiling. The metal strike plate is mounted on the ceiling right above it. See xref:knockers.adoc[Replay Knockers] .
+* Replay knocker: typically mounted at the top of the backbox in a corner. The knocker coil is mounted so that the open end points up at the ceiling, with about a 1" gap to the ceiling. The metal strike plate is mounted on the ceiling right above it. See xref:knockers.adoc#knockers[Replay Knockers] .
 
 image::images/inside-knocker.png[""]
 
-* Shell bells. If you're a big fan of machines from the electro-mechanical era, you can install a couple of round bells with solenoid hammers. Similar bells were used in many machines from the 1960s and 70s. These serve exactly the same function as chimes, so in a way they're redundant with a chime unit, but the reason you might want to have both is that bells and chimes each have their own distinctive sound. Some games from the EM era had bells and others had chimes, so you can more accurately re-create a greater variety of games if you have both. The backbox is a good place to install bells if you have them; the bells have a large footprint, but they're flat enough to fit behind a TV (in most cases, anyway), so this takes good advantage of the wide but shallow space in the backbox. As a nice bonus, it's true to the originals: it's where bells were usually situated in the EM machines. See xref:chimes.adoc[Chimes and Bells] .
-* Repeating bell (not shown). The shell bells above work like chimes in that they fire with one hammer strike at a time. There's a different kind of bell used on some machines from the 1980s, which rings continuously when energized, like an old-fashioned alarm clock or telephone ringer. These look just like the shell bells, so they're an equally good fit for this space. There should be plenty of room to add one of these if desired. See xref:chimes.adoc[Chimes and Bells] .
+* Shell bells. If you're a big fan of machines from the electro-mechanical era, you can install a couple of round bells with solenoid hammers. Similar bells were used in many machines from the 1960s and 70s. These serve exactly the same function as chimes, so in a way they're redundant with a chime unit, but the reason you might want to have both is that bells and chimes each have their own distinctive sound. Some games from the EM era had bells and others had chimes, so you can more accurately re-create a greater variety of games if you have both. The backbox is a good place to install bells if you have them; the bells have a large footprint, but they're flat enough to fit behind a TV (in most cases, anyway), so this takes good advantage of the wide but shallow space in the backbox. As a nice bonus, it's true to the originals: it's where bells were usually situated in the EM machines. See xref:chimes.adoc#chimes[Chimes and Bells] .
+* Repeating bell (not shown). The shell bells above work like chimes in that they fire with one hammer strike at a time. There's a different kind of bell used on some machines from the 1980s, which rings continuously when energized, like an old-fashioned alarm clock or telephone ringer. These look just like the shell bells, so they're an equally good fit for this space. There should be plenty of room to add one of these if desired. See xref:chimes.adoc#chimes[Chimes and Bells] .
 * Audio amplifier. We already proposed a place where you can fit a couple of car-radio amplifiers into the main cabinet. You might also be able to fit an amplifier into the backbox, either as an alternative to the main-cabinet mounting or in addition (which might be necessary if you need four channels of audio in the main cab for a surround-sound setup). You'll probably have about 1" to 2" of depth to work with behind the TV, which is enough to fit a small amplifier.
 * Power strip. There should be enough space on the floor of the backbox behind the DMD panel to install a small power strip. A 3-outlet strip fit easily in my backbox in this area. It's convenient to have a few outlets here, so that you can plug in the backbox items (TV, DMD panel, audio amp) without having to run more cables through to the main cabinet.
 

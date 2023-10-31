@@ -49,7 +49,7 @@ image::images/LedWizGroundWiring.png[""]
 
 Connecting the LedWiz ground terminal. Use ordinary hookup wire (around 22 AWG) to connect the *G* terminal on the LedWiz to the black wire in an unused disk power connector on your power supply. The LedWiz comes in a couple of versions, so yours might not look exactly like the photo, but there should still be a similar *G* terminal.
 
-For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 Second, plug a USB cable into the USB connector on the LedWiz, and plug the other end into a free USB port on your PC.
 
@@ -65,7 +65,7 @@ Before connecting anything to the LedWiz, please make sure its power draw is saf
 
 The basic feedback device wiring plan for an LedWiz is pretty simple:
 
-* All of the "-" or "Ground" connections from all of your power supplies should be connected together (see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] )
+* All of the "-" or "Ground" connections from all of your power supplies should be connected together (see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] )
 * Connect the "\+" terminal from the power supply directly to the "+" terminal on the feedback device
 * Connect the "-" terminal on the feedback device to one of the numbered LedWiz terminals
 
@@ -75,7 +75,7 @@ The LedWiz acts like an electronic switch that connects and disconnects the "-" 
 
 Some feedback devices aren't polarized, meaning they don't care which power input is "\+" and which is "-". This is true for most coil devices, like solenoids and relays, as well as for incandescent lamps. If the device doesn't have "+" and "-" markings for its power terminals, simply follow the same wiring plan shown above, but you can attach the wires to the feedback device itself in either order.
 
-Some devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc#coilDiodes[Coil Diodes] ), and most LEDs require current-limiting resistors (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). We go into more detail about each of the popular pin cab devices in xref:feedbackSect.adoc[Feedback Devices] .
+Some devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc#coilDiodes[Coil Diodes] ), and most LEDs require current-limiting resistors (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). We go into more detail about each of the popular pin cab devices in xref:feedbackSect.adoc#feedbackSect[Feedback Devices] .
 
 == Use protective diodes if necessary
 
@@ -87,7 +87,7 @@ Diodes are critical! Coils and motors can damage your PC motherboard and other c
 
 == Fuses
 
-Many cab builders include a fuse in each LedWiz output circuit. This isn't strictly necessary, but I think it's a good idea with the LedWiz because of its low power limits. Fuses can help protect the LedWiz from overloads caused by wiring faults and device malfunctions, reducing the chance that the LedWiz will be damaged if something like that goes wrong. See xref:fuses.adoc[Fuses] for details.
+Many cab builders include a fuse in each LedWiz output circuit. This isn't strictly necessary, but I think it's a good idea with the LedWiz because of its low power limits. Fuses can help protect the LedWiz from overloads caused by wiring faults and device malfunctions, reducing the chance that the LedWiz will be damaged if something like that goes wrong. See xref:fuses.adoc#fuses[Fuses] for details.
 
 == Windows setup
 
@@ -105,7 +105,7 @@ You *don't* need ledwiz.dll for Visual Pinball, DOF, or PinballX.
 
 == DOF setup
 
-DOF is required to use your LedWiz with Visual Pinball and PinballX. If you haven't already installed DOF on your system, follow the instructions in xref:DOF.adoc[DOF Setup] .
+DOF is required to use your LedWiz with Visual Pinball and PinballX. If you haven't already installed DOF on your system, follow the instructions in xref:DOF.adoc#dofSetup[DOF Setup] .
 
 Once you have the DOF software installed on your PC, follow these steps:
 
@@ -121,7 +121,7 @@ Once you have the DOF software installed on your PC, follow these steps:
 * When done, click Save Config, then click Generate Config to download your updated DOF config files
 * Unzip the downloaded files into your DOF install folder
 
-All of this is described in the xref:DOF.adoc[DOF Setup] section as well.
+All of this is described in the xref:DOF.adoc#dofSetup[DOF Setup] section as well.
 
 
 == Power boosters
@@ -143,7 +143,7 @@ Here's the circuit plan:
 
 image::images/ledWizBoosterMOSFET.png[""]
 
-If you need help decoding the schematic, see xref:electronics.adoc[A Crash Course in Electronics] .
+If you need help decoding the schematic, see xref:electronics.adoc#electronics[A Crash Course in Electronics] .
 
 The resistors can all be filled with any ordinary resistor of the specified "Ohms" size, except for the 220Ω resistor, which should have a power rating of 1/4 Watt or higher. (You can always use a higher wattage than specified with resistors.)
 

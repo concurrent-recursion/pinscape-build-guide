@@ -1,3 +1,4 @@
+[#blowers]
 = Fans
 
 image::images/WhirlwindAndTwister.png[alt="Backboxs of Twister and Whirlwind that show a fan mounterd on top"]
@@ -52,7 +53,7 @@ I personally like the effect of the fan blowing at you from the backbox, but at 
 
 == Wiring a fan (DC voltage)
 
-Assuming you're using a 12V DC fan or motor, you can power the fan from the +12V terminal (yellow wire) of your secondary ATX power supply. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+Assuming you're using a 12V DC fan or motor, you can power the fan from the +12V terminal (yellow wire) of your secondary ATX power supply. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 Connecting the fan is just like any other feedback device:
 

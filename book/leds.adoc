@@ -1,14 +1,15 @@
+[#leds]
 = LEDs
 
 LEDs are in fact diodes - it's right in the name, Light Emitting Diode. They're just a special type of diode that glows when current is flowing.
 
-Using an LED in a circuit board is mostly like using any other diode in a circuit board, so you might want to take a look at xref:cmpdiodes.adoc[Diodes] . The main difference with an LED is that the physical package is usually a little different. Through-hole LEDs usually use "radial" packages, with two leads sticking out of the bottom.
+Using an LED in a circuit board is mostly like using any other diode in a circuit board, so you might want to take a look at xref:cmpdiodes.adoc#cmpdiodes[Diodes] . The main difference with an LED is that the physical package is usually a little different. Through-hole LEDs usually use "radial" packages, with two leads sticking out of the bottom.
 
 image::images/misc-leds.png[""]
 
 == Static electricity warning
 
-LEDs are sensitive to static electricity. Refer to xref:staticSafety.adoc[Static Electricity Precautions] for tips on handling static-sensitive parts.
+LEDs are sensitive to static electricity. Refer to xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] for tips on handling static-sensitive parts.
 
 == Identifying the positive and negative legs
 

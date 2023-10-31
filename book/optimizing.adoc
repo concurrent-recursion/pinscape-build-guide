@@ -1,6 +1,6 @@
 = Optimizing Performance
 
-Virtual pinball is in essence a video game, and video games place special demands on PC performance. The first prerequisite for adequate performance is adequate hardware, particularly the CPU and graphics card. You can find advice on selecting suitable components in xref:pc.adoc[Designing the PC] .
+Virtual pinball is in essence a video game, and video games place special demands on PC performance. The first prerequisite for adequate performance is adequate hardware, particularly the CPU and graphics card. You can find advice on selecting suitable components in xref:pc.adoc#pc[Designing the PC] .
 
 Even with fast hardware, though, you'll need to do some tuning to get the best video game performance out of your system. This chapter offers some advice on things to try.
 

@@ -1,3 +1,4 @@
+[#vl6180x]
 = Plunger Setup (VL6180X Distance Sensor)
 
 I should start by saying that I don't consider this to be a very good option. I'm including it because it's easy to set up and fairly cheap, so it might be appealing to some people on those grounds. It also has the virtue of being a non-contact sensor, so it won't suffer any wear and tear from use. But its accuracy and speed are too low for me to recommend it. It's only accurate to about 1 centimeter, which translates to chunky animation of the on-screen plunger (the best available Pinscape plunger sensors are accurate to better than 1/100 of a centimeter). It's also comparatively slow, which makes it less responsive than other options. With those warnings in mind...

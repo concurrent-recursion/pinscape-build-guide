@@ -1,3 +1,4 @@
+[#chimes]
 =  Chimes and Bells
 
 Next time you're watching a TV show or movie, and you notice a pinball machine being played in the background, pay attention to the sound effects. I can almost guarantee you that the sound effects will mimic the bells and chimes from a 1960s electromechanical machine, even if the on-screen machine is a 1980s or 1990s solid-state table. You and I know that those solid-state machines actually have electronic sound systems that include speech and music, but when you see them in TV and movies, the sound effects will almost always be EM chimes. Why is this weird technical gaffe so comically predictable? Maybe in part to avoid music licensing costs, but the main reason, I think, is that the sound designers know that those chimes are what most people think of when think of pinball. They're not going for technical accuracy with those sound effects; they're trying to create a sonic impression. EM chimes are the "audio icon" for pinball.
@@ -129,7 +130,7 @@ Note that this doesn't apply to repeating alarm-type bells, since those are inte
 
 If you're using the Pinscape software but not the Chime Boards, you can still get some of the same protection by using the "Flipper Logic" feature for your chime ports.
 
-See xref:coilTimers.adoc[Coil Timers] for more details.
+See xref:coilTimers.adoc#coilTimers[Coil Timers] for more details.
 
 == DOF Setup
 

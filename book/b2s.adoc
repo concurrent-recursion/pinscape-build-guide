@@ -1,3 +1,4 @@
+[#b2s]
 = Backglass Software Setup
 
 If your pin cab has a separate backglass monitor, you'll want it to display the appropriate backglass artwork for the current game. And you'll want this to be more than just a still image, since the backglass is an active part of many games, showing information on score, bonus features, etc.
@@ -79,7 +80,7 @@ Some later VP 9 tables, from 2016 and later, also will automatically work with B
 
 Given that most VP 10 tables and some VP 9 tables will work "out of the box" without any modification, the first step is to simply fire up the game in VP and see if the backglass appears. If so, you're all set with that game. If not, try this procedure:
 
-* Open the table in the VP editor (see xref:tableFixup.adoc[Customizing VP Tables] )
+* Open the table in the VP editor (see xref:tableFixup.adoc#customizingVPTables[Customizing VP Tables] )
 * Open the table script (VP 9: *Edit > Script* menu command; VP 10: *View > Script* command)
 * Look for a line like this:
 

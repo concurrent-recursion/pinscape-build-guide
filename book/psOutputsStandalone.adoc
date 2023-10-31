@@ -1,3 +1,4 @@
+[#psOutputsStandalone]
 = Pinscape Outputs Setup (Standalone KL25Z)
 
 The standalone KL25Z (without the expansion boards) is capable of controlling feedback devices such as LEDs, motors, and solenoids. However, there are some important limitations you should be aware of:
@@ -9,7 +10,7 @@ There are several options for booster circuits that you can use for different ty
 * The number of devices you can connect is limited by the number of available GPIO pins, because each output device requires its own dedicated GPIO pin. The KL25Z has about 50 GPIO pins in all, but remember that many of them will be needed for other purposes, such as button inputs and plunger sensor connections. In the default configuration, there are only about 20 pins available for feedback devices. You can change the pin assignments with the Config Tool, so you can take some pins that are assigned by default to other functions and reassign them as feedback outputs, but that will of course reduce the number of pins available for those other functions.
 * The KL25Z only has 10 PWM channels. PWM is needed if you want to control the brightness of an LED or the speed of a motor; without PWM, a GPIO pin can only act as a simple on/off switch. 10 channels isn't enough for the standard five-flasher setup, since each RGB flasher needs three PWM channels (one each for red, green, and blue).
 
-If you can live within these limits, the standalone KL25Z makes a great output controller at low cost. If you need more outputs in general or more PWM outputs in particular, you might want to consider adding the Pinscape expansion boards - which were specifically designed to overcome all of these limits - or one of the commercial I/O controller devices. See xref:expan.adoc[Expansion Boards Overview] for more on the expansion boards, and xref:ioControllers.adoc#ioControllers[I/O Controllers] for a survey of the commercial alternatives.
+If you can live within these limits, the standalone KL25Z makes a great output controller at low cost. If you need more outputs in general or more PWM outputs in particular, you might want to consider adding the Pinscape expansion boards - which were specifically designed to overcome all of these limits - or one of the commercial I/O controller devices. See xref:expan.adoc#expan[Expansion Boards Overview] for more on the expansion boards, and xref:ioControllers.adoc#ioControllers[I/O Controllers] for a survey of the commercial alternatives.
 
 An additional option for adding more outputs, if you run out of available GPIO pins, is to simply add a second KL25Z. The Pinscape software is set up so that you can run multiple KL25Z's in the same system.
 
@@ -79,7 +80,7 @@ This circuit is more complex than the NPN booster above, but it's still pretty s
 
 image::images/kl25zBoosterMOSFET.png[""]
 
-If you need help decoding the schematic, see xref:electronics.adoc[A Crash Course in Electronics] .
+If you need help decoding the schematic, see xref:electronics.adoc#electronics[A Crash Course in Electronics] .
 
 The resistor slots can all be filled with ordinary resistors with the specified "Ohms" values. There's no special Wattage rating needed for any of these.
 
@@ -159,7 +160,7 @@ This test has to be done with the power on, so be careful! Make sure that you on
 * Run the Pinscape Config Tool
 * Click on the Output Tester button
 * Set your meter to DC Volts
-* Connect the meter's black probe to one of the KL25Z's ground (GND) pins, _or_ to any convenient ground connection to your power supplies. (Remember that all of the grounds should be interconnected, as described in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , so any of these points should be equivalent.)
+* Connect the meter's black probe to one of the KL25Z's ground (GND) pins, _or_ to any convenient ground connection to your power supplies. (Remember that all of the grounds should be interconnected, as described in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , so any of these points should be equivalent.)
 * Connect the meter's red probe to the GPIO pin you want to test
 * When the port is *off* in the output tester, it should read close to 0V (exception: an Active-Low port should read close to 3.3V)
 * When the port is *on* in the output tester, it should read close to 3.3V (exception: an Active-Low port should read close to 0V)
@@ -170,7 +171,7 @@ If this test fails, either your KL25Z hardware is broken, or you have a problem 
 
 == DOF Setup
 
-To set up your standalone Pinscape device with DOF, you of course have to install DOF on your PC first. See xref:DOF.adoc[DOF Setup] for instructions.
+To set up your standalone Pinscape device with DOF, you of course have to install DOF on your PC first. See xref:DOF.adoc#dofSetup[DOF Setup] for instructions.
 
 Once the DOF software is installed, you use the link:https://configtool.vpuniverse.com/[DOF Config Tool] to tell DOF that you have a Pinscape unit, and to tell it which KL25Z pins are attached to which output devices.
 

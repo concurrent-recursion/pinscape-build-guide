@@ -1,3 +1,4 @@
+[#playfieldMounting]
 = Playfield TV Mounting
 
 This section is about how to install the main TV - the one that takes the place of the playfield.
@@ -8,7 +9,7 @@ Where to place the TV is one of the top questions that new cab builders ask on t
 
 After the survey of positioning alternatives, this section presents my attempt at an all-purpose, universal TV mounting system. When I was building my own cab, I found the TV mounting to be one of the more challenging problems. The TV makers don't expect you to use a TV like this, and the people who make pinball machines don't think of putting a TV inside, so neither world gives us an example we can look to for ideas, and neither world offers a ready-made hardware solution we can apply. Every cab builder has always been on their own to work out their own unique, ad hoc scheme. That always seemed like a waste of energy to me; I've always thought there should be at least a basic template we can follow. I think I've managed to come up with something like that. This chapter provides a general-purpose design that should be flexible enough to work with most TVs and most cabs, using standard parts that you can readily buy. It's at least an option to consider, and even if it isn't a good fit for your cab, it might still give you some ideas to draw on. If you're looking for even more ideas, at the end of the chapter, I'll outline a few alternative mounting schemes that other cab builders have used.
 
-We're assuming here that you've already picked out a TV to install. If you're still shopping for a TV, there's a separate section with advice about that, xref:playfieldTV.adoc[Selecting a Playfield TV] .
+We're assuming here that you've already picked out a TV to install. If you're still shopping for a TV, there's a separate section with advice about that, xref:playfieldTV.adoc#playfieldTV[Selecting a Playfield TV] .
 
 == Orientation
 
@@ -150,7 +151,7 @@ image::images/tv-with-apron.png[""]
 
 image::images/tv-at-front.png[""]
 
-In either case, some space at the back is actually nice to have, in that it's a natural place to put a flasher panel (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ) or an LED matrix ( xref:addressableLightStrips.adoc[Addressable Light Strips] ).
+In either case, some space at the back is actually nice to have, in that it's a natural place to put a flasher panel (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ) or an LED matrix ( xref:addressableLightStrips.adoc#addressableLightStrips[Addressable Light Strips] ).
 
 Space at the front can also be functionally useful, because of the potential conflict between the TV and the plunger, as described in "The dreaded plunger space conflict" xref:#plungerTVSpaceConfict[above] . So you might have already decided to set the TV back to make room for the plunger.
 

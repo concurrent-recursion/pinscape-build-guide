@@ -1,3 +1,4 @@
+[#cmpdiodes]
 = Diodes
 
 The diode is perhaps the most fundamental semiconductor component. It serves as a one-way valve in a circuit, allowing current to flow in only one direction.

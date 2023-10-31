@@ -1,3 +1,4 @@
+[#capacitors]
 = Capacitors
 
 The capacitor is a basic electronic building block that adds a measured amount of "capacitance" to a circuit, or the ability to temporarily store a quantity of electric charge.

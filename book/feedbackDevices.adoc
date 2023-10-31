@@ -1,3 +1,4 @@
+[#feedbackDevices]
 = Feedback Devices Overview
 
 Feedback is probably the most challenging thing to set up in a cab. It requires coordination among several separate pieces of software and a specialized output controller device, all of which can be balky and hard to debug, and it also requires a certain amount of improvisation to create the various tactile and lighting effects. But this is one of those difficult jobs that's worth the effort. Pinball is an inherently physical, mechanical game that engages the sense of touch as much as sight and sound, so it really improves the simulation to bring some tactile elements into it.
@@ -24,7 +25,7 @@ You can find a list of the available output controller options, with a detailed 
 
 *What if I install some devices but not others?* That's fine. Games will use the devices you have, and won't care that others aren't present.
 
-*Do I have to program feedback into every game?* No. Most VP 10 tables are pre-programmed to use feedback and will activate it automatically if your cab supports it. For VP 9, most games are pre-programmed to use feedback, but many require a couple of extra steps to enable it. We'll cover that in xref:DOF.adoc[DOF Setup] .
+*Do I have to program feedback into every game?* No. Most VP 10 tables are pre-programmed to use feedback and will activate it automatically if your cab supports it. For VP 9, most games are pre-programmed to use feedback, but many require a couple of extra steps to enable it. We'll cover that in xref:DOF.adoc#dofSetup[DOF Setup] .
 
 == Software and controller setup
 
@@ -32,16 +33,16 @@ There's a chicken-and-egg problem when it comes to deciding whether to install t
 
 If you haven't already decided on an output controller, read xref:ioControllers.adoc#ioControllers[I/O Controllers] . That chapter goes over the commercial and DIY options available for all of the I/O controllers. For our purposes here, focus on the output controllers, since that's what you need for feedback effects.
 
-Once you've selected an output controller, proceed to the next chapter, xref:DOF.adoc[DOF Setup] . That will help you set up the PC software that connects the pinball simulation to the hardware devices.
+Once you've selected an output controller, proceed to the next chapter, xref:DOF.adoc#dofSetup[DOF Setup] . That will help you set up the PC software that connects the pinball simulation to the hardware devices.
 
-Next, set up your selected controller. If you're using a Pinscape controller, you'll want to read through xref:psc.adoc[The Pinscape Controller] for instructions on building the hardware and setting up the software. If you've already done the basic setup work, you can skip straight to xref:outputs.adoc[Pinscape Feedback Outputs] .
+Next, set up your selected controller. If you're using a Pinscape controller, you'll want to read through xref:psc.adoc#psc[The Pinscape Controller] for instructions on building the hardware and setting up the software. If you've already done the basic setup work, you can skip straight to xref:outputs.adoc#outputs[Pinscape Feedback Outputs] .
 
 If you're using one of the commercial options, it should come with instructions of its own. But those are often pretty sketchy, and never contain any information specifically about pin cab use, so we've provided our own setup guides for the most popular options:
 
 * xref:ledwiz.adoc#ledwizSetup[LedWiz Setup]
-* xref:sainsmart.adoc[SainSmart Relay Board Setup]
-* xref:psOutputsExp.adoc[Pinscape Outputs Setup (Expansion Boards)]
-* xref:psOutputsStandalone.adoc[Pinscape Outputs Setup (Standalone KL25Z)]
+* xref:sainsmart.adoc#sainsmart[SainSmart Relay Board Setup]
+* xref:psOutputsExp.adoc#psOutputsExp[Pinscape Outputs Setup (Expansion Boards)]
+* xref:psOutputsStandalone.adoc#psOutputsStandalone[Pinscape Outputs Setup (Standalone KL25Z)]
 
 If you're using one of those, we'll walk you through the process of installing the device, setting it up in Windows, and wiring output devices to it. If you're using a different device, you'll need to rely on the manufacturer's instructions, but we do have some generic advice in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] .
 
@@ -49,27 +50,27 @@ If you're using one of those, we'll walk you through the process of installing t
 
 Here's a quick overview of the most widely used feedback devices. You certainly don't have to limit yourself to these ideas; the software and hardware let you hook up anything you can think of. But the devices below have become a sort of standard set that the existing software will put to good use automatically, activating them in sync with relevant events during game play.
 
-xref:buttonLamps.adoc[Button Lamps]:: These make your various buttons light up under software control: flashing the Start button, turning on the Launch Ball button when a ball is in the chute.
+xref:buttonLamps.adoc#buttonLamps[Button Lamps]:: These make your various buttons light up under software control: flashing the Start button, turning on the Launch Ball button when a ball is in the chute.
 
 xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes]:: High-powered LEDs and lamps that create a light show much more impressive than a mere video display.
 
-xref:beacons.adoc[Beacons]:: Rotating or flashing police car-type lights. These are another part of the light show, and they're also found on so many real machines that they add a bit of authenticity to many games.
+xref:beacons.adoc#beacons[Beacons]:: Rotating or flashing police car-type lights. These are another part of the light show, and they're also found on so many real machines that they add a bit of authenticity to many games.
 
-xref:lightStrips.adoc[Undercab Lighting]:: These are usually mounted on the bottom of the cabinet to create a pool-of-light effect around the machine.
+xref:lightStrips.adoc#lightStrips[Undercab Lighting]:: These are usually mounted on the bottom of the cabinet to create a pool-of-light effect around the machine.
 
-xref:addressableLightStrips.adoc[Addressable Light Strips]:: These let you create more complex lighting effects by manipulating individual lamps in an array, essentially like pixels in a display.
+xref:addressableLightStrips.adoc#addressableLightStrips[Addressable Light Strips]:: These let you create more complex lighting effects by manipulating individual lamps in an array, essentially like pixels in a display.
 
-xref:contactors.adoc[Flippers, Bumpers, and Slingshots]:: Simulate the sound and palpable thud of the solenoids in a real pinball machine: flippers, bumpers, slingshots, kickers, etc.
+xref:contactors.adoc#contactors[Flippers, Bumpers, and Slingshots]:: Simulate the sound and palpable thud of the solenoids in a real pinball machine: flippers, bumpers, slingshots, kickers, etc.
 
-xref:knockers.adoc[Replay Knockers]:: Reproduce the unique "knock" effect that real pinball machines make on replays and other game events.
+xref:knockers.adoc#knockers[Replay Knockers]:: Reproduce the unique "knock" effect that real pinball machines make on replays and other game events.
 
-xref:shakers.adoc[Shaker motors]. Create a dramatic tactile effect that makes the whole machine vibrate. Some real machines have the exact type of device, so for those, a shaker re-creates the authentic playing experience. It also makes a great added effect even for games that didn't originally have a shaker.
+xref:shakers.adoc#shakers[Shaker motors]. Create a dramatic tactile effect that makes the whole machine vibrate. Some real machines have the exact type of device, so for those, a shaker re-creates the authentic playing experience. It also makes a great added effect even for games that didn't originally have a shaker.
 
-xref:gearMotors.adoc[Gear motors]:: These simulate the sound of the small motors found on many real machines to animate playfield elements.
+xref:gearMotors.adoc#gearMotors[Gear motors]:: These simulate the sound of the small motors found on many real machines to animate playfield elements.
 
-xref:blowers.adoc[Fans]:: These re-create the backbox fans featured on a scant few games ( _Whirlwind_ , _Twister_ ), but like shaker motors, they make for a dramatic effect that enhances many games that never had fans in the real versions.
+xref:blowers.adoc#blowers[Fans]:: These re-create the backbox fans featured on a scant few games ( _Whirlwind_ , _Twister_ ), but like shaker motors, they make for a dramatic effect that enhances many games that never had fans in the real versions.
 
-xref:chimes.adoc[Chimes and Bells]:: Re-create the mechanical scoring chimes used in nearly all machines from the 1960s and earlier. These can make re-creations of older tables feel much more authentic.
+xref:chimes.adoc#chimes[Chimes and Bells]:: Re-create the mechanical scoring chimes used in nearly all machines from the 1960s and earlier. These can make re-creations of older tables feel much more authentic.
 
 == A ranking by importance
 
@@ -143,7 +144,7 @@ The gear motor ranks so low because it's just there for the sound effect, and th
 
 Many cab builders like to include a "night mode" switch, to disable the noisy tactile devices so that they can play during evening hours without disturbing housemates or neighbors.
 
-If you're using a Pinscape controller, this is built into the software. See xref:nightmode.adoc[Pinscape Night Mode] for how to set it up.
+If you're using a Pinscape controller, this is built into the software. See xref:nightmode.adoc#nightmode[Pinscape Night Mode] for how to set it up.
 
 Some of the plug-and-play feedback kits from Zeb's Boards also include this feature.
 

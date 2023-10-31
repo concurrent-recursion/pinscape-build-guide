@@ -1,3 +1,4 @@
+[#contactors]
 = Flippers, Bumpers, and Slingshots
 
 Real pinball machines are mechanical contraptions with lots of moving parts. It's what makes them stand apart from just about every other kind of arcade game. When you translate pinball into a video game, you lose that physicality. In a virtual pin cab, you can bring back some of the mechanical feel of the real thing by adding similar moving parts that can be actuated in sync with the game action.
@@ -51,7 +52,7 @@ Many other types of contactors are also available from other manufacturers, so t
 
 *Cost:* You _can_ buy these devices new, but you shouldn't: they're $50 and up apiece new. Given the performance tradeoffs, they're not worth the money; if you have that kind of budget, real pinball parts would be a far better investment. So you should instead buy them used on eBay, where they can be found for about $10 apiece. You might have to be patient to find them at a reasonable price, since they seem to be a fairly low-volume item on eBay.
 
-*Power supply:* The Siemens contactors require 24VDC power. That's not available from a computer ATX power supply, so you'll need a separate power dedicated 24V supply. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice.
+*Power supply:* The Siemens contactors require 24VDC power. That's not available from a computer ATX power supply, so you'll need a separate power dedicated 24V supply. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for advice.
 
 The Siemens contactors draw about 400mA each. I'd plan on sufficient power for three or four of them to fire simultaneously, so be sure your 24V power supply is rated for at least 2A (equivalent to 48W).
 
@@ -88,7 +89,7 @@ Reliability is also a concern. If you think about it, these devices aren't typic
 image::images/StarterSolenoidExample.png[""]
 *What to buy:* The type most often mentioned on the forums is the Ford SW3 type (pictured at right). As with the contactors, numerous other options are available, but this one is a known quantity that other pin cab builders have found to work well.
 
-*Power supply:* Almost every automotive device runs on 12V DC (but as always, check the product documentation or seller page to confirm details for the actual product you buy). You can use the 12V output from your secondary ATX power supply. Note that these devices place a large load on the power supply - about 6A, or 72W - so make sure you have a powerful enough 12V supply, and don't connect them to the same ATX power supply running your computer motherboard. When calculating power needs, take into account that there will be times during normal play when several of the devices fire simultaneously, so multiply the amps/wattage rating by three or four to figure how much total power you might need. See See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+*Power supply:* Almost every automotive device runs on 12V DC (but as always, check the product documentation or seller page to confirm details for the actual product you buy). You can use the 12V output from your secondary ATX power supply. Note that these devices place a large load on the power supply - about 6A, or 72W - so make sure you have a powerful enough 12V supply, and don't connect them to the same ATX power supply running your computer motherboard. When calculating power needs, take into account that there will be times during normal play when several of the devices fire simultaneously, so multiply the amps/wattage rating by three or four to figure how much total power you might need. See See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 *Wiring:* For the Ford SW3 type commonly used, the wiring plan looks like this:
 
@@ -251,7 +252,7 @@ The thing I particularly like about the DOF approach, apart from its simplicity,
 
 === The modern way: let DOF handle it
 
-If you're using xref:DOF.adoc[DOF] , you don't have to do any extra work for flipper effects. Just set up DOF, and the flipper solenoids will work just like all of the other DOF effects. DOF will take care of activating the flipper devices whenever the on-screen flippers flip in a DOF-enabled game. The wiring for the flipper buttons and solenoids is exactly the same as for every other type of button and every other type of feedback device: wire the flipper buttons to your key encoder, just like all of your other buttons, and wire the flipper solenoids to your output controller, like your other feedback devices.
+If you're using xref:DOF.adoc#dofSetup[DOF] , you don't have to do any extra work for flipper effects. Just set up DOF, and the flipper solenoids will work just like all of the other DOF effects. DOF will take care of activating the flipper devices whenever the on-screen flippers flip in a DOF-enabled game. The wiring for the flipper buttons and solenoids is exactly the same as for every other type of button and every other type of feedback device: wire the flipper buttons to your key encoder, just like all of your other buttons, and wire the flipper solenoids to your output controller, like your other feedback devices.
 
 If you're trying to picture how the flipper solenoids actually operate with a DOF setup, here's the sequence of events:
 

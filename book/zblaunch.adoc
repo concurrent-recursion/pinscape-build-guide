@@ -66,7 +66,7 @@ plunger-less tables.
 To use ZB Launch, you need DOF to be installed and working, even if
 you're not using DOF for anything else.  DOF is needed because it's
 what sends the signal to the Pinscape device telling it when ZB Launch
-Ball mode should be enabled.  See xref:DOF.adoc[DOF Setup] if you haven't
+Ball mode should be enabled.  See xref:DOF.adoc#dofSetup[DOF Setup] if you haven't
 already installed it.  Follow the instructions to install the DOF
 software on your PC and set up a Pinscape device using the online DOF
 Config Tool (link:https://configtool.vpuniverse.com[configtool.vpuniverse.com]).

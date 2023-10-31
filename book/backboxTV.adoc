@@ -1,12 +1,13 @@
+[#backboxTV]
 = Selecting a Backbox TV
 
 Most virtual cabs use a TV to simulate the backglass artwork of the real pinball machines. The backglass art is a distinctive and universal feature of pinball, and an important part of the aesthetic, so it's a must for most cab builders to replicate it in our virtual systems. It also serves a practical purpose, in that it's where many games display the score.
 
-This chapter will try to help you design your backbox layout and pick a TV for it. We're just in the planning stages here; we'll get into the details of actually installing everything in xref:backboxTVInstall.adoc#backboxTVMounting[Backbox TV Mounting] .
+This chapter will try to help you design your backbox layout and pick a TV for it. We're just in the planning stages here; we'll get into the details of actually installing everything in xref:backboxTVInstall.adoc#backboxTVInstall[Backbox TV Mounting] .
 
 == Choosing the right backbox TV
 
-If you've just gone through the xref:playfieldTV.adoc#selectingPlayfieldTV[Selecting a Playfield TV] chapter, you're probably exhausted from thinking about all of the complex technical criteria that go into picking the right TV for your main cabinet. Fortunately, the backbox TV is a lot less demanding in terms of tech specs.
+If you've just gone through the xref:playfieldTV.adoc#playfieldTV[Selecting a Playfield TV] chapter, you're probably exhausted from thinking about all of the complex technical criteria that go into picking the right TV for your main cabinet. Fortunately, the backbox TV is a lot less demanding in terms of tech specs.
 
 Really, the only important factor in choosing a backbox TV is size. You have to pick a TV that will fit in your backbox and fill the space it's supposed to cover. Most of the rest of this chapter is devoted to helping you decide what type of backbox layout you'd prefer, and to helping you determine the right TV size for your selected layout.
 

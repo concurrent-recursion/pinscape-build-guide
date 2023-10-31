@@ -1,3 +1,4 @@
+[#dmdAssemblyOriginal]
 = Original WPC Speaker Panel
 
 This chapter goes into the details of the "original" WPC style of speaker/DMD panel, based on the ones used in the Williams and Bally machines of the early 1990s. These panels feature flat plastic front facings with silk-screened graphics, customized for each game. As an example, here's the speaker panel from _Theatre of Magic_ (Bally, 1995):
@@ -6,7 +7,7 @@ image::images/tom-speaker-panel.png[""]
 
 Panels for other games from this era have the same overall shape, with the same cutouts for the speakers and display, but each game has its own unique graphics that harmonize with the backglass artwork (which is, of course, positioned immediately above this panel).
 
-Around 1995, Williams switched to a different style of panel, which dispensed with the artwork to make them interchangeable among games, and which was constructed as a single molded piece of plastic to reduce assembly cost. See xref:dmdAssembly.adoc[Speaker/DMD Panel] for more about the two main types of panel, and see xref:dmdAssemblyWPC95.adoc[WPC-95 Speaker Panel] for details on the WPC-95 type in particular.
+Around 1995, Williams switched to a different style of panel, which dispensed with the artwork to make them interchangeable among games, and which was constructed as a single molded piece of plastic to reduce assembly cost. See xref:dmdAssembly.adoc#dmdAssembly[Speaker/DMD Panel] for more about the two main types of panel, and see xref:dmdAssemblyWPC95.adoc#dmdAssemblyWPC95[WPC-95 Speaker Panel] for details on the WPC-95 type in particular.
 
 == Buying or building
 
@@ -272,7 +273,7 @@ You can buy retail kits to retrofit this kind of lighting into the real machines
 
 The parts required are:
 
-* The common "5050" RGB strips sold on eBay, RGB, 1cm wide, 60 LEDs per meter (the exact same type used for xref:lightStrips.adoc[undercab lighting] ). You need a length equal to the twice the circumference of your speaker openings; about 1 meter should be plenty.
+* The common "5050" RGB strips sold on eBay, RGB, 1cm wide, 60 LEDs per meter (the exact same type used for xref:lightStrips.adoc#lightStrips[undercab lighting] ). You need a length equal to the twice the circumference of your speaker openings; about 1 meter should be plenty.
 * image:images/cheap-led-strip-controller.png[""]
 One "Mini Controller for RGB LED light strips" from eBay; many types are available, including remote controlled and Wi-Fi, but the cheap "mini 3 key" type (about $3-5) like the one pictured at right is more than adequate for this job
 * 1cm nylon spacers for your speakers, quantity 8
@@ -288,13 +289,13 @@ Alternatively, you might be able to stick the LED strip directly to the perimete
 
 === Wiring the speaker LEDs
 
-The red and black wires coming out of the mini-controller have to be wired to 12VDC power, so you'll need to run some hookup wire into your cab where you can get to a 12V power supply. The LED connection to the mini-controllers usually use those little 4-pin LED strip connectors, which you can also find on eBay. See xref:lightStrips.adoc[Undercab Lighting] for information on the peculiar little connectors used with these light strips - since these are the same type of light strip, you should be able to cobble together the right set of connectors by consulting that section.
+The red and black wires coming out of the mini-controller have to be wired to 12VDC power, so you'll need to run some hookup wire into your cab where you can get to a 12V power supply. The LED connection to the mini-controllers usually use those little 4-pin LED strip connectors, which you can also find on eBay. See xref:lightStrips.adoc#lightStrips[Undercab Lighting] for information on the peculiar little connectors used with these light strips - since these are the same type of light strip, you should be able to cobble together the right set of connectors by consulting that section.
 
 It can be a little difficult to manage the wires attaching to the LED strip. I don't have any particular tricks to suggest; just be patient until you find an arrangement that works. You should secure the wiring to the back of the panel with a couple of wire clips once you have a good setup so that you don't pull it loose in future work.
 
 I simply wired the strips in my two speakers together with hookup wire, so that they both run off of the same controller. The controller I have remembers its last mode setting, so it's a set-and-forget sort of thing. You just click through the modes until you find one you like, and leave it there; that same mode will then be used each time you power up the machine. The mode I use on my machine is a slow color rotation.
 
-If you prefer, you can skip the mini-controller entirely, and instead use your feedback controller and DOF to control the speaker lights. This is just a matter of wiring the speaker LED strips exactly like the same way you wire your undercab strips, as explained in xref:lightStrips.adoc[Undercab Lighting] . The DOF config tool doesn't have a pre-programmed toy for "Speaker Lights", so the simplest thing to do is wire the speaker lights directly to your undercab lights, so that they use the same DOF color effects.
+If you prefer, you can skip the mini-controller entirely, and instead use your feedback controller and DOF to control the speaker lights. This is just a matter of wiring the speaker LED strips exactly like the same way you wire your undercab strips, as explained in xref:lightStrips.adoc#lightStrips[Undercab Lighting] . The DOF config tool doesn't have a pre-programmed toy for "Speaker Lights", so the simplest thing to do is wire the speaker lights directly to your undercab lights, so that they use the same DOF color effects.
 
 ==
 
@@ -427,7 +428,7 @@ The width we're using for the plastic facing is a hair less than the width of th
 
 === WPC-95 style facing
 
-If you want to emulate the xref:dmdAssemblyWPC95.adoc[WPC-95 style] using the original style's MDF construction, you could substitute matte black acrylic for the clear acrylic, and cut out the DMD opening in the facing. (With clear acrylic facing, the DMD is normally left covered by the acrylic, and that portion is left transparent rather than being covered by graphics.)
+If you want to emulate the xref:dmdAssemblyWPC95.adoc#dmdAssemblyWPC95[WPC-95 style] using the original style's MDF construction, you could substitute matte black acrylic for the clear acrylic, and cut out the DMD opening in the facing. (With clear acrylic facing, the DMD is normally left covered by the acrylic, and that portion is left transparent rather than being covered by graphics.)
 
 One visual difference with the WPC-95 style facing is that the speaker cutouts in the front facing are square rather than round. Approximately square, anyway; the sides are a little rounded, as illustrated below.
 

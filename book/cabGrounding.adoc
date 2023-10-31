@@ -78,7 +78,7 @@ The last step can wait until you're ready to install the power supply in the cab
 
 If you can't find a way to make a connection to your ATX power supply, you can connect directly to the power line. I don't recommend this approach unless you have some electronics experience, since it requires cutting into the main AC power wiring. This approach also has the downside that it doesn't make the ground connection as permanent as the others, since it uses a removable plug. Someone down the road might decide to unplug it because they want to use the outlet for something else, without realizing how important it is to leave it in place.
 
-In order for this approach to work, you'll need a setup that follows the basic plan we outlined in xref:powerSwitching.adoc[Power Switching] . Something like this:
+In order for this approach to work, you'll need a setup that follows the basic plan we outlined in xref:powerSwitching.adoc#powerSwitching[Power Switching] . Something like this:
 
 image::images/PowerSwitchingOverview.png[""]
 

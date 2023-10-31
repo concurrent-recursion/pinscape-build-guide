@@ -260,7 +260,7 @@ Many of the 2000s Stern machines feature a button on the top of the lockbar, usu
 
 image::images/st-fire-button.png[""]
 
-You don't have to install a physical Fire button on your virtual cab to play the Stern games that feature a Fire button, since the Visual Pinball re-creations always provide a substitute control that you can use instead, usually the MagnaSave buttons (see xref:magnaSaveButtons.adoc[Tables with MagnaSave Buttons] .) But some people like to install a dedicated lockbar Fire button anyway, since it replicates the playing experiences more faithfully for tables that featured the button in the original arcade version. If you're a big fan of the more recent Stern titles, it might be worth including a physical Fire button on your lockbar.
+You don't have to install a physical Fire button on your virtual cab to play the Stern games that feature a Fire button, since the Visual Pinball re-creations always provide a substitute control that you can use instead, usually the MagnaSave buttons (see xref:magnaSaveButtons.adoc#magnaSaveButtons[Tables with MagnaSave Buttons] .) But some people like to install a dedicated lockbar Fire button anyway, since it replicates the playing experiences more faithfully for tables that featured the button in the original arcade version. If you're a big fan of the more recent Stern titles, it might be worth including a physical Fire button on your lockbar.
 
 The simplest and surest way to install a Fire button is to buy a Fire-button-ready lockbar and receiver made for the Stern machines. Those parts are specifically designed to accept the button, so installation is straightforward. You can also adapt regular lockbar parts to use a Fire button, but it's more work - we'll explain how below.
 
@@ -441,7 +441,7 @@ On real pinball machines, there's a switch inside the cabinet that detects wheth
 
 Full instructions on setting up the door switch (as well as connecting it to the virtual pinball software) can be found in xref:coinDoor.adoc#coinDoorPositionSwitch[Coin Door] , under the section "Coin door position switch".
 
-[#plunger]
+[#cabPlunger]
 == Plunger
 
 If you bought a full plunger assembly, it probably came assembled. If not, or if you bought the separate components, assemble as shown below.

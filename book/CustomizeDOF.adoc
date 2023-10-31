@@ -1,3 +1,4 @@
+[#CustomizeDOF]
 = Customizing a table's DOF effects
 
 This section covers the gnarly details of DOF and VPinMAME that you need to know if you want to customize a table's DOF effects. This is useful if:
@@ -7,10 +8,10 @@ This section covers the gnarly details of DOF and VPinMAME that you need to know
 * You want to extra DOF effects to an existing table that doesn't already have any DOF support
 * You're creating your own VP tables from scratch, and you want them to support DOF feedback effects
 
-To make use of the information in this section, you also have to understand how DOF effects work. That's described in the previous appendix, xref:dofEventCodes.adoc[DOF Event Codes] . That section explains how to create the effects you want for a given event; this section is about how to identify those source events in a given game.
+To make use of the information in this section, you also have to understand how DOF effects work. That's described in the previous appendix, xref:dofEventCodes.adoc#dofEventCodes[DOF Event Codes]. That section explains how to create the effects you want for a given event; this section is about how to identify those source events in a given game.
 
+[.left]
 image::images/AdvancedIcon.png[""]
-
 *Advanced topic warning!* You don't need to know any of this to use DOF with the standard configuration settings. The details are rather complex and ugly. If you're setting up your cabinet for the first time, I'd recommend filing a mental note that this section is here and skipping ahead. You can always come back to it later.
 
 == How to add a new table to the DOF config tool
@@ -29,7 +30,7 @@ If the table you want to customize is already in the DOF Config Tool's online da
 * The left column shows the "Public Configuration", which is the default effects defined in the DOF database
 * The right column shows the "Candidate Configuration", which is where you make your custom changes. By default, those boxes are all set to copies of the public config. You can change any effects you want to by typing your own effects codes into the boxes on the right side.
 * The effects codes are entered per device. The way you have to think about it is "I want the shaker motor to run when (some game event) occurs". To make that happen, you find "Shaker" in the list of devices, and you enter the event codes representing the triggering game event in the Candidate Configuration box on the right side next to Shaker.
-* The DOF trigger codes are extremely cryptic, but we've tried to provide a full accounting of them in xref:dofEventCodes.adoc[DOF Event Codes] . Read that section to figure out what to enter in the box.
+* The DOF trigger codes are extremely cryptic, but we've tried to provide a full accounting of them in xref:dofEventCodes.adoc#dofEventCodes[DOF Event Codes] . Read that section to figure out what to enter in the box.
 * After you've made your changes, click Save Changes at the bottom
 * Click Generate Config at the bottom to download the new DOF .ini files; when they finish downloading, extract them into your DOF install folder, replacing the existing files
 * You'll have to exit completely out of VP or any other programs before testing the updates (exit out of the whole program, not just "Play" mode)

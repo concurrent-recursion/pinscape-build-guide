@@ -1,3 +1,4 @@
+[#customizingVPTables]
 = Customizing VP Tables
 :source-highlighter: rouge
 
@@ -151,11 +152,11 @@ You don't have to be much of a programmer to know what to do with these: just ch
 
 == How to fix up tables for a real plunger
 
-Many VP 9 tables require some scripting changes before they'll work properly with a plunger device. Most VP 10 tables work with plungers automatically, but you might run into a few that need the same kind of fixup as is often needed for VP 9. The changes are sometimes fairly complex, so we cover this topic in a separate chapter: xref:tablePlungerFixup.adoc[Fixing VP Plungers] .
+Many VP 9 tables require some scripting changes before they'll work properly with a plunger device. Most VP 10 tables work with plungers automatically, but you might run into a few that need the same kind of fixup as is often needed for VP 9. The changes are sometimes fairly complex, so we cover this topic in a separate chapter: xref:tablePlungerFixup.adoc#tablePlungerFixup[Fixing VP Plungers] .
 
 == How to enable B2S backglasses
 
-Most VP 10 tables will work with B2S without any modification, as will some later (2016+) VP 9 tables. Earlier VP 9 tables often require some slight modifications to the table script to enable backglass art, though. See xref:b2s.adoc[Backglass Software Setup] for details.
+Most VP 10 tables will work with B2S without any modification, as will some later (2016+) VP 9 tables. Earlier VP 9 tables often require some slight modifications to the table script to enable backglass art, though. See xref:b2s.adoc#b2s[Backglass Software Setup] for details.
 
 [#vpTableSoundsToBackboxSpeakers]
 == How to play table sound effects through the backbox speakers

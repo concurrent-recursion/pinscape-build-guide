@@ -1,3 +1,4 @@
+[#fuses]
 = Fuses
 
 If you're including any feedback devices in your system, it's a good idea to include a fuse in each output circuit.
@@ -184,7 +185,7 @@ Note that a key element of a modular setup like this is pluggable connectors. Yo
 
 image::images/ControllerAndFusePlug.png[""]
 
-That's a connector from the link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-1122.html[Molex .062"] series, which I found useful for many of the interconnects in my cabinet. There's more information on these and other options in xref:connectors.adoc[Connectors] . The thing I like about pluggable connectors like this is that they help avoid dumb mistakes. You only have to plan out and wire the connectors once, and from then on it's just a matter of plugging the mating connectors back together any time you have to do any work that involves removing something. You don't have to match up the individual wires again, since they're bundled into connectors that only fit one way.
+That's a connector from the link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-1122.html[Molex .062"] series, which I found useful for many of the interconnects in my cabinet. There's more information on these and other options in xref:connectors.adoc#connectors[Connectors] . The thing I like about pluggable connectors like this is that they help avoid dumb mistakes. You only have to plan out and wire the connectors once, and from then on it's just a matter of plugging the mating connectors back together any time you have to do any work that involves removing something. You don't have to match up the individual wires again, since they're bundled into connectors that only fit one way.
 
 == What to protect
 
@@ -219,7 +220,7 @@ image::images/LedWizFuse.png[""]
 
 First, connect a wire between the output port on the controller and one end of the fuse. Next, connect a wire from the other end of the fuse to the feedback device (the light, motor, etc). If the device cares about polarity, this is the *negative* or "ground" terminal on the device.
 
-In the diagram above, we used an LED as the example output device, so there's actually an extra step involved, because LEDs usually require resistors (that's a whole separate subject, explained in xref:feedbackDevices.adoc[Feedback Devices Overview] ). In this case, the resistor goes between the fuse and the LED, so we connect the wire from the fuse to one end of the resistor, and connect a wire from the other end of the resistor to the output device. For anything but an LED, there's no resistor, so the wire from the fuse goes straight to the device.
+In the diagram above, we used an LED as the example output device, so there's actually an extra step involved, because LEDs usually require resistors (that's a whole separate subject, explained in xref:feedbackDevices.adoc#feedbackDevices[Feedback Devices Overview] ). In this case, the resistor goes between the fuse and the LED, so we connect the wire from the fuse to one end of the resistor, and connect a wire from the other end of the resistor to the output device. For anything but an LED, there's no resistor, so the wire from the fuse goes straight to the device.
 
 Fuses don't care about polarity, so it doesn't matter which direction it goes. Resistors don't care either.
 
@@ -231,7 +232,7 @@ To protect against this danger, we can use a special type of fuse called a "slow
 
 Why are we even worried about this? We only use these coils to simulate bumpers and other things that fire momentarily, so why would the software ever leave them on for long periods? Normally, it wouldn't. The danger is that the software doesn't always work perfectly. Sometimes it crashes, and if it crashes at the wrong moment, it can leave an output stuck on. This isn't just a theoretical possibility, either: this has actually happened to other cab builders. It might seem incredibly improbable that the software would crash at such a perfectly wrong moment, but it's actually an especially likely time to crash, because it takes special code to fire a coil in the first place. That code can contain an error that makes the program crash right after the coil turns on, so the code that was supposed to turn the coil back off never gets a chance to run, leaving the coil stuck on.
 
-As an alternative to using fuses, or as a second layer or protection, you can use a special time limiter circuit. These circuits contain their own timers that turn the coil off after a couple of seconds, even if the software doesn't. See xref:coilTimers.adoc[Coil Timers] for details on how to build one of these. If you're using a Pinscape main expansion board for your knocker, it has this type of timer built in to the knocker output. All of the outputs on the Pinscape chime board also have these timers. In my own cab, I use both the timer and the fuse for my knocker coil. I think of the timer as the primary protection, but I still like having a fuse as a last resort in case the timer fails.
+As an alternative to using fuses, or as a second layer or protection, you can use a special time limiter circuit. These circuits contain their own timers that turn the coil off after a couple of seconds, even if the software doesn't. See xref:coilTimers.adoc#coilTimers[Coil Timers] for details on how to build one of these. If you're using a Pinscape main expansion board for your knocker, it has this type of timer built in to the knocker output. All of the outputs on the Pinscape chime board also have these timers. In my own cab, I use both the timer and the fuse for my knocker coil. I think of the timer as the primary protection, but I still like having a fuse as a last resort in case the timer fails.
 
 The types of pinball coils that can benefit from fuses include:
 

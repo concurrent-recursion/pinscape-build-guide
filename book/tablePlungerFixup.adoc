@@ -1,3 +1,4 @@
+[#tablePlungerFixup]
 = Fixing VP Plungers
 
 If you built one of the plunger sensor options for the Pinscape Controller, or if you bought a commercial plunger kit, you'll certainly want to use the plunger when playing simulated pinball tables. Many tables work with plungers automatically, but some don't.

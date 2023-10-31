@@ -1,3 +1,4 @@
+[#coilTimers]
 = Coil Timers
 
 If you're using any real pinball coils in your virtual pin cab, you might want to consider using some kind of "time limiter" circuit with them. The reason is that most types of pinball coils are only designed to be energized for very brief intervals, typically just a fraction of a second at a time, and can overheat if energized for too long at a time. Overheating will melt the wire inside the coil and destroy the device.
@@ -138,7 +139,7 @@ Again, _don't try to look for these exact words_ . This is just one example. Eve
 
 I'd consider a slow-blow fuse to a be a good back-up to a timer. Add one if you want to be extra-cautious, just in case the timer doesn't do its job. But I wouldn't consider a fuse to be a good replacement for a timer. The problem with fuses is that they're not precision devices; they don't blow after precise time periods or when exact loads are exceeded. You can count on a timer to have precise timing characteristics; you can't expect the same thing from a fuse. And, of course, fuses are expendable, and must be replaced if they ever actually do stop an overload; a timer can be triggered over and over without any harm done.
 
-See xref:fuses.adoc[Fuses] for information on selecting slow-blow fuses and how to predict their timing and loading properties. That chapter includes a section on pinball coils and how to select appropriate slow-blow fuses for them.
+See xref:fuses.adoc#fuses[Fuses] for information on selecting slow-blow fuses and how to predict their timing and loading properties. That chapter includes a section on pinball coils and how to select appropriate slow-blow fuses for them.
 
 [#flipperLogic]
 === Pinscape "Flipper Logic" setting

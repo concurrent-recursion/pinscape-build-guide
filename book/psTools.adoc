@@ -1,3 +1,4 @@
+[#psTools]
 = Tools
 
 You'll need a few tools to build the Pinscape projects. Most of these are the basics that you'd need for any electronics project. This section lists what you'll need and has some recommendations for the more specialized items.

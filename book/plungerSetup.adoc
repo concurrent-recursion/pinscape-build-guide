@@ -93,5 +93,5 @@ Okay, if you've made it this far, your plunger is sending joystick input to Wind
 
 There's just one slight problem with that: some individual tables might not work properly, particularly with Visual Pinball, and particularly with VP 9. This is despite the fact that we know that the plunger input is correctly reaching VP itself. The snag is that individual VP tables don't always use the built-in VP plunger object, or don't use it properly for real plunger input. Some tables use their own improvised scripting code that doesn't take plunger devices into account.
 
-VP tables that don't work properly with a plunger device can usually be fixed, sometimes easily and sometimes with a bit of work. That's a fairly big subject, so we cover it separately in xref:tablePlungerFixup.adoc[Fixing VP Plungers] .
+VP tables that don't work properly with a plunger device can usually be fixed, sometimes easily and sometimes with a bit of work. That's a fairly big subject, so we cover it separately in xref:tablePlungerFixup.adoc#tablePlungerFixup[Fixing VP Plungers] .
 

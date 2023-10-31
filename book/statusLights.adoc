@@ -1,3 +1,4 @@
+[#statusLights]
 = KL25Z Status Lights
 
 The Pinscape firmware blinks the LED on the KL25Z to indicate its system status. This is a quick way to check if the Pinscape software is operating normally (or, at least, to check if the software _thinks_ it's operating normally, which might not always be the same thing!). If you suspect that something's wrong, or you're not seeing expected input on the PC, the LED lets you check at a glance what the Pinscape software thinks about its current health.
@@ -30,7 +31,7 @@ The second quirk is way the LED connections are wired. The red and green LED ele
 
 == Using PTD1 for button input
 
-The blue segment of the status LED is wired to GPIO port PTD1, which is also wired to one of the pins on the KL25Z's main pin headers (J2 pin 12; see xref:kl25zPinOut.adoc[KL25Z Pin Out] ). The pin header wiring means that you can use PTD1 for other purposes besides controlling the blue LED - but if you do, it requires some special handling, because the blue LED connection is hard-wired on the board and can't be changed in software.
+The blue segment of the status LED is wired to GPIO port PTD1, which is also wired to one of the pins on the KL25Z's main pin headers (J2 pin 12; see xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] ). The pin header wiring means that you can use PTD1 for other purposes besides controlling the blue LED - but if you do, it requires some special handling, because the blue LED connection is hard-wired on the board and can't be changed in software.
 
 (The red and green segments are also wired to GPIO ports internally, but they don't have any pin header wiring, so there's no way to use those ports for anything other than the LED connections.)
 
@@ -38,7 +39,7 @@ You can use PTD1 as a feedback device output port simply by assigning it in the 
 
 You can also use PTD1 as a button input, again, simply by assigning it as a button input in the Config Tool. With this use, the blue LED segment will stop acting as part of the Pinscape status indicator; instead, it'll just light up whenever you press the button.
 
-If you do use the PTD1 header pin for one of these uses, and it bothers you that the blue LED is affected by the port status, you can physically modify the KL25Z to sever the connection to the LED. The procedure is described in xref:kl25zPinOut.adoc[KL25Z Pin Out] . Be aware that severing the blue LED connection will change the Pinscape status light patterns accordingly, since the Pinscape firmware won't be able to light up the blue LED any longer.
+If you do use the PTD1 header pin for one of these uses, and it bothers you that the blue LED is affected by the port status, you can physically modify the KL25Z to sever the connection to the LED. The procedure is described in xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] . Be aware that severing the blue LED connection will change the Pinscape status light patterns accordingly, since the Pinscape firmware won't be able to light up the blue LED any longer.
 
 == OpenSDA status LED
 

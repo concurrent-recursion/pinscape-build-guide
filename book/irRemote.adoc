@@ -1,6 +1,7 @@
+[#irRemote]
 = IR Remote Control
 
-The Pinscape software is equipped to send and receive IR remote control codes. This is primarily for the sake of the xref:tvon.adoc[TV ON] feature, which can power up your TV(s) at system startup by sending them the necessary IR codes. But you can also use it to transmit any remote control codes you wish at any time, and to translate received IR codes into Windows key presses, allowing a remote control to effectively serve as extra "buttons" on your cabinet.
+The Pinscape software is equipped to send and receive IR remote control codes. This is primarily for the sake of the xref:tvon.adoc#tvon[TV ON] feature, which can power up your TV(s) at system startup by sending them the necessary IR codes. But you can also use it to transmit any remote control codes you wish at any time, and to translate received IR codes into Windows key presses, allowing a remote control to effectively serve as extra "buttons" on your cabinet.
 
 There are two completely separate hardware projects here: an IR transmitter, which sends out the codes to your TV, and an IR receiver, which can receive codes from your remote control in order to learn the codes specific to your TV or to accomplish those button-press capabilities we mentioned.
 
@@ -46,7 +47,7 @@ Wiring the receiver:
 * Connect *GND* on the receiver board to one of the GND pins on the KL25Z (pins 12 or 14 on J9)
 * Connect *DATA* on the receiver board to the GPIO pin you've selected for input. Any interrupt-capable GPIO pin can be used, which means that you can use any PTAxx or PTDxx port. Configure the port you select as the IR receiver pin in the Pinscape Config Tool settings. See xref:#irPinSelection[Selecting GPIO pins] below.
 
-See xref:kl25zPinOut.adoc[KL25Z Pin Out] for the KL25Z pin wiring diagram.
+See xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] for the KL25Z pin wiring diagram.
 
 Wiring the transmitter:
 
@@ -54,7 +55,7 @@ Wiring the transmitter:
 * Connect *GND* on the transmitter board to one of the GND pins on the KL25Z (pins 12 or 14 on J9)
 * Connect *DATA* on the receiver board to the GPIO pin you've selected for the transmitter output. A PWM-capable port must be used. Configure the port you select as the IR transmitter pin in the Pinscape Config Tool settings. See xref:#irPinSelection[Selecting GPIO pins] below.
 
-See xref:kl25zPinOut.adoc[KL25Z Pin Out] for the KL25Z pin wiring diagram.
+See xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] for the KL25Z pin wiring diagram.
 
 === No expansion boards: Build your own IR transmitter
 
@@ -67,7 +68,7 @@ This is the same circuit used on the expansion boards (the diagram above is actu
 * Connect the *short leg* of the LED to the wire labeled *IR_LED_CATHODE* . The convention for all LEDs is that the long leg is (+) and the short leg is (-).
 * Connect the *long leg* of the LED directly to the +5V power supply.
 * Connect the wire labeled *IR_OUT* to the GPIO port on the KL25Z that you're using for the IR output. See xref:#irPinSelection[Selecting GPIO pins] below.
-* Connect GND to one of the ground pins on the KL25Z. See xref:kl25zPinOut.adoc[KL25Z Pin Out] .
+* Connect GND to one of the ground pins on the KL25Z. See xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] .
 
 === Selecting resistor R11
 
@@ -83,17 +84,17 @@ The recommended IR receiver device, TSOP38238, contains both the optical sensor 
 image::images/IR-receiver-schematic.png[""]
 
 * Connect *IR_IN* to a GPIO port on the KL25Z that you're using for the IR input. See xref:#irPinSelection[Selecting GPIO pins] below.
-* Connect *3V3_KL25Z* to one of the 3.3V pins on the KL25Z. See xref:kl25zPinOut.adoc[KL25Z Pin Out] .
-* Connect GND to one of the ground pins on the KL25Z. See xref:kl25zPinOut.adoc[KL25Z Pin Out] .
+* Connect *3V3_KL25Z* to one of the 3.3V pins on the KL25Z. See xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] .
+* Connect GND to one of the ground pins on the KL25Z. See xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] .
 
 [#irPinSelection]
 === Selecting GPIO pins for the power sensing circuit
 
-The IR transmitter can use any PWM-capable GPIO pin on the KL25Z. The default for the expansion boards is PTC9, but you can use any pin with PWM capability. For a list of PWM pins, see xref:kl25zPinOut.adoc[KL25Z Pin Out] . The Config Tool will also show you the available pins if you go to the IR section on the Settings page and click on the "IR LED (transmitter) pin" box:
+The IR transmitter can use any PWM-capable GPIO pin on the KL25Z. The default for the expansion boards is PTC9, but you can use any pin with PWM capability. For a list of PWM pins, see xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] . The Config Tool will also show you the available pins if you go to the IR section on the Settings page and click on the "IR LED (transmitter) pin" box:
 
 image::images/IR-tx-config.png[""]
 
-The IR receiver can use any interrupt-capable GPIO pin. The default for the expansion boards is PTA13, but you can use any pin in the "PTAxx" or "PTDxx" groups. See xref:kl25zPinOut.adoc[KL25Z Pin Out] for all interrupt-capable pins, or click on the "IR receiver input pin" box in the IR section on the Settings page in the Config tool:
+The IR receiver can use any interrupt-capable GPIO pin. The default for the expansion boards is PTA13, but you can use any pin in the "PTAxx" or "PTDxx" groups. See xref:kl25zPinOut.adoc#kl25zPinOut[KL25Z Pin Out] for all interrupt-capable pins, or click on the "IR receiver input pin" box in the IR section on the Settings page in the Config tool:
 
 image::images/IR-rx-config.png[""]
 
@@ -138,7 +139,7 @@ To learn IR codes:
 
 === Using a code to power on a TV
 
-The IR remote feature was primarily designed to be used with the xref:tvon.adoc[TV ON] feature that powers up your TVs at system startup, so the remote control code list has a special provision to use a code with the TV ON system.
+The IR remote feature was primarily designed to be used with the xref:tvon.adoc#tvon[TV ON] feature that powers up your TVs at system startup, so the remote control code list has a special provision to use a code with the TV ON system.
 
 After you've programmed a code, you'll notice that there's a little TV ON icon (image:images/IR-TVON-icon.png[""]
 ) in the row next to the code. Just click this icon to activate the TV ON feature for the code. When this icon is activated, Pinscape will automatically send the code at system startup, after a delay that you can program in the TV ON section in the Settings page.

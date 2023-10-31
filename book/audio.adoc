@@ -1,3 +1,4 @@
+[#audio]
 = Audio Systems
 
 In this chapter, we'll look at how to design and implement your virtual cab's sound system. We'll help you decide on an overall system design, as there are several ways to set this up, then we'll get into the details of what equipment you can buy and how to install and configure it.

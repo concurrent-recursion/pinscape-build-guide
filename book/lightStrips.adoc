@@ -1,4 +1,4 @@
-[#undercabLighting]
+[#lightStrips]
 = Undercab Lighting
 
 Some pin cab builders put LED lighting on the underside of their cabinet, to create a pool of light around the machine. This can also be used on the back of the main cabinet and backbox, to create an aura effect on the wall behind the machine. Unlike most of the other feedback equipment, this isn't meant to replicate a feature of the real machines (not an original feature, anyway, although undercab lighting is a popular after-market mod). This is more of an extra feature to add to the arcade atmosphere.
@@ -11,7 +11,7 @@ You can buy strips with single-color LEDs, but for our purposes, you'll want the
 
 There are two rather different kinds of the RGB strips that look very similar on the surface, but serve different functions: the standard "dumb" type, and the "addressable" type. The standard type lets you set all of the lights on the strip to the same color. You can set them to any color, but all of the LEDs will show that same color. The addressable kind lets you set each individual LED on the strip to its own separate color.
 
-For undercab lighting, most people use the standard type, because the goal is simply to create a diffuse pool of light. The addressables are much more expensive and much more complex to set up, which makes them hard to justify for ambient lighting. That's not to say you shouldn't use addressables at all - they actually have other uses apart from undercab lighting where you'd want them; see xref:addressableLightStrips.adoc[Addressable Light Strips] . But for undercab lighting, the simpler "dumb" type is more appropriate.
+For undercab lighting, most people use the standard type, because the goal is simply to create a diffuse pool of light. The addressables are much more expensive and much more complex to set up, which makes them hard to justify for ambient lighting. That's not to say you shouldn't use addressables at all - they actually have other uses apart from undercab lighting where you'd want them; see xref:addressableLightStrips.adoc#addressableLightStrips[Addressable Light Strips] . But for undercab lighting, the simpler "dumb" type is more appropriate.
 
 == Parts
 
@@ -103,7 +103,7 @@ image::images/LedStripWiring.png[""]
 * If necessary, solder an additional length of ordinary hookup wire (22 to 24 gauge should work) to each of the RED, GREEN, and BLUE wires coming out of the connector, to make the wires long enough to reach your output controller. Also solder an addition length of hookup wire to the black wire from the connector, but in this case you need it to reach the +12V terminal on your power supply.
 * Connect the red, green, and blue wires to available ports on your output controller.
 * You must follow the standard DOF rule about RGB devices: the red, green, and blue wires must be connected to consecutively numbered ports, in red-green-blue order. For example, if you plug the red wire into port 15, green has to go to port 16, and blue has to connect to port 17.
-* Connect the black wire from the LED strip connector to the +12V terminal on your power supply. You can use the secondary ATX power supply for this; see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+* Connect the black wire from the LED strip connector to the +12V terminal on your power supply. You can use the secondary ATX power supply for this; see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 *Connecting through LED strip amplifiers:* The wiring with an amplifier involved looks like this:
 
@@ -117,7 +117,7 @@ image::images/LedStripWiringWithAmp.png[""]
 * If necessary, solder an additional length of ordinary hookup wire (22 to 24 gauge should work) to each of the RED, GREEN, and BLUE wires coming out of the connector, to make the wires long enough to reach your output controller.
 * Connect the red, green, and blue wires to available ports on your output controller.
 * You must follow the standard DOF rule about RGB devices: the red, green, and blue wires must be connected to consecutively numbered ports, in red-green-blue order. For example, if you plug the red wire into port 15, green has to go to port 16, and blue has to connect to port 17.
-* The LED amplifier has two loose wires hanging out of the back, one red and one black. These are the power connections for the amplifier. They simply connect directly to your 12V power supply. Connect red to +12V and black to ground. You can use the secondary ATX power supply for this; see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
+* The LED amplifier has two loose wires hanging out of the back, one red and one black. These are the power connections for the amplifier. They simply connect directly to your 12V power supply. Connect red to +12V and black to ground. You can use the secondary ATX power supply for this; see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] .
 
 == DOF setup
 

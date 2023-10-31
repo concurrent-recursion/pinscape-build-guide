@@ -1,3 +1,4 @@
+[#cabinetConstructionQuickRef]
 = Cabinet Construction Quick Reference
 
 This section is a quick reference to the woodworking procedure to construct the main cabinet shell, based on the Williams/Bally standard-width cabinets of the 1990s (which is also used more or less unchanged by most newer commercial machines). The plan here includes plywood cutting dimensions and locations for drills, cutouts, and routed grooves, and it's organized into a step-by-step procedure that you can follow.
