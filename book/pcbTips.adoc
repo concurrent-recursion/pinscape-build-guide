@@ -14,7 +14,7 @@ The markings on the board are designed to make it easy to figure out where each 
 
 * An outline showing the "footprint" of the part on the board. This is basically the way the part looks when installed if you look at it from straight overhead.
 
-The outline often includes something to help you orient the part correctly. For example, a MOSFET's outline shows a thick bar on the side where the MOSFET's big metal heat-sink fin goes. You just have to line up the metal fin with the bar mark, and the part will be oriented properly. Similarly, a polarized capacitor's outline includes a "+" sign on the pad where the "+" leg goes.
+The outline often includes something to help you orient the part correctly. For example, a MOSFET's outline shows a thick bar on the side where the MOSFET's big metal heat-sink fin goes. You just have to line up the metal fin with the bar mark, and the part will be oriented properly. Similarly, a polarized capacitor's outline includes a "\+" sign on the pad where the "+" leg goes.
 
 * The part's "reference designator" (or just "designator") that identifies it in the parts list, like R1 for a resistor or C7 for a capacitor. To find the part to install, you just look up the designator in the parts list, and the parts list will tell you exactly which part to use.
 

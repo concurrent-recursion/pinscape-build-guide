@@ -52,14 +52,14 @@ Virtual cab builders usually take a utilitarian view of the topper, focusing on 
 
 *  xref:blowers.adoc[Fan]
 *  xref:beacons.adoc[Beacons]
-*  xref:flashers.adoc[Flashers]
+*  xref:flashers.adoc#flashersAndStrobes[Flashers]
 *  xref:flashers.adoc#strobes[Strobes]
 
 Most cabs have at least one of these, and many use all of them. They're all great additions functionally. Beacons, flashers, and strobes all make nice light shows, and a fan adds a wonderful tactile element that movie theaters would market as a "4D experience" with a $10 ticket surcharge.
 
 But does a big pile of devices make for a "theme"? Well, from one perspective, it actually does. One way to see a virtual cab is as a whole arcade's worth of pinball tables in one box. So you could say that the theme is "all the pinballs" - which makes "all the topper toys" an apt fit.
 
-Personally, though, I like the idea of giving a virtual cab some kind of theme more personalized than "all the pinballs". I discuss that idea a bit in xref:cabArt.adoc[Cabinet Art] . If you _are_ giving your machine a specific theme, I think it's also a nice touch if you can extend your theme to the toppers.
+Personally, though, I like the idea of giving a virtual cab some kind of theme more personalized than "all the pinballs". I discuss that idea a bit in xref:cabArt.adoc#cabinetArt[Cabinet Art] . If you _are_ giving your machine a specific theme, I think it's also a nice touch if you can extend your theme to the toppers.
 
 Of course, functionality is still the starting point in choosing which devices to include. I'd never suggest that you should forego a fan just because your theme doesn't have an obvious connection to air circulation. But maybe you can find ways to work some of the functional elements into your theme, even though the theme isn't the reason you included them. For example, on my cab, I came up with a custom plastic enclosure for the fan that's meant to look like a star-burst, to go along with the outer space theme of my cab graphics. So I didn't really try to make the functionality of the fan fit the theme, but I did at least try to work its shape into the visual layout. (If you're interested in my specific topper design, you can find some more details xref:#pinscapeTopper[below] .
 
@@ -82,9 +82,9 @@ image::images/PinscapeTopperDiagramFront.png[""]
 
 Most of the topper is made from off-the-shelf parts:
 
-* A row of five standard pinball flasher domes with high-power RGB LEDs inside is arrayed across the front edge. These are simply wired in parallel with the main flasher board at the back of the playfield, so they always light up at the same time and in the same colors as the main flashers. See xref:flashers.adoc[Flashers and Strobes] for details on setting up a standard flasher panel.
+* A row of five standard pinball flasher domes with high-power RGB LEDs inside is arrayed across the front edge. These are simply wired in parallel with the main flasher board at the back of the playfield, so they always light up at the same time and in the same colors as the main flashers. See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for details on setting up a standard flasher panel.
 * A pair of Peterson 771 dome-shaped rotating beacons, one in red and one in blue. See xref:beacons.adoc[Beacons] .
-* A pair of "22 LED white strobes" that you can find on eBay. See xref:flashers.adoc[Flashers and Strobes] .
+* A pair of "22 LED white strobes" that you can find on eBay. See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] .
 
 The centerpiece is a custom-built fan with a 3D-printed plastic enclosure.
 
@@ -112,7 +112,7 @@ The second bit of lighting installed in the fan consists of nine high-power RGB 
 
 image::images/Bare3WLed.png[""]
 
-These are actually the same LEDs used in the "star base" type. The only difference is that they're sold as bare LEDs, not mounted to the aluminum heat sink base. The procedure for wiring them is the same as for wiring the flasher LEDs; see xref:flashers.adoc[Flashers and Strobes] for more on that.
+These are actually the same LEDs used in the "star base" type. The only difference is that they're sold as bare LEDs, not mounted to the aluminum heat sink base. The procedure for wiring them is the same as for wiring the flasher LEDs; see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for more on that.
 
 The method I used to mount the LEDs in the fan enclosure is inelegant and a little tricky (it takes some manual dexterity and a bit of patience), but it worked well and has held up well over the several years since I built it. I started by soldering hookup wire to the LEDs, with just enough wire between adjacent LEDs to reach from one hole to the next. The LEDs are wired *in series* , meaning that the "+" side of one LED connects to the "-" side of the next LED, and so on down the chain. There are no resistors in this chain - just the wires and the LEDs. Once all of the wiring was soldered, I arranged all of the LEDs into the desired locations, poking out through the star-burst holes. This is the part that requires dexterity and patience.
 

@@ -1,3 +1,4 @@
+[#kl25zSoftwareSetup]
 = KL25Z Software Setup
 
 The KL25Z is a "microcontroller", which is basically a tiny computer. Unlike a desktop computer, though, it doesn't require an operating system in the usual sense. There's no equivalent of Windows or Linux to install. Instead, you only have to install one thing: the Pinscape firmware. That serves as both the operating system and the application software. It controls all of the virtual pinball functions of the KL25Z, including the sensors, buttons, and feedback devices, and it handles communications with Windows.

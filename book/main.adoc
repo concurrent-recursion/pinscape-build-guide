@@ -2,6 +2,7 @@
 :doctype: book
 :author: Michael Roberts
 :email: mjr_@hotmail.com
+:front-cover-image: images/cover.png
 :license-url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 :license-title: CC BY-NC-SA 4.0
 :revnumber: 2.1.0

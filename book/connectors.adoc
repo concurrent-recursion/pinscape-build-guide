@@ -49,9 +49,9 @@ A better way is build your own mating connectors and just plug into them, the wa
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260.html[TE/AMP 1-480426-0] 4-pin housing
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201.html[TE/AMP 60620-1] male crimp pins, quantity 4 per housing
 
-Those are crimp-pin housings, so see xref:crimpPins.adoc[Crimp Pins] for instructions on how to assemble them.
+Those are crimp-pin housings, so see xref:crimpPins.adoc#crimpPins[Crimp Pins] for instructions on how to assemble them.
 
-Also see xref:powerSupplies.adoc[Power Supplies for Feedback] for more on using ATX power supplies for feedback device power.
+Also see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for more on using ATX power supplies for feedback device power.
 
 
 == PC motherboard "front panel" connectors
@@ -85,7 +85,7 @@ link:https://www.mouser.com/Connectors/Pin-Socket-Connectors/_/N-ay0mm?P=1z0yxz4
 
 Amazon searches for "Molex .062 kit" and "Molex .093 kit" shoudl also turn up similar results.
 
-These are crimp-pin systems, so see xref:crimpPins.adoc[Crimp Pins] for instructions on assembling them.
+These are crimp-pin systems, so see xref:crimpPins.adoc#crimpPins[Crimp Pins] for instructions on assembling them.
 
 == Terminal blocks
 

@@ -1,3 +1,4 @@
+[#resources]
 = Resources
 
 Here are some resources I've found helpful while building my cabinet.

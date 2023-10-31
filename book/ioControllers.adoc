@@ -1,3 +1,4 @@
+[#ioControllers]
 = I/O Controllers
 
 One of the big things that elevates the virtual cabinet experience above ordinary desktop computer pinball is the ability to use real pinball controls: flipper buttons, coin slots, a plunger, "nudging" by actually nudging the cabinet. An equally big enhancement is feedback devices that create tactile effects, lighting effects, and mechanical sound effects that aren't just coming from a speaker.

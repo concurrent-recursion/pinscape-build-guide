@@ -22,7 +22,7 @@ link:https://www.vpforums.org/index.php?showtopic=44795.html[Announcement: Oak M
 
 == Selecting a potentiometer
 
-The xref:partslist.adoc[parts list] section has a specific slide potentiometer that's known to work well, but there are other similar devices available. You can use any slide potentiometer that meets these guidelines:
+The xref:partslist.adoc#electronicPartsList[parts list] section has a specific slide potentiometer that's known to work well, but there are other similar devices available. You can use any slide potentiometer that meets these guidelines:
 
 * 10 kΩ overall resistance
 * Linear taper
@@ -38,7 +38,7 @@ If you're using the expansion boards, you'll also want to pick up the connector 
 
 The wiring for a potentiometer is pretty simple, since there are only three wires involved. The only tricky part is identifying which terminal on the potentiometer is which, since the pins on the device itself are often unlabeled.
 
-If you're using the recommended potentiometer from the xref:partslist.adoc[Electronic Parts List] , the pins are arranged like this:
+If you're using the recommended potentiometer from the xref:partslist.adoc#electronicPartsList[Electronic Parts List] , the pins are arranged like this:
 
 image::images/AlpsPotentiometerPins.png[""]
 
@@ -65,10 +65,10 @@ Here's the schematic for wiring the stand-alone KL25Z, without the expansion boa
 
 image::images/PotentiometerSchematic.png[""]
 
-I recommending using a xref:plungerBreakout.adoc[plunger sensor breakout board] to connect to the standalone KL25Z. It'll make things easier in the long run by giving you a pluggable connector between the plunger and KL25Z.
+I recommending using a xref:plungerBreakout.adoc#plungerSensorBreakoutBoard[plunger sensor breakout board] to connect to the standalone KL25Z. It'll make things easier in the long run by giving you a pluggable connector between the plunger and KL25Z.
 
 * Follow the "Expansion board wiring" instructions below to build a pluggable connector for the potentiometer itself
-* Follow the instructions in xref:plungerBreakout.adoc[Plunger Sensor Breakout Board] to build the breakout board
+* Follow the instructions in xref:plungerBreakout.adoc#plungerSensorBreakoutBoard[Plunger Sensor Breakout Board] to build the breakout board
 * Connect the following wires between the breakout board and the KL25Z:
 ** Breakout board *B0* to KL25Z PTB0 (pin 2 on J10)
 ** Breakout board *3.3V* to KL25Z P3V3 (pin 8 on J9)
@@ -76,7 +76,7 @@ I recommending using a xref:plungerBreakout.adoc[plunger sensor breakout board] 
 
 === Expansion board wiring
 
-For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ). First crimp a pin to the end of each wire (see xref:crimpPins.adoc[Crimp Pins] ). Insert the pins in the housing, following the diagram below for the pin placement.
+For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ). First crimp a pin to the end of each wire (see xref:crimpPins.adoc#crimpPins[Crimp Pins] ). Insert the pins in the housing, following the diagram below for the pin placement.
 
 image::images/PotExpConnector.png[""]
 
@@ -95,7 +95,7 @@ If you're using a different potentiometer, you'll have to either modify our 3D p
 [#alpsMountPlans]
 === 3D printer plans for ALPS potentiometer mounting
 
-If you're using the ALPS potentiometer from the xref:partslist.adoc[parts list] , here's a set of 3D printing plans you can use to mount it in your cabinet.
+If you're using the ALPS potentiometer from the xref:partslist.adoc#electronicPartsList[parts list] , here's a set of 3D printing plans you can use to mount it in your cabinet.
 
 link:http://mjrnet.org/pinscape/downloads/ALPS_Mounting_v6.zip[ALPS_Mounting_v6.zip]
 
@@ -112,7 +112,7 @@ You only need to print *either* the individual part files *or* the single combin
 
 * The STL files use *millimeter (mm)* units
 * You can use any plastic material you wish, but I'd recommend Nylon PA-11 or PA-12 if you're using an online service, as those have excellent durability
-* See xref:resources.adoc[Resources] for links to online 3D print services if you don't have a 3D printer at home
+* See xref:resources.adoc#resources[Resources] for links to online 3D print services if you don't have a 3D printer at home
 
 Note that my illustrations below show each part in a different color, but that's only for the sake of clarity in the illustrations. There's no need to use different colors for the actual printed parts.
 
@@ -207,7 +207,7 @@ Lemming77's (vpforums) design for an older OEM potentiometer from Aliexpress, pr
 
 == Software setup
 
-If you haven't already set up your KL25Z with the Pinscape firmware, do that first. See xref:kl25zSoftwareSetup.adoc[KL25Z Software Setup] .
+If you haven't already set up your KL25Z with the Pinscape firmware, do that first. See xref:kl25zSoftwareSetup.adoc#kl25zSoftwareSetup[KL25Z Software Setup] .
 
 Start the Pinscape Config Tool. Click the Settings button for your device. Scroll down to the Plunger section. In the Sensor Type drop list, select Potentiometer.
 

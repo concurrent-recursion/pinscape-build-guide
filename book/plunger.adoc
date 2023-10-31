@@ -1,3 +1,4 @@
+[#plunger]
 = Plunger
 
 The plunger is certainly one of the defining features of pinball. It's as iconic as the flippers and steel balls. It's also one of the trickier parts of building a virtual cab. Plungers obviously aren't standard input devices for PCs, like keyboards and mice. There really isn't anything in the standard set of PC input devices that's at all equivalent. If you want a plunger for your cab, you need specialized hardware, purpose-built for the job.
@@ -38,7 +39,7 @@ If you use a Pinscape Controller plunger or one of the plunger kits from link:ht
 
 If you're using another plunger device, you should stick with the "plunger and Launch button" option. The ability to simulate the launch button is a feature of the plunger device, and other devices besides Pinscape and Zeb's don't generally have this ability.
 
-If you're building a Pinscape Controller plunger, see xref:zblaunch.adoc[ZB Launch Ball] for details on how to set this up. If you're using a Zeb's Boards unit, consult the owner's manual for the device.
+If you're building a Pinscape Controller plunger, see xref:zblaunch.adoc#zbLaunchBallZB Launch Ball] for details on how to set this up. If you're using a Zeb's Boards unit, consult the owner's manual for the device.
 
 === Which option is best for you?
 
@@ -253,7 +254,7 @@ See "Plunger and Launch button" in xref:cabBody.adoc#ballShooterRouting[Cabinet 
 
 If you buy a commercial plunger kit, the plunger assembly is usually included in the price. If you're building one yourself, here are the parts you need.
 
-You can buy fully assembled ball shooters from any pinball parts supplier, such as Pinball Life or Marco Specialties (see xref:resources.adoc[Resources] ). Nearly all machines made since about 1980 use the same assembly, which you can find listed at the pinball parts vendors under these Williams/Bally part numbers: B-12445-1, B-12445-6, B-12445-7.
+You can buy fully assembled ball shooters from any pinball parts supplier, such as Pinball Life or Marco Specialties (see xref:resources.adoc#resources[Resources] ). Nearly all machines made since about 1980 use the same assembly, which you can find listed at the pinball parts vendors under these Williams/Bally part numbers: B-12445-1, B-12445-6, B-12445-7.
 
 Alternatively, you can buy the individual parts separately, if you wish to customize anything. Pinball Life lets you choose colors for the knob and rubber tip, but you'll have to buy _à la carte_ if you want a custom knob. You can also buy a "knobless" shooter rod, which lets you create your own custom knob for a unique look.
 

@@ -20,7 +20,7 @@ We go into this in more detail in xref:playfieldTV.adoc[Selecting a Playfield TV
 
 == Go shopping
 
-Once you know the basic scale of your system, you can start buying the main components. We provide a master part list for a fully decked-out cabinet in xref:cabParts.adoc[Cabinet Parts List] . You can choose a subset from that list that fits your own goals and budget.
+Once you know the basic scale of your system, you can start buying the main components. We provide a master part list for a fully decked-out cabinet in xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] . You can choose a subset from that list that fits your own goals and budget.
 
 Even with our master parts list to work from, you'll still have to do some original research, particularly for selecting the TV monitors and the PC components. There are too many options for both to allow simple one-size-fits-all recommendations, plus those product categories move so quickly that any concrete advice we could offer would be obsolete before you read this. Fortunately, apart from the TV and PC, a lot of the rest of the cabinet can be built out of standard parts. The real pinball machine manufacturers were very cost-conscious, which drove them to build their games on common platforms with mostly interchangeable parts. The exterior shell of a virtual cab is almost identical to a real pinball (or can be, at least, depending on your design goals), so we can build our cabs out of those same interchangeable parts.
 
@@ -36,21 +36,21 @@ The next step after building the PC is usually installing the core software, inc
 
 == Build the cabinet body
 
-Now we come to the cabinet itself, in the literal sense of the wood box that houses everything. This part of the build can be as simple as buying a new or used cabinet that's already assembled, or as elaborate as doing the woodworking from scratch. We'll cover the various options in xref:cabBody.adoc[Cabinet Body] .
+Now we come to the cabinet itself, in the literal sense of the wood box that houses everything. This part of the build can be as simple as buying a new or used cabinet that's already assembled, or as elaborate as doing the woodworking from scratch. We'll cover the various options in xref:cabBody.adoc#cabinetBody[Cabinet Body] .
 
 == Design and install the artwork
 
-A pin cab is a significant piece of furniture to have in your house, so it's worth putting some effort into its exterior appearance. Some cab builders opt for a natural wood look to better fit in a domestic environment, and some choose a simple one-color paint job. For most of us, though, the aim is to replicate the look of a real pinball machine, which means using custom artwork in the distinctive graphic style of the real machines. One great way to get a thoroughly authentic look is with digitally printed decals. We'll cover the options in xref:cabArt.adoc[Cabinet Art] .
+A pin cab is a significant piece of furniture to have in your house, so it's worth putting some effort into its exterior appearance. Some cab builders opt for a natural wood look to better fit in a domestic environment, and some choose a simple one-color paint job. For most of us, though, the aim is to replicate the look of a real pinball machine, which means using custom artwork in the distinctive graphic style of the real machines. One great way to get a thoroughly authentic look is with digitally printed decals. We'll cover the options in xref:cabArt.adoc#cabinetArt[Cabinet Art] .
 
 This is one of those steps where the order is fairly important. You'll want to get the artwork in place before you start installing the cabinet hardware or any of the insides of the machine.
 
 == Assemble the cabinet hardware
 
-Once you have the wood shell of the cabinet built and finished with artwork, you can install the "hardware" - the side rails, lockdown bar, coin door, legs, and the parts that attach the backbox to the main body. We'll go over the standard equipment and how to install it all in xref:cabHardware.adoc[Cabinet Hardware Installation] .
+Once you have the wood shell of the cabinet built and finished with artwork, you can install the "hardware" - the side rails, lockdown bar, coin door, legs, and the parts that attach the backbox to the main body. We'll go over the standard equipment and how to install it all in xref:cabHardware.adoc#cabinetHardware[Cabinet Hardware Installation] .
 
 == Set up your power supplies
 
-You'll need a standard PC power supply to power the motherboard and other PC components. If you're installing any feedback devices, you'll need additional power supplies for those. We'll explain what you need in terms of power supplies for the various components in xref:powerSupplies.adoc[] .
+You'll need a standard PC power supply to power the motherboard and other PC components. If you're installing any feedback devices, you'll need additional power supplies for those. We'll explain what you need in terms of power supplies for the various components in xref:powerSupplies.adoc#powerSuppliesForFeedback[] .
 
 Most cab builders also like to set up a power distribution system that turns power on and off across the whole system with a single button. We'll explain how to do this in xref:powerSwitching.adoc[Power Switching] .
 
@@ -76,7 +76,7 @@ Most cabs also have a second and possibly third TV in the backbox, for the backg
 
 == Install buttons
 
-You'll probably want to install and wire your cabinet buttons shortly after getting the cabinet assembled and the PC working, both for the sake of early play testing and because it's easier to do the installation work while the cabinet is still fairly empty. We'll go over which buttons you need and how to install them in xref:cabButtons.adoc[Cabinet Buttons] .
+You'll probably want to install and wire your cabinet buttons shortly after getting the cabinet assembled and the PC working, both for the sake of early play testing and because it's easier to do the installation work while the cabinet is still fairly empty. We'll go over which buttons you need and how to install them in xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
 
 == Set up I/O controllers
 
@@ -84,11 +84,11 @@ I/O controllers are separate components - usually USB devices - that handle the 
 
 You don't have to set up all of the I/O controllers or functions at once. At this stage in the build, though, you'll at least want to set up the button input controller (also known as the key encoder), so that you can test out the newly installed cabinet buttons.
 
-We'll look at the various controller functions and which devices you need in xref:ioControllers.adoc[I/O Controllers] .
+We'll look at the various controller functions and which devices you need in xref:ioControllers.adoc#ioControllers[I/O Controllers] .
 
 == Install a plunger
 
-The plunger can be installed at any point in the build, but you'll want to get it in place before you finalize the TV installation. The space in the plunger area is tight (even on a real machine), so it's worthwhile to do some measuring and planning. The plunger is close to the flipper buttons, and on a virtual cab it competes for space with the TV. We'll cover the details of installing the basic physical plunger as well as the options for connecting it to the software in xref:plunger.adoc[Plunger] .
+The plunger can be installed at any point in the build, but you'll want to get it in place before you finalize the TV installation. The space in the plunger area is tight (even on a real machine), so it's worthwhile to do some measuring and planning. The plunger is close to the flipper buttons, and on a virtual cab it competes for space with the TV. We'll cover the details of installing the basic physical plunger as well as the options for connecting it to the software in xref:plunger.adoc#plungerPlunger] .
 
 == Install feedback devices
 

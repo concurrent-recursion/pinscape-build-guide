@@ -24,7 +24,7 @@ It's extremely important to plan out exactly where the TV goes before you start 
 
 If possible, you should actually install the TV early on, not just make plans, so that you can see the space it delineates for real rather than just as measurements. But don't do that unless you're using a mounting that's easily removable, because you won't want the TV in the way while you're installing everything else. If you use a mounting system like the one I outline in xref:playfieldMounting.adoc[Playfield TV Mounting] , you'll be able to install and remove the TV with little effort.
 
-Some notes on the flasher panel. I've depicted the back panel with the traditional five flasher domes. Each is a clear plastic dome with a 3W RGB LED inside. This is such a ubiquitous setup that the most popular pinball software (Visual Pinball with DOF) is programmed to assume it's there. However, some people replace the five-flasher panel with an array of individually addressable LEDs - sort of a coarse dot-matrix display. The physical setup for that is basically the same; just remove the flasher domes and substitute addressable LED strips or arrays. Some people also do both, by installing a five-flasher panel as shown and adding an addressable LED strip or two, across the top and/or bottom. See xref:flashers.adoc[Flashers and Strobes] and xref:addressableLightStrips.adoc[Addressable Light Strips] .
+Some notes on the flasher panel. I've depicted the back panel with the traditional five flasher domes. Each is a clear plastic dome with a 3W RGB LED inside. This is such a ubiquitous setup that the most popular pinball software (Visual Pinball with DOF) is programmed to assume it's there. However, some people replace the five-flasher panel with an array of individually addressable LEDs - sort of a coarse dot-matrix display. The physical setup for that is basically the same; just remove the flasher domes and substitute addressable LED strips or arrays. Some people also do both, by installing a five-flasher panel as shown and adding an addressable LED strip or two, across the top and/or bottom. See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] and xref:addressableLightStrips.adoc[Addressable Light Strips] .
 
 You could also fit one or more light strips across the "lip" (illustrated below) that sits below the backbox shelf. Keep in mind that there's a standard trim piece for the top glass that also affixes here, so check how that will fit before finalizing plans. See "Rear glass trim" in xref:cabHardware.adoc#rearGlassTrim[Cabinet Hardware Installation] .
 
@@ -104,7 +104,7 @@ On a real machine, there's a switch that senses whether the coin door is open or
 
 The coin door itself should have a pre-installed metal plate that acts as an actuator for the switch. This is positioned at the bottom of the door on the hinge side. It's attached to the door, so that it swings out when the door opens.
 
-There are different ways to mount a coin door switch (which you can read more about in the xref:coinDoor.adoc[Coin Door] chapter), but my recommendation is to use the standard pinball parts. They're purpose-built for this, so they're easy to install and reliable, and they're not particularly expensive. The standard parts consist of a metal mounting bracket and a "plunger" switch. The bracket is designed so that the plunger switch simply snaps - a couple of plastic clasps on the switch hold in place.
+There are different ways to mount a coin door switch (which you can read more about in the xref:coinDoor.adoc#coinDoor[Coin Door] chapter), but my recommendation is to use the standard pinball parts. They're purpose-built for this, so they're easy to install and reliable, and they're not particularly expensive. The standard parts consist of a metal mounting bracket and a "plunger" switch. The bracket is designed so that the plunger switch simply snaps - a couple of plastic clasps on the switch hold in place.
 
 Snap the switch into the plate, then mount the plate so that actuator on the door presses the switch plunger all the way in when the door is closed. The plate mounts to the front wall of the cab with wood screws.
 
@@ -236,7 +236,7 @@ Setting up the PC hardware is a fairly significant project in itself, so we give
 
 == Secondary power supplies
 
-If you're installing feedback devices, you'll need to install power for them. More details can be found in xref:powerSupplies.adoc[Power Supplies for Feedback] , but the executive summary is that you can generally cover most of the bases with ATX power supply (that is, a separate unit of the same type used for the PC motherboard's power supply) and one or two generic OEM power supplies for higher voltages (such as 24V and/or 48V).
+If you're installing feedback devices, you'll need to install power for them. More details can be found in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , but the executive summary is that you can generally cover most of the bases with ATX power supply (that is, a separate unit of the same type used for the PC motherboard's power supply) and one or two generic OEM power supplies for higher voltages (such as 24V and/or 48V).
 
 For the secondary ATX PSU, a good location is the mirror image of where we placed the PC power supply: on the other side of the subwoofer. Assuming you centered the subwoofer, there's a nice ATX PSU-sized space on either side, so we might as well use it that way.
 
@@ -318,7 +318,7 @@ If you do need to access the gear motor, this will let you take it out as a unit
 
 == Controllers
 
-See xref:ioControllers.adoc[I/O Controllers] . A pin cab requires some special USB devices to connect the button inputs, plunger sensor, and feedback devices. There are several options for these, but whichever you choose, you're going to have some little circuit boards that you'll need to mount somewhere in the cab. Most cabs need two or three boards, most of which are on the order of 4" by 4".
+See xref:ioControllers.adoc#ioControllers[I/O Controllers] . A pin cab requires some special USB devices to connect the button inputs, plunger sensor, and feedback devices. There are several options for these, but whichever you choose, you're going to have some little circuit boards that you'll need to mount somewhere in the cab. Most cabs need two or three boards, most of which are on the order of 4" by 4".
 
 Most of these boards can go just about anywhere that's convenient, but there's one type of board that's pretty particular about location: the accelerometer, also known as the nudge sensor. That board should be mounted horizontally, close to the front of the cab, preferably close to the center of the cab. The accelerometer senses the cabinet's motion, and it does the best job at that if it's mounted in a central location near the front.
 

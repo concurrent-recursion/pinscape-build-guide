@@ -1,21 +1,22 @@
+[#cabinetHardware]
 = Cabinet Hardware Installation
 
 This section covers the hardware trim on the main cabinet, with details on what all the hardware does and how to install it.
 
-We assume that you've already built the basic plywood cabinet as described in xref:cabBody.adoc[Cabinet Body] , and that you've already painted it and/or applied decals, as described in xref:cabArt.adoc[Cabinet Art] . It's best to finish the artwork before installing any hardware, since some the hardware will get in the way of painting or applying decals once installed.
+We assume that you've already built the basic plywood cabinet as described in xref:cabBody.adoc#cabinetBody[Cabinet Body] , and that you've already painted it and/or applied decals, as described in xref:cabArt.adoc#cabinetArt[Cabinet Art] . It's best to finish the artwork before installing any hardware, since some the hardware will get in the way of painting or applying decals once installed.
 
 The sections below are arranged in our recommended order of installation. The order matters in some cases because of dependencies among parts. For example, you should install the side rails before installing the lockbar, since the lockbar's final alignment depends on the side rails being there, and you have to install the glass channels before the side rails because the channels act as spacers and supports for the rails. We've tried to present things in the easiest overall order, to get alignments right the first time and to minimize backtracking.
 
 == What to buy
 
-We'll describe the parts needed at each stage as we go, but the full list of hardware parts can be found in xref:cabParts.adoc[Cabinet Parts List] .
+We'll describe the parts needed at each stage as we go, but the full list of hardware parts can be found in xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] .
 
 
 == Leg brackets
 
 You should attach the leg brackets early in the cabinet build, during the basic wood assembly. The brackets are meant to be permanently installed; they can be left in place with the legs on or off the machine.
 
-If you followed our plans in xref:cabBody.adoc[Cabinet Body] , you should have already installed the leg bolt brackets on the inside of the cabinet. If you haven't done this already, see the section on xref:cabBody.adoc#installLegBoltBrackets[Leg brackets] in that chapter.
+If you followed our plans in xref:cabBody.adoc#cabinetBody[Cabinet Body] , you should have already installed the leg bolt brackets on the inside of the cabinet. If you haven't done this already, see the section on xref:cabBody.adoc#installLegBoltBrackets[Leg brackets] in that chapter.
 
 You probably won't want to attach the legs themselves early on, since you'll probably want the cab sitting on the floor or workbench while you install the PC, TVs, and other internal components.
 
@@ -34,7 +35,7 @@ image::images/glass-sliding.png[""]
 
 The second important functional role of the glass channels is to act as vertical spacers and supports for the metal side rails. All of the side rails made since the 1970s or so are designed to be paired with the glass channels. The geometry of the rails simply takes it for granted that the plastic channels will be there - if they're not, there will be a big gap under the rails, which would make them too weak.
 
-To install the glass channels, the first step is to route a groove along the center top of the side wall. (If you followed our construction plans in xref:cabBody.adoc[Cabinet Body] , you should already have done this.) There's a special router bit for this job, called a slot cutting bit. For this particular slot, you need a slot cutter bit with a 3/32" slot width and a depth of ⅜" or greater. I used Freude part number 63-106; equivalent bits are available from other brands.
+To install the glass channels, the first step is to route a groove along the center top of the side wall. (If you followed our construction plans in xref:cabBody.adoc#cabinetBody[Cabinet Body] , you should already have done this.) There's a special router bit for this job, called a slot cutting bit. For this particular slot, you need a slot cutter bit with a 3/32" slot width and a depth of ⅜" or greater. I used Freude part number 63-106; equivalent bits are available from other brands.
 
 image::images/glass-channel-slot.png[""]
 
@@ -396,7 +397,7 @@ The nest bracket has three screw holes. The center one is meant to align with th
 
 If you've already installed the coin door, reattach the nut on the center bolt. Otherwise just leave that off (and take the bolt back out) for now; you'll install it when you get to the coin door.
 
-The second bracket is the "cashbox lock bracket" (Williams part 01-10030 or 1A-3493-1), which attaches to the fence called out in the earlier illustration. If you followed our plans from xref:cabBody.adoc[Cabinet Body] , you've already installed that. If not, you should go back now and follow the plans in that chapter under "Cashbox fence".
+The second bracket is the "cashbox lock bracket" (Williams part 01-10030 or 1A-3493-1), which attaches to the fence called out in the earlier illustration. If you followed our plans from xref:cabBody.adoc#cabinetBody[Cabinet Body] , you've already installed that. If not, you should go back now and follow the plans in that chapter under "Cashbox fence".
 
 Once both brackets are in place, installing the cashbox is a simple matter of dropping it into the space delineated by the fence, fitting the slot at the back of the cashbox lid over the lock bracket. To remove the cashbox, lift the back edge high enough to clear the lock bracket, and pull the cashbox out. This is all meant to be done through the coin door, since the cashbox is sized to fit through the door.
 
@@ -410,7 +411,7 @@ Improvising a home-made cashbox isn't too challenging, since it's just a box wit
 
 == Coin door
 
-The coin door is a complex enough subsystem that we've devoted a whole chapter to it ( xref:coinDoor.adoc[Coin Door] ). But we'll go over the basic installation process here.
+The coin door is a complex enough subsystem that we've devoted a whole chapter to it ( xref:coinDoor.adoc#coinDoor[Coin Door] ). But we'll go over the basic installation process here.
 
 If you're using a standard lockbar-and-receiver combination, it's easier to install the receiver before installing the coin door. Follow the procedure above. The receiver shares its center attachment bolt with the coin door, so you'll need to remove the center bolt in the receiver if it's currently in place.
 

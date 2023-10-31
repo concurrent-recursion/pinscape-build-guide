@@ -1,13 +1,13 @@
 = Addressable Light Strips
 
-Addressable or "smart" light strips are similar to the basic light strips most cab builders use for xref:lightStrips.adoc[undercab lighting] , but with the added feature that each LED on a smart strip can be set to a different color. That's what "addressable" means: each LED can be addressed - commanded - individually.
+Addressable or "smart" light strips are similar to the basic light strips most cab builders use for xref:lightStrips.adoc#undercabLighting[undercab lighting] , but with the added feature that each LED on a smart strip can be set to a different color. That's what "addressable" means: each LED can be addressed - commanded - individually.
 
 In pin cabs, these can be used in a variety of ways, such as:
 
-* A strip of lights down the entire length of each side of the playfield TV, usually mounted on the side wall of the cabinet just above the TV. These can show chaser lights that follow the ball at certain times (such as when launching from the plunger), and can also show flashes of light situated near playfield flasher lights on the TV, to reinforce the video rendition of the flasher with a brighter nearby LED flash. (See xref:flashers.adoc[Flashers and Strobes] .)
-* One strip or several rows of strips across the width of the back edge of the playfield TV. This can display more ball chaser light effects, and can also take the place of a dedicated flasher panel (see xref:flashers.adoc[Flashers and Strobes] ). In matrix form (multiple rows of strips), it can also serve as a sort of supplemental DMD, to display additional dot animation effects during game play.
-* A strip or several rows of strips mounted near the top of the backbox. This can simulate "beacon" devices (see xref:beacons.adoc[Beacons] ).
-* Addressables can also be used to illuminate the flipper and MagnaSave buttons (see xref:buttonLamps.adoc[Button Lamps] ). This function can also be performed (more easily, in my opinion) by a general-purpose output controller like an LedWiz or Pinscape unit, but you could use addressables if your system doesn't include a general-purpose controller at all, or if all of its ports are committed elsewhere.
+* A strip of lights down the entire length of each side of the playfield TV, usually mounted on the side wall of the cabinet just above the TV. These can show chaser lights that follow the ball at certain times (such as when launching from the plunger), and can also show flashes of light situated near playfield flasher lights on the TV, to reinforce the video rendition of the flasher with a brighter nearby LED flash. (See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] .)
+* One strip or several rows of strips across the width of the back edge of the playfield TV. This can display more ball chaser light effects, and can also take the place of a dedicated flasher panel (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). In matrix form (multiple rows of strips), it can also serve as a sort of supplemental DMD, to display additional dot animation effects during game play.
+* A strip or several rows of strips mounted near the top of the backbox. This can simulate "beacon" devices (see xref:beacons.adoc#beacons[Beacons] ).
+* Addressables can also be used to illuminate the flipper and MagnaSave buttons (see xref:buttonLamps.adoc#buttonLamps[Button Lamps] ). This function can also be performed (more easily, in my opinion) by a general-purpose output controller like an LedWiz or Pinscape unit, but you could use addressables if your system doesn't include a general-purpose controller at all, or if all of its ports are committed elsewhere.
 
 The placements listed above are the most common, and DOF has pre-programmed effects for them. But you're not limited to those setups. The DOF Config tool lets you create your own custom programming in addition to the pre-programmed effects. So if you have other ideas about how to arrange the strips, you're free to set them up as you like, as long as you're willing to do the additional work to program the effects yourself.
 
@@ -40,7 +40,7 @@ You can also use WS2811 light strips, but I'd stay away from those because they'
 
 == Power supply
 
-The strips require a 5V power supply. You can use your secondary ATX power supply if you have one, or a dedicated 5V DC supply. See xref:powerSupplies.adoc[Power Supplies for Feedback] .
+The strips require a 5V power supply. You can use your secondary ATX power supply if you have one, or a dedicated 5V DC supply. See xref:powerSupplies.adoc#_power_supplies_for_feedback[Power Supplies for Feedback] .
 
 Make sure that your power supply has enough capacity. Long light strips can consume a surprising amount of power. Computer ATX power supplies are usually sufficient for typical pin cab light strips, but smaller "wall wart" power supplies might not have enough power for long strips.
 
@@ -130,7 +130,7 @@ The link:https://configtool.vpuniverse.com/[DOF Config Tool] provides pre-progra
 
 |PF Back Flashers MX
 |Playfield TV rear strip/array
-|Simulates a dedicated 5-flasher panel (see xref:flashers.adoc[Flashers and Strobes] )
+|Simulates a dedicated 5-flasher panel (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] )
 
 |PF Back Effects MX
 |Playfield TV rear strip/array
@@ -138,7 +138,7 @@ The link:https://configtool.vpuniverse.com/[DOF Config Tool] provides pre-progra
 
 |PF Back Strobe MX
 |Playfield TV rear strip/array
-|Simulates a dedicated strobe light (see xref:flashers.adoc[Flashers and Strobes] )
+|Simulates a dedicated strobe light (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] )
 
 |PF Back Beacon MX
 |Playfield TV rear strip/array *or* backbox strip/array
@@ -174,7 +174,7 @@ The link:https://configtool.vpuniverse.com/[DOF Config Tool] provides pre-progra
 
 |RGB Undercab Complex MX
 |Undercab lights
-|Ambient illumination effects for undercab lighting (see xref:lightStrips.adoc[Undercab Lighting] )
+|Ambient illumination effects for undercab lighting (see xref:lightStrips.adoc#undercabLighting[Undercab Lighting] )
 
 |===
 
@@ -184,7 +184,7 @@ There are two parts required to set this up with DOF: a "cabinet configuration" 
 
 *Part I: Cabinet config file.* You'll have to manually create a file on your PC called `Cabinet.xml` , in the DOF folder, to describe your hardware setup for the strips.
 
-Before you do that, though, you _also_ have to set up a "global" config file to tell DOF to use your Cabinet.xml config file. (Nothing's ever easy with DOF!) That procedure is explained in "Extra controller setup" in xref:DOF.adoc[DOF Setup] . Please read through that section and follow the steps listed there. That will give you a starting point for the Cabinet.xml file that you can fill in with the light strip information.
+Before you do that, though, you _also_ have to set up a "global" config file to tell DOF to use your Cabinet.xml config file. (Nothing's ever easy with DOF!) That procedure is explained in "Extra controller setup" in xref:DOF.adoc#dofSetup[DOF Setup] . Please read through that section and follow the steps listed there. That will give you a starting point for the Cabinet.xml file that you can fill in with the light strip information.
 
 The light strip entries in Cabinet.xml file are quite complex, and they're covered in the Wiki page for Swiss Lizard's Teensy code, so I'm not going to reiterate all of that here. If I copied it here, it would just gradually drift out of date and become more confusing than helpful. Better to go straight to the source:
 
@@ -196,7 +196,7 @@ link:https://www.vpforums.org/index.php?showtopic=36156.html[How to Set Up Addre
 
 *Part II: DOF Config Tool settings.* Once you have the Cabinet.xml file set up, DOF will be able to find your hardware. But wait! There's more! You have to go through yet another procedure now to tell DOF to actually use that hardware.
 
-This procedure uses the link:https://configtool.vpuniverse.com/[DOF Config Tool] . Hopefully you're already familiar with that from setting up your general-purpose output controller. If not, please read through "The DOF Config Tool" in xref:DOF.adoc[DOF Setup] .
+This procedure uses the link:https://configtool.vpuniverse.com/[DOF Config Tool] . Hopefully you're already familiar with that from setting up your general-purpose output controller. If not, please read through "The DOF Config Tool" in xref:DOF.adoc#dofSetup[DOF Setup] .
 
 The first step is to tell the Config Tool that you have a Teensy light strip controller device:
 

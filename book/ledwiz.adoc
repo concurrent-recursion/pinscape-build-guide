@@ -1,3 +1,4 @@
+[#ledwizSetup]
 = LedWiz Setup
 
 The LedWiz has long been the most popular output controller for virtual cab builders. It was originally created for video game cabinets, not for pin cabs, but the two have a lot in common: they both use a PC to run their software, and they both use arcade controls built into a custom enclosure. Video game cabs use the LedWiz mostly to control button lamps and other cabinet lights. But a device like the LedWiz that can turn lights on and off can really turn just about anything on and off, so it filled the need when early pin cab builders wanted to install mechanical force feedback devices in addition to lights.
@@ -48,7 +49,7 @@ image::images/LedWizGroundWiring.png[""]
 
 Connecting the LedWiz ground terminal. Use ordinary hookup wire (around 22 AWG) to connect the *G* terminal on the LedWiz to the black wire in an unused disk power connector on your power supply. The LedWiz comes in a couple of versions, so yours might not look exactly like the photo, but there should still be a similar *G* terminal.
 
-For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc[Power Supplies for Feedback] .
+For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
 
 Second, plug a USB cable into the USB connector on the LedWiz, and plug the other end into a free USB port on your PC.
 
@@ -56,7 +57,7 @@ Second, plug a USB cable into the USB connector on the LedWiz, and plug the othe
 
 Some versions of the LedWiz have a set of terminals for connecting the positive (+) voltage from your power supply. *You should simply ignore these and leave them unconnected.* These inputs are unnecessary as long as you use your own diodes for any attached coils or motors, and they complicate the wiring if you do use them. It's best to use your own diodes and ignore these inputs.
 
-The function these inputs serve is to connect some internal diodes within the LedWiz chips across the output port terminals. The diodes are meant to provide a degree of protection against power spikes from inductive devices. That protection is important, but you can get better protection by installing your own external diodes, as explained in xref:diodes.adoc[Coil Diodes] . Doing that will make the internal diodes redundant, allowing you to leave the LedWiz voltage inputs unconnected.
+The function these inputs serve is to connect some internal diodes within the LedWiz chips across the output port terminals. The diodes are meant to provide a degree of protection against power spikes from inductive devices. That protection is important, but you can get better protection by installing your own external diodes, as explained in xref:diodes.adoc#coilDiodes[Coil Diodes] . Doing that will make the internal diodes redundant, allowing you to leave the LedWiz voltage inputs unconnected.
 
 == Basic device wiring plan
 
@@ -64,23 +65,23 @@ Before connecting anything to the LedWiz, please make sure its power draw is saf
 
 The basic feedback device wiring plan for an LedWiz is pretty simple:
 
-* All of the "-" or "Ground" connections from all of your power supplies should be connected together (see xref:powerSupplies.adoc[Power Supplies for Feedback] )
-* Connect the "+" terminal from the power supply directly to the "+" terminal on the feedback device
+* All of the "-" or "Ground" connections from all of your power supplies should be connected together (see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] )
+* Connect the "\+" terminal from the power supply directly to the "+" terminal on the feedback device
 * Connect the "-" terminal on the feedback device to one of the numbered LedWiz terminals
 
 image::images/LedWizBasicWiring.png[""]
 
 The LedWiz acts like an electronic switch that connects and disconnects the "-" side of a device to the power supply. The LedWiz can *only* switch the "-" side, so it's important to wire the polarities exactly as described above.
 
-Some feedback devices aren't polarized, meaning they don't care which power input is "+" and which is "-". This is true for most coil devices, like solenoids and relays, as well as for incandescent lamps. If the device doesn't have "+" and "-" markings for its power terminals, simply follow the same wiring plan shown above, but you can attach the wires to the feedback device itself in either order.
+Some feedback devices aren't polarized, meaning they don't care which power input is "\+" and which is "-". This is true for most coil devices, like solenoids and relays, as well as for incandescent lamps. If the device doesn't have "+" and "-" markings for its power terminals, simply follow the same wiring plan shown above, but you can attach the wires to the feedback device itself in either order.
 
-Some devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc[Coil Diodes] ), and most LEDs require current-limiting resistors (see xref:flashers.adoc[Flashers and Strobes] ). We go into more detail about each of the popular pin cab devices in xref:feedbackSect.adoc[Feedback Devices] .
+Some devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc#coilDiodes[Coil Diodes] ), and most LEDs require current-limiting resistors (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). We go into more detail about each of the popular pin cab devices in xref:feedbackSect.adoc[Feedback Devices] .
 
 == Use protective diodes if necessary
 
 Most mechanical devices *require* protective diodes. These are required for anything with a coil: solenoids, contactors, replay knockers, motors.
 
-See xref:diodes.adoc[Coil Diodes] for details on what type of diodes to use and how to install them.
+See xref:diodes.adoc#coilDiodes[Coil Diodes] for details on what type of diodes to use and how to install them.
 
 Diodes are critical! Coils and motors can damage your PC motherboard and other components if diodes aren't used.
 
@@ -169,7 +170,7 @@ The idea here is to connect the relay coil to the LedWiz as though _it_ were the
 
 image::images/LedWizRelayBooster1.png[""]
 
-You must also connect a protective diode across the coil's terminals, to suppress the voltage spike that the coil will produce when it switches off. A 1N4007 diode is a good general-purpose diode that you can use for this. See xref:diodes.adoc[Coil Diodes] for full details.
+You must also connect a protective diode across the coil's terminals, to suppress the voltage spike that the coil will produce when it switches off. A 1N4007 diode is a good general-purpose diode that you can use for this. See xref:diodes.adoc#coilDiodes[Coil Diodes] for full details.
 
 image::images/LedWizRelayBooster1Diode.png[""]
 

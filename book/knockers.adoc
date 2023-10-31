@@ -37,7 +37,7 @@ CAUTION: 48V is a hazardous high voltage. Be careful to turn off power when work
 
 A new knocker assembly usually comes with a diode already installed, and two wires, one red and one black. Connect the red wire directly to the positive (+) power supply voltage. Connect the black wire to an available output port on your output controller.
 
-If your coil _doesn't_ come with a diode already installed, you must add your own, to protect your output controller and other electronics from interference from the magnetic field from the coil. See xref:diodes.adoc[Coil Diodes] .
+If your coil _doesn't_ come with a diode already installed, you must add your own, to protect your output controller and other electronics from interference from the magnetic field from the coil. See xref:diodes.adoc#coilDiodes[Coil Diodes] .
 
 The Williams/Bally knocker assemblies come with a Molex 3-pin .093" cable connector. You can cut this off and solder your own wires if you like, or you can buy a matching connector. The matching connector is available from pinball vendors and from electronics companies like Mouser:
 

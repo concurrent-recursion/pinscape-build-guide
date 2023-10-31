@@ -1,3 +1,4 @@
+[#crimpPins]
 = Crimp Pins
 
 A crimp pin housing is a connector that you build yourself, by crimping hookup wires to individual metal pins, and then inserting the pins into the housing. The housing is essentially a plastic shell, with sockets that the pins lock into.

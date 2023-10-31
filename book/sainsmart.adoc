@@ -18,7 +18,7 @@ WARNING: there seem to be some no-brand relay boards out there that look very mu
 When you go shopping for these boards, be aware that SainSmart sells two completely different kinds of relay boards: USB and non-USB.
 
 * The USB type has a USB port for connecting to the PC. This is the type we're talking about in this chapter, and it's the type you should buy if you _don't_ want to have to combine it with a separate device like an LedWiz.
-* The non-USB type doesn't have any ports for connecting to a PC. Instead, it's designed to be used with a microcontroller device like an Arduino, so it has individual control terminals for the relays that the Arduino connects to. Don't buy this type if you're looking for something standalone. However, this type _can_ be used as a booster for the LedWiz (more about that in xref:ledwiz.adoc[LedWiz Setup] ).
+* The non-USB type doesn't have any ports for connecting to a PC. Instead, it's designed to be used with a microcontroller device like an Arduino, so it has individual control terminals for the relays that the Arduino connects to. Don't buy this type if you're looking for something standalone. However, this type _can_ be used as a booster for the LedWiz (more about that in xref:ledwiz.adoc#ledwizSetup[LedWiz Setup] ).
 
 == Connecting to the PC
 
@@ -28,7 +28,7 @@ First, connect the board's power terminals to your PC's power supply, as shown i
 
 image::images/SainSmartPower.png[""]
 
-For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc[Power Supplies for Feedback] .
+For more on connecting power wires to the PC power supply, including how to build your own connectors, see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
 
 Second, connect the relay board to the PC via USB. Plug a USB cable into the connector on the board, and plug the other end into an available USB port on your PC/motherboard.
 
@@ -58,15 +58,15 @@ image::images/SainSmartBasicWiring.png[""]
 
 Follow this same plan for any type of feedback device. If the device you're connecting has specifically marked "+" and "-" terminals, be sure to connect the "-" terminal on the device to the "-" connection on the power supply.
 
-Some types of devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc[Coil Diodes] ), and many types of LEDs require current-limiting resistors (see xref:flashers.adoc[Flashers and Strobes] ). We go into much more detail about many of the popular pin cab devices in xref:feedbackSect.adoc[Feedback Devices] .
+Some types of devices have special requirements beyond the basic diagram shown above. For example, anything with a coil needs a diode (see xref:diodes.adoc#coilDiodes[Coil Diodes] ), and many types of LEDs require current-limiting resistors (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ). We go into much more detail about many of the popular pin cab devices in xref:feedbackSect.adoc[Feedback Devices] .
 
 === Should I wire (+) or (-) to the relay?
 
 In the diagram above, we showed the wiring with the (+) connection from the power supply going to the relay switch, and the (-) connection going directly to the feedback device.
 
-If you look at the "general purpose" wiring diagram for other controllers in xref:feedbackWiring.adoc[Feedback Device Wiring] , though, you'll see the opposite setup, with the (-) connection going to the controller port, and the (+) power supply connection going directly to the feedback device. We show the same polarity in our diagrams for the individual device types as well.
+If you look at the "general purpose" wiring diagram for other controllers in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , though, you'll see the opposite setup, with the (-) connection going to the controller port, and the (+) power supply connection going directly to the feedback device. We show the same polarity in our diagrams for the individual device types as well.
 
-So why did we show this as different for Sainsmart? It turns out that you can do it either way with Sainsmart boards. For the solid-state boards, you _must_ use the polarity shown in xref:feedbackWiring.adoc[Feedback Device Wiring] , because the solid-state boards use transistors, which only allow current to flow in one direction. The Sainsmart uses mechanical relay switches, though, which don't care about the direction of the current. That makes them more flexible, letting you hook up the power wiring in either direction.
+So why did we show this as different for Sainsmart? It turns out that you can do it either way with Sainsmart boards. For the solid-state boards, you _must_ use the polarity shown in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , because the solid-state boards use transistors, which only allow current to flow in one direction. The Sainsmart uses mechanical relay switches, though, which don't care about the direction of the current. That makes them more flexible, letting you hook up the power wiring in either direction.
 
 I know that I'm creating a little confusion here by showing it both ways, but there's actually a reason for it. Maybe not a good enough reason to justify the confusion, but a reason nonetheless. Specifically, given the choice of polarities that we get with the Sainsmart, I'd rather put the relay switch on the positive side of the circuit, because it's safer. When you put the switch on the positive side, as shown in the diagram above, the power supply wiring to the device itself is "dead" when the device is off - there's no voltage going to it. That eliminates any shock risk if you should accidentally touch any of the wires to the device. When you wire things the other way, as we must do for the solid-state controllers, the positive wire is always "live", even when the device is off, so it always runs the risk of shock. For 12V or even 24V devices, the voltage in the live wire isn't that dangerous, but it really is a safety hazard for a 50V device like a knocker coil.
 
@@ -80,7 +80,7 @@ Here's the basic wiring plan:
 
 image::images/sainsmart-diode.png[""]
 
-See xref:diodes.adoc[Coil Diodes] for details on what type of diodes to use and more details about how to install them.
+See xref:diodes.adoc#coilDiodes[Coil Diodes] for details on what type of diodes to use and more details about how to install them.
 
 Diodes are critical! Failing to include one where needed can result in damage to your computer motherboard, power supplies, or other equipment in your pin cab.
 
@@ -92,7 +92,7 @@ I've seen a lot of reports on the forums from pin cab builders using Sainsmart u
 
 The most common symptom is probably USB trouble, such as the Sainsmart or some other USB device suddenly disconnecting at random. This can be followed by the device re-connecting by itself after a few seconds, or the device might simply stay disconnected until you manually unplug it and plug it back in. Other symptoms include random keyboard input, random feedback device activation (lights flashing randomly or solenoids firing randomly), or the PC suddenly rebooting.
 
-If you're having any of these symptoms, the first thing to check is that all of your mechanical feedback devices are equipped with diodes. See xref:diodes.adoc[Coil Diodes] . Devices like solenoids, contactors, and motors cause electrical interference on the power wiring, which can usually be suppressed sufficiently by properly installing a diode on each device's power connection. The Sainsmart relays themselves have the same issue, since they use magnetic coils, but you don't usually have to worry about those because most of the boards come with suitable diodes integrated into the design. Even so, you should check to make sure that your boards do in fact include a diode for each relay, and if not, you'll need to add one.
+If you're having any of these symptoms, the first thing to check is that all of your mechanical feedback devices are equipped with diodes. See xref:diodes.adoc#coilDiodes[Coil Diodes] . Devices like solenoids, contactors, and motors cause electrical interference on the power wiring, which can usually be suppressed sufficiently by properly installing a diode on each device's power connection. The Sainsmart relays themselves have the same issue, since they use magnetic coils, but you don't usually have to worry about those because most of the boards come with suitable diodes integrated into the design. Even so, you should check to make sure that your boards do in fact include a diode for each relay, and if not, you'll need to add one.
 
 The second thing to try (after ensuring all necessary diodes are installed) is to add a small capacitor on each Sainsmart relay switch. Mechanical switches create their own kind of electrical noise (called "bounce") during the brief instant when the contacts come together or separate. This can be significant when a relay switch controls a high-current device like a coil, motor, or large LED. You can mitigate this by adding a small capacitor across the switch contacts.
 

@@ -29,7 +29,7 @@ The quick solution is to go to the top of the Settings page in the Config Tool, 
 If that doesn't fix it, you might have a wiring problem or some other configuration issue. For help, see:
 
 * "Button inputs" in xref:expanDebug.adoc#debugButtonInputs[Debugging the Expansion Boards]
-*  xref:buttons.adoc[Pinscape Button Inputs]
+*  xref:buttons.adoc#pinscapeButtonInputs[Pinscape Button Inputs]
 
 [#usbDisconnects]
 == USB devices disconnect or reset
@@ -58,9 +58,9 @@ Symptom: Pinscape (or another USB device) disconnects from USB every time your t
 
 The most likely cause is electrical interference, caused by voltage spikes from those high-power solenoid or motor devices. Computers and logic devices like Pinscape are sensitive to tiny changes in voltage, so it's inherently difficult to combine logic devices and high-power solenoid devices in a single system the way we do in a pin cab. But there are some well-established ways of "filtering" the electrical noise so that the logic circuits won't go haywire.
 
-*  *Diodes:* The #1 cause of electrical interference in virtual pin cabs is the "flyback" voltage that coils and motors produce when they switch off. So the first thing to do is make absolutely sure that you have diodes properly installed in all of your inductive devices: motors, solenoids, contactors, relays, replay knockers, chime coils, bells. You need diodes for everything like this, even small relays used for switching. Read xref:diodes.adoc[Coil Diodes] if you haven't already installed diodes on everything that needs them. If you have already installed them, it might be worth checking that they're all connected properly and that none of them have come loose. It's best if they're permanently soldered into the wiring so that you can't accidentally disconnect them.
+*  *Diodes:* The #1 cause of electrical interference in virtual pin cabs is the "flyback" voltage that coils and motors produce when they switch off. So the first thing to do is make absolutely sure that you have diodes properly installed in all of your inductive devices: motors, solenoids, contactors, relays, replay knockers, chime coils, bells. You need diodes for everything like this, even small relays used for switching. Read xref:diodes.adoc#coilDiodes[Coil Diodes] if you haven't already installed diodes on everything that needs them. If you have already installed them, it might be worth checking that they're all connected properly and that none of them have come loose. It's best if they're permanently soldered into the wiring so that you can't accidentally disconnect them.
 *  *Separate power supplies:* It's best to not to connect any feedback devices to your PC power supply. Use a separate power supply for feedback devices instead.
-*  *Make sure power supply grounds are interconnected:* See xref:powerSupplies.adoc[Power Supplies for Feedback] for details. Double-check that the ground connections between the power supplies are all solid - check for any wires that might have come loose or might not be firmly connected.
+*  *Make sure power supply grounds are interconnected:* See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for details. Double-check that the ground connections between the power supplies are all solid - check for any wires that might have come loose or might not be firmly connected.
 *  *Add a small capacitor (for solenoids):* If the problem seems to be coming from a particular solenoid, relay, contactor, or other solenoid-like device, and you're sure the diode is installed correctly and solidly connected, try adding a small disc capacitor, perhaps 0.1µF. Use a disc capacitor, not electrolytic; these are unpolarized, so you don't have to worry about which direction it goes. Connect it exactly the same way as the diode, across the input leads to the solenoid. Leave the diode in place as well, of course. (So the diode and capacitor will be "in parallel" with each other, if you know that electrical term.)
 *  *Add a motor EMI filter:* Motors generate their own unique kind of electrical interference in addition to the flyback voltage. This isn't commonly needed in a virtual pin cab, but it might be worth a try if nothing else helps: add a pair of small inductors, also known as chokes, in series with the motor. Place the first one in series with the positive voltage power connection to the motor, and the second in series with the connection to the feedback device controller. Try 4.7 µH inductors, with an amperage rating higher than the motor's actual amperage. (µH stands for micro-Henry, a measure of inductance.) Here's an example:
 
@@ -164,24 +164,19 @@ Here's the procedure:
 
 * Disconnect all of your Pinscape devices
 * Open RegEdit
-* Navigate to this key:
-
-HKEY_CURRENT_USER\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput
-
+* Navigate to this key: `HKEY_CURRENT_USER\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\DirectInput`
 * Find all of the sub-keys that look like one of these ("xxxx" can be any sequence of four letters or digits):
-
-VID_FAFA&PID_xxxx +VID_1209&PID_EAEA
-
-* Open each matching key, and delete its *Calibration* subkey
+`VID_FAFA&PID_xxxx +VID_1209&PID_EAEA`
+* Open each matching key, and delete its `Calibration` subkey
 * Exit RegEdit
 
 Plug the Pinscape device back in and check again in the joystick control panel. It will hopefully show the correct controls now. If not, try the whole process again with "Run as Administrator" (if you didn't already). If even that doesn't work, try the whole thing again, and reboot the computer after exiting RegEdit. Rebooting really shouldn't be necessary, but sometimes things stick in Windows caches until you do, so try it as a last resort.
 
 Here's a little background information, in case you're wondering what those VID/PID keys are and why you're looking for these particular ones.
 
-The *VID_xxxx&PID_xxxx* keys are tied to the device's USB ID, which is something you can select in the Config Tool. Most people leave it with the default setting, which uses an LedWiz-compatible USB ID, which appears in the registry with the *VID_FAFA* prefix mentioned above. So that's the most common thing to look for. You'll only see the *VID_1209* key if you intentionally changed the USB ID to use the non-LedWiz "Pinscape" USB code instead. (The Config Tool also allows you to select a completely custom code, but that's not something you'd do in normal use - it's really only for people who want to repurpose the firmware code for something other than virtual pinball. But on the off chance that you are using a completely custom USB ID, then you'd have to look for a VID_xxxx&PID_xxxx key matching your custom ID, instead of one of the standard ones listed above.)
+The `VID_xxxx&PID_xxxx` keys are tied to the device's USB ID, which is something you can select in the Config Tool. Most people leave it with the default setting, which uses an LedWiz-compatible USB ID, which appears in the registry with the `VID_FAFA` prefix mentioned above. So that's the most common thing to look for. You'll only see the `VID_1209` key if you intentionally changed the USB ID to use the non-LedWiz "Pinscape" USB code instead. (The Config Tool also allows you to select a completely custom code, but that's not something you'd do in normal use - it's really only for people who want to repurpose the firmware code for something other than virtual pinball. But on the off chance that you are using a completely custom USB ID, then you'd have to look for a `VID_xxxx&PID_xxxx` key matching your custom ID, instead of one of the standard ones listed above.)
 
-You'll probably see a bunch of other VID_xxxx&PID_xxxx entries in your registry as well. Those are for other, unrelated devices, such as other joysticks or gamepads. You can ignore those for the purposes of this procedure.
+You'll probably see a bunch of other `VID_xxxx&PID_xxxx` entries in your registry as well. Those are for other, unrelated devices, such as other joysticks or gamepads. You can ignore those for the purposes of this procedure.
 
 The *Calibration* subkeys that we're deleting come from the DirectInput subsystem, which caches a bunch of information about gaming devices when they're first plugged in. This information comes from the device itself, so basically, Windows is asking the device about itself and then storing (in the registry) its own copy of the information. The point is to avoid having to repeat the data exchange every time you reboot Windows, to speed up reboots. It's fine when everything works perfectly, but it can cause problems if the initial information exchange has any sort of USB communications glitch. If anything gets garbled in the initial exchange, Windows just goes ahead and stores the garbled data, and never bothers to check again to see if a correction is necessary. I personally think this is a bad design on Microsoft's part, since USB errors are common enough that the initial exchange actually does get garbled once in a while. The "wrong number of buttons" or "wrong number of axes" problem is exactly how this manifests - Windows ran into an error when first interrogating the device, and then made the erroneous information permanent by storing it in the registry. The procedure we're doing here simply deletes the cached information and forces Windows to interrogate the device again the next time you plug it in. With luck, the data exchange process won't run into any errors on the new attempt, and Windows will store the correct information.
 
@@ -209,7 +204,7 @@ Third, you might simply try cleaning the contact points. This is necessary from 
 [#nudgeDoesntWork]
 == Nudging doesn't work in VP
 
-Symptom: nudging isn't working at all in Visual Pinball. There's no effect on the ball when I give the cabinet a good nudge.
+Symptom: Nudging isn't working at all in Visual Pinball. There's no effect on the ball when I give the cabinet a good nudge.
 
 This is mostly likely a problem in the VP configuration.
 

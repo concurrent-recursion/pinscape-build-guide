@@ -2,7 +2,7 @@
 
 This section is a quick reference to the woodworking procedure to construct the main cabinet shell, based on the Williams/Bally standard-width cabinets of the 1990s (which is also used more or less unchanged by most newer commercial machines). The plan here includes plywood cutting dimensions and locations for drills, cutouts, and routed grooves, and it's organized into a step-by-step procedure that you can follow.
 
-This is the same plan that's laid out in xref:cabBody.adoc[Cabinet Body] , but it's distilled here to just the essential checklist steps, arranged into an efficient order of execution. The order of steps makes sure that dependencies are done by the time you need them, and groups operations that use similar tool setups, as much as possible, to minimize the time you have to spend changing drill bits and so forth. The goal is that you can just go down this list while doing the woodworking and carry out the steps in order. To keep it concise, there's not much explanation here, so I've provided links at each step to the more detailed corresponding material in the main Cabinet Body chapter.
+This is the same plan that's laid out in xref:cabBody.adoc#cabinetBody[Cabinet Body] , but it's distilled here to just the essential checklist steps, arranged into an efficient order of execution. The order of steps makes sure that dependencies are done by the time you need them, and groups operations that use similar tool setups, as much as possible, to minimize the time you have to spend changing drill bits and so forth. The goal is that you can just go down this list while doing the woodworking and carry out the steps in order. To keep it concise, there's not much explanation here, so I've provided links at each step to the more detailed corresponding material in the main Cabinet Body chapter.
 
 This plan is primarily for virtual cab builders, but it can also be used to build replacement cabs for WPC-era machines and later System 11 machines, with some small variations. I've tried to point out in the text where changes are needed for replica cabs.
 
@@ -10,8 +10,8 @@ This plan is primarily for virtual cab builders, but it can also be used to buil
 
 The plans below don't specify the type of corner joins to use for the main cabinet, so they don't include any routing for those joins. You can do the joinery a number of different ways, each with its own advantages, so that's left to your discretion. However, the measurements assume that all of the pieces extend all the way to the corners of the finished cabinet, which is only true when you're using one of the mitered joins (such as a simple 45° miter, a locking miter, or a mitered rabbet). If you're using non-mitered joins, such as butt or rabbet joins, you'll have to adjust the measurements for the pieces that don't extend all the way to the finished corners. References:
 
-*  xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way] - this is the join used in the original WPC cabinets
-*  xref:lockMiterII.adoc[Lock Miter II: The Special Router Bit Way]
+*  xref:lockMiterI.adoc#lockMiter1[Lock Miter I: The Plywood-Friendly Way] - this is the join used in the original WPC cabinets
+*  xref:lockMiterII.adoc#lockMiter2[Lock Miter II: The Special Router Bit Way]
 *  xref:cabBody.adoc#cabJoinery[Cab Body - Joinery]
 
 The backbox plans do include specific joinery routing, which is based on locking rabbet joins.
@@ -43,7 +43,7 @@ I just write all of this directly on each piece with a pencil.
 
 == Cut the panels
 
-Reference: xref:plywoodCuttingPlans.adoc[Plywood Cutting Plans for Cabinet Construction]
+Reference: xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction]
 
 NOTE: There are other ways to divvy up the plywood, but for the sake of brevity, we're assuming the "grouped by size" layout here. See the chapter reference above for other layouts.
 
@@ -126,7 +126,7 @@ References:
 
 *  xref:cabBody.adoc#cashboxFence[Cab Body - Cashbox fence]
 *  xref:cabBody.adoc#legBoltBraces[Cab Bod - Leg bolt braces]
-*  xref:cornerBraceCutting.adoc[How to Make Corner Braces (and other wood prism shapes)]
+*  xref:cornerBraceCutting.adoc#howToMakeCornerBrances[How to Make Corner Braces (and other wood prism shapes)]
 
 == Route the top glass guide slots
 
@@ -151,8 +151,8 @@ Route or cut the grooves and miters for your selected style of corner joins for 
 References:
 
 *  xref:cabBody.adoc#cabJoinery[Cabinet Body - Joinery]
-*  xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way]
-*  xref:lockMiterII.adoc[Lock Miter II: The Special Router Bit Way]
+*  xref:lockMiterI.adoc#lockMiter1[Lock Miter I: The Plywood-Friendly Way]
+*  xref:lockMiterII.adoc#lockMiter2[Lock Miter II: The Special Router Bit Way]
 
 == Route floor dados
 

@@ -1,4 +1,0 @@
-This section has been split into two for easier reference access:
-
-* xref:psOutputsExp.adoc[Pinscape Outputs Setup (Expansion Boards)]
-* xref:psOutputsStandalone.adoc[Pinscape Outputs Setup (Standalone KL25Z)]

@@ -58,7 +58,7 @@ Here are the steps to install VP (both versions 9 and 10) with the VP Installer:
 * Click the Download button and follow the instructions to download the file. If you see several version options, pick the one with the highest number, since it should be the latest. You might need to create an account and log in before you can start the download.
 * Unzip the downloaded file into a temporary folder on your hard disk.
 * Double-click the Setup program.
-*  *Important:* when the program asks for a destination folder, use a folder in your hard disk's root folder, such as *C:\Visual Pinball* .
+*  *Important:* when the program asks for a destination folder, use a folder in your hard disk's root folder, such as `C:\Visual Pinball` .
 
 You can use a folder different name, but *don't* use anything within the Windows "Program Files" folder tree. Yes, that's the _normal_ location for installing programs, but don't use it for VP. You'll create huge headaches for yourself if you do. The issue is that some VP components need to write files to their own install folders, and Windows has security restrictions against programs writing within the Program Files tree. The simple solution is to install VP somewhere else.
 

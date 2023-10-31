@@ -1,3 +1,4 @@
+[#cabinetPartsList]
 = Cabinet Parts List
 
 When I built my cabinet, one of the unexpectedly big jobs was just figuring out what I needed to buy. This chapter is an attempt to save you some of that legwork by presenting a master list of everything that goes into a virtual pinball machine. The list is organized into categories to make it easier to digest and easier to find things.
@@ -68,7 +69,7 @@ The "\#" diameter units are used in the American system for sizes less than 1/4"
 
 |===
 
-Every hardware manufacturer and hardware store uses these standard units to label their parts. \#6 always means the same thing in a machine screw no matter where you buy it.
+Every hardware manufacturer and hardware store uses these standard units to label their parts. #6 always means the same thing in a machine screw no matter where you buy it.
 
 NOTE: M6 and \#6 are different sizes, and can't be used together. This can be confusing because the "M" sizes and "#" sizes happen to look very close to each other when you eyeball them, but they're not close enough to actually mix and match parts.
 
@@ -197,7 +198,7 @@ Cabinet wood shell
 |Item|Description|Quantity
 
 |Hardwood plywood, ¾", 4'x8' sheet
-|If you're doing your own woodworking from scratch, I recommend using a furniture-quality hardwood plywood for all of the cabinet pieces. This is what they used on the real machines. The ¾" thickness is important for making the accessories fit properly. Some people use particle board or melamine, which are cheaper, but I prefer plywood. MDO plywood (a hybrid sheet product with a plywood core and an MDF veneer) is an excellent alternative if you can find it. It combines plywood's superior strength with the perfectly smooth surface finish of MDF, so there's essentially no prep work needed for paint or decals. It's possible to make do with a single 4'x8' sheet, but it's easier with two sheets. See xref:plywoodCuttingPlans.adoc[Plywood Cutting Plans for Cabinet Construction] .
+|If you're doing your own woodworking from scratch, I recommend using a furniture-quality hardwood plywood for all of the cabinet pieces. This is what they used on the real machines. The ¾" thickness is important for making the accessories fit properly. Some people use particle board or melamine, which are cheaper, but I prefer plywood. MDO plywood (a hybrid sheet product with a plywood core and an MDF veneer) is an excellent alternative if you can find it. It combines plywood's superior strength with the perfectly smooth surface finish of MDF, so there's essentially no prep work needed for paint or decals. It's possible to make do with a single 4'x8' sheet, but it's easier with two sheets. See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] .
 |1 or 2
 
 |Plywood, ½", 4'x8' sheet
@@ -211,7 +212,7 @@ Cabinet wood shell
 
 Cabinet artwork
 
-Most cab builders opt for decals printed with custom artwork. You can create your own artwork with a computer graphics program. Decals are popular because they can make your cab look just like a real machine - done properly, they make for a very professional finish. Some people prefer a simple black paint job or natural wood finish, and some go with stenciled paint decoration for a more vintage look (like machines from the 1960s or 1970s). See xref:cabArt.adoc[Cabinet Art] for ideas and resources.
+Most cab builders opt for decals printed with custom artwork. You can create your own artwork with a computer graphics program. Decals are popular because they can make your cab look just like a real machine - done properly, they make for a very professional finish. Some people prefer a simple black paint job or natural wood finish, and some go with stenciled paint decoration for a more vintage look (like machines from the 1960s or 1970s). See xref:cabArt.adoc#cabinetArt[Cabinet Art] for ideas and resources.
 [cols="1,3,1"]
 |===
 |Item|Description|Quantity
@@ -652,7 +653,7 @@ Power line input
 
 Buttons
 
-This is a list of the most common buttons needed for a virtual cab. Many cabs have extra buttons beyond these. See xref:cabButtons.adoc[Cabinet Buttons] for specific products to buy and a more comprehensive list of optional buttons.
+This is a list of the most common buttons needed for a virtual cab. Many cabs have extra buttons beyond these. See xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] for specific products to buy and a more comprehensive list of optional buttons.
 
 Some buttons have light bulbs inside. You can hard-wire these to be always lighted, but most people want the software to be able to control them so that they turn on and off at appropriate times during game play. To do this, you have to treat the lights as _output_ devices, meaning the lights have to be connected to a separate output controller. The button controller only handles the switch part of the button. See xref:feedbackDevices.adoc[Feedback Devices Overview] for more on this.
 
@@ -779,6 +780,7 @@ Everything in this section is optional, applying only if you want to include fee
 
 |Output controller
 a|USB device that receives commands from the pinball software on the PC and switches lights, solenoids, and motors on and off. Options:
+
 * LedWiz
 * PacLed
 * Pinscape Controller

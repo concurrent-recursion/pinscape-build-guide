@@ -30,7 +30,7 @@ The tilt bob is the standard on modern machines, but if you look at older machin
 
 In addition to the tilt bob, most real machines also have something called a "slam tilt" switch. This is a weighted leaf switch inside the coin door, which can be set off by sudden forward accelerations, such as someone kicking the front of the machine. It's really more of a "slam" detector than a "tilt" detector; you wouldn't set one off with any amount of nudging. The real machines include them mostly to deter excessive abuse by frustrated players.
 
-I personally wouldn't go out of my way to include a slam tilt switch on a virtual cabinet, but if you install a real coin door, it'll probably have one built-in. Visual Pinball and PinMAME have support for this switch as an input, so you can attach it if you wish. See xref:coinDoor.adoc[Coin Door] for more on that.
+I personally wouldn't go out of my way to include a slam tilt switch on a virtual cabinet, but if you install a real coin door, it'll probably have one built-in. Visual Pinball and PinMAME have support for this switch as an input, so you can attach it if you wish. See xref:coinDoor.adoc#coinDoor[Coin Door] for more on that.
 
 == Virtual nudging, part 1: the sensor
 
@@ -66,7 +66,7 @@ There's a third approach that I prefer to either of these, which is to install a
 
 The Pinscape controller software and the commercial plunger kits are programmed to feed their accelerometer readings to VP using exactly this joystick interface. The whole setup is almost entirely plug-and-play with any of these devices. Just plug the device into your PC with a USB cable. Windows and VP should recognize it as a joystick.
 
-The commercial plunger kits come ready to use out of the box. For the Pinscape controller, you'll have to install the Pinscape firmware, described in xref:kl25zSoftwareSetup.adoc[KL25Z Software Setup] .
+The commercial plunger kits come ready to use out of the box. For the Pinscape controller, you'll have to install the Pinscape firmware, described in xref:kl25zSoftwareSetup.adoc#kl25zSoftwareSetup[KL25Z Software Setup] .
 
 For best results, you'll want to attach your device to the floor of your cabinet. The device should be fixed firmly in place, because you want it to move with the cabinet and experience the same accelerations that the cabinet does when the player nudges the machine.
 
@@ -101,23 +101,21 @@ image::images/setUpUsb1.png[""]
 
 WARNING: *DON'T use the "calibration" feature.* Windows calibration isn't suitable for nudge devices; it'll distort the readings and cause erratic behavior in VP. See xref:#doNotCalibrate[below] for more information.
 
-For nudging, the thing to pay attention to is the "X Axis / Y Axis" box with the little "+" inside. The "+" shows the current X/Y axis reading from the joystick, which is where the nudge device reports the accelerometer data.
+For nudging, the thing to pay attention to is the "X Axis / Y Axis" box with the little "\+" inside. The "+" shows the current X/Y axis reading from the joystick, which is where the nudge device reports the accelerometer data.
 
 If you haven't yet installed your device in the cabinet, you can pick up the device and tilt it in different directions. Gravity is a type of acceleration, so as you tilt the device, it should report an acceleration in whichever direction is pointing up. (That sounds backwards, I know. But you can thank Einstein for this bit of disillusionment in the name of science. It turns out that the right way to think about it isn't that gravity is pulling us down, but that the ground is pushing us up. That contradicts our subjective experience of it, I know, but only in the same way that the Earth going around the sun contradicts our subjective experience of that everyday phenomenon.)
 
 If you've already bolted down the device inside your cab, you can test it simply by nudging the cabinet. You should see the "+" dance around when you push the cabinet, and the distance it moves from the center should be proportional to the strength of the push.
 
-Don't worry too much about the particulars of the motion. The important thing is that you can make the "+" move left, right, up, and down in response to tilting the device. Note that many accelerometers are sensitive enough to pick up rather minute vibrations, so you'll probably see the "+" jiggling around a little bit even when you're not nudging the cabinet or tilting the device. As long as it's staying very close to the center, a little random motion is normal. However, the difference between the random motion at rest and the response to a nudge should be large and obvious: you shouldn't be seeing a lot of motion when the device is at rest, just a little random jiggling.
+Don't worry too much about the particulars of the motion. The important thing is that you can make the "\+" move left, right, up, and down in response to tilting the device. Note that many accelerometers are sensitive enough to pick up rather minute vibrations, so you'll probably see the "+" jiggling around a little bit even when you're not nudging the cabinet or tilting the device. As long as it's staying very close to the center, a little random motion is normal. However, the difference between the random motion at rest and the response to a nudge should be large and obvious: you shouldn't be seeing a lot of motion when the device is at rest, just a little random jiggling.
 
 If the "+" is moving around as expected, the accelerometer working, and you can move on to setting up Visual Pinball. If you're not seeing any motion on the X/Y axis display, or the motion doesn't correlate with physical accelerations you apply to the device, something's not working properly. You might need to contact the vendor or ask on one of the forums for help.
 
 
-image::images/HistoryEraserButton.png[""]
-
-Ren tries to impress upon Stimpy the importance of not pressing the joystick calibration button
+image::images/HistoryEraserButton.png[title="Ren tries to impress upon Stimpy the importance of not pressing the joystick calibration button"]
 
 [#doNotCalibrate]
-WARNING: DON'T use Windows calibration!* The Windows joystick setup dialog has a "Calibrate" button, and if you're like most people, clicking it will be all but irresistible. But resist! The Windows calibration is designed for actual joysticks. It's all wrong for nudge devices. If you run the calibration on a nudge device, it will screw up the nudge readings, and you'll see erratic behavior in VP. footnote:footnote-1[*Some technical details on why Windows joystick calibration is bad for accelerometers.* The purpose of the Windows joystick calibration is to normalize the input range of a mechanical joystick so that it matches Windows's internal definition of the range. Joysticks send position data to Windows saying how far left-to-right they are and how far front-to-back they are. The joystick defines the range of those readings in whatever quirky unit system it wants to use. For example, it might say that fully left equals -1000 units and fully right equals +1000 units. But many mechanical joysticks can't actually reach the limits of their defined ranges, simply because the stick hits the physical stops before getting all the way to +/-1000 units. The point of the Windows calibration is to measure the _actual_ range that the mechanal stick can traverse, by asking you to move your joystick to each limit point and observing the reading. Windows then stores those min/max measurements, and applies a correction factor to all subsequent readings so that whatever reading the joystick reported at the maximum position is translated into the nominal -1000/+1000 maximum point of the joystick's desired unit system. This works great with real joysticks, but it's both unnecessary and harmful for accelerometers. It's unnecessary because accelerometers are pre-calibrated to report physically accurate numbers; applying any "correction" factor to a number that's already physically accurate will only make the number less accurate. Windows calibration is actively harmful for accelerometers because it's more or less impossible to give the calibration tool an accurate full-scale reading, which is the key piece of data that the calibration tool collects. There's no good way with an accelerometer to apply a smooth, steady, and accurate full-scale deflection for long enough that the calibration tool can accurately read it. (Well, there is one way: for an accelerometer whose full scale is +/- 1g, you can use the Earth's gravity to apply a 1g acceleration to one axis at a time, but only if you can hold the accelerometer perfectly still, with that particular axis pointing straight up and down.) The resulting bad data that the calibration tool collects will be applied as bad normalization factors to every subsequent reading, which will distort the VP nudge input. The problem is even worse than it appears, because Windows applies the normalization factor separately to the positive and negative side of each axis - so the "corrections" won't only be in accurate, but they'll also be lopsided. That'll make left/right and front/back nudges weirdly asymmetric and non-linear.]
+WARNING: *DON'T use Windows calibration!* The Windows joystick setup dialog has a "Calibrate" button, and if you're like most people, clicking it will be all but irresistible. But resist! The Windows calibration is designed for actual joysticks. It's all wrong for nudge devices. If you run the calibration on a nudge device, it will screw up the nudge readings, and you'll see erratic behavior in VP. footnote:footnote-1[*Some technical details on why Windows joystick calibration is bad for accelerometers.* The purpose of the Windows joystick calibration is to normalize the input range of a mechanical joystick so that it matches Windows's internal definition of the range. Joysticks send position data to Windows saying how far left-to-right they are and how far front-to-back they are. The joystick defines the range of those readings in whatever quirky unit system it wants to use. For example, it might say that fully left equals -1000 units and fully right equals +1000 units. But many mechanical joysticks can't actually reach the limits of their defined ranges, simply because the stick hits the physical stops before getting all the way to +/-1000 units. The point of the Windows calibration is to measure the _actual_ range that the mechanal stick can traverse, by asking you to move your joystick to each limit point and observing the reading. Windows then stores those min/max measurements, and applies a correction factor to all subsequent readings so that whatever reading the joystick reported at the maximum position is translated into the nominal -1000/+1000 maximum point of the joystick's desired unit system. This works great with real joysticks, but it's both unnecessary and harmful for accelerometers. It's unnecessary because accelerometers are pre-calibrated to report physically accurate numbers; applying any "correction" factor to a number that's already physically accurate will only make the number less accurate. Windows calibration is actively harmful for accelerometers because it's more or less impossible to give the calibration tool an accurate full-scale reading, which is the key piece of data that the calibration tool collects. There's no good way with an accelerometer to apply a smooth, steady, and accurate full-scale deflection for long enough that the calibration tool can accurately read it. (Well, there is one way: for an accelerometer whose full scale is +/- 1g, you can use the Earth's gravity to apply a 1g acceleration to one axis at a time, but only if you can hold the accelerometer perfectly still, with that particular axis pointing straight up and down.) The resulting bad data that the calibration tool collects will be applied as bad normalization factors to every subsequent reading, which will distort the VP nudge input. The problem is even worse than it appears, because Windows applies the normalization factor separately to the positive and negative side of each axis - so the "corrections" won't only be in accurate, but they'll also be lopsided. That'll make left/right and front/back nudges weirdly asymmetric and non-linear.]
 
 But don't worry, there's no permanent harm if you did click the button at some point. You can easily undo it. Go to the Settings tab in the joystick dialog (the one pictured above), then click "Reset to default". That'll erase the Windows calibration data.
 
@@ -192,7 +190,7 @@ I don't use this in my own system, so I don't have any details about how to set 
 
 == Installing a real tilt bob
 
-The best option for a tilt bob is to buy a real one from a pinball parts supplier (see xref:resources.adoc[Resources] ). They cost about $10 to $20. You could also fashion one yourself, but the real ones are cheap enough that it's probably not worth the added effort.
+The best option for a tilt bob is to buy a real one from a pinball parts supplier (see xref:resources.adoc#resources[Resources] ). They cost about $10 to $20. You could also fashion one yourself, but the real ones are cheap enough that it's probably not worth the added effort.
 
 On a real machine, the tilt bob is usually installed on the left side wall near the front of the machine. This is the best place for it because the player will primarily be nudging the machine near the front. If you haven't already installed your playfield TV and flipper buttons, be careful to pick a spot that won't get in the way of anything.
 
@@ -204,7 +202,7 @@ Screw terminals (arrows) for connecting switch wires to a standard pinball tilt 
 
 If your key encoder has a pre-programmed port for "tilt" or "T" key, use that. If your encoder is programmable, attach it to any port, and program that port to send the "T" key.
 
-Button wiring is described in more detail in xref:buttons.adoc[Pinscape Button Inputs] .
+Button wiring is described in more detail in xref:buttons.adoc#pinscapeButtonInputs[Pinscape Button Inputs] .
 
 [#VPTiltBobConfig]
 == How to configure VP for a mechanical tilt bob
@@ -226,11 +224,11 @@ Here's how you can fix the shared script to accomplish this:
 * For VP 10.4 and later:
 ** Go to your Visual Pinball program folder
 ** Open the *Scripts* folder you find there
-** Find the file *NudgePlugIn_mjrAccelAndTilt.vbs* , and rename it to *NudgePlugIn.vbs*
+** Find the file `NudgePlugIn_mjrAccelAndTilt.vbs` , and rename it to `NudgePlugIn.vbs`
 * For VP versions before 10.4:
 ** Go to your Visual Pinball program folder
 ** Open the *Tables* folder you find there
-** Download link:http://mjrnet.org/pinscape/downloads/NudgePlugIn.vbs[NudgePlugIn.vbs] and place it in the *Tables* folder (make sure the filename is *NudgePlugIn.vbs* )
+** Download link:http://mjrnet.org/pinscape/downloads/NudgePlugIn.vbs[NudgePlugIn.vbs] and place it in the *Tables* folder (make sure the filename is `NudgePlugIn.vbs` )
 * Double-check your keyboard encoder device setup to make sure that your tilt bob is set to generate *T* key presses
 * In Visual Pinball, go to Settings > Keyboard, and make sure that the keyboard key for "Mech Tilt" is set to "T". That's the default, but it's worth checking that it didn't get changed accidentally.
 
@@ -245,15 +243,27 @@ Whenever you run into an older table that behaves like this, you'll have to do s
 * Open the table in the VP editor
 * Open the script window (View > Script in VP 10, Edit > Script in VP 9)
 * Search for the text "KeyDown". You should find some code that looks something like this:
++
+[source,vb]
+----
+Sub Table1_KeyDown(ByVal keycode)
+  if keycode = 20 Then
+    Nudge 90,2
+    TiltIt
+  end if
+End Sub
+----
 
-Sub Table1_KeyDown(ByVal keycode) if keycode = 20 Then Nudge 90,2 TiltIt end if End Sub
-
-* If you can find code like that with a test for *if keycode = 20 then* or *if keycode = keyBangBack then* , then all you have to do is delete the line that starts with "Nudge".
-* If you can't find a line exactly like that, but you find similar lines with tests like *if keycode = CenterTiltKey* , you should simply add a new block of code like this just after the Sub line:
-
-if keycode = 20 then TiltIt end if
-
-* This is where some sleuthing comes in. You'll have to replace the line that reads "TiltIt" in the example above with whatever the equivalent in the actual script is. Look for the code that handles the similar cases, such *if keycode = CenterTiltKey* , and copy what it does, _except_ that you should omit any lines that start with *Nudge* .
+* If you can find code like that with a test for `if keycode = 20 then` or `if keycode = keyBangBack then` , then all you have to do is delete the line that starts with "Nudge".
+* If you can't find a line exactly like that, but you find similar lines with tests like `if keycode = CenterTiltKey` , you should simply add a new block of code like this just after the Sub line:
++
+[source,vb]
+----
+if keycode = 20 then
+  TiltIt
+end if
+----
+* This is where some sleuthing comes in. You'll have to replace the line that reads "TiltIt" in the example above with whatever the equivalent in the actual script is. Look for the code that handles the similar cases, such `if keycode = CenterTiltKey` , and copy what it does, _except_ that you should omit any lines that start with `Nudge` .
 
 If you can't find code that looks like this, or you can't make enough sense of the code to see how to make these changes, try asking in the forums. Lots of people on the forums are adept at coding these scripts, so someone should be able to help you figure out the necessary changes.
 
@@ -281,24 +291,24 @@ The number in the Tilt Sensitivity setting lets you control how much nudging it 
 
 In the early days of virtual pinball cabinets, it wasn't as easy to find digital accelerometers as it is today. So early cab builders had to resort to other approaches for nudging. There's no reason to think about any of these for a new build: digital accelerometers are simply the right tool for the job, plus they're cheap and easy to use. But for the sake of historical interest, we'll survey the schemes that older cabinet builders used.
 
-*Buttons.* It's not exactly subtle, but one way of telling the machine you want to nudge it is to provide a button that inputs a "nudge" command to the software.
-
+Buttons:: It's not exactly subtle, but one way of telling the machine you want to nudge it is to provide a button that inputs a "nudge" command to the software.
++
 This is a direct carry-over from desktop pinball games, where you nudge by pressing a keyboard key (usually the space bar). Early cabinet builders just ported this idea to the cabinet by including nudge buttons.
-
++
 Button nudging is simple, but it's not very satisfying in a cabinet, because it's not anything like how you play real pinball. So cab builders started looking for ways to detect cabinet motion.
 
-*Mercury switches.* It's not common these days, but at one time there was a popular kind of light switch (the kind on the wall in your house) that had a little capsule of liquid mercury inside. The switch wires stuck into the capsule at one end. Moving the switch lever up would tilt the capsule so that the mercury ran to the end with the wires. Mercury is of course a conductive metal, so when the mercury spilled over the wires, it closed the connection and turned on the light. Moving the switch lever down made the mercury run to the other end, away from the wires, breaking the connection and turning off the light.
-
+Mercury switches:: It's not common these days, but at one time there was a popular kind of light switch (the kind on the wall in your house) that had a little capsule of liquid mercury inside. The switch wires stuck into the capsule at one end. Moving the switch lever up would tilt the capsule so that the mercury ran to the end with the wires. Mercury is of course a conductive metal, so when the mercury spilled over the wires, it closed the connection and turned on the light. Moving the switch lever down made the mercury run to the other end, away from the wires, breaking the connection and turning off the light.
++
 The point of these switches was to be quieter than regular mechanical light switches, since there was nothing inside to go CLICK. But cabinet designers realized they had another use. Because of the flowing mercury inside, you can use them as simple motion detectors. If you position one of these switches with the mercury capsule almost horizontal, with just at a slight tilt, a little push will send the mercury inside sloshing and make a momentary switch connection. If you wire one of these to the nudge key input on the PC, you can simulate a "nudge" key press by giving the cabinet a shove.
-
++
 This approach eliminates the need for pressing buttons, so it acts a bit more like real nudging. But it's still pretty crude in that it can't detect how hard each nudge is. It's purely binary: nudge or no nudge.
 
-*Weighted joysticks.* What we're really after is a way to detect not just when the cabinet is nudged, but how hard the nudge is. One way to do this is to use a joystick as a pendulum: hang the joystick upside down, so that the stick is pointing straight down. Put a weight on the end of the stick to give it some inertia. When you nudge the machine, the inertia of the weight will make the stick want to stay in place, which means that it appears to move in the opposite direction of the nudge, relative to the machine. By reading the joystick position, we can see how far it moves from center, which is a rough analog to the amount of force in the nudge.
-
+Weighted joysticks:: What we're really after is a way to detect not just when the cabinet is nudged, but how hard the nudge is. One way to do this is to use a joystick as a pendulum: hang the joystick upside down, so that the stick is pointing straight down. Put a weight on the end of the stick to give it some inertia. When you nudge the machine, the inertia of the weight will make the stick want to stay in place, which means that it appears to move in the opposite direction of the nudge, relative to the machine. By reading the joystick position, we can see how far it moves from center, which is a rough analog to the amount of force in the nudge.
++
 This gives us the comparative strength of the nudge that we're after, so it's the best idea yet. But it's a fairly complex mechanical system. Most people who set these up find it difficult to get them to behave consistently. It's hard to keep the joystick precisely centered when everything's at rest, and the weight tends to swing back and forth after a nudge, which can generate spurious aftershocks. It's also hard to control the sensitivity, since the spring force and damping friction in the joystick aren't usually adjustable.
 
-*Old video game motion controllers.* The next better approach is to use a motion controller from an old video game. These generally look like joysticks to the PC, and inside they have an electronic accelerometer that senses when the controller is tilted or moved. This is very similar in principle to the weighted joystick, but it's easier to set up mechanically.
-
+Old video game motion controllers:: The next better approach is to use a motion controller from an old video game. These generally look like joysticks to the PC, and inside they have an electronic accelerometer that senses when the controller is tilted or moved. This is very similar in principle to the weighted joystick, but it's easier to set up mechanically.
++
 This approach came closest to the modern accelerometer solution. The downsides are that you had to find an old video game to scavenge, and that the accelerometers in these old controllers weren't very good by modern standards. In addition, many were designed for proprietary video game consoles rather than PCs, so you need additional software to make them emulate joysticks. More software, more problems.
 
 

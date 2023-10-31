@@ -1,3 +1,4 @@
+[#cabinetButtons]
 = Cabinet Buttons
 
 One of the top ten questions that every new cab builder asks on the forums is:
@@ -41,9 +42,9 @@ To help you decide which buttons you need, whichever camp you're in, here's a li
 * image:images/coin-in-button-small.png[""]
 *Coin In:*  _Essential._ No standard location, but commonly either a round pushbutton on the front panel, or repurposing the Coin Reject buttons on the coin door slots. +This button lets you simulate inserting a coin to add credits to the current game. Even though you'll probably be setting most of your games on Free Play via the operator menus, a Coin button is still needed in some cases, since some older tables simply don't have a Free Play option.
 
-If you have a full coin door with coin slots, you don't absolutely need a separate button for this, since you can use actual coins instead, just like in a real arcade machine. Most coin doors don't come with coin mechs installed, so you'll probably have to separately purchase the mechs (about $10 each for US quarter acceptors) and install them yourself. You'll also have to wire the coin slot microswitches to your key encoder, which is just like wiring a button switch. This is all covered in detail in xref:coinDoor.adoc[Coin Door] .
+If you have a full coin door with coin slots, you don't absolutely need a separate button for this, since you can use actual coins instead, just like in a real arcade machine. Most coin doors don't come with coin mechs installed, so you'll probably have to separately purchase the mechs (about $10 each for US quarter acceptors) and install them yourself. You'll also have to wire the coin slot microswitches to your key encoder, which is just like wiring a button switch. This is all covered in detail in xref:coinDoor.adoc#coinDoor[Coin Door] .
 
-Even if you do install and wire physical coin acceptors, you might still want to add a separate Coin In button, since a lot of people find it tedious to feed in quarters once the novelty wears off. The most obvious way to add a Coin In function is to simply add one more round pushbutton to the front panel. If you don't like the added visual clutter of another button, though, there's a neat way to hide it in plain sight. Specifically, you can use the "Reject Coin" buttons in your coin slots as your virtual coin buttons. To do that, you have to add microswitches behind the buttons, as explained in xref:coinDoor.adoc[Coin Door] .
+Even if you do install and wire physical coin acceptors, you might still want to add a separate Coin In button, since a lot of people find it tedious to feed in quarters once the novelty wears off. The most obvious way to add a Coin In function is to simply add one more round pushbutton to the front panel. If you don't like the added visual clutter of another button, though, there's a neat way to hide it in plain sight. Specifically, you can use the "Reject Coin" buttons in your coin slots as your virtual coin buttons. To do that, you have to add microswitches behind the buttons, as explained in xref:coinDoor.adoc#coinDoor[Coin Door] .
 
 My favorite option is to include _both_ the real coin mechanisms _and_ the Reject button switches. That way you can use real coins when you're in the mood for the full arcade experience, and just push the buttons when you're not.
 
@@ -106,7 +107,7 @@ This is related to the tilt bob, but rather than detecting excess motion, it det
 
 I don't find the slam tilt to be all that necessary on a virtual cab, since its main purpose is to deter the sort of extreme abuse that a coin-op machine in a public place can be subjected to. It's unlikely you'd ever trigger it in regular play, even if you're an aggressive nudger. So I wouldn't go out of my way to add this device if your coin door doesn't already have one. But if it's already there, I'd go ahead and wire it up, since VPinMAME does recognize it as a standard input. The WPC doors usually do come with a slam tilt switch; the Stern and SuzoHapp doors don't.
 
-See xref:coinDoor.adoc[Coin Door] for more on wiring a pre-installed slam tilt switch and information about how it's treated in the software.
+See xref:coinDoor.adoc#coinDoor[Coin Door] for more on wiring a pre-installed slam tilt switch and information about how it's treated in the software.
 
 *  *Virtual service buttons:*  _Kinda nice to have._ Inside the coin door. +There are a few miscellaneous "operator" functions specific to virtual pinball that might merit their own buttons inside the coin door, such as engaging night mode, doing a hard reboot of the PC or activating plunger calibration mode. One way to do this is to add your own bank of additional service buttons somewhere inside the coin door. See "Adding an extra service panel" in xref:coinDoor.adoc#customServicePanel[Coin Door] for ideas.
 *  *Flyer, Instructions, Info:*  _For the maximalist only._ Below Start. +Some front ends (game selection menu programs) use keys to select selection certain functions within the UI, such as viewing a game's promotional flyer, viewing its instruction card, or displaying other information about the game. Some cab builders include a bunch of cabinet buttons dedicated to these front-end functions. Functionally, you don't really need a bunch of special buttons for the menu program, since the newer front ends let you access everything through the basic keys. You can include them if you like the aesthetics of lots of buttons, though, and they do give you more options for mapping special functions in tables that had unique extra buttons of their own.
@@ -174,7 +175,7 @@ This becomes a lot easier to grasp if you think about the _switch_ and the _lamp
 
 But then you might wonder: How does the feedback controller know that the lamp goes with the button, and how does the keyboard encoder know that the switch goes with the lamp? Well, they don't. And they don't have to. The key input and the feedback output port are separate entities in the software as well. So you don't have to worry about coordinating between the two physical devices in terms of the wiring; it's all handled in the software.
 
-The switch wiring part is explained in more detail in xref:cabButtonWiring.adoc[Button Wiring] .
+The switch wiring part is explained in more detail in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] .
 
 The lamp wiring part is covered in xref:buttonLamps.adoc[Button Lamps] .
 
@@ -242,7 +243,7 @@ image::images/inside-front-buttons-1.png[""]
 
 Wiring these illuminated buttons is like wiring two completely separate devices: the switch, which you connect to your keyboard encoder; and the lamp, which you connect to your feedback device controller.
 
-For details on wiring the switch to the key encoder, see xref:cabButtonWiring.adoc[Button Wiring] .
+For details on wiring the switch to the key encoder, see xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] .
 
 For how to wire the lamp to the feedback controller, see xref:buttonLamps.adoc[Button Lamps] .
 
@@ -340,7 +341,7 @@ Here's the drilling pattern for these buttons. The small holes above and below t
 
 image::images/launch-ball-button-drill-template.png[""]
 
-For wiring instructions, see xref:cabButtonWiring.adoc[Button Wiring] and xref:buttonLamps.adoc[Button Lamps] .
+For wiring instructions, see xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] and xref:buttonLamps.adoc[Button Lamps] .
 
 The typical keyboard assignment for the Launch Ball button is the "Enter" key.
 
@@ -577,7 +578,7 @@ The standard keyboard assignment for the tilt bob in Visual Pinball is the lette
 
 A slam tilt switch is a leaf switch with a big weight slug attached to the main leaf. This detects excessive jolts to the cabinet via the mechanical inertia of the slug.
 
-WPC coin doors normally have a slam tilt switch pre-installed, so all you have to do is connect its wires to your keyboard controller. See xref:coinDoor.adoc[Coin Door] for details on how to access the pre-installed wiring in the WPC door.
+WPC coin doors normally have a slam tilt switch pre-installed, so all you have to do is connect its wires to your keyboard controller. See xref:coinDoor.adoc#coinDoor[Coin Door] for details on how to access the pre-installed wiring in the WPC door.
 
 image::images/slam-tilt-in-coin-door.png[""]
 

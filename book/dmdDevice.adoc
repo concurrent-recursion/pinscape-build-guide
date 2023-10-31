@@ -1,3 +1,4 @@
+[#selectingDmdDevice]
 = Selecting a DMD Device
 
 Most real pinball machines from the mid 1980s to present use a split backbox setup, with a backglass at the top showing the game's theme artwork, and a separate panel at the bottom containing a scoring display and the audio speakers.

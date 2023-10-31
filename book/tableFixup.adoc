@@ -206,24 +206,28 @@ Fortunately, it's not too hard to fix these when you find them. The procedure is
 
 * Open the table in the VP editor
 * Open the table's script
-* Search for the string "_KeyDown". This should take you to a line that looks like this:
-
+* Search for the string `_KeyDown`. This should take you to a line that looks like this:
++
+[source,vb]
 SubTable_KeyDown(ByVal keycode)
 
-* Note that the "Table_" prefix might be different in the actual table, but the rest should be the same. This is the start of the key handler subroutine. The code we're looking for now is somewhere in this subroutine, which is all of the code up until the next line like this:
-
+* Note that the `Table_` prefix might be different in the actual table, but the rest should be the same. This is the start of the key handler subroutine. The code we're looking for now is somewhere in this subroutine, which is all of the code up until the next line like this:
++
+[source,vb]
 EndSub
 
 * Most people indent the code in this section to make it easier to see that all of the code up to the `End Sub` goes together.
 * At this point, you'll have to read through the code to find the section that handles the coin input. Hopefully, the table author will have put in a comment, or at least used well-named variables. Look for the words "coin", "credit", or maybe something like this:
-
++
+[source,vb]
 Credits = Credits +1
 
 * If you can find the right section, it should be preceded by a test for the key code. That will usually look like one of the following:
-
++
+[source,vb]
 Case6:IfKeyCode =6Then
 
-* The number after "Case" or "Keycode=" might be different. It's usually 6, which is the scan code for the "5" key on the keyboard (confusingly!), since that's what most desktop users expect for the coin-in key. It might also be 4 (the scan code for the "3" key), since that's another common coin-in assignment.
+* The number after `Case` or `Keycode=` might be different. It's usually 6, which is the scan code for the "5" key on the keyboard (confusingly!), since that's what most desktop users expect for the coin-in key. It might also be 4 (the scan code for the "3" key), since that's another common coin-in assignment.
 * If you find that line, change the number to the word `AddCreditKey`
 * Close the script and save the table
 

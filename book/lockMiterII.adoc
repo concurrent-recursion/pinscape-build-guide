@@ -1,10 +1,11 @@
+[#lockMiter2]
 = Lock Miter II: The Special Router Bit Way
 
 image::images/lock-miter-bit.png[""]
 
 A lock miter bit set up in a router table, and a sample piece of 3/4" plywood showing the pattern that the bit cuts in the edge of the wood.
 
-This section covers making a lock miter corner join using a special router bit purpose-built for this join. For an introduction to lock miter joins in general, see the previous section, xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way] , which also describes a different way of making this type of join using just a straight router bit and a table saw.
+This section covers making a lock miter corner join using a special router bit purpose-built for this join. For an introduction to lock miter joins in general, see the previous section, xref:lockMiterI.adoc#lockMiter1[Lock Miter I: The Plywood-Friendly Way] , which also describes a different way of making this type of join using just a straight router bit and a table saw.
 
 I get the impression that practically everyone implementing lock miters these days uses the special bits, rather than the more manual approach of the previous section. It's easy to see why. The router bits only require one pass over each edge, compared with about six separate cuts per corner for the manual method. There's less risk of screwing up one of the steps, or cutting one of them slightly out of alignment, if you only have to make one cut in the first place. But there's a catch - actually, a few catches. One is that the bits are expensive (ranging from about $25 for one that's cheap and priced accordingly, to over $100 for a really nice one). Another catch is that they're notoriously difficult to set up properly. The reputation isn't undeserved; when you read through the setup procedure below, you might start to think that six cutting steps doesn't sound like so much trouble after all. Yet another issue is that lock miter bits don't always perform well with plywood (some people would rephrase that to "they always don't perform well with plywood"). The bits are really designed more for solid wood. They do work with plywood to some extent, but the small tongue-and-groove features don't always hold up well, and the veneer can get chipped up if you don't take some extra precautions (which we'll outline below).
 
@@ -28,7 +29,7 @@ The setup procedure is complex, but there's a pretty reliable recipe for it, and
 
 A lot of woodworkers say no. In fact, the owner of VirtuaPin has mentioned that he doesn't use lock miters for the cabinets he sells because lock miters don't work well enough with the plywood stock he uses. He's undoubtedly talking about the lock miter bit rather than the plywood-friendly method, since that actually does work well with most good-quality plywood.
 
-You might say, "Well, Williams used it, so it must work." It's true that Williams used a lock miter join on their 1990s cabinets, but they didn't do it with the mirror-image bits. If you look closely at their cabinets, you can see that they used the technique described in xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way] instead.
+You might say, "Well, Williams used it, so it must work." It's true that Williams used a lock miter join on their 1990s cabinets, but they didn't do it with the mirror-image bits. If you look closely at their cabinets, you can see that they used the technique described in xref:lockMiterI.adoc#lockMiter1[Lock Miter I: The Plywood-Friendly Way] instead.
 
 My own experiences with the lock miter bit have been mostly successful. I've used it with mid-grade plywood from Home Depot for a few projects, and it works, with some reservations. To illustrate the kind of results I've seen, here are some photos from my "vertical sled" build (which has its own section later in this chapter).
 
@@ -50,21 +51,21 @@ Will you get decent results with the plywood you're using? I can't say for sure,
 
 == Equipment
 
-*Lock miter router bit:* These are available from several manufacturers. They all use the same basic idea of the mirror-image shape and the horizontal/vertical routing process. I use an inexpensive no-brand bit I found on Amazon, and it does an acceptable job.
-
+Lock miter router bit:: These are available from several manufacturers. They all use the same basic idea of the mirror-image shape and the horizontal/vertical routing process. I use an inexpensive no-brand bit I found on Amazon, and it does an acceptable job.
++
 Note that there are also two-piece lock miter bit sets that use complementary bits for each side of the corner rather than a mirror-image pattern. Those require a different setup not covered in this section.
 
-*Setup jig:* Optional, and in my opinion, not all that helpful. If your bit comes with one, go ahead and use it, but I wouldn't go out of my way to buy one separately from the bit. It's too hard to make sure that the jig exactly matches the bit if you have to buy them separately, since different bits have subtly different shapes.
-
+Setup jig:: Optional, and in my opinion, not all that helpful. If your bit comes with one, go ahead and use it, but I wouldn't go out of my way to buy one separately from the bit. It's too hard to make sure that the jig exactly matches the bit if you have to buy them separately, since different bits have subtly different shapes.
++
 The point of the setup jig is to help set the initial height of the bit without having to check it against the board you're cutting. The thing that makes this of dubious utility is that you still have to go through the test-and-adjust procedure described later in this section, since it's so important to calibrate the bit height to the actual plywood you're using. A setup jig helps with the initial height estimate, but that's not the time-consuming part, so it doesn't really save you that much.
 
-*Router and router table:* If you already have a hand router, you can buy a bench-top router table and use it with your hand router. Most of the the bench-top tables are compatible with many routers from many brands, so you can generally mix and match brands. I use a relatively inexpensive table from Skil, which works pretty well. It's not a high-end piece of precision equipment, but it's been good enough for the pin cab joinery I've attempted, including lock mitering.
-
+Router and router table:: If you already have a hand router, you can buy a bench-top router table and use it with your hand router. Most of the the bench-top tables are compatible with many routers from many brands, so you can generally mix and match brands. I use a relatively inexpensive table from Skil, which works pretty well. It's not a high-end piece of precision equipment, but it's been good enough for the pin cab joinery I've attempted, including lock mitering.
++
 I'm afraid I don't know of any way to use lock miter bits with a hand router alone - I think you really need a table for this job.
 
-*Router table fence micro-adjuster:* Optional but really helpful. Provides a way to adjust the fence position in tiny fractions of an inch, to help get the alignment perfect. This is something you can make yourself as a simple DIY project, as described in xref:lockMiterI.adoc#routerFenceMicroAdjuster[Lock Miter I: The Plywood-Friendly Way] .
+Router table fence micro-adjuster:: Optional but really helpful. Provides a way to adjust the fence position in tiny fractions of an inch, to help get the alignment perfect. This is something you can make yourself as a simple DIY project, as described in xref:lockMiterI.adoc#routerFenceMicroAdjuster[Lock Miter I: The Plywood-Friendly Way] .
 
-*Vertical sled:* Optional but really helpful, especially when lock-mitering for a project that involves large pieces (such as a pin cab). This is another DIY project discussed below.
+Vertical sled:: Optional but really helpful, especially when lock-mitering for a project that involves large pieces (such as a pin cab). This is another DIY project discussed below.
 
 == Router bit setup procedure
 

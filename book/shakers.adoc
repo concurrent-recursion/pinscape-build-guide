@@ -182,19 +182,19 @@ Note that the PWM control only works if you're using a PWM-capable output contro
 [#speaker_wiring]
 == Wiring
 
-Follow the general wiring plan for any output device ( xref:feedbackWiring.adoc[Feedback Device Wiring] ). Connect one terminal of the shaker motor to the positive (+) power supply voltage (usually 12V). Connect the other terminal to an available port on your output controller.
+Follow the general wiring plan for any output device ( xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] ). Connect one terminal of the shaker motor to the positive (+) power supply voltage (usually 12V). Connect the other terminal to an available port on your output controller.
 
 image::images/ShakerWiring.png[""]
 
-A diode is required, to protect your output controller and other electronics from interference from the motor's magnetic field. See xref:diodes.adoc[Coil Diodes] . If you're using a pre-built shaker assembly, it might or might not already have a diode installed; if you don't see one, assume there isn't one and add your own.
+A diode is required, to protect your output controller and other electronics from interference from the motor's magnetic field. See xref:diodes.adoc#coilDiodes[Coil Diodes] . If you're using a pre-built shaker assembly, it might or might not already have a diode installed; if you don't see one, assume there isn't one and add your own.
 
 If you're using one of the off-the-shelf Stern shaker kits, and it came with an interface board for a real pinball machine (for example, a Stern SAM connector or a SPIKE connector), you won't need that interface board to use the motor in your virtual cab. Those boards are designed to interface to the specific electronics found in the various Stern machines, so they're not relevant to a virtual cab. We just need the motor itself.
 
-If you're using the Pinscape expansion boards, you can connect the shaker directly to any MOSFET Power Board port. If you're using an LedWiz, don't connect the motor directly, as it will draw too much power for an LedWiz port; you'll need some kind of booster or amplifier circuit. See "Power limits and boosters" in xref:ledwiz.adoc[LedWiz Setup] .
+If you're using the Pinscape expansion boards, you can connect the shaker directly to any MOSFET Power Board port. If you're using an LedWiz, don't connect the motor directly, as it will draw too much power for an LedWiz port; you'll need some kind of booster or amplifier circuit. See "Power limits and boosters" in xref:ledwiz.adoc#ledwizSetup[LedWiz Setup] .
 
 *H-bridges:* If you read through old posts on the forums, you might see people say that you need an "H-bridge" to control a shaker motors. You don't. The idea got embedded at some point in the group consciousness because someone read about it on an Arduino forum and it got repeated a lot. H-bridges are useful if you need to control a motor bidirectionally, which is something that Arduino robotics hobbyists often want, but isn't necessary with a shaker motor. A shaker motor just needs to run in one direction, so you can connect a shaker directly to any feedback device controller port that can handle the motor's power level. If you're using the Pinscape expansion boards, you can run a shaker motor directly from any Power Board port. If you're using an LedWiz, you'll need a power booster circuit, the same as you'd use for any other type of high-power device like a solenoid or coil.
 
-*LedWiz hacks:* You might also see old posts with some really scary LedWiz modifications involving soldering wires to IC pins on the LedWiz board. Ignore those. They're based on that old H-bridge notion. If you're using an LedWiz, you will need some kind of booster circuit, but that's something you can add on externally. There's no need to modify the LedWiz in any way. You just need the same sort of booster circuit you'd need for any other high-power device, as described in xref:ledwiz.adoc#LedWizPowerLimits[Power limits and boosters] in xref:ledwiz.adoc[LedWiz Setup] .
+*LedWiz hacks:* You might also see old posts with some really scary LedWiz modifications involving soldering wires to IC pins on the LedWiz board. Ignore those. They're based on that old H-bridge notion. If you're using an LedWiz, you will need some kind of booster circuit, but that's something you can add on externally. There's no need to modify the LedWiz in any way. You just need the same sort of booster circuit you'd need for any other high-power device, as described in xref:ledwiz.adoc#LedWizPowerLimits[Power limits and boosters] in xref:ledwiz.adoc#ledwizSetup[LedWiz Setup] .
 
 [#shakerElectricalInterference]
 === Electrical interference
@@ -213,7 +213,7 @@ Try a 4.7 µH inductor, with an amperage rating equal to or higher than your mot
 
 Coilcraft DR0608-472L 4.7µH, 5.8A radial inductor - link:https://www.mouser.com/search/ProductDetail.aspx?R=994-DR0608-472L.html[at Mouser]
 
-Inductors aren't polarized, meaning they don't have a special orientation when you install them. It doesn't matter which lead connects to the "+" side and which connects to the "-" side. (The diode, in contrast, has to be installed with its striped side going to the "+" voltage, as shown in the diagram.)
+Inductors aren't polarized, meaning they don't have a special orientation when you install them. It doesn't matter which lead connects to the "\+" side and which connects to the "-" side. (The diode, in contrast, has to be installed with its striped side going to the "+" voltage, as shown in the diagram.)
 
 The inductors shouldn't be necessary on most virtual cabs. I haven't had a need for this with any motors on my machine. But it's something to try if you experience interference problems that seem to coincide with shaker activation. You can also add inductor filtering to any other motor-based devices that cause interference, such as gear motors, fans, and beacons.
 

@@ -1,3 +1,4 @@
+[#selectingPlayfieldTV]
 = Selecting a Playfield TV
 
 For most cab builders, the playfield TV is the most important piece of hardware in the system. A pin cab is, after all, fundamentally a video game. The weight of this importance makes it tough to decide on the perfect TV, but it's even more complicated because of the physical constraints of a pin cab, and the special performance demands of video gaming.

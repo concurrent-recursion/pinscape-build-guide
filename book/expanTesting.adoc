@@ -10,7 +10,7 @@ Before plugging anything into the expansion boards, you should make sure that yo
 
 You can do all of the initial software setup and configuration with the KL25Z on its own, not plugged into the expansion boards.
 
-For initial firmware installation, see xref:kl25zSoftwareSetup.adoc[KL25Z Software Setup] .
+For initial firmware installation, see xref:kl25zSoftwareSetup.adoc#kl25zSoftwareSetup[KL25Z Software Setup] .
 
 To configure the firmware for the expansion boards:
 
@@ -37,7 +37,7 @@ If you buy a set of these on eBay, they'll often come as a sort of "ribbon cable
 
 * Alligator clip cables are also handy, for making temporary test connections to everything else, apart from the 0.1" pin connectors. These aren't a good substitute for the Dupont connectors, though, since it's hard to use them with pin headers; it's too hard to keep the bare metal of the jaws from coming into contact with the pins adjacent to the one you're trying to connect to.
 * A small "bubble" LED - the type that runs on 5V or less and draws about 20mA.
-* A 220Ω resistor to use with the LED. (220Ω should work with any 20mA LED and a 5V supply, but you can find the exact value for your particular resistor using the calculator in xref:ledResistors.adoc[LED Resistors] .)
+* A 220Ω resistor to use with the LED. (220Ω should work with any 20mA LED and a 5V supply, but you can find the exact value for your particular resistor using the calculator in xref:ledResistors.adoc#ledResistors[LED Resistors] .)
 
 We're going to assume you have these items on hand, but feel free to improvise or substitute similar items as you see fit.
 

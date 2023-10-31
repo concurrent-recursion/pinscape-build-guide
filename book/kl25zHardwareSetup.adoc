@@ -6,7 +6,7 @@ If you're going to connect any additional hardware to the KL25Z (plunger, button
 
 image::images/kl25z-header-pads.png[""]
 
-The KL25Z will run happily without the headers installed, so you don't have to do this right now. You can skip ahead to the xref:kl25zSoftwareSetup.adoc[software setup] , and come back here later, if you want to try out the board first.
+The KL25Z will run happily without the headers installed, so you don't have to do this right now. You can skip ahead to the xref:kl25zSoftwareSetup.adoc#kl25zSoftwareSetup[software setup] , and come back here later, if you want to try out the board first.
 
 The specific headers to buy (along with the mating connectors, known as "crimp pin housings") are listed in the "KL25Z Microcontroller (Standalone)" section in xref:partslist.adoc#standaloneBom[Electronic Parts List] . They look like this on their own:
 
@@ -32,7 +32,7 @@ The pin headers are pretty easy to install:
 
 Be sure to solder *all* of the pins. Some people ask if it's okay to just solder a couple of the pins, since that makes a strong enough mechanical connection. It's not; you really do have to solder all of them. The solder is there for the electrical connection between pins and pads, so each pin needs its own solder joint. See xref:pinHeaders.adoc[0.1" Pin Headers] for details.
 
-The mating connectors in the parts list are "crimp pin housings". See xref:crimpPins.adoc[Crimp Pins] for help assembling them. These are ideal for wiring to the KL25Z because they make it easy to connect each pin individually to a separate piece of hookup wire. Each pin has its own unique function - some pins are for button inputs, some are for connecting a plunger sensor, some are for feedback outputs. The individual wiring per pin makes them take a little work to assemble, but it pays off in the long run because it lets you customize the wiring exactly to fit your cabinet.
+The mating connectors in the parts list are "crimp pin housings". See xref:crimpPins.adoc#crimpPins[Crimp Pins] for help assembling them. These are ideal for wiring to the KL25Z because they make it easy to connect each pin individually to a separate piece of hookup wire. Each pin has its own unique function - some pins are for button inputs, some are for connecting a plunger sensor, some are for feedback outputs. The individual wiring per pin makes them take a little work to assemble, but it pays off in the long run because it lets you customize the wiring exactly to fit your cabinet.
 
 === Warning on KL25Z GPIO pins
 
@@ -43,7 +43,7 @@ Never connect any output devices directly to the KL25Z. The KL25Z GPIO pins have
 
 Exceeding these limits can destroy the entire KL25Z, because the GPIO pins are wired directly into CPU core. Applying higher voltage or current levels can overheat the CPU chip and destroy the whole thing.
 
-You _can_ directly wire button inputs to the KL25Z, as long as you follow our wiring plans in xref:buttons.adoc[Pinscape Button Inputs] . You can also connect any of the plunger sensor designed described in this guide, as long as you follow our wiring plans.
+You _can_ directly wire button inputs to the KL25Z, as long as you follow our wiring plans in xref:buttons.adoc#pinscapeButtonInputs[Pinscape Button Inputs] . You can also connect any of the plunger sensor designed described in this guide, as long as you follow our wiring plans.
 
 The main thing that you should never connect directly is any sort of feedback device - flasher LEDs, LED light strips, strobes, button lamps, motors, solenoids, contactors, relays, etc. You always need some sort of "booster" circuit with feedback devices. We provide several options in xref:psOutputsStandalone.adoc[Pinscape Outputs Setup (Standalone KL25Z)] .
 
@@ -59,7 +59,7 @@ Here's how I'd approach the KL25Z wiring:
 * Treat the wires as permanently installed in the cabinet, but treat the things connected to the wire as removable, so use pluggable connectors at the ends of a wire. For the KL25Z, the crimp pin connectors serve. At the other end:
 ** For buttons, use "quick connect" push-on terminals, if possible. The SuzoHapp buttons use 1/4" (6.35mm) quick-connect terminals, compatible with 1/4" female spade connectors.
 ** For connections to other circuit board (such as a MOSFET booster for feedback outputs), use another similar pin header and crimp pin wire housing on that end.
-** For a plunger sensor, I recommend building a xref:plungerBreakout.adoc[plunger sensor breakout board] . That will give you an easy way to plug in any of our plunger sensor types using the standard plugs used on the expansion board. You can alternatively hard-wire the sensor to the KL25Z headers, but that breaks my rule about making everything easily unpluggable, and it'll make things harder if you ever need to remove the sensor for any reason.
+** For a plunger sensor, I recommend building a xref:plungerBreakout.adoc#plungerSensorBreakoutBoard[plunger sensor breakout board] . That will give you an easy way to plug in any of our plunger sensor types using the standard plugs used on the expansion board. You can alternatively hard-wire the sensor to the KL25Z headers, but that breaks my rule about making everything easily unpluggable, and it'll make things harder if you ever need to remove the sensor for any reason.
 
 == KL25Z pin headers for the expansion boards
 

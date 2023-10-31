@@ -150,7 +150,7 @@ image::images/tv-with-apron.png[""]
 
 image::images/tv-at-front.png[""]
 
-In either case, some space at the back is actually nice to have, in that it's a natural place to put a flasher panel (see xref:flashers.adoc[Flashers and Strobes] ) or an LED matrix ( xref:addressableLightStrips.adoc[Addressable Light Strips] ).
+In either case, some space at the back is actually nice to have, in that it's a natural place to put a flasher panel (see xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] ) or an LED matrix ( xref:addressableLightStrips.adoc[Addressable Light Strips] ).
 
 Space at the front can also be functionally useful, because of the potential conflict between the TV and the plunger, as described in "The dreaded plunger space conflict" xref:#plungerTVSpaceConfict[above] . So you might have already decided to set the TV back to make room for the plunger.
 
@@ -547,7 +547,7 @@ Adding a flasher panel at the back is basically the same as adding an apron at t
 
 image::images/tv-platform-flasher.png[""]
 
-See xref:flashers.adoc[Flashers and Strobes] for more on designing and building the flasher panel itself, including the electronics and how to connect it to the software.
+See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for more on designing and building the flasher panel itself, including the electronics and how to connect it to the software.
 
 One extra detail that you have to pay attention to with the flasher panel is clearance with the lip below the backbox shelf. Depending on how your panel is set up, the domes might stick up above the bottom of the lip. If they stick up too far, they might hit the lip when you lift the TV.
 

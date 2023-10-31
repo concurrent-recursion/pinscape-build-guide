@@ -90,7 +90,7 @@ Search on eBay for "12V contactor board". You should be able to find listings th
 
 
 
-WARNING: Be sure that your relay or contactor has a diode installed across the coil. This is important because it protects the 12V power supply and your PC electronics from the voltage spikes caused by the relay's magnetic coil. If you use an eBay contactor board, it'll probably have such a diode pre-installed, but you should visually inspect the board to make sure. If you're using a plain relay or contactor you bought as a separate component, you'll have to install a diode yourself. See xref:diodes.adoc[Coil Diodes] for wiring instructions.
+WARNING: Be sure that your relay or contactor has a diode installed across the coil. This is important because it protects the 12V power supply and your PC electronics from the voltage spikes caused by the relay's magnetic coil. If you use an eBay contactor board, it'll probably have such a diode pre-installed, but you should visually inspect the board to make sure. If you're using a plain relay or contactor you bought as a separate component, you'll have to install a diode yourself. See xref:diodes.adoc#coilDiodes[Coil Diodes] for wiring instructions.
 
 Here's the basic wiring diagram:
 
@@ -264,7 +264,7 @@ Repeat this process for the second lead. Once both are soldered and held securel
 
 Now you just need to connect the newly attached wires to the timer board relay. Attach the wires to the relay *common (COM)* and *normally open (NO)* terminals on the timer board. (If the relay only has two switch terminals, those are the two to use!)
 
-Finally, to power the relay board itself, connect its DC+ and DC- terminals to the appropriate voltage inputs from the *secondary* ATX power supply. For example, if it requires 5V for power, connect its DC+ input to the red +5V wire on the secondary power supply, and connect its DC- input to the black 0V/Ground wire on the secondary power supply. See xref:powerSupplies.adoc[Power Supplies for Feedback] for advice on connecting wires to the power supply.
+Finally, to power the relay board itself, connect its DC+ and DC- terminals to the appropriate voltage inputs from the *secondary* ATX power supply. For example, if it requires 5V for power, connect its DC+ input to the red +5V wire on the secondary power supply, and connect its DC- input to the black 0V/Ground wire on the secondary power supply. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice on connecting wires to the power supply.
 
 Note that you *must* use a secondary ATX power supply to power the timer board ( _not_ the main PC power supply), and the secondary power supply must be plugged into the *switched* power strip. That's key to the whole scheme, because the timer board has to be powered up at the same time as the TV in order for the countdown to start at the same time the TV receives power.
 
@@ -300,7 +300,7 @@ If the TV turns on, try the test a few more times to make sure the timing is rel
 
 *Connect the board:* Once you have wires connected to the TV's On/Off button, connect the other ends of the wires to one of the "K1" relay switches, on the Normally Open side. If you're connecting directly to the relay, connect to pins *4 and 8* or pins *9 and 13* . The relay in the spec is double-pole, meaning that it can switch two separate televisions on at the same time. That's why you have your choice of which relay pins to connect. If you have a second TV that needs the same treatment, you can simply connect it to the other pair of pins. If you use the PCB design, connect the TV wires to JP12 pins *1 and 2* (labeled "TV1" on the board silkscreen) or pins *3 and 4* ("TV2").
 
-*Connect power to the board:* Finally, connect the power inputs to your *secondary* ATX power supply. As with the eBay timer, the scheme is predicated on the timer getting its power through a source that's switched on at the same time as the TV, because the power-on time is the start of the delay timer countdown. If you're building from the schematic, connect VCC to +5V (a red wire) from the ATX supply, and connect GND to ATX ground (a black wire). If you're using the PCB layout, connect an ATX red wire to the JP7 +5V (marked on the silkscreen), and connect a black wire to JP7 GND. See xref:powerSupplies.adoc[Power Supplies for Feedback] for advice on connecting wires to an ATX power supply.
+*Connect power to the board:* Finally, connect the power inputs to your *secondary* ATX power supply. As with the eBay timer, the scheme is predicated on the timer getting its power through a source that's switched on at the same time as the TV, because the power-on time is the start of the delay timer countdown. If you're building from the schematic, connect VCC to +5V (a red wire) from the ATX supply, and connect GND to ATX ground (a black wire). If you're using the PCB layout, connect an ATX red wire to the JP7 +5V (marked on the silkscreen), and connect a black wire to JP7 GND. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice on connecting wires to an ATX power supply.
 
 This circuit design is designed for this single function, so there's no need to "program" it as with the eBay timers. All you have to do is plug it in and it should work.
 

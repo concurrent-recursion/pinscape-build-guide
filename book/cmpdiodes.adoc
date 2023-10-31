@@ -2,7 +2,7 @@
 
 The diode is perhaps the most fundamental semiconductor component. It serves as a one-way valve in a circuit, allowing current to flow in only one direction.
 
-If you've looked at installing any tactile feedback devices for your system, such as solenoids or motors, you've probably already run into one common use of diodes in pin cabs, which is to block the harmful "flyback" current that coils produce when switching off (see xref:diodes.adoc[Coil Diodes] ). Diodes have many other uses as well, such as voltage rectification (converting AC current to DC) in power supplies, and as components in logic circuits.
+If you've looked at installing any tactile feedback devices for your system, such as solenoids or motors, you've probably already run into one common use of diodes in pin cabs, which is to block the harmful "flyback" current that coils produce when switching off (see xref:diodes.adoc#coilDiodes[Coil Diodes] ). Diodes have many other uses as well, such as voltage rectification (converting AC current to DC) in power supplies, and as components in logic circuits.
 
 Physically, a diode typically looks like a small black cylindrical body with wire leads sticking out of each end.
 

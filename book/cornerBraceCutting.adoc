@@ -1,3 +1,4 @@
+[#howToMakeCornerBrances]
 = How to Make Corner Braces (and other wood prism shapes)
 
 If you build a pin cab from scratch, you have to cut two types of wooden "wedge" shapes - or to be more precise, triangular prisms. One is the for the corner braces that sit under the leg bolt brackets:

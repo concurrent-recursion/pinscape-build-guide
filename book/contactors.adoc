@@ -51,7 +51,7 @@ Many other types of contactors are also available from other manufacturers, so t
 
 *Cost:* You _can_ buy these devices new, but you shouldn't: they're $50 and up apiece new. Given the performance tradeoffs, they're not worth the money; if you have that kind of budget, real pinball parts would be a far better investment. So you should instead buy them used on eBay, where they can be found for about $10 apiece. You might have to be patient to find them at a reasonable price, since they seem to be a fairly low-volume item on eBay.
 
-*Power supply:* The Siemens contactors require 24VDC power. That's not available from a computer ATX power supply, so you'll need a separate power dedicated 24V supply. See xref:powerSupplies.adoc[Power Supplies for Feedback] for advice.
+*Power supply:* The Siemens contactors require 24VDC power. That's not available from a computer ATX power supply, so you'll need a separate power dedicated 24V supply. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice.
 
 The Siemens contactors draw about 400mA each. I'd plan on sufficient power for three or four of them to fire simultaneously, so be sure your 24V power supply is rated for at least 2A (equivalent to 48W).
 
@@ -61,7 +61,7 @@ image::images/SiemensContactorWiring.png[""]
 
 Note that most of the terminals on the contactor are left unconnected. The other terminals are all intended to be wired to whatever circuits the contactor is controlling, but in our case, we don't control anything at all with the contactor. It's just there for the sound effect it makes when it switches on and off, so we only connect the terminals that control its coil, typically A1 and A2 on the Siemens devices.
 
-The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
+The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc#coilDiodes[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
 
 *Pros:* The biggest "pro" with contactors is that they're happy to be left in the "on" position indefinitely. That's not at all true of most solenoids: most solenoids will overheat if left on for long periods, and many can only tolerate a couple of seconds at a time. For simulating flippers, the ability to stay on for long periods is critical, because the player could hold the flipper button indefinitely to trap a ball.
 
@@ -88,7 +88,7 @@ Reliability is also a concern. If you think about it, these devices aren't typic
 image::images/StarterSolenoidExample.png[""]
 *What to buy:* The type most often mentioned on the forums is the Ford SW3 type (pictured at right). As with the contactors, numerous other options are available, but this one is a known quantity that other pin cab builders have found to work well.
 
-*Power supply:* Almost every automotive device runs on 12V DC (but as always, check the product documentation or seller page to confirm details for the actual product you buy). You can use the 12V output from your secondary ATX power supply. Note that these devices place a large load on the power supply - about 6A, or 72W - so make sure you have a powerful enough 12V supply, and don't connect them to the same ATX power supply running your computer motherboard. When calculating power needs, take into account that there will be times during normal play when several of the devices fire simultaneously, so multiply the amps/wattage rating by three or four to figure how much total power you might need. See See xref:powerSupplies.adoc[Power Supplies for Feedback] .
+*Power supply:* Almost every automotive device runs on 12V DC (but as always, check the product documentation or seller page to confirm details for the actual product you buy). You can use the 12V output from your secondary ATX power supply. Note that these devices place a large load on the power supply - about 6A, or 72W - so make sure you have a powerful enough 12V supply, and don't connect them to the same ATX power supply running your computer motherboard. When calculating power needs, take into account that there will be times during normal play when several of the devices fire simultaneously, so multiply the amps/wattage rating by three or four to figure how much total power you might need. See See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
 
 *Wiring:* For the Ford SW3 type commonly used, the wiring plan looks like this:
 
@@ -100,7 +100,7 @@ If your solenoid isn't labeled like the Ford type above, you'll have to figure o
 
 Connect +12V from the secondary ATX power supply to the "S" terminal. Wire the mounting bracket to an available port on your output controller.
 
-The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
+The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc#coilDiodes[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
 
 These are high-power devices. Do not connect them directly to an LedWiz output; you'll need some kind of booster circuit or relay with an LedWiz. If you're using Pinscape expansion boards, you can connect these directly to any power board port or chime board port.
 
@@ -142,13 +142,13 @@ I mention all of this because some newer Stern assemblies _don't_ use the dual-c
 
 CAUTION: 50V (or 48V) is a hazardous high voltage that can cause electric shock. With most of the pin cab output controllers (including LedWiz and Pinscape), the controller requires you to wire solenoids so that one terminal is connected directly to the "+" power supply voltage. This means that +50V is always present at one terminal of each coil, _even when the coils are off_ . Real pinball machines have a hard-wired safety interlock switch in the coin door that cuts off all coil power to the playfield when the coin door is opened, to protect an operator from shock hazard while working inside the cabinet. If you install real coils and a 50V supply, I'd strongly recommend using a similar safety interlock. The switch should disable the +50V power supply when the door is open.
 
-*Wiring:* Each coil will have two terminals for the power connections. Connect these following the generic output device wiring plan (see xref:feedbackWiring.adoc[Feedback Device Wiring] ).
+*Wiring:* Each coil will have two terminals for the power connections. Connect these following the generic output device wiring plan (see xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] ).
 
 Many of the flipper, bumper, and kicker assemblies for modern machines include diodes pre-installed on the coils. If a coil is already installed, it should have markings for the "+" and "-" wires. This is often by wire color: red is "+" and black is "-".
 
 image::images/RealPinballCoilWiring.png[""]
 
-If a diode _isn't_ already installed, you must add one. See xref:diodes.adoc[Coil Diodes] . When a diode isn't present, the coil itself will be unpolarized, so the order of the wires doesn't matter. Just be sure that the diode you add is installed with the correct polarity.
+If a diode _isn't_ already installed, you must add one. See xref:diodes.adoc#coilDiodes[Coil Diodes] . When a diode isn't present, the coil itself will be unpolarized, so the order of the wires doesn't matter. Just be sure that the diode you add is installed with the correct polarity.
 
 If you're using an LedWiz, these devices require some kind of booster or amplifier, because they use much more power than an LedWiz can handle. If you're using Pinscape expansion boards, you can connect these to any Power Board or Chime Board port.
 
@@ -189,7 +189,7 @@ stem:["Watts" = "Volts" * "Amps"]
 
 image::images/OpenFrameSolenoidWiring.png[""]
 
-The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
+The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc#coilDiodes[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
 
 *Pros:* Many options are available; infinite customization possibilities.
 
@@ -283,7 +283,7 @@ image::images/flipper-button-opto-to-solenoid.png[""]
 
 If you trace through the circuit, you'll see that the flipper button is wired so that it activates both the contactor and the optocoupler when pressed. Activating the contactor makes it fire, so you'll get the flipper feedback effect whenever you press the button. Activating the optocoupler completes the circuit on the key encoder side, so pressing the button will also send the key press for the flipper button. So whenever you press the button, you'll simultaneously hear the flipper feedback effect and send the key press to the PC. The optocoupler is the key to making both devices work together, because it uses the higher voltage on the solenoid side to control the key encoder side, but it does so without allowing the higher voltage to reach the key encoder side.
 
-The diode is needed to protect the rest of the circuit from the voltage surge effect from the contactor or solenoid. A diode like this is needed for every device with a coil or motor. See xref:diodes.adoc[Coil Diodes] for more details.
+The diode is needed to protect the rest of the circuit from the voltage surge effect from the contactor or solenoid. A diode like this is needed for every device with a coil or motor. See xref:diodes.adoc#coilDiodes[Coil Diodes] for more details.
 
 *Parts selection:* The PC817 optocoupler shown is only an example. Just about any standard optocoupler should work, if there's another type you prefer or that you can find cheaper.
 
@@ -307,7 +307,7 @@ The resistor has to be selected according to the contactor's power supply voltag
 
 |===
 
-If you're using a different optocoupler chip, the required resistor values might vary slightly from the table above, so you should calculate it using an LED resistor calculator. See xref:ledResistors.adoc[LED Resistors] for help with this - that chapter includes an interactive calculator that will figure the right resistance value for you. You'll have to look up the following numbers in the data sheet for your optocoupler, which you can then plug into the calculator in the LED Resistors chapter:
+If you're using a different optocoupler chip, the required resistor values might vary slightly from the table above, so you should calculate it using an LED resistor calculator. See xref:ledResistors.adoc#ledResistors[LED Resistors] for help with this - that chapter includes an interactive calculator that will figure the right resistance value for you. You'll have to look up the following numbers in the data sheet for your optocoupler, which you can then plug into the calculator in the LED Resistors chapter:
 
 * I~F~ , the Forward Current for the optocoupler LED
 * V~F~ , the Forward Voltage (also known as Voltage Drop) for the optocoupler LED

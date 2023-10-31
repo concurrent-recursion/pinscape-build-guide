@@ -1,10 +1,11 @@
+[#pinscapeButtonInputs]
 = Pinscape Button Inputs
 
 Once you have a Pinscape Controller set up, it's pretty straightforward to wire your buttons to it.
 
-We're going to assume you've already picked out which buttons you're going to include and that you've installed them in the cabinet. If you're still in the planning stages, and you're figuring out which button functions you want to include, what products to buy, or how to install the buttons in the cabinet, see xref:cabButtons.adoc[Cabinet Buttons] .
+We're going to assume you've already picked out which buttons you're going to include and that you've installed them in the cabinet. If you're still in the planning stages, and you're figuring out which button functions you want to include, what products to buy, or how to install the buttons in the cabinet, see xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
 
-We discuss button wiring more generally in xref:cabButtonWiring.adoc[Button Wiring] , but that section tries to cover all of the different key encoder options, so it's a little less concrete than this chapter. This chapter tries to give you a quick How To guide specifically for Pinscape Controller button wiring, so it should be a little less work to read through.
+We discuss button wiring more generally in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] , but that section tries to cover all of the different key encoder options, so it's a little less concrete than this chapter. This chapter tries to give you a quick How To guide specifically for Pinscape Controller button wiring, so it should be a little less work to read through.
 
 As with all jobs inside the cab, be sure to do your button wiring work with the power off and the power cord unplugged.
 
@@ -180,7 +181,7 @@ You might notice that one row is missing that second shifted key-cap icon. Namel
 
 == Special handling for the coin door position switch
 
-On a real pinball machine, there's a switch that detects when the coin door is open. Pinball ROMs use this to control access to the operator menus, so I'd recommend including one in your build if you're using a coin door. The xref:coinDoor.adoc[Coin Door chapter] has suggestions for what kind of switch to use and how to mount it.
+On a real pinball machine, there's a switch that detects when the coin door is open. Pinball ROMs use this to control access to the operator menus, so I'd recommend including one in your build if you're using a coin door. The xref:coinDoor.adoc#coinDoor[Coin Door chapter] has suggestions for what kind of switch to use and how to mount it.
 
 Once you have a switch set up, wire its "Common" terminal to the Pinscape button common, and wire its *NC* or *Normally Closed* to a Pinscape button port. Note that this is backwards from most buttons, where you wire the Normally Open terminal. The reason for the reversal is that the geometry of the installation is kind of backwards: when the door is closed, it pushes down on the switch paddle, so the switch is "on". When the door is open, it releases the paddle, so the switch is "off". But we want Closed to read as Off and Open to read as On! The easy way to accomplish this reversal is to use the "other" half of the switch, the Normally Closed side, which reports the opposite status of the Normally Open side.
 

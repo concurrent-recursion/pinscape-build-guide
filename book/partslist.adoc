@@ -1,7 +1,5 @@
+[#electronicPartsList]
 = Electronic Parts List
-
-
-
 
 This section lists all of the electronics needed for each Pinscape Controller subsystem.
 

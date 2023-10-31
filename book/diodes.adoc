@@ -1,3 +1,4 @@
+[#coilDiodes]
 = Coil Diodes
 
 For every mechanical feedback device that you install in your cabinet, you should install a protective diode. This applies to *anything with a magnetic coil* :

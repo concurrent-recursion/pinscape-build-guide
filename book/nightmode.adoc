@@ -23,7 +23,7 @@ There are several ways to switch in and out of Night Mode:
 
 === Controlling Night Mode via Windows commands
 
-Go to the directory where you installed the Pinscape Config Tool, and you'll find another program there called *PinscapeCmd.exe* . This is a utility program that you can invoke from the CMD prompt to send commands to the controller. You can also use it in batch (.BAT) scripts.
+Go to the directory where you installed the Pinscape Config Tool, and you'll find another program there called `PinscapeCmd.exe`. This is a utility program that you can invoke from the CMD prompt to send commands to the controller. You can also use it in batch (.BAT) scripts.
 
 To use the PinscapeCmd program to switch in and out of Night Mode:
 
@@ -34,6 +34,6 @@ To use the PinscapeCmd program to switch in and out of Night Mode:
 
 The capitalization isn't important. We just showed mixed case for clarity.
 
-NOTE: If you have more than one Pinscape controller device installed in your system at the same time, you have to specify which one you want to send the command to, by adding *Unit= _number_ * to the command before the NightMode option:
+NOTE: If you have more than one Pinscape controller device installed in your system at the same time, you have to specify which one you want to send the command to, by adding `Unit= _number_` to the command before the NightMode option:
 `PinscapeCmd Unit=2 NightMode=ON`
 

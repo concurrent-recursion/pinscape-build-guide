@@ -1,9 +1,10 @@
+[#dofSetup]
 = DOF Setup
 :source-highlighter: rouge
 
 One of the best tricks you do with a virtual pin cab is feedback effects: things like flashing lights, shaker motors, fans, solenoids, replay knockers, and bells and chimes.
 
-To connect output devices to your pin cab PC, you need a special hardware device called an output controller. That's described in detail in xref:ioControllers.adoc[I/O Controllers] . Once you have an output controller installed, you have to set up some special software called "DOF", or DirectOutput Framework, that serves as the middle-man between the output controller and the pinball software (such as Visual Pinball). This chapter is all about DOF and how to set it up.
+To connect output devices to your pin cab PC, you need a special hardware device called an output controller.That's described in detail in xref:ioControllers.adoc#ioControllers[I/O Controllers] . Once you have an output controller installed, you have to set up some special software called "DOF", or DirectOutput Framework, that serves as the middle-man between the output controller and the pinball software (such as Visual Pinball).This chapter is all about DOF and how to set it up.
 
 If you're not going to include any feedback devices in your pin cab, you won't need to install DOF at all, so you can skip this section.
 
@@ -43,9 +44,9 @@ Before you install DOF, you must first install Visual Pinball and the B2S Backgl
 
 Once VP, B2S, and PinballX are installed, you're ready to install DOF. You have two options for this: automatic or manual.
 
-In either case, you'll have to choose a folder for the DOF files. I recommend *C:\DirectOutput* , if that's convenient on your system. You can use a different name if you wish, but note the following:
+In either case, you'll have to choose a folder for the DOF files. I recommend `C:\DirectOutput` , if that's convenient on your system. You can use a different name if you wish, but note the following:
 
-*  *Avoid using spaces in the DOF folder name.* A few people have run into problems that were very difficult to isolate, but which seemed to come from using a folder name containing a space character, such as "C:\Direct Output". Even though this _shouldn't_ be a problem, it does seem to cause weird errors on a few machines, so I'd avoid it.
+*  *Avoid using spaces in the DOF folder name.* A few people have run into problems that were very difficult to isolate, but which seemed to come from using a folder name containing a space character, such as `C:\Direct Output`. Even though this _shouldn't_ be a problem, it does seem to cause weird errors on a few machines, so I'd avoid it.
 *  *Try a C: folder if it doesn't work on another drive.* Some people have had problems installing DOF on other drives (like D: or E:). As with the space character issue, it _should_ be just fine to use D: or E: or any other drive, but doing so seems to cause problems on some machines. There are sometimes good reasons to use a disk other than C:, so go ahead and try it if you prefer to keep your programs on a different drive. But if you run into any mysterious problems, try moving it to the C: drive to see if that helps.
 
 === System requirements
@@ -65,7 +66,7 @@ If all goes well with the automatic setup, you can skip all of the "manual setup
 *Troubleshooting:* The automatic setup is usually pretty reliable, but there are a couple of issues that sometimes come up. If you run into any error messages that aren't self-explanatory, try these steps:
 
 * Check that UAC is *enabled* . Some people disable UAC based on advice they find on the Internet. That kind of advice is all badly out-of-date (from the Windows Vista days), but it keeps getting repeated anyway. It's bad advice these days. UAC is an integral part of modern Windows. Disabling it changes some system internals in ways that create headaches.
-* Mysterious permission errors might be due to a special system "owner" of the C:\ root folder, or wherever you're trying to install DOF. You can check the owner as follows:
+* Mysterious permission errors might be due to a special system "owner" of the `C:\` root folder, or wherever you're trying to install DOF. You can check the owner as follows:
 ** Right-click the folder on the desktop
 ** Select Properties from the Context menu
 ** Go to the Security tab
@@ -74,7 +75,7 @@ If all goes well with the automatic setup, you can skip all of the "manual setup
 
 If the owner is SYSTEM or Trusted Installer, the root folder is protected against writing by ordinary user accounts. You can either choose a different parent folder that's not protected like that, or you can run the installer in "Run as Administrator" mode. In the latter case, the new folder will also have a protected system owner when you're done, which will create other problems later. But you can fix that after the install completes, by changing the new folder's owner to match your regular user account:
 
-* Repeat the process above to get to the Owner for C:\DirectOutput
+* Repeat the process above to get to the Owner for `C:\DirectOutput`
 * Click the Change link next to the owner name
 * Type your regular user account name in the box
 * Click Check Names
@@ -88,7 +89,7 @@ If you insist on doing it the hard way, though, here's my recommended manual set
 
 *Note!* To keep things as simple as possible, the instructions below leave out some details that most people don't need. If you want the full story, see the DOF documentation, which you can find via the xref:#DOFManualLinks[DOF documentation links] later in this chapter. In addition, the DOF version we link below isn't the only one available. There are some other modified versions with slightly different extra features available. See xref:#DOFReleaseStatus[release status] for details.
 
-* Create a DirectOutput folder on your PC called *C:\DirectOutput* (or a name of your own choosing, but remember that it must not contain any spaces)
+* Create a DirectOutput folder on your PC called `C:\DirectOutput` (or a name of your own choosing, but remember that it must not contain any spaces)
 * Download the *ZIP file edition* of my link:http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider[Grander Unified DOF R3+]
 * Unzip the contents into your new DirectOutput folder
 * Unblock all of the new DLL and EXE files. For each file in the new folder with a *.dll* or *.exe* suffix, do the following:
@@ -107,7 +108,7 @@ image::images/UnblockDialog.png[""]
 * Open the *Plugins* folder that you just found or created, then:
 ** Right-click in a blank area in the folder window
 ** Click *New* > *Shortcut* in the context menu
-** Type the full path to your Direct Output folder into the box (e.g., *C:\DirectOutput* - this is the folder you created above, at the very beginning of this process)
+** Type the full path to your Direct Output folder into the box (e.g., `C:\DirectOutput` - this is the folder you created above, at the very beginning of this process)
 ** Click the Next button
 ** Type *DirectOutput* for the name
 ** Click the Finish button
@@ -205,7 +206,7 @@ What's a "port number"? Every output controller is a little different, but they 
 
 image::images/LedWizTerminals.png[""]
 
-You connect one device to each screw terminal. For the details of how the wiring is actually connected, see xref:feedbackWiring.adoc[Feedback Device Wiring] , but for our purposes here, let's just think of it like this: each device is connected to one terminal on an output controller.
+You connect one device to each screw terminal. For the details of how the wiring is actually connected, see xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , but for our purposes here, let's just think of it like this: each device is connected to one terminal on an output controller.
 
 You'll notice that there's a number printed next to each terminal on the LedWiz board. Those are the port numbers we mentioned. Every physical wiring terminal has a port number assigned.
 
@@ -259,7 +260,7 @@ Once you enter all of the devices, click Save.
 
 If you're still on the Port Assignments page, you should see a button near the top called Generate Config. Click it. The Config Tool will now create your customized configuration files and download them to your PC as a ZIP file.
 
-Wait for the download to complete. Open the ZIP file. Unzip the contents into your C:\DirectOutput folder (or wherever you installed the DOF files back at the start of this process).
+Wait for the download to complete. Open the ZIP file. Unzip the contents into your `C:\DirectOutput` folder (or wherever you installed the DOF files back at the start of this process).
 
 *Important:* Unpack *all* of the .ini files from the ZIP file generated by the Config Tool, and *don't rename any of them* . Some people get confused by the multiple files and think you're supposed to choose one of them. You're not. You need *all* of them, with the exact names generated. Each file corresponds to one output controller, and the number in the name (if any) tells DOF which controller the file goes with. If you don't unpack all of them, or if you rename any of them, DOF won't work correctly.
 
@@ -443,9 +444,9 @@ First, make sure logging is enabled:
 * In the file open dialog, navigate to your *DirectOutput > config* folder and select the file GlobalConfig_B2SServer.xml. (If you can't find this file, xref:#ManuallyCreateDofGlobalConfigFile[create one as described below] .)
 * Click the Logging tab
 * Check the box "Enable logging"
-* Type *.\DirectOutput.log* into the Log File box
+* Type `.\DirectOutput.log` into the Log File box
 * On the menu at the type, select *File > Save*
-* Select the same file we started with (GlobalConfig_B2SServer.xml) and confirm
+* Select the same file we started with `GlobalConfig_B2SServer.xml` and confirm
 
 DOF will now create a log file called *DirectOutput.log* in your *Visual Pinball > Tables* folder each time you run a game. To test this out:
 
@@ -454,7 +455,7 @@ DOF will now create a log file called *DirectOutput.log* in your *Visual Pinball
 * Run the game (press F5)
 * As soon as the game finishes loading, you can quit ("Q" then "Q") and close VP
 * Open your *Visual Pinball > Tables* folder
-* Look for a file called *DirectOutput.log*
+* Look for a file called `DirectOutput.log`
 * Bring up the file's properties and check its Date Modified: it should be moments ago, since it should have been created or updated during the VP session you just finished
 * This is an ordinary text file, so you can open it in Notepad to view its contents
 
@@ -463,13 +464,13 @@ Look through the file to see if there are an ERROR or EXCEPTION messages. If so,
 [#ManuallyCreateDofGlobalConfigFile]
 === Manually create the DOF global config file
 
-If you downloaded my DOF R3++ version listed in the setup instructions, it should have included a *config* folder inside your main DirectOutput folder, and a subfolder under that called *examples* . That should contain a file called *GlobalConfig_B2SServer.xml* . You can simply copy this file to the *config* folder.
+If you downloaded my DOF R3++ version listed in the setup instructions, it should have included a `config` folder inside your main DirectOutput folder, and a subfolder under that called `examples` . That should contain a file called `GlobalConfig_B2SServer.xml` . You can simply copy this file to the `config` folder.
 
-If you don't see the *config > examples* folder or the *GlobalConfig_B2SServer.xml* file, you can create them manually:
+If you don't see the *config > examples* folder or the `GlobalConfig_B2SServer.xml` file, you can create them manually:
 
 * Go to your DirectOutput folder in Windows
 * Right-click in the background area of the window and select *New > Folder* from the context menu
-* Name the new folder *config*
-* Open the *config* folder
-* Download this file into the *config* folder: link:http://mjrnet.org/pinscape/downloads/DOFConfigSamples/GlobalConfig_B2SServer.xml[GlobalConfig_B2SServer.xml]
+* Name the new folder `config`
+* Open the `config` folder
+* Download this file into the `config` folder: link:http://mjrnet.org/pinscape/downloads/DOFConfigSamples/GlobalConfig_B2SServer.xml[GlobalConfig_B2SServer.xml]
 

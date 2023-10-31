@@ -45,7 +45,7 @@ Leave the other terminals (3v0 and INT) unwired. Don't connect anything to those
 
 === Expansion board wiring
 
-For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ). First crimp a pin to the end of each wire (see xref:crimpPins.adoc[Crimp Pins] ). Insert the pins in the housing, following the diagram below for the pin placement.
+For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ). First crimp a pin to the end of each wire (see xref:crimpPins.adoc#crimpPins[Crimp Pins] ). Insert the pins in the housing, following the diagram below for the pin placement.
 
 The diagram below shows the layout of the 2x4 connector housing that you'll plug in to the expansion boards. The labels Vin, SCL, SDA, and GND correspond to the terminal markings on the Adafruit board. Connect the wire for each pin in the housing to the corresponding terminal on the Adafruit board, matching up the labels. Simply leave the unmarked pins empty in the connector housing.
 
@@ -57,11 +57,11 @@ It would be a good idea to put a mark of some kind on the housing in the corner 
 
 === Standalone KL25Z wiring
 
-For the standalone KL25Z, I recommend using the xref:plungerBreakout.adoc[plunger sensor breakout board] . Then you can just plug it into the breakout board.
+For the standalone KL25Z, I recommend using the xref:plungerBreakout.adoc#plungerSensorBreakoutBoard[plunger sensor breakout board] . Then you can just plug it into the breakout board.
 
 * Build the expansion board connect as described above
 * Build the ribbon cable connector exactly as described above, as though you were using the expansion boards
-* Follow the instructions in xref:plungerBreakout.adoc[Plunger Sensor Breakout Board] to build the board
+* Follow the instructions in xref:plungerBreakout.adoc#plungerSensorBreakoutBoard[Plunger Sensor Breakout Board] to build the board
 * Connect the following wires between the plunger breakout board and the KL25Z:
 ** Breakout board *3.3V* to KL25Z P3V3 (pin 8 on J9)
 ** Breakout board *GND* to KL25Z GND (pin 12 or 14 on J9)

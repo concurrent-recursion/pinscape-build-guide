@@ -35,9 +35,9 @@ There's no standard way to mount these motors. Just improvise something using fa
 
 *Wiring:* Make sure you're using a suitable supply voltage for your motor. An automotive windshield wiper motor should run on 12V; the eBay robotics motors might specify anything from 3V to 12V, depending on what you buy. DC motors will usually run happily on voltages lower than their rated voltage, with a corresponding reduction in speed. You just want to make sure the voltage is high enough to make the motor turn at all, since a completely stalled motor might overheat or overload your power supply. So if you find a nominally 6V robotics motor, it's probably safe to operate it on 5V.
 
-Follow the generic wiring plan in xref:feedbackWiring.adoc[Feedback Device Wiring] :
+Follow the generic wiring plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 
-* Connect a diode between the (+) and (-) leads of the motor, as described in xref:diodes.adoc[Coil Diodes] . Diodes are always required for motors because of the magnetic fields created by the motor's operation.
+* Connect a diode between the (+) and (-) leads of the motor, as described in xref:diodes.adoc#coilDiodes[Coil Diodes] . Diodes are always required for motors because of the magnetic fields created by the motor's operation.
 * Connect the (+) terminal of the motor to the positive voltage from your power supply
 * Connect the (-) terminal of the motor to an available output port on your output controller
 

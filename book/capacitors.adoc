@@ -82,7 +82,7 @@ image::images/schematic-capacitor-1.png[""]
 
 For electrolytic capacitors, which are polarized and thus have "+" and "-" ends, the schematic symbol will show a little "+" sign on the positive end. If there isn't a "+" sign, it means that an unpolarized capacitor, such as a ceramic disc type, has to used here.
 
-Capacitors are usually marked with a *C _number_ * designator, such as C7 or C9. The "C" is for Capacitor, and the number is arbitrary, purely to serve as a reference to the parts list. One of the cardinal rules of schematic writing is that designators have to be unique in the schematic, so that every part can be individually identified.
+Capacitors are usually marked with a *C _number_* designator, such as C7 or C9. The "C" is for Capacitor, and the number is arbitrary, purely to serve as a reference to the parts list. One of the cardinal rules of schematic writing is that designators have to be unique in the schematic, so that every part can be individually identified.
 
 The schematic will usually also show a capacitance value in Farads (F). This will almost always use one of the following formats:
 

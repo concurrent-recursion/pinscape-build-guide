@@ -1,6 +1,6 @@
 = Coin Door Interface Board
 
-In the xref:coinDoor.adoc[Coin Door] chapter, we discuss the special wiring plug that the Williams WPC coin door uses. That plug is wired to all of the switches and lamps in the coin door: the coin chute switches that detect when you've inserted a quarter, the slam tilt switch, the service control panel buttons, and the coin slot lamps.
+In the xref:coinDoor.adoc#coinDoor[Coin Door] chapter, we discuss the special wiring plug that the Williams WPC coin door uses. That plug is wired to all of the switches and lamps in the coin door: the coin chute switches that detect when you've inserted a quarter, the slam tilt switch, the service control panel buttons, and the coin slot lamps.
 
 In a virtual cab, we have to connect that special coin door plug to the key encoder, so that the buttons and switches in the coin door can be used as inputs to the virtual pinball software. We also have to connect it to a power supply, to light up the coin slot lamps.
 
@@ -83,7 +83,7 @@ The terminals on JP2 connect to power for the coin slot lamps. There are several
 
 If you didn't build the 6.3V regulator, you can use either a 5V or 6.3V power supply to power the coin slot lamps. 6.3V is preferable since that's the voltage the bulbs are designed for; they'll work at 5V but won't be as bright. LED replacement bulbs might let you use 5V without loss of brightness, so you might want to try that if you don't want to bother with adding a separate 6.3V supply.
 
-If you're using DOF to control the lamps, make sure that the output controller port that you're using to control the lamps has enough power load capacity. Two incandescent #555 bulbs will consume about 500mA. That's safe for any Pinscape flasher port or power board port, and it's right at the limit for an LedWiz port. (So it might work with an LedWiz, but you'll be pushing your luck a bit; a booster circuit in this case would be a good idea. See the xref:ledwiz.adoc[LedWiz] chapter for help on adding booster circuits.) If you replaced the bulbs with LEDs, they'll use much less power, probably about 30mA per bulb at most, which makes them safe to use with an LedWiz directly, with no booster.
+If you're using DOF to control the lamps, make sure that the output controller port that you're using to control the lamps has enough power load capacity. Two incandescent #555 bulbs will consume about 500mA. That's safe for any Pinscape flasher port or power board port, and it's right at the limit for an LedWiz port. (So it might work with an LedWiz, but you'll be pushing your luck a bit; a booster circuit in this case would be a good idea. See the xref:ledwiz.adoc#ledwizSetup[LedWiz] chapter for help on adding booster circuits.) If you replaced the bulbs with LEDs, they'll use much less power, probably about 30mA per bulb at most, which makes them safe to use with an LedWiz directly, with no booster.
 
 
 == Version 1
@@ -100,7 +100,7 @@ WARNING: the regulator chip Q1 is no longer in production, and the electronics v
 
 *To manufacturer the board:* simply upload the .brd file from the plans above to link:https://www.oshpark.com/[OSH Park] , or a different PCB maker or your choice. (Other PCB makers usually require Gerber files rather than .brd files. You can create those with the free version of EAGLE.)
 
-*To build the board _with_ the 6.3V regulator:* Solder all of the listed parts to the board. Connect 12V from your secondary ATX power supply (the one you use for feedback devices: see xref:powerSupplies.adoc[Power Supplies for Feedback] ) to the two-pin header labeled "12V IN". You can use the two-pin header marked *6.3V* as a power supply for other 6.3V button lamps, as long as you don't exceed 1.5A, or a total of 6 incandescent #555 bulbs (including the ones in the coin chutes).
+*To build the board _with_ the 6.3V regulator:* Solder all of the listed parts to the board. Connect 12V from your secondary ATX power supply (the one you use for feedback devices: see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] ) to the two-pin header labeled "12V IN". You can use the two-pin header marked *6.3V* as a power supply for other 6.3V button lamps, as long as you don't exceed 1.5A, or a total of 6 incandescent #555 bulbs (including the ones in the coin chutes).
 
 *To build it _without_ the 6.3V regulator:* Don't install any of the voltage regulator parts (C1, C11, Q1, or the 12V input pin header). Install only the main 13-pin header, the 10-pin header for the switch outputs, and the 2-pin header marked *6.3V* . Connect the 6.3V header on the board to your external 6.3V power supply; this will feed the 6.3V directly to the coin chute lamps.
 

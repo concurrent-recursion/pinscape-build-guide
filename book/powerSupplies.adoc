@@ -1,3 +1,4 @@
+[#powerSuppliesForFeedback]
 = Power Supplies for Feedback
 
 Feedback devices require power, so you'll have to provide power supplies in your cabinet for the devices you install.
@@ -202,7 +203,7 @@ The slightly more difficult, but neater and cleaner, way to use these is to buil
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260.html[TE/AMP 1-480426-0] 4-pin housing
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201.html[TE/AMP 60620-1] male crimp pins, quantity 4 per housing
 
-These are crimp-pin housing, so it's best to use a crimping tool to assemble them. See xref:crimpPins.adoc[Crimp Pins] .
+These are crimp-pin housing, so it's best to use a crimping tool to assemble them. See xref:crimpPins.adoc#crimpPins[Crimp Pins] .
 
 If you build the housing, you can attach hookup wire and run it to a terminal block for distribution or directly to the devices. So it gives you the same end result as cutting off the connectors and soldering the wires, but it's nicer because you don't have to modify the power supply wiring at all. You just plug in the connector.
 

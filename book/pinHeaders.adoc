@@ -131,5 +131,5 @@ Each manufacturer designs its crimp pin housings to work with its own crimp pins
 
 === How to assemble
 
-For instructions on assembling these connectors, see xref:crimpPins.adoc[Crimp Pins] .
+For instructions on assembling these connectors, see xref:crimpPins.adoc#crimpPins[Crimp Pins] .
 

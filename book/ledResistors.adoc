@@ -1,3 +1,4 @@
+[#ledResistors]
 = LED Resistors
 
 LEDs always require something to limit the amount of current (amperage) going through them. Without some kind of current limiter, an LED acts like a short circuit, which will make it overload itself or its power supply. So it's always necessary to put something in the circuit that sets a safe limit on the LED's power consumption. The simplest and most common way to do this is by placing a resistor in series with the LED.

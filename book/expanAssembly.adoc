@@ -13,7 +13,7 @@ Before you start the assembly process, look over the "Optional elements" below a
 When you're ready to proceed, gather the necessary items:
 
 * The blank PCBs - see xref:expanFab.adoc[Fabricating the Expansion Boards]
-* The component parts - see xref:partslist.adoc[Electronic Parts List]
+* The component parts - see xref:partslist.adoc#electronicPartsList[Electronic Parts List]
 * Soldering tools and other miscellaneous tools - see xref:psTools.adoc[Tools]
 
 Then just start fitting the components into the boards and soldering them in place. There's no particular order that you have to use to install the components, but I usually like to start with the smaller and flatter components and finish with the taller ones, to avoid having to squeeze into tight spaces between the larger parts.
@@ -304,7 +304,7 @@ To bypass an individual timer circuit:
 * You can also identify which block connects to which output by looking for the ICM7555 IC chip within the block. These are numbered the same as the outputs: IC1 is in timer block 1 for output 1, IC2 is in timer block 2 for output 2, etc.image:images/chime-board-timer-block-1.png[""]
 
 * Now we're going to build the "null" timer circuit, without the timer. This means we're going to basically *omit* all of the normal parts.
-* The only part from the original timer that you're going to install here is the *PC817* optocoupler chip, also labeled *OK _n_ * where _n_ is the timer block and output number (OK1 for timer block 1 and output 1).image:images/chime-board-timer-bypass-1.png[""]
+* The only part from the original timer that you're going to install here is the *PC817* optocoupler chip, also labeled *OK _n_* where _n_ is the timer block and output number (OK1 for timer block 1 and output 1).image:images/chime-board-timer-bypass-1.png[""]
 
 * Now we're going to add two parts within this block that _aren't_ part of the normal timer circuit. First, find the BYPASS resistor slot. It's the slot with a resistor footprint, labeled BYPASS _n_ ( _n_ is the block/timer number we're working with again).image:images/bypass-resistor.png[""]
 

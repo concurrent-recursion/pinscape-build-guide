@@ -48,12 +48,12 @@ For each wire:
 
 == How to connect to the expansion boards
 
-See the xref:partslist.adoc[parts list] for the necessary connectors. There are two distinct connector types:
+See the xref:partslist.adoc#electronicPartsList[parts list] for the necessary connectors. There are two distinct connector types:
 
 * A *two-pin connector* for the *PC PSU* (primary power supply) connections
 * A *four-pin connector* for the *2ND PSU* (feedback devices/secondary power supply) connections
 
-These are crimp pin housings, so you have to build them by crimping the pins onto the ends of the wires, and inserting the pins into the housings. Full instructions are in xref:crimpPins.adoc[Crimp Pins] .
+These are crimp pin housings, so you have to build them by crimping the pins onto the ends of the wires, and inserting the pins into the housings. Full instructions are in xref:crimpPins.adoc#crimpPins[Crimp Pins] .
 
 Here's the pin ordering for the two-pin primary power supply connector. To orient it properly, look for the "ramp" side, which is the side that faces the ramp on the circuit board header when you plug it in. (The ramp is the vertical plastic projection on one side of the header, which ensures that you plug the connect in the right way.) The ramp side on this connector isn't marked very clearly, but you can identify it because it's the solid side - the opposite side has narrow slots where the crimp pin lock tabs fit. You can also tell the difference between the two sides by the distance to the pin openings in the bottom: notice in the picture how the pin openings are closer to the ramp side.
 
@@ -90,7 +90,7 @@ This is a standard connector - the brand name is AMP Mate-N-Lok. (It's commonly 
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260.html[TE/AMP 1-480426-0] Mate-n-Lok 4-pin housing
 *  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201.html[TE/AMP 60620-1] male crimp pins, quantity 4 per connector
 
-These are crimp pin housings, so they require some assembly. See xref:crimpPins.adoc[Crimp Pins] for details on how to build this kind of connector.
+These are crimp pin housings, so they require some assembly. See xref:crimpPins.adoc#crimpPins[Crimp Pins] for details on how to build this kind of connector.
 
 One slight complication: the AMP crimp pins for this housing are designed for wire gauges from 20AWG to 14AWG. That's fine for the secondary PSU connector cabling, for which I recommend 18AWG hookup wire. But the primary connector cabling can't be thicker than 22AWG because of the crimp pins we use at the expansion board end! You might find that these large AMP crimp pins don't crimp onto the 22AWG wire tightly enough. If it won't stay in place after crimping, you can secure it by soldering the wire to the pins. Which defeats the purpose of the crimp pins (easy of assembly), but works. Alternatively, you can use thicker wire (18AWG, say) at the AMP connector end, and solder those thicker wires to the thinner 22AWG wire needed at the Pinscape end.
 

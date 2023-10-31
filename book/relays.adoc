@@ -6,14 +6,14 @@ The Pinscape main expansion board includes a relay for the TV switching function
 
 This chapter is about relays as electronic components in general. There are a couple of specific ways that relays are commonly used in pin cabs that we cover separately in other sections:
 
-* Relays can be used as an interface between the popular LedWiz feedback controller and higher-power devices such as solenoids and motors. The LedWiz can't be directly connected to large devices because of its relatively low power handling limits. Relays can be used to bridge that gap, although there are better alternatives, such as MOSFETs. This is covered in xref:ledwiz.adoc[LedWiz Setup] .
+* Relays can be used as an interface between the popular LedWiz feedback controller and higher-power devices such as solenoids and motors. The LedWiz can't be directly connected to large devices because of its relatively low power handling limits. Relays can be used to bridge that gap, although there are better alternatives, such as MOSFETs. This is covered in xref:ledwiz.adoc#ledwizSetup[LedWiz Setup] .
 * Some pin cab builders use USB-controlled relay boards from Sainsmart as their output controllers. These are turn-key controllers that let you switch a bank of mechanical relays via USB commands, so they can be used for many of the same functions as an LedWiz. They're covered in xref:sainsmart.adoc[SainSmart Relay Board Setup] .
 
 == Protective diodes
 
 The physical mechanism inside a relay that operates its switch is an electromagnet. This is a type of electromagnetic coil, which means that it's affected by a phenomenon known as "flyback current" that affects all coils. Flyback current is essentially a type of electrical interference or noise that gets injected into the circuitry attached to the relay coil, and this interference can be harmful to other components in the same circuit.
 
-There's a standard remedy to protect against this harmful interference, which is to connect a diode to each coil. We cover this in detail in xref:diodes.adoc[Coil Diodes] .
+There's a standard remedy to protect against this harmful interference, which is to connect a diode to each coil. We cover this in detail in xref:diodes.adoc#coilDiodes[Coil Diodes] .
 
 We wanted to call your attention to it here because it might not be obvious from reading that section that a relay is one of these coil-based devices. That section is all about things like motors and solenoids. But a relay is in the same class because of its integrated electromagnet. Note that if you're controlling a coil-based device using a relay, such as a motor or solenoid, that device will need its own protective diode, in addition to the one needed for the relay coil. Also note that it's the relay _coil_ that requires the diode, not the relay _switch_ . The coil is the part where the "input" or control signal feeds into the relay.
 

@@ -104,5 +104,5 @@ My top pick is *Kester 44 Rosin Core 63/37* solder in the .031" size. This is an
 
 == Crimp tool
 
-If you're planning to assemble any hand-made connectors using crimp-pin housings, a crimping tool is essential. See xref:crimpPins.adoc[Crimp Pins] for tool recommendations.
+If you're planning to assemble any hand-made connectors using crimp-pin housings, a crimping tool is essential. See xref:crimpPins.adoc#crimpPins[Crimp Pins] for tool recommendations.
 

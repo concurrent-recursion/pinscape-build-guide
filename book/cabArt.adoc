@@ -1,3 +1,4 @@
+[#cabinetArt]
 = Cabinet Art
 
 If you're building your machine's cabinet from scratch, you'll want to decide on what the exterior will look like. This might be a simple flat black paint job, or you might prefer full-color graphics like on a modern real pinball machine.

@@ -12,7 +12,7 @@ The whole idea of feedback devices is completely outside of our everyday experie
 
 *How can a PC control all this stuff? Lights, motors, solenoids, etc?* Using a special hardware device called an "output controller". You have to buy one of these (or build one, if you're using Pinscape) and connect it to your PC, usually with a USB cable. The controller is the bridge between the PC and the physical devices. The controller has wiring terminals, called "ports", where you connect the lights, motors, and solenoids. Once the feedback devices are wired to the ports, and the output controller is connected to the PC, software on the PC can send commands to the output controller to turn the attached feedback devices on and off or to different intensity (brightness) levels.
 
-You can find a list of the available output controller options, with a detailed comparison of features, in xref:ioControllers.adoc[I/O Controllers] .
+You can find a list of the available output controller options, with a detailed comparison of features, in xref:ioControllers.adoc#ioControllers[I/O Controllers] .
 
 *Does that output controller need device drivers?* Not in most cases, but it depends on which type of controller you're using. The LedWiz, PacLed, and Pinscape don't require any device drivers; the SainSmart relay boards do. If your device needs drivers, its documentation should cover that.
 
@@ -30,7 +30,7 @@ You can find a list of the available output controller options, with a detailed 
 
 There's a chicken-and-egg problem when it comes to deciding whether to install the feedback software or the feedback hardware first. To a certain extent, it doesn't really matter which one you work on first, because you really need both in place before either one will do anything. Even so, I recommend starting with the software, specifically DOF. That way, you'll be ready to do a practical test as soon as you get your first feedback device wired.
 
-If you haven't already decided on an output controller, read xref:ioControllers.adoc[I/O Controllers] . That chapter goes over the commercial and DIY options available for all of the I/O controllers. For our purposes here, focus on the output controllers, since that's what you need for feedback effects.
+If you haven't already decided on an output controller, read xref:ioControllers.adoc#ioControllers[I/O Controllers] . That chapter goes over the commercial and DIY options available for all of the I/O controllers. For our purposes here, focus on the output controllers, since that's what you need for feedback effects.
 
 Once you've selected an output controller, proceed to the next chapter, xref:DOF.adoc[DOF Setup] . That will help you set up the PC software that connects the pinball simulation to the hardware devices.
 
@@ -38,11 +38,12 @@ Next, set up your selected controller. If you're using a Pinscape controller, yo
 
 If you're using one of the commercial options, it should come with instructions of its own. But those are often pretty sketchy, and never contain any information specifically about pin cab use, so we've provided our own setup guides for the most popular options:
 
-*  xref:ledwiz.adoc[LedWiz Setup]
-*  xref:sainsmart.adoc[SainSmart Relay Board Setup]
-*  xref:psOutputs.adoc[Pinscape Outputs Setup]
+* xref:ledwiz.adoc#ledwizSetup[LedWiz Setup]
+* xref:sainsmart.adoc[SainSmart Relay Board Setup]
+* xref:psOutputsExp.adoc[Pinscape Outputs Setup (Expansion Boards)]
+* xref:psOutputsStandalone.adoc[Pinscape Outputs Setup (Standalone KL25Z)]
 
-If you're using one of those, we'll walk you through the process of installing the device, setting it up in Windows, and wiring output devices to it. If you're using a different device, you'll need to rely on the manufacturer's instructions, but we do have some generic advice in xref:feedbackWiring.adoc[Feedback Device Wiring] .
+If you're using one of those, we'll walk you through the process of installing the device, setting it up in Windows, and wiring output devices to it. If you're using a different device, you'll need to rely on the manufacturer's instructions, but we do have some generic advice in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] .
 
 == Types of feedback devices
 
@@ -50,7 +51,7 @@ Here's a quick overview of the most widely used feedback devices. You certainly 
 
 xref:buttonLamps.adoc[Button Lamps]:: These make your various buttons light up under software control: flashing the Start button, turning on the Launch Ball button when a ball is in the chute.
 
-xref:flashers.adoc[Flashers and Strobes]:: High-powered LEDs and lamps that create a light show much more impressive than a mere video display.
+xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes]:: High-powered LEDs and lamps that create a light show much more impressive than a mere video display.
 
 xref:beacons.adoc[Beacons]:: Rotating or flashing police car-type lights. These are another part of the light show, and they're also found on so many real machines that they add a bit of authenticity to many games.
 

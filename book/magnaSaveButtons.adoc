@@ -370,7 +370,7 @@ For my own build, this list settled the question for me, easily in favor of incl
 
 == Notes on the special controls
 
-*Stern-style lockbar button:* Many of the Stern titles from the mid "aughts" (around 2005) to present feature an extra button on the top of the lockbar that activates special features at certain points during the game. We usually call it the "Fire!" button because that's how it's labeled on several of the titles. It's so ubiquitous on newer Stern games that I think it's on the verge of joining the set of standard controls you expect to find on a virtual cab, but so far it's not common. For more, see the notes on the xref:cabButtons.adoc#fireButton[Fire! button] in xref:cabButtons.adoc[Cabinet Buttons] .
+*Stern-style lockbar button:* Many of the Stern titles from the mid "aughts" (around 2005) to present feature an extra button on the top of the lockbar that activates special features at certain points during the game. We usually call it the "Fire!" button because that's how it's labeled on several of the titles. It's so ubiquitous on newer Stern games that I think it's on the verge of joining the set of standard controls you expect to find on a virtual cab, but so far it's not common. For more, see the notes on the xref:cabButtons.adoc#fireButton[Fire! button] in xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
 
 *"El Movimento":* A few games from Peyper (a Spanish manufacturer) had a feature known as "El Movimento", which used knobs next to the flipper buttons that moved the playfield. The VP re-creations of these tables approximate this by mapping the MagnaSave buttons to a special non-tilting nudge function.
 

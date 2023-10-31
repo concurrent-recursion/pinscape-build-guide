@@ -2,9 +2,9 @@
 
 This section continues with the cabinet trim hardware, moving on now to the backbox.
 
-We assume that you've already built the wood shell of the backbox as described in xref:cabBody.adoc[Cabinet Body] , and that you've already painted it and/or applied decals, as described in xref:cabArt.adoc[Cabinet Art] . It's best to finish the artwork before installing any hardware, since some the hardware will get in the way of painting or applying decals once installed.
+We assume that you've already built the wood shell of the backbox as described in xref:cabBody.adoc#cabinetBody[Cabinet Body] , and that you've already painted it and/or applied decals, as described in xref:cabArt.adoc#cabinetArt[Cabinet Art] . It's best to finish the artwork before installing any hardware, since some the hardware will get in the way of painting or applying decals once installed.
 
-As with the xref:cabHardware.adoc[Cabinet Hardware Installation] chapter, we try to present things in an order you can follow for installation.
+As with the xref:cabHardware.adoc#cabinetHardware[Cabinet Hardware Installation] chapter, we try to present things in an order you can follow for installation.
 
 == Translite lock
 
@@ -89,7 +89,7 @@ The only reasons I can think of not to use the WPC hinges are (a) that you're bu
 
 ====  Installing the WPC hinges
 
-One of the advantages of the WPC hinge mechanism is that it's easy to set up. If you followed the WPC cabinet plans in xref:cabBody.adoc[Cabinet Body] , you've already drilled the mounting holes in the main cabinet and backbox. To review, the parts get mounted here:
+One of the advantages of the WPC hinge mechanism is that it's easy to set up. If you followed the WPC cabinet plans in xref:cabBody.adoc#cabinetBody[Cabinet Body] , you've already drilled the mounting holes in the main cabinet and backbox. To review, the parts get mounted here:
 
 image::images/backbox-hinge-drill-1.png[""]
 
@@ -257,7 +257,7 @@ image::images/unmasked-translite.png[""]
 The best solution, in my opinion, is to combine the "cutout" idea from the wood cover with the clear translite, by masking out the edges of the translite. There are two ways to do this:
 
 * The easy way is to paint around the perimeter with black spray paint. Paint on the back side of the panel, so that the front has a uniform glossy sheen - that'll largely eliminate the visibility of the "cutout" that I find objectionable in the wood cover approach. Measure the TV display area size, and use masking tape and paper to cover the cutout area. Paint around the edges.
-* The other way is to use printed decals to create the mask. You can have custom decals made for this use just like for the cabinet artwork (see xref:cabArt.adoc[Cabinet Art] ). I used this approach for my own cab, because I figured the real machines have artwork here, so I should too.
+* The other way is to use printed decals to create the mask. You can have custom decals made for this use just like for the cabinet artwork (see xref:cabArt.adoc#cabinetArt[Cabinet Art] ). I used this approach for my own cab, because I figured the real machines have artwork here, so I should too.
 
 image::images/translite-decal-mask.jpg[""]
 

@@ -4,7 +4,7 @@ This section leads you through the process of assembling the Pinscape expansion 
 
 Here are the main steps involved:
 
-* Buy a Freescale Freedom-KL25Z controller board. This is a retail product that sells for about $15 to $20 at any of the major electronics vendors. You can also find it on eBay and Amazon, but it's usually more expensive there. The KL25Z board is required for all systems, whether or not you're using the expansion board. It's included on the xref:partslist.adoc[electronics parts list] , so you can order it along with any other components you need. This board comes fully assembled and ready to use.
+* Buy a Freescale Freedom-KL25Z controller board. This is a retail product that sells for about $15 to $20 at any of the major electronics vendors. You can also find it on eBay and Amazon, but it's usually more expensive there. The KL25Z board is required for all systems, whether or not you're using the expansion board. It's included on the xref:partslist.adoc#electronicPartsList[electronics parts list] , so you can order it along with any other components you need. This board comes fully assembled and ready to use.
 * If you're going to build the Pinscape expansion boards, get hold of the blank printed circuit boards (PCBs) for the expansion boards. You can have a set fabricated by a PCB factory by sending them the freely available design files. You don't need any special electronics knowledge to do that; we'll explain the process. Alternatively, you might be able to get a set of pre-made boards from someone else in the pin cab community who made a batch for sharing.
 * Buy the electronic components required for the expansion boards or any other external electronics you're going to include, such as a plunger sensor. Almost all of the components for the various options are fairly generic items that you can buy from any electronics vendor. We'll give you a complete list of parts with ordering links.
 * Set up the Pinscape software on the KL25Z. You can do this before you build the expansion boards, plunger sensor, or other electronics, because the KL25Z can do some things on its own. If you're not in any hurry, you can also wait until after building any other
@@ -15,7 +15,7 @@ Here are the main steps involved:
 
 == What to buy
 
-I hear from a lot of people who find themselves a little confused at this point about exactly what you have to buy, and what you have to build, to get this project going. The list of things to buy is outlined in broad strokes above, and in excruciating detail in the xref:partslist.adoc[electronic parts list] , but that's a lot of material to go through. And there are several rather different ways to approach this project, which makes it even harder to sort out. So let's take a look at the most common scenarios, and spell out what's involved in terms of shopping.
+I hear from a lot of people who find themselves a little confused at this point about exactly what you have to buy, and what you have to build, to get this project going. The list of things to buy is outlined in broad strokes above, and in excruciating detail in the xref:partslist.adoc#electronicPartsList[electronic parts list] , but that's a lot of material to go through. And there are several rather different ways to approach this project, which makes it even harder to sort out. So let's take a look at the most common scenarios, and spell out what's involved in terms of shopping.
 
 === Option 1: Standalone KL25Z (no expansion boards)
 
@@ -33,7 +33,7 @@ There are three types of expansion boards (the main board that interfaces to the
 
 The shopping list for the DIY expansion boards includes the KL25Z, the blank circuit boards for your selected expansion boards, and a big list of electronic components (resistors, capacitors, transistors, IC chips, etc.) that have to be soldered into the blank boards.
 
-The electronic components are all laid out in the xref:partslist.adoc[parts list] . There's a section for each board, so you just go through those and include the parts listed for each board you're including in your system. You can get everything on the list from an electronics vendor like Mouser or DigiKey.
+The electronic components are all laid out in the xref:partslist.adoc#electronicPartsList[parts list] . There's a section for each board, so you just go through those and include the parts listed for each board you're including in your system. You can get everything on the list from an electronics vendor like Mouser or DigiKey.
 
 The blank circuit boards are custom-designed, so you have to get those made by a PCB maker. They're not something you can buy off-the-shelf from Mouser or Amazon. The plans for them are "open source", so anyone can have them made by any PCB maker of their choosing. There are three main ways to get them:
 
@@ -52,5 +52,5 @@ Up until June 2021, Oak Micros offered fully assembled and tested versions of th
 
 == Plunger sensors
 
-Regardless of which option you're going with for the Pinscape controller itself, the plunger is a separate matter with a separate parts list. The xref:partslist.adoc[electronic parts list] includes separate sections with the parts needed for each plunger sensor design.
+Regardless of which option you're going with for the Pinscape controller itself, the plunger is a separate matter with a separate parts list. The xref:partslist.adoc#electronicPartsList[electronic parts list] includes separate sections with the parts needed for each plunger sensor design.
 

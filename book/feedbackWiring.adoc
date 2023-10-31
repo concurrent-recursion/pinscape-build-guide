@@ -1,3 +1,4 @@
+[#feedbackDeviceWiring]
 = Feedback Device Wiring
 
 The basic principle of operation for all feedback device wiring is that the output controller acts as a switch for the device's power connection.
@@ -46,7 +47,7 @@ Adding a second device to the controller. The new device is wired just like the 
 
 There are two things to notice here. The first is that, as we pointed out, you don't have to add another connection to the power supply's (-) terminal. The single "ground" connection that you set up when you install the controller is shared by all devices, so adding a new device only requires the two wires: power supply (+) to device (+), and device (-) to output controller port. The second thing to notice is that we "daisy-chained" the power supply connections. We didn't have to run a separate wire all the way from the second device back to the power supply; it's sufficient to connect them through the same wire. This can save you a lot of wire, since you'll probably have a few devices that are fairly far away from the power supply.
 
-This is all well and good if you want to hook up a bunch of devices that run on the same voltage. But what about devices that run on different power supplies that use other voltages? If you already read through xref:powerSupplies.adoc[Power Supplies for Feedback] , you know that you might need as many as five or six different voltages if you're using a diverse mix of devices:
+This is all well and good if you want to hook up a bunch of devices that run on the same voltage. But what about devices that run on different power supplies that use other voltages? If you already read through xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , you know that you might need as many as five or six different voltages if you're using a diverse mix of devices:
 
 * 5V for flasher LEDs
 * 6.3V for incandescent button lamps
@@ -57,7 +58,7 @@ This is all well and good if you want to hook up a bunch of devices that run on 
 
 So how do you hook up all of these different devices, when each one has to be connected to its own power supply? What happens to that common wire back to the (-) on the power supply when we have five power supplies?
 
-Happily, this turns out to be easy. If you go back and review the section on xref:powerSupplies.adoc#InterconnectingGrounds[Interconnecting Grounds] in the Power Supplies chapter, you'll find the answer. You're going to explicitly wire all of your power supply (-) terminals together when you set up the power supplies. So that wire that connects from the controller to the (-) terminal on the one power supply actually connects to the (-) terminal on _all_ of the power supplies. This important power supply setup step is explained in detail in xref:powerSupplies.adoc[Power Supplies for Feedback] .
+Happily, this turns out to be easy. If you go back and review the section on xref:powerSupplies.adoc#InterconnectingGrounds[Interconnecting Grounds] in the Power Supplies chapter, you'll find the answer. You're going to explicitly wire all of your power supply (-) terminals together when you set up the power supplies. So that wire that connects from the controller to the (-) terminal on the one power supply actually connects to the (-) terminal on _all_ of the power supplies. This important power supply setup step is explained in detail in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] .
 
 Now that we've settled the question of the (-) wire, it becomes straightforward to connect a mix of devices that use different power supplies. You just repeat that same formula for each device and its particular power supply: device (+) to power supply (+), device (-) to output controller port.
 
@@ -92,7 +93,7 @@ The sections on the individual device types contain details on any special wirin
 
 LEDs always require something to limit the amount of current (amperage) going through them. Without some kind of current limiter, an LED acts like a short circuit, which will make it overload itself or its power supply. The simplest and most common type of current limiter is a resistor placed in series with the LED.
 
-For a detailed explanation of LED resistors, including a calculator to pick resistor sizes, please see xref:ledResistors.adoc[LED Resistors] .
+For a detailed explanation of LED resistors, including a calculator to pick resistor sizes, please see xref:ledResistors.adoc#ledResistors[LED Resistors] .
 
 === Diodes for coils, motors, solenoids
 
@@ -108,7 +109,7 @@ The following all require diodes:
 * Other pinball coils
 * Relays
 
-For details on what types of diodes to use and how to install them, see xref:diodes.adoc[Coil Diodes] .
+For details on what types of diodes to use and how to install them, see xref:diodes.adoc#coilDiodes[Coil Diodes] .
 
 [#ACFeedbackDeviceWiring]
 === AC devices

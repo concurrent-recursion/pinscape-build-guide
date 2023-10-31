@@ -1,3 +1,4 @@
+[#coinDoor]
 = Coin Door
 
 image::images/CoinDoor.png[""]
@@ -15,7 +16,7 @@ Finally, the coin door is useful for its nominal purpose as the place to insert 
 
 == Buying a coin door
 
-If you're salvaging an old pinball machine to use as your cab's body, and it already has a coin door installed, you're set. If you're building a new cab from scratch, you can buy a new pinball coin door from an arcade parts supplier (see xref:resources.adoc[Resources] ). You can also look for used ones on eBay, although as always, check prices for new parts first: used pinball parts on eBay tend for whatever perverse reasons to be more expensive than new ones.
+If you're salvaging an old pinball machine to use as your cab's body, and it already has a coin door installed, you're set. If you're building a new cab from scratch, you can buy a new pinball coin door from an arcade parts supplier (see xref:resources.adoc#resources[Resources] ). You can also look for used ones on eBay, although as always, check prices for new parts first: used pinball parts on eBay tend for whatever perverse reasons to be more expensive than new ones.
 
 One really nice feature when you're buying a coin door is that most of the different types can be used interchangeably, since they're all designed to fit the same cutout. They've been using a standard size since about the mid 1980s. Doors designed for Data East, Stern, Williams, and Bally machines will all fit the same the standard cutout, as long as they're for machines from the 1980s or later. However, the different makes do have some differences on the inside, such as the type of service buttons and the type of wiring plugs used.
 
@@ -44,7 +45,7 @@ SuzoHapp coin door, also used on most modern Stern machines
 * Stern coin doors, for SAM machines (Stern part 501-5018-172) or SPIKE machines (501-5018-173). SAM and SPIKE refer to the last two generations of the Stern platform, not to specific table titles. These are functionally about the same as the Williams door listed above. The main difference from the Williams door is that these use different connector plugs for the electronics. The SPIKE version is actually the same equipment as the SuzoHapp option above, but adds pre-installed service buttons and wiring.
 * Data East coin door. These come bare-bones, with nothing installed except for the key and the basic coin slot brackets (no coin mechs). As a result, they're cheap. They're a good budget option if you only want the facade of a door (without all the functional bits) for cosmetics. I wouldn't recommend this if you _do_ want all of the functional elements, though: you probably won't save any money after adding all of the parts it's missing compared to the turn-key options above, and it'll be a lot of hassle to source the parts and assemble everything.
 * Smaller video game coin doors. If you're building a mini-cab, the regular pinball coin door might be too large. There's a narrower type of door commonly used in video games. Try link:https://suzohapp.com/[SuzoHapp] for a variety of options.
-* Fakes/Decals. If you only want the cosmetic effect of a coin door without any functionality, you could use a 3D-printed plastic façade, or simply a custom-printed decal with a photo of a coin door (see xref:cabArt.adoc[Cabinet Art] for more on decals). This might let you squeeze out a little cost if you're on a tight budget, or if your cab is too small for a real coin door.
+* Fakes/Decals. If you only want the cosmetic effect of a coin door without any functionality, you could use a 3D-printed plastic façade, or simply a custom-printed decal with a photo of a coin door (see xref:cabArt.adoc#cabinetArt[Cabinet Art] for more on decals). This might let you squeeze out a little cost if you're on a tight budget, or if your cab is too small for a real coin door.
 
 [#coinMechs]
 == Coin mechs
@@ -258,8 +259,8 @@ To put the button back into the door, just reverse the removal process. Put the 
 
 If you buy one of the pre-built and pre-wired coin doors, it will come with a connector plug, known in the jargon as a "wiring harness", with pins for all of the electrical connections inside the door. If you want to take full advantage of the functional components in the door, you'll have to connect the pins in the wiring harness to other points in your cab:
 
-* Connect the switches and buttons to your key encoder. This includes the operator buttons, the coin chute switches, and the slam tilt switch, if present. All of these connect to the key encoder following the same pattern as other cabinet buttons, as explained in xref:cabButtonWiring.adoc[Button Wiring] .
-* Connect the lamps at the top of the coin chutes to power, to make them light up when the machine is on. You can optionally connect them to your output controller to make them light up under software control; if you want to go that route, connect them just like any other feedback device, as explained in xref:feedbackWiring.adoc[Feedback Device Wiring] . In my opinion, there's no good reason to go to that kind of trouble; I'd just hard-wire them directly to power. That's exactly what the real machines do, so there's no "realism" gained from controlling these through software.
+* Connect the switches and buttons to your key encoder. This includes the operator buttons, the coin chute switches, and the slam tilt switch, if present. All of these connect to the key encoder following the same pattern as other cabinet buttons, as explained in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] .
+* Connect the lamps at the top of the coin chutes to power, to make them light up when the machine is on. You can optionally connect them to your output controller to make them light up under software control; if you want to go that route, connect them just like any other feedback device, as explained in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] . In my opinion, there's no good reason to go to that kind of trouble; I'd just hard-wire them directly to power. That's exactly what the real machines do, so there's no "realism" gained from controlling these through software.
 
 The wiring harness connectors on the pre-built doors are standard parts, which means that you can buy mating connectors from an electronics vendor like Mouser. I'd recommend doing exactly that: I like using modular plug-in connectors wherever possible, because it makes the wiring neater, and it makes maintenance easier if you ever have to remove anything.
 
@@ -282,7 +283,7 @@ The "All switch common" pin is daisy-chained to one terminal of each switch and 
 
 The odd man out among the switches is the "slam tilt" wiring, which has its own separate pair of pins rather than connecting through the "common" pin. You can simply connect one of these pins (it doesn't matter which) to the "common", and connect the other to the appropriate button input for the slam tilt switch.
 
-The coin chute lamp pins provide the 6.3V power connections for the lamps that illuminate the coin chutes. These are normally hard-wired to power on a real pinball machine, so I suggest doing the same in a virtual cab. The lamps normally installed are incandescent #555 lamps, which are designed to run on 6.3V but will run (noticeably dimmed) on 5V. Incandescent bulbs aren't polarized, so it doesn't matter which order you connect (+) and (-) on these. See xref:powerSupplies.adoc[Power Supplies for Feedback] for advice on adding 6.3V power to your cab. You can connect the coin lamps to your output controller to put them under software control if you wish, but I personally wouldn't bother: it won't add much of a special effect, since the software will just leave them on all the time anyway.
+The coin chute lamp pins provide the 6.3V power connections for the lamps that illuminate the coin chutes. These are normally hard-wired to power on a real pinball machine, so I suggest doing the same in a virtual cab. The lamps normally installed are incandescent #555 lamps, which are designed to run on 6.3V but will run (noticeably dimmed) on 5V. Incandescent bulbs aren't polarized, so it doesn't matter which order you connect (+) and (-) on these. See xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for advice on adding 6.3V power to your cab. You can connect the coin lamps to your output controller to put them under software control if you wish, but I personally wouldn't bother: it won't add much of a special effect, since the software will just leave them on all the time anyway.
 
 ====  How to connect to the plug
 
@@ -319,7 +320,7 @@ This option is marginally less work than the circuit board approach above, and s
 
 image::images/WilliamsCoinDoorWithZAdapter.png[""]
 
-This connector is a "crimp pin housing" type. See xref:crimpPins.adoc[Crimp Pins] for help with ordering the necessary parts assembling the connector.
+This connector is a "crimp pin housing" type. See xref:crimpPins.adoc#crimpPins[Crimp Pins] for help with ordering the necessary parts assembling the connector.
 
 ====  Connecting to the bare wires
 
@@ -379,7 +380,7 @@ The second connector has the wiring for the coin chutes. This one fits a 9-pin, 
 * Coin 2
 * Coin 1
 
-Connect the coin chute LED pins to your 5V power supply. I recommend connecting these directly to the power supply, since they're similarly hard-wired to power on the real machines. But if you prefer, you can connect the 0V side to a port on your output controller to place the coin chute lights under software control. I don't feel that's worth the trouble, since the software will just leave the lights on all the time. See xref:feedbackWiring.adoc[Feedback Device Wiring] for more details.
+Connect the coin chute LED pins to your 5V power supply. I recommend connecting these directly to the power supply, since they're similarly hard-wired to power on the real machines. But if you prefer, you can connect the 0V side to a port on your output controller to place the coin chute lights under software control. I don't feel that's worth the trouble, since the software will just leave the lights on all the time. See xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] for more details.
 
 The Switch Common pins on both connectors correspond to the Common port on your key encoder and should be connected there. Connect the other button and switch pins to corresponding input ports on your key encoder.
 
@@ -392,7 +393,7 @@ If you buy one of the basic coin door options that requires you to install the w
 
 == Wiring to the key encoder
 
-The service buttons are just like any other cabinet buttons, so wire one terminal of each button in a daisy chain to your key encoder's Common terminal, and wire the other terminal of each button to an individual button port on the encoder. See xref:cabButtonWiring.adoc[Button Wiring] for more on the general wiring plan for buttons.
+The service buttons are just like any other cabinet buttons, so wire one terminal of each button in a daisy chain to your key encoder's Common terminal, and wire the other terminal of each button to an individual button port on the encoder. See xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] for more on the general wiring plan for buttons.
 
 The coin chute switches and slam tilt switch all act just like buttons, so wire them the same way.
 
@@ -587,7 +588,7 @@ If you read forum posts about the coin door switch, be warned that you'll see a 
 
 === Recommended parts
 
-In your virtual cab, you'll wire this switch to your key encoder, just like any other button (see xref:cabButtonWiring.adoc[Button Wiring] ). This means that you can use almost any type of switch or button. Many people improvise with an ordinary microswitch, for example. My recommendation is to do it the easy way and use the same parts they use in the real machines:
+In your virtual cab, you'll wire this switch to your key encoder, just like any other button (see xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] ). This means that you can use almost any type of switch or button. Many people improvise with an ordinary microswitch, for example. My recommendation is to do it the easy way and use the same parts they use in the real machines:
 
 * Switch: Williams part no. A-18249-1, A-18249-3; Stern 180-5136-00
 * Mounting bracket: Williams 01-12676
@@ -677,7 +678,7 @@ Setting *toggleKeyCoinDoor = False* changes from the default "toggle mode" that 
 image::images/CoinBox.png[""]
 If you install coin acceptor mechanisms in your coin chutes, you should install a container under the chutes to capture inserted coins. You don't want them bouncing around loose inside the cabinet where they could come into contact with wiring or make other mischief.
 
-The easiest solution is to use a real pinball cashbox, like the one pictured at right. There's a standard design for these, with slots in the lid that align with the coin chutes. See the "Cashbox" sections in xref:cabBody.adoc[Cabinet Body] and xref:cabHardware.adoc[Cabinet Hardware Installation] for more on how to install these.
+The easiest solution is to use a real pinball cashbox, like the one pictured at right. There's a standard design for these, with slots in the lid that align with the coin chutes. See the "Cashbox" sections in xref:cabBody.adoc#cabinetBody[Cabinet Body] and xref:cabHardware.adoc#cabinetHardware[Cabinet Hardware Installation] for more on how to install these.
 
 The only downside of the standard cashbox is that it's rather large: about 10.5" wide and 11" deep. That consumes a lot of floor space at the front of the cab that you might prefer to use for PC parts, fans, or feedback devices.
 

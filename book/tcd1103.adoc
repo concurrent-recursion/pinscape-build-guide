@@ -57,7 +57,7 @@ link:http://mjrnet.org/pinscape/downloads/tcd1103/tcd1103-interface-board-smd.zi
 Important: *don't* break the seal on the TCD1103 sensor chip's anti-static bag until you're ready to solder. Don't even open it long enough to peek at the chip. The chip is sensitive to ambient humidity, so the packaging was prepared at the factory under super-dry conditions and sealed against moisture. It's important to keep the packaging sealed until you're ready to install the chip. See the "Warning on humidity" xref:#humidityWarning[below] .
 
 * image:images/RedStarLED.png[""]
-1W red LED, to serve as a light source. Suitable LEDs are readily available on Amazon and eBay. I like the "star" LED type depicted at right. These are fairly easy to solder, and the base serves as a heat sink and is easy to attach to a mounting bracket. If you happen to have extra 3W RGB star LEDs of the type often used in xref:flashers.adoc[flasher panels] , you can use one of those, with just its red channel powered.
+1W red LED, to serve as a light source. Suitable LEDs are readily available on Amazon and eBay. I like the "star" LED type depicted at right. These are fairly easy to solder, and the base serves as a heat sink and is easy to attach to a mounting bracket. If you happen to have extra 3W RGB star LEDs of the type often used in xref:flashers.adoc#flashersAndStrobes[flasher panels] , you can use one of those, with just its red channel powered.
 * A 10Ω, 2W resistor for the LED
 * A 1" metal "L" bracket, to serve as a mounting bracket for the red LED. You can find these at any hardware store or home improvement store.
 * Thermally conductive paste or tape (also known as "heat sink" paste or tape), for attaching the LED to the "L" bracket
@@ -299,7 +299,7 @@ If you're using the Pinscape expansion boards, simply plug the ribbon cable conn
 
 === Connect to a standalone KL25Z
 
-If you're using a standalone KL25Z, I'd still recommend using the ribbon cable connector. That provides a cleaner signal path than ordinary hook-up wire would, which is important for this sensor because it uses high-speed data signals. The easiest way to connect the ribbon cable to a standalone KL25Z is using the xref:plungerBreakout.adoc[plunger sensor breakout board] :
+If you're using a standalone KL25Z, I'd still recommend using the ribbon cable connector. That provides a cleaner signal path than ordinary hook-up wire would, which is important for this sensor because it uses high-speed data signals. The easiest way to connect the ribbon cable to a standalone KL25Z is using the xref:plungerBreakout.adoc#plungerSensorBreakoutBoard[plunger sensor breakout board] :
 
 * Plug the ribbon cable into one header on the breakout board (it doesn't matter which one), lining up the red stripe on the cable with the "pin 1" triangle printed on the board
 * Connect the pins on the other header on the breakout board as follows:

@@ -1,3 +1,4 @@
+[#flashersAndStrobes]
 = Flashers and Strobes
 
 Flashers and strobes are extra lights on your cab to reproduce the bright flashing light effects of the real machines. I personally rank flashers in the top tier of must-have feedback devices, as they add a huge amount of excitement and realism to the playing experience.
@@ -73,13 +74,13 @@ The domes come in various colors (red, purple, amber, etc.), but for pin cab pur
 
 *Voltage supply:* Plan on supplying the flasher LEDs from a *5V* power supply.
 
-A lot of new cab builders find LED voltage specs confusing. LEDs always quote a "forward voltage", and it's always something weird like 2.2V or 3.4V. And it's usually a range, like 2.2-2.4V. Does this mean that you're supposed to find a 2.2V power supply? Fortunately not! The "forward voltage" for an LED *isn't* the supply voltage required. It's the amount of voltage that the LED "drops" when operating, which is sort of the amount it uses or consumes. That's why it's often quoted as a range; the manufacturer is just saying that the exact number varies a little bit from one individual part to the next, but it should always be in this range, and will usually gravitate to the middle of the range. What does this mean for the supply voltage, then? It's really simple: the supply voltage can be _any voltage higher than_ the forward voltage. So if the forward voltage is "3.2-3.4V", it means that you can use pretty much anything higher than 3.4V. It's best to pick the lowest conveniently available voltage higher than the required minimum, because the higher the voltage, the more energy will get burned up in heating the resistors. In a pin cab, you usually have a 5V supply readily available, (see xref:powerSupplies.adoc[Power Supplies for Feedback] ), so 5V is the best option for almost every LED. If you had a 4V supply or a 3.7V supply, that would be better still, but those aren't typical voltages in a pin cab; 5V is what we usually have readily at hand.
+A lot of new cab builders find LED voltage specs confusing. LEDs always quote a "forward voltage", and it's always something weird like 2.2V or 3.4V. And it's usually a range, like 2.2-2.4V. Does this mean that you're supposed to find a 2.2V power supply? Fortunately not! The "forward voltage" for an LED *isn't* the supply voltage required. It's the amount of voltage that the LED "drops" when operating, which is sort of the amount it uses or consumes. That's why it's often quoted as a range; the manufacturer is just saying that the exact number varies a little bit from one individual part to the next, but it should always be in this range, and will usually gravitate to the middle of the range. What does this mean for the supply voltage, then? It's really simple: the supply voltage can be _any voltage higher than_ the forward voltage. So if the forward voltage is "3.2-3.4V", it means that you can use pretty much anything higher than 3.4V. It's best to pick the lowest conveniently available voltage higher than the required minimum, because the higher the voltage, the more energy will get burned up in heating the resistors. In a pin cab, you usually have a 5V supply readily available, (see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] ), so 5V is the best option for almost every LED. If you had a 4V supply or a 3.7V supply, that would be better still, but those aren't typical voltages in a pin cab; 5V is what we usually have readily at hand.
 
 You might read advice on the forums to use a 12V power supply for the flasher LEDs. Ignore that. It's best to use the lowest conveniently available supply voltage above the LED's "forward voltage" spec. Using a 12V supply just burns up all of the extra voltage in resistor heating, which forces you to use physically larger resistors that can tolerate all of the extra waste heat. A 5V supply lets you use smaller resistors that waste less energy.
 
 *Resistors:* The star base LEDs are bare LEDs that *do not* include any sort of built-in current regulation. This means that you *must* include separate resistors in the circuits when wiring them.
 
-It's important to choose the correct type of resistor for each color channel. xref:ledResistors.adoc[LED Resistors] explains how to choose, and includes a calculator to determine the correct Ohms and Watts value for each.
+It's important to choose the correct type of resistor for each color channel. xref:ledResistors.adoc#ledResistors[LED Resistors] explains how to choose, and includes a calculator to determine the correct Ohms and Watts value for each.
 
 The resistors have to be wired into the circuit in series with the LED. They can go on the (+) side or the (-) side; it's exactly the same either way.
 
@@ -107,7 +108,7 @@ To assemble this board:
 
 * Install a 2x8-pin 0.1" pin header as shown in the picture
 * If you use a shrouded header for the 2x8 connector, make the sure the keying slot on the shroud is aligned properly for your ribbon cable; see xref:pinHeaders.adoc[0.1" Pin Headers]
-* Figure the resistor values required as explained in xref:ledResistors.adoc[LED Resistors]
+* Figure the resistor values required as explained in xref:ledResistors.adoc#ledResistors[LED Resistors]
 * Be sure to pay attention to the wattage calculation in that section, and use resistors with at least the required wattage specs
 * The board is designed for resistors *up to 4mm in diameter* and *up to 12mm in length* (the gigantic squarish "cement" resistors *won't* fit)
 * Install the resistors in the R_xx slots: R_1R is the resistor for LED 1 RED channel, R_2B is LED 2 BLUE, etc
@@ -125,18 +126,18 @@ image::images/FlasherPanelFront.png[""]
 
 * I started with a piece of 3/8" plywood, cut to the inside width of my cabinet and a height that I measured to fit the available space where I planned to install it.
 * I drilled five 1/2" holes at regular intervals, where I wanted to place the lights.
-* I soldered four wires to each of the five star LEDs: one wire to each of Red(-), Blue(-), and Green(-), and a fourth wire that I connected to all of the (+) terminals. As described in xref:feedbackWiring.adoc[Feedback Device Wiring] , the standard wiring plan for all devices is to switch on the (-) side, so the (+) side is always connected directly to power and can thus be daisy-chained across all devices that share the same voltage.
+* I soldered four wires to each of the five star LEDs: one wire to each of Red(-), Blue(-), and Green(-), and a fourth wire that I connected to all of the (\+) terminals. As described in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , the standard wiring plan for all devices is to switch on the (-) side, so the (+) side is always connected directly to power and can thus be daisy-chained across all devices that share the same voltage.
 * I then installed the LEDs in the pre-drilled holes, holding them in place with little metal clamps. The clamps aren't anything standard; they're just something that I made custom by cutting them out from a piece of sheet metal from Home Depot.
 * I ran the wires from the LEDs to a small circuit board containing the resistors (see above). This is just an ad hoc circuit board I made for the cab. You can just wire the resistors in-line through the wires without a circuit board if you find that easier.
 * On the front side of the board, I attached the plastic dome with wood screws.
 
-*Finishes for the panel:* Most people just paint their panels in the same color as the inside cab walls, usually black. I used custom-printed adhesive decals that I had made at the same time as the decals for the exterior of my cab. See xref:cabArt.adoc[Cabinet Art] .
+*Finishes for the panel:* Most people just paint their panels in the same color as the inside cab walls, usually black. I used custom-printed adhesive decals that I had made at the same time as the decals for the exterior of my cab. See xref:cabArt.adoc#cabinetArt[Cabinet Art] .
 
 *Heat sinks:* Some people use large heat sinks with these LEDs. I don't personally think it's worth the trouble, because flashers are activated intermittently, for brief periods. Plus, the metallic star bases already provide a moderate degree of heat dissipation. If you were leaving these LEDs on at full power for long periods, heat sinks would be warranted, but they're not necessary in this application.
 
 If you want to use heat sinks anyway, you can find a variety of suitable products on eBay. Attach them to the back of the star base with thermal paste.
 
-*Wiring to the output controller:* Follow the general plan in xref:feedbackWiring.adoc[Feedback Device Wiring] to connect the LEDs to your output controller. Connect the (+) side of each LED to the +5V from your power supply, and connect the (-) side to an available port on your output controller. Keep in mind that each channel requires a resistor (see above) in series with the LED, inserted either between +5V and the LED (+) terminal, or between the output controller port and the LED (-) terminal.
+*Wiring to the output controller:* Follow the general plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] to connect the LEDs to your output controller. Connect the (+) side of each LED to the +5V from your power supply, and connect the (-) side to an available port on your output controller. Keep in mind that each channel requires a resistor (see above) in series with the LED, inserted either between +5V and the LED (+) terminal, or between the output controller port and the LED (-) terminal.
 
 The DOF Config Tool requires that you use *consecutively numbered output ports* for each Red-Green-Blue group, *in that order* . For example, if you wire the RED channel of Flasher #1 to output port #8, you must wire GREEN to port #9 and BLUE to port #10.
 
@@ -172,7 +173,7 @@ I put mine on top of the backbox, facing forward (facing the player). I'm happie
 
 *LED resistors:* Not needed for the typical 22-LED panel. These are meant to be plugged directly into a car's 12V power supply, so they have the necessary resistors built in.
 
-*Wiring:* Follow the basic wiring plan in xref:feedbackWiring.adoc[Feedback Device Wiring] :
+*Wiring:* Follow the basic wiring plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 
 * Connect the 22-LED panel's (+) terminal (usually the red wire) to the +12V power supply (the yellow wire from your secondary ATX power supply)
 * Connect the LED panel's (-) terminal (usually the black wire) to an available port on your output controller

@@ -1,3 +1,4 @@
+[#beacons]
 = Beacons
 
 image::images/GetawayTopper.png[""]
@@ -17,12 +18,12 @@ Beacons mounted on my cab's backbox, one red and one blue. These are off-the-she
 
 *Mounting:* Many of the beacons you'll find (including the Peterson 771) come with magnetic bases that are intended to hold the light to the roof of a car. You'll probably want to remove the magnetic base and attach the light to the top of your backbox with screws or other wood fasteners. You could alternatively glue them in place, although I try to avoid glue as it can't be easily removed if you ever need to replace the device.
 
-*Wiring:* Check with your product's documentation to be sure, but anything automotive generally runs on 12V DC. That works well in a pin cab because we usually have a 12V supply available from a secondary ATX power supply; see xref:powerSupplies.adoc[Power Supplies for Feedback] for more on that.
+*Wiring:* Check with your product's documentation to be sure, but anything automotive generally runs on 12V DC. That works well in a pin cab because we usually have a 12V supply available from a secondary ATX power supply; see xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] for more on that.
 
-Follow the generic wiring plan in xref:feedbackWiring.adoc[Feedback Device Wiring] :
+Follow the generic wiring plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 
-* If your beacon has a motor, be sure to connect a diode between the (+) and (-) leads of the beacon, with the striped side of the diode connected to the (+) lead of the beacon, as described in xref:diodes.adoc[Coil Diodes] . This is required if there's any sort of motor or coil in the device. Any beacon with a rotating light has a motor inside to drive the rotation.
-* Connect +12V from your power supply (the yellow wire for an ATX power supply) to the (+) terminal of the beacon
+* If your beacon has a motor, be sure to connect a diode between the (\+) and (-) leads of the beacon, with the striped side of the diode connected to the (+) lead of the beacon, as described in xref:diodes.adoc#coilDiodes[Coil Diodes]. This is required if there's any sort of motor or coil in the device. Any beacon with a rotating light has a motor inside to drive the rotation.
+* Connect \+12V from your power supply (the yellow wire for an ATX power supply) to the (+) terminal of the beacon
 * Connect the (-) terminal of the beacon to an available output port on your output controller
 
 The beacon might not have specific (+) and (-) terminals. If not, the order of the connections probably doesn't matter.
@@ -33,7 +34,7 @@ The beacon might not have specific (+) and (-) terminals. If not, the order of t
 
 For Pinscape expansion boards: It should be safe to connect any beacon to any MOSFET Power Board output. Those outputs can handle up to about 4A. Nearly any beacon should be well under 1A. It's best to check (measuring with an ammeter if necessary) if you're not sure, though.
 
-If you're using an LedWiz: It's safe to connect a beacon directly to an LedWiz output if the device draws *less than 500mA* . If it's above 500mA, you'll need some sort of "booster". See "Power Limits" in xref:ledwiz.adoc[LedWiz Setup] .
+If you're using an LedWiz: It's safe to connect a beacon directly to an LedWiz output if the device draws *less than 500mA* . If it's above 500mA, you'll need some sort of "booster". See "Power Limits" in xref:ledwiz.adoc#ledwizSetup[LedWiz Setup] .
 
 *DOF setup:* In the link:https://configtool.vpuniverse.com/[DOF Config Tool] , go to your Port Assignments page. Find the output controller port number where you wired the beacon. Assign this to "Beacon".
 
@@ -43,15 +44,15 @@ You can increase the brightness somewhat by installing an LED bulb in place of t
 
 The Peterson model 771 beacons use bulbs with socket type 1156, also known as BA15S. Any LED replacement bulb with the same base and a 12V supply voltage should work.
 
-In case you were wondering, you *don't* have to add extra resistors if you switch to LED bulbs. If you've read the chapter on xref:ledResistors.adoc[LED Resistors] , you know that "bare" LEDs require resistors in the circuit to limit the power going through them. But we're not talking about bare LEDs here; we're talking about LED replacements for incandescent bulbs. Any LED bulb that's designed as a plug-in replacement for an incandescent bulb has the necessary resistors built in, so no external resistors are needed.
+In case you were wondering, you *don't* have to add extra resistors if you switch to LED bulbs. If you've read the chapter on xref:ledResistors.adoc#ledResistors[LED Resistors] , you know that "bare" LEDs require resistors in the circuit to limit the power going through them. But we're not talking about bare LEDs here; we're talking about LED replacements for incandescent bulbs. Any LED bulb that's designed as a plug-in replacement for an incandescent bulb has the necessary resistors built in, so no external resistors are needed.
 
 If you install an LED, and the motor runs but the LED won't light up, you might need to reverse the polarity of the power supply connection to the beacon. Incandescent bulbs aren't polarized, but LEDs are. If the LED bulb won't light, try swapping the (+) and (-) leads connected to the beacon. This might also have the effect of reversing the direction of the motor, but it should make the LED light up. *Warning:* if you've attached a diode to the beacon (required if your beacon has a motor), be sure to reverse the diode at the same time that you reverse the voltage polarity.
 
-Another thing you can do to improve the _apparent_ brightness of the beacons is to supplement the beacons with some additional red and/or blue strobe lights. The "22-LED strobes" recommended in xref:flashers.adoc[Flashers and Strobes] also come in red and blue varieties. So:
+Another thing you can do to improve the _apparent_ brightness of the beacons is to supplement the beacons with some additional red and/or blue strobe lights. The "22-LED strobes" recommended in xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] also come in red and blue varieties. So:
 
 * Buy a 22-LED blue or red strobe, matching the color(s) of your beacon(s)
 * Mount it on top of your cab next to or behind the beacon, facing the ceiling
-* Unlike the advice for strobes in xref:flashers.adoc[Flashers and Strobes] , *do* use the little control box that comes with the strobe panel, so that the LEDs flash when the beacon is activated rather than turning on continuously.
+* Unlike the advice for strobes in xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] , *do* use the little control box that comes with the strobe panel, so that the LEDs flash when the beacon is activated rather than turning on continuously.
 * Wire the control box to the same output port as the beacon, so that the LEDs start flashing whenever the beacon is running
 * Make sure that the added power of the LED panel doesn't overload your output controller port. If the combined load would be too great, use a second port for the strobe panel instead, assigning it in the DOF configuration to the same "Beacon" device.
 

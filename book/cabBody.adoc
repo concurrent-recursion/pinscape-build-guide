@@ -1,3 +1,4 @@
+[#cabinetBody]
 = Cabinet Body
 
 On the forums, virtual pinball machines are always called "pin cabs". It's appropriate that the cabinet is the defining feature of these projects, since it's what sets them apart from video pinball on an ordinary PC. This chapter is about the literal _cabinet_ part of that - building the physical housing of the machine.
@@ -8,7 +9,7 @@ Before we get to the building plans, we'll discuss the reasons behind the design
 
 This section has a lot of background information and digressions on small (sometimes trivial) details, so it's rather lengthy. When you're ready to go out to your workshop and get building, you might prefer a more concise step-by-step list of dimensions and tasks. I've tried to provide something along those lines in a couple of appendices:
 
-*  xref:plywoodCuttingPlans.adoc[Plywood Cutting Plans for Cabinet Construction]
+*  xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction]
 *  xref:cabBodyQuickRef.adoc[Cabinet Construction Quick Reference]
 
 == Design goals
@@ -52,7 +53,7 @@ If you're set on the idea of re-purposing a used cabinet, I'd suggest doing a li
 
 To answer this, ask the seller for a list of all the hardware parts that the used cabinet includes - the legs, side rails, lockbar, etc. Don't assume that everything is included, because a lot of eBay sellers strip all of the parts out and sell them separately; a used cabinet might not come with anything beyond the wood box. And only consider the hardware that you'll actually use on your virtual cab, since those are the only parts you'd have to buy if you were starting from scratch. Only count parts that you actually need in the virtual cab (e.g., don't count the playfield, bumper caps, etc), and only count used parts if they're in usable condition.
 
-To help you get started here's a list of the main parts that real machines and virtual cabs have in common. See xref:cabParts.adoc[Cabinet Parts List] for a more detailed parts list with descriptions. We left the price column blank, since prices obviously vary over time and from one vendor to the next, so you'll have to fill that in by checking current prices at your preferred vendor(s) (such as link:https://virtuapin.net/[VirtuaPin] , link:https://www.pinballlife.com/[PinballLife] , or link:https://www.marcospecialties.com/[Marco Specialities] ). For the "wood body" line item, you can use VirtuaPin's flat pack or unfinished cab body offerings for comparison. Remember, only include the parts that the seller is including with the new cab, since you want to compare new-vs-used for what you're actually getting from the seller.
+To help you get started here's a list of the main parts that real machines and virtual cabs have in common. See xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] for a more detailed parts list with descriptions. We left the price column blank, since prices obviously vary over time and from one vendor to the next, so you'll have to fill that in by checking current prices at your preferred vendor(s) (such as link:https://virtuapin.net/[VirtuaPin] , link:https://www.pinballlife.com/[PinballLife] , or link:https://www.marcospecialties.com/[Marco Specialities] ). For the "wood body" line item, you can use VirtuaPin's flat pack or unfinished cab body offerings for comparison. Remember, only include the parts that the seller is including with the new cab, since you want to compare new-vs-used for what you're actually getting from the seller.
 
 Add up the prices of the new parts, and compare the result to the seller's asking price for the used cab. If the asking price for the used cab is cheaper than the new parts, and everything's in good enough shape that you can actually use it, you've found a good bargain. If the seller is asking more for a beat-up used cab than what you'd pay new, I'd pass on the deal.
 
@@ -216,7 +217,7 @@ The next step up in price and completeness is an assembled cabinet shell. This i
 
 At the high end price-wise, you can buy a fully assembled cabinet with all of the hardware and graphics pre-installed. VirtuaPin sells these in addition to their flat-pack and assembled-but-unfinished products. All of the VirtuaPin options use the same materials and design as their flat pack, so they all yield excellent reproductions of the 1990s Williams machines. There are other vendors selling pre-built cabinets as well, but check their designs carefully before buying, because I've seen a couple of other vendors who use their own ad hoc designs that look a bit cheap and cheesy to my eye.
 
-TIP: Ask about the button hole layout.* If you order a kit or pre-built cabinet, ask the seller for details on the locations of button holes they pre-drill, and ask them to customize the drilling to your plans if you have something else in mind. The vendor might drill holes by default that you don't want. Pay particular attention to the placement of the plunger and flipper button holes. Many virtual cab builders choose non-standard locations for these to accommodate the playfield TV (see "The dreaded plunger space conflict" in xref:playfieldMounting.adoc#plungerTVSpaceConfict[Playfield TV Mounting] and "Positioning the plunger" in xref:plunger.adoc#positioningThePlunger[Plunger] ). If you're not sure how you want to handle this at the time of your order, you can simply ask the vendor not to drill any holes for the plunger or other controls. That will give you the flexibility to drill them yourself later when you know how everything will fit together.
+TIP: *Ask about the button hole layout.* If you order a kit or pre-built cabinet, ask the seller for details on the locations of button holes they pre-drill, and ask them to customize the drilling to your plans if you have something else in mind. The vendor might drill holes by default that you don't want. Pay particular attention to the placement of the plunger and flipper button holes. Many virtual cab builders choose non-standard locations for these to accommodate the playfield TV (see "The dreaded plunger space conflict" in xref:playfieldMounting.adoc#plungerTVSpaceConfict[Playfield TV Mounting] and "Positioning the plunger" in xref:plunger.adoc#positioningThePlunger[Plunger] ). If you're not sure how you want to handle this at the time of your order, you can simply ask the vendor not to drill any holes for the plunger or other controls. That will give you the flexibility to drill them yourself later when you know how everything will fit together.
 
 === Scratch build
 
@@ -228,7 +229,7 @@ A scratch build is the cheapest option if you already have most of the tools req
 
 MDO plywood is even nicer, if you can find it. MDO is a hybrid product with a plywood core and an MDF veneer, so it has the strength and lightness of plywood and the flat, grainless surface finish of MDF. The MDF veneer saves hours of prep work for painting and decals.
 
-It's just barely possible to fit a standard-width cab into a single 4' x 8' sheet, but it's much easier with two sheets. See xref:plywoodCuttingPlans.adoc[Plywood Cutting Plans for Cabinet Construction] for layout suggestions.
+It's just barely possible to fit a standard-width cab into a single 4' x 8' sheet, but it's much easier with two sheets. See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] for layout suggestions.
 
 * 1/2" (nominal) plywood or particle board, one 4'x8' sheet, for the cabinet floor and the back wall of the backbox. Most commercial machines use particle board, to cut costs, since these pieces aren't cosmetic. Plywood is a nice upgrade if your budget permits. It's stronger and lighter.
 * A length of 2x2 (nominal) board, for corner braces. A nominal 2x2 is actually 1.5" on a side. It usually comes in 8-foot lengths. You need at least 5 feet, so one 8-foot board will leave you with some spare material for test cuts and do-overs.
@@ -240,9 +241,9 @@ Some cab builders use MDF (fiberboard) instead of plywood for the whole build. I
 
 Most commercial cabinets use a mix of plywood and particle board: plywood for the cab and backbox walls, and particle board for the cabinet floor and the back of the backbox. I'm normally in favor of faithfully replicating the original details, but in this case I see no benefit, since the particle board in the originals was purely for cost reduction and not for any functional reason. It's a worthwhile upgrade to use plywood for everything.
 
-*Hardware:* See xref:cabParts.adoc[Cabinet Parts List] .
+*Hardware:* See xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] .
 
-I personally prefer to use real pinball parts wherever possible, instead of trying to improvise something out of common hardware parts. It can be a bit more expensive to use the real parts, but they tend to look better, and in many cases they're easier to work with because they're purpose-built for a specialized job. An exception is that many of the fasteners and generic nuts and bolts that you can buy anywhere. But even some of the generic-sounding hardware can be hard to find outside of pinball vendors. Anything that I listed with a Williams part number in the master list ( xref:cabParts.adoc[Cabinet Parts List] ) is probably hard to find outside of pinball suppliers.
+I personally prefer to use real pinball parts wherever possible, instead of trying to improvise something out of common hardware parts. It can be a bit more expensive to use the real parts, but they tend to look better, and in many cases they're easier to work with because they're purpose-built for a specialized job. An exception is that many of the fasteners and generic nuts and bolts that you can buy anywhere. But even some of the generic-sounding hardware can be hard to find outside of pinball vendors. Anything that I listed with a Williams part number in the master list ( xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] ) is probably hard to find outside of pinball suppliers.
 
 *Tools:* See xref:cabTools.adoc[Cabinet Building Tools] for recommendations on the woodworking tools you'll need for building the cabinet.
 
@@ -357,17 +358,17 @@ There are several other pinball cabinet plans available on the Web, including ot
 
 One set of plans I'll call out in particular is Jonas Kello's Sketchup model, available on link:https://www.github.com/[github] :
 
-*link:https://github.com/jonaskello/wpc-cabinet.html[github.com/jonaskello/wpc-cabinet]
+* link:https://github.com/jonaskello/wpc-cabinet.html[github.com/jonaskello/wpc-cabinet]
 
 The nice thing about his 3D model is that you can look at it from all angles, which might be helpful whenever my illustrations leave something unclear about the spatial relationships between components. Jonas's model appears to have been prepared with excellent attention to detail. One warning, however: he explains that he took his measurements from a widebody WPC machine ( _Star Trek: The Next Generation_ ) and adjusted them to infer the standard-body dimensions. This creates an opportunity for errors and inconsistencies to creep in, and I have in fact found a couple of errors in his model that are likely due to this. My measurements were taken directly from standard-body machines ( _Theatre of Magic_ and _Medieval Madness_ ), so even though my figures undoubtedly have inaccuracies of their own, they're at least free of that particular source of error. In addition, even where our measurements essentially agree, there are a number of slight differences, on the order of 1/16" to 1/8", which I attribute to some combination of measurement error and actual variations in the machines we sampled.
 
 Another set of plans worth mentioning can be found in this Pinside thread by Swinks, which has measurements from original WPC standard-body machines (per the thread, mostly taken from _Creature from the Black Lagoon_ , with some corroboration against _Bram Stoker's Dracula_ and Stern's _Iron Man_ ):
 
-*link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed.html[pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed]
+* link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed.html[pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed]
 
 Finally, Greg Butcher, a/k/a mameman, drew up a set of WPC widebody plans many years ago that's often referenced in the virtual cab forums. They have some inaccuracies in the details of the construction, but they're still a useful reference. Jonas Kello captured them in his github repository:
 
-*link:https://github.com/jonaskello/wpc-cabinet/blob/master/references/williams%20widebody%20cabinet%20rev3.pdf[github.com/jonaskello/wpc-cabinet/blob/master/references/williams%20widebody%20cabinet%20rev3.pdf]
+* link:https://github.com/jonaskello/wpc-cabinet/blob/master/references/williams%20widebody%20cabinet%20rev3.pdf[github.com/jonaskello/wpc-cabinet/blob/master/references/williams%20widebody%20cabinet%20rev3.pdf]
 
 [#cabJoinery]
 === Joinery
@@ -384,7 +385,7 @@ image::images/lock-miter-join-sample.png[""]
 
 Locking miter join, shown at the front left corner of the main cabinet. This is the type of join that Williams used for the original WPC cabinets from the 1990s.
 
-This is a really nice way to make your corners. The mitered corner makes the seam invisible, and the join is very strong when glued thanks to all of the surface area in the interlocking tabs. You can see from the diagram that that shape is a little complicated to cut, but it's surprisingly approachable, even if you don't have a lot of woodworking experience. For a complete recipe, using a table saw and router table, see xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way] . There's also an alternative approach that uses a special-purpose router bit, explained in xref:lockMiterII.adoc[Lock Miter II: The Special Router Bit Way] . The first approach works a lot better with plywood, so I think it's the right one for a pin cab project.
+This is a really nice way to make your corners. The mitered corner makes the seam invisible, and the join is very strong when glued thanks to all of the surface area in the interlocking tabs. You can see from the diagram that that shape is a little complicated to cut, but it's surprisingly approachable, even if you don't have a lot of woodworking experience. For a complete recipe, using a table saw and router table, see xref:lockMiterI.adoc#lockMiter1[Lock Miter I: The Plywood-Friendly Way] . There's also an alternative approach that uses a special-purpose router bit, explained in xref:lockMiterII.adoc#lockMiter2[Lock Miter II: The Special Router Bit Way] . The first approach works a lot better with plywood, so I think it's the right one for a pin cab project.
 
 *Locking rabbet:* This is essentially a simplified version of the locking miter join that dispenses with the 45° bevel at the corner.
 
@@ -469,7 +470,7 @@ The smallish slat near the bottom front attaches to the floor on the real machin
 
 === Cutting up the plywood
 
-There are numerous ways to divide plywood sheets into the panels making up the cabinet. For some suggested layouts, see xref:plywoodCuttingPlans.adoc[Plywood Cutting Plans for Cabinet Construction] .
+There are numerous ways to divide plywood sheets into the panels making up the cabinet. For some suggested layouts, see xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] .
 
 [#sideWalls]
 === Side walls
@@ -545,9 +546,9 @@ There are two approaches to drilling the holes:
 
 If you prefer something more purpose-built, here's a 3D-printable model for a drill guide that's designed just for the leg bolts. It fits over the corner and has two 3/8" holes at the standard 2¼" spacing.
 
-*link:http://mjrnet.org/pinscape/downloads/leg-bolt-drilling-jig.zip[leg-bolt-drilling-jig.zip]
+* link:http://mjrnet.org/pinscape/downloads/leg-bolt-drilling-jig.zip[leg-bolt-drilling-jig.zip]
 
-image::images/leg-bolt-drill-with-guide.jpg[""]
+image::images/leg-bolt-drill-with-guide.jpg[alt="Photo of angle drilling jig strapped to cabinet"]
 
 Preparing to drill for a leg bolt at the front right corner, using a general-purpose drill guide block. This drill block features a notch specifically for drilling into a corner at a 45° angle. I'm using a band clamp wrapped around the whole cabinet to hold the drill block in place. You have to clamp the drill block down pretty tightly, and even then you have to be careful to use a steady hand - those 45° notches are small, and the drill gives you a lot of leverage.
 
@@ -779,7 +780,7 @@ Above left: Drilling detail for the button holes, viewed from the exterior face.
 
 The recess is optional. It's the way that the buttons were mounted on the real 1990s machines, and I think it looks more finished. But if you want to keep things simpler, you can skip the recess and simply drill a 1" hole straight through. The buttons will jut out by about a quarter inch if you omit the inset, but this won't look "wrong", since the buttons are trimmed to work with this mounting style as well.
 
-Our plans show the positions for three buttons, but that's only a suggestion. As far as software usability goes, the virtual pinball software more or less requires a minimum of two buttons: "Start" and "Exit". The third button in our plans can assigned be any other function of your choice, or you can omit it entirely. See xref:cabButtons.adoc[Cabinet Buttons] for ideas and recommendations. I think it's a good idea to include a third button, even if don't already have a clear use for it in mind, since it will be hard to add one later. You can change the meanings of the buttons at any time in the software, so you're not stuck with the functions you choose initially. I assigned my third button as "Extra Ball", since that's used on a lot of real machines from the 1990s. Another useful function is "Coin In" (to simulate inserting a coin), although I prefer implementing that via the coin return buttons on the coin door, since that's a more natural and inconspicuous place for it. Other possibilities include game-specific extra buttons, or special functions in your game navigator software.
+Our plans show the positions for three buttons, but that's only a suggestion. As far as software usability goes, the virtual pinball software more or less requires a minimum of two buttons: "Start" and "Exit". The third button in our plans can assigned be any other function of your choice, or you can omit it entirely. See xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] for ideas and recommendations. I think it's a good idea to include a third button, even if don't already have a clear use for it in mind, since it will be hard to add one later. You can change the meanings of the buttons at any time in the software, so you're not stuck with the functions you choose initially. I assigned my third button as "Extra Ball", since that's used on a lot of real machines from the 1990s. Another useful function is "Coin In" (to simulate inserting a coin), although I prefer implementing that via the coin return buttons on the coin door, since that's a more natural and inconspicuous place for it. Other possibilities include game-specific extra buttons, or special functions in your game navigator software.
 
 Omitting a button is easy. If you only want to include two buttons, simply drill the top two holes at the positions shown, and skip the bottom one.
 
@@ -823,7 +824,7 @@ The traditional plunger location shown above doesn't work for everyone, because 
 * Include only the plunger, but lower it to get it out of the way of the TV, so that the TV can be mounted closer to the front of the cab. To implement this, use the inverted plan below, and skip drilling the hole for the Launch button.
 * Include only the Launch button, with no plunger. To do this, use the inverted plan below, but don't cut the plunger opening.
 
-For more advice on choosing among these options, see xref:plunger.adoc[Plunger] .
+For more advice on choosing among these options, see xref:plunger.adoc#plungerPlunger] .
 
 
 ====  Inverted plunger/Launch button
@@ -975,7 +976,7 @@ Here are some ideas for other cutouts you might want to make in the cab floor, a
 
 * Other hidden controls, such as an audio mute button or a "night mode" switch (to silence noisier devices for late night use).
 
-The bottom of the cabinet is a good place for controls that you want to keep hidden but accessible. There's an even better place for controls that you want to be _restricted_ , not merely hidden: inside the coin door. Controls located there will not only be out of sight during normal play, but won't even be accessible to ordinary users who don't have the key, preventing kids or guests from messing with anything you don't want messed with. It's the same reason the real machines locate the operator menu buttons on the inside of the coin door. See xref:coinDoor.adoc[Coin Door] .
+The bottom of the cabinet is a good place for controls that you want to keep hidden but accessible. There's an even better place for controls that you want to be _restricted_ , not merely hidden: inside the coin door. Controls located there will not only be out of sight during normal play, but won't even be accessible to ordinary users who don't have the key, preventing kids or guests from messing with anything you don't want messed with. It's the same reason the real machines locate the operator menu buttons on the inside of the coin door. See xref:coinDoor.adoc#coinDoor[Coin Door] .
 
 [#cashboxFence]
 ====  Cashbox fence
@@ -1002,7 +1003,7 @@ image::images/cashbox-tab.png[""]
 
 Cashbox lock bracket (Williams/Bally part 01-10030 or 1A-3493-1).
 
-While you're cutting the piece for the fence, also cut two triangular pieces that we'll use to attach the fence to the side walls on the cabinet. These are normally triangular pieces 3" long, which can be made by slicing a 2x2 board in half down its length at a 45° angle. The triangular profile of these wedges isn't important; they just sit in the corners of the fence to help support it. A plain rectangular piece of 1x2 or 2x2 board would be just as functional. If you want to use the traditional wedge-shaped pieces, see xref:cornerBraceCutting.adoc[How to Make Corner Braces (and other wood prism shapes)] for ideas on fabricating them.
+While you're cutting the piece for the fence, also cut two triangular pieces that we'll use to attach the fence to the side walls on the cabinet. These are normally triangular pieces 3" long, which can be made by slicing a 2x2 board in half down its length at a 45° angle. The triangular profile of these wedges isn't important; they just sit in the corners of the fence to help support it. A plain rectangular piece of 1x2 or 2x2 board would be just as functional. If you want to use the traditional wedge-shaped pieces, see xref:cornerBraceCutting.adoc#howToMakeCornerBrances[How to Make Corner Braces (and other wood prism shapes)] for ideas on fabricating them.
 
 image::images/main-floor-divider-stays.png[""]
 
@@ -1083,7 +1084,7 @@ The corner braces have a triangular profile, with these dimensions:
 
 image::images/leg-bracket-spacer-2.png[""]
 
-The normal way to make these is by cutting a 2x2 roughly in half, down its length, at a 45° angle. This is a bit tricky to do; for help, see xref:cornerBraceCutting.adoc[How to Make Corner Braces (and other wood prism shapes)] .
+The normal way to make these is by cutting a 2x2 roughly in half, down its length, at a 45° angle. This is a bit tricky to do; for help, see xref:cornerBraceCutting.adoc#howToMakeCornerBrances[How to Make Corner Braces (and other wood prism shapes)] .
 
 You'll need four pieces in this shape:
 
@@ -1162,7 +1163,7 @@ One way to make the molding piece is to start with a nominal 1x2 board, at least
 
 image::images/backbox-trim-cross-section.png[""]
 
-For help cutting this shape, see xref:cornerBraceCutting.adoc[How to Make Corner Braces (and other wood prism shapes)] .
+For help cutting this shape, see xref:cornerBraceCutting.adoc#howToMakeCornerBrances[How to Make Corner Braces (and other wood prism shapes)] .
 
 The diagram above is based on the molding used in the original Williams machines, but you don't have to reproduce the shape perfectly, because this piece is purely cosmetic - the shape doesn't have to mesh with any other parts and doesn't serve any mechanical function. It's just there to hide the top glass channel and give it a finished look. The only important thing is to give it a pleasing tapered shape. The rounded corners are likewise not required, but they look a little nicer; you can get that effect simply by sanding the corners until they start to round out.
 
@@ -1175,7 +1176,7 @@ image::images/backbox-trim-piece.png[""]
 [#transliteLockPlatePrep]
 ====  Translite lock plate preparation
 
-If you're planning to install a translite lock plate, there's some preparation you can do at this stage that will make installing the lock easier and more secure when you get there. If you don't know what the translite lock plate is, you can learn about it in the "Translite lock" section in xref:cabHardware.adoc[Cabinet Hardware Installation] . Briefly, it's a keyed lock that you can install at the inside top of the backbox to secure the translite. For a home machine, the security function isn't important, but you might want to include the lock anyway if you're a stickler for realism, since it's there on all of the real machines going back at least to the 1980s.
+If you're planning to install a translite lock plate, there's some preparation you can do at this stage that will make installing the lock easier and more secure when you get there. If you don't know what the translite lock plate is, you can learn about it in the "Translite lock" section in xref:cabHardware.adoc#cabinetHardware[Cabinet Hardware Installation] . Briefly, it's a keyed lock that you can install at the inside top of the backbox to secure the translite. For a home machine, the security function isn't important, but you might want to include the lock anyway if you're a stickler for realism, since it's there on all of the real machines going back at least to the 1980s.
 
 The translite lock is installed in the front translite guide (described in the section above), which is part of the ceiling of the backbox. The front guide has a gap of about 2 inches in the middle, specifically for the lock.
 

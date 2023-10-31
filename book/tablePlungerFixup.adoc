@@ -245,7 +245,7 @@ If you don't want to pore over the script, there's a pretty easy trial-and-error
 ** If the code is inside a Sub called something like Table_KeyDown or Table_KeyUp, it's keyboard handler code. Don't delete the whole routine; just delete the line that's causing the error.
 * Go back and repeat this whole process until the game runs reliably
 
-In most cases, tables with plunger scripting use subroutines that are fairly self-contained and dedicated to the plunger operations. So when you find an error, you can usually just delete the entire subroutine that contains the error line: that is, all lines from the nearest *Sub _name_ * that precedes the error line to the nearest *End Sub* that follows it.
+In most cases, tables with plunger scripting use subroutines that are fairly self-contained and dedicated to the plunger operations. So when you find an error, you can usually just delete the entire subroutine that contains the error line: that is, all lines from the nearest *Sub _name_* that precedes the error line to the nearest *End Sub* that follows it.
 
 Something that's likely to happen during this process is that you might delete one subroutine block that _another_ subroutine calls. So after you delete the code with the first error, run again, and you'll probably hit a _new_ error in code that's trying to call the code you just deleted.
 

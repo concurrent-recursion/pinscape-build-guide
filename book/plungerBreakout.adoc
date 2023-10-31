@@ -1,3 +1,4 @@
+[#plungerSensorBreakoutBoard]
 =  Plunger Sensor Breakout Board
 
 If you're using Pinscape on a standalone KL25Z - *without* the expansion boards - this section shows how to create a little circuit board to interface between the plunger sensors and the KL25Z. This gives you a place to plug in the standard connector that we use for all of our plunger sensors.
@@ -52,7 +53,7 @@ To order from OSH Park:
 
 *Step 4: Strip wire insulation.* Strip about 3/16" of insulation from the end of each wire.
 
-*Step 5: Attach crimp pins.* Attach a crimp pin to *one end* of each wire. Use the type of crimp pin that matches the wire housings you're using to connect to the KL25Z, because these pins will fit into those housings. See xref:crimpPins.adoc[Crimp Pins] for instructions on how to attach them.
+*Step 5: Attach crimp pins.* Attach a crimp pin to *one end* of each wire. Use the type of crimp pin that matches the wire housings you're using to connect to the KL25Z, because these pins will fit into those housings. See xref:crimpPins.adoc#crimpPins[Crimp Pins] for instructions on how to attach them.
 
 NOTE: If you're already using the KL25Z's 5V, 3.3V, and/or GND pins for other purposes, and you already have a crimp pin in any of those slots, you'll have to tap into your existing wire, since you obviously can't add a second crimp pin to the same slot. So instead of adding a crimp pin on any affected wires, splice into the existing wire:
 

@@ -61,7 +61,7 @@ Recommended router bits:
 
 * For general hole-cutting and dados, a basic set of straight bits in assorted sizes (1/4", 3/8", 1/2", 3/4").
 * For installing the playfield glass guides, a slot cutter bit with a 3/32" groove width. Freude makes a suitable groove cutter with a 9/16" groove depth and 3/32" grove width (part number 63-106).
-* If you're building a cabinet from scratch, there are special router bits you can use to make certain types of corner joins for the main cabinet. My preference is type of a corner join that doesn't require special bits, as described in xref:lockMiterI.adoc[Lock Miter I: The Plywood-Friendly Way] .
+* If you're building a cabinet from scratch, there are special router bits you can use to make certain types of corner joins for the main cabinet. My preference is type of a corner join that doesn't require special bits, as described in xref:lockMiterI.adoc#lockMiter1[Lock Miter I: The Plywood-Friendly Way] .
 
 Router accessory:
 

@@ -4,7 +4,7 @@ A schematic is a map of a circuit showing the components and how they're connect
 
 You don't have to learn how to read a schematic to build the Pinscape Controller projects, but it's a skill that might come in handy if you need to troubleshoot one of the Pinscape boards after building it. So this section provides a very quick introduction, hopefully just enough that you can make sense of the Pinscape schematics should you ever need to look at one.
 
-Schematics use their own special symbolic language, the way that music has its language of staffs and notes, so they can look pretty opaque at first. A lot of electronics-for-newbies tutorials try to avoid the formalism of schematics by using pictorial circuit diagrams. I've even used a few of those in this guide, like this one from the xref:ledResistors.adoc[LED Resistors] chapter, showing how to wire a current-limiting resistor into a flasher LED circuit:
+Schematics use their own special symbolic language, the way that music has its language of staffs and notes, so they can look pretty opaque at first. A lot of electronics-for-newbies tutorials try to avoid the formalism of schematics by using pictorial circuit diagrams. I've even used a few of those in this guide, like this one from the xref:ledResistors.adoc#ledResistors[LED Resistors] chapter, showing how to wire a current-limiting resistor into a flasher LED circuit:
 
 image::images/LEDResistor.png[""]
 

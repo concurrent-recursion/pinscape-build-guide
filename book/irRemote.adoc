@@ -148,8 +148,8 @@ After you've programmed a code, you'll notice that there's a little TV ON icon (
 In your Pinscape Config Tool install folder, you should find another utility program called *PinscapeCmd.exe* . You can use this program to make Pinscape transmit any of the IR command codes it knows at any time via the Windows command line.
 
 * Open a CMD prompt
-* Go to the Pinscape Config Tool folder: *CD /D C:\PINSCAPE* (or wherever it's installed)
-* Type *PinscapeCmd SendIR=1*
+* Go to the Pinscape Config Tool folder: `CD /D C:\PINSCAPE` (or wherever it's installed)
+* Type `PinscapeCmd SendIR=1`
 
 The *SendIR* command transmits the learned command code in the given slot. If you go back to your IR command list, the number corresponds to the row number in that list.
 

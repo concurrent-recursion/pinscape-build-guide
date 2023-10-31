@@ -1,3 +1,4 @@
+[#buttonLamps]
 = Button Lamps
 
 Most of the buttons on a pin cab can be illuminated. Any button with a lamp can have the lamp controlled by software, too, so that the button lights up, turns off, blinks, and fades in and out when appropriate.
@@ -12,7 +13,7 @@ Examples of illuminated buttons on a pin cab:
 
 Button lights are optional, but most cab builders include them because they make the machine seem more alive. And controlling the buttons through software is also optional (you can just hard-wire them to be constantly on instead), but most cab builders want them actively controlled, since that makes the machine more interactive and more realistic.
 
-If you're not sure what all of the buttons are for, see xref:cabButtons.adoc[Cabinet Buttons] for more detailed descriptions of the various button types commonly found on virtual cabs.
+If you're not sure what all of the buttons are for, see xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] for more detailed descriptions of the various button types commonly found on virtual cabs.
 
 == Hard-wired vs software controlled
 
@@ -62,7 +63,7 @@ image::images/FrontPanelButton.png[""]
 
 These buttons are socketed for #555 incandescent bulbs, which run on 6.3V and require about 250mA. If you buy from a pinball parts vendor, the button will usually come with a #555 bulb installed. The pinball parts vendors also sell plug-and-play LED replacement bulbs that fit the same socket.
 
-*Labels:* If you buy your buttons from a pinball parts vendor, you can find buttons that come ready-made with labels for "Start", "Extra Ball", and a few other options. You can also buy blank buttons (with no labels) and install your own labels. You can print a label with any custom text you want using a laser printer and transparency film. To install a new label, you have to pry the plastic lens off of the button, remove any label already installed, insert your new label, and snap the lens back on. This is described in more detail in xref:cabButtons.adoc[Cabinet Buttons] .
+*Labels:* If you buy your buttons from a pinball parts vendor, you can find buttons that come ready-made with labels for "Start", "Extra Ball", and a few other options. You can also buy blank buttons (with no labels) and install your own labels. You can print a label with any custom text you want using a laser printer and transparency film. To install a new label, you have to pry the plastic lens off of the button, remove any label already installed, insert your new label, and snap the lens back on. This is described in more detail in xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
 
 *Identify the terminals:* The first time you look at one of these button-plus-lamp assemblies, it can be a little daunting, because they have so many prongs sticking out. It's easier if you keep in mind that the base of the assembly is really just a standard microswitch, with a lamp socket bolted on top:
 
@@ -73,7 +74,7 @@ When you look at it that way, it's pretty easy to pick out the terminals for the
 image::images/SwitchWithLampDiagram.png[""]
 
 
-WARNING: The "Common" and "NO" (Normally Open) might not be positioned exactly as shown above for your switch. Double-check the markings on the switch to be sure before connecting anything. See xref:cabButtonWiring.adoc[Button Wiring] for tips on reading switch markings.
+WARNING: The "Common" and "NO" (Normally Open) might not be positioned exactly as shown above for your switch. Double-check the markings on the switch to be sure before connecting anything. See xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] for tips on reading switch markings.
 
 This is even easier to see if you take the button housing off. To do this, gently twist the bottom switch portion slightly until it comes loose, then pull the switch housing away from the base.
 
@@ -100,7 +101,7 @@ image::images/ButtonLampWiring.png[""]
 * Exit
 * Fire Button
 
-See xref:cabButtons.adoc[Cabinet Buttons] for more detailed descriptions of the button types.
+See xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] for more detailed descriptions of the button types.
 
 *6.3V supply:* Incandescent #555 bulbs are designed to run on 6.3V. That's not a voltage you'll find on a PC ATX power supply, so many pin cab builders use the 5V ATX output, since it's reasonably close. That works, but the bulbs will be noticeably dimmer at 5V than they're meant to be, which might make your button illumination look a little sad. If you're using LED lamps, on the other hand, the voltage won't noticeably affect the brightness, so 5V is fine.
 
@@ -112,14 +113,14 @@ To connect:
 * If your converter has an adjustable output voltage, adjust it to 6.3V, using a voltmeter connected to the output terminals to measure it (you'll need to apply the power during this step)
 * Turn off power
 * Connect the converter's (+) output to one terminal of each 6.3V #555 lamp
-* Connect the other terminal of each lamp to an available port on your output controller (following the standard wiring plan in xref:feedbackWiring.adoc[Feedback Device Wiring] )
+* Connect the other terminal of each lamp to an available port on your output controller (following the standard wiring plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] )
 
 image::images/ButtonLampWiringWithConverter.png[""]
 
 == Launch Ball button
 
 image::images/PlungerAndLaunchButton.png[""]
-Several real machines from the 1990s used big round "Launch Ball" buttons in place of plungers. Many pin cab builders use the same buttons, either instead of plungers or in addition to plungers. See xref:plunger.adoc[Plunger] for more on choosing whether to include one or the other or both, and where to place the Launch button if you're including one.
+Several real machines from the 1990s used big round "Launch Ball" buttons in place of plungers. Many pin cab builders use the same buttons, either instead of plungers or in addition to plungers. See xref:plunger.adoc#plungerPlunger] for more on choosing whether to include one or the other or both, and where to place the Launch button if you're including one.
 
 The standard type of Launch button is just a variation on the "small round pushbutton" type used for the Start button and the others above. The typical type is SuzoHapp part number D54-0004-1x (the last digit is a color code), which you can find at pinball parts vendors under Williams/Bally reference number 20-9663-B-4. The generic SuzoHapp type doesn't have any label text; the type sold by pinball parts companies will include a "Launch Ball" label insert.
 
@@ -129,7 +130,7 @@ The standard type of Launch button is just a variation on the "small round pushb
 
 * Launch Ball: choose this if your cab has _only_ a launch button, and no plunger.
 * Authentic Launch Ball: choose this if your cab has both a plunger and a launch button.
-* ZB Launch Ball: ignore this one. It's not for button lamps, but for something else entirely (see xref:zblaunch.adoc[ZB Launch Ball] ).
+* ZB Launch Ball: ignore this one. It's not for button lamps, but for something else entirely (see xref:zblaunch.adoc#zbLaunchBallZB Launch Ball] ).
 
 Why the distinction between Launch Ball and Authentic Launch Ball? It's to accommodate different styles of cab building and different personal tastes.
 
@@ -205,7 +206,7 @@ If you buy the plain Lightmite board or use my EAGLE plans, you'll need to buy t
 * (1) 2x2 0.1" pin header
 * (1) 2x2 0.1" female crimp pin housing with 4 crimp pins
 
-The pin headers and crimp pin housings are the same types used in several places in the expansion boards; see xref:partslist.adoc[Electronic Parts List] and xref:crimpPins.adoc[Crimp Pins] .
+The pin headers and crimp pin housings are the same types used in several places in the expansion boards; see xref:partslist.adoc#electronicPartsList[Electronic Parts List] and xref:crimpPins.adoc#crimpPins[Crimp Pins] .
 
 *Wiring:* Connect the pins on the Lightmite boards or my EAGLE boards as labeled:
 
@@ -222,5 +223,5 @@ DOF does have separate left/right versions of the Magna Save buttons, because th
 
 Most people leave the coin chute lights hard-wired to constant power. If you have a separate Coin button, you can do the same thing. Even in the real machines, the coin chute lights are almost always hard-wired to stay constantly on. You _can_ wire these to DOF outputs if you really want to, and DOF provides a "Coin" output type, but there's not much practical benefit, as the standard DOF Config Tool database setting simply leaves this output constantly on, just like the real games.
 
-If you're using a real coin door, you can find more information about how the coin chute lights are wired (and how to access that wiring) in xref:coinDoor.adoc[Coin Door] .
+If you're using a real coin door, you can find more information about how the coin chute lights are wired (and how to access that wiring) in xref:coinDoor.adoc#coinDoor[Coin Door] .
 

@@ -1,3 +1,4 @@
+[#plywoodCuttingPlans]
 = Plywood Cutting Plans for Cabinet Construction
 
 If you're building a pinball cabinet from scratch, the first step is to buy some plywood sheets and cut them up to form the panels making up the cabinet. This chapter provides a few options for how to divide up the plywood.
@@ -118,7 +119,7 @@ Plywood sheet #3 - 4' x 8' x 1/2" nominal thickness.Click the image for a larger
 +
 If you're building a widebody or custom cabinet size, adjust the size to match. Here's how I calculate the floor size: start with the outside dimensions of your cabinet, then subtract 7/8" from each dimension. This accounts for the thickness of the walls left over outside of the dado grooves that the floor fits into (about 3/8" on each side, for 3/4" total), with another 1/8" of wiggle room, in case of any irregularities in the dado depth or floor edge. You can add back the 1/8" if you want a tighter fit; you can always do a test fit and sand it down a little if necessary.
 
-19. There are a few more miscellaneous pieces that you'll need to cut out of the leftover plywood. These are covered in detail in xref:cabBody.adoc[Cabinet Body] , but here's a quick summary:
+19. There are a few more miscellaneous pieces that you'll need to cut out of the leftover plywood. These are covered in detail in xref:cabBody.adoc#cabinetBody[Cabinet Body] , but here's a quick summary:
 +
 * Two corner supports for the cashbox fence, each 3" long, with a triangular cross section (exact sizing is unimportant); these can be made from a nominal 2x2 board cut in half diagonally (at 45°) lengthwise
 * Two corner braces for the front leg brackets, each 6" to 8½" long (at your discretion), cut in a triangular cross-section (with two 1-1/16" sides and a 1-1/2" hypotenuse)
@@ -129,9 +130,9 @@ If you're building a widebody or custom cabinet size, adjust the size to match. 
 * Two 12-3/8" x 1" strips of 3/4" plywood, for translite guides
 * One 27-1/8" length of 3/4" reducer molding (or a similar shape fashioned from a 1x2), for backbox trim at the top of the translite
 +
-The woodworking on the plywood pieces isn't finished after you cut the last piece. Most of these parts require some additional work with a router, drill, and/or jigsaw. This is all covered in detail in xref:cabBody.adoc[Cabinet Body] .
+The woodworking on the plywood pieces isn't finished after you cut the last piece. Most of these parts require some additional work with a router, drill, and/or jigsaw. This is all covered in detail in xref:cabBody.adoc#cabinetBody[Cabinet Body] .
 +
-For help with the triangular wedge-shaped pieces, see xref:cornerBraceCutting.adoc[How to Make Corner Braces (and other wood prism shapes)] .
+For help with the triangular wedge-shaped pieces, see xref:cornerBraceCutting.adoc#howToMakeCornerBrances[How to Make Corner Braces (and other wood prism shapes)] .
 
 [#singleSheetPlan]
 == Layout 2: Single 3/4" sheet plan

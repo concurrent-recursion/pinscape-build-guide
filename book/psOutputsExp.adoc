@@ -1,10 +1,10 @@
 = Pinscape Outputs Setup (Expansion Boards)
 
-If you've built a set of expansion boards, you're past the hard part. Connecting output devices is fairly easy. The Pinscape boards use the same basic wiring plan as other solid state controllers, as described in xref:feedbackWiring.adoc[Feedback Device Wiring] :
+If you've built a set of expansion boards, you're past the hard part. Connecting output devices is fairly easy. The Pinscape boards use the same basic wiring plan as other solid state controllers, as described in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 
 * Connect a wire from the *positive* terminal of the power supply to the feedback device's positive terminal
 * Connect the feedback device's negative terminal to an output port pin on the Pinscape expansion board
-* As described in xref:powerSupplies.adoc[Power Supplies for Feedback] , you should already have connected the power supply's negative terminal to the common ground interconnect for all of the feedback power supplies
+* As described in xref:powerSupplies.adoc#powerSuppliesForFeedback[Power Supplies for Feedback] , you should already have connected the power supply's negative terminal to the common ground interconnect for all of the feedback power supplies
 
 image::images/psOutBasicWiring.png[""]
 
@@ -40,7 +40,7 @@ image::images/mixed-feedback-voltage.png[""]
 
 Most mechanical devices *require* protective diodes. These are required for anything with a coil: solenoids, contactors, replay knockers, motors.
 
-See xref:diodes.adoc[Coil Diodes] for details on what type of diodes to use and how to install them.
+See xref:diodes.adoc#coilDiodes[Coil Diodes] for details on what type of diodes to use and how to install them.
 
 Diodes are critical! Coils and motors can damage your PC motherboard and other components if diodes aren't used.
 
@@ -124,13 +124,13 @@ image::images/psMainBoardOutputs.png[""]
 Output ports on the main expansion board. JP11 (left) is for five RGB flashers; JP9 (top) is for the replay knocker and strobe; and JP8 (right) is for small (20mA) LEDs.
 
 [#JP12Warning]
-CAUTION: Don't connect a strobe or any other output device to any of the pins on JP12* . JP12 is *not* an output port header. The printing on the board is so packed together in that area that it's easy to read the STROBE label as part of JP12. It's not! The STROBE pin is on JP9, right next to the KNOCKER pin.
+CAUTION: *Don't connect a strobe or any other output device to any of the pins on JP12* . JP12 is *not* an output port header. The printing on the board is so packed together in that area that it's easy to read the STROBE label as part of JP12. It's not! The STROBE pin is on JP9, right next to the KNOCKER pin.
 
 image::images/JP12Warning.png[""]
 
 *Be careful* about where you connect the strobe and knocker. Both of these connect to the pins on JP9. Don't connect any output device to JP12. The pins on JP12 connect directly to GPIO pins on the KL25Z, so connecting them to power is extremely likely to damage or destroy the KL25Z.
 
-*Main board JP11 (RGB Flashers)* is designed for high-power RGB LEDs, for flasher lights. See xref:flashers.adoc[Flashers and Strobes] for information on the type of LED most people use. This header has 15 outputs, which is enough to connect the standard complement of 5 flasher LEDs (as each RGB LED takes up three channels, one each for red, green, and blue).
+*Main board JP11 (RGB Flashers)* is designed for high-power RGB LEDs, for flasher lights. See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for information on the type of LED most people use. This header has 15 outputs, which is enough to connect the standard complement of 5 flasher LEDs (as each RGB LED takes up three channels, one each for red, green, and blue).
 
 The pins on the header are labeled 1R, 1B, 1G, 2R, 2B, 2G, etc. "1R" stands for the Red channel on the first LED, for example. This is purely a suggestion for how to connect the color channels; you can rearrange the connections if necessary. If you connect them according to the labels, though, it will make the software setup easier, since this ordering matches the default settings in the firmware.
 
@@ -138,7 +138,7 @@ This connector also provides a +5V power supply pin. The idea is that you can co
 
 You don't strictly have to connect flashers to these outputs, although if you're going to use flashers in your system at all, this is the best place to connect them. If you're _not_ using flashers, though, you can re-purpose these outputs for other types of devices, *as long as you stay within the limits of 50V and 1.5A* per output. Don't connect anything that draws more than 1.5A, as that can potentially destroy the IC chips that drive these outputs. For anything that takes more than 1.5A, always use the Power Board outputs instead.
 
-*Main board JP9 (Knocker/Strobe)* has one pin dedicated to the replay knocker, and one pin dedicated to a "strobe" output. These assignments are printed on the board next to the pin header to help you identify which is which. See xref:contactors.adoc[Flippers, Bumpers, and Slingshots] and xref:flashers.adoc[Flashers and Strobes] for notes on these device types.
+*Main board JP9 (Knocker/Strobe)* has one pin dedicated to the replay knocker, and one pin dedicated to a "strobe" output. These assignments are printed on the board next to the pin header to help you identify which is which. See xref:contactors.adoc[Flippers, Bumpers, and Slingshots] and xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] for notes on these device types.
 
 The strobe output is driven by exactly the same chip that controls the flasher outputs, so it has the same power limits (50V and 1.5A). You can use it for other purposes besides a strobe if you prefer, as long as you stay within those limits.
 
@@ -154,7 +154,7 @@ In addition to labeled outputs for 5 RGB LEDs, there's an extra pin labeled LED6
 
 This header provides a +5V power supply pin that you can use to power the attached LEDs.
 
-This header has a special feature for LEDs: it has a built-in current limiter for each channel, which eliminates the need to use a separate external resistor for attached LEDs. (See xref:ledResistors.adoc[LED Resistors] .) You can safely connect LEDs directly to these ports, with no resistors required. The current limit is determined by the resistance (Ohms) value of resistor "R5" on the main board. If you used the default 2.2K resistor from the parts list, the current limit is set at 20mA, which is perfect for most small LEDs.
+This header has a special feature for LEDs: it has a built-in current limiter for each channel, which eliminates the need to use a separate external resistor for attached LEDs. (See xref:ledResistors.adoc#ledResistors[LED Resistors] .) You can safely connect LEDs directly to these ports, with no resistors required. The current limit is determined by the resistance (Ohms) value of resistor "R5" on the main board. If you used the default 2.2K resistor from the parts list, the current limit is set at 20mA, which is perfect for most small LEDs.
 
 The term "Opto" in the label, by the way, refers to optocouplers. Optocouplers have internal LEDs with the same general properties as the small LEDs that these outputs are designed for, so you could connect an optocoupler to any of these ports in lieu of an LED. That would allow you to control another circuit through the opto. I don't have any particular applications for this in mind - it's just an option for people who like tinkering with electronics, since it gives you a way to control just about any custom circuit via a Pinscape output.
 

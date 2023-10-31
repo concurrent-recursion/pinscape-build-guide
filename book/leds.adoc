@@ -22,7 +22,7 @@ The negative lead of an LED is also known as the cathode; the positive lead is t
 
 == Orienting on a circuit board
 
-The circuit board markings for an LED will indicate the orientation, either by marking one of the pads with a "+" sign for the "+" leg, or via the outline on the circuit board. If it's indicated via the outline, one side of the outline circle will be flattened:
+The circuit board markings for an LED will indicate the orientation, either by marking one of the pads with a "\+" sign for the "+" leg, or via the outline on the circuit board. If it's indicated via the outline, one side of the outline circle will be flattened:
 
 image::images/led-pcb-marking.png[""]
 
@@ -66,13 +66,13 @@ So in most cases, the only two things that matter when selecting an LED are its 
 
 For example, if your circuit board provides 5V power to an LED with current regulated to 20mA, you can use an LED with a forward voltage of 2V (because 2V is less than the 5V supply voltage) and a maximum current rating of 50mA (because 50mA is greater than the regulated 20mA). You _can't_ use an LED with a forward voltage of 6V, because that exceeds the 5V supply voltage.
 
-* If the circuit board uses a resistor to regulate the current (see xref:ledResistors.adoc[LED Resistors] , and you _can't_ substitute a different resistor, you can use any LED with approximately the same forward voltage that the circuit designer specified, and with a maximum current rating at least as high as the forward current that the circuit designer specified. I can't give you a hard-and-fast rule for exactly how "approximate" you can be, but let's say within 10% or so.
+* If the circuit board uses a resistor to regulate the current (see xref:ledResistors.adoc#ledResistors[LED Resistors] , and you _can't_ substitute a different resistor, you can use any LED with approximately the same forward voltage that the circuit designer specified, and with a maximum current rating at least as high as the forward current that the circuit designer specified. I can't give you a hard-and-fast rule for exactly how "approximate" you can be, but let's say within 10% or so.
 
 For example, if your circuit board uses a resistor to regulate current and calls for an LED with a 3.2V forward voltage and 20mA forward current, you can use any LED with a forward voltage of about 2.9V to 3.5V (within 10% of the specified 3.2V), and a maximum forward current of 20mA or higher.
 
 * If the circuit board uses a resistor to regulate the current, and you _can_ substitute your own resistor in place of what the designer specified, you can use any LED with a forward voltage less than the supply voltage in the circuit.
 
-In this case, you'll have to select an appropriate resistor based on the LED you actually end up using. See xref:ledResistors.adoc[LED Resistors] forthe formulaan on-line calculatorfor selecting the resistor. When figuring the resistor value, use the LED's forward voltage spec, and use the desired current in the circuit. The desired current must be less than or equal to the maximum current specified for the LED, and it must also be less than or equal to the maximum current that the circuit can safely supply. For that, you'll have to consult the circuit board's specifications or ask the designer.
+In this case, you'll have to select an appropriate resistor based on the LED you actually end up using. See xref:ledResistors.adoc#ledResistors[LED Resistors] forthe formulaan on-line calculatorfor selecting the resistor. When figuring the resistor value, use the LED's forward voltage spec, and use the desired current in the circuit. The desired current must be less than or equal to the maximum current specified for the LED, and it must also be less than or equal to the maximum current that the circuit can safely supply. For that, you'll have to consult the circuit board's specifications or ask the designer.
 
 If you're installing an LED in a circuit board, it also obviously has to match the physical size and shape that the board was designed for.
 
