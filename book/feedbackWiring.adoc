@@ -42,7 +42,7 @@ The same applies if you're using any of these boards with a solid-state booster 
 
 Okay, let's get back to this idea that we're going to "cut" into one of the power wires to interpose the output controller as a "switch" that can turn the device on and off by controlling its power connection.
 
-For all of the "solid-state" output controllers (Pinscape, LedWiz, PacLed), you don't have any choice about which wire has to be cut.
+For all the "solid-state" output controllers (Pinscape, LedWiz, PacLed), you don't have any choice about which wire has to be cut.
 The cut _always_ goes in the (-) wire for these controllers:
 
 image::images/BasicFeedbackWiring.png[""]
@@ -90,7 +90,7 @@ But what about devices that run on different power supplies that use other volta
 * 24V for contactors and chimes
 * 30V or more for the the replay knocker
 
-So how do you hook up all of these different devices, when each one has to be connected to its own power supply? What happens to that common wire back to the (-) on the power supply when we have five power supplies?
+So how do you hook up all these different devices, when each one has to be connected to its own power supply? What happens to that common wire back to the (-) on the power supply when we have five power supplies?
 
 Happily, this turns out to be easy.
 If you go back and review the section on xref:powerSupplies.adoc#InterconnectingGrounds[Interconnecting Grounds] in the Power Supplies chapter, you'll find the answer.
@@ -167,7 +167,7 @@ For details on what types of diodes to use and how to install them, see xref:dio
 [#ACFeedbackDeviceWiring]
 === AC devices
 
-It's rare for anyone to use an AC-powered device in a pin cab, but I wanted to mention this just in case: *Do not connect an AC-powered device to any of the solid-state output controllers.* All of these (LedWiz, PacLed, Pinscape) are designed to work with DC voltages only.
+It's rare for anyone to use an AC-powered device in a pin cab, but I wanted to mention this just in case: *Do not connect an AC-powered device to any of the solid-state output controllers.* all these (LedWiz, PacLed, Pinscape) are designed to work with DC voltages only.
 
 I recommend avoiding this issue entirely by sticking with the common DC-powered devices, but if there's something AC-powered that you really want to include in your cab, it's possible with a little extra work.
 What you have to do is connect an AC-compatible switching device _between_ the output controller and the AC device.

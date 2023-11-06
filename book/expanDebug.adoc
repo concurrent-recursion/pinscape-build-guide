@@ -7,7 +7,7 @@ If you haven't already, you should run through the test procedures in xref:expan
 That should give you a clearer idea of what's working and what's not working.
 That section also includes some basic debugging steps that might solve some simpler problems.
 
-If you go through all of the debugging suggestions for a particular symptom without identifying the problem, let me know.
+If you go through all the debugging suggestions for a particular symptom without identifying the problem, let me know.
 I'd like to include as many causes and fixes as possible, so if you come up with a new one that I haven't covered here, I'd like to add it.
 
 == Top problem sources
@@ -41,7 +41,7 @@ The PC PSU and 2ND PSU connectors must *both* be connected for the boards to fun
 For ribbon cables, I always recommend marking one edge of the cable with a red stripe (or something similar), and making sure that the red stripe is on the side with the "Pin 1" marking on the circuit board connector at both ends.
 * Make sure IC chips are inserted the right way.
 See xref:icchips.adoc#icchips[IC Chips] for how to properly orient each type of IC used in the project.
-* If you're using sockets for the IC chips, visually inspect them and make sure the chips are fully seated, and that all of the pins are inserted.
+* If you're using sockets for the IC chips, visually inspect them and make sure the chips are fully seated, and that all the pins are inserted.
 Make sure none of the pins are sticking out the side of the socket or got folded under the chip.
 
 == Visual solder check
@@ -139,7 +139,7 @@ Double-check the System Type setting in the Config Tool settings to make sure it
 
 === No buttons are working
 
-If none of the button inputs are working, the CMN (Common) pin on the button input header is the likely culprit, because that's the one connection that all of the inputs share. Check continuity from the CMN pin on the header to a ground pins on the KL25Z, such as J9 pins 12 or 14 (see xref:kl25zPinOut.adoc#kl25zPinOut[Pinout] ).
+If none of the button inputs are working, the CMN (Common) pin on the button input header is the likely culprit, because that's the one connection that all the inputs share. Check continuity from the CMN pin on the header to a ground pins on the KL25Z, such as J9 pins 12 or 14 (see xref:kl25zPinOut.adoc#kl25zPinOut[Pinout] ).
 
 === Some buttons are working, some aren't
 
@@ -192,7 +192,7 @@ Make the following continuity tests. I'd recommend having the .BRD file open in 
 * Pin 26 on *IC2 only* should connect to Pin 17 on IC1 (as already noted above)
 * Pin 27 on IC1 and IC2 should connect to the GND pin on the PC PSU connector
 
-If all of that looks good, check that the chip's power supply is working. With the power on, carefully measure DC voltage at pin 21 (on both chips). Connect the meter's red probe to pin 21 on the chip, and connect the black probe to one of the PWM OUT pins in the row nearest the edge of the board. This should read 3.3V. If not, check the pin 21 solder connection, and check all of the solder connections for IC12 (the LD1117AV33 chip that looks like a MOSFET).
+If all of that looks good, check that the chip's power supply is working. With the power on, carefully measure DC voltage at pin 21 (on both chips). Connect the meter's red probe to pin 21 on the chip, and connect the black probe to one of the PWM OUT pins in the row nearest the edge of the board. This should read 3.3V. If not, check the pin 21 solder connection, and check all the solder connections for IC12 (the LD1117AV33 chip that looks like a MOSFET).
 
 === Main board flasher/small LED ports: no flasher ports work, some/all Small LED ports work
 
@@ -210,14 +210,14 @@ One other, simpler possibility is that the +5V pin on the Small LED header isn't
 
 If you installed the chips in sockets, we can easily check to see if IC2 is bad by swapping IC1 and IC2. We know that IC1 is a working chip, since some or all of its ports are working. If we swap IC1 and IC2, then, we move the known-working chip into the IC2 socket, and the questionable chip into the IC1 socket. So power down, swap the chips, and run the port tests again. Here's what we'll learn:
 
-* If all of the ports are dead now, or the live and dead ports trade places (the working ports move to the Small LED group, and all of the flasher/strobe ports are now dead), you have a bad chip - the one that's now in the IC1 socket is the dead one, and the other one is good. Throw out the chip in the IC1 socket and try a new one.
+* If all the ports are dead now, or the live and dead ports trade places (the working ports move to the Small LED group, and all the flasher/strobe ports are now dead), you have a bad chip - the one that's now in the IC1 socket is the dead one, and the other one is good. Throw out the chip in the IC1 socket and try a new one.
 * If the same set of ports remain working as before, the chips are both good, so the problem is in the wiring. Proceed with the continuity checks below.
 
 If the problem is in the wiring, it's most likely either the power connections to IC2, or the data connections to IC2. Follow the same procedures to test continuity to the TLC5940 inputs described above under "none are working", but you should only have to look at the IC2 inputs in this case.
 
 === Main board flasher/small LED ports: some work, some don't
 
-If some of the flasher and small LED ports are working and some aren't, it's almost certain that the TLC5940 chips are working properly and that all of their power and data inputs are working properly. The chips and their inputs have to be working for _any_ of the ports to work, so we can rule out those sorts of problems if even a single port works correctly.
+If some of the flasher and small LED ports are working and some aren't, it's almost certain that the TLC5940 chips are working properly and that all their power and data inputs are working properly. The chips and their inputs have to be working for _any_ of the ports to work, so we can rule out those sorts of problems if even a single port works correctly.
 
 If you installed the TLC5940 chips in sockets, one easy test that you can do to rule out a partially defective chip (mostly working, but with a few dead ports) is to swap IC1 and IC2 with one another. If the bad ports followed the chips, you must have a chip with one or more bad ports. I haven't talked to anyone who's encountered such a thing, but it seems like a possibility in principle. If the dead ports are exactly the same before and after the swap, the chips must be good - it's the wiring.
 
@@ -284,11 +284,11 @@ For the definitive list of parts, look at the EAGLE schematic, on Sheet 2 ("Knoc
 
 === Power board ports: none work
 
-The power board ports are controlled by TLC5940 chips, like the flasher and small LED ports on the main board, so the diagnosis process is similar. If all of the ports on this board are dead, the main possibilities are:
+The power board ports are controlled by TLC5940 chips, like the flasher and small LED ports on the main board, so the diagnosis process is similar. If all the ports on this board are dead, the main possibilities are:
 
 * The data cable from the main board isn't connected properly. Visually check that it's installed properly and that both ends are oriented properly. Make sure that the same edge of the cable aligned with the "Pin 1" arrow on the main board is aligned with the "Pin 1" arrow on the power board. Make sure that it's plugged in the PWM IN port on the power board, and the PWM OUT port on the main board. (The PWM IN and PWM OUT ports on the power board look identical, so read the label and make sure you have the IN port on the power board. Likewise, the PWM OUT and CHIME OUT ports on the main board look identical. Make sure you're using the PWM OUT port on the main board and not the CHIME OUT port.)
 * If the data cable looks to be installed properly, check continuity (with the cable connected, and power off) for each pin on the headers headers. Unlike the usual rule about testing the pin, this time you want to check continuity on *bottom* of the board, testing at the solder pads. The reason is that we're testing the cable this time, so we want to make sure we have a good connection from solder joint to solder joint. Check pin #1 on the main board PWM OUT against pin #1 on the power board PWM IN, pin #2 against pin #2, etc. All pins must be connected.
-* Assuming you have all of the outputs on the main board working at this point, and assuming you installed the TLC5940 chips on both boards in sockets, you can test for a defective chip by swapping the TLC5940 chips on the power board with the ones on the main board. We know that the ones on the main board must be working if their outputs are working.
+* Assuming you have all the outputs on the main board working at this point, and assuming you installed the TLC5940 chips on both boards in sockets, you can test for a defective chip by swapping the TLC5940 chips on the power board with the ones on the main board. We know that the ones on the main board must be working if their outputs are working.
 * If the chip swap doesn't change anything, test continuity to the data connections. This is similar to testing the TLC5940 pins on the main board:
 ** Pin 17 on *IC1 only* should connect to PIN 26 on IC2
 ** Pin 18 on IC1 and IC2 should connect to KL25Z PTA1 (J1 pin 2 on the KL25Z)
@@ -300,7 +300,7 @@ The power board ports are controlled by TLC5940 chips, like the flasher and smal
 ** Pin 26 on *power board IC1 only* should connect to Pin 17 on *main board IC2* (note that we're testing ICs on separate boards here!)
 ** Pin 26 on *IC2 only* should connect to pin 17 on IC1
 ** Pin 27 on power board IC1 and IC2 should connect to the GND pin on the PC PSU connector
-* If all of that looks good, check that the chip's power supply is working. With the power on, carefully measure DC voltage at pin 21 (on both chips). Connect the meter's red probe to pin 21 on the chip, and connect the black probe to one of the PWM OUT pins in the row nearest the edge of the board. This should read 3.3V. If not, check the pin 21 solder connection, and check all of the solder connections for IC12 (the LD1117AV33 chip that looks like a MOSFET).
+* If all of that looks good, check that the chip's power supply is working. With the power on, carefully measure DC voltage at pin 21 (on both chips). Connect the meter's red probe to pin 21 on the chip, and connect the black probe to one of the PWM OUT pins in the row nearest the edge of the board. This should read 3.3V. If not, check the pin 21 solder connection, and check all the solder connections for IC12 (the LD1117AV33 chip that looks like a MOSFET).
 
 === Power board ports: some work, some don't
 
@@ -344,7 +344,7 @@ Make certain that the cable is plugged into the *CHIME/DIG OUT* port on the main
 
 If you're sure the cable is installed correctly, check continuity across the pin headers connecting to the cable. Do this with the cable connected and the power off. Unlike the usual rule about testing at the pin, this time you want to check continuity on *bottom* of the board, testing at the solder pads. The reason is that we're testing the cable this time, so we want to make sure we a good connection from solder joint to solder joint. Check pin #1 on the main board CHIME/DIG OUT against pin #1 on the chime board CHIME/DIG IN, pin #2 against pin #2, etc. All pins must be connected.
 
-The next thing to check is the 74HC595 chip. This controls all of the outputs, so if none of them are working, the problem could be a defective chip or a bad data or power connection. The chip won't work at all if the data or power connections aren't working.
+The next thing to check is the 74HC595 chip. This controls all the outputs, so if none of them are working, the problem could be a defective chip or a bad data or power connection. The chip won't work at all if the data or power connections aren't working.
 
 If you installed the chip in a socket, and you have a spare, you can swap the chip with the spare, as an easy way to check for a defective chip.
 
@@ -381,7 +381,7 @@ image::images/chime-board-timer-blocks.png[""]
 
 The numbers in the diagram show the correspondence between the output port pins and the timer block boxes. So if output pin 3 isn't working, for example, find the box marked 3 on the diagram, and focus on the parts within that box. You can also identify which block connects to which output by looking for the ICM7555 IC chip within the block. These are numbered the same as the outputs: IC1 is in timer block 1 for output 1, IC2 is in timer block 2 for output 2, etc. image:images/chime-board-timer-block-1.png[""]
 
-Given the number of parts and complexity of the network, it's probably more trouble than it's worth to trace individual connections and check continuity. Instead, I'd just inspect all of the solder joints within the bad output's timer block carefully, and if you can't find a visually apparent bad one, re-solder them all. Do a live test.
+Given the number of parts and complexity of the network, it's probably more trouble than it's worth to trace individual connections and check continuity. Instead, I'd just inspect all the solder joints within the bad output's timer block carefully, and if you can't find a visually apparent bad one, re-solder them all. Do a live test.
 
 If that doesn't solve it, try the following live test. As always with live tests, be really careful not to short any pins besides the ones we're going to test.
 

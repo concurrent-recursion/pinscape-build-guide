@@ -64,7 +64,7 @@ Nearly all pinball cabinets designs (even the "widebody" plans) are longer and n
 You can position the panel so that it lies flat in the same plane as the TV, or you can tilt it up at an angle, if you left any vertical space between the playfield and the glass cover.
 My panel is tilted up at about a 30° angle to fill the vertical space (see the photo below).
 
-* Vertically, on the inside back wall of the cabinet above the TV.
+* Vertically, on the inside back wall the cabinet above the TV.
 Some people prefer this arrangement because the lights point more directly at the player, which might slightly reduce reflections from the glass cover.
 * On the front of the backbox, in the speaker panel area just below the DMD.
 If you positioned your TV at the very top of the cabinet with no room between the TV and glass cover, you probably can't fit flashers inside the cabinet.
@@ -99,7 +99,7 @@ You can buy them either way.
 Most people think the type with the base is a little easier to work with.
 
 These are sold in individual colors as well as RGB, so be sure to order specifically the RGB type.
-All of the parts I've seen for these on eBay are the same basic device, so there's not too much risk of finding a wrong part that looks similar, but here are the approximate electrical specs to look for just to be sure you have the right thing:
+all the parts I've seen for these on eBay are the same basic device, so there's not too much risk of finding a wrong part that looks similar, but here are the approximate electrical specs to look for just to be sure you have the right thing:
 
 * Red channel: 2.2 to 2.4V, about 400mA
 * Green channel: 3.2 to 3.4V, about 400mA
@@ -137,7 +137,7 @@ If you had a 4V supply or a 3.7V supply, that would be better still, but those a
 You might read advice on the forums to use a 12V power supply for the flasher LEDs.
 Ignore that.
 It's best to use the lowest conveniently available supply voltage above the LED's "forward voltage" spec.
-Using a 12V supply just burns up all of the extra voltage in resistor heating, which forces you to use physically larger resistors that can tolerate all of the extra waste heat.
+Using a 12V supply just burns up all the extra voltage in resistor heating, which forces you to use physically larger resistors that can tolerate all the extra waste heat.
 A 5V supply lets you use smaller resistors that waste less energy.
 
 *Resistors:* The star base LEDs are bare LEDs that *do not* include any sort of built-in current regulation.
@@ -199,7 +199,7 @@ image::images/FlasherPanelFront.png[""]
 
 * I started with a piece of 3/8" plywood, cut to the inside width of my cabinet and a height that I measured to fit the available space where I planned to install it.
 * I drilled five 1/2" holes at regular intervals, where I wanted to place the lights.
-* I soldered four wires to each of the five star LEDs: one wire to each of Red(-), Blue(-), and Green(-), and a fourth wire that I connected to all of the (\+) terminals.
+* I soldered four wires to each of the five star LEDs: one wire to each of Red(-), Blue(-), and Green(-), and a fourth wire that I connected to all the (\+) terminals.
 As described in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , the standard wiring plan for all devices is to switch on the (-) side, so the (+) side is always connected directly to power and can thus be daisy-chained across all devices that share the same voltage.
 * I then installed the LEDs in the pre-drilled holes, holding them in place with little metal clamps.
 The clamps aren't anything standard; they're just something that I made custom by cutting them out from a piece of sheet metal from Home Depot.

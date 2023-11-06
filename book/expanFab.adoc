@@ -36,7 +36,7 @@ When you open one of the other type of file in EAGLE, it will look for the count
 === Other files in the downloads
 
 *  *BOM.csv* files are spreadsheets (in comma-separated value or CSV format) with the "Bill of Materials" for the boards.
-These were geneated by EAGLE from the schematics to list all of the parts used in the schematics.
+These were geneated by EAGLE from the schematics to list all the parts used in the schematics.
 These can be useful for uploading to a vendor like Mouser or DigiKey to order the parts needed to populate the board.
 (These can also be used with PCB manufacturers who can assemble the complete boards, but don't get your hopes up that you'll be able to get a PCB maker to assemble the boards for, as this service is prohibitively expensive unless you're ordering large quantities of the boards.) You can open these files in a spreadsheet program like Excel.
 This is only for reference; to place an order, it's better to use the xref:partslist.adoc#electronicPartsList[Electronic Parts List] in this guide.
@@ -118,7 +118,7 @@ There might be some variations at different vendors, so be sure to read your cho
 ** If you're using Elecrow, you can upload the appropriate *xxx Gerber (Elecrow).zip* files from the Pinscape downloads.
 Elecrow wants you to upload the .zip file itself, so there's no need to unpack it on your system.
 ** If you're using a vendor other than Elecrow, and they require Gerber format files, generate a set of Gerbers as described below and upload those.
-Most vendors will want you to combine all of the Gerber output files into a single .zip file before uploading.
+Most vendors will want you to combine all the Gerber output files into a single .zip file before uploading.
 ** If your vendor accepts EAGLE *.brd* files, simply upload the appropriate .brd file from the Pinscape downloads.
 
 Note! For the Expansion Boards only, you might want to upload Gerber files, generated using the procedure below, _even if_ your vendor accepts .brd files directly.
@@ -169,14 +169,14 @@ We offer the two marking options so that you can use the markings that match you
 
 * Click the Process Job button at the bottom.
 * Close the dialog and exit EAGLE.
-* In the folder containing the .brd file, you'll find a bunch of new files with the same name as the .brd file but with different extensions, including some or all of the following: .GBL, .GPI, .GTL, .GTO, .DRI, .GBO, .GBP, .GBS, .GML, .GTP, .GTS, .TXT.
+* In the folder containing the .brd file, you'll find a bunch of new files with the same name as the .brd file but with different extensions, including some or all the following: .GBL, .GPI, .GTL, .GTO, .DRI, .GBO, .GBP, .GBS, .GML, .GTP, .GTS, .TXT.
 There might be some others as well - the exact set of files you get will depend on your manufacturer.
 Sorry I can't just give you a list, but it varies by PCB maker! The other obnoxious thing here is that EAGLE just dumps these files into your .brd folder rather than grouping them somewhere else.
 So the easiest way to identify the files is by "Modified Date" in the Windows Explorer listing.
 Open the folder in Windows Explorer, switch to the Details view, and select Sort by > Date Modified.
-You should now see all of the new files grouped together at the top of the listing, all with Modified dates moments ago.
+You should now see all the new files grouped together at the top of the listing, all with Modified dates moments ago.
 These are the Gerber files we've been talking about!
-* Once you've identified the collection of new files, create a .ZIP file and add all of the new Gerber files to the ZIP.
+* Once you've identified the collection of new files, create a .ZIP file and add all the new Gerber files to the ZIP.
 * You're done! The .ZIP file is what most PCB vendors will want you to upload.
 
 Note that it's a good idea to read fully through your PCB maker's instructions for submitting orders to make sure there aren't any extra steps they require that we've left out.
@@ -195,7 +195,7 @@ Every vendor has their own limits, so these checks have to be made on a vendor-b
 It's up to you whether or not you want to go to the extra trouble of running the design check.
 I personally would do it when working with a new manufacturer, but only because I'm meticulous about these things.
 I don't actually think it's that important to run separate tests for each vendor, because the Pinscape boards are pretty low-tech by modern standards.
-All of the manufacturers I've looked at have better tolerances than are required for the Pinscape boards.
+all the manufacturers I've looked at have better tolerances than are required for the Pinscape boards.
 Most people making PCBs today are using very high densities with tiny little surface-mounted parts that are intended to be assembled by robots.
 The Pinscape boards intentionally use larger "through-hole" parts (the type with leads and pins that get inserted into holes in the board) to make them easier for us hobbyists to assemble by hand.
 The PCB makers all use processes that accommodate those denser surface-mount boards, so the Pinscape boards shouldn't faze any of them.

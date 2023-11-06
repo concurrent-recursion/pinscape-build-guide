@@ -31,7 +31,7 @@ As with NPN-vs-PNP for BJTs, you don't need to know anything about how these var
 What's important is simply to know that you always have to use the exact mode and channel type called for in the circuit plan.
 If the plan calls for an "N-channel enhancement mode" MOSFET, you have to use exactly that type.
 
-All of the MOSFETs used in the Pinscape boards are N-channel enhancement mode devices.
+all the MOSFETs used in the Pinscape boards are N-channel enhancement mode devices.
 
 == On schematics
 

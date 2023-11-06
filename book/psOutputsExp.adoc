@@ -7,7 +7,7 @@ The Pinscape boards use the same basic wiring plan as other solid state controll
 
 * Connect a wire from the *positive* terminal of the power supply to the feedback device's positive terminal
 * Connect the feedback device's negative terminal to an output port pin on the Pinscape expansion board
-* As described in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , you should already have connected the power supply's negative terminal to the common ground interconnect for all of the feedback power supplies
+* As described in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , you should already have connected the power supply's negative terminal to the common ground interconnect for all the feedback power supplies
 
 image::images/psOutBasicWiring.png[""]
 

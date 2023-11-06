@@ -62,18 +62,18 @@ They're great for testing the expansion boards, because they make it easy to tes
 Most of the connectors on the expansion boards use the same 0.1" pins that the Dupont connectors are for.
 
 You can find sets of these cables on eBay for extremely cheap, if you're willing to wait a month for shipping from China.
-The same cables are also available at all of the hobby robotics Web stores - Pololu, SparkFun, Adafruit, etc, and of course from Amazon.
+The same cables are also available at all the hobby robotics Web stores - Pololu, SparkFun, Adafruit, etc, and of course from Amazon.
 Search for "Dupont cable" at any of those sites.
 You'll also see them described as "breadboard jumper wires".
 
-Pick up a full set with all of the gender combinations - male-to-male, female-to-female, and male-to-female.
+Pick up a full set with all the gender combinations - male-to-male, female-to-female, and male-to-female.
 
 == Alligator clip cables
 
 Also for testing purposes, you might want to pick up a set of cables with "alligator clips" at the ends.
 Alligator clips are just little spring-loaded metal clips that you can connect to wires, pins, and terminals of just about any kind, so they're great for making temporary, ad hoc connections when testing.
 
-You can find these at all of the same places where the Dupont cables are sold.
+You can find these at all the same places where the Dupont cables are sold.
 
 == Voltmeter/Multimeter
 

@@ -52,13 +52,13 @@ The only exceptions among newer tables are a few written by authors who were acc
 But those should be increasingly rare as time goes on, and I certainly hope no one is still using the bad old way for new tables at this point.
 
 How do you fix a table that ignores the joystick input? Unfortunately, it's not easy - but it can be done. 
-Basically, you have to rip out all of the scripted plunger code in the table, and substitute the "real" built-in plunger object instead. 
+Basically, you have to rip out all the scripted plunger code in the table, and substitute the "real" built-in plunger object instead.
 The thing that makes this difficult is that there's not a simple, rote procedure you can follow, because every table that re-invented the plunger re-invented it in its own way. 
 You have to look at each table individually to find its plunger scripting code and the associated table objects so you can remove all of that. 
 But there are two rays of sunlight here. 
 The first is that most table authors didn't actually reinvent their custom plungers from whole cloth - most did a copy-and-paste job from another table. 
 So once you've fixed a few tables, you'll start recognizing common patterns, and it'll become easier each time. 
-The second nice thing is that you don't really have to write any new code - mostly it's just a matter of deleting all of the custom plunger code so that the built-in plunger can take over. 
+The second nice thing is that you don't really have to write any new code - mostly it's just a matter of deleting all the custom plunger code so that the built-in plunger can take over.
 The table scripts will end up simpler and cleaner when you're done with them. 
 At any rate, I'll try to give you the outline of a procedure that works for many tables, but be warned that it still takes some work on your part; it's not a simple "recipe" that you can apply mechanically.
 
@@ -91,7 +91,7 @@ If it's there:
 ** Set its style to Custom, and set the image to CustomWhiteTip or CustomBlackTip (see xref:#lookNice[Making the built-in plunger look nice] below)
 * If there's not already a Plunger object, try adding one, setting it up to use the new "Custom" visual style and positioning it so that can hit the ball when fired
 * Delete any playfield objects (ramps, walls, lights, EMReels) that are being used to draw the scripted plunger on-screen
-* Go through the table's scripts and delete all of the old plunger-related scripting code
+* Go through the table's scripts and delete all the old plunger-related scripting code
 
 If you're not a VP power user, read on for a more detailed explanation.
 
@@ -161,7 +161,7 @@ You might not find a "wedge" wall like this at all.
 It's a common motif, but every VP table author does things their own unique way. 
 You might find a differently shaped wall in roughly the same area, or no wall at all.
 
-There's also usually a bunch of other stuff overlapping in the same area, so even if the wedge is there, it might be hard to visually separate from all of the other objects. 
+There's also usually a bunch of other stuff overlapping in the same area, so even if the wedge is there, it might be hard to visually separate from all the other objects.
 If you're having trouble identifying which squiggle belongs to which object, remember that you can select an object by clicking on it. 
 This will at least highlight it so that you can see which of the lines belong to this one object, and it'll show its name and object type in the Properties window, which can help identify its purpose.
 
@@ -194,7 +194,7 @@ That leaves the built-in plunger working as far as the physics go, but hides its
 Personally, though, I prefer to do the opposite: I prefer to switch tables to use the built-in visuals instead. 
 This usually looks much better than the old scripted visuals. 
 The "new" built-in plunger in VP looks photo-realistic, plus it's very smoothly animated. 
-The custom scripted graphics in many older tables look okay, and some look great, but almost all of them have really choppy animation with just a few "stops" the plunger can appear at.
+The custom scripted graphics in many older tables look okay, and some look great, but almost all them have really choppy animation with just a few "stops" the plunger can appear at.
 
 Getting rid of the old graphics can be a bit of work, so be prepared.
 
@@ -313,7 +313,7 @@ What you have to do now is find and delete scripting code that refers to those o
 If you're good at reading Visual Basic code, you can go through the script and look for subroutines related to the plunger. 
 When you find one, you can usually just delete it outright, from the line that says "Sub _name_ " to the matching "End Sub".
 
-A lot of tables with plunger scripts are actually pretty helpful about grouping all of the plunger scripts together in one place. 
+A lot of tables with plunger scripts are actually pretty helpful about grouping all the plunger scripts together in one place.
 You might find a section marked with comment like this:
 
 [source,vb]
@@ -326,7 +326,7 @@ You might find a section marked with comment like this:
 If you find something like that, you can try selecting everything that follows that looks plunger-related (based on the names of the subroutines, for example) and deleting it.
 
 If you don't want to pore over the script, there's a pretty easy trial-and-error way of finding the trouble spots. 
-Specifically, you can rely on the fact that all of the plunger scripts will probably make reference to the playfield objects we just deleted. 
+Specifically, you can rely on the fact that all the plunger scripts will probably make reference to the playfield objects we just deleted.
 Whenever any of those references are encountered at run-time, Visual Basic will halt the program and throw up an error message telling you that the code is referring to a non-existent object. 
 VB is usually pretty good about showing you exactly where each error occurs, by highlighting the error line in the editor, so this can be a quick and reliable way to find each error and remove the code.
 

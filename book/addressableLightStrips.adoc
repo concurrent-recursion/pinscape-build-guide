@@ -6,7 +6,7 @@ That's what "addressable" means: each LED can be addressed - commanded - individ
 
 In pin cabs, these can be used in a variety of ways, such as:
 
-* A strip of lights down the entire length of each side of the playfield TV, usually mounted on the side wall of the cabinet just above the TV.
+* A strip of lights down the entire length of each side of the playfield TV, usually mounted on the side wall the cabinet just above the TV.
 These can show chaser lights that follow the ball at certain times (such as when launching from the plunger), and can also show flashes of light situated near playfield flasher lights on the TV, to reinforce the video rendition of the flasher with a brighter nearby LED flash.
 (See xref:flashers.adoc#flashersAndStrobes[Flashers and Strobes] .)
 * One strip or several rows of strips across the width of the back edge of the playfield TV.
@@ -26,7 +26,7 @@ So if you have other ideas about how to arrange the strips, you're free to set t
 
 You *can't* use an LedWiz, Pinscape, or other general-purpose output controller to run a smart light strip.
 Instead, you need a separate, special type of controller just for these strips.
-That makes smart strips different from all of the other output devices we've looked at.
+That makes smart strips different from all the other output devices we've looked at.
 
 The required controller is a bit of a DIY project.
 Being a DIY project, you can build the whole thing from scratch any way you like, but fortunately there's a standard recipe to follow.
@@ -76,7 +76,7 @@ Make sure that your power supply has enough capacity.
 Long light strips can consume a surprising amount of power.
 Computer ATX power supplies are usually sufficient for typical pin cab light strips, but smaller "wall wart" power supplies might not have enough power for long strips.
 
-To determine the total power requirement, count up all of the individual LEDs across all of your strips, and multiply the total number by 60mA.
+To determine the total power requirement, count up all the individual LEDs across all of your strips, and multiply the total number by 60mA.
 This will give you the total current used.
 Many power supplies list their capacity in Watts rather than Amps, though, so you might have to convert.
 For a 5V supply, use this formula:
@@ -336,7 +336,7 @@ So the second strip will be assigned to port #4, the third will be assigned to p
 
 == Troubleshooting the "all white" problem
 
-A common problem that many people seem to experience when first building an addressable light strip is that all of the lights turn on full white.
+A common problem that many people seem to experience when first building an addressable light strip is that all the lights turn on full white.
 
 This is a result of a missing external pin connection on the Teensy.
 I think this varies according to the version of the Teensy you're using, so you should probably test first to see if you do indeed have the "all white" LED problem.

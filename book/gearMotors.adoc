@@ -12,7 +12,7 @@ As with other noise-making devices, it's always more realistic to have something
 
 I'd rank gear motors at the low end of the impact scale, as all they do is make a little noise - and that's actually a little artificial, since the motors in the real machines were almost never audible over the game's other sound effects.
 In virtual cab use, most people intentionally use motors that are louder than the real thing because they want to be able to hear the effect.
-So I'd give higher priority almost all of the other toys if you're economizing.
+So I'd give higher priority almost all the other toys if you're economizing.
 But I'm in the minority on that; a lot of cab builders really like their gear motors.
 And if you're going for a decked-out cab with all the toys, by all means include a gear motor, as it does add a little something, even if the emphasis is on _little_ .
 

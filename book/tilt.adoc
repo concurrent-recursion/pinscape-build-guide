@@ -110,7 +110,7 @@ When the simulated bob swings too wildly, VP sends a "center tilt" key press to 
 
 There's a third approach that I prefer to either of these, which is to install a real tilt bob in your cabinet. 
 This is the most realistic solution because it detects the physical motion of the cabinet exactly like the real machines do. 
-This captures all of the nuances of your cabinet's actual motion, which is too complex for VP's simple model to simulate realistically.
+This captures all the nuances of your cabinet's actual motion, which is too complex for VP's simple model to simulate realistically.
 
 [#VPNudgeConfig]
 == Installing an accelerometer
@@ -148,7 +148,7 @@ It distinguishes between a little motion and a lot of motion, and all points in 
 It's not an all-of-nothing, on-or-off sort of thing. 
 If the accelerometer picks up the tiny sub-millimeter motions of the cabinet from the speakers, it sends correspondingly tiny signals to the pinball game, and the pinball game responds with proportionally tiny effects on the ball's motion, which (when things are adjusted properly) are so small that they're invisible. 
 There shouldn't be any need to filter them out. 
-If you think about it, the steel balls in a physical pinball machine are themselves affected by all of the same sorts of cabinet vibrations - they're not wrapped in foam. 
+If you think about it, the steel balls in a physical pinball machine are themselves affected by all the same sorts of cabinet vibrations - they're not wrapped in foam.
 If you install an accelerometer and find that speaker vibrations are in fact causing anomalous nudge input, my first impulse would be to reduce the "gain" setting in the pinball simulator. 
 Small vibrations causing big effects suggests more than anything that the pinball simulator is amplifying the input way too much.
 
@@ -156,7 +156,7 @@ Small vibrations causing big effects suggests more than anything that the pinbal
 == How to configure Visual Pinball for an accelerometer
 
 Visual Pinball handles accelerometer input via the joystick interface. 
-All of the pinball nudge devices (including Pincsape and all of the commercial plunger kits) are set up to work this way by default, so there's usually nothing you have to do with the device other than plug it in to a USB port. 
+all the pinball nudge devices (including Pincsape and all the commercial plunger kits) are set up to work this way by default, so there's usually nothing you have to do with the device other than plug it in to a USB port.
 The only configuration you have to do is to VP itself.
 
 *Quick device test:* Before firing up VP, it's a good idea to make sure your accelerometer device is working properly. 
@@ -265,7 +265,7 @@ In most cases, you should leave these at the default settings, unless your nudge
 The defaults are the obvious mappings: "X Axis (L/R)" = "X Axis" and "Y Axis (U/D)" = "Y Axis". 
 Make sure the Reverse boxes are un-checked.
 
-After you set all of the options, click OK to close the dialog, then *close all VP windows* to exit VP. 
+After you set all the options, click OK to close the dialog, then *close all VP windows* to exit VP.
 It's important to *completely* close VP after changing these settings, since VP won't reload the new settings until you close the program and launch a brand new session.
 
 *VP 9 vs VP 10:* Before going on, one really important thing to be aware of is that VP 9 and VP 10 require radically different Gain settings. 

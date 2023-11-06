@@ -122,7 +122,7 @@ There are different ways to go about this, but I've seen people use procedures s
 * Cut a piece of plywood to the interior dimensions of the backbox
 * Fasten the TV to the plywood (via its VESA mount, for example)
 * Fasten the plywood to the side walls at the desired depth, such as via "L" brackets or corner braces
-* Install the back wall of the backbox
+* Install the back wall the backbox
 
 If you've read much else in this guide, you can probably guess that I don't recommend any approach that would make it difficult to remove the TV later.
 If you have to wait to finish the backbox assembly until the TV is installed, you're going to have to reverse those last assembly steps if you ever want to remove the TV, and that could be difficult and destructive.
@@ -163,7 +163,7 @@ image::images/backbox-insert.png[alt="Photo of Williams backbox insert"]
 Backbox insert: a sheet of plywood installed just behind backglass.
 The little spots scattered around are the lamps that back-light the artwork.
 
-On the WPC machines, all of the control electronics are mounted inside the backbox, so you obviously have to be able to move the insert out of the way for service work.
+On the WPC machines, all the control electronics are mounted inside the backbox, so you obviously have to be able to move the insert out of the way for service work.
 The WPC design made this really easy.
 You don't have to disassemble anything or even remove the insert.
 It's attached with hinges on the left side, so you just swing it out of the way like opening a door.

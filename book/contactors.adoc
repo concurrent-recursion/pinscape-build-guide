@@ -7,7 +7,7 @@ When you translate pinball into a video game, you lose that physicality.
 In a virtual pin cab, you can bring back some of the mechanical feel of the real thing by adding similar moving parts that can be actuated in sync with the game action.
 
 The moving parts on a real machine that produce most of the tactile experience for the player are the ones controlled by solenoids: flippers, slingshots, bumpers, kickers.
-All of these are driven by powerful magnetic coils that propel the metal parts at high speed.
+all these are driven by powerful magnetic coils that propel the metal parts at high speed.
 The kick of the solenoids is palpable while playing.
 This chapter is about reproducing that tactile solenoid effect in a virtual cab.
 
@@ -309,7 +309,7 @@ The thing I particularly like about the DOF approach, apart from its simplicity,
 
 === The modern way: let DOF handle it
 
-If you're using xref:DOF.adoc#dofSetup[DOF] , you don't have to do any extra work for flipper effects. Just set up DOF, and the flipper solenoids will work just like all of the other DOF effects. DOF will take care of activating the flipper devices whenever the on-screen flippers flip in a DOF-enabled game. The wiring for the flipper buttons and solenoids is exactly the same as for every other type of button and every other type of feedback device: wire the flipper buttons to your key encoder, just like all of your other buttons, and wire the flipper solenoids to your output controller, like your other feedback devices.
+If you're using xref:DOF.adoc#dofSetup[DOF] , you don't have to do any extra work for flipper effects. Just set up DOF, and the flipper solenoids will work just like all the other DOF effects. DOF will take care of activating the flipper devices whenever the on-screen flippers flip in a DOF-enabled game. The wiring for the flipper buttons and solenoids is exactly the same as for every other type of button and every other type of feedback device: wire the flipper buttons to your key encoder, just like all of your other buttons, and wire the flipper solenoids to your output controller, like your other feedback devices.
 
 If you're trying to picture how the flipper solenoids actually operate with a DOF setup, here's the sequence of events:
 

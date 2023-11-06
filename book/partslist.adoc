@@ -1,7 +1,7 @@
 [#electronicPartsList]
 = Electronic Parts List
 
-This section lists all of the electronics needed for each Pinscape Controller subsystem.
+This section lists all the electronics needed for each Pinscape Controller subsystem.
 
 The ID column lists the "reference designator" for each component as it appears in the schematics.
 That's just an arbitrary ID assigned for cross-referencing between the schematic and the parts list.
@@ -138,13 +138,13 @@ If you don't already have a Mouser account, create one now.
 Look for the "Copy/Paste Import" option.
 Click the "click here" button in that section.
 That should display a big text entry box.
-* Copy all of the text in the box below and paste it into text box on the Mouser page.
+* Copy all the text in the box below and paste it into text box on the Mouser page.
 * Click the *Import BOM* button on the Mouser page
 
 * Mouser will now lead you through several steps.
 You can use the defaults on each step - just keep clicking *Continue* .
-The last step takes a couple of minutes because this is where the server looks up all of the parts in its database.
-After you get through all of the steps, Mouser should show you the complete BOM as a list of parts with descriptions, quantities, and prices.
+The last step takes a couple of minutes because this is where the server looks up all the parts in its database.
+After you get through all the steps, Mouser should show you the complete BOM as a list of parts with descriptions, quantities, and prices.
 You can now place your order by clicking the *Order All* button at the bottom.
 This will copy everything in the BOM to the regular shopping cart.
 Go through the checkout process to complete the purchase.
@@ -1160,7 +1160,7 @@ Omit the resistor if no LED will be connected.]
 |LED1
 |Infrared (IR) emitter LED, 100mA, 25 degree beam
 | link:https://www.mouser.com/search/ProductDetail.aspx?R=782-TSAL6400.html[782-TSAL6400]
-|Qty 2; footnote:partNote8[Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all of the TVs.]
+|Qty 2; footnote:partNote8[Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all the TVs.]
 
 |===
 
@@ -3619,7 +3619,7 @@ xref:[Note 6] : Select a resistor according to the IR LED(s) used for the TV ON 
 
 xref:[Note 7] : If you're in Europe, it might be more convenient to substitute transistor type BC337 for each 2N4401, and type BC327 for each 2N4403. The BC3xx types are reportedly easier to find in Europe. See xref:eurotrans.adoc#eurotrans[European Transistor Substitutions] .
 
-xref:[Note 8] : Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all of the TVs.
+xref:[Note 8] : Note the quantity: you can connect 1 or 2 of these IR LEDs according to your needs. One is usually sufficient, but you might need two if you're controlling multiple TVs. This gives you more flexibility positioning the transmitters so that they can reach the remote receivers in all the TVs.
 
 xref:[Note 9] : The 1410R and 1412S are almost identical sensors. The Pinscape software is compatible with both. The key difference is that the 1412S has more pixels, which makes it slightly longer, as the pixel pitch is the same in both devices. The greater length of the 1412S allows more margin of error positioning the sensor, but it also means it takes up more space in the cabinet, which might constrain positioning for the playfield TV. Also, the 1412S is usually more expensive than the 1410R.
 

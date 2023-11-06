@@ -52,7 +52,7 @@ Virtual cabs will keep getting better as long as people are actively working on 
 This guide has grown into a pretty comprehensive set of instructions for building a pin cab, from the woodworking and trim hardware to the electronics and the software.
 It started out with a much smaller scope, of serving as the user manual for my Pinscape Controller project, and that remains a significant part of the book.
 The Pinscape Controller is an open-source hardware and software project that can act as the central hub for connecting most of the specialized input and output electronics unique to virtual pin cabs: buttons, sensors, and feedback devices like solenoids and lights.
-The controller can handle nearly all of the special I/O functions in a pin cab, including:
+The controller can handle nearly all the special I/O functions in a pin cab, including:
 
 * Connecting flipper buttons and other pinball-style buttons to the PC and using them to control the game
 * Connecting a physical pinball plunger to the software, via a position sensor that detects its position and motion, so that you can launch the ball the traditional way, with precise control for tricky skill shots
@@ -71,7 +71,7 @@ Beyond buttons and nudging, the electronics work gets a little more complicated.
 If you want to hook up a plunger sensor or connect feedback devices (lights, motors, solenoids), you have to buy some electronic components, and do some additional wiring and electronic assembly work.
 That's all laid out in detail in this guide, and it's very scalable - you can do as much or as little of this as you want, according to your interests and comfort level working with electronics.
 And you can add new features over time; it's all pretty modular.
-I've tried to make all of the projects approachable even if you don't already know much about electronics.
+I've tried to make all the projects approachable even if you don't already know much about electronics.
 
 For the plunger, several options of varying difficulty are available.
 The easiest option only requires buying a particular kind of potentiometer (about $6) and connecting three wires.
@@ -83,7 +83,7 @@ There are some simple options involving pre-built circuit boards that you can bu
 The more advanced and more full-featured options involve the "Expansion Boards", a set of circuit board plans that you can build yourself.
 Again, this is all documented in this guide.
 
-The Pinscape Controller is an entirely "open source" project, meaning that all of the software is free to use, all of the source code and hardware designs are published, and you're free to change and customize them in any way.
+The Pinscape Controller is an entirely "open source" project, meaning that all the software is free to use, all the source code and hardware designs are published, and you're free to change and customize them in any way.
 I'm always happy to integrate any customizations that are generally useful back into the official version so that everyone can benefit from them, but you're also free to make private changes for your own use if you prefer.
 
 == Cabinet build guide
@@ -105,7 +105,7 @@ So I'll try to go into as much detail as I can, but in many areas the informatio
 == Currency and updates
 
 The first complete edition of this guide appeared in October, 2019 (after about three years of partial versions that were kept online as a work-in-progress).
-"Complete", in the sense of covering all of the topics I set out to cover at a level of detail that I set out to reach - but not necessarily "finished", in the sense of the last possible word being said on every subject, the text set in stone, never to change again.
+"Complete", in the sense of covering all the topics I set out to cover at a level of detail that I set out to reach - but not necessarily "finished", in the sense of the last possible word being said on every subject, the text set in stone, never to change again.
 I still see it as an ongoing project, and I revise and expand it from time to time as I encounter errors and omissions, and to keep up with changes in the virtual pinball world.
 (Most recently in October 2023, according to the electronic librarian that keeps track of the text.)
 
@@ -142,7 +142,7 @@ Material to be added: (Some notes about what I intended to write would go here) 
 
 Those placeholders were there so that I could use the guide as its own outline, and also so that readers would know that I hadn't forgotten about the topic in question.
 
-I finally finished filling in all of the planned material in October 2019, so at that point there were exactly zero of those boxes remaining.
+I finally finished filling in all the planned material in October 2019, so at that point there were exactly zero of those boxes remaining.
 You probably won't see any in the current guide - but I can't rule that out entirely.
 I'm still revising and updating the guide on a regular basis, and occasionally a new topic comes up that's big enough that it will take some time to cover.
 When that happens, I might resort to adding a few of those boxes back in.

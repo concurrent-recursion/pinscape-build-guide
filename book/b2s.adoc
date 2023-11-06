@@ -4,7 +4,7 @@
 If your pin cab has a separate backglass monitor, you'll want it to display the appropriate backglass artwork for the current game.
 And you'll want this to be more than just a still image, since the backglass is an active part of many games, showing information on score, bonus features, etc.
 
-Fortunately, this is well supported in Visual Pinball.
+Fortunately, this is well-supported in Visual Pinball.
 VP can display live, animated backglass artwork that synchronizes with the game action.
 VP requires an add-on program called B2S Backglass Server to do this.
 B2S works alongside Visual Pinball to display the animated backglass artwork, simulating the same backglass lighting effects, score displays, and animated elements that you'd see on a real machine.
@@ -36,7 +36,7 @@ Note that you'll have to create a vpforums account to download a file, if you do
 Click the "instructions" link on the download page and follow the steps.
 Here's the basic procedure:
 
-* Unzip all of the files from the downloaded B2S ZIP file into your Visual Pinball\Tables folder.
+* Unzip all the files from the downloaded B2S ZIP file into your Visual Pinball\Tables folder.
 * Right-click the file B2SBackglassServer.dll.
 Select Properties from the menu.
 Check for a message under the "General" tab saying something like "This file was downloaded from the Internet and has been blocked." If you find this, there should be an "Unblock" button.
@@ -89,7 +89,7 @@ This is ideal if you have a single large monitor in your backbox and no separate
 This is ideal if you have a 1990s-style backbox, with a 16:9 monitor at the top, and a separate speaker panel with its own DMD video monitor or real DMD device.
 
 In cases where both types are available, choose the one that matches your physical cab setup.
-But it's also okay if only one type is available and it's the "wrong" one for your cab.
+But it's also okay if only one type is available, and it's the "wrong" one for your cab.
 You can always use either format.
 The worst that happens with the "wrong" format is that the geometry will be a bit distorted because the proportions were designed for a different monitor layout.
 
@@ -115,7 +115,7 @@ There's one more step before the backglass artwork will appear during a game: yo
 This is a one-time step, but you have to do it separately for each table.
 
 Most VP 10 tables will automatically use B2S if present, so this step isn't usually required for VP 10.
-However, if you try a VP 10 table and it doesn't work, it might be an unusual case that requires the VP 9 procedure below.
+However, if you try a VP 10 table, and it doesn't work, it might be an unusual case that requires the VP 9 procedure below.
 
 Some later VP 9 tables, from 2016 and later, also will automatically work with B2S.
 

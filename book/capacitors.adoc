@@ -12,7 +12,7 @@ This effect can be exploited for purposes such as signal frequency filtering and
 
 == Types of capacitors
 
-All of the capacitors used in the Pinscape projects fall into one of two categories: ceramic disc capacitors and electrolytic capacitors.
+all the capacitors used in the Pinscape projects fall into one of two categories: ceramic disc capacitors and electrolytic capacitors.
 These aren't the only types that exist - there are about a dozen in all - but they're by far the most common in everyday electronics.
 Most other types are only seen in specialized applications.
 

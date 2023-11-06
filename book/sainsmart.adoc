@@ -17,9 +17,9 @@ In addition, a lot of pin cab builders prefer relay switches over the transistor
 The SainSmart USB boards come in 4-relay and 8-relay versions.
 You can use more than one board in your system, so you can have as many ports as you need simply by adding more boards.
 
-The SainSmart boards are most attractive if you only plan on a relatively small set of feedback devices, and all of them are mechanical.
+The SainSmart boards are most attractive if you only plan on a relatively small set of feedback devices, and all them are mechanical.
 If that describes your needs, these boards are a good option.
-However, the SainSmart boards aren't the best choice if you want a decked-out cab with all of the popular toys.
+However, the SainSmart boards aren't the best choice if you want a decked-out cab with all the popular toys.
 For one thing, they're not great if you need a lot of ports, because even though can keep adding boards as needed, the individual boards take up a lot of space.
 The solid-state controllers pack more ports into less space.
 The other thing that makes SainSmart boards less than ideal for a complex cab is that they don't work very well with LEDs, because they can't vary the brightness - they're strictly on/off switches.
@@ -133,7 +133,7 @@ See xref:diodes.adoc#coilDiodes[Coil Diodes] for details on what type of diodes 
 Diodes are critical! Failing to include one where needed can result in damage to your computer motherboard, power supplies, or other equipment in your pin cab.
 
 The Sainsmart relays are themselves coils, so they need diodes, too.
-However, I think that all of the Sainsmart boards already have diodes pre-installed, so it shouldn't be necessary to add your own there.
+However, I think that all the Sainsmart boards already have diodes pre-installed, so it shouldn't be necessary to add your own there.
 
 == USB disconnects and other electrical interference
 
@@ -241,7 +241,7 @@ You have to make one more change to that text: you have to edit the Serial Numbe
 You might be able to find your serial number printed on your board or the packaging.
 If not, the board should have come with some software (or a link to download software), which should include a program called FTDIChipList.exe.
 Run that program.
-This will list the serial numbers for all of the similar devices in your system.
+This will list the serial numbers for all the similar devices in your system.
 
 If the program lists more than serial number, you must have other devices that use the same USB chip set.
 The SainSmart uses a common chip that's also used in a variety of other devices, so it's quite possible the chip finder program will discover more than one such device in your system.
@@ -315,9 +315,9 @@ Here's the text we're going to add to the <Toys> section:
 You can use that exact text, with no changes, as long as you have one SainSmart unit only, and it's the 8-relay type.
 
 If you have two SainSmart units, you first must repeat the <OutputControllers> entry we added above, again substituting the actual serial number for the second device.
-And second, you must repeat the <Toys> entry we added above, but this time, change the <LedWizNumber> section to *41* (make it 42 for a third unit, 43 for a fourth unit, etc), *and* change all of the *Sainsmart 1.0x* entries to *Sainsmart 2.0x* for the second unit (or 3.0x for the third unit, 4.0x for the fourth unit, etc).
+And second, you must repeat the <Toys> entry we added above, but this time, change the <LedWizNumber> section to *41* (make it 42 for a third unit, 43 for a fourth unit, etc), *and* change all the *Sainsmart 1.0x* entries to *Sainsmart 2.0x* for the second unit (or 3.0x for the third unit, 4.0x for the fourth unit, etc).
 
-If your SainSmart unit has a different number of relays (they make them with 1, 2, and 4 relays as well), go through the >Toys> text we added and delete all of the sections beyond the number of relays you have.
+If your SainSmart unit has a different number of relays (they make them with 1, 2, and 4 relays as well), go through the >Toys> text we added and delete all the sections beyond the number of relays you have.
 For example, if you have a 4-relay board, you should delete the "1.05" through "1.08" sections.
 
 [#SainSmartConfigToolSetup]

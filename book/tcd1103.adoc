@@ -59,13 +59,13 @@ To keep the image analysis simple, we'll set up the plunger so that it creates a
 We'll put a bright white wrapper on the tip of the plunger, so that the end of the plunger stands out as a clear bright area in the image, and we'll place a dark (matte black) background behind the plunger, to create high contrast between the plunger tip and the background. 
 This makes it easy for the software to find the end of the plunger in the image: it just looks for the edge between the dark background and the bright spot at the plunger tip.
 
-This is probably my favorite plunger sensor out of all of the current options. 
+This is probably my favorite plunger sensor out of all the current options.
 It can read the plunger position to a very high degree of precision, thanks to the 1500-pixel resolution of the TCD1103 and the focusing optics; the plunger position can be reliably determined to better than one part in a thousand over its range of travel, which works out to around 1/400 of an inch. 
 The sensor is fast, capturing images about every 4ms, or 250 times a second, which allows the software to accurately track the high-speed motion when you pull back and release the plunger. 
 And it has the inherent "non-contact" advantage of an imaging system: there's no mechanical contact between the plunger and the sensor, so there are no moving parts in the sensor to wear out.
 
 The only disadvantage of this sensor system is that it's a bit complex to build, in that it requires the lens, a mounting apparatus, and some extra electronics to interface the sensor to the KL25Z. 
-The plans presented below include parts lists, 3D-printable designs for the mounting bracket, and a custom circuit board layout with all of the interface electronics, so you won't have to improvise any of the elements yourself. 
+The plans presented below include parts lists, 3D-printable designs for the mounting bracket, and a custom circuit board layout with all the interface electronics, so you won't have to improvise any of the elements yourself.
 Most of it is just a matter of gathering the necessary parts from various sources, and we'll give you details on exactly what to buy and where to look for it. 
 But there is one special task required that does add a degree of difficulty, which is that the circuit board uses surface-mount (SMD) parts. 
 That can be a little intimidating if you haven't done SMD soldering before. 
@@ -160,7 +160,7 @@ Solder paste is the secret sauce that makes SMD assembly easy.
 When cold, it's a tacky paste (as you might guess from the name). 
 It lets you stick the parts to their assigned places on the board, and holds them there until the heating step. 
 When heated, it melts into a combination of liquid solder and "flux", which helps confine the solder to the metal pads and keeps the solder from forming shorts to adjacent pads. 
-You just heat up the whole board to solder-melting temperatures, and all of the parts are simultaneously soldered to their proper places. 
+You just heat up the whole board to solder-melting temperatures, and all the parts are simultaneously soldered to their proper places.
 It's almost magic. 
 (This is also what makes it so much easier than regular soldering: you don't have to laboriously heat each connection point individually. 
 You just heat the whole board at once.)
@@ -170,7 +170,7 @@ That's lead-free, so it's somewhat easier on your household air quality than lea
 I've also had great luck with MG Chemicals 4860P-35G, although that comes in a tube that's better suited for small jobs with a few pads.
 
 * A solder stencil for the board we're building. 
-This is a plastic or metal sheet with holes etched to match all of the SMD pin pads on the board. 
+This is a plastic or metal sheet with holes etched to match all the SMD pin pads on the board.
 It (obviously) has to be custom-made for the board. 
 A stencil isn't absolutely required, as you _can_ apply the solder paste by hand to the individual pads. 
 But it's quite difficult to get the right amount of solder in the right places with a complex board like this one, especially given how tiny many of the pads are. 
@@ -361,7 +361,7 @@ That probably isn't strictly necessary, but given that this is an optical sensor
 
 As with many electronic parts, the TCD1103 is sensitive to static electricity. 
 This chip is actually *very* sensitive to static, even more so than most other components, so please take extra care handling it. 
-All of the normal procedures needed for any static-sensitive parts apply (see xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] ), but I'd be extra vigilant with this part because of its high sensitivity.
+all the normal procedures needed for any static-sensitive parts apply (see xref:staticSafety.adoc#staticSafety[Static Electricity Precautions] ), but I'd be extra vigilant with this part because of its high sensitivity.
 
 [#humidityWarning]
 == Warning on humidity
@@ -408,7 +408,7 @@ After baking, the chip is once again safe for soldering, and should remain so fo
 == Build the circuit board
 
 Be sure to read the sections above about *static electricity* and *humidity* dangers. 
-Please observe all of the precautions diligently - the TCD1103 can be easily destroyed by improper handling.
+Please observe all the precautions diligently - the TCD1103 can be easily destroyed by improper handling.
 
 This board uses surface-mount parts, so it can be a little intimidating if you haven't done SMD soldering before, but it's not as hard as it might seem. 
 If you're new to this, you might want to take a look at a tutorial or two to get an idea of what's involved and some tips on technique; try a Web search for "SMD stencil tutorial". 
@@ -423,7 +423,7 @@ You can also use some spare boards for this, placing them around the perimeter o
 * Tape down the board and the jig pieces to the work surface, using masking tape. 
 Be sure not to cover up any of the SMD pads on the subject board with tape.
 * Place the stencil over the board and line up the holes in the stencil with the solder pads on the board. 
-Tape it down to the work surface (leaving all of the holes uncovered, of course).
+Tape it down to the work surface (leaving all the holes uncovered, of course).
 * Scoop a big glob of solder paste onto the board on one side
 * Use the spreader to smear it across the board to the other side to form a thick layer, pressing it down as you go to force it through the holes
 * Now do another sweep with the spreader in the reverse direction, this time scraping off as much of the top layer as you can, so that the only paste remaining is the paste that squeezed through the holes. 
@@ -462,7 +462,7 @@ I prefer the heat gun method:
 This is the ramp-up phase - we're trying to heat the board gradually here so that there's no thermal shock.
 ** Set the gun to high, continuing to point it at the board and make small circles
 ** Watch the solder paste; in 30-60 seconds, it should start melting; it'll change from the dull gray paste color to bright silver
-** Once all of the solder is melted, continue heating for about 10 or 20 seconds more to let the solder flow over the pins and pads
+** Once all the solder is melted, continue heating for about 10 or 20 seconds more to let the solder flow over the pins and pads
 ** Now gradually back the gun away from the board - two inches for a few seconds, three inches for a few seconds, etc. 
 Keep going like this for about 30 seconds.
 ** Turn off the gun
@@ -584,7 +584,7 @@ I find it very helpful to do these tests before attempting the full installation
 * Click on the Plunger icon to bring up the plunger viewer
 
 NOTE: During testing, *don't* point any light sources directly at the sensor. 
-Overexposing a CCD can cause a cascade effect that maxes out all of the pixels and gets them stuck like that until you reset power. 
+Overexposing a CCD can cause a cascade effect that maxes out all the pixels and gets them stuck like that until you reset power.
 Ambient light in a normally lit room should be enough to see a response on the sensor.
 
 The plunger viewer shows the image being received on the sensor. 
@@ -615,16 +615,16 @@ If you cover a portion of the sensor window (holding the paper right up against 
 Without a lens, you'll only be able to see a very coarse and blurry image, but it should still be possible to see that a section of the sensor is shaded.
 
 If you see the expected responses to these tests, the sensor is working! You can proceed to the cabinet installation below. 
-If the sensor doesn't respond as expected, the first troubleshooting step is to confirm that all of the GPIO pins for the sensor are assigned correctly in the Settings page. 
+If the sensor doesn't respond as expected, the first troubleshooting step is to confirm that all the GPIO pins for the sensor are assigned correctly in the Settings page.
 Carefully check each pin assignment against the physical wiring - the sensor won't work at all if even one pin assignment is wrong. 
 (Incorrect pin assignments shouldn't cause any permanent damage to the electronics, though.)
 
 If the pin configuration looks right, you might try a power cycle reboot of the KL25Z. 
-Overexposing the sensor beyond a certain point can cause a cascade effect that blinds all of the pixels, which can last until you power cycle the chip. 
+Overexposing the sensor beyond a certain point can cause a cascade effect that blinds all the pixels, which can last until you power cycle the chip.
 That's something you can do by accident when you're handling the board during testing, so it can be worth trying a power cycle reset.
 
 If the pin assignments are all correct and power cycling doesn't help, you probably have a problem in the soldering. 
-Check all of the solder joints carefully (I'd use a magnifying glass). 
+Check all the solder joints carefully (I'd use a magnifying glass).
 If you spot any solder joints that don't look properly connected, you can try using a fine-tipped soldering iron to heat the joint long enough to melt the solder. 
 That's often all you need to do to fix a bad SMD joint - the natural surface tension in the melted solder will usually "heal" a bad joint.
 
@@ -792,7 +792,7 @@ You might have to hunt around a little bit before the plunger comes into view.
 
 When you find the reflector, you should then fine-tune the position to try to get it as close to the center-line as possible. 
 That will give you the clearest image, and it should also help better tolerate vibration and small shifts in alignment. 
-The plunger shaft usually has a little bit of play that lets it move around by a couple of millimeters in normal action, plus you have to expect all of the parts to move around a little bit over time.
+The plunger shaft usually has a little bit of play that lets it move around by a couple of millimeters in normal action, plus you have to expect all the parts to move around a little bit over time.
 
 *Front-to-back positioning:* Now that you have the reflector in view, the Pinscape firmware should be locking onto the plunger position. 
 You should see this as a green bar showing the current position reading.

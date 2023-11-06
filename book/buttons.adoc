@@ -6,7 +6,7 @@ Once you have a Pinscape Controller set up, it's pretty straightforward to wire 
 We're going to assume you've already picked out which buttons you're going to include and that you've installed them in the cabinet.
 If you're still in the planning stages, and you're figuring out which button functions you want to include, what products to buy, or how to install the buttons in the cabinet, see xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
 
-We discuss button wiring more generally in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] , but that section tries to cover all of the different key encoder options, so it's a little less concrete than this chapter.
+We discuss button wiring more generally in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] , but that section tries to cover all the different key encoder options, so it's a little less concrete than this chapter.
 This chapter tries to give you a quick How To guide specifically for Pinscape Controller button wiring, so it should be a little less work to read through.
 
 As with all jobs inside the cab, be sure to do your button wiring work with the power off and the power cord unplugged.
@@ -22,7 +22,7 @@ If your button has three or more terminals, you do have to identify the correct 
 Once you do, though, it doesn't matter which wire goes to which of the two.
 We'll explain how to identify the right pair of connections later in the chapter.
 
-All of the buttons connect to the same Ground/Common port on the controller, so all of the corresponding button terminals end up connected together electrically.
+all the buttons connect to the same Ground/Common port on the controller, so all the corresponding button terminals end up connected together electrically.
 This means you can "daisy-chain" the wiring to these terminals, if you wish.
 More on this shortly.
 
@@ -55,23 +55,23 @@ The green wire connects to the same Common pin (#26) for every button.
 image::images/expanButtonInputs.png[""]
 
 The pin numbers are printed on the board, but they're in tiny type, so here's a cheat sheet.
-Note that all of the expansion board headers have a little white arrow pointing to pin 1, and pin numbers are always arranged with the even and odd pins in separate rows.
+Note that all the expansion board headers have a little white arrow pointing to pin 1, and pin numbers are always arranged with the even and odd pins in separate rows.
 (Pin 25 on this header isn't used, so we put a big black X over it here.)
 
 image::images/ButtonHeaderPins.png[""]
 
 == Terminology note: "ground" vs. "common"
 
-To avoid confusion, it's best to think of the shared wire that connects to all of the buttons as the "Common" terminal, *not* as the "ground" terminal.
+To avoid confusion, it's best to think of the shared wire that connects to all the buttons as the "Common" terminal, *not* as the "ground" terminal.
 You might see people refer to this as the ground wire when talking about button controllers in general, but "Ground" is a somewhat confusing term because it has multiple technical meanings that depend on context and aren't always interchangeable (although, to make matters even more confusing, sometimes they are).
 
 Also, be aware that the Common for the Pinscape buttons is *not* the common for non-Pinscape buttons.
 For example, it's not the common for any button connections on your PC motherboard (e.g., the motherboard Power On or Reset buttons).
 *Don't* wire any buttons on your PC motherboard or any other non-Pinscape devices to the Pinscape common terminal.
 
-== Daisy chaining the common wire
+== Daisy-chaining the common wire
 
-All of the "common" wires on all of the buttons connect to the same terminal on the controller, which means they all end up connected together electrically.
+all the "common" wires on all the buttons connect to the same terminal on the controller, which means they all end up connected together electrically.
 This gives you more flexibility in connecting the wire.
 In particular, it lets you "daisy-chain" the common wire, by running wires from button to button rather than running a separate wire from each button all the way back to the controller.
 
@@ -80,8 +80,8 @@ image::images/ButtonWiringDaisyChain.png[""]
 Button wiring with a daisy-chained "common" wire (the green wire)
 
 You can also use a mix of daisy-chaining and individual wires to the controller, since in the end, they're all connected together anyway.
-Do whatever is most more convenient for each button.
-For buttons that are situated close together, daisy chaining is the way to go, since it uses the least wire.
+Do whatever is more convenient for each button.
+For buttons that are situated close together, daisy-chaining is the way to go, since it uses the least wire.
 But if a button is off on its own, far away from any others, it might take less wire to connect it directly to the controller "common" terminal than to connect it to another button.
 
 Note that you can only daisy-chain the common, *not* the GPIO port wire.
@@ -95,7 +95,7 @@ For help with this, see "How to identify button terminals" in xref:cabButtonWiri
 
 == How to assign keys to buttons
 
-What do you do with all of these buttons once you've wired them up? You can assign each one of them to send a keyboard key or joystick button press to Windows.
+What do you do with all these buttons once you've wired them up? You can assign each one of them to send a keyboard key or joystick button press to Windows.
 The Pinscape software can emulate a standard PC keyboard, or a joystick, or both, so you can assign any mix of keyboard keys and joystick buttons to your physical pushbuttons.
 
 For a list of "standard" key assignments for the main pinball simulator programs, see "Common key assignments" in xref:cabButtonWiring.adoc#commonKeyAssignments[Button Wiring] .
@@ -209,7 +209,7 @@ image::images/shift-and-or-mode.png[""]
 
 That lets you control how the Shift Button works when you press it on its own.
 
-*"Shift OR Key mode"* means that each press of the Shift Button will be act as an invocation of the Shift Button feature, _or_ it'll send the Windows key associated with the button.
+*"Shift OR Key mode"* means that each press of the Shift Button will act as an invocation of the Shift Button feature, _or_ it'll send the Windows key associated with the button.
 Never both.
 
 How is this decided? Easy: if you press another key while holding down the Shift button, the Shift button has fulfilled its Shift function and _won't_ send its regularly assigned key.
@@ -223,8 +223,8 @@ But when I just press the button on its own, I do want it to send a "2" key.
 
 This "smart" action comes at a price, though.
 It causes a little bit of weirdness in the key press timing, due to that part about sending the normal key _when you release the button_ .
-That can be a little strange, because all of the other buttons send their keys as soon as you press them.
-But we can't do that if we want the "smart" behavior, since we can't predict whether or not you're planning to press any other keys when you first press the Shift button.
+That can be a little strange, because all the other buttons send their keys as soon as you press them.
+But we can't do that if we want the "smart" behavior, since we can't predict whether you're planning to press any other keys when you first press the Shift button.
 We're not mind readers!
 
 *"Shift AND Key mode"* means that the button always performs both of its functions every time you press it.

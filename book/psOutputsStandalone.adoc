@@ -20,7 +20,7 @@ PWM is needed if you want to control the brightness of an LED or the speed of a 
 10 channels isn't enough for the standard five-flasher setup, since each RGB flasher needs three PWM channels (one each for red, green, and blue).
 
 If you can live within these limits, the standalone KL25Z makes a great output controller at low cost.
-If you need more outputs in general or more PWM outputs in particular, you might want to consider adding the Pinscape expansion boards - which were specifically designed to overcome all of these limits - or one of the commercial I/O controller devices.
+If you need more outputs in general or more PWM outputs in particular, you might want to consider adding the Pinscape expansion boards - which were specifically designed to overcome all these limits - or one of the commercial I/O controller devices.
 See xref:expan.adoc#expan[Expansion Boards Overview] for more on the expansion boards, and xref:ioControllers.adoc#ioControllers[I/O Controllers] for a survey of the commercial alternatives.
 
 An additional option for adding more outputs, if you run out of available GPIO pins, is to simply add a second KL25Z.
@@ -37,7 +37,7 @@ To view the list of ports currently assigned as output pins:
 * Go to the Settings page
 * Scroll down to the *Feedback device outputs* section
 
-That will show you a list of all of the pins assigned as output ports.
+That will show you a list of all the pins assigned as output ports.
 Each port has a port number, which is used to identify the port in the link:https://configtool.vpuniverse.com/[DOF Config Tool] .
 That port number is just an abstract label, for DOF's sake, that doesn't mean anything in terms of KL25Z hardware.
 To find the KL25Z hardware pin, scan across the row to find the GPIO pin.
@@ -55,7 +55,7 @@ There's no need to memorize which pins are which; the Config Tool's pin assignme
 A "Virtual" port is simply a port that's not connected to anything.
 It still shows up over the USB connection, so DOF and other PC software can access it as though it were actually there.
 But when DOF sends it a command, it'll just harmlessly ignore the command.
-Virtual ports let you satisfy DOF's expectations that a certain number of ports are present even if you don't have enough physical GPIO pins available for all of the ports DOF expects.
+Virtual ports let you satisfy DOF's expectations that a certain number of ports are present even if you don't have enough physical GPIO pins available for all the ports DOF expects.
 
 To add a new output port, go to the feedback device outputs section as described above, then:
 
@@ -222,7 +222,7 @@ It's difficult to tell whether a given mini-amp is safe to use with the KL25Z, s
 
 The best way to test your connections is using the Pinscape Config Tool:
 
-* Make sure all of the wiring is in place for the feedback device you want to test
+* Make sure all the wiring is in place for the feedback device you want to test
 * Run the Config Tool
 * Click on the Output Tester button
 * Find the port you want to test in the list
@@ -246,7 +246,7 @@ The pins are closely spaced, so you have to be really careful about this.
 * Click on the Output Tester button
 * Set your meter to DC Volts
 * Connect the meter's black probe to one of the KL25Z's ground (GND) pins, _or_ to any convenient ground connection to your power supplies.
-(Remember that all of the grounds should be interconnected, as described in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , so any of these points should be equivalent.)
+(Remember that all the grounds should be interconnected, as described in xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , so any of these points should be equivalent.)
 * Connect the meter's red probe to the GPIO pin you want to test
 * When the port is *off* in the output tester, it should read close to 0V (exception: an Active-Low port should read close to 3.3V)
 * When the port is *on* in the output tester, it should read close to 3.3V (exception: an Active-Low port should read close to 0V)
@@ -256,7 +256,7 @@ Any problems must be in the wiring to the booster circuit and/or to the feedback
 
 If this test fails, either your KL25Z hardware is broken, or you have a problem with the software configuration.
 Check carefully that the pin you're looking at in the output tester matches the physical pin that you're testing on the KL25Z.
-Look very closely - make sure that you don't have the KL25Z flipped upside-down, for example, since that would make all of the pins in the mirror-image locations from where you think they are.
+Look very closely - make sure that you don't have the KL25Z flipped upside-down, for example, since that would make all the pins in the mirror-image locations from where you think they are.
 
 == DOF Setup
 
@@ -288,7 +288,7 @@ If you want to see a picture of where that pin is physically located on the KL25
 If you like the idea of using a standalone KL25Z as your output controller, but you need more ports, there's an easy solution: add a second KL25Z.
 Or even a third or fourth.
 Additional units give you more output ports - and on secondary units, you don't even have to share GPIO pins with other functions like buttons and plungers.
-You only need those input pins on the first KL25Z unit, so nearly all of the pins on secondary units can be reassigned as outputs.
+You only need those input pins on the first KL25Z unit, so nearly all the pins on secondary units can be reassigned as outputs.
 
 The Pinscape software is set up so that you can have up to 16 separate KL25Z units in your system.
 The only additional setup work required to add a second KL25Z is to give it a unique ID, using the Pinscape Config Tool:

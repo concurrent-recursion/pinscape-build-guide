@@ -2,7 +2,7 @@
 
 Building a virtual pin cab is a big project.
 You shouldn't go into it thinking it's the light work of a couple of weekends.
-But it's also not an impossibly huge job, even though it can seem that way at times - especially during the research phase when you're trying to get your arms around all of the details.
+But it's also not an impossibly huge job, even though it can seem that way at times - especially during the research phase when you're trying to get your arms around all the details.
 
 Good organizers always say that the way to tackle a big job is to break it down into smaller pieces until the pieces are manageable.
 So let's look at the main sub-tasks that go into a pin cab build.
@@ -18,7 +18,7 @@ Many other decisions depend upon the exact cabinet dimensions and the amount of 
 
 The thing that makes TV sizing tricky is that you can only buy TVs in certain sizes.
 Ideally, you'd be able to design and build your cabinet without giving too much thought to a TV, and then just drop in a suitable TV when the time comes.
-But when that time comes, you might find that all of the models you like are 1" too wide to fit, and the next size down is 4" narrower than you wanted.
+But when that time comes, you might find that all the models you like are 1" too wide to fit, and the next size down is 4" narrower than you wanted.
 
 This leads some cab builders to start by picking a TV, and then tailor the cabinet to fit the TV like a glove.
 But that's not for everyone.
@@ -128,7 +128,7 @@ We'll go over which buttons you need and how to install them in xref:cabButtons.
 
 I/O controllers are separate components - usually USB devices - that handle the connections between the PC and the unique devices in a virtual pin cab: buttons, plunger, accelerometer (for nudging), flashing lights, and mechanical and tactile feedback devices.
 
-You don't have to set up all of the I/O controllers or functions at once.
+You don't have to set up all the I/O controllers or functions at once.
 At this stage in the build, though, you'll at least want to set up the button input controller (also known as the key encoder), so that you can test out the newly installed cabinet buttons.
 
 We'll look at the various controller functions and which devices you need in xref:ioControllers.adoc#ioControllers[I/O Controllers] .

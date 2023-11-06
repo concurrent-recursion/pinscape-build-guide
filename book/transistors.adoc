@@ -128,7 +128,7 @@ In either case, use the part number listed in the schematic or parts list to sea
 It's always best to use the exact part listed, but many transistors have mutually compatible substitutes available. 
 Try a Google search for a term like "2N4401 equivalent" if you can't find the exact original part specified.
 
-All of the NPN and PNP transistors used in the Pinscape boards are used for their switching function. 
+all the NPN and PNP transistors used in the Pinscape boards are used for their switching function.
 That makes them largely interchangeable with other transistors that are described as "small signal transistors". 
 If you can't find the exact option for a transistor in the Pinscape parts list, you can probably substitute any other "small signal transistor" that meets these requirements:
 

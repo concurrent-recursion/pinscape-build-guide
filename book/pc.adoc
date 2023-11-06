@@ -3,7 +3,7 @@
 
 The core of a pin cab is a PC running Windows.
 You could theoretically build a pin cab around a Mac, an iPad, a Raspberry Pi, or just about any other sort of computer.
-But for our purposes in this guide, the only real option is a Windows PC, because that's where all of the software runs.
+But for our purposes in this guide, the only real option is a Windows PC, because that's where all the software runs.
 
 I've observed that most pin cab builders like to start their projects by building the PC and setting up the software, before they've even started thinking about what's needed to build the pinball machine body that'll house it.
 This is a natural first step for most of us, because most of us know our way around PCs at least a little bit - the way that most people discover the pin cab world in the first place is through the PC pinball simulation community.
@@ -66,7 +66,7 @@ Just look for parts from reputable manufacturers that fit the specs you need.
 Recommended: Windows 11, 64-bit, Home edition.
 Windows 10 is also still a good choice.
 
-Windows is the best operating system option for a pin cab PC, because almost all of the popular pinball software runs only on Windows.
+Windows is the best operating system option for a pin cab PC, because almost all the popular pinball software runs only on Windows.
 This is starting to change, with some of the open-source software being ported to Linux and MacOS, but it will be a while before the ports are as solid as the Windows versions, and most of the commercial games will probably never be ported.
 
 === Which version
@@ -75,7 +75,7 @@ I'd recommend the latest, currently Windows 11.
 The main reason is that Microsoft only offers full updates to their DirectX technologies (their gaming technlogy layer) on the current OS version at any given time.
 This means that newer games will increasingly be unable to run on the older Windows versions; if you want to be able to run the latest games, you pretty much have to have the latest Windows.
 
-Older versions: As of this writing, Windows 10 is still well supported, but all of the older versions are now out of support, so they're no longer receiving updates from Microsoft.
+Older versions: As of this writing, Windows 10 is still well supported, but all the older versions are now out of support, so they're no longer receiving updates from Microsoft.
 As I'm sure you've heard from many other people, the big concern when Microsoft terminates updates is that security bugs in the OS won't get fixed, so it will become increasingly vulnerable to malware.
 For a pin cab PC, I think the termination of DirectX updates is an even bigger problem.
 
@@ -138,7 +138,7 @@ Check the specs on the options you find to make sure your specific CPU type is l
 
 === Motherboard
 
-The motherboard is the main system board with all of the core electronics, and connectors for all of the add-in cards, disks, and input devices.
+The motherboard is the main system board with all the core electronics, and connectors for all the add-in cards, disks, and input devices.
 
 Choose a CPU before looking for motherboards.
 Any given motherboard only works with specific CPUs.
@@ -171,7 +171,7 @@ A motherboard designed for a particular CPU is almost always based on the Intel 
 If you're concerned about finding the fastest motherboard for your CPU, you can do some research on benchmark sites on the Web.
 
 *What about on-board graphics?* Unimportant, because you'll need a separate graphics card whether or not the motherboard has its own built-in graphics.
-There might be exceptions, but all of the built-in motherboard graphics chip sets I've ever seen are low-end, suitable for business graphics, not gaming.
+There might be exceptions, but all the built-in motherboard graphics chip sets I've ever seen are low-end, suitable for business graphics, not gaming.
 
 If the motherboard doesn't have on-board graphics, great, that's one less thing to worry about when configuring the BIOS.
 If it does have on-board graphics, as most modern motherboards do, it's still not a problem because you should be able to disable it in the BIOS setup.
@@ -209,14 +209,14 @@ Visual Pinball and other gaming software benefits from larger memory sizes with 
 *Display size and refresh rate:* Any modern video card should be able to drive a 1080p main monitor and a couple of additional smaller monitors.
 (1080p or even 720p is perfectly adequate for a backglass TV.) A higher-end card might be needed if you're using a 4K main monitor.
 
-*Outputs/connectors:* Be sure you have enough outputs for all of the monitors you plan to connect, taking into account the playfield TV, the backbox TV, and the score display (DMD) TV, if you're using that.
+*Outputs/connectors:* Be sure you have enough outputs for all the monitors you plan to connect, taking into account the playfield TV, the backbox TV, and the score display (DMD) TV, if you're using that.
 
 Most higher-end graphics cards offer several output ports with different types of connectors.
-You can almost always use all of the outputs simultaneously to drive multiple monitors.
-This lets you use a single graphics card to drive all of the TVs in your system.
+You can almost always use all the outputs simultaneously to drive multiple monitors.
+This lets you use a single graphics card to drive all the TVs in your system.
 
 I'd recommend finding a card with at least two of the following connectors, in any combination: HDMI, DVI-D, Display Port (DP).
-All of these types can be connected (using passive adapters) to HDMI inputs, which is what you'll need on almost any modern TV.
+all these types can be connected (using passive adapters) to HDMI inputs, which is what you'll need on almost any modern TV.
 As long as you have two ports of these types, you should have no problem connecting two TVs to the card.
 
 If you're planning to also use a third display for the DMD area, you'll need a third output for that.
@@ -341,7 +341,7 @@ How much storage do you need? Let's look at what you'll typically need to instal
 
 We obviously can't come up with an exact number here because the total will depend on how many tables you install.
 But we can still come up with a pretty good upper bound, since there are only so many tables out there (perhaps 1000 in circulation), and they're not all that big individually (perhaps 1MB to 20MB apiece).
-Even if you install all of the tables you can find, and even if you never delete the less interesting ones, you're probably talking about less than 20GB of total disk space required for them.
+Even if you install all the tables you can find, and even if you never delete the less interesting ones, you're probably talking about less than 20GB of total disk space required for them.
 
 Adding all of this up, we come up with about 45GB.
 Realistically, you'll want to increase that figure to account for the inherent overhead in the way Windows uses disk space, and to leave some room for temporary files, downloads, etc.
@@ -395,7 +395,7 @@ It's fairly obvious how to set that up, so we'll ignore that option and focus on
 
 There are two main options for mounting the PC components inside the cabinet.
 The first is to build the PC using a conventional tower case, and then put the case inside the cabinet.
-The second is to skip the case and mount all of the PC components directly inside the cabinet, attaching them to the floor of the cabinet or one of the inside walls.
+The second is to skip the case and mount all the PC components directly inside the cabinet, attaching them to the floor of the cabinet or one of the inside walls.
 The cabinet itself serves as the case.
 Each approach has some tradeoffs.
 
@@ -424,7 +424,7 @@ We'll look at specifics in  xref:pcInstall.adoc#pcInstall[Installing the PC] .
 === Fans
 
 PC components and TVs generate heat when running, so you'll want to make sure the cabinet interior is well ventilated.
-Most cab builders do this by installing a couple of PC case fans in specially cut openings in the floor or back wall of the cabinet.
+Most cab builders do this by installing a couple of PC case fans in specially cut openings in the floor or back wall the cabinet.
 See xref:fans.adoc#fans[Cooling Fans] for more.
 
 [#pcNetworkConnections]

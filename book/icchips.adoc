@@ -45,7 +45,7 @@ What's not as obvious is the proper rotation.
 DIP chips are rotationally symmetrical: they'll fit the space on the board if you rotate them 180° from their proper orientation.
 So you have to be careful to get that right.
 
-When you look at the Pinscape boards, you'll see little outlines for all of the chips printed on the top of the board.
+When you look at the Pinscape boards, you'll see little outlines for all the chips printed on the top of the board.
 Most of the IC chip outlines look roughly like this:
 
 image::images/ChipSilkscreen.png[""]
@@ -120,9 +120,9 @@ Line up the notch on the socket with the notch printed on the board when install
 The main advantage of using a socket is that it makes it practically effortless to remove and replace a chip.
 That's a great time-saver if you find that one of your chips is defective, or if it ever fails later, or if you accidentally install it backwards on the first try.
 In contrast, it's extremely difficult to remove a chip that's been soldered directly to the board.
-It only takes a tiny bit of solder on each pin to make it stick, and it's next to impossible to get all of the solder off all of the pins on a large chip.
+It only takes a tiny bit of solder on each pin to make it stick, and it's next to impossible to get all the solder off all the pins on a large chip.
 
-I recommend using sockets for all of the large chips, but it does slightly increase the cost, so some people prefer to solder the chips directly.
+I recommend using sockets for all the large chips, but it does slightly increase the cost, so some people prefer to solder the chips directly.
 
 If you use sockets, note that each socket has a notch cut into the plastic.
 This is meant to mimic the notch in the chip outline printed on the circuit board, to serve as the orientation marker.
@@ -131,7 +131,7 @@ That way, you can use the notch in the socket as a proxy for the notch in the ci
 
 == How to install a chip on a circuit board
 
-If you're using a socket, follow the procedure we're about to describe for soldering the chip, and just substitute the socket for the chip in all of the steps.
+If you're using a socket, follow the procedure we're about to describe for soldering the chip, and just substitute the socket for the chip in all the steps.
 After the socket is installed, plug the chip into the socket, taking care to orient the chip properly as described above.
 
 To solder a chip (or socket) to the board, first find the outline printed on the board for the chip.
@@ -162,8 +162,8 @@ If this happens, you might be able to nudge the missing pins into their holes if
 The pins are delicate and don't stand up to much bending and re-bending.
 If necessary, take the chip back out, carefully (very carefully) straighten any pins that went sideways, and try again.
 
-Once you're satisfied that all of the pins made it into their respective holes in the board, hold the pin in place from the top and flip the board over.
-Verify that all of the pins really made it through the openings, as seen from the bottom of the board.
+Once you're satisfied that all the pins made it into their respective holes in the board, hold the pin in place from the top and flip the board over.
+Verify that all the pins really made it through the openings, as seen from the bottom of the board.
 
 If everything looks good, it's time to solder the pins in place.
 Keep the board flipped over and solder the pins from the bottom.
@@ -185,7 +185,7 @@ You can just work through the rest of the pins one at a time to solder each one 
 
 == Pin numbering
 
-All of the pins on a chip are numbered, for the purposes of identifying them in the schematic.
+all the pins on a chip are numbered, for the purposes of identifying them in the schematic.
 
 The pin numbers are irrelevant when you're installing a chip, since all you care about is getting the orientation right.
 However, you might find a need to cross-reference the individual pin connections in the schematic with the physical boards if you ever have a problem that requires debugging with a voltmeter.
@@ -221,7 +221,7 @@ Even so, it might seem like it would be simpler if they'd use the same pin order
 To understand the reasoning, look at the labels inside the TLC5940 box.
 Those are the "names" of the pins, which are just arbitrary mnemonics that are there to help a circuit designer remember the function of each pin without having to memorize all the numbers or constantly refer to the data sheet.
 Notice how the whole left side is OUT0, OUT1, OUT2, etc.
-Those pins are all of the PWM outputs.
+Those pins are all the PWM outputs.
 On the physical chip, they're not all together, but they're grouped on the schematic.
 That keeps the schematic drawing a little neater.
 
@@ -374,7 +374,7 @@ In other words, the 2065 is just a slightly tougher version of the same chip.
 
 The PC817 is an optocoupler, which is a device that connects two circuits via light signals rather than electronic signals.
 The light signals are transmitted by a tiny IR LED inside the chip, and are received by an adjacent phototransistor.
-(All of the light transmission happens inside the chip, so you won't see light coming out of it, and you don't have to worry about interference from ambient light.
+(all the light transmission happens inside the chip, so you won't see light coming out of it, and you don't have to worry about interference from ambient light.
 An optocoupler isn't the same as an "opto interruptor", which is a kind of switch that's controlled by blocking and unblocking a light beam, like an electric eye.
 An optocoupler doesn't have an exposed beam that you can block.)
 
@@ -444,7 +444,7 @@ There are a couple of things to notice.
 The first is that the individual units all have the same "OK _n_ " component ID, but each one also has a suffix - A, B, C, D.
 The suffix tells you which sub-unit we're talking about.
 The common OK _n_ prefix is how we know that these units are all part of the same physical PC847 chip.
-In my own schematics, I also make a point of grouping the sub-units together on the page, so that you don't have to go hunting around to find all of them, but you might encounter cases in other people's schematics where the sub-units aren't grouped.
+In my own schematics, I also make a point of grouping the sub-units together on the page, so that you don't have to go hunting around to find all them, but you might encounter cases in other people's schematics where the sub-units aren't grouped.
 
 The second thing to notice is the pin numbering.
 Note how the pin numbers aren't grouped contiguously on each sub-unit.

@@ -1,8 +1,8 @@
 = Building the Expansion Boards
 
 If you've worked with PCBs before, you should find building the Pinscape boards to be pretty straightforward.
-The boards can look pretty daunting to build, because there are admittedly a lot of components to install, but all of the components are individually pretty easy to handle.
-All of them are "through-hole" parts, with wire leads that install through holes in the board.
+The boards can look pretty daunting to build, because there are admittedly a lot of components to install, but all the components are individually pretty easy to handle.
+all them are "through-hole" parts, with wire leads that install through holes in the board.
 That type of part is easy to solder by hand.
 (Modern electronics has largely moved to "surface-mount" parts, which are more designed for installation by robots, and can be tricky to solder by hand.
 I think it's in keeping with our fundamentally retro hobby that these boards use the older style parts that are more human-friendly.)
@@ -32,7 +32,7 @@ There's no particular order that you have to use to install the components, but 
 == Component cheat-sheet
 
 Matching the parts to their spots on the circuit board might seem a little intimidating at first, but the "language" of the circuit board markings is designed to make it as straightforward as possible.
-All of the markings on the circuit board are there to let you see at a glance what goes where.
+all the markings on the circuit board are there to let you see at a glance what goes where.
 They also tell you how to orient the parts where that matters.
 (Some parts, like resistors, don't care which direction they go; other parts, like transistors and diodes, have to be oriented the right way to work properly.)
 
@@ -195,7 +195,7 @@ The "Small LED" ports on the main board (on pin header JP8) are "constant curren
 This means that they have a built-in current limiter that caps the current at a selected level, which allows you to connect LEDs to these outputs *directly* , without any current-limiting resistors.
 The function of the current-limiting resistors is replaced by the built-in current limiter, eliminating the need to install the resistors separately.
 
-All of the Small LED ports have the same current limit, but you can adjust what that common limit is, because it's determined by the value of resistor *R5* .
+all the Small LED ports have the same current limit, but you can adjust what that common limit is, because it's determined by the value of resistor *R5* .
 If you use the R5 value specified in the parts list, 2.2K, the limit is set to 20mA.
 You can change this by using a different value for R5.
 
@@ -237,7 +237,7 @@ Any small-wattage resistor (1/8W or 1/4W) with the chosen Ohms value will work h
 
 === Omitting the TV relay
 
-If you don't need the TV ON feature, you can simply omit all of the following parts:
+If you don't need the TV ON feature, you can simply omit all the following parts:
 
 * D1 (1N4007)
 * K1 (G5V-2 relay)
@@ -248,7 +248,7 @@ If you don't need the TV ON feature, you can simply omit all of the following pa
 
 === Omitting the TV IR remote features
 
-If you don't need the IR remote control features, you can simply omit all of the following parts:
+If you don't need the IR remote control features, you can simply omit all the following parts:
 
 * C2 (150nF)
 * R7 (220R)
@@ -281,7 +281,7 @@ IR LEDs such as these emitters follow the same rule.
 === Omitting the knocker output
 
 The whole knocker output circuit is optional.
-To remove it, simply omit all of the following parts:
+To remove it, simply omit all the following parts:
 
 * C5 (1uF)
 * C7 (100nF)
@@ -302,7 +302,7 @@ To remove it, simply omit all of the following parts:
 * T2 (2N4403)
 * T3 (2N4401)
 
-The list above includes all of the parts that make up both the knocker's time-limiter circuit and the output control circuit, so if you omit all of those parts, you can skip the section below about bypassing the knocker output timer.
+The list above includes all the parts that make up both the knocker's time-limiter circuit and the output control circuit, so if you omit all of those parts, you can skip the section below about bypassing the knocker output timer.
 The output timer won't be there at all if you omit the parts above, so there's nothing left to bypass!
 
 
@@ -318,7 +318,7 @@ If you want to leave out the _entire_ knocker circuit instead, including both th
 
 To bypass the timer circuit and turn this into an un-timed, general-purpose output:
 
-*  *Omit* all of the following parts (simply don't install anything in their slots on the board):
+*  *Omit* all the following parts (simply don't install anything in their slots on the board):
 ** C5 (1uF)
 ** C7 (100nF)
 ** C8 (1uF)
@@ -368,7 +368,7 @@ The blocks correspond to the outputs as shown below - timer block 1 on the diagr
 These are numbered the same as the outputs: IC1 is in timer block 1 for output 1, IC2 is in timer block 2 for output 2, etc.image:images/chime-board-timer-block-1.png[""]
 
 * Now we're going to build the "null" timer circuit, without the timer.
-This means we're going to basically *omit* all of the normal parts.
+This means we're going to basically *omit* all the normal parts.
 * The only part from the original timer that you're going to install here is the *PC817* optocoupler chip, also labeled *OK _n_* where _n_ is the timer block and output number (OK1 for timer block 1 and output 1).image:images/chime-board-timer-bypass-1.png[""]
 
 * Now we're going to add two parts within this block that _aren't_ part of the normal timer circuit.

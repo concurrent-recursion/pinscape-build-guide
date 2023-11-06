@@ -168,7 +168,7 @@ Adjust this as needed to make sure that the system waits long enough for your TV
 Most TVs aren't responsive to any control inputs for a few seconds after they're plugged in, so this delay is intended to give the TVs long enough that they're ready to handle the ON signal when Pinscape sends it. 
 If your TVs usually work but seem to miss the signal some of the time, adding a few seconds to the delay might make it more reliable.
 
-When you've entered all of the settings, click "Program KL25Z" at the bottom of the page to save the changes to the device.
+When you've entered all the settings, click "Program KL25Z" at the bottom of the page to save the changes to the device.
 
 === Setting up an IR transmitter/receiver
 

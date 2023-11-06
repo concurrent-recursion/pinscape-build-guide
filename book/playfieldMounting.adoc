@@ -10,7 +10,7 @@ The second is the engineering question of how to physically attach the TV to the
 Where to place the TV is one of the top questions that new cab builders ask on the forums.
 It's one of those things that seems self-evident at first glance, but has a lot of subtlety when you look more closely.
 It's obvious that the TV has to lie on its back near the top of the cab, but that doesn't quite answer the question, since it leaves a few inches to play with to move the TV up and down and front to back.
-Those few inches can make a lot of difference aesthetically - it's that matter of what _exact_ positioning is ideal that raises all of the forum questions.
+Those few inches can make a lot of difference aesthetically - it's that matter of what _exact_ positioning is ideal that raises all the forum questions.
 This chapter surveys the options and their respective pros and cons.
 I have some opinions about what looks best, which I'll share, but I'll also try to give equal time to the alternatives.
 I don't think there's a single right answer, because everyone has their own priorities for their cab and their own sense of what looks best.
@@ -40,7 +40,7 @@ Most virtual cab builders install it with the *bottom of the TV* facing *left* i
 image::images/tv-orientation-in-cab.png[""]
 
 In principle, it really shouldn't matter.
-Windows and all of the pinball software _should_ let you select whatever rotation you want.
+Windows and all the pinball software _should_ let you select whatever rotation you want.
 But this is one of those cases where you can save yourself some hassle by doing it the same way everyone else does it.
 There's still a lot of older software in use in the pinball ecosystem, and some of it might not be as adaptable as modern programs.
 I don't know of any actual examples of software that will outright fail to work with other rotations, but I know from helping people out with PinballY that monitor rotation in general can cause configuration headaches, especially with some of the commercial games.
@@ -342,7 +342,7 @@ Here's a more schematic view:
 
 image::images/real-playfield-hinge-2.png[""]
 
-Taking away the side wall of the cab for a moment, here's how this all fastens to the cab:
+Taking away the side wall the cab for a moment, here's how this all fastens to the cab:
 
 image::images/real-playfield-hinge-2a.png[""]
 
@@ -434,7 +434,7 @@ It also tends to sag over time.
 
 === Strength and weight
 
-The pivot setup puts all of the TV's weight on the hinges when the TV is raised, so it's reasonable to ask if the hinges are strong enough.
+The pivot setup puts all the TV's weight on the hinges when the TV is raised, so it's reasonable to ask if the hinges are strong enough.
 
 We know that the mechanism has a proven track record on the real machines, so as long as we're not asking more of it in terms of weight than the real machines do, we should be safe.
 I'd estimate that a pinball playfield (assembled) is in the range of 50 to 75 pounds.
@@ -582,7 +582,7 @@ image::images/rear-pivot-1.png[""]
 
 image::images/rear-pivot-2.png[""]
 
-Note how the further-back position allows us to tilt the TV higher than the further-forward position when we take all of the constraints into account.
+Note how the further-back position allows us to tilt the TV higher than the further-forward position when we take all the constraints into account.
 But if we look between these two extremes, we can actually do even better.
 
 image::images/mid-pivot-1.png[""]

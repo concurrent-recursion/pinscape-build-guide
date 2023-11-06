@@ -38,7 +38,7 @@ As you can see, this doesn't change the basic wiring plan for an output device, 
 
 Note that it's equivalent to insert the resistor into the positive voltage wire (the one that connects the LED to the power supply) instead of the negative wire (to the output controller port).
 You can do that if you prefer it for some reason.
-But it's almost always more convenient to put it on the negative side, as shown, because it's usually easier to daisy-chain all of the positive voltage connections together.
+But it's almost always more convenient to put it on the negative side, as shown, because it's usually easier to daisy-chain all the positive voltage connections together.
 In fact, for some RGB LEDs, the negative side is the only option because the positive connections for the three color channels are sometimes wired together _inside the LED_ .
 I'd recommend keeping things simple by adopting a uniform rule that the resistor always goes on the negative side.
 

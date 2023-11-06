@@ -15,7 +15,7 @@ Most of the steps are pretty simple, and they mostly use natural alignment point
 
 The second method involves a special router bit that cuts the entire tongue-and-groove pattern all at once.
 That's covered in the next chapter, xref:lockMiterII.adoc#lockMiter2[Lock Miter II: The Special Router Bit Way] .
-That method probably looks easier at first glance, since the bit does all of the work for you.
+That method probably looks easier at first glance, since the bit does all the work for you.
 But these bits are notoriously difficult to set up properly.
 There is a reliable setup procedure, but the time and effort involved in that ends up making the overall degree of difficulty similar to the more manual "plywood friendly" method.
 The real drawback of the special-router-bit approach is that the tongue-and-groove structures that the router bits cut are too fine for most plywood, so you lose a lot of the strength that the join is supposed to provide.
@@ -74,7 +74,7 @@ Here's a quick summary of what I think are the high and low points of each appro
 I've tried both approaches, and I've found that - surprisingly - the manual method isn't really any harder or more time consuming than the router bit method.
 It might even be a little easier.
 You'd think that the special router bits would make things a whole lot easier, given that they cut the entire pattern in one pass over each edge, but the complex setup procedure makes up for it.
-The manual method involves multiple cuts for each corner, but each one is fairly quick and easy to set up, and the recipe is pretty reliable at getting all of the cuts to line up accurately with one another.
+The manual method involves multiple cuts for each corner, but each one is fairly quick and easy to set up, and the recipe is pretty reliable at getting all the cuts to line up accurately with one another.
 
 Given that neither method has a clear advantage in terms of difficulty level, my feeling is that the manual method has an edge for a pin cab project, simply because of its better performance with plywood.
 The main obstacle with the manual method for many people will probably be that it requires a table saw.
@@ -156,7 +156,7 @@ The main thing to watch out for is that you'll need an auxiliary fence for a cou
 == Do a practice run
 
 This is a complex enough procedure that I felt the need to do a couple of practice runs on scrap material before I tried it for a real project.
-You might not need to, but I found it helpful as a confidence booster, to make sure I understood all of the steps.
+You might not need to, but I found it helpful as a confidence booster, to make sure I understood all the steps.
 
 The other nice thing about a practice run is that it helped me fine-tune my sense of the various alignment points.
 The procedure is designed to make the alignment points easy to judge, but even so, there's always a little wiggle room when trying to get two things to line up.
@@ -164,8 +164,8 @@ If anything comes out a little off in the test run, you can use that as a guide 
 
 == Preparation
 
-*Get all of the panels ready:* Wait until all of your panels are cut to final sizes before starting the lock miter procedure.
-You should do all of the lock miter routing across all panels at the same time, so that you only have to do the setup part of each step once.
+*Get all the panels ready:* Wait until all of your panels are cut to final sizes before starting the lock miter procedure.
+You should do all the lock miter routing across all panels at the same time, so that you only have to do the setup part of each step once.
 
 I'd do the lock miter cutting on all panels *before* routing other features (e.g., floor dados), drilling holes (flipper buttons, say), and cutting openings (like the coin door cutout).
 The panels are easier to handle whole.
@@ -182,7 +182,7 @@ It's crucially important that you cut the right pattern in each panel.
 To avoid switching things around in the heat of battle, mark each piece conspicuously before you start, to indicate whether it's a *SIDE* or *FRONT/BACK* piece.
 I also like to mark the *INSIDE* and *OUTSIDE* face of each piece so that I don't have to think about that later.
 The inside/outside orientation matters for every cut.
-I make all of these markings right along each edge where the lock miter pattern goes, just beyond the cutting area (about 3/4" from the edge), to help make sure I'm cutting the correct edge.
+I make all these markings right along each edge where the lock miter pattern goes, just beyond the cutting area (about 3/4" from the edge), to help make sure I'm cutting the correct edge.
 I don't want to have to think too much while the router is running - less chance of screwing something up.
 
 *Install a 1/4" straight bit in your router.* This bit will be used for all routing throughout the procedure.
@@ -370,8 +370,8 @@ If it's too wide, move the fence back (away from the bit); if it's too narrow, m
 
 |===
 
-Once you're satisfied with the fence alignment, route all of the side pieces as shown above, keeping the bit height set at 1/4" above the table.
-Once done, you'll need to make one more pass over all of the pieces at the final bit height.
+Once you're satisfied with the fence alignment, route all the side pieces as shown above, keeping the bit height set at 1/4" above the table.
+Once done, you'll need to make one more pass over all the pieces at the final bit height.
 
 To set the final bit height, use a front/back piece with a piece of 1/4" MDF inserted into the groove.
 Put the whole thing flat onto the router table as shown below, with the *OUTSIDE FACE* facing up.
@@ -438,7 +438,7 @@ If the corner is still a little squared, you just need to adjust the fence back 
 *Make small changes* to ensure you don't overshoot.
 Repeat until the corner is sharp.
 
-You can now run all of the remaining front/back pieces through.
+You can now run all the remaining front/back pieces through.
 
 *Step 5:* Cut the 45° miter on the side pieces.
 This is essentially the same as step 5, just with a different blade position to match the side pieces this time.
@@ -475,7 +475,7 @@ If the corner is still a little squared, adjust the fence back slightly (away fr
 *Make small changes* to avoid overshooting.
 Repeat until the corner is sharp.
 
-You can now run all of the remaining side pieces through.
+You can now run all the remaining side pieces through.
 
 *Step 6:* Trim the tongue on the inside of the front/back pieces so that it fits into the side slot from step 1.
 

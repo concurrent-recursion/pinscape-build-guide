@@ -2,7 +2,7 @@
 = Coin Door Interface Board
 
 In the xref:coinDoor.adoc#coinDoor[Coin Door] chapter, we discuss the special wiring plug that the Williams WPC coin door uses.
-That plug is wired to all of the switches and lamps in the coin door: the coin chute switches that detect when you've inserted a quarter, the slam tilt switch, the service control panel buttons, and the coin slot lamps.
+That plug is wired to all the switches and lamps in the coin door: the coin chute switches that detect when you've inserted a quarter, the slam tilt switch, the service control panel buttons, and the coin slot lamps.
 
 In a virtual cab, we have to connect that special coin door plug to the key encoder, so that the buttons and switches in the coin door can be used as inputs to the virtual pinball software.
 We also have to connect it to a power supply, to light up the coin slot lamps.
@@ -24,7 +24,7 @@ To help with this, I included a 6.3V power regulator in the circuit board design
 If you build the full board design, you'll get the 6.3V supply automatically; you just have to plug in power from a 12V supply (which you probably do already have, since it's one of the voltage levels that you get from an ordinary ATX PC power supply).
 
 However, the 6.3V regulator is optional.
-You can simply omit all of the parts for it (leaving their slots on the circuit board empty).
+You can simply omit all the parts for it (leaving their slots on the circuit board empty).
 If you do this, you can still get the lamps to light up by using one of these options:
 
 * Power the lamps with 5V.
@@ -75,7 +75,7 @@ The reason you might want to use a 10-pin header instead of a 9-pin is that it's
 (Other PCB makers usually require Gerber files rather than .brd files.
 You can create those with the free version of EAGLE.)
 
-*To build the board _with_ the 6.3V regulator:* Solder all of the listed parts to the board.
+*To build the board _with_ the 6.3V regulator:* Solder all the listed parts to the board.
 
 *To build the board _without_ the 6.3V regulator:* Don't install any of the voltage regulator parts (C1, C2, IC1, R1, R2).
 Install only the pin headers and screw terminals.
@@ -145,7 +145,7 @@ The new design uses a newer chip that's still available.
 
 If you don't want to include the on-board 6.3V power supply feature, you can omit the parts C1, C11, Q1, and JP11.
 Simply leave the slots for those parts on the board empty.
-If you already have a separate 6.3V supply, you can omit all of these and instead supply the board with 6.3V from the external supply.
+If you already have a separate 6.3V supply, you can omit all these and instead supply the board with 6.3V from the external supply.
 
 WARNING: the regulator chip Q1 is no longer in production, and the electronics vendors no longer sell it.
 It might still be possible to find surplus parts on eBay, although that can be spotty in terms of quality.
@@ -156,7 +156,7 @@ That's the whole reason I designed the new version 2 board above; there _are_ ot
 (Other PCB makers usually require Gerber files rather than .brd files.
 You can create those with the free version of EAGLE.)
 
-*To build the board _with_ the 6.3V regulator:* Solder all of the listed parts to the board.
+*To build the board _with_ the 6.3V regulator:* Solder all the listed parts to the board.
 Connect 12V from your secondary ATX power supply (the one you use for feedback devices: see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] ) to the two-pin header labeled "12V IN".
 You can use the two-pin header marked *6.3V* as a power supply for other 6.3V button lamps, as long as you don't exceed 1.5A, or a total of 6 incandescent #555 bulbs (including the ones in the coin chutes).
 

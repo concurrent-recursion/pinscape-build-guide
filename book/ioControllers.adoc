@@ -50,7 +50,7 @@ Some of the devices fall neatly into single categories, and others can perform m
 *Pinscape Controller, running on just the KL25Z (no expansion boards).* Open source software, DIY hardware; about $15 for the main microcontroller board.
 Key encoder, plunger input, nudge input, feedback device control.
 
-This is an open source project that can handle all of the I/O controller functions with a single device.
+This is an open source project that can handle all the I/O controller functions with a single device.
 The main hardware required is a KL25Z, which is a $15 microcontroller that comes fully assembled and ready to use.
 By itself, the KL25Z can handle button input and nudging (it has an excellent built-in accelerometer).
 Plunger input and feedback device control require additional hardware that's described later in this Build Guide.
@@ -166,7 +166,7 @@ Note that the relay switching adds a small amount of lag time, which can make th
 *Zeb's Boards output kits.* Commercial, $550 to $900 from link:https://www.zebsboards.com/[zebsboards.com] .
 Feedback system including controller _and_ feedback devices.
 
-These kits offer turnkey feedback setups that include not only the output controller device but also all of the feedback devices themselves, all fully assembled and wired.
+These kits offer turnkey feedback setups that include not only the output controller device but also all the feedback devices themselves, all fully assembled and wired.
 Everything comes pre-mounted to a couple of modular panels for easy installation in a cabinet.
 
 == Recommendations
@@ -174,7 +174,7 @@ Everything comes pre-mounted to a couple of modular panels for easy installation
 *For the DIYer:* I'm biased, obviously, but if you like building things yourself, my pick would be Pinscape.
 For a fully decked-out system with all the feedback devices, go with the expansion boards.
 For the input features only (buttons, plunger, nudging), the standalone KL25Z is all you need.
-I'm pretty sure Pinscape has all of the features of the best-of-breed commercial products (plus some extra features they don't have), equal or better performance, and a lower price tag.
+I'm pretty sure Pinscape has all the features of the best-of-breed commercial products (plus some extra features they don't have), equal or better performance, and a lower price tag.
 And the open-source design puts you in complete control.
 You can change anything that's not to your exact liking; and if you take "DIY" especially seriously, you can use my code as a starting point and rewrite as much of it as you want from scratch.
 

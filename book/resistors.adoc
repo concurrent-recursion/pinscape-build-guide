@@ -21,7 +21,7 @@ You can install a resistor in a circuit in either direction and it'll work the s
 
 == Installing in a circuit board
 
-All of the resistors on the Pinscape board are the same shape: little cylinders with wire leads sticking out of each end.
+all the resistors on the Pinscape board are the same shape: little cylinders with wire leads sticking out of each end.
 Most of the ones on the parts list are rather tiny "thin film" resistors, most only a a few millimeters in length.
 
 image::images/small-resistor.png[""]
@@ -68,7 +68,7 @@ Somewhat confusingly, the symbol "R" is _also_ used as a substitute for the Ω s
 The one with the number _after_ the R is the part label, so this is part number R6.
 The one with the number _before_ the R is the Ohms value.
 In this case, we have a number both before and after the "R", which you should read by replacing the "R" with a decimal point and using the result as a number of Ohms: so "4R7" means 4.7 Ohms.
-In my own schematics and boards, I prefer to keep all of the digits before the "R" and simply use regular decimal points, so I'd write 4.7R in this case.
+In my own schematics and boards, I prefer to keep all the digits before the "R" and simply use regular decimal points, so I'd write 4.7R in this case.
 But you might see the "4R7" type notation in other people's schematics and boards.
 The same convention applies to the K (for Kilo Ω) and M (for Mega Ω) symbols, so you might see 4K7 instead of 4.7K, or 1M2 instead of 1.2M.
 

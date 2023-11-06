@@ -13,7 +13,7 @@ It's natural for virtual pin cab builders to want to tap into that by using artw
 Reproducing the authentic pinball art style can mean different things, depending on which era you're talking about.
 Machines built in the 1950s through 1970s tended to use abstract graphics, painted in three or four bold colors with stencils.
 The stencil artwork continued into the 1980s, but the graphics became more intricate and representational.
-In the 1990s, the manufacturers started using a multi-color silk-screening process, which allowed for higher-resolution graphics with more detailed designs.
+In the 1990s, the manufacturers started using a multicolor silk-screening process, which allowed for higher-resolution graphics with more detailed designs.
 
 image::images/CabArtExamples.jpg[""]
 
@@ -23,7 +23,7 @@ Bottom: Bally's _Theatre of Magic_ (1995), which used the high-resolution silk-s
 
 In the 2000s, the remaining manufacturers switched from screen printing to plastic decals.
 Decals are cheaper to produce, but they also offer more options to the designers, since they can be printed in high resolution and full color.
-(Silk-screening's palette is limited by the number of color layers used, and has to use half-tone patterns for in-between colors.) The switch to decals opened up even more options for art designers, including full photo-realism.
+(Silk-screening's palette is limited by the number of color layers used, and has to use halftone patterns for in-between colors.) The switch to decals opened up even more options for art designers, including full photo-realism.
 
 == When to install artwork
 
@@ -77,7 +77,7 @@ Different vendors use different film stocks, and what works best for one type mi
 
 With that in mind, I'll give you my own generic advice, based on working with a couple of different decal sources.
 
-The first question is whether or not to paint before applying decals.
+The first question is whether to paint before applying decals.
 I say yes, mostly because I want to make sure that any exposed wood areas around the edges of the decals match the decal background color, to hide the transition.
 Paint can affect how the decals adhere, so if your vendor says you should or shouldn't paint, I'd follow their advice; but if they say you can go either way, I'd paint.
 
@@ -96,7 +96,7 @@ The pores are what make the grain show through paint and decals, because they ab
 Wood grain fillers are specifically designed to fix this by plugging up exposed pores at the surface, so that paint is absorbed more uniformly.
 
 Some pin cab people have reported good results using paint alone.
-I've had less than perfect results that way myself, and all of the kitchen cabinet pros seem to agree that grain fillers are a must if you want a piano finish, but maybe it's a matter of finding the right paint.
+I've had less than perfect results that way myself, and all the kitchen cabinet pros seem to agree that grain fillers are a must if you want a piano finish, but maybe it's a matter of finding the right paint.
 It would certainly save a lot of labor to skip the filler step.
 Some paints, particularly primers, do make claims that they can serve as a surface defect filler.
 
@@ -139,7 +139,7 @@ It's really important to let the paint dry long enough to fully cure and harden 
 Check the instructions on the paint can for full drying time.
 
 A lot of people like to do the sanding between coats as wet sanding (dipping the sandpaper in water, or water with a tiny amount of mild soap).
-Only do this with with oil-based paints.
+Only do this with oil-based paints.
 Wet sanding can create an even smoother finish and helps avoid scratches.
 
 === Applying decals
@@ -159,7 +159,7 @@ The "dry" method simply applies the decal directly to the clean, dry surface.
 Newer films don't need any help releasing small air bubbles, so there's no need for soapy sprays.
 The decal adheres strongly right away with this method, so you don't get to slide it around to play with alignment - but you shouldn't have to do that if you use the right procedure, because you'll get it aligned beforehand.
 
-You can find Youtube videos for both methods.
+You can find YouTube videos for both methods.
 This is a good subject to preview on video so that you can get a little mental practice before attempting it.
 Search for "pinball decal dry method", for example.
 
@@ -249,7 +249,7 @@ The side panels of a full-sized pinball machine are about 50" x 24", so if you w
 
 There are three main options for creating your artwork.
 
-*Design it yourself.* If you're feeling creative and you're good with a graphics editor like Photoshop or Illustrator, you can design your own original artwork.
+*Design it yourself.* If you're feeling creative, and you're good with a graphics editor like Photoshop or Illustrator, you can design your own original artwork.
 
 Opting for a completely original design gives you the freedom to come up with whatever look appeals to you.
 But starting with a blank page is also pretty intimidating.
@@ -264,7 +264,7 @@ A lot of pin cab builders name their machines after their favorite movie, TV sho
 * A popular motif is to focus on the virtualness of the machine and/or its ability to run many different games: "Multiball", "Megapin", "Pinball Holodeck", "Pinball Matrix", etc.
 * Another way to emphasize the multi-game aspect of a virtual cab is to use a collage of prominent artwork elements from your favorite real pinball machines, such as Rudy from _Funhouse_ and the Addams family characters from _The Addams Family_ .
 * There's a lot of public-domain (copyright-free) artwork on the Web that you can use as a starting point.
-For example, if you like space themes, check the NASA, JPL, and Hubble Space Telescope Web sites for some very pretty, high-resolution astronomy images that are free to use.
+For example, if you like space themes, check the NASA, JPL, and Hubble Space Telescope Websites for some very pretty, high-resolution astronomy images that are free to use.
 I used a Hubble photo of the Carina nebula as the backdrop for my own cab side art.
 (Do be sure that any images you take from the Web are truly public-domain or licensed for free use.
 Reputable print shops won't accept artwork that you don't have the proper rights for.)

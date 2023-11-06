@@ -105,7 +105,7 @@ There's so much advice of that sort available that I won't try to reiterate it a
 * Disable unnecessary startup programs
 * Remove or disable unnecessary background programs and Windows "services"
 * Disable programs running in the "system tray" (the little icon area in the Windows task bar near the clock)
-* If you're using Windows 10, turn off all of the cloud features in the system "Privacy" settings, to minimize background network access.
+* If you're using Windows 10, turn off all the cloud features in the system "Privacy" settings, to minimize background network access.
 * Remove third-party antivirus/antimalware software
 
 The last one (removing third-party antimalware programs) might make you uncomfortable.
@@ -229,7 +229,7 @@ That's the place to focus your efforts to fix the problem, in part because it's 
 Everything else is probably already running as fast as it can.
 
 You can find more about input lag and how to minimize it in xref:playfieldTV.adoc#tvInputLag[Selecting a Playfield TV] .
-We won't repeat all of the detail here, but the main point is that you should be sure your TV is set up with as little image processing as possible, especially enhancement modes related to "motion smoothing".
+We won't repeat all the detail here, but the main point is that you should be sure your TV is set up with as little image processing as possible, especially enhancement modes related to "motion smoothing".
 Look for a Game Mode setting in your TV's setup menus; that usually selects the right combination of settings to minimize lag, since this is a concern for video games in general.
 
 == Audio lag

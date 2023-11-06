@@ -27,7 +27,7 @@ Book writers have been organizing complex material for centuries, and tools like
 
 Most people (myself included) prefer to view technical material like this online, where it can be easily searched and where cross-reference links can be immediately followed, so my scripts are designed primarily with Web browser presentation in mind.
 However, I still have an old-fashioned affection for printed books, so I also tried to arrange things to produce pleasing hard-copy results.
-If you click the little Printer icon at the bottom, it will append all of the chapters together into a single (rather large) document that you can send to your printer to make a hard-copy edition.
+If you click the little Printer icon at the bottom, it will append all the chapters together into a single (rather large) document that you can send to your printer to make a hard-copy edition.
 
 A few people have asked about the CAD model that I used to generate illustrations throughout this book.
 Unfortunately, there's no practical way for me to share it, because it's based on an old proprietary software package that's no longer available, and it doesn't convert well to more modern formats (I've tried).

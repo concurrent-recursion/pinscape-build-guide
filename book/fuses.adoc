@@ -54,7 +54,7 @@ Here are some key points to note:
 * For *non-ATX* power supplies, and step-up/step-down voltage converters:
 ** Use one fuse for the whole power supply or converter
 ** Connect it to the *positive voltage output* (+V out)
-** Use the fuse as the common point of connection to all of the devices the PSU/converter powers
+** Use the fuse as the common point of connection to all the devices the PSU/converter powers
 ** Place the fuse physically close to the PSU/converter
 * For *ATX* power supplies (standard PC power supplies):
 ** Fuses generally *aren't* needed for PC ATX-type power supplies, because these usually have built-in overload protection
@@ -172,7 +172,7 @@ For example, a 125VDC fuse is fine to use in a 24VDC circuit.
 You should select fuses with DC voltage ratings, since pin cab circuits are almost all DC.
 Many fuses are only rated for AC voltages.
 You might think this doesn't matter, but the fuse manufacturers warn that DC ratings are more stringent than AC, so a fuse that hasn't been rated for DC use might not properly stop current flow if used in a DC circuit.
-All of the fuses linked in this chapter are DC-rated.
+all the fuses linked in this chapter are DC-rated.
 
 *Speed.* Fuses come in two main speed classes: normal fuses that act quickly, and "slow-blow" fuses that act on a time delay.
 Slow-blow fuses are designed to withstand brief current overloads, for a period of several seconds to a couple of minutes, depending on how big an overload occurs.
@@ -241,14 +241,14 @@ The type I like is a one-piece plastic holder, like these:
 image::images/FuseHolder.png[""]
 
 Note that there are several different sizes of cartridge fuses, so you'll need holders that match the size you're using.
-Here are example holders for the most common sizes (these cover all of the fuses linked in this chapter):
+Here are example holders for the most common sizes (these cover all the fuses linked in this chapter):
 
 **  link:https://www.mouser.com/search/ProductDetail.aspx?R=576-02540201Z.html[5x15mm (2AG)]
 **  link:https://www.mouser.com/search/ProductDetail.aspx?R=576-03540601ZXGY.html[6.3x32mm (3AG)]
 
 These have a screw hole for mounting to just about any surface, so you can mount them directly to your cabinet wall or floor or to a separate piece of plywood that you can later mount in the cabinet.
 If you're using an output controller, I recommend mounting the controller plus the fuses for all of is outputs on its own plywood carrier.
-That lets you do all of the initial wiring on your workbench rather than in the confined spaces inside your cab.
+That lets you do all the initial wiring on your workbench rather than in the confined spaces inside your cab.
 If you're using an LedWiz or Pinscape board, you'll have a lot of fuses to install, so it makes the work a lot easier.
 
 image::images/ControllerAndFuseBoard.png[""]
@@ -259,7 +259,7 @@ This also lets you remove the whole setup later if you ever need to do any repai
 image::images/ControllerAndFuseBoardInstalled.png[""]
 
 Note that a key element of a modular setup like this is pluggable connectors.
-You'll want to use some kind of mating plug-and-socket connector to connect all of the wires coming out of the fuses to the devices inside the cabinet.
+You'll want to use some kind of mating plug-and-socket connector to connect all the wires coming out of the fuses to the devices inside the cabinet.
 You can see one of the connectors I use in the lower right of the picture above; here's a closeup.
 
 image::images/ControllerAndFusePlug.png[""]
@@ -304,7 +304,7 @@ Since we're protecting the output controller, we need to choose a fuse based on 
 ** Pinscape power board: 5A per output.
 ** Pinscape main board flasher & strobe outputs: 1.5A per output.
 ** Pinscape main board flipper button LED outputs: no fuses are necessary, because these outputs have built-in current limiters.
-** Pinscape DIY MOSFET output circuit: the limit depends primarily on MOSFET you choose, but 5A is a safe (conservative) choice for all of the options we recommend in our circuit plans.
+** Pinscape DIY MOSFET output circuit: the limit depends primarily on MOSFET you choose, but 5A is a safe (conservative) choice for all the options we recommend in our circuit plans.
 ** Zeb's booster board for LedWiz: 5A per output.
 You *don't* need a separate fuse for the LedWiz in this case, because the booster board isolates the LedWiz.
 ** PacLed, i-Pac Ultimate I/O: these have built-in current limiters per output, so fuses aren't required.
@@ -313,7 +313,7 @@ You *don't* need a separate fuse for the PacLed.
 ** USB relay boards (e.g., Sainsmart): Check the specs for your board for the DC current limit for the relay switch.
 It's usually about 10A.
 
-The wiring for a fuse in an output circuit is the same for all of the controllers, so we'll just show the LedWiz as an example.
+The wiring for a fuse in an output circuit is the same for all the controllers, so we'll just show the LedWiz as an example.
 The basic plan is to interpose the fuse between the output controller port and the device.
 
 image::images/LedWizFuse.png[""]
@@ -353,7 +353,7 @@ As an alternative to using fuses, or as a second layer or protection, you can us
 These circuits contain their own timers that turn the coil off after a couple of seconds, even if the software doesn't.
 See xref:coilTimers.adoc#coilTimers[Coil Timers] for details on how to build one of these.
 If you're using a Pinscape main expansion board for your knocker, it has this type of timer built in to the knocker output.
-All of the outputs on the Pinscape chime board also have these timers.
+all the outputs on the Pinscape chime board also have these timers.
 In my own cab, I use both the timer and the fuse for my knocker coil.
 I think of the timer as the primary protection, but I still like having a fuse as a last resort in case the timer fails.
 

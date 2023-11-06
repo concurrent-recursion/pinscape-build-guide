@@ -44,7 +44,7 @@ Here are the common voltage requirements for most of the feedback devices found 
 Go through the list above and find the devices that you plan to install.
 For each one, note the type of power source required and add it to the list of components for your system.
 
-You'll only need one power supply of each type, even if you have multiple devices that use it, because all of the devices that need a particular voltage can share the same power source.
+You'll only need one power supply of each type, even if you have multiple devices that use it, because all the devices that need a particular voltage can share the same power source.
 
 Below, we'll go into the details on what to buy for each power source and how to set it up.
 
@@ -55,7 +55,7 @@ Whatever combination of power supplies you're using, there's an extra step you s
 
 "Ground" has several different technical meanings in electronics jargon, so let's make sure we're talking about the same thing.
 The ground terminals that I'm talking about interconnecting are the *negative DC terminals* .
-On ATX power supplies (the standard type of PC power supply), these are the *black wires* on all of the connector cables coming out of the box.
+On ATX power supplies (the standard type of PC power supply), these are the *black wires* on all the connector cables coming out of the box.
 On a power supplies with screw terminals, this is the negative DC output terminal, usually marked with one of the following:
 
 *  *-* (a minus/negative sign)
@@ -70,7 +70,7 @@ In all cases, this is one of the power supply's *DC output* terminals, not anyth
 
 image::images/PSUGroundInterconnects.png[""]
 
-The point of interconnecting the power supply grounds is to ensure that all of the different circuits at all of the different voltage levels have a common reference point for 0V.
+The point of interconnecting the power supply grounds is to ensure that all the different circuits at all the different voltage levels have a common reference point for 0V.
 This allows them to work together in a single system.
 This is important for the feedback devices because they connect to the output controller, which in turn connects to the PC (through the USB cable).
 Without a common 0V reference point, the common connections through the PC could allow hazardous current flows between power supplies.
@@ -81,13 +81,13 @@ These are inherently connected to the common ground through their power input wi
 
 === Wiring suggestions for ground interconnects
 
-The important thing is to connect all of the grounds together electrically.
+The important thing is to connect all the grounds together electrically.
 Exactly how you wire this is up to you.
 
 The easiest way is to simply daisy-chain a hookup wire from one power supply ground to the next.
 
 A somewhat neater approach is to install a "power distribution block" or "ground bar".
-This is basically a metal bar with a number of screw terminals for attaching wires; since it's one big metal bar, all of the terminals are electrically connected, so any wires you connect will all be shorted together, exactly as we want.
+This is basically a metal bar with a number of screw terminals for attaching wires; since it's one big metal bar, all the terminals are electrically connected, so any wires you connect will all be shorted together, exactly as we want.
 Adafruit makes a nice power block that you can buy directly from their site or via retailers like Mouser.com: link:https://www.mouser.com/search/ProductDetail.aspx?R=485-737.html[Adafruit 737] .
 It looks like this:
 
@@ -152,7 +152,7 @@ This is the easiest way.
 A breakout board is a small circuit board that you can buy on eBay or Amazon that has a PC motherboard socket and a bunch of screw terminal connectors for the voltage outputs - ground, 3.3V, 5V, 12V.
 Plug the main 24-bin motherboard power cable from the power supply into the socket in the breakout board, and connect your devices to the appropriate screw terminals.
 
-If you buy a breakout board, you can skip all of the details below about overriding the soft power circuit and wiring up your own disk-type connectors.
+If you buy a breakout board, you can skip all the details below about overriding the soft power circuit and wiring up your own disk-type connectors.
 Simply use the screw terminals on the breakout board to connect hookup wire between the devices and the breakout board.
 
 To find suitable boards, search for *ATX 24-pin breakout board* .
@@ -309,7 +309,7 @@ You want a fairly high current limit for these wires, since they'll probably be 
 
 By the way, the two black wires going to this connector are both 0V/Ground connections, in keeping with the standard color coding.
 The reason there are two copies of the ground wire is that the extra wire doubles the current carrying capacity of the cable.
-The ground connection has to handle all of the current going through both the +5V and +12V wires to this connector, so it makes sense that they'd provide twice as much wire capacity for it.
+The ground connection has to handle all the current going through both the +5V and +12V wires to this connector, so it makes sense that they'd provide twice as much wire capacity for it.
 
 [#OEMPowerSupplies]
 === Single-voltage OEM power supplies

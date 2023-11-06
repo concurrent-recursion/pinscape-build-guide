@@ -39,7 +39,7 @@ That works well in a pin cab because we usually have a 12V supply available from
 
 Follow the generic wiring plan in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] :
 
-* If your beacon has a motor, be sure to connect a diode between the (\+) and (-) leads of the beacon, with the striped side of the diode connected to the (+) lead of the beacon, as described in xref:diodes.adoc#coilDiodes[Coil Diodes].
+* If your beacon has a motor, be sure to connect a diode between the (\+) and (-) leads of the beacon, with the striped side of the diode connected to the (\+) lead of the beacon, as described in xref:diodes.adoc#coilDiodes[Coil Diodes].
 This is required if there's any sort of motor or coil in the device.
 Any beacon with a rotating light has a motor inside to drive the rotation.
 * Connect \+12V from your power supply (the yellow wire for an ATX power supply) to the (+) terminal of the beacon

@@ -18,13 +18,13 @@ Fabricating your own speaker panel from scratch is a fair amount of work, becaus
 If you do want to do it yourself, we'll give you complete plans xref:#dmdPanelPlans[later in this chapter] .
 
 If you want to buy a fully pre-fabricated panel, you can get a "blank" panel (without any game-specific graphics) from link:https://virtuapin.net/[VirtuaPin] .
-These come fully assembled with all of the required parts (MDF base, clear acrylic facing, H-channel, speaker grills, and fasteners).
+These come fully assembled with all the required parts (MDF base, clear acrylic facing, H-channel, speaker grills, and fasteners).
 You just need to add a decal for graphics.
 The price is about $130.
 
 Notably, none of the pinball supply companies currently sell the MDF base panels.
 VirtuaPin seems to be the only place you can get those.
-The pinball suppliers do sell all of the miscellaneous hardware, such as the latch brackets and H channels, but not the MDF base.
+The pinball suppliers do sell all the miscellaneous hardware, such as the latch brackets and H channels, but not the MDF base.
 The Marco Specialties catalog lists a large number of game-specific "speaker panels", but those are just the silk-screened plastic face plates - they don't include the MDF base.
 The same is true for almost every "speaker panel" listing you'll see on eBay.
 If you're looking for full ready-to-use panel, check carefully before buying to make sure you're getting the complete panel and not just the facing.
@@ -147,7 +147,7 @@ image::images/pinscape-speaker-panel.png[""]
 
 There's a slight complication in using a decal for the speaker panel graphics: the cutout in the middle for the display.
 
-With all of the other decals in your cab, holes in the middle are no problem.
+With all the other decals in your cab, holes in the middle are no problem.
 You can just cut them out with an X-acto knife after installing the decal, by running the knife around the edge of the hole.
 That technique works for the flipper button holes, coin door cutout, etc, but it won't work here! The problem is that we're going to affix these decals to the clear acrylic facing, and _there's no DMD hole to trace_ in the acrylic facing.
 In the original design that Williams used, and in both our plans and VirtuaPin's products, the acrylic facing is continuous across the DMD area with no cutout.
@@ -220,7 +220,7 @@ image::images/speaker-panel-tnuts-latches.png[""]
 
 image::images/speaker-panel-tnuts-h-channel.png[""]
 
-When all of the T-nuts are installed, it should look something like this:
+When all the T-nuts are installed, it should look something like this:
 
 image::images/speaker-panel-tnuts-done.png[""]
 
@@ -273,7 +273,7 @@ Here's the procedure I used:
 * Keep the panel turned front-side-down while the glue dries, so that the glue won't ooze down the screw threads
 * Put wax paper (or something that the glue won't stick) to under the panel while it dries, in case any glue drips
 
-The idea is to glue all of the screws in place at the heads without spreading glue over the rest of their length.
+The idea is to glue all the screws in place at the heads without spreading glue over the rest of their length.
 You still want to be able to fit nuts onto them to install the DMD panel, so you don't want any glue smearing onto the threads while you insert the screws or dripping down the threads after they're installed.
 
 === Install the speaker grills
@@ -501,7 +501,7 @@ As a result, we want the two speaker openings to be the same size, unlike the or
 Fortunately, it's easy to adapt the basic speaker panel plan to whatever mix of speaker sizes you prefer.
 Everything about the plan stays the same except for the size of the speaker cutouts and the positions of the screw holes for mounting the speakers - those obviously have to be changed to match the speakers you're using.
 
-So we'll start with the base plan, with all of the specs that are independent of speaker size.
+So we'll start with the base plan, with all the specs that are independent of speaker size.
 Then we'll provide two sub-plans for the most commonly used speaker sizes: 4" and 5.25".
 Those are the sizes that almost everyone uses because they're standard sizes for car speakers, which means that lots of options aFre available.
 
@@ -518,7 +518,7 @@ You can easily have a custom decal printed, and it'll look just as good.
 
 Everything in the base plan is independent of speaker size, so start with this regardless of what type of speakers you're using.
 
-All of the routed insets (shown in the diagrams below as green and orange areas) are on the same side, which will be the front of the panel when it's done.
+all the routed insets (shown in the diagrams below as green and orange areas) are on the same side, which will be the front of the panel when it's done.
 
 The panel is symmetrical left to right (the left side is a mirror image of the right side), so everything in the panel should be referenced to the center point.
 This will be especially helpful if you're using a custom width.
@@ -634,7 +634,7 @@ Here's how to adjust the other elements when changing the width:
 * Keep the DMD cutout centered, and at the same height
 * Keep the latch bracket T-nuts at the same distances from the outside edges
 * Keep the H-channel T-nuts at the same distance from the top edge
-* Place the middle H-channel T-nut on the left/right centerline, and position all of the other H-channel T-nuts based on their distances from the middle one
+* Place the middle H-channel T-nut on the left/right centerline, and position all the other H-channel T-nuts based on their distances from the middle one
 * The standard H-channel trim will fit fine on a wider-than-standard panel; it'll just leave some uncovered space at the sides.
 You'll have to cut the H-channel for a narrower-than-standard panel.
 Cut equal amounts from either side so that the screw holes remain centered.

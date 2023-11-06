@@ -13,7 +13,7 @@ Those early ideas have been refined and improved to the point where there are so
 There's still plenty of room for creativity and experimentation, and you'll still have to do a little work figuring out what parts to buy, but I can give you detailed pointers on what you need and where to find it.
 
 The next several chapters aim to make the big job of setting up a feedback system approachable, even if you're new to all of this.
-We'll try to cover all of the details: how to set up the PC software, what to buy for an output controller, how to install it, how to wire the devices to it, and how to build devices for all of the popular effects.
+We'll try to cover all the details: how to set up the PC software, what to buy for an output controller, how to install it, how to wire the devices to it, and how to build devices for all the popular effects.
 
 == How feedback works
 
@@ -37,7 +37,7 @@ A single LedWiz can control 32 devices.
 Most of the SainSmart relay boards can handle 8 outputs.
 The Pinscape expansion boards can handle 65 outputs in the typical setup, but you can add modules for up to 128 outputs if you need more (which you probably won't!).
 You're not limited to a single controller, either, so if you need more ports, you can usually just add another controller.
-All of the controllers can coexist with one another, too, so you can mix and match them if you need different capabilities.
+all the controllers can coexist with one another, too, so you can mix and match them if you need different capabilities.
 
 *How do games know about my shaker motor? My flippers? Etc?* That's handled in some software you run on the PC.
 There's a suite of software that almost everyone uses to make this all work, and it has a setup procedure where you enter information about your feedback devices.
@@ -62,7 +62,7 @@ Even so, I recommend starting with the software, specifically DOF.
 That way, you'll be ready to do a practical test as soon as you get your first feedback device wired.
 
 If you haven't already decided on an output controller, read xref:ioControllers.adoc#ioControllers[I/O Controllers] .
-That chapter goes over the commercial and DIY options available for all of the I/O controllers.
+That chapter goes over the commercial and DIY options available for all the I/O controllers.
 For our purposes here, focus on the output controllers, since that's what you need for feedback effects.
 
 Once you've selected an output controller, proceed to the next chapter, xref:DOF.adoc#dofSetup[DOF Setup] .
@@ -123,7 +123,7 @@ The "importance" is on scale from 1 to 10.
 Now, keep in mind that these aren't goodness ratings; they're just relative degrees of importance.
 "1" isn't meant as a negative review score and certainly doesn't mean a device is _bad_ to have.
 "1" just means that I rank that device as among the least important.
-All of the devices are nice to have if you can afford the cost, space, output ports, and time to set them up.
+all the devices are nice to have if you can afford the cost, space, output ports, and time to set them up.
 
 If you want a fully decked-out cabinet, these rankings shouldn't matter to you.
 You should just install everything.

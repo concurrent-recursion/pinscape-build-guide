@@ -18,7 +18,7 @@ On a full-sized pin cab, the on-screen plunger should be roughly the same size a
 That requires 1/100" precision from the sensor.
 
 Spatial resolution also affects the quality of the physics simulation.
-All of the pinball simulators read the plunger position via the Windows USB joystick interface, which is capable of representing high precisions.
+all the pinball simulators read the plunger position via the Windows USB joystick interface, which is capable of representing high precisions.
 Visual Pinball can handle 16-bit resolution, which translates to one part in 65,536, or about 50 microns (millionths of an inch) over the 3" travel of a physical plunger.
 That's a lot finer than the 1/100" resolution required for smooth animation, and much finer than any virtual pinball plunger sensors currently available (for Pinscape or any other system).
 The point is that there are practical benefits to working on better sensor designs than we have today, since VP's physics model can take advantage of a lot finer spatial resolution than today's sensors provide.
@@ -234,7 +234,7 @@ I haven't been able to find a way to get a sharp enough image of the bar code to
 So the open area of research is how to arrange a lens or other optics to get a good enough image on the sensor.
 
 If I can get this working, I think it would make a really great sensor option.
-It should have the excellent spatial resolution and sample-to-sample stability of the quadrature sensors, plus the absolute position sensing of all of the other types, which would be a powerful combination.
+It should have the excellent spatial resolution and sample-to-sample stability of the quadrature sensors, plus the absolute position sensing of all the other types, which would be a powerful combination.
 
 == Rotary absolute position sensing
 

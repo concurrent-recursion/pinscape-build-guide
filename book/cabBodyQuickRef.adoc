@@ -16,7 +16,7 @@ I've tried to point out in the text where changes are needed for replica cabs.
 
 The plans below don't specify the type of corner joins to use for the main cabinet, so they don't include any routing for those joins.
 You can do the joinery a number of different ways, each with its own advantages, so that's left to your discretion.
-However, the measurements assume that all of the pieces extend all the way to the corners of the finished cabinet, which is only true when you're using one of the mitered joins (such as a simple 45° miter, a locking miter, or a mitered rabbet).
+However, the measurements assume that all the pieces extend all the way to the corners of the finished cabinet, which is only true when you're using one of the mitered joins (such as a simple 45° miter, a locking miter, or a mitered rabbet).
 If you're using non-mitered joins, such as butt or rabbet joins, you'll have to adjust the measurements for the pieces that don't extend all the way to the finished corners.
 References:
 
@@ -116,7 +116,7 @@ Cut the cabinet floor - adjust if you're building a widebody or custom-size cabi
 
 |===
 
-Reducer molding cross section:
+Reducer molding cross-section:
 
 image::images/backbox-trim-cross-section.png[""]
 
@@ -147,7 +147,7 @@ Lengths:
 * Front corners (leg bracket profile): 6" to 8-1/2" long, quantity 2
 * Back corners (leg bracket profile): 6" to 21-1/2" long, quantity 2
 * Cashbox fence: 3" long, quantity 2
-* Floor braces along side walls (optional): up to 30" long, quantity 2
+* Floor braces along the side walls (optional): up to 30" long, quantity 2
 
 References:
 
@@ -168,7 +168,7 @@ image::images/glass-channel-slot2.png[""]
 
 == Mark all routing & drilling locations
 
-At this point, I like to mark all of the panels with the locations of the routed grooves, cutouts, and drills - essentially everything below.
+At this point, I like to mark all the panels with the locations of the routed grooves, cutouts, and drills - essentially everything below.
 It's easier to make many of the measurements now, while the pieces are still whole, and having everything pre-marked makes the execution much easier.
 
 == Cut the corner joins for the main cabinet
@@ -315,7 +315,7 @@ image::images/shelf-cable-opening.png[""]
 
 Reference: xref:cabBody.adoc#rearShelf[Cab Body - Shelf]
 
-
+[#adjustForLockbarFit]
 == Test the lockbar fit
 
 The measurements shown below for the coin door cutout and lockbar bolts are based on the standard equipment, but I've run into some slight manufacturing variations in the lockbar receivers, so I like to use the actual receiver I'm going to install as a template for drilling.
@@ -323,24 +323,24 @@ That helps ensure that the final fit is closer to perfect.
 
 Here's the procedure.
 Place your lockbar receiver against the *inside* face of the front panel, and align the two little tabs on the front so that they're exactly flush with the top edge of the panel.
-Mark the locations of the three bolt holes.
-Remove the receiver and measure the distance from the top edge of the panel to the center of the marked bolt hole locations.
+Mark the locations of the three boltholes.
+Remove the receiver and measure the distance from the top edge of the panel to the center of the marked bolthole locations.
 Compare to the diagram below:
 
 image::images/front-panel-receiver.png[""]
 
 If the position you mark by testing with the receiver differs by more than 1/32" vertically from the diagram above, I'd use the "test" positions instead of the diagram locations.
-You should also adjust all of the following up or down by the same amount to match, since all of these pieces fit together when installed:
+You should also adjust all the following up or down by the same amount to match, since all these pieces fit together when installed:
 
 * Coin door cutout
-* Lockbar bolt holes
-* Coin door bolt holes
+* Lockbar boltholes
+* Coin door boltholes
 
 Note that the lockbar receiver is drilled to give you about 1/4" of play side-to-side, so the horizontal locations don't have to be as exact.
 
 == Cut the coin door opening
 
-NOTE: see xref:html#adjustForLockbarFit[Test the lockbar fit] above before proceeding.
+NOTE: see xref:#adjustForLockbarFit[Test the lockbar fit] above before proceeding.
 
 Cut a rectangular opening, 12-1/4" wide by 10-3/8" high, centered left to right.
 The top of the cutout is 1-23/32" from the top of the *inside* face.
@@ -444,7 +444,7 @@ Reference: xref:cabBody.adoc#mainCabFloorPlan[Cab Body - Floor]
 If you're using a Launch Ball button in addition to or instead of a plunger: In the front wall:
 
 * Drill a 1" diameter hole, for the main shaft of the button
-* Drill with two 3/16" diameter holes about about 3/8" deep, spaced 1-1/2" apart, one above and one below; these are for little nubs on the button housing that prevent it from rotating freely
+* Drill with two 3/16" diameter holes about 3/8" deep, spaced 1-1/2" apart, one above and one below; these are for little nubs on the button housing that prevent it from rotating freely
 
 image::images/launch-button-drills.png[""]
 
@@ -486,7 +486,7 @@ Reference: xref:cabBody.adoc#frontPanelButtons[Cab Body - Front panel buttons]
 
 == Drill the lockbar receiver and coin door bolts
 
-NOTE: see xref:html#adjustForLockbarFit[Test the lockbar fit] above before proceeding.
+NOTE: see xref:#adjustForLockbarFit[Test the lockbar fit] above before proceeding.
 
 Drill the six 9/32" holes shown in the diagram (three across the top for the lockbar receiver, and three more around the perimeter of the coin door).
 
@@ -503,17 +503,17 @@ References:
 == Drill the flipper buttons
 
 For WPC-style side rails (narrow rails that don't cover the flipper buttons), drill at the locations shown below.
-The flipper button goes at the same location whether or not you're including a MagnaSave button.
+The flipper button goes at the same location whether you're including a MagnaSave button.
 
 For System 11 rails or other wide rails that cover the flipper buttons, don't use these coordinates.
-Instead, drill at the same location as the pre-cut button hole in the rail, using the rail itself as a template.
+Instead, drill at the same location as the pre-cut buttonhole in the rail, using the rail itself as a template.
 
 image::images/flipper-button-detail.png[""]
 
 How to drill:
 
 * Original pattern used in most commercial machines (see diagram below):
-** Drill a small pilot hole (1/8") on the center, all the way through; use this as the center for all of the remaining drills
+** Drill a small pilot hole (1/8") in the center, all the way through; use this as the center for all the remaining drills
 ** Use a 1⅛" Forstner bit or hole saw to drill a 5/16"-deep depression from the *outside*
 ** Use the same 1⅛" bit to drill a 3/16"-deep depression from the *inside*
 ** Drill the rest of the way through with a ⅝" bit
@@ -527,7 +527,7 @@ Reference: xref:cabBody.adoc#flipperButtonDrilling[Cab Body - Flipper buttons]
 == Drill the backbox hinge pivots
 
 NOTE: You might want to wait until after cabinet assembly to drill these holes, to fine-tune the positions based on aligning the backbox perfectly in the final fit.
-See the *Alternative Procedure* under xref:html#postAssemblyBackboxHinges[Post assembly: drill the backbox hinge bolts] below.
+See the *Alternative Procedure* under xref:#postAssemblyBackboxHinges[Post assembly: drill the backbox hinge bolts] below.
 
 If you want to pre-drill these holes, drill a 1/2" diameter hole in each side of the cabinet, 9-1/2" from the back edge and 20" from the bottom edge.
 
@@ -599,13 +599,13 @@ NOTE: I think the pivot nut locations are the same for all titles using the slid
 link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed.html[Swinks's plans on Pinside] make the same assumption, although they differ from mine on the exact locations of the drills by 1/8" to 1/4".
 That might be due to measurement error, manufacturing variations, or actual design differences in the titles we sampled.
 (The titles mentioned in the Swinks thread are _Bram Stoker's Dracula_ , _Creature from the Black Lagoon_ , and Stern's _Iron Man_ .) I think the slider system can tolerate this much variation without any functional impact, but even so, I'd measure a factory original of your particular title before drilling to make sure it really is in this range.
-If you know of a title that's significantly different from my figures, please let me know so I can include it in this section.
+If you know of a title that's significantly different from my figures, please let me know, so I can include it in this section.
 
 == Drill the backbox floor hinge bolts
 
 NOTE: I prefer to do this *after cabinet assembly* , by installing the hinges first, then getting the backbox aligned perfectly, and marking the bolt locations once everything's in position.
 This ensures a perfect final fit.
-See xref:html#postAssemblyBackboxHinges[Post assembly: drill the backbox hinge bolts] below.
+See xref:#postAssemblyBackboxHinges[Post assembly: drill the backbox hinge bolts] below.
 
 Alternatively, you can do the same alignment the other way around: pre-drill the backbox floor hinge bolts, and defer drilling the pivot holes in the main cabinet until after doing a test fit.
 
@@ -634,7 +634,7 @@ Reference: xref:cabBody.adoc#rearShelf[Cab Body - Rear shelf]
 
 == Drill the backbox vents
 
-Drill 7 holes in the back wall of the backbox, 1-1/2" diameter, with the centers 2" from the top edge and spaced 2-1/2" from center to center, as shown below.
+Drill 7 holes in the back wall the backbox, 1-1/2" diameter, with the centers 2" from the top edge and spaced 2-1/2" from center to center, as shown below.
 
 image::images/backbox-vents.png[""]
 
@@ -693,7 +693,7 @@ Reference: xref:cabBody.adoc#backboxCornerBracing[Cab Body - Backbox corner brac
 
 This applies only to replacement cabinets for real pinballs, for WPC and System 11 games that use a backbox insert (the plywood panel with lamps that sits behind the backglass to provide back-lighting).
 *Don't* drill these holes for virtual cabinets or for later WPC games with plastic "tub" inserts.
-These drills are for #10 carriage bolts, which fasten the insert hinge brackets, parts A-12497 (upper) and A-12498 (lower), to the inside of the left wall of the backbox.
+These drills are for #10 carriage bolts, which fasten the insert hinge brackets, parts A-12497 (upper) and A-12498 (lower), to the inside of the left wall the backbox.
 Drill four 3/16" holes as shown, in the *left side panel only* .
 
 image::images/backbox-insert-bracket-drills.png[""]
@@ -713,7 +713,7 @@ image::images/leg-tilt.png[""]
 
 Reference: xref:cabBody.adoc#legBoltDrilling[Cab Body - Leg bolts]
 
-
+[#postAssemblyBackboxHinges]
 == Post-assembly: drill the backbox hinge bolts
 
 Attach the backbox hinges to the main cabinet with their pivot nuts.
@@ -722,13 +722,13 @@ Set the backbox on top of the cabinet.
 Center the backbox left to right, and align the back of the backbox flush with the back of the cabinet.
 *Secure the backbox in this position* with wing screws, screwing them through the holes in the floor of the backbox and into the matching T-nuts under the shelf.
 
-Rotate the hinges up so that they sit flat against the bottom of the backbox, and mark the locations of the three bolt holes.
+Rotate the hinges up so that they sit flat against the bottom of the backbox, and mark the locations of the three boltholes.
 Do this for both sides.
 Before marking positions, make sure that the hinges are parallel to the sides of the cabinet, and make sure there's enough of a gap that they won't rub against the sides when the backbox is rotated.
 
 Remove the backbox and drill 1/4" holes at the marked positions.
 
-*Alternative procedure:* Drill the six bolt holes in the backbox floor first, but *do not* drill the pivot bolt holes in the cabinet sides yet.
+*Alternative procedure:* Drill the six boltholes in the backbox floor first, but *do not* drill the pivot boltholes in the cabinet sides yet.
 Attach the cabinet hinges to the backbox with six carriage bolts (1/4"-20 x 1-1/4") and whiz flange nuts (1/4"-20).
 Position the backbox on top of the main cabinet as described above and secure it with wing screws.
 Mark the hinge pivot hole positions on the sides of the cabinet.

@@ -21,7 +21,7 @@ There are several turn-key commercial products available, or you can fairly easi
 == Joystick encoders vs keyboard encoders
 
 Note that some encoders send button presses to the PC as joystick button commands instead of keyboard keys.
-These work exactly like keyboard encoders in terms of all of the physical setup and wiring, so everything in this chapter applies equally well to joystick encoders.
+These work exactly like keyboard encoders in terms of all the physical setup and wiring, so everything in this chapter applies equally well to joystick encoders.
 For the most part, we use the term "keyboard encoder" to refer to both types, since they're really no different other than the USB commands they send.
 
 (In fact, some controllers use both types of commands.
@@ -59,7 +59,7 @@ See xref:ioControllers.adoc#ioControllers[I/O Controllers] for more details on t
 
 As with all wiring, make sure all power plugs are completely disconnected while you're working.
 
-All of the key encoders (commercial and DIY) use the same basic wiring plan, so we'll show you how this works in general.
+all the key encoders (commercial and DIY) use the same basic wiring plan, so we'll show you how this works in general.
 You'll have to look at the instructions for your specific device to identify the actual physical terminals that we're talking about.
 
 Here's the basic plan:
@@ -110,7 +110,7 @@ You don't have to connect a separate wire from every button all the way back to 
 
 image::images/keyEncoderDaisyChain.png[""]
 
-All of the commons are connected together electrically, so it doesn't matter whether they connect back to the encoder with a separate wire or if they connect to each other in a daisy chain like this.
+all the commons are connected together electrically, so it doesn't matter whether they connect back to the encoder with a separate wire or if they connect to each other in a daisy chain like this.
 You can mix and match the two approaches, too! Just connect each button's Common/Ground terminal to whatever's closest physically in the cab.
 If there's another button nearby, connect to the other button's Common/Ground.
 If the key encoder is closer than any button, run a wire back to the key encoder.
@@ -123,13 +123,13 @@ These are all low-voltage, very low-power connections, so you don't need anythin
 (Thicker wire is more expensive; there's no reason to waste money on thicker wires here.)
 
 I like to use a mix of insulation colors to make it easier to trace wires through the cab when necessary.
-I'd use one color for all of the Common/Ground wires - black, if you want to follow the normal conventions - and a mix of other colors (never the same as the Common/Ground color) for the unique button port wires.
+I'd use one color for all the Common/Ground wires - black, if you want to follow the normal conventions - and a mix of other colors (never the same as the Common/Ground color) for the unique button port wires.
 
 See xref:wire.adoc#wire[Wire] for more on wire selection.
 
 == Software setup
 
-All of the key encoders emulate either a keyboard or a joystick, so there's no need for Windows device drivers.
+all the key encoders emulate either a keyboard or a joystick, so there's no need for Windows device drivers.
 Windows should automatically recognize them as soon as you plug them in to the USB port or keyboard port.
 
 If you're using a Pinscape Controller, you can configure how the buttons are mapped to keyboard keys or joystick buttons.
@@ -151,7 +151,7 @@ For example, if you wired the left flipper button to your key encoder port that 
 
 Here's a list of the key assignments that most of the PC pinball simulators uses by default.
 Most of the software gives you a way to change the key assignments, but it's always easier to use the defaults as much as possible.
-Fortunately, almost all of the PC pinball simulators have used the same core key assignments for decades, so you won't have fight with the software too much if you stick to the standard keys.
+Fortunately, almost all the PC pinball simulators have used the same core key assignments for decades, so you won't have fight with the software too much if you stick to the standard keys.
 
 [cols="1,1,2"]
 |===
@@ -334,8 +334,8 @@ This is a secondary tilt switch that's activated by hard jabs to the front of th
 * Coin chute switches.
 Each coin chute has a microswitch that's triggered when a coin is accepted.
 
-You can connect all of these switches to your key encoder in the same way as other buttons.
-Visual Pinball has keyboard equivalents for all of these functions, so connecting these switches lets you access each function the same way you'd do it on a real machine.
+You can connect all these switches to your key encoder in the same way as other buttons.
+Visual Pinball has keyboard equivalents for all these functions, so connecting these switches lets you access each function the same way you'd do it on a real machine.
 
 Things get a little complicated at this point, though.
 The snag is that there are several types and several generations of coin doors available, and each one is wired differently.
@@ -392,7 +392,7 @@ These can come with four terminals or six terminals.
 
 If the terminals are marked, they should indicate some kind of grouping to let you know which terminals belong to which switch.
 For example, you might see something like "1NC - 1NO - 1COM / 2NC - 2NO - 2COM".
-All of the "1" terminals are part of the first switch, and the "2" terminals are part of the second.
+all the "1" terminals are part of the first switch, and the "2" terminals are part of the second.
 Alternatively, you might see a little switch diagram like the "numbered terminals" diagram above, but with two copies of that circuit.
 The two circuits represent the two switches.
 

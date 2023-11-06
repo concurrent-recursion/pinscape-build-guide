@@ -43,7 +43,7 @@ To put the glass back, slide it in the front, and pop the lockbar into place.
 image::images/glass-sliding.png[""]
 
 The second important functional role of the glass channels is to act as vertical spacers and supports for the metal side rails.
-All of the side rails made since the 1970s or so are designed to be paired with the glass channels.
+all the side rails made since the 1970s or so are designed to be paired with the glass channels.
 The geometry of the rails simply takes it for granted that the plastic channels will be there - if they're not, there will be a big gap under the rails, which would make them too weak.
 
 To install the glass channels, the first step is to route a groove along the center top of the side wall.
@@ -213,14 +213,14 @@ Start by sticking a strip of the double-sided tape to the inside of each rail.
 The tape should cover most of the length of the "L" shaped part of each rail, out to about an inch from each end.
 Don't put any tape on the tapered end sections.
 
-The tape goes along the inside side surface - the surface that will face the side wall of the cabinet.
+The tape goes along the inside side surface - the surface that will face the side wall the cabinet.
 Only peel off the backing on the side facing the metal rail at this point.
 Leave the backing in place on the other side.
 
 image::images/side-rail-tape.png[""]
 
 Next, do a "dry fit" to the cabinet, placing the rail in position, resting it on top of the glass channel.
-The front of the rail should be *almost* flush with the front wall of the cab.
+The front of the rail should be *almost* flush with the front wall the cab.
 Leave just enough of a margin (1/16" to 1/8") that it doesn't stick out at all, so that it won't snag anyone's clothing.
 
 image::images/side-rail-positioning.png[""]
@@ -338,7 +338,7 @@ You'll probably have an easier time with this than I did if you used the bevel a
 
 The "lockbar" is the metal trim piece at the front top of the cabinet, so named because it serves to lock the glass cover in place.
 You'll also see it called a "lockdown bar" and a "lock bar" and various other variations on the "locking" theme.
-The vendors use all of these terms, inconsistently, so you might want to try them all if you're searching to buy one online.
+The vendors use all these terms, inconsistently, so you might want to try them all if you're searching to buy one online.
 
 The "official" name that appears in the Williams parts books is "front molding assembly", so that's another search term to try when shopping.
 
@@ -401,7 +401,7 @@ One example: lockbar for _Star Trek_ Premium, Stern part 500-7283-22.
 * #8-32 Keps nuts, quantity 2 (secures mounting plate), Stern 240-5104-00
 
 As far as I can tell, there's no such thing as a "generic" lockbar-with-button.
-They're all made for specific games ( _Star Trek_ , _Lord of the Rings_ , _Game of Thrones_ , _AC/DC_ , etc), and all of the ones I can find come with powder-coat finishes (not the standard chrome) and special game-specific badges.
+They're all made for specific games ( _Star Trek_ , _Lord of the Rings_ , _Game of Thrones_ , _AC/DC_ , etc), and all the ones I can find come with powder-coat finishes (not the standard chrome) and special game-specific badges.
 The game-specific badge in particular would be a big negative for me, in that it would clash with my custom theming, but it's actually a separate part that you could remove and replace with something custom.
 You'd also almost be forced to use the matching powder-coat finish on the legs and side rails.
 That might be something you want anyway, as it can look snazzy, but it would increase the cost for those parts.
@@ -441,7 +441,7 @@ Step 3: Connect the LED and switch.
 
 If you're using a membrane switch and a separate LED, you'll have to improvise mountings for them.
 You should attach everything to the receiver, not the lockbar, so that you can easily remove the lockbar.
-Make sure that all of the wiring connections are insulated so that nothing shorts if it comes into contact with the metal parts in the receiver or lockbar.
+Make sure that all the wiring connections are insulated so that nothing shorts if it comes into contact with the metal parts in the receiver or lockbar.
 
 If you're using my circuit board, solder the parts, then attach it to the receiver (not the lockbar) directly behind the button.
 It should just fit into the space between the lockbar and receiver, so I think you can get away with a simple approach like taping it to the receiver with something strong, perhaps electrical tape or duct tape.
@@ -465,7 +465,7 @@ image::images/install-lockbar-1.png[""]
 Put the lockbar/receiver assembly into position.
 On the inside of the cab, the vertical part of the receiver should be flush with the front wall.
 On the outside, the lockbar should be resting on the side rails, slightly overlapping their front edges so that there's no gap.
-The front of the lockbar should overhang the front wall of the cab slightly (by about 1/8" to 3/16").
+The front of the lockbar should overhang the front wall the cab slightly (by about 1/8" to 3/16").
 
 image::images/install-lockbar-2.png[""]
 
@@ -541,7 +541,7 @@ A more elaborate home-made alternative is described here:
 
 link:https://www.vpforums.org/index.php?showtopic=38841&p=390452.html[Question about lockdown bars and receivers for mini cabinet (message #5)]
 
-Briefly, the idea is to place a pair of toggle latches on the inside front wall of the cabinet, positioned to align with the hooked prongs that stick out of the bottom of the lockbar.
+Briefly, the idea is to place a pair of toggle latches on the inside front wall the cabinet, positioned to align with the hooked prongs that stick out of the bottom of the lockbar.
 To fasten, you reach in through the coin door, hook the latches to the prongs, and engage the latches.
 To release, you again reach in through the coin door and disengage the latches.
 The downside is that it would require a fair bit of dexterity to reach the latches through the coin door, since they need to be positioned around the corner on each side.
@@ -694,10 +694,10 @@ You can improvise something to replace the mounting plate if you prefer, but the
 
 image::images/install-plunger.png[""]
 
-Fully assemble all of the plunger parts (except for the mounting plate) as described above, then fit the assembly through the triangular opening in the front wall, from the outside.
+Fully assemble all the plunger parts (except for the mounting plate) as described above, then fit the assembly through the triangular opening in the front wall, from the outside.
 The three prongs in the front of the housing should fit in the obvious way at the corners of the triangular cutout.
 Align the mounting plate on the inside, fitting the large hole at the center over the shooter rod.
-The mounting plate should sit flush with the front wall of the cabinet.
+The mounting plate should sit flush with the front wall the cabinet.
 Screw in the three #10-32 bolts.
 
 [#installLegs]
@@ -723,7 +723,7 @@ These simply screw in to the holes on the bottoms of the legs.
 image::images/leg-leveler.png[""]
 
 The levelers let you adjust the slope of the machine slightly, and also let you adjust each leg so that all four legs are planted on the floor (to solve the classic wobble problem with a four-legged table on an uneven surface).
-It's best to screw all of the levelers all the way in initially (so that they're as "retracted" as possible), then adjust as needed once the machine is situated.
+It's best to screw all the levelers all the way in initially (so that they're as "retracted" as possible), then adjust as needed once the machine is situated.
 The levelers can get a little wobbly themselves at their maximum extension, so keep them retracted and only extend as needed.
 
 Start by setting the machine on its back.
@@ -744,7 +744,7 @@ Tip the machine forward until the front legs touch down on the floor, then lift 
 image::images/attach-legs-2.png[""]
 
 Have an assistant hold the back of the machine up while you install the rear legs, which bolt on just like the front legs.
-Be sure to have your assistant continue holding the machine off the ground in back until all of the rear bolts are fully tightened.
+Be sure to have your assistant continue holding the machine off the ground in back until all the rear bolts are fully tightened.
 
 image::images/attach-legs-3.png[""]
 

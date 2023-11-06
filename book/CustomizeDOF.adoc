@@ -68,8 +68,8 @@ So let's walk through the step-by-step procedure:
 * In the *Table Name* drop list, select your preferred front-end program ( *PinballX* or *PinballY* )
 * Find the *Flipper Left* and *Flipper Right* rows in the list of toys.
 These rows specify the program events that will cause these solenoids to fire while you're running the front-end program.
-* In the right column of each row, simply delete all of the text in the edit box, so that the box is complete empty.
-This removes all of the events that would cause the flipper solenoids to fire while you're running the front-end program, which will have the effect is disabling the solenoid effects entirely.
+* In the right column of each row, simply delete all the text in the edit box, so that the box is complete empty.
+This removes all the events that would cause the flipper solenoids to fire while you're running the front-end program, which will have the effect is disabling the solenoid effects entirely.
 (The changes we're making here will *only* affect the table that we selected in the *Table Name* drop list earlier - in this case, your front-end program.
 They won't affect or disable the solenoid effects in any other games.)
 * At the bottom of the page, click *Save Changes*
@@ -84,7 +84,7 @@ Disabling the flippers is just a really easy special case, because all you have 
 If the table you're customizing is from the 1970s or earlier, and used mechanical score reels instead of software, its handling in DOF is completely tied to the Visual Basic script for the game.
 
 EM machines didn't have any software, so VPinMAME isn't involved.
-The table script (written in Visual Basic, assuming we're talking about VP) contains all of the game's logic, including all of the scoring rules and sound effects.
+The table script (written in Visual Basic, assuming we're talking about VP) contains all the game's logic, including all the scoring rules and sound effects.
 And including DOF effects.
 DOF keys everything in these games to "event codes" written into the Visual Basic scripts.
 
@@ -143,7 +143,7 @@ If you can't find it there, a simple Web search (e.g.
 "Lost World pinball operator's manual") will often turn it up.
 
 The Operator's Manual usually has the key information required for DOF customization.
-The manual generally has lists of all of the switches, lamps, and solenoids, as well as instructions on how to use the game's operator menu to adjust game settings and run diagnostics.
+The manual generally has lists of all the switches, lamps, and solenoids, as well as instructions on how to use the game's operator menu to adjust game settings and run diagnostics.
 
 === How to identify switch numbers in ROM tables
 
@@ -169,7 +169,7 @@ W44 500
 There are two special columns in the example switch matrix above that we need to mention.
 
 The first special column is the one at the far left labeled "dedicated grounded switches".
-These were used in almost all of the games in the 1980s and 1990s, so you'll see this first column all the time.
+These were used in almost all the games in the 1980s and 1990s, so you'll see this first column all the time.
 The name refers to how they're physically wired in the original game, which doesn't concern us for virtual purposes, but we do still care about the numbering.
 And the numbering can look weird when they list it in these tables:
 
@@ -191,7 +191,7 @@ As with the dedicated grounded switches on the left, these buttons often have fu
 image::images/switch-matrix-4.png[""]
 
 As before, we have to translate these to something that DOF can use.
-VPinMAME handles these switches by assigning them to a numeric range above all of the matrix switches, starting at 111.
+VPinMAME handles these switches by assigning them to a numeric range above all the matrix switches, starting at 111.
 So the first switch in this column is 111, the second is 112, and so on.
 
 === How to identify lamp numbers in ROM tables
@@ -252,7 +252,7 @@ So what we're going to do is load the table that you want to map into VPinMameTe
 
 But how do we get the solenoids to fire? We're going to use the game's own built-in test menu.
 Almost every electronic pinball from the mid 1980s onward has a set of operator menus for adjusting game settings and running diagnostics.
-The diagnostics usually include a solenoid test mode, which lets you cycle through all of the solenoids in the game and fire each one.
+The diagnostics usually include a solenoid test mode, which lets you cycle through all the solenoids in the game and fire each one.
 On the real machines, repair people would use this to test the mechanical action on the playfield to make sure that each coil is firing like it should be.
 We're going to do the almost same thing, but instead of watching real coils fire, we're going to watch VPinMameTest fire its virtual coils.
 The test menu will show us a message on the pinball DMD saying which solenoid it's firing - it'll say something like OUTHOLE KICKR 05.
@@ -313,7 +313,7 @@ If you go over to the VPinMameTest window, you should see "Solenoid 1 is on, Sol
 The game is firing the solenoid selected in the menu, so this tells you that ROM solenoid 01 is the same as MAME solenoid 1 = DOF "S1".
 
 Press 9 (Next) to move to the next solenoid.
-Write down each mapping and repeat until you've visited all of the solenoids.
+Write down each mapping and repeat until you've visited all the solenoids.
 
 ====  Williams System 11 (late 1980s to early 1990s)
 
@@ -382,7 +382,7 @@ When you've noted this solenoid, press ADVANCE to move to the next one.
 The alphanumeric display will update to the next solenoid name and number, and the VPinMameTest window should start displaying a new solenoid number switching on and off.
 Write this one down.
 
-Repeat until you have all of the numbers mapped out.
+Repeat until you have all the numbers mapped out.
 
 ====  Williams System 9 (mid 1980s)
 
@@ -391,7 +391,7 @@ These games have simple 7-segment numeric displays only, so their ability to dis
 But the structure of the menus is nonetheless similar.
 
 You should be able to activate test mode with the same sequence of keys as in the System 11 machines, outlined above.
-You'll know you're in test mode when you start seeing all of the numeric displays cycle through a sequence like this: 0000000, 1111111, 2222222, 3333333...
+You'll know you're in test mode when you start seeing all the numeric displays cycle through a sequence like this: 0000000, 1111111, 2222222, 3333333...
 That's the display test.
 Press 8 to advance to the next test.
 The exact location of the coil test can vary, but on many it's the third test, so you'd have to press 8 two more times.

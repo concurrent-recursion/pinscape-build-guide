@@ -41,7 +41,7 @@ The pin headers are pretty easy to install:
 
 Be sure to solder *all* of the pins.
 Some people ask if it's okay to just solder a couple of the pins, since that makes a strong enough mechanical connection.
-It's not; you really do have to solder all of them.
+It's not; you really do have to solder all them.
 The solder is there for the electrical connection between pins and pads, so each pin needs its own solder joint.
 See xref:pinHeaders.adoc#pinHeaders[0.1" Pin Headers] for details.
 
@@ -71,7 +71,7 @@ We provide several options in xref:psOutputsStandalone.adoc#psOutputsStandalone[
 
 === How to approach wiring with the standalone KL25Z
 
-You'll notice that the pins on the KL25Z are arranged into four groups, for four separate connectors, so you might think it would be nice to use these to group pins by function: one connector might have all of the button inputs, say, and another might have all of the feedback outputs.
+You'll notice that the pins on the KL25Z are arranged into four groups, for four separate connectors, so you might think it would be nice to use these to group pins by function: one connector might have all the button inputs, say, and another might have all the feedback outputs.
 Believe me, that occurred to me as well.
 Unfortunately, it really can't be done.
 The problem is that each pin on the KL25Z has its own special-purpose capabilities, which means that we can only use certain pins for certain functions.
@@ -85,8 +85,8 @@ They let you connect each pin to its own hookup wire, so it doesn't really matte
 Here's how I'd approach the KL25Z wiring:
 
 * Don't worry about pre-assembling any of the housings.
-You can leave any or all of the pin slots empty in a housing, and you can insert one crimp pin at a time, so you can fill in the pin slots as you need them.
-Start with all of the connectors empty.
+You can leave any or all the pin slots empty in a housing, and you can insert one crimp pin at a time, so you can fill in the pin slots as you need them.
+Start with all the connectors empty.
 When you install a button in your cab, add the wiring for the button with a hookup wire leading back to the KL25Z, crimp a pin on the end of the wire, and insert it in the housing in the appropriate slot.
 * Treat the wires as permanently installed in the cabinet, but treat the things connected to the wire as removable, so use pluggable connectors at the ends of a wire.
 For the KL25Z, the crimp pin connectors serve.

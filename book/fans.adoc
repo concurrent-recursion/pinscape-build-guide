@@ -15,7 +15,7 @@ Most people also add one or two intake fans on the floor of the cabinet.
 Passive intake openings (without additional fans) will also work, since the pressure from the exhaust fans will draw air in through the intakes anyway, but intake fans will help increase the air flow.
 
 This design is driven more by the practicalities of available space than anything else.
-The back wall of the cabinet can easily fit a couple of PC case fans, and you can usually find room on the floor of the cabinet for at least one more, as an intake.
+The back wall the cabinet can easily fit a couple of PC case fans, and you can usually find room on the floor of the cabinet for at least one more, as an intake.
 I haven't attempted any sort of quantitative analysis of how much cooling is needed, or how much cooling this fan arrangement provides, but I think it's pretty well proven in practice.
 Lots of people have built cabs with roughly this setup, and I don't think I've ever seen reports on the forums of significant problems with heating.
 
@@ -27,7 +27,7 @@ We don't want any stagnant pockets of air that can sit there and gather heat; we
 The best way to accomplish this is to put vent openings at each end of the cabinet, front and back, and drive air through the vents with fans at each opening.
 The fans should be oriented so that the fan at one end is drawing air into the cabinet, and the fan at the other end is blowing air out of the cabinet.
 
-One set of fans should be installed in the back wall of the cabinet.
+One set of fans should be installed in the back wall the cabinet.
 This is an obvious place in terms of cosmetics, since the back of the machine isn't normally visible.
 It's also good in terms of air flow, since it's at one end of the cabinet in the long direction.
 What's more, you can take advantage of the tilt of the playfield TV.
@@ -145,7 +145,7 @@ If you do this, be sure to wrap the exposed solder joints with electrician's tap
 == Backbox cooling
 
 Some cab builders also put a fan or two in the backbox, to provide active ventilation for the TV there.
-Others use passive ventilation - no fans, just vent holes in the rear wall of the backbox.
+Others use passive ventilation - no fans, just vent holes in the rear wall the backbox.
 
 If you're using an older TV with a display technology that generates significant heat, such as a plasma TV or an LCD TV with a fluorescent backlight, a fan is worthwhile.
 Newer LCD panels with LED backlights run cool enough that a fan probably isn't necessary, as long as you provide good passive ventilation.

@@ -187,7 +187,7 @@ The obvious way to do that is to use a unique insulation color for each wire.
 
 But that's not really possible, because there are only about ten color choices available for common hookup wire (white, gray, black, yellow, orange, red, green, blue, purple, and brown).
 
-That's not nearly enough for all of the separate wiring functions in a pin cab.
+That's not nearly enough for all the separate wiring functions in a pin cab.
 
 Your key encoder will have about 20 wires coming into it, and your feedback controller might have 30 to 50.
 

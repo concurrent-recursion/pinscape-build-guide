@@ -75,7 +75,7 @@ Many diodes have generic "1N" numbers, indicating a common type of diode that's 
 
 (If you've taken a high school physics class, you probably know the jaded history of this symbol and how it points in the "wrong" direction in a physical sense.
 During the early days of electronics, it was believed that the charge carriers in an electronic circuit were positively charge ions, so the convention was to draw diagrams showing current flowing from positive to negative.
-It was later discovered that the actual moving particles are electrons, but everyone agreed it would be too confusing to change, given all of the existing literature based on postive-to-negative current flow.
+It was later discovered that the actual moving particles are electrons, but everyone agreed it would be too confusing to change, given all the existing literature based on postive-to-negative current flow.
 So we still use those original conventions to this day, even though everyone now understands that the electrons are actually traveling _against_ the arrow.
 Engineers today just make the reversal mentally whenever they have to think about the physics of it.
 At least they're consistent: the same wrong-way-arrow can be found throughout electronics symbolism, such as in the symbols for transistors and MOSFETs.)

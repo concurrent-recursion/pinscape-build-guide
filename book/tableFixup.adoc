@@ -45,7 +45,7 @@ I always have to iterate this process five or ten times before I find a satisfac
 * Make sure the properties panel on the right is showing; if it's not, click the *Options* button on the left tool palette
 * The properties panel should be labeled *Backdrop* at the top; if it's not, click in a background area of the editor window to select the backdrop
 
-In the Backdrop properties window, the *Colors & Formatting* section contains all of the viewing angle options.
+In the Backdrop properties window, the *Colors & Formatting* section contains all the viewing angle options.
 The exact settings vary a lot from one table to the next, so there's no one-size-fits-all setting list I can give you.
 You'll just have to experiment with the different settings to see the effect they have.
 Change a setting and run the table to see the result.
@@ -244,11 +244,11 @@ If you have a separate set of playfield effects speakers inside your cabinet, VP
 If you don't have a separate set of playfield effects speakers, all sounds are played through your main speakers.
 See "Playfield effects speakers" in xref:audio.adoc#playfieldEffectsSpeakers[Audio Systems] for more about setting up the extra speakers.
 
-Assuming you do have playfield effects speakers, you might want to override the rule about playing all of the non-ROM sounds through the playfield effects speakers.
+Assuming you do have playfield effects speakers, you might want to override the rule about playing all the non-ROM sounds through the playfield effects speakers.
 VP lets you override it on an effect-by-effect basis.
 
 First, let's think about why the rule is set up this way in the first place.
-The ROM soundtrack is the game's original soundtrack from the arcade game, so on the _real_ version of the machine, all of the sounds from the ROM were played back through the real machine's backbox speakers.
+The ROM soundtrack is the game's original soundtrack from the arcade game, so on the _real_ version of the machine, all the sounds from the ROM were played back through the real machine's backbox speakers.
 So it makes sense that we'd want to do the same thing in a virtual cab.
 What about the "non-ROM" sounds? Those are sound effects that the VP table author added into the simulation of the table.
 These are almost all meant to simulate the sound made by something mechanical on the playfield, like the ball rolling around and bumping into things, bumpers bumping, etc.
@@ -261,7 +261,7 @@ Likewise, any simulated score reel sounds ought to come from the backbox area.
 In addition, some tables might have the occasional added voice or music effect that supplements the game's original ROM soundtrack, so you might want these to play through the backbox speakers as though they were part of the ROM soundtrack.
 
 In VP, table sound effects are tied to one or the other set of speakers (playfield or backbox) on an effect-by-effect basis.
-All of the sounds are initially set to play through the playfield effects speakers.
+all the sounds are initially set to play through the playfield effects speakers.
 To change an effect to play through the backbox speakers instead, here's the procedure:
 
 * Launch VP
@@ -280,7 +280,7 @@ What's more, some VP versions have a bug that won't let you export a sound that'
 The best workaround would be to download a fresh copy of the table, export the sound from that fresh copy, and import the sound into your modified version of the game.
 
 What about changing some of the ROM sounds to play back through the table effects speakers? Sorry; it can't be done.
-All of the ROM sounds are handled by VPinMAME, which doesn't have any options for changing the speakers for a specific sound.
+all the ROM sounds are handled by VPinMAME, which doesn't have any options for changing the speakers for a specific sound.
 Remember that the ROM software is more of a "black box" than a VP table, since it's emulating an old arcade machine that didn't work like a PC with modern abstractions like WAV files.
 VPinMAME doesn't have any way to make a simple list of the sounds in a ROM that you could use to choose speakers like you can with the table sounds in VP.
 
@@ -303,7 +303,7 @@ The reason you see this in EM tables in particular (as opposed to more modern "s
 VPinMAME is the part of the Visual Pinball system that normally handles most of the keyboard functions, including coin handling.
 The thing is that EM re-creations don't typically use VPinMAME, because VPM's function is to emulate the original ROM software from an electronic game.
 Part of the definition of "EM" is that it doesn't have any software, ergo no VPM involvement.
-And without VPM, it's completely up to the table script to handle all of the keyboard interaction, including the coin keys.
+And without VPM, it's completely up to the table script to handle all the keyboard interaction, including the coin keys.
 EM table authors often hard-code the coin function to a specific keyboard key, which might not match your pin cab's button setup.
 
 Fortunately, it's not too hard to fix these when you find them.
@@ -319,12 +319,12 @@ SubTable_KeyDown(ByVal keycode)
 
 * Note that the `Table_` prefix might be different in the actual table, but the rest should be the same.
 This is the start of the key handler subroutine.
-The code we're looking for now is somewhere in this subroutine, which is all of the code up until the next line like this:
+The code we're looking for now is somewhere in this subroutine, which is all the code up until the next line like this:
 +
 [source,vb]
 EndSub
 
-* Most people indent the code in this section to make it easier to see that all of the code up to the `End Sub` goes together.
+* Most people indent the code in this section to make it easier to see that all the code up to the `End Sub` goes together.
 * At this point, you'll have to read through the code to find the section that handles the coin input.
 Hopefully, the table author will have put in a comment, or at least used well-named variables.
 Look for the words "coin", "credit", or maybe something like this:

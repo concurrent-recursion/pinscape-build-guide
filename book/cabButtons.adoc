@@ -21,25 +21,25 @@ Many of these functions can be comfortably assigned to the regular pinball butto
 This section will try to help you answer that big question about which buttons to include.
 I don't want to presume to dictate a single slate of buttons that everyone should use.
 Tastes vary about whether you should have lots of buttons or as few as possible, and some cabs have more space than others available for buttons.
-So instead of trying to answer the question with a list of "these are the buttons you should include", we'll go over all of the buttons commonly used on virtual cabs, even the ones only rarely seen, and we'll explain each one's purpose and offer an opinion on each one's importance.
+So instead of trying to answer the question with a list of "these are the buttons you should include", we'll go over all the buttons commonly used on virtual cabs, even the ones only rarely seen, and we'll explain each one's purpose and offer an opinion on each one's importance.
 (There is, however, a summary of recommendations xref:#summaryOfButtonRecs[below] , in case you want to cut to the case.)
 
-Later in the section, after surveying all of the button functions, we'll get into the details of the equipment to use for each type of button, including what to buy and how to install it.
+Later in the section, after surveying all the button functions, we'll get into the details of the equipment to use for each type of button, including what to buy and how to install it.
 
 == Minimalist vs. maximalist
 
-When you add up all of the buttons used across different real pinball machines, plus all of the special buttons for virtual pinball needs, you get a pretty long list.
+When you add up all the buttons used across different real pinball machines, plus all the special buttons for virtual pinball needs, you get a pretty long list.
 
 One way to cover all the bases is to simply include every button you can think of.
-It's impractical to include every unique button on every machine - there are just too many of those - but you can include all of the special buttons for all of the games you think you might want to play.
-This "maximalist" approach gives you the best chance of replicating the original playing experience for all of the different games.
+It's impractical to include every unique button on every machine - there are just too many of those - but you can include all the special buttons for all the games you think you might want to play.
+This "maximalist" approach gives you the best chance of replicating the original playing experience for all the different games.
 It also gives you lots of blinking lights, and we all like shiny things.
 
 Some cab builders prefer a more "minimalist" approach, with the aim of replicating the appearance of a real pinball machine more closely.
 Most real pinballs have only a few buttons, so a cabinet with too many extra buttons can start to look conspicuously "virtual".
 The minimalist tries to limit exterior buttons to about the same number found on most real machine, for a more authentic appearance.
 
-Fortunately for the minimalists, the modern software environment makes it possible to access all of the important functions with only a few extra buttons beyond the core set found on all real pinballs.
+Fortunately for the minimalists, the modern software environment makes it possible to access all the important functions with only a few extra buttons beyond the core set found on all real pinballs.
 
 If you're a determined maximalist, note that the practical limits of available space might cramp your style a bit.
 A standard cabinet with a coin door can really only fit a maximum of four buttons on the front panel, in addition to the plunger, the Launch Ball button, and the coin door controls.
@@ -49,7 +49,7 @@ With this in mind, the list below has my recommendations for which buttons to in
 
 == Master list of buttons
 
-To help you decide which buttons you need, whichever camp you're in, here's a list of all of the common and less common virtual cab buttons, how important they are (in my opinion), and where they're usually situated.
+To help you decide which buttons you need, whichever camp you're in, here's a list of all the common and less common virtual cab buttons, how important they are (in my opinion), and where they're usually situated.
 The list is roughly in order of importance, from most important to least.
 
 *  *Power button:*  _Essential._ Pushbutton, bottom of cab, front right side.
@@ -129,7 +129,7 @@ Both of those let you simulate the Launch Ball button using the plunger, so you 
 Even so, I still recommend including the button in addition to the plunger, since it replicates the original playing experience more faithfully for Launch Ball tables.
 
 Alternatively, you can use a Launch button _instead of_ a regular plunger.
-All of the PC pinball simulators are designed with desktop use in mind, so they all let you control the on-screen plunger with a key press.
+all the PC pinball simulators are designed with desktop use in mind, so they all let you control the on-screen plunger with a key press.
 You can simply map the Launch Ball button to the software plunger key and dispense with the real plunger.
 This saves front panel space and the complexity and cost of a real plunger.
 
@@ -285,7 +285,7 @@ If you do opt for LED replacements, pay attention to color. White LEDs are actua
 
 *Regular vs. "non-ghosting" LEDs:* Many of the pinball vendors offer two types of LED replacement bulbs: regular and "non-ghosting". The non-ghosting kind is marketed as a premium upgrade, so at first glance you might think it's worth spending a few extra dollars to get the "best". But beware! For virtual cab use, the non-ghosting type are actually a *downgrade.* A non-ghosting LED has a little capacitor inside that makes it switch on and off slowly. This is specifically designed to work around a strobing problem that can occur if you plug regular LEDs into older pinball machines. That strobing effect was a result of the design of the older machines, and it *doesn't* happen with the modern PWM controllers we use in virtual pin cabs. In fact, the delayed switching is actively harmful in pin cabs, because it interferes with PWM brightness control. So you should *avoid non-ghosting LEDs* for your virtual pin cab - use the regular kind instead. In most cases, if the vendor doesn't specifically say they're non-ghosting, they're probably not, because non-ghosting is inherently more expensive and so the seller will want to call attention to it as a selling point.
 
-(An aside, for those interested in the technical details of the strobing effect. The pinball machines of the 1980s and 1990s used what they called a "lamp matrix" to operate the controlled lamps - the lamps that the controller could switch on and off individually during the game, such as an "Extra Ball When Lit" light. The lamp matrix was a way of reducing the amount of wiring and the number of transistors needed in the main control board. Rather than dedicating a transistor switching circuit to each lamp individually, the lamp matrix placed each lamp at the intersection of a "row" and "column" in the matrix, so that they only needed one transistor per row and one per column. This let them control 64 lamps with 8 row transistors and 8 column transistors. Transistors were more expensive in those days, so controlling 64 lamps with 16 transistors was a significant cost savings. Because of the shared transistors, though, the controller could only turn on one column at a time, so it had to rapidly cycle through the columns to make all of the lamps light up. This worked fine with incandescent bulbs, because incandescent filaments take a fairly long time to heat up and cool down. Even though each lamp was energized only briefly as the controller cycled through the columns, the filaments stayed hot enough between pulses that the bulbs kept glowing, with only a slight dip in brightness between pulses, too slight for the eye to see. When people started replacing the bulbs with LEDs, the column cycling became visible, because LEDs turn on and off almost instantly. They don't have filaments that retain heat between pulses. The column strobing was slow enough that the human eye could easily see it with an LED. So that's where non-ghosting LEDs come in. They have capacitors inside that replicate the slow switching times of incandescents, so that each lamp stays on long enough that it doesn't flash between column cycles. This is actively harmful with modern PWM controllers, because PWM also uses rapid flashing, to control brightness. In the case of PWM, the flashing is so fast that the human eye can't see it, so we don't _need_ to filter it out, and we don't _want_ to filter it out, since that would cancel out the brightness controls. If you put in the non-ghosting capacitors, the PWM controller won't be able to create the brightness fading effects that we want.)
+(An aside, for those interested in the technical details of the strobing effect. The pinball machines of the 1980s and 1990s used what they called a "lamp matrix" to operate the controlled lamps - the lamps that the controller could switch on and off individually during the game, such as an "Extra Ball When Lit" light. The lamp matrix was a way of reducing the amount of wiring and the number of transistors needed in the main control board. Rather than dedicating a transistor switching circuit to each lamp individually, the lamp matrix placed each lamp at the intersection of a "row" and "column" in the matrix, so that they only needed one transistor per row and one per column. This let them control 64 lamps with 8 row transistors and 8 column transistors. Transistors were more expensive in those days, so controlling 64 lamps with 16 transistors was a significant cost savings. Because of the shared transistors, though, the controller could only turn on one column at a time, so it had to rapidly cycle through the columns to make all the lamps light up. This worked fine with incandescent bulbs, because incandescent filaments take a fairly long time to heat up and cool down. Even though each lamp was energized only briefly as the controller cycled through the columns, the filaments stayed hot enough between pulses that the bulbs kept glowing, with only a slight dip in brightness between pulses, too slight for the eye to see. When people started replacing the bulbs with LEDs, the column cycling became visible, because LEDs turn on and off almost instantly. They don't have filaments that retain heat between pulses. The column strobing was slow enough that the human eye could easily see it with an LED. So that's where non-ghosting LEDs come in. They have capacitors inside that replicate the slow switching times of incandescents, so that each lamp stays on long enough that it doesn't flash between column cycles. This is actively harmful with modern PWM controllers, because PWM also uses rapid flashing, to control brightness. In the case of PWM, the flashing is so fast that the human eye can't see it, so we don't _need_ to filter it out, and we don't _want_ to filter it out, since that would cancel out the brightness controls. If you put in the non-ghosting capacitors, the PWM controller won't be able to create the brightness fading effects that we want.)
 
 == Common pinball button types
 
@@ -478,7 +478,7 @@ In every other respect apart from the shape of the face, these buttons are ident
 
 Here's the thing you have to know about flipper buttons: only leaf switches will do.
 
-Some first-time cab builders want to use arcade buttons with built-in microswitches, like the SuzoHapp pushbuttons above or similar buttons from DIY arcade cabinet companies. You might be especially inclined in this direction if you've built a MAME video game cabinet in the past, since you've probably already bought buttons from these DIY arcade places before and it's easier to go with what you know. Even if you're not a MAME cab veteran, the the assembled pushbuttons can seem attractive just because they're easier, being self-contained. And indeed, they're great for Start buttons, Exit buttons, and pretty much all of the other buttons - but _not_ for flipper buttons.
+Some first-time cab builders want to use arcade buttons with built-in microswitches, like the SuzoHapp pushbuttons above or similar buttons from DIY arcade cabinet companies. You might be especially inclined in this direction if you've built a MAME video game cabinet in the past, since you've probably already bought buttons from these DIY arcade places before and it's easier to go with what you know. Even if you're not a MAME cab veteran, the the assembled pushbuttons can seem attractive just because they're easier, being self-contained. And indeed, they're great for Start buttons, Exit buttons, and pretty much all the other buttons - but _not_ for flipper buttons.
 
 The problem with the assembled buttons is that they don't have the right feel for the flippers. Flipper buttons have a very specific mechanical and electrical action that comes from the *leaf switch* inside. The microswitches used in most of the self-contained buttons have a mechanical snap action instead, which feels very different and doesn't have the same fast and precise response you get with a leaf switch.
 
@@ -495,7 +495,7 @@ Here's the full menu of parts:
 * Flipper leaf switch, double contact, low voltage (gold contact points); Williams/Bally SW-1A-192
 * Optional: link:https://virtuapin.net/index.php?main_page=product_info&products_id=40.html[VirtuaPin leaf switch bracket] ; works with longer (1-3/8") button only
 
-You don't need all of these - for each button position, you just need one of the buttons (shorter or longer), one of the leaf switches, one Pal nut, and, if desired, the switch bracket. Read on for details of the variations and how to choose.
+You don't need all these - for each button position, you just need one of the buttons (shorter or longer), one of the leaf switches, one Pal nut, and, if desired, the switch bracket. Read on for details of the variations and how to choose.
 
 ====  Which color?
 
@@ -507,7 +507,7 @@ If you don't want lighted flipper buttons, choose whatever color you like with y
 
 image::images/flipper-buttons-long-short-1.png[""]
 
-Nearly all of the machines made from the 1980s onward used the shorter 1-1/8" flipper buttons, so I consider these the "standard" length, and they're the easiest to find and have the most color variations available.
+Nearly all the machines made from the 1980s onward used the shorter 1-1/8" flipper buttons, so I consider these the "standard" length, and they're the easiest to find and have the most color variations available.
 
 Many older machines used the longer 1-3/8" flippers, so this longer length is still being made, but it's not in as much demand so they don't make them in as many colors. The only options I've seen are opaque red, opaque white, and clear transparent. Clear transparent is all you need if you're lighting the buttons, but if not, I suppose the limited color choices might be a reason to use the shorter ones.
 

@@ -25,7 +25,7 @@ There are three big limitations on the bare KL25Z's capabilities in this area:
 Each output device you want to connect requires its own GPIO pin, but so does each button input.
 The plunger sensor and IR devices also require one or more pins each, if you want to include those in your system.
 The KL25Z has a total of about 40 pins that you need to divide up among these various functions, so the more buttons you want to include, the fewer feedback devices you can have, and vice versa.
-The KL25Z by itself simply doesn't have enough pins for all of the buttons and feedback devices in a well-equipped pin cab.
+The KL25Z by itself simply doesn't have enough pins for all the buttons and feedback devices in a well-equipped pin cab.
 * Separately from the limited number of GPIO pins, the KL25Z only has 10 PWM channels.
 PWM ("pulse width modulation") is needed for LED outputs to control brightness, and for motors to control speed.
 10 PWM channels isn't enough to cover a standard set of five RGB flashers (which require 15 channels: one per red/green/blue color channel per flasher).
@@ -35,7 +35,7 @@ External circuitry is required to boost this to a level that's sufficient to con
 The biggest difference the expansion boards make is their extensive feedback device control capabilities.
 The expansion boards overcome the KL25Z's limitations on the number of available pins and PWM channels by adding an external set of PWM controller chips that provide nearly unlimited additional output ports, all with full PWM control.
 The expansion boards also overcome the KL25Z's power limitations by adding MOSFET boosters on the outputs.
-A MOSFET is a type of transistor that can control very high-power loads, so the MOSFET boosters make it possible to connect all of the standard pin cab feedback devices directly.
+A MOSFET is a type of transistor that can control very high-power loads, so the MOSFET boosters make it possible to connect all the standard pin cab feedback devices directly.
 
 The expansion boards also add circuitry for powering up one or more TVs at system startup.
 That's another bit of circuitry that you can build on your own (the circuit diagrams are included in this guide), but the expansion boards make it a little easier by integrating it into the board design.
@@ -75,14 +75,14 @@ The other two are optional, and you can add one or more of each according to the
 === Which boards do I need?
 
 For most people, I recommend one main board and one power board.
-That covers all of the specialized functions like the TV control circuits, and gives you a total of 65 feedback device outputs: the main board's dedicated outputs for the RGB flashers, strobe, replay knocker, and flipper button LEDs, and the power board's 32 general-purpose outputs for everything else (button lights, contactors/solenoids, shaker motors, gear motors, fans, beacons, undercab LED strips).
+That covers all the specialized functions like the TV control circuits, and gives you a total of 65 feedback device outputs: the main board's dedicated outputs for the RGB flashers, strobe, replay knocker, and flipper button LEDs, and the power board's 32 general-purpose outputs for everything else (button lights, contactors/solenoids, shaker motors, gear motors, fans, beacons, undercab LED strips).
 This is enough for a system that includes every feedback device described in xref:feedbackSect.adoc#feedbackSect[Feedback Devices] , and still leaves four or five spare power board outputs in case you can think of anything else (and find room for it in your cab!).
 
 You might also consider adding one or more chime boards if you're using any pinball coils or other solenoids that are vulnerable to rapid overheating.
 For pinball parts, this applies to almost any coil-based assemblies designed for the real machines: xref:chimes.adoc#chimes[chime units] , bells, slingshot assemblies, or bumper assemblies.
 Flipper assemblies are sometimes safe, but not always; see xref:coilTimers.adoc#coilTimers[Coil Timers] for details.
 If you do decide to add chime boards, each board will handle eight coils.
-Any chime boards will simply add more ports to your system, so you'll still have all of the ports on your main board and power board(s).
+Any chime boards will simply add more ports to your system, so you'll still have all the ports on your main board and power board(s).
 
 The chime board isn't strictly necessary even for coil devices, since the Pinscape firmware can emulate the timer protection via its "Flipper Logic" feature (also described in xref:coilTimers.adoc#flipperLogic[Coil Timers] ).
 The main reason to use the chime board instead of software is that I consider a hardware timer to be inherently more reliable than a software version.
@@ -101,10 +101,10 @@ This board provides:
 
 * A pin header for up to 24 button inputs.
 This is just a convenience compared to the standalone KL25Z, where the GPIO pins for buttons are scattered around the headers.
-This groups all of the buttons into one connector.
+This groups all the buttons into one connector.
 * A pin header for connecting a plunger sensor.
-All of the Pinscape plunger designs in this guide use a common connector plug layout that fits this header.
-As with the buttons, this is just a convenience; on the standalone KL25Z, the pins for plunger connections are scattered around, but here they're neatly grouped into one connector that works with all of the plunger types.
+all the Pinscape plunger designs in this guide use a common connector plug layout that fits this header.
+As with the buttons, this is just a convenience; on the standalone KL25Z, the pins for plunger connections are scattered around, but here they're neatly grouped into one connector that works with all the plunger types.
 * Outputs (grouped onto a single pin header) for a set of 5 RGB flashers, with high-resolution, high refresh rate PWM control, for connecting a xref:flashers.adoc#flashersAndStrobes[flasher panel] (a feedback device consisting of five high-intensity RGB LEDs, usually placed at the back of the playfield TV).
 These outputs have sufficient power to supply two flasher panels in parallel, in case you want to install one both in the main cabinet and on the backbox.
 * A dedicated output for a bright white strobe lamp, which is another popular feedback device typically deployed along with the flasher panel.
@@ -138,7 +138,7 @@ The power board is an add-on to the main board.
 It's not required, but most people use one main board and one power board, since the main board doesn't have any general-purpose feedback outputs of its own (all of its outputs are for more specific purposes).
 
 Multiple power boards can be daisy-chained.
-The Pinscape software can handle up to 128 feedback ports in total, which is enough for three of these boards if you're not using all of the main board ports.
+The Pinscape software can handle up to 128 feedback ports in total, which is enough for three of these boards if you're not using all the main board ports.
 In practice, one power board is enough for a very decked-out system.
 
 image::images/chimeExpanBoard.png[""]
@@ -163,7 +163,7 @@ A schematic is a symbolic, visual representation of the components in a circuit 
 A board layout is the physical design of the circuit board, showing the locations of drill holes, solder pads, copper traces, and so on.
 The schematic and board layout are really two views of the same information.
 
-You can download the EAGLE files for all of the expansion boards here:
+You can download the EAGLE files for all the expansion boards here:
 
 link:http://mjrnet.org/pinscape/expansion_board/download.php[mjrnet.org/pinscape/expansion_board/download.php]
 

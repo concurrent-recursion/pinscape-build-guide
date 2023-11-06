@@ -1,6 +1,6 @@
 = Connecting the Expansion Boards
 
-Before connecting of disconnecting any of the expansion board cabling, you should have the power off to the PC and all of the power supplies.
+Before connecting of disconnecting any of the expansion board cabling, you should have the power off to the PC and all the power supplies.
 The same applies for seating and removing the KL25Z in the main board sockets.
 
 == Attach the KL25Z
@@ -19,7 +19,7 @@ I leave it plugged in on my cab so that I don't have to mess around with connect
 
 == Connect power cables
 
-All of the expansion boards have *two* power input: one labeled *PC PSU* and one labeled *2ND PSU* .
+all the expansion boards have *two* power input: one labeled *PC PSU* and one labeled *2ND PSU* .
 Both of these inputs must be connected to power in order for the boards to operate.
 
 The connectors on the boards use special cables that you can build yourself.
@@ -108,18 +108,18 @@ The pin marked CMN is the "Common" pin.
 Physically, pin cab buttons are typically either microswitches (such as the SuzoHapp pushbuttons most people use for the front panel buttons, such as Start and Exit) or leaf switches (usually used for flipper buttons).
 In either case, the part you wire to the expansion board is a "Normally Open" switch - a switch with two terminals that come into contact when you push the button.
 To wire a button to the expansion board, then, you connect one terminal of the switch to one of the numbered button input pins, and you connect the other terminal to the CMN (Common) pin.
-All of the buttons connect to the Common pin (thus the name!), but each button gets its own individual numbered input pin.
+all the buttons connect to the Common pin (thus the name!), but each button gets its own individual numbered input pin.
 
-Full instructions for connecting the buttons can be found in xref:buttons.adoc#pinscapeButtonInputs[Pinscape Button Inputs] , and much more information about buttons in general (a list of all of the common pin cab buttons, what to buy, how to install buttons in the cabinet) is in xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
+Full instructions for connecting the buttons can be found in xref:buttons.adoc#pinscapeButtonInputs[Pinscape Button Inputs] , and much more information about buttons in general (a list of all the common pin cab buttons, what to buy, how to install buttons in the cabinet) is in xref:cabButtons.adoc#cabinetButtons[Cabinet Buttons] .
 
 The pin header is designed to mate with a 26-pin crimp housing (listed in the parts list).
 For help assembling crimp pin housings, see xref:crimpPins.adoc#crimpPins[Crimp Pins] .
 
 Some advice on assembling the crimp pin housing for this connector: I'd start with an empty housing (without any wires installed yet), and gradually install the wires as you install the buttons themselves.
-One nice thing about these crimp pin housings is that you can insert pins one at a time, so there's no need to install all of the pins at once.
+One nice thing about these crimp pin housings is that you can insert pins one at a time, so there's no need to install all the pins at once.
 Each time you install a button, run the wiring from the button back to the expansion board, crimp a pin on the end of the wire, and insert the pin into the housing.
 
-The one pin you probably will want to install up front is the Common wire, since all of the buttons will need to connect to that.
+The one pin you probably will want to install up front is the Common wire, since all the buttons will need to connect to that.
 You might want to connect that to a terminal block or something similar, so that you can easily add more wires that connect to this same common point as you add more buttons.
 
 == TV ON connections

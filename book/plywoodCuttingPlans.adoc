@@ -28,7 +28,7 @@ If you're building a widebody or custom-width cabinet, you'll have to adjust the
 
 == How to use the plans
 
-Don't start by marking all of the cut lines shown on the plywood sheet.
+Don't start by marking all the cut lines shown on the plywood sheet.
 That won't produce accurate results, because your saw blade will remove some of the material between the pieces at each cut, which you can't easily account for in the initial marking.
 Instead, measure and cut one section at a time.
 This lets you make the next measurement based on the actual new edge left over from the previous cut.
@@ -68,7 +68,7 @@ Draw the diagonal line "C" through points "X "and "Y".
 Cut all the way along "C".
 
 3.
-The piece you just cut out is one side wall of the cabinet.
+The piece you just cut out is one side wall the cabinet.
 You just need to cut out that 7-1/8"-long flat portion where the diagonal edge flattens out.
 Mark a line 23-1/2" from the opposite side, parallel with the opposite side, and cut along that line to make the flat portion.
 The finished side piece should look like this:
@@ -115,7 +115,7 @@ If you're building to a custom size, you can determine the width to use here by 
 8.
 Using the 21-7/8"-wide section we just cut, mark line "F" 23-1/2" in from one edge.
 Cut along this line.
-This yields the back wall of the cabinet.
+This yields the back wall the cabinet.
 
 9.
 Continuing with the remainder of the 21-7/8"-wide section, mark line "G" 7-1/8" from one edge.
@@ -230,7 +230,7 @@ For help with the triangular wedge-shaped pieces, see xref:cornerBraceCutting.ad
 [#singleSheetPlan]
 == Layout 2: Single 3/4" sheet plan
 
-It's just barely possible to make all of the 3/4" pieces fit into a single 4x8 sheet.
+It's just barely possible to make all the 3/4" pieces fit into a single 4x8 sheet.
 Plywood's not cheap, so this plan is easier on the budget.
 But this plan requires more measuring and cutting work than the xref:html#groupBySizePlan[group-by-size] plan above, because it's not possible to group the pieces as nicely given the more limited space.
 Also, there's not enough spare room to allow for expanding any of the pieces to widebody widths, or to any custom width larger than the standard-body design.

@@ -125,7 +125,7 @@ I haven't come up with a reference design yet, but I can at least describe the s
 ** double-sticky foam tape
 * Mount the sensor to the angle bracket with the foam tape. 
 Pick the location so that the sensor lines up with the plunger when the angle bracket is installed.
-* Attach the angle bracket to the side wall of the cabinet with the wood screws. 
+* Attach the angle bracket to the side wall the cabinet with the wood screws.
 Position it so that the sensor is aimed directly at the plunger. 
 Leave about 1.5 centimeters of clearance between the plunger and the sensor.
 * The sensor must be far enough away from the plunger that there's no chance that the plunger will strike it when pulled back all the way and released. 

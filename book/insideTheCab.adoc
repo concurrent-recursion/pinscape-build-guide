@@ -19,7 +19,7 @@ The arrangement described in this section is based on my own cab, so I consider 
 It's not an exact replica, though.
 I've made some revisions in an attempt to improve things that weren't ideal in my original design.
 I also made room for additional equipment that's not in my build.
-My cab is pretty decked out, but for the purposes of this section, I've tried to imagine an "ultimate" cab with all of the toys.
+My cab is pretty decked out, but for the purposes of this section, I've tried to imagine an "ultimate" cab with all the toys.
 
 This is, of course, not the only possible solution to the question of how to arrange things, and I'm sure it's far from the best solution.
 Some of it might not work at all for your setup, given that you might have completely different constraints from your PC packaging or TV size.
@@ -78,7 +78,7 @@ The very back is blocked from above by the backbox shelf, so it's a little bit o
 It's just reachable enough for plugging and unplugging AC cords, but you wouldn't want to have to get back there with tools if you can avoid it.
 
 I recommend installing _two_ power strips: a small strip that you'll plug directly into the wall outlet, and a second, larger strip that acts as a "smart" strip, providing power to its outlets only when the PC is powered on.
-All of the accessories (the TVs, audio amplifiers, and feedback devices) plug into the switched outlets, which lets you turn the whole cab on and off with the PC soft power controls.
+all the accessories (the TVs, audio amplifiers, and feedback devices) plug into the switched outlets, which lets you turn the whole cab on and off with the PC soft power controls.
 You can implement the switched outlets by buying a smart power strip (they don't design them for pin cabs specifically, but it's the same idea: they're for turning off your monitors and printers when you're not using the computer), or by building your own.
 This is all covered in much more detail in its own section, xref:powerSwitching.adoc#powerSwitching[Power Switching] .
 
@@ -178,7 +178,7 @@ The standard parts consist of a metal mounting bracket and a "plunger" switch.
 The bracket is designed so that the plunger switch simply snaps - a couple of plastic clasps on the switch hold in place.
 
 Snap the switch into the plate, then mount the plate so that actuator on the door presses the switch plunger all the way in when the door is closed.
-The plate mounts to the front wall of the cab with wood screws.
+The plate mounts to the front wall the cab with wood screws.
 
 Note that the standard mounting plate has slots for two switches: a large switch with six connectors, and a small switch with three connectors.
 On the real machines, the large switch is used an interlock to cut off high-voltage power to the playfield when the door is open, and the small switch is connected to the CPU to let the software know when the door is open.
@@ -274,7 +274,7 @@ image::images/inside-flippers-7.png[""]
 
 On the real machines, they leave just enough room to make it work, but we virtual people have an added challenge here, which is that we also need to install a plunger position sensor of some kind.
 That can add bulk around the plunger rod that isn't there on the real machines.
-All of the commercial and DIY sensor designers know this is an issue, and they take it into account in their designs, but space is so tight to begin with that some of the sensors push the limits here.
+all the commercial and DIY sensor designers know this is an issue, and they take it into account in their designs, but space is so tight to begin with that some of the sensors push the limits here.
 So you might find it difficult to make everything fit.
 
 There are two tricks that can help.
@@ -348,7 +348,7 @@ The button already has its own spring for tensioning.
 * A 1/16" gap will make the button engage after pushing it in by about a quarter of its total travel.
 1/8" is closer to the halfway point.
 I think the ideal point is a matter of taste, so test how it feels to see what you prefer.
-* Once you've decided on the preferred gap size, you should adjust all of the flipper and MagnaSave buttons to use the same gap, to give them a consistent feel.
+* Once you've decided on the preferred gap size, you should adjust all the flipper and MagnaSave buttons to use the same gap, to give them a consistent feel.
 
 == Tilt bob
 
@@ -582,7 +582,7 @@ Your output controller might have its own built-in fuse holders, but most of the
 We're going to assume you're installing them separately.
 
 There are many types of fuses and fuse holders.
-For my own cab, I went with the type that's common on the real pinball machines (not for the sake of realism, but just because it saved me the trouble of researching all of the other options).
+For my own cab, I went with the type that's common on the real pinball machines (not for the sake of realism, but just because it saved me the trouble of researching all the other options).
 Those are the so-called 3AG glass cartridge fuses, which look like this:
 
 image::images/fuse.png[""]
@@ -657,7 +657,7 @@ If you're using a liftable TV mounting like the one described in xref:playfieldM
 
 image::images/inside-contactors-2.png[""]
 
-Here we've moved all of the contactors except the flippers to the underside of the TV frame.
+Here we've moved all the contactors except the flippers to the underside of the TV frame.
 We left the flippers where they were (on the side walls), because the natural place for them on the TV frame is a bit too close to the shelf where the I/O controllers are located.
 If we didn't have that shelf, we could easily move the flipper contactors to the TV frame as well.
 This is what it looks like when we lower the TV back into its normal position:

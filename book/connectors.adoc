@@ -4,7 +4,7 @@
 One of my "design rules" when I built my own cab was that everything should be modular: pieces should be self-contained, and it should be easy to take anything out for servicing or replacement without major surgery, and just as easy to put it back.
 In the case of the electronics, this meant that nothing should be "hard-wired" into the cabinet.
 I should never have to cut a wire or unsolder anything just to remove an electronic device.
-The way to achieve that is to make sure all of the connections in the wiring are made with modular connectors that can be plugged and unplugged, just like a power plug in a wall outlet.
+The way to achieve that is to make sure all the connections in the wiring are made with modular connectors that can be plugged and unplugged, just like a power plug in a wall outlet.
 
 When I started planning my cab, then, I knew I wanted to use some kind of pluggable connectors throughout, but I didn't have enough electronics experience to know exactly what to buy.
 I looked to see how other cab builders handled this, and found that there aren't any widely agreed "best practices" in this area.

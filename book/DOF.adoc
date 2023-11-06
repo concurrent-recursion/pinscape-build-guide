@@ -82,7 +82,7 @@ But if you run into any mysterious problems, try moving it to the C: drive to se
 If you're on Windows 7, make sure your system has *.Net 4.6* installed before proceeding.
 That's a core Windows component that DOF requires.
 It can be installed via Windows Update.
-Most newer systems will already have this installed, but you might have to install it manually if you're using Windows 7 and recently did a fresh install of the operating system.
+Most newer systems will already have this installed, but you might have to install it manually if you're using Windows 7 and recently did a fresh install the operating system.
 
 === Automatic DOF Setup
 
@@ -95,7 +95,7 @@ Look for the latest "Windows Setup (MSI)" edition.
 Download it and run it.
 When the installer asks you to pick a folder name, remember to use a name that doesn't contain any spaces.
 
-If all goes well with the automatic setup, you can skip all of the "manual setup" steps listed below.
+If all goes well with the automatic setup, you can skip all the "manual setup" steps listed below.
 The installer takes care of everything for you.
 Skip directly to xref:#VerifyDofSetup[Check that it's working] below.
 
@@ -145,7 +145,7 @@ See xref:#DOFReleaseStatus[release status] for details.
 * Create a DirectOutput folder on your PC called `C:\DirectOutput` (or a name of your own choosing, but remember that it must not contain any spaces)
 * Download the *ZIP file edition* of my link:http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider[Grander Unified DOF R3+]
 * Unzip the contents into your new DirectOutput folder
-* Unblock all of the new DLL and EXE files.
+* Unblock all the new DLL and EXE files.
 For each file in the new folder with a *.dll* or *.exe* suffix, do the following:
 ** Right-click the file
 ** Select Properties from the menu
@@ -299,7 +299,7 @@ Those are the port numbers we mentioned.
 Every physical wiring terminal has a port number assigned.
 
 You'll also notice that there's _not_ anything printed on the LedWiz about "Left Flipper", "Shaker Motor", "RGB Flasher #1", or anything like that.
-So which terminal are you supposed to connect the shaker motor to? The answer is easy: it's up to you, so just pick one! As far as the LedWiz (or other controller) is concerned, all of the ports are the same.
+So which terminal are you supposed to connect the shaker motor to? The answer is easy: it's up to you, so just pick one! As far as the LedWiz (or other controller) is concerned, all the ports are the same.
 They're just general-purpose outputs that you can connect to just about anything.
 The LedWiz doesn't have to know anything about what's connected, because its only job is to turn the port on and off when commanded by the software.
 
@@ -372,10 +372,10 @@ To set up the port mappings, all you need to do is go through the ports one by o
 If you've already connected your feedback devices to their output ports, hopefully you kept notes on which device was wired to which port! Get out those notes now and enter the same information the Config Tool port list.
 
 If you're not sure what any of the terms in the drop-down list mean, see xref:dofDeviceList.adoc#dofDeviceList[DOF Config Tool Device Descriptions] .
-That provides a full list of all of the devices in the drop-down lists, with detailed explanations of how they're usually implemented in virtual cabs.
+That provides a full list of all the devices in the drop-down lists, with detailed explanations of how they're usually implemented in virtual cabs.
 The devices in the drop lists are mostly self-explanatory, but some of them are pretty obscure, plus there's a certain amount of "virtual pinball jargon" that probably won't make much sense if you haven't spent a lot of time in the forums.
 
-Once you enter all of the devices, click Save.
+Once you enter all the devices, click Save.
 
 *Step 4: Generate your config files*
 
@@ -392,7 +392,7 @@ Some people get confused by the multiple files and think you're supposed to choo
 You're not.
 You need *all* of them, with the exact names generated.
 Each file corresponds to one output controller, and the number in the name (if any) tells DOF which controller the file goes with.
-If you don't unpack all of them, or if you rename any of them, DOF won't work correctly.
+If you don't unpack all them, or if you rename any of them, DOF won't work correctly.
 
 *Step 5: Test it*
 
@@ -437,7 +437,7 @@ There are two requirements for a game to work with DOF:
 
 * First, it has to be listed in the DOF Config Tool's database.
 To see the current list of supported tables, log in to the link:https://configtool.vpuniverse.com/[Config Tool] , go to the Table Configs tab, and open the Table Name drop-down list.
-This has all of the tables that the Config Tool currently supports.
+This has all the tables that the Config Tool currently supports.
 * Second, the table's script in Visual Pinball has to include B2S backglass support.
 
 With VP 10, almost every table automatically uses B2S if it's installed.
@@ -525,7 +525,7 @@ In VP 9, the same thing is possible, but unfortunately, it's not nearly as easy.
 VP 9 doesn't have option settings for the individual DOF toys.
 What you have to do instead is edit the individual table script for each table you want to fix.
 
-In older tables, you usually have to edit the scripts by painstakingly scanning through the scripts, finding all of the sound effects commands, and removing the ones you don't like.
+In older tables, you usually have to edit the scripts by painstakingly scanning through the scripts, finding all the sound effects commands, and removing the ones you don't like.
 
 Many later VP 9 tables (written in 2015 and later) include pre-programmed support for removing individual sounds, but it still requires you to edit the script to activate it.
 
@@ -566,7 +566,7 @@ Here are the main options:
 
 * My latest link:http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider["Grander Unified" DOF R3++] is a merge of all four of the forks of DOF on GitHub as of January 2018, plus some additional updates I've made since then.
 As of this writing, it has every feature of every alternative version, so you don't have to choose among versions with subsets of features.
-This is the one I recommend because it has everything all of the other versions offer.
+This is the one I recommend because it has everything all the other versions offer.
 * My original link:http://mjrnet.org/pinscape/dll-updates.html["Grand Unified" DOF R3+] incorporated all of Swiss Lizard's final published code, plus some necessary changes to support Pinscape devices.
 This also contains my LedWiz enhancements.
 * Swiss Lizard's own beta R3 releases are badly out of date at this point, but if you want to find them anyway, try this Web search: link:https://www.google.com/search?q=site%3Avpforums.org+dof+r3+beta.html[site:vpforums.org DOF R3 beta] .
@@ -582,10 +582,10 @@ This will take you to a download page.
 (If Swiss Lizard ever officially releases a final R3 build, it should also appear here in due course.)
 * Three other developers (as of January 2018) have created their own forked versions of the R3 code on GitHub, to add their own extensions.
 Check the link:https://github.com/DirectOutput/DirectOutput.html[main DOF page on GitHub] to see the current list of forks.
-All of the forks that were active up through January 2018 were merged into my Grander Unified R3++ mentioned above, and I'm not currently aware of any further work on any of those forks beyond what I merged.
+all the forks that were active up through January 2018 were merged into my Grander Unified R3++ mentioned above, and I'm not currently aware of any further work on any of those forks beyond what I merged.
 
-My intention with the Grander Unified R3++ version of January 2018 is provide a One True DOF, re-unifying all of the forks and eliminating any confusion about which one to use.
-The unified version combines all of the features from all of the forks, so there's no need to pick a subset of features.
+My intention with the Grander Unified R3++ version of January 2018 is provide a One True DOF, re-unifying all the forks and eliminating any confusion about which one to use.
+The unified version combines all the features from all the forks, so there's no need to pick a subset of features.
 
 [#DOFTroubleshooting]
 == Troubleshooting your DOF setup

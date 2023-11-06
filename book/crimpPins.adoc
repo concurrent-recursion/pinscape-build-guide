@@ -17,8 +17,8 @@ Each pin connects to a wire that connects to an individual button, so these wire
 Like the buttons, these headers provide a group of pins that plug into a single connector, and each pin on the connector will connect to a separate device.
 
 Crimp pin housings are more work to assemble than ribbon cables with IDC plugs because of the pin-by-pin construction.
-That makes ribbon cables better for connections where all of the wires go off to the same place on the other end, such as a board-to-board data connection.
-Ribbon cables lose their convenience advantage when the wires all go to different destinations, because a ribbon cable is inherently constructed as a single unit with all of the conductors bundled together.
+That makes ribbon cables better for connections where all the wires go off to the same place on the other end, such as a board-to-board data connection.
+Ribbon cables lose their convenience advantage when the wires all go to different destinations, because a ribbon cable is inherently constructed as a single unit with all the conductors bundled together.
 
 == Tools
 

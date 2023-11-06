@@ -14,9 +14,9 @@ Visual Pinball provides _two_ soundtracks for each game:
 
 * The "music" soundtrack.
 For any table that's a simulation of a real pinball machine, this is the soundtrack from the game's original ROM software.
-It includes all of the synthesizer music, voice cues, and other digitized effects that were played back through the speakers on the original machine.
+It includes all the synthesizer music, voice cues, and other digitized effects that were played back through the speakers on the original machine.
 * The "mechanical" soundtrack.
-This includes all of the sound effects that _aren't_ from the original ROM - the ones that are added into the Visual Pinball simulation.
+This includes all the sound effects that _aren't_ from the original ROM - the ones that are added into the Visual Pinball simulation.
 These are called "mechanical" effects because they're almost always the sounds of things happening on the playfield: the ball rolling across the playfield and bumping into things, flippers, bumpers, and slingshots, chimes and bells in EM machines, and anything else in the physical game.
 
 The point of separating the two types of effects into separate soundtracks is that it lets you play them back through separate speakers.
@@ -27,13 +27,13 @@ Newer versions of VP take the idea one step further with a "surround" option.
 This lets you use _four_ speakers in the cab, so that VP can adjust the relative volume levels to make it sound like each effect is coming from a precise position in space.
 Mechanical effects don't just sound like they're coming from the playfield, but sound like they're coming from a precise position on the playfield.
 
-VP doesn't require that you provide all of these speakers.
-If you only have two speakers, VP will mix all of the effects together and play them back on your two speakers.
+VP doesn't require that you provide all these speakers.
+If you only have two speakers, VP will mix all the effects together and play them back on your two speakers.
 That's in fact what it does by default; you have to go a little out of your way to achieve the surround effects.
 So the multiple soundtracks are a bonus feature that you can take advantage of if you have the extra equipment, but which you can just ignore if not.
 
 As far as I know, Visual Pinball is the only pinball simulator with this notion of separate "music" and "mechanical" effects channels.
-All of the other emulators will just provide a single soundtrack, with all effects playing back through your main speakers.
+all the other emulators will just provide a single soundtrack, with all effects playing back through your main speakers.
 If you don't plan to run Visual Pinball, you probably wouldn't want to bother with the extra surround speakers.
 
 === Removing unwanted VP sound effects for DOF solenoids
@@ -51,7 +51,9 @@ If you want to take advantage of VP's multiple soundtracks, you need to provide 
 If you want to keep things simpler and/or cheaper, you can omit those.
 With that in mind, there are basically three ways to set up pin cab audio system:
 
-*  *Basic stereo:* The simplest setup is a stereo system, with two main speakers and an optional subwoofer.
+=== Basic stereo
+The simplest setup is a stereo system, with two main speakers and an optional subwoofer.
+
 The main speakers are usually placed in the backbox, facing the player, and the subwoofer is inside the cabinet, facing down through an opening in the floor.
 
 Most people use the same speaker placement that the real machines used in the 1980s and 90s (and that newer titles still use today, for the most part), with the main speakers mounted on a separate panel at the bottom of the backbox.
@@ -67,7 +69,8 @@ To implement this, you need:
 
 A separate sound card isn't needed as long as your PC motherboard has built-in audio.
 
-*  *Music speakers plus separate monophonic playfield speakers:* This is the next step up.
+=== Music speakers plus separate monophonic playfield speakers:
+This is the next step up from basic stereo.
 We keep the backbox speakers and subwoofer from the basic stereo system, and add one or two speakers inside the cabinet, under the TV.
 These are for the playfield effects.
 The added in-cab speakers should be placed somewhere around the middle of the cabinet.
@@ -86,7 +89,8 @@ To implement this, you need everything from the basic system, plus:
 I wouldn't recommend this approach for a new build, as the four-speaker set up is not much more work to implement and provides much greater functionality.
 This one- or two-speaker setup is really only something you would have before VP had the surround sound ability.
 
-*  *Separate music speakers and playfield surround speakers:* This is the most powerful setup.
+=== Separate music speakers and playfield surround speakers
+This is the most powerful setup.
 We keep the backbox speakers and subwoofer from the basic stereo system, and we add _four_ speakers inside the cabinet, placed near the corners.
 This lets VP balance the volume among the four in-cab speakers to make it sound like each mechanical effect is coming from a precise position on the playfield.
 
@@ -185,7 +189,7 @@ See "Installing speaker LED strips" in xref:dmdAssemblyOriginal.adoc#speaker-led
 == Amplifiers
 
 The sounds outputs from a PC motherboard or sound card are "line level" outputs, meaning they have to be connected to an amplifier, which is in turn connected to the speakers.
-Speakers that are made specifically as "PC speakers" generally have their own built-in amps, meaning you meaning you can just plug them straight into the sound card.
+Speakers that are made specifically as "PC speakers" generally have their own built-in amps, meaning you can just plug them straight into the sound card.
 But this isn't the case when you're working with a standalone speaker designed for a car or pinball machine: for those, you need a separate amplifier.
 
 So you can either use PC speakers, which have their own challenges, as we mentioned earlier, or you can use component speakers and install an amplifier.
@@ -212,7 +216,7 @@ By way of comparison, the 1990s Williams pinball machines had a whopping _14 Wat
 For the main speakers, we need three channels of amplification: the left and right backbox speakers, and the subwoofer.
 The most common way that pin cab builders accomplish this is with a so-called 2.1-channel amplifier - a single unit that has two main channels (that's the "2" in "2.1") and a subwoofer channel (the ".1").
 
-The advantage of an amp designed for 2.1 channels it that it should have a built in "crossover", which is a little filter circuit that sends the higher-frequency part of the signal to the main speakers and the lower-frequency part to the subwoofer.
+The advantage of an amp designed for 2.1 channels it that it should have a built-in "crossover", which is a little filter circuit that sends the higher-frequency part of the signal to the main speakers and the lower-frequency part to the subwoofer.
 This lets each speaker reproduce the range of frequencies it was designed for, which makes them sound better than if you didn't do the filtering.
 
 Here's how you wire a 2.1-channel amplifier:
@@ -360,7 +364,7 @@ The ones I've tried had unacceptable background noise levels (that is, noise pla
 This problem actually afflicts a lot of amplifiers in a pin cab environment, because we power them with switching power supplies.
 An amplifier needs quite good power line filtering to sound good with a noisy power source, and most of these hobbyist boards have little or no power conditioning, to keep the cost down.
 
-All of the DIY amplifier boards are based on specific integrated circuit chips that do most of the amplifier work, so when you go shopping for these, you'll find them identified primarily by the type of IC chip they use.
+all the DIY amplifier boards are based on specific integrated circuit chips that do most of the amplifier work, so when you go shopping for these, you'll find them identified primarily by the type of IC chip they use.
 These are all no-brand products, though, so one board based on a particular chip might be great, and another board based on the same chip might be terrible.
 It's a crap shoot if you buy these on eBay.
 I think your best bet might be to buy these on Amazon, where you can at least compare user reviews, even if those aren't perfectly reliable.
@@ -388,7 +392,7 @@ Disadvantages:
 
 The LP-168HA is a 2.1-channel amp, which is what makes it popular among pin cab builders.
 It's so difficult to find 2.1-channel options that I think this one became popular by default.
-VirtuaPin used to sell these as part of their speaker packages - they don't seem to offer them any more, but you can easily find them on Amazon and eBay.
+VirtuaPin used to sell these as part of their speaker packages - they don't seem to offer them anymore, but you can easily find them on Amazon and eBay.
 
 This has long been the go-to amp for most pin cab builders.
 I'm afraid I haven't had good experiences with it, though.
@@ -400,7 +404,7 @@ I've seen reports of the same problems on the forums and Amazon reviews, so I te
 
 To be fair, some people on the forums have said they're happy with these amps, so I might have just had the bad luck to get two particularly bad units.
 
-If want to try the Lepai, be aware that there are a number of identical looking units sold under very slightly different names, like "Lepy" and "Lepei".
+If you want to try the Lepai, be aware that there are a number of identical looking units sold under very slightly different names, like "Lepy" and "Lepei".
 I don't know if Lepai just can't decide how its name ought to be rendered in a Western alphabet, or if the variations are knockoffs (I'd say "cheap knockoffs", but the original was already cheap).
 Maybe it's a mix of both.
 For what it's worth, I've talked to a couple of people using the maybe-knockoff brands who were happier with the results than I was with the (I assume) original brand.
@@ -448,7 +452,7 @@ The best type of speaker for this job seems to be something called an "exciter",
 An exciter is like a speaker without the paper cone part.
 They're designed to be attached to a rigid surface, and they work by making that attached surface vibrate.
 The surface takes the place of the paper cone in a normal speaker.
-In our case, the wall of the cabinet serves as the surface.
+In our case, the wall the cabinet serves as the surface.
 
 One reason that exciters work well for this job is that they're smaller than regular speakers.
 It's a lot easier to find space for them in a cab.
@@ -565,7 +569,7 @@ Also note that the "Front Center" speaker in the Windows layout isn't used at al
 
 image::images/vp-surround-setup.png[alt="Screenshot of Visual Pinball Audio Options"]
 
-If that little homage to Orwell saying "Front is rear, black is white, war is peace" that you see in the parentheses after "7.1 Surround" seems confusing, it's because VP is trying to explain the whole speaker layout in 10 words or less to fit the dialog box. Here's what it's trying to say:
+If that little homage to Orwell saying "Front is rear, black is white, war is peace" that you see in the parentheses after "7.1 Surround" seems confusing, it's because VP is trying to explain the whole speaker layout in 10 words or fewer to fit the dialog box. Here's what it's trying to say:
 
 * Your pin cab's main backbox speakers connect to the PC audio "Front" output jack
 * Rear playfield effects speakers connect to the PC "Side Surround" output jack
@@ -580,14 +584,14 @@ If you have playfield effects speakers set up and configured in Visual Pinball, 
 * If the sound comes from the game's ROM (the original game's software, being emulated in VPinMAME), it's played through the backbox speakers
 * Otherwise, it's played through the playfield effects speakers
 
-That rule usually does exactly what you want, because almost all of the sound effects that aren't from the ROM are meant to simulate something mechanical on the playfield. In some cases, though, you might prefer for some of the non-ROM sounds to be played through the backbox speakers. This might be desirable, for example, if you're adding your own extra music or voice effects to supplement the game's original soundtrack. It might also be better for certain mechanical effects, such as EM-era bells (which were often situated in the backbox in the originals) or scoring reel sounds.
+That rule usually does exactly what you want, because almost all the sound effects that aren't from the ROM are meant to simulate something mechanical on the playfield. In some cases, though, you might prefer for some of the non-ROM sounds to be played through the backbox speakers. This might be desirable, for example, if you're adding your own extra music or voice effects to supplement the game's original soundtrack. It might also be better for certain mechanical effects, such as EM-era bells (which were often situated in the backbox in the originals) or scoring reel sounds.
 
 VP lets you override the rule on an effect-by-effect basis, so that you can redirect specific sound effects to the backbox speakers. See "How to play table sound effects through the backbox speakers" in xref:tableFixup.adoc#vpTableSoundsToBackboxSpeakers[Customizing VP Tables] .
 
 
 === Using playfield effects speakers instead of feedback devices
 
-"Poor Man's DOF" or "Surround Sound Feedback" (PMD or SSF) refers to using playfield speaker effects to replace all of the tactile feedback effects that many cab builders implement with DOF using contactors, solenoids, and the like. The main difference between this and the basic playfield speaker setup is that some PMD/SSF builders add extra exciters to strengthen the tactile effect, particularly at the front of the machine where it's more noticeable. For example, some people put an exciter under the lockbar, since that's where you rest your hands while playing.
+"Poor Man's DOF" or "Surround Sound Feedback" (PMD or SSF) refers to using playfield speaker effects to replace all the tactile feedback effects that many cab builders implement with DOF using contactors, solenoids, and the like. The main difference between this and the basic playfield speaker setup is that some PMD/SSF builders add extra exciters to strengthen the tactile effect, particularly at the front of the machine where it's more noticeable. For example, some people put an exciter under the lockbar, since that's where you rest your hands while playing.
 
 For more information, see the SSF group on Facebook:
 
@@ -629,7 +633,7 @@ To test that this setting is loud enough for normal use:
 * Turn the Windows master volume level all the way down, using the volume controls in the "system tray" at the bottom of the screen image:images/system-tray-speaker-icon.png[alt="Screenshot of windows system tray, showing volume icon"]
 image:images/volume-to-zero.png[alt="Screenshot of windows volume slider at 0%"]
 
-* Play some sample music in your a media player, just to test the level
+* Play some sample music in your media player, just to test the level
 * Gradually turn up the Windows master volume until it's as loud as the loudest level you'll likely want to use for pinball simulations
 * If that's less than 100% on the Windows volume knob, you're done
 * If you get to 100%, and it's still not loud enough, turn up the volume on the physical volume knob on your amp until it's loud enough
@@ -643,7 +647,7 @@ I wrote a little utility program called PinVol that helps with audio volume mana
 
 link:http://mjrnet.org/pinscape/PinVol.html[mjrnet.org/pinscape/PinVol.html]
 
-PinVol lets you assign any keyboard keys or joystick buttons to serve as volume controls. It also has the notion of a "global" volume level and a separate "local" volume level for each table, which is designed to help you equalize the the loudness level across different tables. Some VP tables are much louder than others. PinVol remembers the per-table volume setting for each table and automatically restores it each time you run a table, so that you don't have to keep manually changing the volume level every time you switch tables (which I found myself doing constantly, because of the big variations in loudness from one table to the next).
+PinVol lets you assign any keyboard keys or joystick buttons to serve as volume controls. It also has the notion of a "global" volume level and a separate "local" volume level for each table, which is designed to help you equalize the loudness level across different tables. Some VP tables are much louder than others. PinVol remembers the per-table volume setting for each table and automatically restores it each time you run a table, so that you don't have to keep manually changing the volume level every time you switch tables (which I found myself doing constantly, because of the big variations in loudness from one table to the next).
 
 With PinVol, you can assign different keys to control different aspects of the volume:
 
@@ -665,7 +669,7 @@ There are several common options for setting up physical buttons:
 
 For example, I use the Extra Ball button as my Shift button, and I use the shifted flipper and MagnaSave buttons as my volume controls. The flipper buttons are just flipper buttons most of the time, but when I hold down the Extra Ball button, my right MagnaSave/Flipper buttons become the Table Volume Up/Down buttons, and the left ones become the Global Volume Up/Down buttons. I find that pairing the buttons on each side as an Up/Down pair is intuitive and easy to use.
 
-This is my favorite approach because it's so convenient and it doesn't require any additional physical controls. To set this up in the Pinscape Config Tool, go to the button assignment section, and read the on-screen instructions for setting up a Shift button.
+This is my favorite approach because it's so convenient, and it doesn't require any additional physical controls. To set this up in the Pinscape Config Tool, go to the button assignment section, and read the on-screen instructions for setting up a Shift button.
 
 * Add a rotary encoder dial. This can be mounted anywhere a button can be mounted, but it gives you a combined Up/Down control in one small knob, so it's somewhat less conspicuous than a pair or trio of buttons. Some dials can also act as a pushbutton when you press the knob, which makes an intuitive place for the Mute button, giving you three controls in one. See this thread on vpforums:
 

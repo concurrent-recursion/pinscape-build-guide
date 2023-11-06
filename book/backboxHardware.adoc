@@ -83,7 +83,7 @@ The WPC and SuzoHapp doors provide a hook specifically for this purpose, located
 
 image::images/coin-door-key-hook.png[""]
 
-If you're not installing a standard coin door or can't find the key hook, you might put a little eyelet or hook on the inside wall of the cab somewhere convenient, and hang the keys there.
+If you're not installing a standard coin door or can't find the key hook, you might put a little eyelet or hook on the inside wall the cab somewhere convenient, and hang the keys there.
 
 === DIY alternatives
 
@@ -112,7 +112,7 @@ image::images/fold-backbox-2.png[""]
 
 image::images/fold-backbox-3.png[""]
 
-I consider this setup clever, in part because it wouldn't have occurred to me to do it this way, but mostly because it has has some nice functional advantages over the more obvious "door-hinge" approach, where you simply put a regular hinge at the front of the backbox.
+I consider this setup clever, in part because it wouldn't have occurred to me to do it this way, but mostly because it has some nice functional advantages over the more obvious "door-hinge" approach, where you simply put a regular hinge at the front of the backbox.
 A door-hinge approach is workable, and in fact it's used on a lot of older pinball machines from before the WPC era - we'll have more on this shortly, since it's a viable alternative if the WPC approach doesn't work for you for some reason.
 But the WPC system more elegant: it looks nicer, it makes for simpler cabinet geometry, and it's easier to install and to get everything aligned properly.
 Door-hinge systems can be tricky to get aligned.
@@ -165,12 +165,12 @@ image::images/install-backbox-hinge-2.png[""]
 
 Install both hinge arms (left and right) using the procedure above.
 
-Position the backbox on the shelf at the back of the cabinet, centered side to side, with its back flush with the back wall of the main cabinet.
+Position the backbox on the shelf at the back of the cabinet, centered side to side, with its back flush with the back wall the main cabinet.
 (Have an assistant hold the backbox steady while you're working so that you don't accidentally knock it over.)
 
 image::images/install-backbox-hinge-3.png[""]
 
-Rotate the hinge arm around the pivot until the side with the three bolt holes meets the bottom side of the backbox.
+Rotate the hinge arm around the pivot until the side with the three boltholes meets the bottom side of the backbox.
 Be careful about rubbing the sides of the cab so that you don't scratch the artwork.
 
 image::images/install-backbox-hinge-4.png[""]
@@ -178,11 +178,11 @@ image::images/install-backbox-hinge-4.png[""]
 If you haven't already drilled the holes in the backbox floor for attaching the hinge bracket bolts, this is the time! Make sure the hinge arm is flat against the bottom of the backbox, and that it's precisely parallel to the side of the cab.
 You should be able to see a little gap between the hinge arm and cab across its whole length.
 The hinge shouldn't be pressing against the cab anywhere, since that could scratch the artwork when you rotate the backbox.
-Once you have it aligned to your satisfaction, mark the positions of the three bolt holes.
+Once you have it aligned to your satisfaction, mark the positions of the three boltholes.
 Repeat on the other side.
 Remove the backbox and drill ¼" holes at the marked positions.
 
-On the inside of the backbox, position the backing plate (01-9012) over the bolt holes.
+On the inside of the backbox, position the backing plate (01-9012) over the boltholes.
 
 image::images/install-backbox-hinge-5.png[""]
 
@@ -295,7 +295,7 @@ We're all pinball nerds here, so a quick digression on definitions is in order! 
 So to avoid confusion, I want to make sure we're all clear on what _we_ mean by the word.
 
 Throughout this guide, I use the term "translite" to refer to _a clear plastic or glass sheet that you install in front of the main backbox TV_ .
-There's no artwork printed on it (other than perhaps some masking around the edges, to hide the TV bezel), since we want to let the TV handle all of the artwork display.
+There's no artwork printed on it (other than perhaps some masking around the edges, to hide the TV bezel), since we want to let the TV handle all the artwork display.
 The virtual translite is thus essentially a bit of trim in a virtual cab to disguise the TV-ness of our virtual setup and make it look on the outside more like a real pinball machine.
 
 image::images/what-is-a-translite.png[""]
@@ -352,7 +352,7 @@ You can get down to a fraction of an inch of dead space on the sides, but you'll
 
 image::images/translite-dead-space.png[""]
 
-Most cab builders want to cover up all of the dead space around the edges of the TV, so that only the live display area of the TV is visible.
+Most cab builders want to cover up all the dead space around the edges of the TV, so that only the live display area of the TV is visible.
 Understandably, they don't want the insides of the backbox to be visible.
 
 One way that some cab builders deal with this is to create a wood (or similar) cover with a cutout for the TV area.

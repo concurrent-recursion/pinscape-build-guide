@@ -24,7 +24,7 @@ You can also buy the pre-cut MDF panels and the plastic facing (in acrylic) from
 The _original_ original speaker panels that Williams used had asymmetrical speaker cutouts - a 5.25" cutout on the left and a 3" cutout on the right.
 This was because they used different speakers on the two sides: a large midrange driver on the left and a smaller tweeter on the right.
 This arrangement might seem strange in a modern context, where the whole point of a left/right speaker pair is stereo sound.
-But it makes more sense if you remember that all of the audio source material on these games is monophonic.
+But it makes more sense if you remember that all the audio source material on these games is monophonic.
 They had no need for left/right channel separation.
 It's just a single-channel enclosure with a woofer and a tweeter.
 

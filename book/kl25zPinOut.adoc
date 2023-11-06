@@ -6,7 +6,7 @@ image::images/kl25zPinOut.png[""]
 == How to read the diagram
 
 image::images/kl25zHeaderLabelCloseup.png[""]
-The diagram above shows all of the KL25Z's pin connections, labeled by their "header" name and "pin number".
+The diagram above shows all the KL25Z's pin connections, labeled by their "header" name and "pin number".
 
 There are four headers - rectangular blocks of pins arranged in a group.
 They're labeled *J1* , *J2* , *J9* , and *J10* .
@@ -166,7 +166,7 @@ So despite the 23 PWM-capable pins, you can really only use 10 of them as PWM ou
 The subtler limitation is in the pulse frequency generation.
 The *duty cycle* of a PWM output is controlled by its *channel* .
 However, the *period* of a PWM output is controlled by its *module* .
-All of the channels on a given module share the same period (or, equivalently, frequency).
+all the channels on a given module share the same period (or, equivalently, frequency).
 Many PWM applications don't care very much about the frequency, but the frequency is critical for some purposes.
 For example, if we're using the PWM signal as a clock generator for an external device, we need an exact frequency setting.
 This means that if we need two such clocks at different frequencies, we have to assign the two functions to pins that map to separate TPMs, to given them independent control over the frequency.
@@ -200,7 +200,7 @@ You can mitigate this by assigning your PWM feedback outputs to GPIO ports that 
 Refer to the matrix below for the associations between GPIO pins and TPM units.
 
 Here's a matrix showing the available GPIO ports for each TPM unit.
-Remember, the frequency of a PWM port is set at the *unit* level, so all of the ports associated with TPM Unit 0 will operate at the same frequency, all of the ports assigned with Unit 1 will operate a second common frequency, and all of the ports on Unit 2 operate on a third common frequency.
+Remember, the frequency of a PWM port is set at the *unit* level, so all the ports associated with TPM Unit 0 will operate at the same frequency, all the ports assigned with Unit 1 will operate a second common frequency, and all the ports on Unit 2 operate on a third common frequency.
 Each *channel* represents a separately controllable *duty cycle* that operates at the common frequency for its unit.
 For example, PTA4 and PTC2 are both on Unit 0, Channel 1, so they represent the same PWM output; they can't be separately controlled, as they share the same frequency (set on Unit 0) and the same duty cycle (set on Unit 0 Channel 1).
 

@@ -110,5 +110,5 @@ That means that you snip off one pin on the plug side, and block the correspondi
 If you try to plug the wrong 9-pin plug into the wrong 9-pin receptacle, that wrong plug won't have the right pin clipped, so it won't fit into the blocked socket.
 * Use plug-and-socket connectors that only plug in one way, so that you can't accidentally plug something in backwards.
 You get this benefit automatically for connector types that have asymmetrical shapes.
-All of the Molex .062 and .093 connectors are inherently designed this way, for example.
+all the Molex .062 and .093 connectors are inherently designed this way, for example.
 

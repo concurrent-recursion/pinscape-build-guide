@@ -1,11 +1,11 @@
 = A Visual Guide to the Virtual Pinball Cabinet
 
-When I first started building my own pin cab, I found it hard to get a handle on all of the pieces involved.
+When I first started building my own pin cab, I found it hard to get a handle on all the pieces involved.
 I knew I wanted real flipper buttons, but how do you connect them to the PC? I wanted a plunger, but how the heck do you make a PC take input from a plunger? I wanted feedback devices to simulate the flipper solenoids and replay knocker and so on, and I understood that I needed an LedWiz for that, but beyond that I didn't really know what it could do or how to connect anything to it.
 And knowing how many questions I had, I shuddered to think about the questions I didn't even know enough to ask.
 
 The diagram below will, I hope, clear up some of that fog, especially the unknown unknowns.
-It's is a comprehensive map of all of the electronic systems and devices that make up a virtual pinball machine.
+It is a comprehensive map of all the electronic systems and devices that make up a virtual pinball machine.
 It doesn't answer the detailed questions, like exactly how you hook up the LedWiz or install software, but it offers a bird's-eye view of everything that goes into one of these machines.
 It shows what each component does and how everything fits together.
 The idea is to let you see the whole system at a glance.
@@ -114,7 +114,7 @@ One option is to install an original pinball "chime unit" from the 1960s or 70s.
 These are basically little xylophones, with three or four metal bars and solenoid-driven hammers.
 The pinball manufacturers haven't made these in a long time, so if you want the real equipment from the EM era, your best bet is to find a salvaged unit on eBay.
 It might take some patience since there aren't all that many in circulation.
-There's also at least one modern reproduction unit available commercially (look for "McCullough's Chime Unit"), but reviews are mixed as to whether it sounds like the originals.
+There's also at least one modern reproduction unit available commercially (look for "McCullough's Chime Unit"), but reviews are mixed whether it sounds like the originals.
 The pinball suppliers don't sell full chime units, but they do sell many of the parts, so you might be able to cobble one together with a mix of original and improvised parts.
 Another option is to find some suitable "shell" type bells, which were used instead of chimes on many EM machines.
 You can use a regular knocker coil to strike them.
@@ -200,7 +200,7 @@ The Zeb's Boards kit uses a quadrature sensor, which senses the motion by counti
 The VirtuaPin kit uses an IR proximity sensor, which uses the brightness of infrared light reflected from the tip of the plunger to estimate the distance from sensor to tip.
 The type of sensor you use will depend primarily on which controller you choose; if you go with a commercial kit, it will include the sensor.
 +
-Note that virtually all of the sensor options are designed to work with a standard pinball plunger assembly.
+Note that virtually all the sensor options are designed to work with a standard pinball plunger assembly.
 The commercial kits usually include the plunger.
 For Pinscape or other DIY options, you can get the plunger assembly from any pinball parts supplier.
 
@@ -217,9 +217,9 @@ Most of the commercial plunger kits also include a nudge feature, so you probabl
 If you decide not to install a plunger, you can install a Pinscape Controller or one of the other plunger kits for its accelerometer features alone if you wish.
 
 Switched power strip::
-This is a second power strip that provides line power to all of the secondary devices in your system: the TVs, the audio amplifiers, and the feedback devices.
+This is a second power strip that provides line power to all the secondary devices in your system: the TVs, the audio amplifiers, and the feedback devices.
 The line power coming into this strip is controlled by the power switch relay, so the strip receives power when the PC is turned on and is effectively "unplugged" when the PC is off.
-This provides nice integration for all of the systems in your cabinet so that you can control everything with the main PC soft power button.
+This provides nice integration for all the systems in your cabinet so that you can control everything with the main PC soft power button.
 +
 An alternative to using the switching relay and a second power strip here is to combine everything into one "smart" power strip designed for computers.
 A smart strip has a "master" outlet that plugs into the PC, and controls the other outlets according to whether the PC is turned on or off.
@@ -227,10 +227,10 @@ This is simpler to set up than using a separate relay, but some people have trou
 Some motherboards don't seem to draw enough power to trigger the "smart" switching function on some of these strips.
 
 Power switch relay::
-This lets the PC control power to all of the secondary systems in your cabinet: the TVs, the audio amplifiers, and the feedback devices.
+This lets the PC control power to all the secondary systems in your cabinet: the TVs, the audio amplifiers, and the feedback devices.
 This works as follows: when the PC is turned on, the 12V power supply from the PC turns on, which activates this relay, supplying power to the second "switched" power strip.
 When the PC is off, the 12V line turns off, which turns off the relay, which cuts power to the second power strip.
-This effectively "unplugs" all of the devices on the second power strip.
+This effectively "unplugs" all the devices on the second power strip.
 You'll want to choose a relay specifically designed for switching high-power loads.
 The type designed for air conditioners and water heaters is perfect.
 Because of the high voltage going through the relay terminals, you'll want to be sure to thoroughly enclose this relay in a protective plastic box so that you don't ever accidentally touch any exposed wires, and so that nothing shaking loose in the cabinet can ever come into contact with the wires.
@@ -354,7 +354,7 @@ A large TV or monitor goes where the main playfield sits in a real pinball.
 You connect this to the PC video card with an ordinary video cable, and Windows simply sees the TV as a monitor.
 A regular 16:9 widescreen TV is a pretty good approximation to the aspect ratio of a real playfield when rotated 90° (for "portrait mode").
 You can either choose a TV that fits your cabinet, or build a custom cabinet around your TV.
-Before deciding, you should be aware that all of the pinball cabinet hardware you can buy off-the-shelf is designed to fit just two size options, known as "standard body" and "widebody".
+Before deciding, you should be aware that all the pinball cabinet hardware you can buy off-the-shelf is designed to fit just two size options, known as "standard body" and "widebody".
 If you build a cabinet with custom dimensions, you'll need custom versions of some of the accessory hardware.
 The standard body is 20.5" wide on the inside, which is enough to fit most 39" TVs and some 40".
 The widebodies are 23.25" wide on the inside, which will fit up to about a 45" TV.
@@ -407,13 +407,13 @@ I recommend powering *only* the PC components with this PSU, and using separate 
 
 Key encoder::
 This is a core device that almost every virtual pinball machine needs.
-It lets you to connect real pinball buttons (flipper buttons, Start buttons, etc) to the PC.
+It lets you connect real pinball buttons (flipper buttons, Start buttons, etc.) to the PC.
 Most of these devices connect via USB, while some connect to a PS/2 keyboard port.
 Depending on the device, the physical buttons in your cabinet are mapped either to keyboard input on the PC or joystick button input.
 Some key encoders let you program which keyboard keys or joystick buttons are sent to the PC, and some have pre-set mappings that you can't change.
 +
 The Pinscape Controller can fill this role.
-It lets you map buttons to keyboard keys or joystick buttons of your choosing (or a mix of the two), and lets you program all of the mappings individually.
+It lets you map buttons to keyboard keys or joystick buttons of your choosing (or a mix of the two), and lets you program all the mappings individually.
 Pinscape also lets you assign a "Shift" button that gives every other button a secondary assignment, letting you access more functions without adding more physical buttons.
 There are also commercial key encoder devices available that offer similar features, including the i-Pac and KeyWiz.
 Or, if you buy one of the commercial plunger kits, it will probably provide button input as a bonus feature, although it'll have a limited number of inputs and probably won't let you choose your own key mappings.
@@ -466,7 +466,7 @@ Coin acceptor switch::
 If you have a real coin door, and you choose to install real coin acceptors (often called "coin mechansims" or just "mechs"), you can set up your machine so that feeding in a quarter sends a coin signal to Visual Pinball.
 This is actually pretty easy, because the coin mechs use a simple microswitch that's tripped by the passage of a coin through the acceptor slot.
 So all you have to do is wire the switch to your key encoder.
-The slight complication (as with the coin door service buttons) is that the coin switches are usually wired to a connector or wire harness along with all of the other coin door wires, so you might have to spend a little time sleuthing out which wires connect to the coin switches.
+The slight complication (as with the coin door service buttons) is that the coin switches are usually wired to a connector or wire harness along with all the other coin door wires, so you might have to spend a little time sleuthing out which wires connect to the coin switches.
 Once you do, just connect them to the key encoder.
 Note that if you also have a manual "Coin In" button, you can simplify things by wiring the coin acceptor switch and Coin In button in parallel, so that either one can be used to add a coin in the simulation.
 
@@ -486,7 +486,7 @@ These let the operator access the machine's setup menus for adjusting game optio
 The same buttons are useful in your virtual machine because they let you make the same types of adjustments to the virtual tables you play.
 +
 If you have a real coin door on your machine, it'll come with the standard set of service buttons for its vintage (older machines usually had three buttons, newer machines usually have four).
-You can wire these to your key encoder just like all of the other buttons.
+You can wire these to your key encoder just like all the other buttons.
 The only complication is that your real coin door will probably be pre-wired to some kind of wiring harness or connector, so you'll have to figure out what each connector terminal is wired to.
 An alternative to using the genuine coin door service buttons is to install some extra buttons of your own, probably placed out of sight somewhere (see "hidden buttons").
 
@@ -550,7 +550,7 @@ DOF is the software that handles the feedback devices.
 You won't find any one box on the diagram that represents the Pinscape Controller.
 That's because Pinscape is only one of several possible choices for the functions it performs, and because Pinscape can perform several different functions.
 So the diagram instead shows boxes for the individual functions conceptually.
-If you do decide to use a Pinscape Controller, it can fill any or all of these roles:
+If you do decide to use a Pinscape Controller, it can fill any or all these roles:
 
 * Key encoder
 * Accelerometer

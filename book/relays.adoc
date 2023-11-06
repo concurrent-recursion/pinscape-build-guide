@@ -36,7 +36,7 @@ Also note that it's the relay _coil_ that requires the diode, not the relay _swi
 The coil is the part where the "input" or control signal feeds into the relay.
 
 The Pinscape boards already include the necessary protective diodes for their relays, so you don't have to worry about adding your own separate diode there.
-All of the Sainsmart boards should likewise include pre-installed diodes.
+all the Sainsmart boards should likewise include pre-installed diodes.
 
 == On schematics
 
@@ -50,7 +50,7 @@ This breaks up the relay into its component parts:
 * the little box at the right represents the electromagnet
 * the two clusters at the left represent the mechanical switches (this particular relay has two of them, because it's a "double pole" relay, meaning it has two electrically independent switches operated by the same electromagnet)
 
-You can tell that all of these little sub-symbols are actually part of one physical device from the repeated reference designator: all three parts are labeled "K1".
+You can tell that all these little sub-symbols are actually part of one physical device from the repeated reference designator: all three parts are labeled "K1".
 This convention (of breaking up one part into multiple schematic symbols) is a little subtle, but it's pretty common; it's explained in more detail in "Multi-gang chips" in xref:schematics.adoc#multiGangChips[Schematics] .
 
 The numbers on the connection points indicate the pin numbers on the physical relay.
@@ -74,7 +74,7 @@ image::images/miscRelays2.png[""]
 
 == Orientation
 
-All of the relays I've encountered have asymmetrical pin layouts that make it impossible to plug them in wrong.
+all the relays I've encountered have asymmetrical pin layouts that make it impossible to plug them in wrong.
 That's true of the ones used in the Pinscape boards.
 If it fits into the solder pad holes in the circuit board, you've got it right.
 If it doesn't fit, you've got it backwards, so just rotate it until it fits.

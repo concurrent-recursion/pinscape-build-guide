@@ -144,7 +144,7 @@ A ribbon cable is a flat cable with several conductors side-by-side.
 These are mated with IDC plugs, which is a connector that attaches to a ribbon cable via some little teeth that puncture the insulation and grab the wires.
 It's easy to assemble custom ribbon cables with these connectors, because you just line up the connector on the cable and squeeze the teeth into place.
  Ribbon cables are ideal when you want to connect two like pin headers on different boards.
-You don't have to mess around with a bunch of individual hookup wires, and the connectors are quick and fairly easy to install because they install for all of the conductors at once.
+You don't have to mess around with a bunch of individual hookup wires, and the connectors are quick and fairly easy to install because they install for all the conductors at once.
 This is the right choice for the Pinscape board-to-board data connectors, such as the PWM data connection between the main board and the power board.
  See xref:ribbonCables.adoc#ribbonCables[Ribbon Cables] for details on buying and building these cables.
 

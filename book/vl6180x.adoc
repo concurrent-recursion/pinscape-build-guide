@@ -41,7 +41,7 @@ Here are three options:
 *  link:https://www.adafruit.com/product/3316.html[Adafruit] ($14)
 *  link:https://www.sparkfun.com/products/12785.html[Sparkfun] ($25, also sold at Mouser.com)
 
-All of these options are pretty much equivalent. 
+all these options are pretty much equivalent.
 They all provide easy-to-solder terminals for all connections, and they all have the necessary on-board voltage regulators and level shifters to interface the VL6180X with the KL25Z. 
 Any of these boards can be used directly with the KL25Z hardware and Pinscape software; the only thing you have to do is run a few wires between the KL25Z and the sensor board.
 
@@ -142,7 +142,7 @@ When you mount the board, be sure to mount it with the component side facing the
 
 Here's what the Pololu board looks like. 
 The sensor is the little black box in the middle with two small holes (one hole is the laser emitter, the other is the photosensor). 
-The sensor chip looks the same on all of the boards, but the layout of the terminals and the other parts varies slightly.
+The sensor chip looks the same on all the boards, but the layout of the terminals and the other parts varies slightly.
 
 image::images/VL6180X_board.png[""]
 

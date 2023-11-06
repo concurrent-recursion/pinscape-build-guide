@@ -1,6 +1,6 @@
 = VP Customizations Summary
 
-For your convenience in setting up a new cab, restoring a backup, or restoring settings up after a software update, here we present a quick summary of all of the VP customizations recommended throughout the book.
+For your convenience in setting up a new cab, restoring a backup, or restoring settings up after a software update, here we present a quick summary of all the VP customizations recommended throughout the book.
 You can find more details in the referenced chapters.
 
 == What/where are "VP core scripts"?

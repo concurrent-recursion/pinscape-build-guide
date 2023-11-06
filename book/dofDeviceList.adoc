@@ -8,7 +8,7 @@ The Config Tool lets you make these assignments by telling it the type of device
 The tool has a pre-defined set of standard types, so you just choose the matching type for each device.
 These are all in terms of pinball abstractions, because that's how DOF knows to connect them to events in the game.
 Most of these pinball device types are self-explanatory, but some of them are obscure, and some use virtual pin cab jargon that might not make sense even if you're a long-time pinball fan.
-To help clear up the confusing parts, below you'll find a list of all of the device names that appear in the Config Tool, along with explanations of what they mean and how they're usually implemented in a virtual cab.
+To help clear up the confusing parts, below you'll find a list of all the device names that appear in the Config Tool, along with explanations of what they mean and how they're usually implemented in a virtual cab.
 
 *Start Button:* The lamp inside the Start button on your cab's front panel.
 On most games, this either stays lit the entire time, or lights up or flashes when there are coin credits available to start a new game.
@@ -148,7 +148,7 @@ And we usually arrange them in a simple row of 3 or 5 evenly spaced lights.
 
 image::images/5Flashers.png[""]
 
-Typical "5 Flashers" arrangement: five flasher domes in a row across the back wall of the cabinet above the playfield TV.
+Typical "5 Flashers" arrangement: five flasher domes in a row across the back wall the cabinet above the playfield TV.
 
 The Config Tool's "5 Flashers" devices are designed for cabinets that have a row of five of these lights.
 The Config Tool assumes that your flashers are arranged in a single horizontal row, so it gives you entries for the Outside Left, Left (which really means "Inside Left"), Center, Right (really "Inside Right"), and Outside Right positions.

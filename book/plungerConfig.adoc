@@ -37,7 +37,7 @@ image::images/plunger-reverse-orientation.png[""]
 If the bar doesn't move at all, there's something wrong with the sensor or the wiring to the KL25Z.
 First, go back to the settings page, and double-check that the sensor type and GPIO pin assignments are correct.
 If that all looks good, it must be a problem with the physical wiring.
-Check all of the connections: make sure everything is plugged in where it's supposed to be plugged in, and carefully inspect all of the solder joints and crimp pin connections.
+Check all the connections: make sure everything is plugged in where it's supposed to be plugged in, and carefully inspect all the solder joints and crimp pin connections.
 
 == Calibrating with the Config Tool
 

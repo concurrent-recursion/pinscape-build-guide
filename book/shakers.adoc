@@ -6,7 +6,7 @@ It does what the name suggests: it shakes the cabinet when activated.
 When done properly, the effect is a deep rumble that reverberates through the floor like an earthquake.
 Appropriately, the first arcade pinball that featured a shaker motor (as far as I know) was the earthquake-themed _Earthshaker_ (Williams, 1989).
 
-Stern has enthusiastically embraced shakers in recent years, offering them as optional equipment in nearly all of their titles since 2010.
+Stern has enthusiastically embraced shakers in recent years, offering them as optional equipment in nearly all their titles since 2010.
 Shakers were rare in the arcade before that, appearing only in a few titles where there was some kind of thematic connection, such as _Earthshaker_ (for obvious reasons) and _Red and Ted's Road Show_ (for the demolition theme).
 I think Stern realized that the tactile effect is a lot of fun for its own sake, even when it doesn't particularly tie in to the theme, which is exactly why shakers are popular in virtual cabs.
 You can profitably work it into pretty much any game, even older games that didn't have shakers in their original arcade versions.
@@ -70,7 +70,7 @@ Darkfall's design is easier to build because it doesn't require any metal fabric
 The first shaker I built was based roughly on Darkfall's design, and it works nicely.
 My only criticism is that its method for attaching the weights to the motor shaft is a bit jury-rigged and seems precarious - although, to be fair, the one I built has held together for many years now.
 My own design is an attempt at a more elegant and robust way to attach the weights, while still being easy and inexpensive to build.
-Almost all of the parts required in my plan are common hardware store items, and the only things you have to fabricate yourself are some simple plywood pieces.
+Almost all the parts required in my plan are common hardware store items, and the only things you have to fabricate yourself are some simple plywood pieces.
 
 === Designing your own shaker
 
@@ -90,8 +90,8 @@ The shaft is placed 1/2" from the center of the long dimension (2").
 
 The motor is the hardest part to find when building a DIY shaker unit.
 There are hundreds (maybe thousands) of types of small electric motors available online, but most are unsuitable for one reason or another - they're too big, too small, use too much power, etc.
-It's especially hard to find all of the right properties in a dual-shaft configuration, since there just aren't that many dual-shaft motors available.
-A dual-shaft motor isn't an absolute requirement, but all of the DIY designs call for one, because it's easier on the motor's bearings to divide the weight into two smaller chunks than to have a single large counterweight.
+It's especially hard to find all the right properties in a dual-shaft configuration, since there just aren't that many dual-shaft motors available.
+A dual-shaft motor isn't an absolute requirement, but all the DIY designs call for one, because it's easier on the motor's bearings to divide the weight into two smaller chunks than to have a single large counterweight.
 
 The easiest way to source a suitable motor, by far, is to buy one that's marketed specifically as a replacement motor for a pinball shaker unit.
 Those are more expensive than comparable generic motors from eBay or Aliexpress, but you can be confident that they're suitable for the task, and you won't have to comb through hundreds of listings looking for the right specs.
@@ -262,7 +262,7 @@ The amount of shaking you get out of your motor is a function of the weights, th
 It also depends on factors that aren't related to the motor itself, like where it's mounted in the cabinet, the overall weight of your cabinet, the stiffness of the legs, and the construction of the floor the machine is sitting on.
 The same shaker motor will produce somewhat different effects in different cabinets.
 
-Of all of these factors, there's one that we can easily change: the speed of the motor.
+Of all these factors, there's one that we can easily change: the speed of the motor.
 Once you have everything set up, you can fine-tune the effect by adjusting the motor speed up or down.
 
 There are two ways to control the motor speed: adjusting the voltage of the power supply, and adjusting the power in software via PWM control (Pulse Width Modulation - a method of varying the power level in a digital circuit by rapidly switching the power on and off).

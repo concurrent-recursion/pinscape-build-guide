@@ -118,7 +118,7 @@ image::images/PotExpConnector.png[""]
 
 == Physical installation
 
-I'd recommend getting all of the electrical wiring to the potentiometer in place before installing the pot in the cab, since it'll be hard to access the little contact pins on the pot after installing it.
+I'd recommend getting all the electrical wiring to the potentiometer in place before installing the pot in the cab, since it'll be hard to access the little contact pins on the pot after installing it.
 
 If you're using the ALPS potentiometer recommended in the parts list, you can find 3D printer plans for a mounting apparatus xref:#alpsMountPlans[below] , along with installation instructions.
 
@@ -146,8 +146,8 @@ link:http://mjrnet.org/pinscape/downloads/ALPS_Mounting_v6.zip[ALPS_Mounting_v6.
 
 *Fabricating the parts:* The ZIP file contains five STL files.
 Four of the STL files are the individual pieces that make up the bracket assembly.
-The fifth file, *Combined Parts.stl* , contains all of the other parts joined together into a single contiguous 3D object, using the "model airplane" style where the piece are connected by little plastic struts.
-The combined parts file lets you manufacturer all of the parts in a single printer run.
+The fifth file, *Combined Parts.stl* , contains all the other parts joined together into a single contiguous 3D object, using the "model airplane" style where the piece are connected by little plastic struts.
+The combined parts file lets you manufacturer all the parts in a single printer run.
 
 You only need to print *either* the individual part files *or* the single combined parts file.
 If you're using a commercial 3D print service, I'd recommend using the combined parts file, because many of the online services charge an extra fee for each file you print, so it's cheaper to print the whole batch as a single file.
@@ -256,7 +256,7 @@ image::images/pot-install-11a.png[""]
 image::images/pot-install-11b.png[""]
 
 The last step is to install the bracket at the far end of the potentiometer.
-This bracket attaches between the pot and the side wall of the cabinet.
+This bracket attaches between the pot and the side wall the cabinet.
 Fasten the bracket to the potentiometer with an M3 machine screw.
 Keep it loose for now so that we can fine-tune the positioning before tightening.
 (As before, the screw length should be from 5mm to 8mm long; choose the length that fits best with your parts.)

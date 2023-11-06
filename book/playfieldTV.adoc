@@ -211,7 +211,7 @@ I'm not a big fan of this approach for two reasons.
 First, it weakens the side walls.
 Second, it makes it much more difficult to remove the TV if you want to access the inside of the cabinet for repairs or upgrades.
 I see easy access to the interior as a top priority.
-If you use routed grooves, you'd have to remove either the front wall or the back wall of the cabinet to take out the TV, and to do that you'd have to take off the legs.
+If you use routed grooves, you'd have to remove either the front wall or the back wall the cabinet to take out the TV, and to do that you'd have to take off the legs.
 That's enough to make me rule out this approach if it were my own cab.
 
 A similar alternative is to route out grooves like this all the way to the top of the side walls.
@@ -296,7 +296,7 @@ But an LED TV actually is an LCD TV by a different name.
 In this case, it's an LCD panel with a special type of LED backlight called a QLED or quantum-dot LED.
 Quantum sounds even more cutting-edge than LED, doesn't it?
 
-All of these LCD TV types, whether the manufacturers call them LCD, LED, or QLED, are fundamentally the same backlight-and-shutter design.
+all these LCD TV types, whether the manufacturers call them LCD, LED, or QLED, are fundamentally the same backlight-and-shutter design.
 The fundamental weakness shared by all LCD panels is that the shutters can't turn 100% opaque, so they can't display true blacks, just varying shades of dark gray.
 Some panels are better at this than others, and it's one of the big quality differentiators among LCD models.
 LCD panels also have inherent limits on viewing angle because of the way light has to be funneled through the shutters.
@@ -305,7 +305,7 @@ Again, some models are better at this than others.
 The backlight type does make some difference.
 LED backlights generally produce better color fidelity than fluorescent tubes did, and they use less power and run cooler.
 All of that is great for a pin cab, so if you're considering an LCD TV, I'd definitely give priority to the LED models.
-But you'll hardly have to even think about that since practically all of the TVs in this size use LED backlights.
+But you'll hardly have to even think about that since practically all the TVs in this size use LED backlights.
 QLED backlights supposedly have even better color fidelity than regular LEDs, according to the manufacturer's claims, but I haven't seen any independent testing confirming this.
 
 *OLED:* This is a truly is a different display type, not just a variation on the LCD.
@@ -395,7 +395,7 @@ You don't need a TV with zero input lag, and it's impossible to find such a thin
 
 Human time perception varies according to context, but for video gaming, the main thing that matters is action/reaction timing.An action/reaction sequence is something like this: You push a button.A light appears on screen.Did the light appear exactly when you pushed the button, slightly before, or slightly after?When researchers do this experiment, they find that time gaps of up to about 50ms are perceived as exactly simultaneous.In other words, humans can't tell the difference between truly simultaneous and about a 50ms delay.It's not a matter of how smart you are or how closely you're paying attention; it's simply a fact of human nervous system physiology.Our neurons can only move signals so quickly, and as a result our brains perceive events that are very close together in time as though they were perfectly simultaneous.
 
-This doesn't mean a TV with a 50ms input lag time is automatically good enough.You don't perceive the TV's lag time in isolation, but rather in combination with all of the other sources of latency in the overall system: delays from the key encoder device, the USB connection, the Windows video drivers, the pinball software itself.The latency from these other components varies, but in a well-tuned system it might add up to around 10 to 20ms.So that leaves us with 30 to 40ms to work with for the TV.
+This doesn't mean a TV with a 50ms input lag time is automatically good enough.You don't perceive the TV's lag time in isolation, but rather in combination with all the other sources of latency in the overall system: delays from the key encoder device, the USB connection, the Windows video drivers, the pinball software itself.The latency from these other components varies, but in a well-tuned system it might add up to around 10 to 20ms.So that leaves us with 30 to 40ms to work with for the TV.
 
 ====  What causes input lag?
 
@@ -419,7 +419,7 @@ Definitely stay away from sets with unusually high lag times.
 Some TVs currently on the market have lag times above 100ms, which will be maddeningly obvious during game play.
 
 Even if your TV has great lag time numbers on paper, you'll still need to adjust its menu settings to get the best performance out of it.
-Even the fastest TVs can have bad lag times when all of their picture enhancement modes are enabled, and all of those modes are usually enabled by default when you first take your new TV out of the box.
+Even the fastest TVs can have bad lag times when all their picture enhancement modes are enabled, and all of those modes are usually enabled by default when you first take your new TV out of the box.
 Every TV has its own menu settings that affect lag in different ways, so you might need to do a little Web research or experimentation, but here are a couple of rules of thumb applicable to most TVs:
 
 * Turn on "Game Mode".

@@ -4,7 +4,7 @@
 This section is about physically installing the PC components in your cabinet.
 It's not about building the PC per se - things like how to plug RAM into the motherboard, connect disks, install the graphics card, connect the power supply cables, and so on.
 That sort of thing varies depending on the exact mix of parts you're using, so that's more the domain of the instructions that came with your components.
-What we're going to talk about here is how all of the PC parts fit into the pin cab.
+What we're going to talk about here is how all the PC parts fit into the pin cab.
 
 == Location
 
@@ -121,7 +121,7 @@ An "open-frame" PC case, also sometimes called a motherboard tray, is an interes
 
 An open-frame case is basically just the backbone of a regular PC case, without any enclosure.
 It has the usual mounting apparatus for the motherboard, power supply, disks, and expansion cards, in the usual spatial arrangement.
-Installing all of the parts works just like in a regular case, except that there's no cover to put on when you're done.
+Installing all the parts works just like in a regular case, except that there's no cover to put on when you're done.
 These cases are sold mostly for people doing test builds and experimentation, where they want easy access for frequent component changes.
 
 Pros:
@@ -261,13 +261,13 @@ The only integration work with an external PC is to run the video and USB cables
 You'll probably want to minimize the number of cables, both to reduce visual clutter and to make it easier to connect and disconnect cables when you want to switch the PC between pinball mode and desktop mode.
 
 My first suggestion is to place a USB hub inside the cabinet.
-Connect all of the USB devices in the cab to the hub; all of that wiring will be hidden inside the cab, and you won't need to touch any of it when you connect and disconnect the PC.
+Connect all the USB devices in the cab to the hub; all of that wiring will be hidden inside the cab, and you won't need to touch any of it when you connect and disconnect the PC.
 Then you just need one external USB cable, between the PC and the hub.
 
-My second suggestion is to use Keystone or similar wall plate connectors for the USB cable and all of the video cables.
+My second suggestion is to use Keystone or similar wall plate connectors for the USB cable and all the video cables.
 See "External I/O plugs" xref:#externalIOPlugs[below] for more on this.
-I'd set up all of the external ports on the back wall of the cab.
-That will at least centralize all of the cable connections in one place, which will make it easier to keep the cable bundle neat, and will also make it easier to plug and unplug everything when you move the PC.
+I'd set up all the external ports on the back wall the cab.
+That will at least centralize all the cable connections in one place, which will make it easier to keep the cable bundle neat, and will also make it easier to plug and unplug everything when you move the PC.
 Putting the connectors in the back will keep the rat's nest of cabling as out of view as possible.
 
 [#externalIOPlugs]
@@ -283,9 +283,9 @@ Then you can easily plug the devices into the external jacks at any time, and ju
 This is fairly easy to set up, thanks to connectors you can buy for home theater and office installations, where many people want to put USB connectors and Ethernet cables in wall outlet plates.
 
 For the keyboard and mouse connector, I recommend placing two USB connectors (one for each device) on the floor of the cabinet near the front.
-For the Ethernet connection, I recommend putting a port on the back wall of the cabinet near the power inlet.
+For the Ethernet connection, I recommend putting a port on the back wall the cabinet near the power inlet.
 
-WARNING: Before you install these jacks, you should figure out how all of the internal parts in your cabinet are going to be laid out, so that you're sure the chosen locations for the jacks won't get in the way of anything else.
+WARNING: Before you install these jacks, you should figure out how all the internal parts in your cabinet are going to be laid out, so that you're sure the chosen locations for the jacks won't get in the way of anything else.
 The jacks require cutting holes in the cabinet, so you can't easily move them if the locations end up conflicting with something else.
 
 === USB, keyboard, mouse
@@ -320,7 +320,7 @@ The procedure for the Ethernet connection is the same as for USB ports. Here are
 * Keystone Cat6 (RJ45) female-to-female coupler
 * 4' standard Ethernet Cat6 patch cable
 
-As before, find the location in the cabinet where you'd like to install the port. I recommend putting this connector on the back wall of the cabinet near the power inlet, since it's tidier to keep the Ethernet cable behind the machine rather than having to route it underneath. Repeat the procedure to mark and cut the opening required for the plate. Install and screw in the plate as before, pop in the Ethernet coupler, and connect the short Ethernet cable between the coupler and the motherboard Ethernet jack. Now you can plug an external Ethernet cable between the external cabinet jack and your router or wall plate.
+As before, find the location in the cabinet where you'd like to install the port. I recommend putting this connector on the back wall the cabinet near the power inlet, since it's tidier to keep the Ethernet cable behind the machine rather than having to route it underneath. Repeat the procedure to mark and cut the opening required for the plate. Install and screw in the plate as before, pop in the Ethernet coupler, and connect the short Ethernet cable between the coupler and the motherboard Ethernet jack. Now you can plug an external Ethernet cable between the external cabinet jack and your router or wall plate.
 
 === HDMI
 

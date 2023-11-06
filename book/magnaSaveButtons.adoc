@@ -8,8 +8,8 @@ The extra buttons on those machines activated magnets under the playfield that c
 image::images/MagnaSaveButtonExamples.jpg[title="Examples of extra flipper-type button positioning on real tables.
 Clockwise from top right: *Black Knight* (Williams, 1981), *Special Force* (Bally, 1986), *Nip It* (Bally, 1972), *Jolly Park* (Spinball, 1996)."]
 
-The in-line horizontal placement used in *Black Knight* is the most common, and most people think of it as the standard because Williams used it on all of their later machines, but some people find the extra buttons easier to reach with the vertical or diagonal arrangements.
-Note that all of the machines pictured here use the older, wider style of side rails that required cut-outs for the flipper buttons.
+The in-line horizontal placement used in *Black Knight* is the most common, and most people think of it as the standard because Williams used it on all their later machines, but some people find the extra buttons easier to reach with the vertical or diagonal arrangements.
+Note that all the machines pictured here use the older, wider style of side rails that required cut-outs for the flipper buttons.
 The newer WPC-style side rails are much narrower and don't overlap the flipper button area, so you won't have to cut any holes if you're using modern parts to build your cab.
 
 When I was building my cab, I was torn between, on the one hand, wanting to include the extra buttons for the sake of playability for those tables that need them, and on the other hand, wanting a more authentic look to the machine.
@@ -31,7 +31,7 @@ But I have to admit that I don't have any better ideas for a name; "extra side b
 The other thing I learned was that a rather large number of Visual Pinball tables rely on the nominal MagnaSave buttons to substitute for other, unusual types of special controls that were used in the original tables they're re-creating.
 I didn't realize before how many pinball machines have their own unique extra controls.
 This really shouldn't have surprised me, since pinball designers always want to make their games stand out from the crowd, and novel interactive controls are a good way to do that.
-But if the whole point of these extra controls is to be unique, they present a problem to the virtual cab builder, which is that we can't possibly include physical replicas of all of the novel controls from hundreds of different machines in a single virtual cab.
+But if the whole point of these extra controls is to be unique, they present a problem to the virtual cab builder, which is that we can't possibly include physical replicas of all the novel controls from hundreds of different machines in a single virtual cab.
 There's just not room.
 And so, Visual Pinball table authors have adopted the convention that the MagnaSave buttons should serve as stand-ins when a table has unique controls beyond the standard flipper, Start, and launch buttons.
 This is another point in favor of including MagnaSave buttons on your virtual cab.

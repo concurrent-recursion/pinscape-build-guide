@@ -73,7 +73,7 @@ image::images/PowerSwitchingOverview.png[""]
 Conceptual outline of how the PC can control power to other devices.
 The PC is plugged into an outlet that always receives AC power, allowing it to be switched on and off through the PC's "soft power" button.
 The TVs, audio system, and feedback devices are plugged into a second set of outlets that are controlled by an automatic switching control.
-The automatic control cuts AC power to the secondary outlets whenever the PC is off, forcing all of the other devices to turn off.
+The automatic control cuts AC power to the secondary outlets whenever the PC is off, forcing all the other devices to turn off.
 
 The final piece of the puzzle is how the outlet switch is controlled.
 It's not a "switch" in the sense of a wall switch that you operate manually.
@@ -122,7 +122,7 @@ The only way I know to find out is to test the specific pairing.
 So if you're going to test a smart strip, buy it from a store with a good return policy, in case it doesn't work with your computer.
 
 Another disadvantage of the packaged smart strips is that they usually have a mix of switched and non-switched outlets, which means that they don't have very many switched outlets.
-For example, my APC P7GB only has three switched outlets out of 7 total, which isn't enough for all of the things I need to plug into switched outlets.
+For example, my APC P7GB only has three switched outlets out of 7 total, which isn't enough for all the things I need to plug into switched outlets.
 That's easily solved by plugging a regular dumb power strip into one of the switched outlets to create more switched outlets, but that takes up extra space in the cab, so it would be tidier if the smart strip had more switched outlets built-in.
 
 [#DIYSwitchedOutlets]
@@ -177,7 +177,7 @@ When the PC is ON, the PC power supply sends power to the disk connectors.
 This provides 12V to the relay, which turns the relay on, which in turn connects AC power to the switched power strip.
 When the PC is in one of the "soft off" modes, the PC power supply turns off power to the disk connectors, which cuts the 12V power to the relay.
 This switches the relay off, which cuts AC power to the switched power strip.
-This is equivalent to unplugging everything connected to the switched power strip, so all of the TVs and other devices will turn off.
+This is equivalent to unplugging everything connected to the switched power strip, so all the TVs and other devices will turn off.
 
 Most of the connections shown are just a matter of plugging in power cords: plug the PC power supply into the unswitched outlet, plug the TVs and other devices into the switched outlet.
 But there are three DIY steps required:

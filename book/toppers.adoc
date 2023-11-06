@@ -77,7 +77,7 @@ Photo courtesy of Heinz-Peter Bader
 
 It's interesting to compare this design to the various after-market commercial toppers for _Funhouse_ that the "mods" companies sell. 
 The bulb topper works so well because it's perfectly in scale and it captures the carnival atmosphere of the theme, plus it's a natural extension of the backglass artwork (which is already festooned with little marquee bulbs) into the space above. 
-In contrast, all of the commercial topper I've seen for _Funhouse_ just reiterate something from the artwork, without feeling like part of it: a giant "Admit One" ticket, a cut-out of Rudy. 
+In contrast, all the commercial topper I've seen for _Funhouse_ just reiterate something from the artwork, without feeling like part of it: a giant "Admit One" ticket, a cut-out of Rudy.
 They do nothing to merge with the backglass art.
 
 == Virtual cab toppers
@@ -90,7 +90,7 @@ There's a fairly standard set of feedback devices that most cab builders incorpo
 *  xref:flashers.adoc#flashersAndStrobes[Flashers]
 *  xref:flashers.adoc#strobes[Strobes]
 
-Most cabs have at least one of these, and many use all of them. 
+Most cabs have at least one of these, and many use all them.
 They're all great additions functionally. 
 Beacons, flashers, and strobes all make nice light shows, and a fan adds a wonderful tactile element that movie theaters would market as a "4D experience" with a $10 ticket surcharge.
 
@@ -196,7 +196,7 @@ The method I used to mount the LEDs in the fan enclosure is inelegant and a litt
 I started by soldering hookup wire to the LEDs, with just enough wire between adjacent LEDs to reach from one hole to the next. 
 The LEDs are wired *in series* , meaning that the "+" side of one LED connects to the "-" side of the next LED, and so on down the chain. 
 There are no resistors in this chain - just the wires and the LEDs. 
-Once all of the wiring was soldered, I arranged all of the LEDs into the desired locations, poking out through the star-burst holes. 
+Once all the wiring was soldered, I arranged all the LEDs into the desired locations, poking out through the star-burst holes.
 This is the part that requires dexterity and patience.
 
 And now for the part that's truly inelegant. 
@@ -212,7 +212,7 @@ Controlling the 3W perimeter LEDs is almost a whole separate project.
 There are two main parts:
 
 * The first is the power supply for the 3W LEDs. 
-Wiring LEDs in series means that you need to supply them with a voltage that's higher than the *sum* of the V~F~ ("forward voltage") values for all of the LEDs. 
+Wiring LEDs in series means that you need to supply them with a voltage that's higher than the *sum* of the V~F~ ("forward voltage") values for all the LEDs.
 For 9 of the 3W RGB LEDs, this works out to about 33V. 
 So I used a DC-to-DC step-up buck converter to convert power from a 12V supply to 33V. 
 (You can find such step-up converters on eBay; they run about $10 for the size needed here.)

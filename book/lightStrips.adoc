@@ -18,8 +18,8 @@ These combine red, green, and blue lighting elements that can be controlled inde
 That lets DOF show different color effects for each game, and optionally change the colors in sync with the game action during play.
 
 There are two rather different kinds of the RGB strips that look very similar on the surface, but serve different functions: the standard "dumb" type, and the "addressable" type.
-The standard type lets you set all of the lights on the strip to the same color.
-You can set them to any color, but all of the LEDs will show that same color.
+The standard type lets you set all the lights on the strip to the same color.
+You can set them to any color, but all the LEDs will show that same color.
 The addressable kind lets you set each individual LED on the strip to its own separate color.
 
 For undercab lighting, most people use the standard type, because the goal is simply to create a diffuse pool of light.
@@ -76,7 +76,7 @@ These aren't necessary if you're using a Pinscape power board to control the str
 You can find amplifiers built specifically to work with these strips on eBay, by searching for "LED amplifier".
 Look for the "mini" amplifier like those shown at right.
 Don't buy a "remote control" or color changer device - those can look quite similar, but they'll have buttons to change modes.
-You just want a plain amplifier, since DOF is going to do all of the color control.
+You just want a plain amplifier, since DOF is going to do all the color control.
 
 To determine the amount of current the strip will draw, check the specs on the product you bought to determine the Amps per meter it uses, and multiply that by the combined length of your undercab strip(s).
 The typical power spec is 1.2A per meter per color channel (1.2A per meter for the Red channel, and the same for Green and Blue).
@@ -97,7 +97,7 @@ A couple of vertical strips, one at each edge, should work nicely there.
 The first step is to measure out the length you need for each run, and cut the strip into the required lengths.
 
 You can cut the strip only at certain points, where the copper pads are exposed.
-On all of the strips I've seen, the cut points are spaced about 2 inches apart, every 3 LEDs.
+On all the strips I've seen, the cut points are spaced about 2 inches apart, every 3 LEDs.
 There should be a line marked on the strip down the middle of the copper pads.
 Use a pair of scissors to cut right down the center line.
 

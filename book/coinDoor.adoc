@@ -48,7 +48,7 @@ Here are the top options currently available commercially:
 
 * Williams/Bally WPC-era coin door, Williams part numbers 09-17002-26, 09-23002-1, 09-37001, 09-46000, 09-61000-1, 09-61000-1, and 90-96017.
 These typically come fully assembled, with the lock and key, slam tilt switch, brackets for two coin mechanisms, coin chute lamps, coin switches, and service buttons.
-All of the electronics are pre-wired to a 13-pin connector.
+all the electronics are pre-wired to a 13-pin connector.
 The only parts not included are the coin mechs (the little Rube Goldberg devices that check inserted coins to make sure they're real).
 You can buy those for about $10 apiece and pop them into the chutes if you want to be able to use real coins.
 
@@ -63,7 +63,7 @@ WPC coin door (with my custom Pinscape coin slot inserts!)
 * SuzoHapp universal coin door, manufacturer part number 40-0696-30.
 This is a third-party replacement part compatible with OEM parts for almost any machine from the mid 1980s or later.
 It's also the factory-installed part on some of the newer Stern and Jersey Jack machines.
-This one comes with all of the coin slot hardware installed, including the coin mechs (for quarters), but it doesn't have any pre-installed wiring and doesn't include service buttons.
+This one comes with all the coin slot hardware installed, including the coin mechs (for quarters), but it doesn't have any pre-installed wiring and doesn't include service buttons.
 
 This is my top pick for the DIYer.
 It's about 40% cheaper than the pre-assembled Williams door above, and it's functionally equivalent after you add the service buttons.
@@ -95,7 +95,7 @@ The SPIKE version is actually the same equipment as the SuzoHapp option above, b
 These come bare-bones, with nothing installed except for the key and the basic coin slot brackets (no coin mechs).
 As a result, they're cheap.
 They're a good budget option if you only want the facade of a door (without all the functional bits) for cosmetics.
-I wouldn't recommend this if you _do_ want all of the functional elements, though: you probably won't save any money after adding all of the parts it's missing compared to the turn-key options above, and it'll be a lot of hassle to source the parts and assemble everything.
+I wouldn't recommend this if you _do_ want all the functional elements, though: you probably won't save any money after adding all the parts it's missing compared to the turn-key options above, and it'll be a lot of hassle to source the parts and assemble everything.
 * Smaller video game coin doors.
 If you're building a mini-cab, the regular pinball coin door might be too large.
 There's a narrower type of door commonly used in video games.
@@ -335,7 +335,7 @@ Fasten screw "B" (on the left side) next. That's one of the two middle-size scre
 
 For screw "A" (at the top), remember that this also attaches the lamp bracket. Use the smallest screw in this slot. Insert the lamp back into hole in the back of the button bracket, and fasten screw "A" though the lamp bracket.
 
-Similarly, screw "D" (on the right side) attaches a wire clip, so put the wire clip back in place (hopefully with all of the wiring still threaded through) and fasten the screw through the clip. Screw "D" is one of the middle-size screws.
+Similarly, screw "D" (on the right side) attaches a wire clip, so put the wire clip back in place (hopefully with all the wiring still threaded through) and fasten the screw through the clip. Screw "D" is one of the middle-size screws.
 
 Now you just have to repeat the whole thing for the second coin chute. If it's any consolation, it should be easier the second time through, now that you've had some practice.
 
@@ -365,9 +365,9 @@ To put the button back into the door, just reverse the removal process. Put the 
 
 == The coin door wiring harness
 
-If you buy one of the pre-built and pre-wired coin doors, it will come with a connector plug, known in the jargon as a "wiring harness", with pins for all of the electrical connections inside the door. If you want to take full advantage of the functional components in the door, you'll have to connect the pins in the wiring harness to other points in your cab:
+If you buy one of the pre-built and pre-wired coin doors, it will come with a connector plug, known in the jargon as a "wiring harness", with pins for all the electrical connections inside the door. If you want to take full advantage of the functional components in the door, you'll have to connect the pins in the wiring harness to other points in your cab:
 
-* Connect the switches and buttons to your key encoder. This includes the operator buttons, the coin chute switches, and the slam tilt switch, if present. All of these connect to the key encoder following the same pattern as other cabinet buttons, as explained in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] .
+* Connect the switches and buttons to your key encoder. This includes the operator buttons, the coin chute switches, and the slam tilt switch, if present. all these connect to the key encoder following the same pattern as other cabinet buttons, as explained in xref:cabButtonWiring.adoc#buttonWiring[Button Wiring] .
 * Connect the lamps at the top of the coin chutes to power, to make them light up when the machine is on. You can optionally connect them to your output controller to make them light up under software control; if you want to go that route, connect them just like any other feedback device, as explained in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] . In my opinion, there's no good reason to go to that kind of trouble; I'd just hard-wire them directly to power. That's exactly what the real machines do, so there's no "realism" gained from controlling these through software.
 
 The wiring harness connectors on the pre-built doors are standard parts, which means that you can buy mating connectors from an electronics vendor like Mouser. I'd recommend doing exactly that: I like using modular plug-in connectors wherever possible, because it makes the wiring neater, and it makes maintenance easier if you ever have to remove anything.
@@ -407,7 +407,7 @@ Read on for the details on how to implement each option.
 
 ====  Custom circuit board for Williams 13-pin plug
 
-On the original Williams machines, the 13-pin connector plugged into the mating header on a small circuit board mounted on the left inside wall of the cabinet. This circuit board in turn had other connectors that led back to the CPU board (for the switch terminals) and the power connections (for the coin chute lamps).
+On the original Williams machines, the 13-pin connector plugged into the mating header on a small circuit board mounted on the left inside wall the cabinet. This circuit board in turn had other connectors that led back to the CPU board (for the switch terminals) and the power connections (for the coin chute lamps).
 
 You can create a simple circuit board for this, using the 13-pin header linked above. For your convenience, I've drawn up EAGLE plans for a board that includes the pin header and breaks out the connections for easy wiring to other points in your cab. You can have this board made by link:https://www.oshpark.com/[OSH Park] for under $10. Simply upload the EAGLE plans to their site and they'll make 3 copies of it for you.
 
@@ -505,9 +505,9 @@ The service buttons are just like any other cabinet buttons, so wire one termina
 
 The coin chute switches and slam tilt switch all act just like buttons, so wire them the same way.
 
-All of the pre-wired door types provide wiring that's compatible with the general key encoder wiring plan. They all use a Common wire that's daisy chained to the various buttons; this corresponds exactly to the Common terminal on your key encoder, so simply connect the two.
+all the pre-wired door types provide wiring that's compatible with the general key encoder wiring plan. They all use a Common wire that's daisy chained to the various buttons; this corresponds exactly to the Common terminal on your key encoder, so simply connect the two.
 
-*What about multiple Common wires on the coin doors?* Some of the pre-wired doors provide multiple Common wires for different groups of buttons. You can just connect all of the Common wires together if there are more than one. The doors that use multiple Common wires do so for compatibility with the more complex "matrix" wiring used in real machines from the 1980s and 1990s, where switches were grouped into blocks that had separate commons. The key encoders we use in virtual cabs have more modern electronics that allow a simpler scheme, with a single common across all buttons.
+*What about multiple Common wires on the coin doors?* Some of the pre-wired doors provide multiple Common wires for different groups of buttons. You can just connect all the Common wires together if there are more than one. The doors that use multiple Common wires do so for compatibility with the more complex "matrix" wiring used in real machines from the 1980s and 1990s, where switches were grouped into blocks that had separate commons. The key encoders we use in virtual cabs have more modern electronics that allow a simpler scheme, with a single common across all buttons.
 
 image::images/CoinDoorWiring.png[""]
 
@@ -629,7 +629,7 @@ Many cab builders these days prefer to minimize the number of visible buttons on
 
 *Coin door lock:* If you're using an entirely fake coin door, it'll probably have a fake lock tumbler, to simulate the appearance of the real doors. If that's removable or made of flexible plastic, you could position a microswitch behind it and use it as a button.
 
-*Dollar bill acceptor plate:* All of the modern coin doors for the US market (including the WPC, Stern, and SuzoHapp models) include removable rectangular plates where you can install a dollar bill acceptor mechanism. The space behind these plates on the inside of the door is always left open, to leave room for the bill reader, for operators who install them. I've never heard of anyone installing a dollar bill reader in a home-use pin cab, so this space usually goes unused. You could either drill one or more holes in the plate and install pushbuttons, or replace the plate with your own button panel. This isn't really hidden the way the other ideas above are, but you can at least make it inconspicuous by using low-profile black pushbuttons. Alternatively, with a little improvisation, you could make the cover plate itself into a button by attaching a hinge on one side and placing a switch behind the plate.
+*Dollar bill acceptor plate:* all the modern coin doors for the US market (including the WPC, Stern, and SuzoHapp models) include removable rectangular plates where you can install a dollar bill acceptor mechanism. The space behind these plates on the inside of the door is always left open, to leave room for the bill reader, for operators who install them. I've never heard of anyone installing a dollar bill reader in a home-use pin cab, so this space usually goes unused. You could either drill one or more holes in the plate and install pushbuttons, or replace the plate with your own button panel. This isn't really hidden the way the other ideas above are, but you can at least make it inconspicuous by using low-profile black pushbuttons. Alternatively, with a little improvisation, you could make the cover plate itself into a button by attaching a hinge on one side and placing a switch behind the plate.
 
 [#customServicePanel]
 == Adding an extra service panel
@@ -714,7 +714,7 @@ Start by installing the switch in bracket, as shown at right. The rotation of th
 
 Close and lock the coin door. Position the switch so that the plunger is pressed against the actuator plate on the coin door, and pressed down most of the way so that the switch is in the "on" position. It doesn't have to be pressed in 100%, but it should be pressed in most of the way, to ensure that the actuator will reliably engage the switch every time you close the door.
 
-Once you have a good position mapped out, hold the plate in place while you mark the locations of the screw holes on the front wall of the cab.
+Once you have a good position mapped out, hold the plate in place while you mark the locations of the screw holes on the front wall the cab.
 
 Remove the switch assembly and drill some small pilot holes at the screw locations you marked. (Be sure not to drill more than 1/2" deep so that you don't drill through the front face!) I recommend using 1/2" #6 wood screws for this (and most other things that you need to attach to the inside cabinet walls). Remove the switch from the plate, and screw the plate securely to the wall using your pilot holes as a guide.
 

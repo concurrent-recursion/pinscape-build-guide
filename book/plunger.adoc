@@ -12,7 +12,7 @@ Happily for us cab builders, such specialized hardware exists.
 There are a couple of commercial options available, and the Pinscape software offers multiple sensor options that you can build yourself.
 
 In this chapter, we'll look at the plunger hardware options available, and some of the issues involved in planning and installing them.
-The good news is that there are lots of good options if you want a plunger, but all of them require some planning work.
+The good news is that there are lots of good options if you want a plunger, but all them require some planning work.
 
 == Plunger or Launch button?
 
@@ -41,14 +41,14 @@ I don't personally like the appearance of that; it always looks to me like the p
 If part of your motivation for installing a plunger is a more realistic look, this works against that purpose.
 Aesthetics aside, though, there are some pragmatic advantages to the inverted arrangement.
 One is that it's arguably more ergonomic: the plunger-on-top arrangement makes the Launch Ball button a little inconvenient to reach, since the plunger sticks out enough to be in the way.
-The other is that it gets the plunger out of the plane of the TV, which makes it possible to position the TV all the way forward against the front wall of the cab.
+The other is that it gets the plunger out of the plane of the TV, which makes it possible to position the TV all the way forward against the front wall the cab.
 If you were going to move the plunger down from its normal spot anyway to accommodate a TV, this arrangement can at least get some extra mileage out of that.
 
 === Option 2: Launch button only
 
 image::images/MedMadLaunchButton.jpg[""]
 Some pin cab builders choose to forego a plunger entirely and just use a Launch Ball button.
-This is a perfectly viable option functionally, because all of the PC pinball programs let you operate the on-screen plunger via the keyboard.
+This is a perfectly viable option functionally, because all the PC pinball programs let you operate the on-screen plunger via the keyboard.
 And it doesn't make your machine look unrealistic, since a number of popular real arcade pinball machines also used button launchers.
 
 If you're accustomed to playing pinball on your desktop PC, you already know how button-based plunging works.
@@ -128,7 +128,7 @@ To be conservative, though, my estimates assume that you're using the recommende
 
 Also note that the Pinscape options all require a KL25Z microcontroller board to run the Pinscape software.
 I didn't include the price of the KL25Z in the price estimates, since I'm assuming that you're already pricing that into your system for its other features.
-A single KL25Z can handle the plunger along with all of the other Pinscape functions, so you just need the one.
+A single KL25Z can handle the plunger along with all the other Pinscape functions, so you just need the one.
 If you _weren't_ already planning to include a KL25Z in your system anyway, you should add $15 for the KL25Z to the price estimates for the Pinscape plunger options.
 
 [cols="1,1,1,1,1,1"]
@@ -203,7 +203,7 @@ Very Good (<1mm)
 
 ("Not tested" means that I don't have any hands-on experience with that device, so I can't say how well it works compared to the options that I've tried in person.)
 
-*Top picks:* I've tried to provide all of the details to let you make a fully informed decision yourself, but if you want my summary opinion, here are my top picks according to what you consider the most important priority:
+*Top picks:* I've tried to provide all the details to let you make a fully informed decision yourself, but if you want my summary opinion, here are my top picks according to what you consider the most important priority:
 
 * If you want it super easy: the Zeb's Boards kit
 * If you want it super cheap: Pinscape with potentiometer or VCNL4010
@@ -236,14 +236,14 @@ But the cost of keeping things simple is that they don't offer much configurabil
 And of course the software is proprietary, so there's no way to add features or fix bugs yourself; you have to rely on the vendors for bug fixes and feature upgrades.
 
 *Pinscape options:* Pinscape is a semi-DIY option.
-"Semi" in that you have to buy all the parts and do all of the physical setup work yourself, but you don't have to figure everything out from scratch, and you don't have to write any of the software.
+"Semi" in that you have to buy all the parts and do all the physical setup work yourself, but you don't have to figure everything out from scratch, and you don't have to write any of the software.
 This build guide has plans that you can follow for a number of plunger sensor options, including parts lists and assembly instructions, so while it's not as easy as ordering a finished product and plugging it in, it's also not a research project.
-And of course all of the software is already written.
+And of course all the software is already written.
 If a research project is what you're looking for, though, this can be a good starting point.
 It's all open-source, so you're free to modify the sensor designs and software if there are things about them you want to improve.
 
-All of the Pinscape options naturally require the Pinscape software running on a KL25Z, so you should factor the cost of the KL25Z (about $15) into the overall price if you weren't already planning on a Pinscape device anyway.
-(If you were, you won't need a separate KL25Z for the plunger - a single KL25Z can handle all of the Pinscape functions simultaneously.)
+all the Pinscape options naturally require the Pinscape software running on a KL25Z, so you should factor the cost of the KL25Z (about $15) into the overall price if you weren't already planning on a Pinscape device anyway.
+(If you were, you won't need a separate KL25Z for the plunger - a single KL25Z can handle all the Pinscape functions simultaneously.)
 
 The Pinscape software has built-in support for the following sensor types:
 
@@ -345,7 +345,7 @@ It also looks like the electronics to interface one to a microcontroller are pre
 [#positioningThePlunger]
 == Positioning the plunger
 
-Before you start drilling holes for your plunger, you should carefully consider all of the other things that have to fit into the same area, to be sure you don't have any conflicts when you start installing things.
+Before you start drilling holes for your plunger, you should carefully consider all the other things that have to fit into the same area, to be sure you don't have any conflicts when you start installing things.
 
 A standard plunger sticks into the cabinet by about 5¾" from the inside of the front wall.
 It occupies the area out to a minimum of about 1⅝" from the inside right wall for the plunger rod itself, but your plunger sensor might require extra clearance on top of that.
@@ -366,7 +366,7 @@ If you don't want to leave a gap, you'll have to move the plunger down far enoug
 
 See also "The dreaded plunger space conflict" in xref:playfieldMounting.adoc#plungerTVSpaceConfict[Playfield TV Mounting] .
 
-* The right wall of the cabinet.
+* The right wall the cabinet.
 This constrains how far to the right the plunger can go.
 The standard plunger position, shown in the drilling template below, is positioned about as far to the right as it can possibly go, due to the bolts on the housing.
 Don't try to move it further right.
@@ -462,5 +462,5 @@ Assemble the parts in the order shown in the diagram above:
 
 The plunger is designed to be fully assembled before you install it, so start by assembling the parts as described above.
 
-Insert the housing into the drilled opening in your front panel, from the outside. Fit the plunger mounting plate over the screw holes in the assembly on the inside wall of the cabinet. Fasten with three #10-32 x ⅝ machine screws. Make the screws fairly tight, since the plunger is subject to a lot of mechanical force when you use it (but don't overdo it - you don't want to strip the threads in the housing).
+Insert the housing into the drilled opening in your front panel, from the outside. Fit the plunger mounting plate over the screw holes in the assembly on the inside wall the cabinet. Fasten with three #10-32 x ⅝ machine screws. Make the screws fairly tight, since the plunger is subject to a lot of mechanical force when you use it (but don't overdo it - you don't want to strip the threads in the housing).
 

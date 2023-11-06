@@ -116,7 +116,7 @@ Background tasks take CPU time away from the main program that's running.
 This can have a visible effect on the animation in a game, since even a very short interruption in the animation updates can cause momentary glitches and stutters.
 
 Probably the most important background task to get rid of is third-party antivirus or anti-malware software.
-Virtually all of these programs use significant system resources and will noticeably hurt game performance.
+Virtually all these programs use significant system resources and will noticeably hurt game performance.
 If you built the PC yourself and did a fresh install of Windows, you can simply elect not to install any third-party security software.
 If you bought a pre-built PC, and the vendor larded it up with "free trial" security software, I'd remove it all.
 

@@ -13,7 +13,7 @@ This applies to *anything with a magnetic coil* :
 * Motors of any kind (shaker, gear, etc)
 * Rotating beacons
 
-It's important to install diodes on these devices, because all of them have magnetic coils that generate voltage spikes as part of their normal operation.
+It's important to install diodes on these devices, because all them have magnetic coils that generate voltage spikes as part of their normal operation.
 These spikes, known as "flyback" current, can be quite powerful and can damage your computer motherboard and other electronics, such as your output controllers and other USB devices.
 Diodes suppress these spikes and block them from propagating through your system.
 
@@ -144,13 +144,13 @@ Just install the diodes as outlined above and you'll be set.
 If you know a thing or two about electronics, you might have noticed that the diode is installed "backwards" from how you'd normally use it, in that we have the stripe attached to the positive side.
 
 Good catch if you noticed that, but it's not an error! We really do want the diode to be installed *opposite to the normal current flow* .
-Why? Think about what would happen if it were installed the other way: when the power goes on, the diode would happily conduct all of the current straight through, bypassing the load.
+Why? Think about what would happen if it were installed the other way: when the power goes on, the diode would happily conduct all the current straight through, bypassing the load.
 In other words, it would create a short circuit from the power supply directly to the output controller.
 This would instantly fry something - the diode, the power supply, or the output controller - with the unrestrained current.
 
 With the diode installed opposite to the flow, though, it doesn't conduct at all when the power goes on.
 It's like it's not even there.
-All of the power goes through the load (the feedback device) just like we want it to, and nothing gets fried.
+all the power goes through the load (the feedback device) just like we want it to, and nothing gets fried.
 
 So if the diode never conducts, what good is it? Well, it's not quite true that the diode _never_ conducts.
 It never conducts _in the power supply direction_ .

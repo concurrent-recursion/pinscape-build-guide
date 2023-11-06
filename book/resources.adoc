@@ -44,7 +44,7 @@ It's a good bet that you can connect there with collectors who own the table you
 
 *  link:https://virtuapin.net/[VirtuaPin] sells everything from individual replacement parts to complete, fully assembled, fully operational virtual pinball machines.
 They have an especially good selection of parts and kits for DIYers.
-Notably, they sell "flat pack" cabinet kits, with all of the wood for a cab pre-cut, routed, mitered, and ready to assemble: kind of like an Ikea bookshelf without the ümlauts.
+Notably, they sell "flat pack" cabinet kits, with all the wood for a cab pre-cut, routed, mitered, and ready to assemble: kind of like an Ikea bookshelf without the ümlauts.
 They also offer fully assembled (empty) cabinets.
 They use quality materials and computer-controlled cutting, and let you customize the standard plans if you have something unusual in mind (e.g., non-standard dimensions to fit a specific monitor).
 Their standard cab kits are faithful replicas of the Williams/Bally 1990s cabinet design, which in my opinion is the gold standard.
@@ -85,7 +85,7 @@ I've ordered from them several times (both for my real machines and my virtual c
 PBL's catalog is a good middle ground between VirtuaPin's very targeted selection and Marco's almost too-big catalog.
 *  link:https://www.marcospecialties.com/[Marco Specialties] is another pinball parts supplier.
 I've ordered from Marco a few times and recommend them.
-They have by far the biggest catalog of all of the suppliers I've encountered.
+They have by far the biggest catalog of all the suppliers I've encountered.
 So big that it's almost too big! It's so big that it can be difficult to find what you're looking for.
 But by the same token, if you need something obscure, this is often the only place to find it.
 Tip: if a search on the Marco site turns up so many hits that your eyes are glazing over scrolling through the results, try a Google search for *Marco Specialties* plus what you're looking for.
@@ -180,7 +180,7 @@ And they're in the US, so if you're also in the US, turnaround tends to be quick
 The only snag is that the per-square-inch pricing gets really expensive for larger boards.
 *  link:https://www.elecrow.com/[elecrow.com] is a Chinese company that makes custom circuit boards in small batches (lots of 5 to 10 pieces) at bargain prices.
 Look under "Services" and "PCB Prototyping" in their category list.
-I've been using them for group orders of the Pinscape Expansion Boards, and all of the batches have turned out well.
+I've been using them for group orders of the Pinscape Expansion Boards, and all the batches have turned out well.
 The downside, if you're not in China, is that the international shipping is expensive - more expensive than the manufacturing cost in most cases.
 But the boards are cheap enough that the overall price usually comes out to only about $2 to $3 per board when ordering minimum lot sizes.
 Like most PCB makers, Elecrow requires you to generate "Gerber" files (a special file format for manufacturing use) rather than uploading the EAGLE design files directly.
@@ -227,6 +227,6 @@ In case you're wondering about some obvious omissions in the list above, the fol
 
 == Pinball table information
 
-*  link:https://www.ipdb.org/[IPDB] (the Internet Pinball Database) has detailed information on, and photos of, nearly all of the commercial pinball machines ever made.
+*  link:https://www.ipdb.org/[IPDB] (the Internet Pinball Database) has detailed information on, and photos of, nearly all the commercial pinball machines ever made.
 *  link:https://www.vpforums.org/[vpforums] has a collection of resources useful for creating new virtual pinball tables, such as playfield graphics, sound effect recordings, and 3D models of playfield parts. Click "Design Resources" in the top navigation bar for links to the various collections.
 

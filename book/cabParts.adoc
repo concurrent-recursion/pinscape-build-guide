@@ -124,7 +124,7 @@ Some T-nuts have prongs that let you pound them into like a nail to secure them,
 
 === SEMS screws and lock nuts
 
-Almost all of the machine-screw fasteners in a commercial pinball machines are special vibration-resistant variations of the basic types.
+Almost all the machine-screw fasteners in a commercial pinball machines are special vibration-resistant variations of the basic types.
 It's easy to understand why, given the amount of mechanical action in a physical pinball game.
 I think it's worth using these parts in a virtual cabinet, too, especially if you're including tactile feedback devices.
 It's annoying to have to keep re-tightening screws that shake loose over time, and parts that work themselves free can cause damage.
@@ -150,7 +150,7 @@ The WPC cabinets were basically all the same - Williams came up with a good desi
 But there was one significant variation to be aware of: a number of titles, marketed as the "Superpin" games, had extra-wide bodies for the main cabinet, allowing a wider-than-normal playfield.
 All of extra-wide titles came in the same extra-wide size, so even taking these into account, there are still only two widths we need to concern ourselves with: the standard machines and the widebody machines.
 What's more, the only thing that's different about the widebody machines is the width of the main cabinet; the other dimensions (including the backbox dimensions) and all design elements are identical between the regular and widebody machines.
-As a result, the widebodies share all of the same hardware with the standard machines except for the main front-top metal trim piece, known as the lockdown bar, and of course the glass cover.
+As a result, the widebodies share all the same hardware with the standard machines except for the main front-top metal trim piece, known as the lockdown bar, and of course the glass cover.
 
 If you go back further in time, before the 1990s, the cabinets become increasingly different from WPC machines.
 You should be aware of this when you go shopping, particularly if you shop on eBay for used parts.
@@ -222,7 +222,7 @@ If you don't mind doing the extra planning and shopping, I'd skip this kit and b
 
 Most of the exterior metal trim - legs, side rails, lockdown bar - is available in multiple finishes.
 The "standard" finishes are chrome for the legs, brushed stainless steel for the lock bar and side rails, and black powder-coat for the coin door.
-With some extra work, you can get all of these parts in other finishes, such as brass, gold, or just about any powder-coat color.
+With some extra work, you can get all these parts in other finishes, such as brass, gold, or just about any powder-coat color.
 
 The big vendors mostly just offer the standard finishes, but Marco Specialties often has a few alternatives available to match recent Stern titles.
 Stern typically releases a Limited Edition version of each new title, with upgraded trim, usually in a powder-coat color that complements the cabinet art.
@@ -305,7 +305,7 @@ Cabinet wood shell
 |Item|Description|Quantity
 
 |Hardwood plywood, ¾", 4'x8' sheet
-|If you're doing your own woodworking from scratch, I recommend using a furniture-quality hardwood plywood for all of the cabinet pieces.
+|If you're doing your own woodworking from scratch, I recommend using a furniture-quality hardwood plywood for all the cabinet pieces.
 This is what they used on the real machines.
 The ¾" thickness is important for making the accessories fit properly.
 Some people use particle board or melamine, which are cheaper, but I prefer plywood.
@@ -316,7 +316,7 @@ See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for 
 |1 or 2
 
 |Plywood, ½", 4'x8' sheet
-|The cabinet floor and the back wall of the backbox are typically made from 1/2" material.
+|The cabinet floor and the back wall the backbox are typically made from 1/2" material.
 Most commercial machines use particle board for these parts, since they're not cosmetic.
 I prefer plywood since it's stronger and lighter.
 |1
@@ -324,7 +324,7 @@ I prefer plywood since it's stronger and lighter.
 |Flat pack kit
 |As an alternative to raw lumber, you can buy a pre-cut flat pack kit.
 VirtuaPin and others sell these.
-A flat pack has all of the cabinet pieces cut to size and ready to assemble.
+A flat pack has all the cabinet pieces cut to size and ready to assemble.
 |1
 |===
 
@@ -444,7 +444,7 @@ NOTE: another 6 are needed for backbox
 |1
 
 |Cashbox nest bracket
-|Optional; recommended for use with a standard cashbox. Attaches to the inside front wall of the cabinet just under the coin door to keep the cashbox from sliding around. Williams part #01-6389-01.
+|Optional; recommended for use with a standard cashbox. Attaches to the inside front wall the cabinet just under the coin door to keep the cashbox from sliding around. Williams part #01-6389-01.
 |1
 
 |Cashbox lock bracket
@@ -804,7 +804,7 @@ For a virtual pin cab, it's best to use low-voltage leaf switches with *gold-pla
 |Flipper button leaf switch holders
 |Optional. VirtuaPin sells their leaf switches with plastic holders that fit over the buttons and are held in place with Palnuts (below). This makes the switch positioning and installation dead simple, but be aware that these only work with the long (1⅜") buttons. If you're using the more common 1⅛" buttons, these won't fit. The holders might also conflict with lighting devices for the buttons, such as the LiteMite boards (below).
 
-If you can't use the holders, it's still fairly easy to install the leaf switches, by attaching them directly to the wall of the cabinet. So you definitely don't _need_ the holders. But they're convenient if you're using compatible buttons.
+If you can't use the holders, it's still fairly easy to install the leaf switches, by attaching them directly to the wall the cabinet. So you definitely don't _need_ the holders. But they're convenient if you're using compatible buttons.
 |2-4 #VP Button Kit#
 
 |Palnuts
@@ -955,7 +955,7 @@ a|Most output controllers can only handle devices with low power, such as LEDs. 
 |2
 
 |Slingshot feedback simulators
-|Another tactile "thunk" effect generator. This is the same sort of effect as the flippers or bumpers, so most people use the same types of devices for all of these, but some like to vary the devices to get different effects.
+|Another tactile "thunk" effect generator. This is the same sort of effect as the flippers or bumpers, so most people use the same types of devices for all these, but some like to vary the devices to get different effects.
 |2
 
 |Bumper feedback simulators

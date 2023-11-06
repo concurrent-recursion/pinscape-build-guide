@@ -12,7 +12,7 @@ If anything isn't working properly, the next chapter, xref:expanDebug.adoc#expan
 Before plugging anything into the expansion boards, you should make sure that your Pinscape firmware is installed, and that you've configured it for the expansion boards.
 Some of the GPIO pin assignments are different between the standalone configuration and the expansion board configuration, so things won't work properly if you don't set the right system type.
 
-You can do all of the initial software setup and configuration with the KL25Z on its own, not plugged into the expansion boards.
+You can do all the initial software setup and configuration with the KL25Z on its own, not plugged into the expansion boards.
 
 For initial firmware installation, see xref:kl25zSoftwareSetup.adoc#kl25zSoftwareSetup[KL25Z Software Setup] .
 
@@ -39,7 +39,7 @@ See "Overriding the soft power circuit" in xref:powerSupplies.adoc#ATXOverrideSo
 For testing purposes, it's okay to just use a single ATX power supply.
 As we've said before, it's best to use two separate ATX supplies for your full cab setup - one for the PC, a separate one for the feedback devices.
 And if you have both power supplies conveniently available, you might as well test with the full setup.
-But it's also okay to use a single power supply for now, since we can do all of the testing with low-power devices.
+But it's also okay to use a single power supply for now, since we can do all the testing with low-power devices.
 
 * The special expansion board power cables, to connect between the ATX power supply and the Pinscape board.
 Two cables are required - one for the primary power supply connection, one for the secondary power supply connection.
@@ -52,7 +52,7 @@ These are simply hookup wires with individual 0.1" pin header male pins/female s
 They let you safely plug a wire into any pin on any of the headers to test the connection.
 It's convenient to have a full set of the different gender combinations - male-to-male, female-to-female, and male-to-female.
 
-If you buy a set of these on eBay, they'll often come as a sort of "ribbon cable", with all of the wires joined together in a flat bundle.
+If you buy a set of these on eBay, they'll often come as a sort of "ribbon cable", with all the wires joined together in a flat bundle.
 For testing purposes, we'll just need a few individual wires, with one pin on each end.
 You can peel individual wires (or groups of wires) off of the ribbon cable bundles as needed simply by zipping them along the seams between the wires.
 The insulation should tear easily at the seams.
@@ -123,7 +123,7 @@ This is the most direct way to test buttons, because it shows you the status of 
 The firmware has to do some work to turn those hardware pin states into keyboard key presses and joystick button events, so other ways of testing are less direct, and any problems could reflect software or setup issues rather than hardware issues.
 The Button Tester lets us look at the hardware more or less directly to check the basic wiring.
 
-The first thing to check is that all of the buttons are showing their Pin Status as *OFF* .
+The first thing to check is that all the buttons are showing their Pin Status as *OFF* .
 A button input that isn't connected counts as OFF, so assuming you haven't already connected any of the button pins to anything else, an ON indication indicates a problem.
 Specifically, it means that the wiring for that button is shorted to the KL25Z "ground" connection.
 
@@ -157,7 +157,7 @@ The cheap ones sometimes have bad connections at one or the other end.
 I've had this happen with Dupont cables and alligator clip cables multiple times - it's such a huge waste of time when it turns out your test equipment is the problem, and not the board you're trying to test! If you find a bad one, fix it or throw it out immediately so you don't keep stumbling over this red herring on future tests.
 
 Barring bad cables, the most likely problem if none of the buttons are working is the CMN (Common) connection.
-All of the buttons have to go through that, so it's the prime suspect when the whole thing isn't working.
+all the buttons have to go through that, so it's the prime suspect when the whole thing isn't working.
 Check the solder joint on the bottom of the board for the CMN pin.
 
 If some buttons are working and some aren't, you know the CMN pin is good.
@@ -226,7 +226,7 @@ Each port shows the following information:
 
 * The first column, *Port No.* ( *Output #* in prior versions of the Config Tool), corresponds to the *Port No.* in the output port list on the settings page.
 
-All of the ports are listed in exactly the same order as on the settings page.
+all the ports are listed in exactly the same order as on the settings page.
 
 If you're trying to puzzle out how a port in the Settings page list is related to a port in the Output Port Tester list, it's super easy: the first row in the Settings list is the first row in the Output Port Tester list, the second row is the second row, etc.
 Just look for the port number in the first column of each table.
@@ -250,7 +250,7 @@ On the sliders, 0 is all the way off and 255 is all the way on.
 Values in between are proportional intensity/brightness levels, so 128 is about half of full brightness.
 
 Now that you know everything about the Output Port Tester, let's go ahead and test the port.
-All of the Small LED outputs are controlled by TLC5940 #2, so find the port listed in the Pin column as *TLC5940 #2 OUT0* .
+all the Small LED outputs are controlled by TLC5940 #2, so find the port listed in the Pin column as *TLC5940 #2 OUT0* .
 If you didn't move any ports around in the settings, this should be *Port No.
 50* .
 Turn the slider all the way up.
@@ -397,11 +397,11 @@ They correspond to the pins on TLC5940 chip #1 as follows:
 
 |===
 
-Note that the last row is different from all of the others: it's the Strobe output, which we'll come to next.
+Note that the last row is different from all the others: it's the Strobe output, which we'll come to next.
 
 == Test the Strobe output
 
-The Strobe output is wired to the same chip that handles all of the RGB Flasher outputs, so you can test it almost exactly like the flasher outputs.
+The Strobe output is wired to the same chip that handles all the RGB Flasher outputs, so you can test it almost exactly like the flasher outputs.
 It's just on a different pin header.
 So continue with the same test setup used for the RGB Flashers above, but move the "-" end of the connection over to the Strobe pin on JP9.
 And in the Output Port Tester window, use the port assigned to TLC5940 #1 OUT15, usually port 16.
@@ -410,7 +410,7 @@ image::images/strobe-test.png[""]
 
 
 WARNING: The Strobe connector is on that little *2-pin* header labeled *JP9* .
-There's a really confusing marking on the board (my fault for not noticing it in the design process) that makes a lot of people think that the Strobe output is the next one over, on that 4-pin header labeled JP12 - the thing that makes it look that way is that the "pin 1" arrow for JP12 is so close to the word "STROBE" printed on the board that it looks like the two are supposed to be connected, like it's saying "Hey guys, strobe is over here." Sorry for the misleading marking, but that arrow is just the standard "Pin 1" arrow that I use for all of the headers - it's not connected to the word STROBE in any way.
+There's a really confusing marking on the board (my fault for not noticing it in the design process) that makes a lot of people think that the Strobe output is the next one over, on that 4-pin header labeled JP12 - the thing that makes it look that way is that the "pin 1" arrow for JP12 is so close to the word "STROBE" printed on the board that it looks like the two are supposed to be connected, like it's saying "Hey guys, strobe is over here." Sorry for the misleading marking, but that arrow is just the standard "Pin 1" arrow that I use for all the headers - it's not connected to the word STROBE in any way.
 The 4-pin JP12 header just connects into four unused GPIO ports on the KL25Z, for custom uses or future software updates.
 *Never connect a strobe or any other output device to JP12.* image:images/JP12Warning.png[""]
 
@@ -437,7 +437,7 @@ So if you quickly click the button ON and back OFF, the LED will turn off immedi
 
 == Test the power boards
 
-If you've been following our procedures so far, you've now tested all of the major systems on the main board at this point, so you can move on to the power board.
+If you've been following our procedures so far, you've now tested all the major systems on the main board at this point, so you can move on to the power board.
 Before attaching the power board, power down the system and turn off the ATX power supplies.
 
 Connect the power board to the main board via a 10-pin ribbon cable.

@@ -39,7 +39,7 @@ I usually double the apparent distance to make sure I have enough.
 
 Apart from length, there are two main parameters when selecting cable: the number of conductors, and the wire "pitch" (the distance from one conductor to the next across the cable).
 
-*Pitch:* For all of the expansion board connectors, you need *1.27mm* pitch wire.
+*Pitch:* For all the expansion board connectors, you need *1.27mm* pitch wire.
 
 In general, ribbon cables have *half* the pitch of the pin headers they connect to.
 The pin headers on the Pinscape expansion boards used with ribbon cable connectors are all the standard 0.1" pin pitch type, which equals 2.54mm.

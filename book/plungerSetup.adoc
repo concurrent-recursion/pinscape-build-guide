@@ -10,13 +10,13 @@ Plungers emulate joysticks, and Windows has excellent plug-and-play support for 
 
 Before getting into the details of setting up the software, it's worth understanding how a plunger device communicates with Windows and the pinball player software.
 
-At the Windows device level, all of the plunger devices pretend to be joysticks.
+At the Windows device level, all the plunger devices pretend to be joysticks.
 The Windows joystick interface defines several "axes" that report the positions of the moving parts of the joystick.
 A regular joystick typically has an X axis and Y axis that report the left/right and up/down position of the stick.
 These are reported numerically, on arbitrary scales; for example, the left/right axis might report position values from -1000 for "all the way left" to +1000 for "all the way right".
 That's just a made-up example; the actual numerical ranges depend on the individual device, and they're usually in abstract units that don't correspond to inches or centimeters or any other real units.
 
-The convention used by all of the plunger devices I know of is to use the joystick "Z" axis to report the plunger position.
+The convention used by all the plunger devices I know of is to use the joystick "Z" axis to report the plunger position.
 For a real joystick, the Z axis is supposed to represent some kind of vertical motion of the stick, but that's just a convention; Windows doesn't know or care what the physical geometry of the device is like.
 If the device reports "Z=500", Windows just passes along "Z=500" to any application software (like VP) that asks.
 
@@ -32,10 +32,10 @@ Visual Pinball uses this to control the simulated on-screen plunger, so that the
 == Plunger device axis setup
 
 Some plunger devices give you options about which axis to use.
-The Z axis is the most common choice, since that's the one that almost all of the pinball player programs expect you to use.
+The Z axis is the most common choice, since that's the one that almost all the pinball player programs expect you to use.
 However, in some rare cases you might need to choose a different axis to avoid conflicts with other devices.
 
-If your device does use some joystick axis other than the Z axis, be sure to substitute that axis for the Z axis in all of the settings throughout the rest of this section.
+If your device does use some joystick axis other than the Z axis, be sure to substitute that axis for the Z axis in all the settings throughout the rest of this section.
 
 == Testing with the Windows joystick control panel
 

@@ -31,7 +31,7 @@ And this all has to fit into the thickness of the board.
 That's why the features are half-sized compared to the manual method, where the cuts are complementary instead of mirrored.
 
 I really like the idea of the lock miter bit, but I've found to my surprise that the "plywood-friendly" approach isn't any harder, and might even be a little bit easier.
-It's still a bit of work, but when you take into account the lengthy setup procedure for the lock miter bit, plus all of the extra precautions you have to take during the routing process, it might actually be more work overall with the special bit.
+It's still a bit of work, but when you take into account the lengthy setup procedure for the lock miter bit, plus all the extra precautions you have to take during the routing process, it might actually be more work overall with the special bit.
 Another practical drawback of the router bit method is that the bits are rather frighteningly large and probably more dangerous than typical router bits.
 Despite the disadvantages, though, the lock miter bit has the appeal that it should produce predictable and repeatable results after you get it calibrated properly.
 The plywood-friendly procedure involves more cuts, which I think is inherently scarier to a newbie woodworker like me, since there are more chances for something to go wrong.
@@ -51,13 +51,13 @@ The symmetry allows the two sides to mesh when joined at 90°.
 image::images/lock-miter-join-schematic.png[""]
 
 The trick to making the corners align is to get the midpoint of the mirror-image pattern exactly at the center of each board.
-That's where all of the notorious setup difficulty comes from - you have to hit that center point almost perfectly for the corners to align.
+That's where all the notorious setup difficulty comes from - you have to hit that center point almost perfectly for the corners to align.
 And you have to do it in two dimensions simultaneously - bit height and fence depth.
 
 The setup procedure is complex, but there's a pretty reliable recipe for it, and it doesn't require superhuman woodworking skills or feats of measurement.
 It's all based on iterative testing and adjusting, using a methodical approach that should (if all goes well) quickly converge on the right setup.
 Once you've dialed in the alignment, you just lock it down and route all of your boards with that same fixed setup.
-You don't have to make any further adjustments after the initial alignment - in fact, it's critical that you _don't_ make any changes, since you want all of the cuts to be identical.
+You don't have to make any further adjustments after the initial alignment - in fact, it's critical that you _don't_ make any changes, since you want all the cuts to be identical.
 
 == Does a lock miter bit even work with plywood?
 
@@ -276,7 +276,7 @@ Even if you can tolerate a little cosmetic imperfection in the corner placement,
 It's worth trying to get it perfect at this stage.
 
 If it looks good, you're ready to route your actual work pieces.
-Don't touch the router setup again until you're done routing all of the corners - you want to make sure the perfect alignment remains locked in until you're done.
+Don't touch the router setup again until you're done routing all the corners - you want to make sure the perfect alignment remains locked in until you're done.
 
 == How to route the corners
 
@@ -296,7 +296,7 @@ My scheme is:
 I do it that way because I find it easier to handle the long side pieces in a vertical orientation by using a "sled" (see below).
 
 To make sure that I don't get anything confused, I always take a pencil and mark each of the edges I'm going to route - "Lock Miter Here Horizontally This Face Down", "Lock Miter Here Vertically This Face To Fence".
-All of the routing must be done on the *inside* faces, so I mark the inside faces only.
+all the routing must be done on the *inside* faces, so I mark the inside faces only.
 I like to include "Face Down" or "Face To Fence" so that I'm more likely to catch myself if I'm about to feed a board in the wrong way, since I'll be looking at a face-up marking telling me it needs to be face-down.
 
 Once you have everything marked, checked, and double-checked, it's just a matter of running the edges through the router as marked.

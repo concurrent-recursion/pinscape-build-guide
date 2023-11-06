@@ -46,11 +46,11 @@ In the chapters that follow, where we go into more detail on each of the common 
 
 == Installing through-hole parts
 
-All of the parts on the Pinscape expansion boards are "through-hole" parts, meaning that they have wire leads that you insert through holes in the circuit board and then solder into place.
+all the parts on the Pinscape expansion boards are "through-hole" parts, meaning that they have wire leads that you insert through holes in the circuit board and then solder into place.
 
 Here's the basic procedure to install a through-hole part:
 
-* Identify the part's footprint on the circuit board - the little outline showing where the part goes, which should contain all of the holes for the part's wire leads
+* Identify the part's footprint on the circuit board - the little outline showing where the part goes, which should contain all the holes for the part's wire leads
 * Determine the proper orientation (see the chapters on the various component types for more on how to do this for each type)
 * Straight out _or_ bend the leads on the part, as needed, so that they line up with the holes in the board
 * Orient the part properly and feed the leads through the holes

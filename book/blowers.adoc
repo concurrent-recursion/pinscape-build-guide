@@ -49,7 +49,7 @@ If you want to go the DIY route, there are a couple of ways to get a bare fan as
 One is to buy a car/boat fan like above and remove its case.
 Another is to build your own entirely DIY fan assembly from parts.
 
-The completely DIY approach is probably easier.
+The complete DIY approach is probably easier.
 It's certainly more predictable; you never know with a pre-assembled fan if it'll be possible to remove the case without destroying the whole thing.
 To build a fan from parts, you really only need two pieces, both of which are easy to find:
 
@@ -66,12 +66,12 @@ Look for blades with a 1/4" bore, as these will easily press-fit onto a 1/4" mot
 
 You'll also need to build a bracket to attach the motor to the backbox.
 You should be able to improvise something if you have some minimal woodworking skills.
-(You'd need to build this part even if you're re-purposing an auto/boat fan, so I didn't count it in the "two pieces" I said you needed for a fully DIY fan.)
+(You'd need to build this part even if you're re-purposing an auto/boat fan, so I didn't count it in the "two pieces" I said you needed for a full DIY fan.)
 
 == In-cab blowers
 
 A few pin cab builders have built fans into the cabinet body rather than putting it on the backbox.
-One technique mentioned on the forums was to use an air duct to to route air from a small fan through an opening in the coin door.
+One technique mentioned on the forums was to use an air duct to route air from a small fan through an opening in the coin door.
 (One potential opening to use for this: the dollar acceptor slot.
 Newer coin doors made for the US market tend to include a large square opening intended for dollar bill acceptors.)
 
@@ -121,7 +121,7 @@ In the link:https://configtool.vpuniverse.com/[DOF Config Tool] , go to the Port
 Find the port number where you wired the fan.
 Assign it to "Fan".
 
-At the right side of the page, you'll also find a section labeled "Fan" that lets you set the intensity range.
+On the right side of the page, you'll also find a section labeled "Fan" that lets you set the intensity range.
 If you're using a PWM-capable controller (e.g., an LedWiz or a Pinscape power board), this lets you set the range of power that DOF uses when the fan runs.
 The intensity values are on a 1-48 scale, where 48 is the highest power.
 The default settings use the full available range.

@@ -85,7 +85,7 @@ They both mean the same thing.
 I like the box notation because it makes it easier to spot these points at a glance, but some engineers don't bother with them.
 It's like the little humps to represent explicit "not connected" crossings: a text label by itself at the end of a wire can only mean one thing, so some engineers see the little box as redundant.
 
-In either case, what this means is that this point in the wiring is connected to _all of the other points in the wiring_ that have the same label.
+In either case, what this means is that this point in the wiring is connected to _all the other points in the wiring_ that have the same label.
 This lets you connect two points on opposite sides of the schematic without having to route a green line all the way across the page.
 
 image::images/schematic-xref-4.png[""]
@@ -131,8 +131,8 @@ Some important things to note about the bus notation:
 Any regular wire that ends at a bus line is connected to the bus.
 * The wires going into the bus *aren't* connected to each other.
 D0 through D7 are still all separate wires.
-This is just short-hand to show the whole group of wires as a single line/bar rather than having to draw all of them individually.
-* If you want a physical analogy, you can think of the bus as a shrink-wrap tube that wraps around all of the wires making up the bus.
+This is just short-hand to show the whole group of wires as a single line/bar rather than having to draw all them individually.
+* If you want a physical analogy, you can think of the bus as a shrink-wrap tube that wraps around all the wires making up the bus.
 
 == Ground connections
 
@@ -150,7 +150,7 @@ In our schematics, these are what's known as DC grounds.
 If you think about a power supply as though it were a battery, it would have a "+" post and a "-" post.
 In that way of thinking, the "-" post corresponds to the DC ground.
 That's not quite the way engineers think of power supplies, though: they think of what you'd call the "-" end of the battery as 0V for "zero volts".
-That's the reference point, and all of the other supply voltages are relative to that reference point - so the disk connectors on an ATX power supply, for example, have a +5V supply line and a +12V supply line, relative to that 0V.
+That's the reference point, and all the other supply voltages are relative to that reference point - so the disk connectors on an ATX power supply, for example, have a +5V supply line and a +12V supply line, relative to that 0V.
 This 0V point is what we call "ground" in a DC circuit.
 
 Why do we have two different ground symbols, and what's "GND3"? I'm sure you already guessed that "GND" is an abbreviation for "Ground".
@@ -169,10 +169,10 @@ We use the two separate symbols to suggest this separation visually.
 GND1, GND2, and GND3 in these schematics are actually all connected together.
 They're given separate names because that lets us persuade EAGLE to given them different trace widths on the circuit boards, mostly so that some of the connections can handle high current loads.
 
-All of the connected ground points use the same "triangle" symbol, which hopefully helps suggest the connection visually.
+all the connected ground points use the same "triangle" symbol, which hopefully helps suggest the connection visually.
 
-In all of these cases, the GND points are ultimately connected to the Ground connection on a power supply unit.
-For a PC-style ATX power supply, the "ground" connection is the black wire in all of the disk cables coming out of the unit.
+In all these cases, the GND points are ultimately connected to the Ground connection on a power supply unit.
+For a PC-style ATX power supply, the "ground" connection is the black wire in all the disk cables coming out of the unit.
 
 == Power connections
 
@@ -481,13 +481,13 @@ There's another benefit that's not even apparent in this picture, too.
 Those four boxes representing the individual optos don't have to be grouped together in one place in the schematic - they can be split up and spread out.
 They really are four separate boxes as far as the schematic is concerned.
 This allows the schematic writer to place each one close to the other components it's connected to, so that the wire connections are shorter and easier to follow.
-The Pinscape boards keep all of the groups like this together, but if you look at some old Williams pinball schematics, you'll find that they take ruthless advantage of this ability to spread the parts around.
+The Pinscape boards keep all the groups like this together, but if you look at some old Williams pinball schematics, you'll find that they take ruthless advantage of this ability to spread the parts around.
 You'll find quad NAND gate chips with the individual gates on different pages, and dual op-amp chips with the individual op-amp blocks likewise widely separated.
 
 Now to the second question, how you're supposed to relate the four boxes back to one physical chip.
 The trick is to look for matching tags.
 You can see that each individual opto in the diagram above has its own separate set of labels - each one is tagged "PC847" (the chip name) and "OK1x" (the reference designator for the parts list lookup) - as though it were a standalone part.
-The designator is what gives away the secret that all of these "OK1" elements are part of the same physical chip.
+The designator is what gives away the secret that all these "OK1" elements are part of the same physical chip.
 And why is that? Because a designator is *always* unique across the whole schematic - like Highlander, there can be only one OK1.
 The fact that the same designator appears on four symbols means that the symbols are all portions of the same physical component.
 
@@ -599,7 +599,7 @@ On many boards, such as the KL25Z, they indicate this by printing a "1" next to 
 
 image::images/pinhead-pin1-1.png[""]
 
-You can then infer all of the other pin numbers by just counting them across the row, starting at pin 1.
+You can then infer all the other pin numbers by just counting them across the row, starting at pin 1.
 Note that in the picture above, they've also helpfully labeled pin 3 at the other end.
 The KL25Z does this on each header, labeling the pins at either end.
 

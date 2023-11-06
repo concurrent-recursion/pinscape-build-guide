@@ -1,13 +1,13 @@
 = Cabinet Grounding
 
-All of the externally exposed metal parts in your pin cab should be "grounded", meaning that the metal parts are all electrically connected to the Earth ground wire in your AC power plug.
+all the externally exposed metal parts in your pin cab should be "grounded", meaning that the metal parts are all electrically connected to the Earth ground wire in your AC power plug.
 This includes the leg bolts, side rails, front lockbar, coin door, and plunger housing.
 
 Grounding serves several puproses:
 
 * Safety.
 If a wire inside the cab carrying voltage ever comes loose, it could come into contact with one of the exposed metal parts, which would create an electric shock risk to anyone using the cab.
-Grounding all of the metal parts reduces shock risk by shunting any stray voltages directly to ground.
+Grounding all the metal parts reduces shock risk by shunting any stray voltages directly to ground.
 It also reduces the chances of a fire or other damage from an electrical mishap, in that a short to ground should quickly trip a fuse or circuit breaker and cut off power at the source, hopefully before anything can get red-hot inside the cab.
 
 This alone makes grounding a must, since the combination of electricity and exposed metal surfaces creates a real risk to human safety in the absence of proper grounding.
@@ -52,7 +52,7 @@ You can find this at electronics vendors, Amazon, or eBay.
 
 image::images/ground-prong.png[""]
 Earth ground is pretty much what it sounds like: an electrical connection into the soil.
-If your house is wired properly, there's a big metal stake driven into the ground somewhere in or around your foundation, and the stake is wired to the "third prong" in all of the AC outlets in your house.
+If your house is wired properly, there's a big metal stake driven into the ground somewhere in or around your foundation, and the stake is wired to the "third prong" in all the AC outlets in your house.
 In the US, that's the round prong at the bottom of the plug.
 (In older houses, a buried water pipe might serve in place of a metal stake, and in older houses still, where the old two-prong outlets are installed, you might not have any Earth grounding at all.)
 
@@ -123,7 +123,7 @@ Something like this:
 image::images/PowerSwitchingOverview.png[""]
 
 Specifically, you'll need an unswitched power strip that connects directly to the wall outlet.
-All of the outlets on that power strip will have a connection to Earth ground through the wall outlet plug, so we can get the Earth ground connection we need inside the cab via an unused outlet on the power strip.
+all the outlets on that power strip will have a connection to Earth ground through the wall outlet plug, so we can get the Earth ground connection we need inside the cab via an unused outlet on the power strip.
 
 The idea here is simple: we need a power cord that _only_ has a connection to the ground prong in the outlet.
 I can suggest three ways to achieve this:
@@ -135,7 +135,7 @@ You'll also need a banana plug that fits the jack.
 Attach a wire (14 gauge or thicker) to the banana plug; plug it in the jack and secure it; and connect the other end of the wire to the braid.
 
 This approach has the advantage that you can't get the wiring wrong, since the ground plug only has a connection to the one ground prong.
-The downside is that the banana plug isn't permanently installed, so it could fall out, disconnecting all of the ground connections you went to all this trouble to install.
+The downside is that the banana plug isn't permanently installed, so it could fall out, disconnecting all the ground connections you went to all this trouble to install.
 If you go this route, I'd find some way to permanently secure the plug so it can't fall out, perhaps with electrician's tape or heat-shrink tubing.
 
 * Buy a replacement power supply cord (making sure it's the 3-prong type).
@@ -150,11 +150,11 @@ Simply connect a 14 gauge (or thicker) wire to the ground screw terminal (which 
 Leave the other two terminals unconnected.
 Connect the other end of the wire to the braid.
 
-For all of these options, plug the plug into a free outlet on the unswitched power strip.
+For all these options, plug the plug into a free outlet on the unswitched power strip.
 Connect the ground wire from the plug to your braid with a "ring" terminal: connect the ring terminal to the wire (by crimping or soldering, for example), slip the ring over a wood screw, and drive the screw _through the braid_ into the cabinet wall or floor.
 
 Whichever type of ground plug you choose, it would be a good idea to do something to lock the plug into the outlet it's using, so that it doesn't fall out on its own and so that you don't remove it while working on something and forget to put it back.
-This is the crucial link for all of the grounded metal, so it should always be connected.
+This is the crucial link for all the grounded metal, so it should always be connected.
 Wrap a couple of loops of electrician's tape around the plug and the power strip, for example.
 At the very least, put a big "do not unplug" placard on it.
 

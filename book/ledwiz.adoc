@@ -18,7 +18,7 @@ In a video game cab, the only "feedback" devices most people install are small l
 The LedWiz's designers chose the power limits accordingly.
 
 The exact limit is 500mA per output port.
-(To be really technical, there's also a limit on the combined power across groups of ports, but we can mostly ignore that in a pin cab; that only applies if all of the ports are switched on for long periods at the same time, which essentially never happens in a pin cab.)
+(To be really technical, there's also a limit on the combined power across groups of ports, but we can mostly ignore that in a pin cab; that only applies if all the ports are switched on for long periods at the same time, which essentially never happens in a pin cab.)
 
 500mA is plenty for the light bulbs and LEDs that the LedWiz's designers had in mind.
 But it's not enough for some of the mechanical devices we use in pin cabs.
@@ -130,7 +130,7 @@ Attaching a device that draws too much power can damage or destroy the LedWiz.
 
 The basic feedback device wiring plan for an LedWiz is pretty simple:
 
-* All of the "-" or "Ground" connections from all of your power supplies should be connected together (see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] )
+* all the "-" or "Ground" connections from all of your power supplies should be connected together (see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] )
 * Connect the "\+" terminal from the power supply directly to the "+" terminal on the feedback device
 * Connect the "-" terminal on the feedback device to one of the numbered LedWiz terminals
 
@@ -224,7 +224,7 @@ This circuit is fully compatible with the LedWiz's PWM dimming control.
 The power limit for the attached device is determined by the type of MOSFET you choose.
 The MOSFETs listed below can all handle upwards of 10 Amps, which is plenty for just about any pin cab device.
 (Shaker and gear motors typically run at around 3A to 4A, and large pinball solenoids like knocker coils need about 4A.
-All of the other common devices have much lower power needs.)
+all the other common devices have much lower power needs.)
 
 Here's the circuit plan:
 

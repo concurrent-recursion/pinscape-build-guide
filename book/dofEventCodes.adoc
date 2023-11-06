@@ -15,7 +15,7 @@ These are the .ini files that you download from the link:https://configtool.vpun
 image::images/dof-config-tool.png[""]
 
 Those codes are painstakingly hand-crafted for each individual table, to create a pleasing set of effects for each game during play.
-Thank goodness (or more to the point, thank Arngrim) that someone (Arngrim) _already_ hand-crafted a good set of codes for nearly all of the tables in existence, and put them in the DOF Config Tool's public database for all of us to use.
+Thank goodness (or more to the point, thank Arngrim) that someone (Arngrim) _already_ hand-crafted a good set of codes for nearly all the tables in existence, and put them in the DOF Config Tool's public database for all of us to use.
 That saves you the work of going through that whole coding process for the many dozens of tables you'll eventually want to install on your cab.
 
 If you're happy with the default DOF effects provided by the Config Tool's database, and you don't want to make any customizations of your own, then you don't have to know anything about how DOF works apart from the basics of installing it on your system, which we covered separately in xref:DOF.adoc#dofSetup[DOF Setup] .
@@ -46,7 +46,7 @@ For example, if you go to the table config for _Funhouse_ , the Shaker Motor lin
 ("Switch 19" is the part that Visual Pinball knows about, and it represents some action on some game element, such as a particular target getting hit by the ball.) If you go to the table config for _Earthshaker_ , the Shaker Motor line will have a whole different set of triggers appropriate to that game.
 
 The Config Tool's main job is to take those two lists, and combine them into the _even more cryptic format_ that the DOF .ini files use.
-When you click Generate Config, the Config Tool sorts through all of the elements in those lists to form the hardware assignments for your machine.
+When you click Generate Config, the Config Tool sorts through all the elements in those lists to form the hardware assignments for your machine.
 It combines "run the shaker motor for five seconds when switch 19 activates" and "shaker motor is LedWiz port 17" to form "turn on LedWiz port 17 for five seconds when switch 19 activates".
 That's how DOF knows to turn on the shaker motor in your specific cabinet wiring at the right time in the game.
 
@@ -91,7 +91,7 @@ So what we really have here is six separate, independent triggers for the shaker
 
 S4 600 I32 S8 300 I32 W37 600 I32 W45 600 I32 W46 600 I32 E102 600 I32
 
-What we mean by "independent" is that all of these triggers are always in effect, without any interaction with one another.
+What we mean by "independent" is that all these triggers are always in effect, without any interaction with one another.
 If any one of the triggers occur, DOF will fire the shaker.
 They don't interact with each other in any way, so we can look at each one separately, as though the others didn't exist.
 
@@ -127,7 +127,7 @@ There's also a way of setting a minimum and/or maximum duration for the effect i
 You can combine min and max times, too, as in `S8 M50 MAX300` .
 None of the _Medieval Madness_ shaker events use the min/max limits, but you'll see them in other events.
 
-The final item in all of these definitions is `I32` .
+The final item in all these definitions is `I32` .
 "I" is another modifier meaning "run with this intensity".
 The intensity is on the rather odd scale of 0-48 (why? because DOF was originally designed around the LedWiz, and the LedWiz uses a 0-48 brightness scale).
 So I32 is about 2/3 of full intensity.
@@ -141,7 +141,7 @@ That means that we set the RGB channel mixing to show Magenta when Solenoid 12 a
 You can also use HTML-style #rrggbbaa syntax, with hex numbers for reg, green, blue, and alpha (transparency, usually just set to FF for fully opaque).
 For example, #ff0000ff is 100% red.
 
-Now that you know how to take these definitions apart, you still need a list of all of the specific code letters.
+Now that you know how to take these definitions apart, you still need a list of all the specific code letters.
 The rest of this section is basically that.
 
 === Table variables
@@ -286,7 +286,7 @@ So "E4" in the DOF config is triggered when the table script executes a line lik
 The toy is activated when the given general illumination on the playfield is switched on.
 GI refers to the little lamps scattered around the playfield, mostly under the plastics, that provide background lighting.
 These lights aren't individually controlled; they're controlled as a group, known as a GI "string".
-Some games only have one GI string for all of the playfield lights, and some divide the GI lighting into two or more strings.
+Some games only have one GI string for all the playfield lights, and some divide the GI lighting into two or more strings.
 Many of the 1980s and 1990s games have separate GI strings for the upper and lower playfield lights.
 The exact layout is determined by the game's original programming.
 
@@ -591,7 +591,7 @@ For example, `(W7 And L9)` is a combined trigger that fires when Switch 7 and La
 
 You can create more complex conditions than that, though.
 The parser uses a full expression language, based on C# notation.
-All of the trigger codes can be used as variables ("S7" for solenoid 7, for example).
+all the trigger codes can be used as variables ("S7" for solenoid 7, for example).
 They evaluate to numeric values based on the values sent from the VPinMAME or the table's Visual Basic scripts; in most cases, these will simply be 0 for off and 1 for on, but they can take on other values in some cases, usually limited to a range of 0 to 255.
 EM table simulations sometimes use the "E" event codes with numeric values, for example.
 

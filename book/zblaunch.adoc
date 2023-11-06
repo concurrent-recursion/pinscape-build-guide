@@ -33,7 +33,7 @@ When the fake device is "on", the controller knows that ZB Launch Ball is in eff
 
 This fake device is now standard in the online DOF Config Tool: it's the device called "ZB Launch Ball".
 
-The DOF Config Tool database has entries for this device all of the plunger-less tables.
+The DOF Config Tool database has entries for this device all the plunger-less tables.
 
 == Prerequisites
 
@@ -118,7 +118,7 @@ The default DOF configuration doesn't do that; it only turns ZB Launch on when a
 That's why the default setup misses cases like the laser cannons in _ST:TNG_ and the troll bombs in _MM_.
 I think it's set up this way out of an abundance of caution, the concern being that the regular plunger action is disabled whenever ZB Launch is enabled.
 But I personally don't see any downside to leaving ZB Launch enabled full-time for a game like _ST:TNG_ that doesn't even have a regular plunger.
-Leaving it enabled all the time catches all of the special cases like the laser cannons and troll bombs.
+Leaving it enabled all the time catches all the special cases like the laser cannons and troll bombs.
 (You obviously shouldn't do this for games that also need regular plunger input, since it would make the regular plunger unusable, but you wouldn't usually want to use ZB Launch with plunger-equipped tables in the first place.) 
 
 Here's the full procedure:
@@ -131,7 +131,7 @@ Here's the full procedure:
 ** Find the *ZB Launch Ball* row
 ** Enter *ON* in the right column
 ** Click *Save Changes* at the bottom
-* After you've edited all of the tables you want to fix, click *Generate Config* at the bottom to generate the new .ini files; that'll automatically download a ZIP file with the new .ini files when it's done
+* After you've edited all the tables you want to fix, click *Generate Config* at the bottom to generate the new .ini files; that'll automatically download a ZIP file with the new .ini files when it's done
 * Unpack the .ini files from the ZIP file into your DOF Config folder
 
 [#zblTroubleshooting]
@@ -194,5 +194,5 @@ When the DOF signal is getting sent properly, Pinscape *disables* the regular pl
 +
 So if the plunger is still moving, Pinscape isn't getting the signal.
 The thing to focus on is why the DOF signal isn't getting sent properly.
-Go back through the setup process and double-check all of the port assignments, in both the Pinscape Config Tool and the DOF Config Tool.
+Go back through the setup process and double-check all the port assignments, in both the Pinscape Config Tool and the DOF Config Tool.
 Go through the DOF troubleshooting steps ( xref:DOF#DOFTroubleshooting[DOF Setup] ).

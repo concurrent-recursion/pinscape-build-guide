@@ -15,7 +15,7 @@ You can have a set fabricated by a PCB factory by sending them the freely availa
 You don't need any special electronics knowledge to do that; we'll explain the process.
 Alternatively, you might be able to get a set of pre-made boards from someone else in the pin cab community who made a batch for sharing.
 * Buy the electronic components required for the expansion boards or any other external electronics you're going to include, such as a plunger sensor.
-Almost all of the components for the various options are fairly generic items that you can buy from any electronics vendor.
+Almost all the components for the various options are fairly generic items that you can buy from any electronics vendor.
 We'll give you a complete list of parts with ordering links.
 * Set up the Pinscape software on the KL25Z.
 You can do this before you build the expansion boards, plunger sensor, or other electronics, because the KL25Z can do some things on its own.
@@ -53,8 +53,8 @@ It's an easy bit of soldering, and the required parts are listed under "KL25Z Mi
 
 === Option 2: DIY Expansion boards
 
-The expansion boards give you all of the features of the standalone KL25Z version, and add an expandable set of output ports for feedback devices, plus built-in support for IR remote control signals to power on your TVs and monitors during system startup.
-The feedback device ports can support all of the common pin cab feedback devices without any additional circuitry, including motors, solenoids, contactors, and high-current LEDs.
+The expansion boards give you all the features of the standalone KL25Z version, and add an expandable set of output ports for feedback devices, plus built-in support for IR remote control signals to power on your TVs and monitors during system startup.
+The feedback device ports can support all the common pin cab feedback devices without any additional circuitry, including motors, solenoids, contactors, and high-current LEDs.
 
 There are three types of expansion boards (the main board that interfaces to the KL25Z, the "MOSFET power board" that can control high-power feedback devices like solenoids and motors, and the "chime board", for controlling certain types of pinball coils that have to be protected from long periods of continuous activation).
 The main board is always required, and the other two boards can be used in any combination (including two or more of each), according to how many output devices of each type that you plan to attach.
@@ -93,7 +93,7 @@ Up until June 2021, Oak Micros offered fully assembled and tested versions of th
 The following options were available:
 
 * Pinscape All-in-One board.
-This combines all of the functions of the DIY version's main board, power board, and chime board into a single circuit board, which makes it a little more compact and tidier to install than the DIY version.
+This combines all the functions of the DIY version's main board, power board, and chime board into a single circuit board, which makes it a little more compact and tidier to install than the DIY version.
 See this thread on vpforums.org for full details: link:https://www.vpforums.org/index.php?showtopic=42631.html[Announcement: Pinscape All-in-One product] .
 * Pinscape Lite board.
 This is a less expensive board that includes a subset of the DIY board features: 24 input buttons, plunger sensor input, 12 high-power outputs for solenoids and motors (2 with PWM, 10 without), 16 low-power PWM outputs for LEDs, and the standard built-in accelerometer (nudge) sensor.

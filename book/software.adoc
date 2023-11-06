@@ -6,7 +6,7 @@ Now let's look at the software needed to transform this from a plain Windows PC 
 The main software you need, of course, is the pinball simulator.
 To take advantage of the special features of a cab, you also need some add-ons to display the backglass artwork and control the feedback devices.
 You'll also want a "front end" program that provides an interactive menu for selecting tables to play.
-We'll look at the options for all of these in this chapter.
+We'll look at the options for all these in this chapter.
 
 
 == Should I use "Run as Administrator" for everything?
@@ -30,12 +30,12 @@ I think you can see where this idea that "you've got to just run everything in A
 
 Okay, so if "Admin Mode everywhere all the time" is a simple way to solve thorny problems, why am I saying you _shouldn't_ use it? The main reason is that, while it might solve some problems, it creates others.
 Microsoft doesn't want you to use Admin Mode routinely for everything, so you're always somewhat fighting with Windows if you do.
-It also reduces your system's security by defeating all of the protective mechanisms that Microsoft designed into Admin Mode in the first place.
+It also reduces your system's security by defeating all the protective mechanisms that Microsoft designed into Admin Mode in the first place.
 
 The right solution - from a security perspective, and in terms of simplicity - is to stop using Admin Mode for _any_ of your pinball software.
 If you run everything in regular User Mode, everything will be able to interact as it was designed to, with no hassles at the system level.
 Remember how I said that this whole Admin Mode fiasco is historical, because it was a requirement for certain components _in the old days_ ? Fortunately, it really is mostly relegated to the past now.
-Those old Admin Mode requirements were almost all due to software bugs, not actual engineering requirements, and all of the cases that I'm aware of have been fixed in modern versions.
+Those old Admin Mode requirements were almost all due to software bugs, not actual engineering requirements, and all the cases that I'm aware of have been fixed in modern versions.
 As of 2020, I don't think that any of the common pin sim components require Admin Mode, as long as you've updated to current versions.
 
 If you do encounter any up-to-date pinball-related programs that say "Admin mode required", you should take a critical look at them and make sure the requirement is real, not just a misunderstanding.
@@ -55,7 +55,7 @@ Before you do anything else, I think it's a good idea to create "customization l
 This is just text file for your own use - you can create it with Notepad and leave it empty for now.
 Put it someplace where you'll be able to find it easily in the future, such as right on the Windows desktop on your cab PC.
 
-The point of this file is to jot down all of the special customizations you make to Visual Pinball and other software.
+The point of this file is to jot down all the special customizations you make to Visual Pinball and other software.
 VP in particular forces you to make some customizations in ways that you'll have to repeat each time you update to a new version.
 For example, some customizations require that you hand-edit VP's shared script files, and those changes will be lost on each update because VP will overwrite the scripts with its own updated copies.
 That's not a very friendly design on VP's part, I know, but it's just the way some things in VP work.
@@ -76,12 +76,12 @@ There are three main free pinball player programs for Windows:
 
 Visual Pinball is the essential program for a virtual cab.
 VP is an open-source project with an active developer community and frequent updates.
-Hundreds of tables are available, including re-creations of a pretty good percentage of all of the real pinball machines across the decades, plus many original tables.
+Hundreds of tables are available, including re-creations of a pretty good percentage of all the real pinball machines across the decades, plus many original tables.
 VP has excellent support for the whole gamut of special pin cab features: backglass monitors, DMDs, feedback devices, plunger inputs, accelerometer nudging.
 
 I counted VP 9 and 10 as two separate programs because they're not compatible with each other's tables, so you really have to install both.
 There's also a much older version 8, plus a couple of different, mutually incompatible versions of VP 9.
-Some people like to keep all of these installed because, again, individual tables are all tied to specific VP versions, so you need all of the VP versions if you want the ability to play all of the tables out there.
+Some people like to keep all these installed because, again, individual tables are all tied to specific VP versions, so you need all the VP versions if you want the ability to play all the tables out there.
 (VP isn't very good at compatibility.) Fortunately, there's a combined installer that sets up the whole collection of VP versions with a single download and a single install process.
 
 Future Pinball is another free player, but unlike VP, it's no longer being maintained or updated.
@@ -166,7 +166,7 @@ But Farsight's license to those titles was terminated in 2018 (to be taken over 
 Gottlieb dominated the EM era, so there are some great classics in there if you like the older machines, and Stern has been steadily producing newer machines since Williams withdrew from the market, many of which are popular and well-regarded.
 
 The commercial games are playable on pin cabs, but they cater mostly to desktop users, and have limited support for pin cab features (DOF, multiple monitors, real DMDs, etc).
-Pin cab users aren't a big enough market to attract much commercial support, and of course the open-source developers who created all of the pin cab technologies are unable to modify closed-source commercial products.
+Pin cab users aren't a big enough market to attract much commercial support, and of course the open-source developers who created all the pin cab technologies are unable to modify closed-source commercial products.
 
 == Cabinet enhancements
 
@@ -225,7 +225,7 @@ It's also highly customizable via a built-in Javascript scripting engine.
 Downloads and more information are available at the link:http://mjrnet.org/pinscape/PinballY.php[PinballY Project Page] .
 
 PinballY is similar to the other front ends in terms of user interface appearance and functionality.
-The main reason I wrote it was that I wanted an open-source option (all of the other front ends I know of are closed-source).
+The main reason I wrote it was that I wanted an open-source option (all the other front ends I know of are closed-source).
 
 === PinUp Popper
 

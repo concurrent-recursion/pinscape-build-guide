@@ -90,7 +90,7 @@ Side by side, they're really not that different.
 And I think when you compare the overall visual quality, an LCD video panel has the edge.
 
 In terms of flexibility, a video display can do both "dots" and full-resolution graphics.
-The "dots" look can be easily simulated on a full-res display, and all of the pinball software is set up to do just that, because it's all written primarily for desktop machines where video displays are the only thing going.
+The "dots" look can be easily simulated on a full-res display, and all the pinball software is set up to do just that, because it's all written primarily for desktop machines where video displays are the only thing going.
 What a video panel can do that a 128x32 DMD can't is display high-res graphics when it's not displaying "dots".
 For example, when playing an EM game that doesn't use the score window at all, you can use it to display added game graphics or manufacturer logos at full resolution.
 Video panels also look much nicer when playing 1980s "alphanumeric display" games, because they can accurately simulate the 14-segment display look.

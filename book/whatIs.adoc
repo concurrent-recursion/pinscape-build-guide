@@ -37,7 +37,7 @@ If you've played any desktop pinball or tablet pinball, you probably already hav
 Even so, it'll probably still be a revelation the first time you play virtual pinball with real flipper buttons.
 
 You don't have to (and shouldn't) stop at flipper buttons, by the way.
-You can hook up all of the standard buttons - the Start button, Magna Save buttons, the coin chutes, even the service buttons inside the coin door that let you access the operator menus.
+You can hook up all the standard buttons - the Start button, Magna Save buttons, the coin chutes, even the service buttons inside the coin door that let you access the operator menus.
 
 *A real plunger!* Desktop pinball games all use a "timed" plunger that pulls back as long as you're pressing a key.
 Which obviously doesn't even remotely resemble how you interact with the plunger on a real machine.
@@ -61,7 +61,7 @@ The microcontroller board used in the Pinscape Controller has an accelerometer b
 Most of the available commercial plunger kits offer the same capability.
 The accelerometer doesn't just sense the fact that you nudged, but actually measures the amount of force you applied, and passes that along to the simulator, so that the response in the simulation is proportional to the strength of the physical nudge.
 
-*Mechanical feedback! Blinking lights!* Once the early cabinet builders mastered all of the above, they started coming up with ways to make the experience even more realistic by adding mechanical feedback - devices that actually move inside the cab to simulate flippers, slingshots, and bumpers.
+*Mechanical feedback! Blinking lights!* Once the early cabinet builders mastered all the above, they started coming up with ways to make the experience even more realistic by adding mechanical feedback - devices that actually move inside the cab to simulate flippers, slingshots, and bumpers.
 
 Real pinball is a tactile experience.
 The solenoids that whack the ball around are really powerful, and you can feel them shake the cabinet every time they fire.
@@ -79,20 +79,20 @@ As for the feedback effects, there's a fairly standard set of lights, solenoids,
 
 ==  That sounds like a lot of work...
 
-If you're new to the virtual cabinet world and you weren't already acquainted with all of these bells (literally) and whistles, you might be feeling a little intimidated by all of this.
+If you're new to the virtual cabinet world and you weren't already acquainted with all these bells (literally) and whistles, you might be feeling a little intimidated by all of this.
 You might have been picturing just the basics of the Windows PC in the fancy wooden box, and you might have been thinking in terms of what you could build out of ordinary PC equipment.
 But a lot of the stuff I just mentioned obviously can't be done with ordinary PC parts alone.
 
 The good news is that everything described above is not only possible, but well understood.
 It's all been reduced to recipes that you can follow.
 Lots of people have built cabs with these features.
-The software infrastructure that supports all of this is mature, and it's specifically designed with all of these features in mind.
+The software infrastructure that supports all of this is mature, and it's specifically designed with all these features in mind.
 There's no need to "hack" anything to trick the software into doing these things; the software already knows all about backbox displays, DMDs, nudging, plungers, and feedback devices.
 You just need to tell it what you have installed, and it'll take advantage of it to create a great playing experience.
 
 Most importantly, the whole setup can be built by a committed DIYer.
 That's where this guide comes in.
-We'll explain how to implement all of the things that go into a virtual pin cab, covering the best DIY solutions as well as the commercial product options.
+We'll explain how to implement all the things that go into a virtual pin cab, covering the best DIY solutions as well as the commercial product options.
 
 By the way, "DIY" doesn't mean "poor man's", which is the way a lot of people think of it.
 In fact, it's really quite the opposite these days, thanks to technologies like ubiquitous computing, 3D printing, and the relentless pace of progress in electronics.
