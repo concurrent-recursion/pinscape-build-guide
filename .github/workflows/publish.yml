@@ -28,4 +28,5 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: pinscape-build-guide
           directory: dist/html
+          branch: main
           wranglerVersion: '3'
