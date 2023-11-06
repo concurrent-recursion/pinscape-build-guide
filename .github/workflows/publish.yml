@@ -26,7 +26,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: Pinscape Build Guide
+          projectName: pinscape-build-guide
           directory: dist/html
-          workingDirectory: pinscape-build-guide
           wranglerVersion: '3'
