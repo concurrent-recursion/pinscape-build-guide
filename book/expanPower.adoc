@@ -1,7 +1,9 @@
 [#expanPower]
 = Expansion Board Power Cables
 
-Each of the expansion boards has two connectors that have to be plugged into ATX power supplies. These are designed to work with special, custom power cables that you build as part of the expansion boards. This section explains what's needed and how to build the cables.
+Each of the expansion boards has two connectors that have to be plugged into ATX power supplies.
+These are designed to work with special, custom power cables that you build as part of the expansion boards.
+This section explains what's needed and how to build the cables.
 
 == Connection plan
 
@@ -28,7 +30,8 @@ image::images/secondary-power-connection.png[""]
 
 == Wire
 
-To build these cables, use ordinary hookup wire. Here are the recommended wire types:
+To build these cables, use ordinary hookup wire.
+Here are the recommended wire types:
 
 * Primary PSU connectors:
 ** 22 AWG
@@ -40,7 +43,11 @@ To build these cables, use ordinary hookup wire. Here are the recommended wire t
 ** One red wire
 ** One yellow wire
 
-Note that the secondary PSU connector uses *two* black wires, which connect to the corresponding black wires in the disk connectors. Be sure to connect both of these even though it seems redundant to use two. The reason we use two is that it doubles the current-carrying capacity. The black wires on these connectors carry the *combined* current from *all* of the feedback devices, so they can be subjected to very high currents at times. It's the same reason the ATX power cables use two black wires - all of the current for all of the different voltages ends up going through these wires.
+Note that the secondary PSU connector uses *two* black wires, which connect to the corresponding black wires in the disk connectors.
+Be sure to connect both of these even though it seems redundant to use two.
+The reason we use two is that it doubles the current-carrying capacity.
+The black wires on these connectors carry the *combined* current from *all* of the feedback devices, so they can be subjected to very high currents at times.
+It's the same reason the ATX power cables use two black wires - all of the current for all of the different voltages ends up going through these wires.
 
 For each wire:
 
@@ -49,7 +56,8 @@ For each wire:
 
 == How to connect to the expansion boards
 
-See the xref:partslist.adoc#electronicPartsList[parts list] for the necessary connectors. There are two distinct connector types:
+See the xref:partslist.adoc#electronicPartsList[parts list] for the necessary connectors.
+There are two distinct connector types:
 
 * A *two-pin connector* for the *PC PSU* (primary power supply) connections
 * A *four-pin connector* for the *2ND PSU* (feedback devices/secondary power supply) connections

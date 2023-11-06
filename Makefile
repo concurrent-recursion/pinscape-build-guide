@@ -7,27 +7,25 @@ all: epub pdf html
 
 epub:
 	bundle exec asciidoctor-epub3 \
-		main.adoc \
-                -B $(SOURCE_DIR) \
-                -D $(DEST_DIR)/epub \
-		-o $(FILENAME)-$(VERSION).epub; \
-        rm $(DEST_DIR)/epub/*.css
+		$(SOURCE_DIR)/main.adoc \
+		-D $(DEST_DIR)/epub \
+		-o $(FILENAME)-$(VERSION).epub \
+        && rm $(DEST_DIR)/epub/asciidoctor.css
 
 pdf:
 	bundle exec asciidoctor-pdf \
-		main.adoc \
-                -B $(SOURCE_DIR) \
-                -D $(DEST_DIR)/pdf \
-		-o $(FILENAME)-$(VERSION).pdf; \
-        rm $(DEST_DIR)/pdf/*.css
-		
+		$(SOURCE_DIR)/main.adoc \
+		-D $(DEST_DIR)/pdf \
+		-o $(FILENAME)-$(VERSION).pdf \
+		&& rm $(DEST_DIR)/pdf/asciidoctor.css
 html:
 	bundle exec asciidoctor -v -b html5 \
-		main.adoc \
-                -B (SOURCE_DIR) \
+		-r asciidoctor-lazy-images \
+		$(SOURCE_DIR)/main.adoc \
                 -D $(DEST_DIR)/html \
-		-o $(FILENAME)-$(VERSION).html; \
-	cp -r $(SOURCE_DIR)/images $(DEST_DIR)/html
+		-o index.html \
+	&& cp -r $(SOURCE_DIR)/images $(DEST_DIR)/html \
+	&& gzip -k $(DEST_DIR)/html/index.html
 
 clean:
 	rm -rf dist/*

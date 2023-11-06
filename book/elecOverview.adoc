@@ -1,6 +1,13 @@
 = Electronics Overview
 
-If you're planning to build any of the add-ons for the Pinscape controller, it'll help to know a little about electronics. The next few chapters will try to get you up to speed on the basics. This isn't by any means a complete introductory course in electronics; it's more of the Cliff's Notes version. I've tried to keep the focus on the practical aspects of building the Pinscape projects.
+If you're planning to build any of the add-ons for the Pinscape controller, it'll help to know a little about electronics.
+The next few chapters will try to get you up to speed on the basics.
+This isn't by any means a complete introductory course in electronics; it's more of the Cliff's Notes version.
+I've tried to keep the focus on the practical aspects of building the Pinscape projects.
 
-I've tried to organize this material to be useful both as a tutorial and as a reference. If you want to bring yourself up to speed on some basic electronics before embarking on a big project like assembling the Pinscape expansion boards, hopefully the following chapters will help. On the other hand, if you want to get straight to the assembly process, you can dive right in, and come back here to look for answers if you run into any questions. To help navigate this as reference material, the xref:compov.adoc#compov[Field Guide to Components] chapter provides a quick visual guide to many common electronic parts (including most of the parts used in the Pinscape projects), with pointers to the relevant chapters. That should help you identify any mysterious parts you have on hand and let you find out more about them, as well as help you figure out what a particular schematic symbol means.
+I've tried to organize this material to be useful both as a tutorial and as a reference.
+If you want to bring yourself up to speed on some basic electronics before embarking on a big project like assembling the Pinscape expansion boards, hopefully the following chapters will help.
+On the other hand, if you want to get straight to the assembly process, you can dive right in, and come back here to look for answers if you run into any questions.
+To help navigate this as reference material, the xref:compov.adoc#compov[Field Guide to Components] chapter provides a quick visual guide to many common electronic parts (including most of the parts used in the Pinscape projects), with pointers to the relevant chapters.
+That should help you identify any mysterious parts you have on hand and let you find out more about them, as well as help you figure out what a particular schematic symbol means.
 

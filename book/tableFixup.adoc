@@ -2,97 +2,168 @@
 = Customizing VP Tables
 :source-highlighter: rouge
 
-One of the great things about the Windows virtual pinball environment is that so many tables are available in a format that lets you modify and customize them in any way you please. The free pinball player programs (Visual Pinball, Future Pinball) are also full pinball construction programs. You can open any table for Visual Pinball or Future Pinball in its editor and make your own modifications.
+One of the great things about the Windows virtual pinball environment is that so many tables are available in a format that lets you modify and customize them in any way you please.
+The free pinball player programs (Visual Pinball, Future Pinball) are also full pinball construction programs.
+You can open any table for Visual Pinball or Future Pinball in its editor and make your own modifications.
 
-(The same can't be said of the commercial pinball games, such as Farsight's Pinball Arcade or Pinball FX/2 and FX/3. With those, you're stuck with what they sell you, which is never a perfect fit for cabinet play. That's one big reason that VP is so popular with pin cab builders.)
+(The same can't be said of the commercial pinball games, such as Farsight's Pinball Arcade or Pinball FX/2 and FX/3.
+With those, you're stuck with what they sell you, which is never a perfect fit for cabinet play.
+That's one big reason that VP is so popular with pin cab builders.)
 
-This chapter provides an overview of how to customize tables in Visual Pinball. We go into detail on a few of the key customizations often needed to adapt a table to cabinet play. Many of the tables available for VP were designed with regular desktop in mind, and weren't tested on a cab by their original authors, so they need some tweaking to look and play their best on a cab.
+This chapter provides an overview of how to customize tables in Visual Pinball.
+We go into detail on a few of the key customizations often needed to adapt a table to cabinet play.
+Many of the tables available for VP were designed with regular desktop in mind, and weren't tested on a cab by their original authors, so they need some tweaking to look and play their best on a cab.
 
 == Opening a table in the VP editor
 
-Visual Pinball is, at its core, a pinball construction program that also happens to let you play the tables. So editing a table is really the default thing that VP does.
+Visual Pinball is, at its core, a pinball construction program that also happens to let you play the tables.
+So editing a table is really the default thing that VP does.
 
-In VP 8 and 9, the first thing you see when you start the program is a blank table editor window. Use the *File > Open* menu command to open a table in the editor.
+In VP 8 and 9, the first thing you see when you start the program is a blank table editor window.
+Use the *File > Open* menu command to open a table in the editor.
 
-In VP 10, they tried to make VP a little friendlier for the "average user", who just wants to play existing tables rather than creating their own. So VP 10 starts by bringing up a "Select Table File" dialog when you first start the program, and then immediately starts a game session with the table you select. If you want to edit a table instead, you have to bypass this initial dialog. Just click Cancel in the dialog, then use the *File > Open* menu to open a table in the editor, just like in VP 8/9.
+In VP 10, they tried to make VP a little friendlier for the "average user", who just wants to play existing tables rather than creating their own.
+So VP 10 starts by bringing up a "Select Table File" dialog when you first start the program, and then immediately starts a game session with the table you select.
+If you want to edit a table instead, you have to bypass this initial dialog.
+Just click Cancel in the dialog, then use the *File > Open* menu to open a table in the editor, just like in VP 8/9.
 
 == Adjusting the viewing angle
 
-When VP runs a game, the image you see on the display is a rendering of a 3D model of the table. To construct this image, VP uses an imaginary camera that views the model from a selected position in space. You can adjust this camera position to create different views of the table.
+When VP runs a game, the image you see on the display is a rendering of a 3D model of the table.
+To construct this image, VP uses an imaginary camera that views the model from a selected position in space.
+You can adjust this camera position to create different views of the table.
 
-I find that most of the VP tables I download need some adjustment in their viewing angle to look their best on a pin cab display. And most pin cab builders feel the same way, because the ideal viewing angle is subjective. No one viewing angle will satisfy everybody.
+I find that most of the VP tables I download need some adjustment in their viewing angle to look their best on a pin cab display.
+And most pin cab builders feel the same way, because the ideal viewing angle is subjective.
+No one viewing angle will satisfy everybody.
 
-*VP 9:* Adjusting the viewing angle in VP 9 is a bit tedious because you have to do it by typing numbers into a property sheet in the editor, and then run the game to test the results. I always have to iterate this process five or ten times before I find a satisfactory solution.
+*VP 9:* Adjusting the viewing angle in VP 9 is a bit tedious because you have to do it by typing numbers into a property sheet in the editor, and then run the game to test the results.
+I always have to iterate this process five or ten times before I find a satisfactory solution.
 
 * Open the table in the VP editor
 * On the left tool palette, click the *Backdrop* button
 * Make sure the properties panel on the right is showing; if it's not, click the *Options* button on the left tool palette
 * The properties panel should be labeled *Backdrop* at the top; if it's not, click in a background area of the editor window to select the backdrop
 
-In the Backdrop properties window, the *Colors & Formatting* section contains all of the viewing angle options. The exact settings vary a lot from one table to the next, so there's no one-size-fits-all setting list I can give you. You'll just have to experiment with the different settings to see the effect they have. Change a setting and run the table to see the result. Change one thing at a time so that you can see each setting's individual effect.
+In the Backdrop properties window, the *Colors & Formatting* section contains all of the viewing angle options.
+The exact settings vary a lot from one table to the next, so there's no one-size-fits-all setting list I can give you.
+You'll just have to experiment with the different settings to see the effect they have.
+Change a setting and run the table to see the result.
+Change one thing at a time so that you can see each setting's individual effect.
 
 Here's an overview of the individual settings and what they do:
 
-Inclination:: The camera tilt, in degrees. 0 points the camera straight down at the table. Positive values tilt the camera upwards. For cabinet use, this should usually be close to 0.
-Field of view:: The camera's viewing angle. This is analogous to a zoom lens on an optical camera. Zero produces an extremely flat view, like a telephoto image from a long way away; a high number (120-150) creates an exaggerated fisheye lens view. A value around 20 is usually good for cabinet use.
-Layback:: The camera's distance from the front of the table. Higher values create a more tilted perspective. 0 creates a view from right over the center of the table. You want a value that places the camera a little ways out in front of the table, just like the normal viewing position for a player. A value of about 2/3 of the Y offset below is usually good.
+Inclination:: The camera tilt, in degrees.
+0 points the camera straight down at the table.
+Positive values tilt the camera upwards.
+For cabinet use, this should usually be close to 0.
+Field of view:: The camera's viewing angle.
+This is analogous to a zoom lens on an optical camera.
+Zero produces an extremely flat view, like a telephoto image from a long way away; a high number (120-150) creates an exaggerated fisheye lens view.
+A value around 20 is usually good for cabinet use.
+Layback:: The camera's distance from the front of the table.
+Higher values create a more tilted perspective.
+0 creates a view from right over the center of the table.
+You want a value that places the camera a little ways out in front of the table, just like the normal viewing position for a player.
+A value of about 2/3 of the Y offset below is usually good.
 XY Rotation:: For cabinet play, set this to 270.
-X Scale:: This adjusts the table's size relative to the width of the monitor, which is confusingly the height of the table, when rotated 270 degrees for cabinet play. Adjust this to fit the table in the monitor across the monitor's width. This varies a lot by table, since it's a function of the playfield dimensions as well as the camera angle settings above. A value of around 1.4 works for many tables, but you'll have to fine-tune it for each table.
-Y Scale:: This adjusts the table's size relative to the height of the monitor, which is the width of the table, when rotated 270 degrees for cabinet play. Adjust to fit. A value of around 2.0 works for many tables, but you'll have to fine-tune it for each table.
-X Offset:: This adjusts the side-to-side position of the table, which is confusingly the vertical position on the monitor, when rotated 270 degrees for cabinet play. Adjust this so that the table is positioned properly. A value of around -450 works for most tables, but you'll have to fine-tune it for each table.
-Y Offset:: This adjusts the top-to-bottom position of the table, which is confusingly the horizontal position on the monitor, when rotated 270 degrees for cabinet play. Adjust this so that the table is positioned properly. A value of around 50 works for most tables, but you'll have to fine-tune it.
+X Scale:: This adjusts the table's size relative to the width of the monitor, which is confusingly the height of the table, when rotated 270 degrees for cabinet play.
+Adjust this to fit the table in the monitor across the monitor's width.
+This varies a lot by table, since it's a function of the playfield dimensions as well as the camera angle settings above.
+A value of around 1.4 works for many tables, but you'll have to fine-tune it for each table.
+Y Scale:: This adjusts the table's size relative to the height of the monitor, which is the width of the table, when rotated 270 degrees for cabinet play.
+Adjust to fit.
+A value of around 2.0 works for many tables, but you'll have to fine-tune it for each table.
+X Offset:: This adjusts the side-to-side position of the table, which is confusingly the vertical position on the monitor, when rotated 270 degrees for cabinet play.
+Adjust this so that the table is positioned properly.
+A value of around -450 works for most tables, but you'll have to fine-tune it for each table.
+Y Offset:: This adjusts the top-to-bottom position of the table, which is confusingly the horizontal position on the monitor, when rotated 270 degrees for cabinet play.
+Adjust this so that the table is positioned properly.
+A value of around 50 works for most tables, but you'll have to fine-tune it.
 
-VP 10:: You can use exactly the same procedure as above with VP 10, but VP 10 also has an interactive "camera mode" that's a little easier to use. Camera mode lets you see the effect of each change immediately on the rendered table, without having to switch back and forth between editor mode and play mode repeatedly.
+VP 10:: You can use exactly the same procedure as above with VP 10, but VP 10 also has an interactive "camera mode" that's a little easier to use.
+Camera mode lets you see the effect of each change immediately on the rendered table, without having to switch back and forth between editor mode and play mode repeatedly.
 
-To activate camera mode, use the menu command *Table > Camera/Light Edit Mode* , or press F6. Follow the on-screen instructions to cycle through the settings and make adjustments. The settings listed above for VP 9 all have the same meanings here.
+To activate camera mode, use the menu command *Table > Camera/Light Edit Mode* , or press F6.
+Follow the on-screen instructions to cycle through the settings and make adjustments.
+The settings listed above for VP 9 all have the same meanings here.
 
-The camera mode controls are a little cumbersome, and it's hard to set exact values with them. You can always go back and fine-tune the values with the properties editor (using the VP 9 procedure above) to make any final adjustments.
+The camera mode controls are a little cumbersome, and it's hard to set exact values with them.
+You can always go back and fine-tune the values with the properties editor (using the VP 9 procedure above) to make any final adjustments.
 
 === Fake 3D table elements
 
 One thing to note is that a lot of tables have some "fake 3D" table elements that don't respond well to viewing angle adjustments.
 
-For example, consider Rudy's head in _Funhouse_ . On the real machine, of course, Rudy is a rather large 3D chunk of plastic. But some VP versions of _Funhouse_ don't use a 3D model object for Rudy; they just use a photo of Rudy pasted onto a flat surface in the VP model. That's what I mean by a "fake 3D" element: it's meant to look like it's 3D, but it's actually just a flat photo in the software.
+For example, consider Rudy's head in _Funhouse_ .
+On the real machine, of course, Rudy is a rather large 3D chunk of plastic.
+But some VP versions of _Funhouse_ don't use a 3D model object for Rudy; they just use a photo of Rudy pasted onto a flat surface in the VP model.
+That's what I mean by a "fake 3D" element: it's meant to look like it's 3D, but it's actually just a flat photo in the software.
 
-The problem with these fake 3D objects is that the viewing angle captured in the photo will stay the same no matter how much you change the viewing angle of the table. The photo is, after all, just a photo. If you change the overall table viewing angle too far, it will become extremely obvious that the flat photo is now from the wrong perspective.
+The problem with these fake 3D objects is that the viewing angle captured in the photo will stay the same no matter how much you change the viewing angle of the table.
+The photo is, after all, just a photo.
+If you change the overall table viewing angle too far, it will become extremely obvious that the flat photo is now from the wrong perspective.
 
 There are a few ways you can deal with this when you run into it:
 
-* You can live with the distortion. The distortion will become more obvious the further you change the table viewing angle, so if you only need to adjust the angle a little bit, the distortion might remain tolerable.
-* You can take or find a new photo from the new angle and replace the one in the table. This is tough unless you have access to the real machine, but you might get lucky and find a suitable image on the Web. You can find a lot of images on the Web for the more popular titles, after all.
-* You can substitute a real 3D model (known in VP parlance as a "primitive") for the fake, flat photo. Ask on the forums to see if someone has already created one; there are 3D models of lots of pinball elements floating around (even unique ones like Rudy's head). Browse through some generic 3D model sites looking for something similar that you can adapt via Blender or SketchUp. If it's not too complex, create one yourself with one of those programs.
+* You can live with the distortion.
+The distortion will become more obvious the further you change the table viewing angle, so if you only need to adjust the angle a little bit, the distortion might remain tolerable.
+* You can take or find a new photo from the new angle and replace the one in the table.
+This is tough unless you have access to the real machine, but you might get lucky and find a suitable image on the Web.
+You can find a lot of images on the Web for the more popular titles, after all.
+* You can substitute a real 3D model (known in VP parlance as a "primitive") for the fake, flat photo.
+Ask on the forums to see if someone has already created one; there are 3D models of lots of pinball elements floating around (even unique ones like Rudy's head).
+Browse through some generic 3D model sites looking for something similar that you can adapt via Blender or SketchUp.
+If it's not too complex, create one yourself with one of those programs.
 
-Once you have a 3D object, you have to save it in the Wavefront ".obj" format. This is a common format that most 3D editors can save to. Next, create a "primitive" object in VP and import the .obj file. You'll also need a "texture" (an image that's projected onto the 3D surface to provide its coloration). The details are beyond the scope of this guide, but you should be able to get help in the forums if you're not familiar with VP primitives.
+Once you have a 3D object, you have to save it in the Wavefront ".obj" format.
+This is a common format that most 3D editors can save to.
+Next, create a "primitive" object in VP and import the .obj file.
+You'll also need a "texture" (an image that's projected onto the 3D surface to provide its coloration).
+The details are beyond the scope of this guide, but you should be able to get help in the forums if you're not familiar with VP primitives.
 
 == Viewing and editing the table script
 
-Many customizations in VP are made through the table's "script". Every table has a script, which is basically a little computer program that carries out certain operations when you're playing a game with the table. It's called a "script" by way of analogy to the script for a movie or play. A movie script is a series of things the actors are supposed to say and do during the movie; a VP table script is a series of things the computer is supposed to do while the table is running.
+Many customizations in VP are made through the table's "script".
+Every table has a script, which is basically a little computer program that carries out certain operations when you're playing a game with the table.
+It's called a "script" by way of analogy to the script for a movie or play.
+A movie script is a series of things the actors are supposed to say and do during the movie; a VP table script is a series of things the computer is supposed to do while the table is running.
 
 To view a table's script:
 
 * In VP 8/9, use the *Edit > Script* menu command
 * In VP 10, use the *View > Script* menu command
 
-That brings up a text editor window showing the script. You can simply type into this window to edit the code.
+That brings up a text editor window showing the script.
+You can simply type into this window to edit the code.
 
-Table scripts are by their nature utterly unique, meaning there are no fixed patterns that they have to follow. However, there are certain conventions that many table authors follow, so you'll start to see patterns after you've looked at a few scripts.
+Table scripts are by their nature utterly unique, meaning there are no fixed patterns that they have to follow.
+However, there are certain conventions that many table authors follow, so you'll start to see patterns after you've looked at a few scripts.
 
-VP scripts are written in the Visual Basic language. (Which makes for some confusing initials: VP scripts are VB scripts!) If you want to be more technical, VP actually uses a variant of Visual Basic called "Visual Basic Scripting" or VBS. Beware example code you find on the Web, because many Web examples of "Visual Basic" use a different variant known as "Visual Basic for Applications" or VBA. VBA is much more powerful, so unfortunately, many generic Visual Basic examples on the Web just won't work in VP's simpler version of the language.
+VP scripts are written in the Visual Basic language.
+(Which makes for some confusing initials: VP scripts are VB scripts!) If you want to be more technical, VP actually uses a variant of Visual Basic called "Visual Basic Scripting" or VBS.
+Beware example code you find on the Web, because many Web examples of "Visual Basic" use a different variant known as "Visual Basic for Applications" or VBA.
+VBA is much more powerful, so unfortunately, many generic Visual Basic examples on the Web just won't work in VP's simpler version of the language.
 
 == Option variables
 
-As mentioned above, many VP table authors follow common conventions and patterns for how scripts are arranged. One of these common patterns you'll often see is a set of "option variables" defined near the top of the script, that let you select some pre-programmed variations on the table's behavior. It's always a good idea to scan through the script for a new table you've installed to see if it has any option settings and customize them to your liking.
+As mentioned above, many VP table authors follow common conventions and patterns for how scripts are arranged.
+One of these common patterns you'll often see is a set of "option variables" defined near the top of the script, that let you select some pre-programmed variations on the table's behavior.
+It's always a good idea to scan through the script for a new table you've installed to see if it has any option settings and customize them to your liking.
 
-To see if a table has any option variables, read through the comments near the top of the script. A comment in VP starts with an apostrophe ('), and the VP editor usually shows it as green text:
+To see if a table has any option variables, read through the comments near the top of the script.
+A comment in VP starts with an apostrophe ('), and the VP editor usually shows it as green text:
 
 
 [#source1,vb]
 ----
-' Funhouse / IPD No. 966 / Williams, November, 1990 / 4 Players
+' Funhouse / IPD No.
+966 / Williams, November, 1990 / 4 Players
 ' VP9 12.0 by JPSalas 2009
 ----
 
-Script options are typically defined as Visual Basic variable assigments or `Const` (named constant) definitions. Most authors group these near the start of the script, to make them easy for people to find without having to read through the whole of the script, and prominently label them with comments so that you'll know what they're for.
+Script options are typically defined as Visual Basic variable assigments or `Const` (named constant) definitions.
+Most authors group these near the start of the script, to make them easy for people to find without having to read through the whole of the script, and prominently label them with comments so that you'll know what they're for.
 
 For example, here are the options at the top of _Whirlwind_ for VP 9:
 
@@ -152,11 +223,15 @@ You don't have to be much of a programmer to know what to do with these: just ch
 
 == How to fix up tables for a real plunger
 
-Many VP 9 tables require some scripting changes before they'll work properly with a plunger device. Most VP 10 tables work with plungers automatically, but you might run into a few that need the same kind of fixup as is often needed for VP 9. The changes are sometimes fairly complex, so we cover this topic in a separate chapter: xref:tablePlungerFixup.adoc#tablePlungerFixup[Fixing VP Plungers] .
+Many VP 9 tables require some scripting changes before they'll work properly with a plunger device.
+Most VP 10 tables work with plungers automatically, but you might run into a few that need the same kind of fixup as is often needed for VP 9.
+The changes are sometimes fairly complex, so we cover this topic in a separate chapter: xref:tablePlungerFixup.adoc#tablePlungerFixup[Fixing VP Plungers] .
 
 == How to enable B2S backglasses
 
-Most VP 10 tables will work with B2S without any modification, as will some later (2016+) VP 9 tables. Earlier VP 9 tables often require some slight modifications to the table script to enable backglass art, though. See xref:b2s.adoc#b2s[Backglass Software Setup] for details.
+Most VP 10 tables will work with B2S without any modification, as will some later (2016+) VP 9 tables.
+Earlier VP 9 tables often require some slight modifications to the table script to enable backglass art, though.
+See xref:b2s.adoc#b2s[Backglass Software Setup] for details.
 
 [#vpTableSoundsToBackboxSpeakers]
 == How to play table sound effects through the backbox speakers
@@ -166,15 +241,28 @@ If you have a separate set of playfield effects speakers inside your cabinet, VP
 * If the sound comes from the game's ROM (the original game's software, being emulated in VPinMAME), it's played through the backbox speakers
 * Otherwise, it's played through the playfield effects speakers
 
-If you don't have a separate set of playfield effects speakers, all sounds are played through your main speakers. See "Playfield effects speakers" in xref:audio.adoc#playfieldEffectsSpeakers[Audio Systems] for more about setting up the extra speakers.
+If you don't have a separate set of playfield effects speakers, all sounds are played through your main speakers.
+See "Playfield effects speakers" in xref:audio.adoc#playfieldEffectsSpeakers[Audio Systems] for more about setting up the extra speakers.
 
-Assuming you do have playfield effects speakers, you might want to override the rule about playing all of the non-ROM sounds through the playfield effects speakers. VP lets you override it on an effect-by-effect basis.
+Assuming you do have playfield effects speakers, you might want to override the rule about playing all of the non-ROM sounds through the playfield effects speakers.
+VP lets you override it on an effect-by-effect basis.
 
-First, let's think about why the rule is set up this way in the first place. The ROM soundtrack is the game's original soundtrack from the arcade game, so on the _real_ version of the machine, all of the sounds from the ROM were played back through the real machine's backbox speakers. So it makes sense that we'd want to do the same thing in a virtual cab. What about the "non-ROM" sounds? Those are sound effects that the VP table author added into the simulation of the table. These are almost all meant to simulate the sound made by something mechanical on the playfield, like the ball rolling around and bumping into things, bumpers bumping, etc. So in almost all cases, you want these to sound like they're coming from the playfield area rather than from the backbox.
+First, let's think about why the rule is set up this way in the first place.
+The ROM soundtrack is the game's original soundtrack from the arcade game, so on the _real_ version of the machine, all of the sounds from the ROM were played back through the real machine's backbox speakers.
+So it makes sense that we'd want to do the same thing in a virtual cab.
+What about the "non-ROM" sounds? Those are sound effects that the VP table author added into the simulation of the table.
+These are almost all meant to simulate the sound made by something mechanical on the playfield, like the ball rolling around and bumping into things, bumpers bumping, etc.
+So in almost all cases, you want these to sound like they're coming from the playfield area rather than from the backbox.
 
-Now let's think about why you might want to override this for some sounds. Occasionally, you might have a mechanical sound that actually would have come from the backbox on the original real machine. For example, some EM-era machines had scoring bells situated in the backbox. Likewise, any simulated score reel sounds ought to come from the backbox area. In addition, some tables might have the occasional added voice or music effect that supplements the game's original ROM soundtrack, so you might want these to play through the backbox speakers as though they were part of the ROM soundtrack.
+Now let's think about why you might want to override this for some sounds.
+Occasionally, you might have a mechanical sound that actually would have come from the backbox on the original real machine.
+For example, some EM-era machines had scoring bells situated in the backbox.
+Likewise, any simulated score reel sounds ought to come from the backbox area.
+In addition, some tables might have the occasional added voice or music effect that supplements the game's original ROM soundtrack, so you might want these to play through the backbox speakers as though they were part of the ROM soundtrack.
 
-In VP, table sound effects are tied to one or the other set of speakers (playfield or backbox) on an effect-by-effect basis. All of the sounds are initially set to play through the playfield effects speakers. To change an effect to play through the backbox speakers instead, here's the procedure:
+In VP, table sound effects are tied to one or the other set of speakers (playfield or backbox) on an effect-by-effect basis.
+All of the sounds are initially set to play through the playfield effects speakers.
+To change an effect to play through the backbox speakers instead, here's the procedure:
 
 * Launch VP
 * Open the game in the VP editor (don't run it)
@@ -185,52 +273,77 @@ In VP, table sound effects are tied to one or the other set of speakers (playfie
 ** In VP 10, the "Output" column will say either *Table* (plays through the playfield effects speakers) or *Backglass* (plays through the backbox speakers)
 * If it's not already on the backbox speakers, click *Toggle BG Out* (VP 10) or *To BG Out* (VP 9)
 
-If you want to go the other direction - change a sound that's already on the backbox speakers to use the playfield effects speakers instead - the process is exactly the same with VP 10. Just select the sound in the list and click *Toggle BG Out* to switch it back to *Table* mode. The process in VP 9 is rather ugly: you have to export the sound effect to a WAV file and re-import it. What's more, some VP versions have a bug that won't let you export a sound that's been set to the backglass output, so you're kind of stuck. The best workaround would be to download a fresh copy of the table, export the sound from that fresh copy, and import the sound into your modified version of the game.
+If you want to go the other direction - change a sound that's already on the backbox speakers to use the playfield effects speakers instead - the process is exactly the same with VP 10.
+Just select the sound in the list and click *Toggle BG Out* to switch it back to *Table* mode.
+The process in VP 9 is rather ugly: you have to export the sound effect to a WAV file and re-import it.
+What's more, some VP versions have a bug that won't let you export a sound that's been set to the backglass output, so you're kind of stuck.
+The best workaround would be to download a fresh copy of the table, export the sound from that fresh copy, and import the sound into your modified version of the game.
 
-What about changing some of the ROM sounds to play back through the table effects speakers? Sorry; it can't be done. All of the ROM sounds are handled by VPinMAME, which doesn't have any options for changing the speakers for a specific sound. Remember that the ROM software is more of a "black box" than a VP table, since it's emulating an old arcade machine that didn't work like a PC with modern abstractions like WAV files. VPinMAME doesn't have any way to make a simple list of the sounds in a ROM that you could use to choose speakers like you can with the table sounds in VP.
+What about changing some of the ROM sounds to play back through the table effects speakers? Sorry; it can't be done.
+All of the ROM sounds are handled by VPinMAME, which doesn't have any options for changing the speakers for a specific sound.
+Remember that the ROM software is more of a "black box" than a VP table, since it's emulating an old arcade machine that didn't work like a PC with modern abstractions like WAV files.
+VPinMAME doesn't have any way to make a simple list of the sounds in a ROM that you could use to choose speakers like you can with the table sounds in VP.
 
 == How to enable DOF
 
-DOF support is similar to B2S support: for most VP tables and some later VP 9 tables, DOF support is automatic, whereas earlier VP 9 tables usually require some script modifications. See xref:DOF.adoc#HowToEnableDOFInVP[DOF Setup] for details.
+DOF support is similar to B2S support: for most VP tables and some later VP 9 tables, DOF support is automatic, whereas earlier VP 9 tables usually require some script modifications.
+See xref:DOF.adoc#HowToEnableDOFInVP[DOF Setup] for details.
 
 === Removing sound effects for DOF play
 
-If you have DOF mechanical feedback devices (solenoids, gear motors), you'll usually want to disable the digitized sound effects that tables play back to simulate the same events, since the digitized sounds tend to sound fake (not to mention redundant) when real mechanical devices are firing at the same time. xref:DOF.adoc#DisablingUnwantedSounds[DOF Setup] describes how to remove the unwanted sound effects.
+If you have DOF mechanical feedback devices (solenoids, gear motors), you'll usually want to disable the digitized sound effects that tables play back to simulate the same events, since the digitized sounds tend to sound fake (not to mention redundant) when real mechanical devices are firing at the same time.
+xref:DOF.adoc#DisablingUnwantedSounds[DOF Setup] describes how to remove the unwanted sound effects.
 
 == How to fix EM tables that use the wrong coin keys
 
-Some re-creations of EM (electro-mechanical) tables use the "wrong" keyboard keys for some functions, especially the coin-in buttons. If you're having problems with an EM game where it won't respond to your pin cab's coin buttons, this might be the cause.
+Some re-creations of EM (electro-mechanical) tables use the "wrong" keyboard keys for some functions, especially the coin-in buttons.
+If you're having problems with an EM game where it won't respond to your pin cab's coin buttons, this might be the cause.
 
-The reason you see this in EM tables in particular (as opposed to more modern "solid state" games - the type with electronic displays of some kind) has to do with VPinMAME. VPinMAME is the part of the Visual Pinball system that normally handles most of the keyboard functions, including coin handling. The thing is that EM re-creations don't typically use VPinMAME, because VPM's function is to emulate the original ROM software from an electronic game. Part of the definition of "EM" is that it doesn't have any software, ergo no VPM involvement. And without VPM, it's completely up to the table script to handle all of the keyboard interaction, including the coin keys. EM table authors often hard-code the coin function to a specific keyboard key, which might not match your pin cab's button setup.
+The reason you see this in EM tables in particular (as opposed to more modern "solid state" games - the type with electronic displays of some kind) has to do with VPinMAME.
+VPinMAME is the part of the Visual Pinball system that normally handles most of the keyboard functions, including coin handling.
+The thing is that EM re-creations don't typically use VPinMAME, because VPM's function is to emulate the original ROM software from an electronic game.
+Part of the definition of "EM" is that it doesn't have any software, ergo no VPM involvement.
+And without VPM, it's completely up to the table script to handle all of the keyboard interaction, including the coin keys.
+EM table authors often hard-code the coin function to a specific keyboard key, which might not match your pin cab's button setup.
 
-Fortunately, it's not too hard to fix these when you find them. The procedure is to find the place in the table's script where the coin key is handled, and change the script to test for the correct key.
+Fortunately, it's not too hard to fix these when you find them.
+The procedure is to find the place in the table's script where the coin key is handled, and change the script to test for the correct key.
 
 * Open the table in the VP editor
 * Open the table's script
-* Search for the string `_KeyDown`. This should take you to a line that looks like this:
+* Search for the string `_KeyDown`.
+This should take you to a line that looks like this:
 +
 [source,vb]
 SubTable_KeyDown(ByVal keycode)
 
-* Note that the `Table_` prefix might be different in the actual table, but the rest should be the same. This is the start of the key handler subroutine. The code we're looking for now is somewhere in this subroutine, which is all of the code up until the next line like this:
+* Note that the `Table_` prefix might be different in the actual table, but the rest should be the same.
+This is the start of the key handler subroutine.
+The code we're looking for now is somewhere in this subroutine, which is all of the code up until the next line like this:
 +
 [source,vb]
 EndSub
 
 * Most people indent the code in this section to make it easier to see that all of the code up to the `End Sub` goes together.
-* At this point, you'll have to read through the code to find the section that handles the coin input. Hopefully, the table author will have put in a comment, or at least used well-named variables. Look for the words "coin", "credit", or maybe something like this:
+* At this point, you'll have to read through the code to find the section that handles the coin input.
+Hopefully, the table author will have put in a comment, or at least used well-named variables.
+Look for the words "coin", "credit", or maybe something like this:
 +
 [source,vb]
 Credits = Credits +1
 
-* If you can find the right section, it should be preceded by a test for the key code. That will usually look like one of the following:
+* If you can find the right section, it should be preceded by a test for the key code.
+That will usually look like one of the following:
 +
 [source,vb]
 Case6:IfKeyCode =6Then
 
-* The number after `Case` or `Keycode=` might be different. It's usually 6, which is the scan code for the "5" key on the keyboard (confusingly!), since that's what most desktop users expect for the coin-in key. It might also be 4 (the scan code for the "3" key), since that's another common coin-in assignment.
+* The number after `Case` or `Keycode=` might be different.
+It's usually 6, which is the scan code for the "5" key on the keyboard (confusingly!), since that's what most desktop users expect for the coin-in key.
+It might also be 4 (the scan code for the "3" key), since that's another common coin-in assignment.
 * If you find that line, change the number to the word `AddCreditKey`
 * Close the script and save the table
 
-The special symbol `AddCreditKey` is VP's way of referring to the key assigned to the coin function in the VP option settings. If the script was using a hard-coded scan code, this change should make the table use the correct key as set in the options.
+The special symbol `AddCreditKey` is VP's way of referring to the key assigned to the coin function in the VP option settings.
+If the script was using a hard-coded scan code, this change should make the table use the correct key as set in the options.
 

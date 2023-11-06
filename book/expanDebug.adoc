@@ -3,52 +3,97 @@
 
 This section has some things you can try to diagnose and fix any problems you've having with a set of expansion boards.
 
-If you haven't already, you should run through the test procedures in xref:expanTesting.adoc#expanTesting[Initial Expansion Board Testing] . That should give you a clearer idea of what's working and what's not working. That section also includes some basic debugging steps that might solve some simpler problems.
+If you haven't already, you should run through the test procedures in xref:expanTesting.adoc#expanTesting[Initial Expansion Board Testing] .
+That should give you a clearer idea of what's working and what's not working.
+That section also includes some basic debugging steps that might solve some simpler problems.
 
-If you go through all of the debugging suggestions for a particular symptom without identifying the problem, let me know. I'd like to include as many causes and fixes as possible, so if you come up with a new one that I haven't covered here, I'd like to add it.
+If you go through all of the debugging suggestions for a particular symptom without identifying the problem, let me know.
+I'd like to include as many causes and fixes as possible, so if you come up with a new one that I haven't covered here, I'd like to add it.
 
 == Top problem sources
 
 Here are the main causes of problems I've seen when helping people debug expansion boards:
 
-* Bad solder joints. These boards have lots and lots of solder pads, so it's very easy for a couple of them to fail. A so-called "cold solder joint" is one that looks good visually, but has tiny fractures in the solder, blocking electrical contact. The best way to test for these is continuity testing (see below); we'll point out which points in the circuits you should test for each failure mode.
-* Defective chips. Some chips are simply defective when they roll off the factory assembly line, and some get damaged during shipping or storage. I've had defective chips a couple of times even when ordering from Mouser, but it seems to happen a lot more with eBay. With Mouser, you can count on them to sell you authentic, factory-direct parts, and to handle them properly at their warehouse, but a few dead parts still slip through the cracks. With eBay, who knows what you're getting. I've heard from several people who had problems with their boards that turned out to be dead TLC5940 chips that they ordered from eBay. You can't get those chips anywhere but eBay these days, so you just have to hope for the best. I've also run into a couple of bad optocouplers (PC817 and PC847). Unfortunately, there's no easy test procedure you can perform for the TLC5940 or PC8x7 chips individually (and you shouldn't have to do that anyway, since you should be able to count on the factory to do quality control checks). But there are some things you can do once they're installed to trace a problem to a particular dead chip, which we'll get to shortly.
-* Simple chip insertion or cabling errors. See "quick sanity checks" below.
+* Bad solder joints.
+These boards have lots and lots of solder pads, so it's very easy for a couple of them to fail.
+A so-called "cold solder joint" is one that looks good visually, but has tiny fractures in the solder, blocking electrical contact.
+The best way to test for these is continuity testing (see below); we'll point out which points in the circuits you should test for each failure mode.
+* Defective chips.
+Some chips are simply defective when they roll off the factory assembly line, and some get damaged during shipping or storage.
+I've had defective chips a couple of times even when ordering from Mouser, but it seems to happen a lot more with eBay.
+With Mouser, you can count on them to sell you authentic, factory-direct parts, and to handle them properly at their warehouse, but a few dead parts still slip through the cracks.
+With eBay, who knows what you're getting.
+I've heard from several people who had problems with their boards that turned out to be dead TLC5940 chips that they ordered from eBay.
+You can't get those chips anywhere but eBay these days, so you just have to hope for the best.
+I've also run into a couple of bad optocouplers (PC817 and PC847).
+Unfortunately, there's no easy test procedure you can perform for the TLC5940 or PC8x7 chips individually (and you shouldn't have to do that anyway, since you should be able to count on the factory to do quality control checks).
+But there are some things you can do once they're installed to trace a problem to a particular dead chip, which we'll get to shortly.
+* Simple chip insertion or cabling errors.
+See "quick sanity checks" below.
 
 == Quick sanity checks
 
 At the risk of belaboring the obvious, it's always good to double-check some of the basics:
 
-* Make sure all power cables are connected. The PC PSU and 2ND PSU connectors must *both* be connected for the boards to function properly.
-* Make sure cables are inserted the right way. For ribbon cables, I always recommend marking one edge of the cable with a red stripe (or something similar), and making sure that the red stripe is on the side with the "Pin 1" marking on the circuit board connector at both ends.
-* Make sure IC chips are inserted the right way. See xref:icchips.adoc#icchips[IC Chips] for how to properly orient each type of IC used in the project.
-* If you're using sockets for the IC chips, visually inspect them and make sure the chips are fully seated, and that all of the pins are inserted. Make sure none of the pins are sticking out the side of the socket or got folded under the chip.
+* Make sure all power cables are connected.
+The PC PSU and 2ND PSU connectors must *both* be connected for the boards to function properly.
+* Make sure cables are inserted the right way.
+For ribbon cables, I always recommend marking one edge of the cable with a red stripe (or something similar), and making sure that the red stripe is on the side with the "Pin 1" marking on the circuit board connector at both ends.
+* Make sure IC chips are inserted the right way.
+See xref:icchips.adoc#icchips[IC Chips] for how to properly orient each type of IC used in the project.
+* If you're using sockets for the IC chips, visually inspect them and make sure the chips are fully seated, and that all of the pins are inserted.
+Make sure none of the pins are sticking out the side of the socket or got folded under the chip.
 
 == Visual solder check
 
-I recommend giving the board a careful visual inspection with a magnifying glass, looking for suspicious solder joints. This is an easy test, and it's pretty effective - I can usually catch one or two bad connections this way after first assembling a board. Some bad solder joints can evade visual detection, so this probably won't catch them all, but it can save you some time later if you catch the obvious ones up front.
+I recommend giving the board a careful visual inspection with a magnifying glass, looking for suspicious solder joints.
+This is an easy test, and it's pretty effective - I can usually catch one or two bad connections this way after first assembling a board.
+Some bad solder joints can evade visual detection, so this probably won't catch them all, but it can save you some time later if you catch the obvious ones up front.
 
 == Continuity testing
 
 One of the main tests we'll recommend throughout this section is "continuity testing," which means that you use a multimeter to check that there's a solid connection between two points.
 
-I think the most common cause of problems I've seen with the expansion boards is bad solder joints. It's no wonder, since these boards have quite a lot of individual pin pads, and I think even the most experienced soldering experts still have some percentage of "cold" (non-connected) solder joints on the first attempt. Every time I've built these boards myself, I've had two or three bad connections per board.
+I think the most common cause of problems I've seen with the expansion boards is bad solder joints.
+It's no wonder, since these boards have quite a lot of individual pin pads, and I think even the most experienced soldering experts still have some percentage of "cold" (non-connected) solder joints on the first attempt.
+Every time I've built these boards myself, I've had two or three bad connections per board.
 
-The tricky thing about cold solder joints is that they can look perfectly normal to visual inspection. The solder can sometimes form tiny fractures as it cools that aren't readily visible but are big enough to prevent electrical contact. So the best way to find them is to test for electrical continuity. We'll point out specific places to test for each set of symptoms.
+The tricky thing about cold solder joints is that they can look perfectly normal to visual inspection.
+The solder can sometimes form tiny fractures as it cools that aren't readily visible but are big enough to prevent electrical contact.
+So the best way to find them is to test for electrical continuity.
+We'll point out specific places to test for each set of symptoms.
 
-Most multimeters have a continuity testing mode that makes this fairly easy. The way this usually works is that the meter beeps when it detects good continuity, so you can test connections between several points quickly without having to stop and look at the meter. A slower alternative if you don't have a proper continuity-test mode is to use the resistance mode (to measure Ohms). A good connection should show a very small resistance value, well below 1Ω, and usually something like .01Ω.
+Most multimeters have a continuity testing mode that makes this fairly easy.
+The way this usually works is that the meter beeps when it detects good continuity, so you can test connections between several points quickly without having to stop and look at the meter.
+A slower alternative if you don't have a proper continuity-test mode is to use the resistance mode (to measure Ohms).
+A good connection should show a very small resistance value, well below 1Ω, and usually something like .01Ω.
 
 Always test continuity with the power OFF.
 
-When testing continuity to an IC pin, always test (if possible) at the *pin* itself. Not the solder pad on the bottom of the board, but rather the metal leg coming out of the chip, on the top side of the board. That's the surest place to test. If the problem is a cold solder joint, the whole problem is that the solder hasn't adhered properly to the pin. It might have adhered properly to the copper trace on the circuit board, so you might see continuity to the little glob of solder. But that doesn't matter if the solder isn't attached to the pin. So if you measure at the solder, you might see good continuity, even if the pin isn't attached properly. So measure at the pin when possible. The same goes for resistors, capacitors, transistors, and so on. Likewise, when testing a pin header, measure directly at the pin on the top side.
+When testing continuity to an IC pin, always test (if possible) at the *pin* itself.
+Not the solder pad on the bottom of the board, but rather the metal leg coming out of the chip, on the top side of the board.
+That's the surest place to test.
+If the problem is a cold solder joint, the whole problem is that the solder hasn't adhered properly to the pin.
+It might have adhered properly to the copper trace on the circuit board, so you might see continuity to the little glob of solder.
+But that doesn't matter if the solder isn't attached to the pin.
+So if you measure at the solder, you might see good continuity, even if the pin isn't attached properly.
+So measure at the pin when possible.
+The same goes for resistors, capacitors, transistors, and so on.
+Likewise, when testing a pin header, measure directly at the pin on the top side.
 
-If a continuity test fails, the best and easiest remedy is to get out your soldering iron and re-melt the solder at each end of the connection. You might also apply fresh solder, but I'd only do that if the current joint looks starved for solder; you don't want a giant glob that might create a short circuit with an adjacent pad.
+If a continuity test fails, the best and easiest remedy is to get out your soldering iron and re-melt the solder at each end of the connection.
+You might also apply fresh solder, but I'd only do that if the current joint looks starved for solder; you don't want a giant glob that might create a short circuit with an adjacent pad.
 
-After re-soldering to try to fix a failed test, check continuity again. If it looks good, go back and repeat the *live* test that led you to do the continuity test in the first place - test the button input, output port, etc. Most problems are due to single continuity errors, so re-soldering the pins when you find such a problem will usually fix the whole problem.
+After re-soldering to try to fix a failed test, check continuity again.
+If it looks good, go back and repeat the *live* test that led you to do the continuity test in the first place - test the button input, output port, etc.
+Most problems are due to single continuity errors, so re-soldering the pins when you find such a problem will usually fix the whole problem.
 
 == EAGLE plans
 
-For trickier problems, we might ask you to open the plans for the boards in the EAGLE software, which is the circuit board design program used to create them. I know - that might sound scary. But the tasks needed for this section are pretty simple, and we'll walk you through them. The EAGLE files are the definitive source of information on the details of how the parts on the board are connected, so that's really the most reliable way to get some of the needed information when tracing connections.
+For trickier problems, we might ask you to open the plans for the boards in the EAGLE software, which is the circuit board design program used to create them.
+I know - that might sound scary.
+But the tasks needed for this section are pretty simple, and we'll walk you through them.
+The EAGLE files are the definitive source of information on the details of how the parts on the board are connected, so that's really the most reliable way to get some of the needed information when tracing connections.
 
 If you do get to a point where we ask you to go to the board plans, here's how to set that up:
 
@@ -75,7 +120,8 @@ link:http://mjrnet.org/pinscape/expansion_board/download.php[mjrnet.org/pinscape
 
 === How to trace a circuit in EAGLE
 
-EAGLE makes it easy to see exactly what's connected to a particular point on the circuit board. This is the best way to trace a connection.
+EAGLE makes it easy to see exactly what's connected to a particular point on the circuit board.
+This is the best way to trace a connection.
 
 * Run EAGLE and load the .BRD file you want to look at as described above.
 * Find the header pin, IC pin, or other component connection point you want trace

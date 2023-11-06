@@ -1,65 +1,109 @@
 = PC Hardware Setup
 
-If you bought an assembled PC, all you have to do at this stage is unpack it. If you're building a PC from parts, you might want to do a preliminary test build at this point to make sure everything's working, and to confirm that you have everything you need.
+If you bought an assembled PC, all you have to do at this stage is unpack it.
+If you're building a PC from parts, you might want to do a preliminary test build at this point to make sure everything's working, and to confirm that you have everything you need.
 
-If you're going to install your PC equipment in your pin cab without a standard PC case, you can do your test build with the parts spread out on a tabletop. Be sure to do your work on a non-conductive surface like wood to avoid accidental shorts.
+If you're going to install your PC equipment in your pin cab without a standard PC case, you can do your test build with the parts spread out on a tabletop.
+Be sure to do your work on a non-conductive surface like wood to avoid accidental shorts.
 
 == Static electricity precautions
 
-Many of the parts in a PC are sensitive to static electricity, particularly the CPU and memory chips. That's why everything comes packaged in those silvery plastic anti-static bags.
+Many of the parts in a PC are sensitive to static electricity, particularly the CPU and memory chips.
+That's why everything comes packaged in those silvery plastic anti-static bags.
 
 Your body can accumulate a significant static charge, enough to damage semiconductors, so you have to be careful handling these parts to avoid zapping them when you touch them.
 
-The way to protect against damage when handling static-sensitive parts is to frequently "ground" yourself, meaning that you electrically connect yourself to the earth. Professional engineers do this with something called a grounding strap, which is a conductive bracelet that you wear on your wrist and connect by a wire to your house's ground wiring. That keeps you connected to the earth ground the whole time you're working. You probably don't have one of these unless you do a lot of electronics work, but you can achieve the same thing by simply touching a metal surface that's connected to earth ground periodically while you're working.
+The way to protect against damage when handling static-sensitive parts is to frequently "ground" yourself, meaning that you electrically connect yourself to the earth.
+Professional engineers do this with something called a grounding strap, which is a conductive bracelet that you wear on your wrist and connect by a wire to your house's ground wiring.
+That keeps you connected to the earth ground the whole time you're working.
+You probably don't have one of these unless you do a lot of electronics work, but you can achieve the same thing by simply touching a metal surface that's connected to earth ground periodically while you're working.
 
 Where do you find a grounded metal surface to touch while working? When you're working on a PC, there's one that's always close at hand: the power supply case.
 
-Here's what I suggest. Before you start any other work, get your power supply out of the box and *plug it in* . Put it on the table where you're going to do your work. Find a *bare metal surface* on the power supply case. If there are no bare metal surfaces, an unpainted screw head on the case will work. The key is bare metal attached to the case.
+Here's what I suggest.
+Before you start any other work, get your power supply out of the box and *plug it in* .
+Put it on the table where you're going to do your work.
+Find a *bare metal surface* on the power supply case.
+If there are no bare metal surfaces, an unpainted screw head on the case will work.
+The key is bare metal attached to the case.
 
 As long as the power supply is plugged in with a three-pronged plug, you can now ground yourself at any time by touching that bare metal surface.
 
-You don't have to keep in contact with the grounded metal all the time, although it's ideal if you do (which is why they invented those grounding bracelets). But do ground yourself frequently while working, at least every few minutes, and every time you return to the work station after walking around. Walking around is is a great way to accumulate static charge. Another good time is whenever you're about to open an anti-static bag or start handling a new part.
+You don't have to keep in contact with the grounded metal all the time, although it's ideal if you do (which is why they invented those grounding bracelets).
+But do ground yourself frequently while working, at least every few minutes, and every time you return to the work station after walking around.
+Walking around is is a great way to accumulate static charge.
+Another good time is whenever you're about to open an anti-static bag or start handling a new part.
 
 == Assembling the motherboard
 
-You should find detailed installation instructions for assembling your motherboard in its packaging. If you bought a retail-packaged CPU, it should also include its own instructions for installing it in the motherboard.
+You should find detailed installation instructions for assembling your motherboard in its packaging.
+If you bought a retail-packaged CPU, it should also include its own instructions for installing it in the motherboard.
 
-You should follow the setup instructions in your motherboard's documentation, since every board is a little different. In general, though, here are the steps:
+You should follow the setup instructions in your motherboard's documentation, since every board is a little different.
+In general, though, here are the steps:
 
-* Install the CPU in its socket. Be especially diligent about static electricity precautions while handling the bare CPU.
-* Install the CPU fan. Most motherboards have clips or sockets for securing the fan, so this is usually just a matter of fitting the fan into place.
-* Connect the CPU fan wiring. The CPU fan should have a short wire connector that mates to a "CPU FAN" socket or pin header on the motherboard.
+* Install the CPU in its socket.
+Be especially diligent about static electricity precautions while handling the bare CPU.
+* Install the CPU fan.
+Most motherboards have clips or sockets for securing the fan, so this is usually just a matter of fitting the fan into place.
+* Connect the CPU fan wiring.
+The CPU fan should have a short wire connector that mates to a "CPU FAN" socket or pin header on the motherboard.
 * Plug in the memory (RAM) chips.
-* Insert the video card into its motherboard slot. Note that some motherboards have multiple slots that are physically capable of holding the video card, but one slot might be better than the others because it has a faster data connection. Check your motherboard documentation to see if one slot is designated as the special slot for the video card. The documentation might not put it in these terms; it might instead list the PCI "x" speeds for the different slots, such as x1, x4, or x16. The highest "x" speed is the fastest slot, so it's the one to use for the video card.
+* Insert the video card into its motherboard slot.
+Note that some motherboards have multiple slots that are physically capable of holding the video card, but one slot might be better than the others because it has a faster data connection.
+Check your motherboard documentation to see if one slot is designated as the special slot for the video card.
+The documentation might not put it in these terms; it might instead list the PCI "x" speeds for the different slots, such as x1, x4, or x16.
+The highest "x" speed is the fastest slot, so it's the one to use for the video card.
 * Connect the storage device (hard disk or SSD).
-* Connect the power supply to the motherboard. There are usually two connectors from the power supply that plug directly into the motherboard.
-* Connect the power supply to the video card. Most higher-end video cards have a dedicated connection directly to the power supply. Your power supply should have the special mating plug attached to one of the wires in the bundle of cables coming out of the supply.
-* Connect the power supply to the hard disk or SSD. These devices have their own power connection. As with the video card, the hard disk/SSD has a dedicated power connector that will mate with one of the connector wires coming out of the power supply.
+* Connect the power supply to the motherboard.
+There are usually two connectors from the power supply that plug directly into the motherboard.
+* Connect the power supply to the video card.
+Most higher-end video cards have a dedicated connection directly to the power supply.
+Your power supply should have the special mating plug attached to one of the wires in the bundle of cables coming out of the supply.
+* Connect the power supply to the hard disk or SSD.
+These devices have their own power connection.
+As with the video card, the hard disk/SSD has a dedicated power connector that will mate with one of the connector wires coming out of the power supply.
 * Connect a video monitor to the video card.
 * Connect a keyboard and mouse to USB ports on the motherboard.
 * If you have a wired Ethernet network, connect a cable to the network plug on the motherboard.
 
 == Video card precautions
 
-If you're assembling everything on a tabletop without a standard PC case, the video card's connection to the motherboard will be fragile, since it won't have the structural support that a normal case provides. The PCI slot is really only meant to provide the electrical connection; it's not meant to provide structural support or anchor the card in place.
+If you're assembling everything on a tabletop without a standard PC case, the video card's connection to the motherboard will be fragile, since it won't have the structural support that a normal case provides.
+The PCI slot is really only meant to provide the electrical connection; it's not meant to provide structural support or anchor the card in place.
 
-You'll definitely need to secure the card physically in your eventual installation in the pin cab. For testing purposes, though, you can work with this flimsy setup as long as you're careful not nudge anything while the power is on. Even a little nudge, like someone bumping into the table, can be enough to momentarily interrupt the electrical connection in the socket. I'd avoid that; in most cases the only harm will be to make the PC reboot itself immediately, but these cards really aren't meant to be hot-plugged (taken in and out with the power on) and could be damaged by this.
+You'll definitely need to secure the card physically in your eventual installation in the pin cab.
+For testing purposes, though, you can work with this flimsy setup as long as you're careful not nudge anything while the power is on.
+Even a little nudge, like someone bumping into the table, can be enough to momentarily interrupt the electrical connection in the socket.
+I'd avoid that; in most cases the only harm will be to make the PC reboot itself immediately, but these cards really aren't meant to be hot-plugged (taken in and out with the power on) and could be damaged by this.
 
 == Power it on
 
 Once you have everything assembled as described above (and according to any additional instructions in your motherboard's documentation), you're ready to give it a test run.
 
-Modern PC motherboards have "soft power" controls, so even though it's already connected to the power supply, it won't actually turn on until you press the "on" button. If you have a case, the "on" button is the one on the case. If you're working without a case, though, you have to find the "Power Switch" pins on the motherboard. Check your motherboard documentation to find the right pins. The motherboard manual will tell you that these are the pins to connect to the "Power Switch" connector wires from your case.
+Modern PC motherboards have "soft power" controls, so even though it's already connected to the power supply, it won't actually turn on until you press the "on" button.
+If you have a case, the "on" button is the one on the case.
+If you're working without a case, though, you have to find the "Power Switch" pins on the motherboard.
+Check your motherboard documentation to find the right pins.
+The motherboard manual will tell you that these are the pins to connect to the "Power Switch" connector wires from your case.
 
-Once you identify the "power switch" terminals, you turn the PC on simply by shorting these two pins together for a moment. They're usually right next to each other on the motherboard, so if you don't have the right kind of connector handy, you can simply touch a metal screwdriver tip to both pins at the same time. (Be careful not to touch any other pins while doing this, of course.)
+Once you identify the "power switch" terminals, you turn the PC on simply by shorting these two pins together for a moment.
+They're usually right next to each other on the motherboard, so if you don't have the right kind of connector handy, you can simply touch a metal screwdriver tip to both pins at the same time.
+(Be careful not to touch any other pins while doing this, of course.)
 
 == BIOS Setup
 
-When the PC first powers up, you should see a brief message flash on the screen telling you to press a key on the keyboard to enter the BIOS Setup. It's usually one of the function keys, often F8 or F12, but it varies by motherboard. You'll just have to watch for the message to find the right key. You should also be able to find this information in your motherboard's documentation.
+When the PC first powers up, you should see a brief message flash on the screen telling you to press a key on the keyboard to enter the BIOS Setup.
+It's usually one of the function keys, often F8 or F12, but it varies by motherboard.
+You'll just have to watch for the message to find the right key.
+You should also be able to find this information in your motherboard's documentation.
 
-You should be able to reboot by pressing Alt+Ctrl+Del on your keyboard, which should give you another chance to press the magic BIOS Setup key. You can also power cycle by shorting the "Power Switch" pins together again to turn the PC off, then wait a few seconds and do it again to power up again.
+You should be able to reboot by pressing Alt+Ctrl+Del on your keyboard, which should give you another chance to press the magic BIOS Setup key.
+You can also power cycle by shorting the "Power Switch" pins together again to turn the PC off, then wait a few seconds and do it again to power up again.
 
-You have to press the magic BIOS Setup key at just the right moment after the power comes on. It usually works to tap on the key rapidly while the machine is powering up.
+You have to press the magic BIOS Setup key at just the right moment after the power comes on.
+It usually works to tap on the key rapidly while the machine is powering up.
 
-The BIOS Setup lets you configure the machine's hardware and verify that everything you physically attached (memory, disk, video card) is being properly recognized by the motherboard. It's worth running the setup as a very basic test, since the fact that it runs at all confirms that the video card, keyboard, CPU, and memory are all working.
+The BIOS Setup lets you configure the machine's hardware and verify that everything you physically attached (memory, disk, video card) is being properly recognized by the motherboard.
+It's worth running the setup as a very basic test, since the fact that it runs at all confirms that the video card, keyboard, CPU, and memory are all working.
 

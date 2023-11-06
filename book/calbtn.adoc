@@ -1,19 +1,29 @@
 [#calbtn]
 = Pinscape Plunger Calibration Button
 
-The Pinscape firmware has a provision for a dedicated, hard-wired button to activate plunger calibration. This was a feature from the very first version, before the Config Tool existed. When the Config Tool came along, the dedicated button became unnecessary, since you can now run the calibration from the Windows UI. But the firmware still lets you connect a physical button for this if you really want to. I don't see any good reason to do so, as the whole process is much friendlier through the Windows UI, but I'll give you a quick guide to setting it up, just in case.
+The Pinscape firmware has a provision for a dedicated, hard-wired button to activate plunger calibration.
+This was a feature from the very first version, before the Config Tool existed.
+When the Config Tool came along, the dedicated button became unnecessary, since you can now run the calibration from the Windows UI.
+But the firmware still lets you connect a physical button for this if you really want to.
+I don't see any good reason to do so, as the whole process is much friendlier through the Windows UI, but I'll give you a quick guide to setting it up, just in case.
 
 == Parts
 
-All you need is a pushbutton of some kind. The xref:partslist.adoc#electronicPartsList[Electronic Parts List] part list includes the button I used for this in my cab, which is a small illuminated pushbutton that's similar in size and shape to the buttons in the Williams coin door service panel (E-switch part number WBL2UOABQR05CLR). But there's nothing special about that one other than the form factor; all you need functionally is a pushbutton. It's nice to use an illuminated button, since the firmware shows feedback on the progress of the calibration process by blinking the light, but it's not required.
+All you need is a pushbutton of some kind.
+The xref:partslist.adoc#electronicPartsList[Electronic Parts List] part list includes the button I used for this in my cab, which is a small illuminated pushbutton that's similar in size and shape to the buttons in the Williams coin door service panel (E-switch part number WBL2UOABQR05CLR).
+But there's nothing special about that one other than the form factor; all you need functionally is a pushbutton.
+It's nice to use an illuminated button, since the firmware shows feedback on the progress of the calibration process by blinking the light, but it's not required.
 
-If you're connecting an illuminated button to the standalone KL25Z, you'll also need a few electronic components (also listed in the parts list) to build a small transistor amplifier to drive the button lamp. The KL25Z on its own can't drive a lamp due to its low GPIO power limits. It's not necessary to build this extra piece with the expansion boards since it's already built in.
+If you're connecting an illuminated button to the standalone KL25Z, you'll also need a few electronic components (also listed in the parts list) to build a small transistor amplifier to drive the button lamp.
+The KL25Z on its own can't drive a lamp due to its low GPIO power limits.
+It's not necessary to build this extra piece with the expansion boards since it's already built in.
 
 == Where to mount the button
 
 The calibration button is an "operator" feature, so I'd put it on the inside of the cabinet, making it accessible through the coin door.
 
-My preferred location would be an added custom service panel mounted to the inside of the coin door, similar to the standard service panel that you use to access the ROM operator menus. See "Adding an extra service panel" in xref:coinDoor.adoc#customServicePanel[Coin Door] .
+My preferred location would be an added custom service panel mounted to the inside of the coin door, similar to the standard service panel that you use to access the ROM operator menus.
+See "Adding an extra service panel" in xref:coinDoor.adoc#customServicePanel[Coin Door] .
 
 == Connecting to the expansion boards
 
@@ -24,21 +34,35 @@ image::images/expan-cal-btn.png[""]
 * Connect the Normally Open (NO) and Common terminals on the button to pins 2 and 4 on the header as shown above (it doesn't matter which switch terminal connects to which pin)
 * If your button has an indicator LED, connect the "-" terminal on the LED to pin 1 on the header and connect the "+" terminal on the LED to pin 3 on the header
 
-You should connect this through a 2x2 crimp pin housing (included in the parts list). See xref:crimpPins.adoc#crimpPins[Crimp Pins] for help with building the housing and connecting the wires. Be sure to mark pin 1 on the housing, to make it easy to remember the orientation whenever you have to plug in the connector. Pin 1 on the housing should line up with the arrow on the board that marks pin 1 on the board.
+You should connect this through a 2x2 crimp pin housing (included in the parts list).
+See xref:crimpPins.adoc#crimpPins[Crimp Pins] for help with building the housing and connecting the wires.
+Be sure to mark pin 1 on the housing, to make it easy to remember the orientation whenever you have to plug in the connector.
+Pin 1 on the housing should line up with the arrow on the board that marks pin 1 on the board.
 
 == Connecting to the standalone KL25Z
 
-The switch itself is easy. Find the Normally Open (NO) and Common terminals on the switch. Connect these to PTE29 (J10 pin 9 on the KL25Z) and GND (J9 pin 12 or 14). The order of the switch terminals doesn't matter.
+The switch itself is easy.
+Find the Normally Open (NO) and Common terminals on the switch.
+Connect these to PTE29 (J10 pin 9 on the KL25Z) and GND (J9 pin 12 or 14).
+The order of the switch terminals doesn't matter.
 
 image::images/kl25z-cal-btn-switch.png[""]
 
-The indicator LED, if you want to use one, takes a little more work. You have to build the little transistor amplifier circuit shown below.
+The indicator LED, if you want to use one, takes a little more work.
+You have to build the little transistor amplifier circuit shown below.
 
 image::images/kl25z-cal-btn-light.png[""]
 
-WARNING: The 82Ω resistor was specifically chosen for the blue LED in the illuminated pushbutton in the parts list. If you're using a different type of pushbutton, you'll need to recalculate the resistor value. Look in the button's data sheet to find the "Forward Voltage" and "Forward Current" values for the indicator lamp, then plug those values, along with the 5V supply voltage, into the LED resistor calculator in xref:ledResistors.adoc#ledResistors[LED Resistors] . That will tell you the correct value to substitute for the 82Ω resistor. (The 2.2K resistor _doesn't_ need to be recalculated - it's a constant.)
+WARNING: The 82Ω resistor was specifically chosen for the blue LED in the illuminated pushbutton in the parts list.
+If you're using a different type of pushbutton, you'll need to recalculate the resistor value.
+Look in the button's data sheet to find the "Forward Voltage" and "Forward Current" values for the indicator lamp, then plug those values, along with the 5V supply voltage, into the LED resistor calculator in xref:ledResistors.adoc#ledResistors[LED Resistors] .
+That will tell you the correct value to substitute for the 82Ω resistor.
+(The 2.2K resistor _doesn't_ need to be recalculated - it's a constant.)
 
-The GPIO pins (PTE29 for the switch, PTE23 for the indicator lamp) aren't set in stone. PTE29/PTE23 are the defaults that the firmware is initially set to assume, so that's what we're showing in the diagrams. But you can change these to any other GPIO pins you prefer using the Config Tool. To you set different ports:
+The GPIO pins (PTE29 for the switch, PTE23 for the indicator lamp) aren't set in stone.
+PTE29/PTE23 are the defaults that the firmware is initially set to assume, so that's what we're showing in the diagrams.
+But you can change these to any other GPIO pins you prefer using the Config Tool.
+To you set different ports:
 
 * Launch the Pinscape Config Tool
 * Click on the Settings icon for your device

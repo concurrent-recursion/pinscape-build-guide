@@ -5,61 +5,134 @@ Here are some resources I've found helpful while building my cabinet.
 
 == Contacting the author
 
-I encourage you to use the link:http://www.vpforums.org/index.php?showforum=29.html[virtual cabinet forums] for most support-type questions. The forums have the advantage that other people might be able to answer before I see the question, so you might get an answer more quickly. The other plus is that the public discussion might help other people who have similar questions.
+I encourage you to use the link:http://www.vpforums.org/index.php?showforum=29.html[virtual cabinet forums] for most support-type questions.
+The forums have the advantage that other people might be able to answer before I see the question, so you might get an answer more quickly.
+The other plus is that the public discussion might help other people who have similar questions.
 
-If you don't want to post the question publicly for some reason, you can send me a private messages (PM) on link:https://www.vpforums.org/[vpforums] . My ID there is *mjr* .
+If you don't want to post the question publicly for some reason, you can send me a private messages (PM) on link:https://www.vpforums.org/[vpforums] .
+My ID there is *mjr* .
 
 == Other build guides
 
-* Major Frenchy's link:https://mameinabox.com/[Mame in a Box] offers a large set of video tutorials on building pin cabs. Its goal is to be a comprehensive build guide like this one, including a lot of material in video format.
-*  link:https://vpuniverse.com/forums/files/file/437-pinball-electrical-101.htm[Pinball Electrical 101] by Maxxsinner. This is one of the first guides to wiring common I/O devices in a pin cab, primarily buttons and feedback devices. This guide is quite old and out of date at this point, and many of its ideas have been superseded by better and more modern ways of doing things, so I wouldn't use it as a blueprint for a new build. I'm mentioning it mostly for historical reference, since it was highly influential in the early days and had some great ideas that led us to where we are now.
+* Major Frenchy's link:https://mameinabox.com/[Mame in a Box] offers a large set of video tutorials on building pin cabs.
+Its goal is to be a comprehensive build guide like this one, including a lot of material in video format.
+*  link:https://vpuniverse.com/forums/files/file/437-pinball-electrical-101.htm[Pinball Electrical 101] by Maxxsinner.
+This is one of the first guides to wiring common I/O devices in a pin cab, primarily buttons and feedback devices.
+This guide is quite old and out of date at this point, and many of its ideas have been superseded by better and more modern ways of doing things, so I wouldn't use it as a blueprint for a new build.
+I'm mentioning it mostly for historical reference, since it was highly influential in the early days and had some great ideas that led us to where we are now.
 
 == Web forums
 
-There are a number of Web forums dedicated to virtual cab building. These are good places to seek help with general questions on your build, and to connect with other virtual pinball enthusiasts.
+There are a number of Web forums dedicated to virtual cab building.
+These are good places to seek help with general questions on your build, and to connect with other virtual pinball enthusiasts.
 
-*  link:https://www.vpforums.org/[VP Forums] > link:https://www.vpforums.org/index.php?showforum=29[Virtual Pinball Cabinets forum] . I read this one regularly and try to help out with questions when I can (Pinscape-related and otherwise). This is the most active of the cab-focused forums I frequent. It has a broad membership, a fair number of whom are long-time members with a lot of pin cab experience. Technical questions posted here usually get prompt and helpful replies.
-*  link:https://vpuniverse.com/[VP Universe] > link:https://vpuniverse.com/forums/forum/46-cabinet-discussion/[Cabinet Discussion] . This is another good cab builder forum. It has more of a DIY bent than VP Forums, which you'd think would make it a better fit for my projects, but I have to admit that I don't keep up with this one as much as VPF.
-*  link:https://www.pinside.com/[Pinside] . This is a forum site for people who collect _real_ pinball machines, so don't go here for help setting up Visual Pinball or an electronic plunger. Even so, the real pinball sites can still be interesting to visit, because virtual cabs do have _some_ things in common with the real ones, particularly in the physical construction of the cabinet. Pinside can also be a great resource if you're working on a Visual Pinball re-creation of a particular table. It's a good bet that you can connect there with collectors who own the table you're working on, and they might be able to answer questions about the finer points of that game's operation, send you closeup photos of playfield parts, etc.
+*  link:https://www.vpforums.org/[VP Forums] > link:https://www.vpforums.org/index.php?showforum=29[Virtual Pinball Cabinets forum] .
+I read this one regularly and try to help out with questions when I can (Pinscape-related and otherwise).
+This is the most active of the cab-focused forums I frequent.
+It has a broad membership, a fair number of whom are long-time members with a lot of pin cab experience.
+Technical questions posted here usually get prompt and helpful replies.
+*  link:https://vpuniverse.com/[VP Universe] > link:https://vpuniverse.com/forums/forum/46-cabinet-discussion/[Cabinet Discussion] .
+This is another good cab builder forum.
+It has more of a DIY bent than VP Forums, which you'd think would make it a better fit for my projects, but I have to admit that I don't keep up with this one as much as VPF.
+*  link:https://www.pinside.com/[Pinside] .
+This is a forum site for people who collect _real_ pinball machines, so don't go here for help setting up Visual Pinball or an electronic plunger.
+Even so, the real pinball sites can still be interesting to visit, because virtual cabs do have _some_ things in common with the real ones, particularly in the physical construction of the cabinet.
+Pinside can also be a great resource if you're working on a Visual Pinball re-creation of a particular table.
+It's a good bet that you can connect there with collectors who own the table you're working on, and they might be able to answer questions about the finer points of that game's operation, send you closeup photos of playfield parts, etc.
 
 == Pinball cabinet bodies, pre-built and kits
 
-*  link:https://virtuapin.net/[VirtuaPin] sells everything from individual replacement parts to complete, fully assembled, fully operational virtual pinball machines. They have an especially good selection of parts and kits for DIYers. Notably, they sell "flat pack" cabinet kits, with all of the wood for a cab pre-cut, routed, mitered, and ready to assemble: kind of like an Ikea bookshelf without the ümlauts. They also offer fully assembled (empty) cabinets. They use quality materials and computer-controlled cutting, and let you customize the standard plans if you have something unusual in mind (e.g., non-standard dimensions to fit a specific monitor). Their standard cab kits are faithful replicas of the Williams/Bally 1990s cabinet design, which in my opinion is the gold standard. I used a VirtuaPin flat pack as the basis for my own machine and couldn't be happier with it.
+*  link:https://virtuapin.net/[VirtuaPin] sells everything from individual replacement parts to complete, fully assembled, fully operational virtual pinball machines.
+They have an especially good selection of parts and kits for DIYers.
+Notably, they sell "flat pack" cabinet kits, with all of the wood for a cab pre-cut, routed, mitered, and ready to assemble: kind of like an Ikea bookshelf without the ümlauts.
+They also offer fully assembled (empty) cabinets.
+They use quality materials and computer-controlled cutting, and let you customize the standard plans if you have something unusual in mind (e.g., non-standard dimensions to fit a specific monitor).
+Their standard cab kits are faithful replicas of the Williams/Bally 1990s cabinet design, which in my opinion is the gold standard.
+I used a VirtuaPin flat pack as the basis for my own machine and couldn't be happier with it.
 
 == Pinball cabinet artwork - design
 
-*  link:https://www.vpforums.org/index.php?showuser=50917.html[Stuzza on VP Forums] has long been designing custom cabinet artwork for other forum members. You can commission a custom project through him for a fee. He doesn't do the printing, just the graphic design work, providing the artwork in digital form ready for printing. He also has a large collection of past work that he makes available for free.
-*  link:https://virtuapin.net/[VirtuaPin] offers custom graphic design services for a fee. They also offer several ready-made themes of their own design, as well as licensed reproductions of the original artwork from several real pinball machines.
+*  link:https://www.vpforums.org/index.php?showuser=50917.html[Stuzza on VP Forums] has long been designing custom cabinet artwork for other forum members.
+You can commission a custom project through him for a fee.
+He doesn't do the printing, just the graphic design work, providing the artwork in digital form ready for printing.
+He also has a large collection of past work that he makes available for free.
+*  link:https://virtuapin.net/[VirtuaPin] offers custom graphic design services for a fee.
+They also offer several ready-made themes of their own design, as well as licensed reproductions of the original artwork from several real pinball machines.
 
 == Pinball cabinet artwork - printing
 
-* Brad Bowman a/k/a link:https://vpuniverse.com/forums/user/38-lucian045/[Lucian045 on VP Universe] offers custom decal printing for pin cabs. Brad has a unique combination of skills for this, because he not only runs a print shop, but also happens to be a long-time virtual cab enthusiast himself. Brad offers special pricing to pin cab builders in his link:https://vpuniverse.com/forums/topic/803-decals-and-printing-for-your-hyperpin-cabinet/[VP Universe thread] . Brad printed the decals for my own machine; he was great to work with and the print work was top notch. I was also greatly impressed by the materials he uses. I read a lot of horror stories before building my cab about how difficult it is to install decals properly, but the media that Brad uses are easy to work with. Brad's standard package is for the main cabinet and backbox, but he was able to do my speaker panel and translite art as custom add-ons.
-*  link:https://virtuapin.net/[VirtuaPin] also offers custom decal printing. VirtuaPin's standard package is for the main cabinet and backbox art, and they have add-on options for speaker panels and translites.
-*  link:https://www.gameongrafix.com/[GameOnGrafix.com] offers custom decal printing for arcade machines. They specialize mostly in video game cabs, but they have a pinball package as well. Look for it under the "customer designed" section.
+* Brad Bowman a/k/a link:https://vpuniverse.com/forums/user/38-lucian045/[Lucian045 on VP Universe] offers custom decal printing for pin cabs.
+Brad has a unique combination of skills for this, because he not only runs a print shop, but also happens to be a long-time virtual cab enthusiast himself.
+Brad offers special pricing to pin cab builders in his link:https://vpuniverse.com/forums/topic/803-decals-and-printing-for-your-hyperpin-cabinet/[VP Universe thread] .
+Brad printed the decals for my own machine; he was great to work with and the print work was top notch.
+I was also greatly impressed by the materials he uses.
+I read a lot of horror stories before building my cab about how difficult it is to install decals properly, but the media that Brad uses are easy to work with.
+Brad's standard package is for the main cabinet and backbox, but he was able to do my speaker panel and translite art as custom add-ons.
+*  link:https://virtuapin.net/[VirtuaPin] also offers custom decal printing.
+VirtuaPin's standard package is for the main cabinet and backbox art, and they have add-on options for speaker panels and translites.
+*  link:https://www.gameongrafix.com/[GameOnGrafix.com] offers custom decal printing for arcade machines.
+They specialize mostly in video game cabs, but they have a pinball package as well.
+Look for it under the "customer designed" section.
 
 == Pinball cabinet hardware and other pinball parts
 
-*  link:https://virtuapin.net/[VirtuaPin] stocks most of the essential cabinet hardware used in virtual cabs. They have some nice bundle kits that are good deals and can save you a lot of time figuring out which parts you need. Their selection is limited, but they have good coverage for the most common virtual cab parts.
-*  link:https://pinballlife.com/[Pinball Life] is a parts supplier for real pinball owners, which makes them a great place to find authentic cabinet parts. They sell a wide range of replacement parts for the real machines. I've ordered from them several times (both for my real machines and my virtual cab) and have always had good experiences. PBL's catalog is a good middle ground between VirtuaPin's very targeted selection and Marco's almost too-big catalog.
-*  link:https://www.marcospecialties.com/[Marco Specialties] is another pinball parts supplier. I've ordered from Marco a few times and recommend them. They have by far the biggest catalog of all of the suppliers I've encountered. So big that it's almost too big! It's so big that it can be difficult to find what you're looking for. But by the same token, if you need something obscure, this is often the only place to find it. Tip: if a search on the Marco site turns up so many hits that your eyes are glazing over scrolling through the results, try a Google search for *Marco Specialties* plus what you're looking for. Google tends to be better at finding the most relevant matches, so it might get you to the right product page quicker. Also, if possible, search by part number, since more generic keyword searches can turn up so many hits, and since the Marco product listings don't always use the same keywords you're expecting.
-*  link:https://planetarypinball.com/[Planetary Pinball Supply] , yet another pinball parts vendor. PPS mostly stocks specialty parts for machines from the 1990s and later, with better coverage for later models. They don't seem to have nearly the same catalog depth as Marco, but what they have in stock often seems to be somewhat complementary to Marco: if it's a reasonably common part and Marco doesn't have it on hand, try PPS, and vice versa.
-*  link:https://suzohapp.com/[SuzoHapp] is a giant manufacturer of parts for all things coin-operated, which incidentally includes pinball machines. They're the original manufacturer for a lot of the standard parts that Williams and Stern used. They make a lot of the basic parts you find in common across machines, such as buttons, trim, coin doors, and so on. The pinball suppliers above resell a lot of SuzoHapp's pinball-related parts, but it can be worth checking SuzoHapp's site as well, because they sometimes offer additional variations of the parts that the pinball supplier sites don't sell.
-*  link:https://boltdepot.com/[Bolt Depot] is a great source for fasteners. If you haven't built a pin cab before, you're probably thinking that nuts and bolts are just an afterthought and that you can pick up what you need at Home Depot. But pin cabs actually use a lot of weird specialty fasteners that can be tough to find. There's nothing pinball-specific about Bolt Depot, but I'm including them in the Cabinet Hardware section because they turned out to be a great source for most of the obscure nuts and bolts I couldn't find at my local big-box stores.
-*  link:https://www.ebay.com/[eBay] is great for some things, but it's definitely not the first place I'd look for pinball parts. The main reason is price. There seem to be a lot of price gougers on eBay when it comes to pinball parts. I've seen many cases where the price for a shiny, brand-new part from Pinball Life or Marco Specialties is less than the eBay price for the same part in a rusty, beat-up, old used version. Even so, some virtual cab builders have gotten lucky with great deals on eBay, so it can be worth doing some comparison shopping there as you compile your parts lists. eBay _is_ a good option - sometimes the only option - for out-of-production parts that the suppliers no longer carry. For example, chime units from the 1970s are all but impossible to find anywhere else.
+*  link:https://virtuapin.net/[VirtuaPin] stocks most of the essential cabinet hardware used in virtual cabs.
+They have some nice bundle kits that are good deals and can save you a lot of time figuring out which parts you need.
+Their selection is limited, but they have good coverage for the most common virtual cab parts.
+*  link:https://pinballlife.com/[Pinball Life] is a parts supplier for real pinball owners, which makes them a great place to find authentic cabinet parts.
+They sell a wide range of replacement parts for the real machines.
+I've ordered from them several times (both for my real machines and my virtual cab) and have always had good experiences.
+PBL's catalog is a good middle ground between VirtuaPin's very targeted selection and Marco's almost too-big catalog.
+*  link:https://www.marcospecialties.com/[Marco Specialties] is another pinball parts supplier.
+I've ordered from Marco a few times and recommend them.
+They have by far the biggest catalog of all of the suppliers I've encountered.
+So big that it's almost too big! It's so big that it can be difficult to find what you're looking for.
+But by the same token, if you need something obscure, this is often the only place to find it.
+Tip: if a search on the Marco site turns up so many hits that your eyes are glazing over scrolling through the results, try a Google search for *Marco Specialties* plus what you're looking for.
+Google tends to be better at finding the most relevant matches, so it might get you to the right product page quicker.
+Also, if possible, search by part number, since more generic keyword searches can turn up so many hits, and since the Marco product listings don't always use the same keywords you're expecting.
+*  link:https://planetarypinball.com/[Planetary Pinball Supply] , yet another pinball parts vendor.
+PPS mostly stocks specialty parts for machines from the 1990s and later, with better coverage for later models.
+They don't seem to have nearly the same catalog depth as Marco, but what they have in stock often seems to be somewhat complementary to Marco: if it's a reasonably common part and Marco doesn't have it on hand, try PPS, and vice versa.
+*  link:https://suzohapp.com/[SuzoHapp] is a giant manufacturer of parts for all things coin-operated, which incidentally includes pinball machines.
+They're the original manufacturer for a lot of the standard parts that Williams and Stern used.
+They make a lot of the basic parts you find in common across machines, such as buttons, trim, coin doors, and so on.
+The pinball suppliers above resell a lot of SuzoHapp's pinball-related parts, but it can be worth checking SuzoHapp's site as well, because they sometimes offer additional variations of the parts that the pinball supplier sites don't sell.
+*  link:https://boltdepot.com/[Bolt Depot] is a great source for fasteners.
+If you haven't built a pin cab before, you're probably thinking that nuts and bolts are just an afterthought and that you can pick up what you need at Home Depot.
+But pin cabs actually use a lot of weird specialty fasteners that can be tough to find.
+There's nothing pinball-specific about Bolt Depot, but I'm including them in the Cabinet Hardware section because they turned out to be a great source for most of the obscure nuts and bolts I couldn't find at my local big-box stores.
+*  link:https://www.ebay.com/[eBay] is great for some things, but it's definitely not the first place I'd look for pinball parts.
+The main reason is price.
+There seem to be a lot of price gougers on eBay when it comes to pinball parts.
+I've seen many cases where the price for a shiny, brand-new part from Pinball Life or Marco Specialties is less than the eBay price for the same part in a rusty, beat-up, old used version.
+Even so, some virtual cab builders have gotten lucky with great deals on eBay, so it can be worth doing some comparison shopping there as you compile your parts lists.
+eBay _is_ a good option - sometimes the only option - for out-of-production parts that the suppliers no longer carry.
+For example, chime units from the 1970s are all but impossible to find anywhere else.
 
 == Special-purpose electronics for virtual pinball
 
-Given how obscure a hobby this is, it's kind of amazing how many commercial products are available for it. Here are some of the specialized products that cab builders often find useful.
+Given how obscure a hobby this is, it's kind of amazing how many commercial products are available for it.
+Here are some of the specialized products that cab builders often find useful.
 
-*  link:https://www.zebsboards.com/[Zeb's Boards] makes a number of electronic devices specifically for virtual pin cabs, ranging from add-ons and accessories for DIYers (LedWiz booster board, voltage converters) to complete turn-key solutions for input and output (plunger kit, feedback kit). Zeb's is well regarded for great products and excellent customer service. (I'm a delighted customer of Zeb's myself.)
+*  link:https://www.zebsboards.com/[Zeb's Boards] makes a number of electronic devices specifically for virtual pin cabs, ranging from add-ons and accessories for DIYers (LedWiz booster board, voltage converters) to complete turn-key solutions for input and output (plunger kit, feedback kit).
+Zeb's is well regarded for great products and excellent customer service.
+(I'm a delighted customer of Zeb's myself.)
 *  link:https://virtuapin.net/[VirtuaPin] sells a number of specialized pin cab devices, including a plunger kit and DMD (dot matrix display) kits.
-*  link:https://www.groovygamegear.com/[Groovy Game Gear] makes the LedWiz, which is probably the most widely used device in pin cabs for connecting feedback devices. They also make a key encoder device, and sell lots of arcade game accessories like joysticks and buttons. Their focus is actually DIY video arcade games rather than pinballs, but there's obviously a lot of overlap between the two.
-*  link:https://ultimarc.com/[Ultimarc] is another company that makes products for DIY video games that can cross over to virtual pinball. Notable Ultimarc products include the PacLed output controller devices (similar to the LedWiz) and the i-Pac key encoder. They also sell controls like joysticks and buttons.
-*  link:https://shop.arnoz.com/[Arnoz] sells a number of fully built circuit boards based loosely on the Pinscape Expansion Boards designs. His system is modular, so you can buy what you need and add onto it as you go. This is a great option if you want some of the Expansion Board features but you don't want to build the boards yourself.
+*  link:https://www.groovygamegear.com/[Groovy Game Gear] makes the LedWiz, which is probably the most widely used device in pin cabs for connecting feedback devices.
+They also make a key encoder device, and sell lots of arcade game accessories like joysticks and buttons.
+Their focus is actually DIY video arcade games rather than pinballs, but there's obviously a lot of overlap between the two.
+*  link:https://ultimarc.com/[Ultimarc] is another company that makes products for DIY video games that can cross over to virtual pinball.
+Notable Ultimarc products include the PacLed output controller devices (similar to the LedWiz) and the i-Pac key encoder.
+They also sell controls like joysticks and buttons.
+*  link:https://shop.arnoz.com/[Arnoz] sells a number of fully built circuit boards based loosely on the Pinscape Expansion Boards designs.
+His system is modular, so you can buy what you need and add onto it as you go.
+This is a great option if you want some of the Expansion Board features but you don't want to build the boards yourself.
 
 == TVs and other general consumer electronics
 
-I probably don't need to mention any of these unless you time-traveled here from 1972, but then again, maybe you did; pinball _is_ an anachronistic sort of hobby... Very briefly, a few places to look for your cabinet TVs and other basic consumer electronics:
+I probably don't need to mention any of these unless you time-traveled here from 1972, but then again, maybe you did; pinball _is_ an anachronistic sort of hobby...
+Very briefly, a few places to look for your cabinet TVs and other basic consumer electronics:
 
 *  link:https://www.amazon.com/[Amazon.com]
 *  link:https://www.bestbuy.com/[Best Buy]
@@ -69,7 +142,8 @@ I probably don't need to mention any of these unless you time-traveled here from
 
 == PC components
 
-As with the consumer electronics, you probably already know the right places to go for PC components. But for the sake of completeness:
+As with the consumer electronics, you probably already know the right places to go for PC components.
+But for the sake of completeness:
 
 *  link:https://www.newegg.com/[NewEgg]
 *  link:https://www.tigerdirect.com/[Tiger Direct]
@@ -79,26 +153,59 @@ As with the consumer electronics, you probably already know the right places to 
 
 == Electronic parts and components
 
-*  link:https://www.mouser.com/[Mouser Electronics] is my go-to Web retailer for electronics. Mouser is a major electronics distributor that carries a staggering range of components. They have just about everything electronic you could ever need, and their product pages have excellent technical detail and links to manufacturer data sheets and documentation. Their prices are moderate: generally lower than buying the same thing from a general retailer like Amazon (when you can find it there at all), but generally higher then buying from the cheapest sellers on eBay (again, if you can even find it there). One of Mouser's great features is their careful packaging for loose parts: everything gets wrapped in clearly labeled zip-lock bags, so you can easily tell the 100-ohm resistors from the 1K resistors without having to read the color-stripe codes. Mouser's only downside is also one of their big virtues: that their catalog is so huge. The vast number of parts they stock can make it hard to find things, even with their excellent parametric search system. Fortunately, you won't have to do your own searches for most of the Pinscape parts, since we give you exact part numbers for just about everything.
-*  link:https://www.digikey.com/[DigiKey] is another major electronics distributor very much like Mouser. They have a similar selection and similar prices.
-*  link:https://www.newark.com/[Newark] is yet another distributor. They also run the link:https://www.element14.com/[element14] community for electrical engineers and hobbyists, which has forums and online articles related to electronics.
-*  link:https://www.ebay.com/[eBay] is a good place to find _some_ electronics. Anything you need in large quantities can be a real bargain on eBay compared to buying from a regular retailer, especially if you can find a Chinese warehouser selling it. The downsides of eBay are (a) that eBay's search engine is just miserable at finding generic parts like "100 ohm resistors", (b) only a very limited selection of electronic parts are available at all, (c) there's often no way to know the manufacturer or source of the parts, so quality can be unpredictable, and (d) the listings don't tend to give you the same level of detail you get on Mouser (e.g., the exact size of the part). Despite all of those drawbacks, I've had good luck with generic parts like MOSFETs and resistors - those can be much cheaper than buying the equivalent name-brand parts from Mouser.
+*  link:https://www.mouser.com/[Mouser Electronics] is my go-to Web retailer for electronics.
+Mouser is a major electronics distributor that carries a staggering range of components.
+They have just about everything electronic you could ever need, and their product pages have excellent technical detail and links to manufacturer data sheets and documentation.
+Their prices are moderate: generally lower than buying the same thing from a general retailer like Amazon (when you can find it there at all), but generally higher then buying from the cheapest sellers on eBay (again, if you can even find it there).
+One of Mouser's great features is their careful packaging for loose parts: everything gets wrapped in clearly labeled zip-lock bags, so you can easily tell the 100-ohm resistors from the 1K resistors without having to read the color-stripe codes.
+Mouser's only downside is also one of their big virtues: that their catalog is so huge.
+The vast number of parts they stock can make it hard to find things, even with their excellent parametric search system.
+Fortunately, you won't have to do your own searches for most of the Pinscape parts, since we give you exact part numbers for just about everything.
+*  link:https://www.digikey.com/[DigiKey] is another major electronics distributor very much like Mouser.
+They have a similar selection and similar prices.
+*  link:https://www.newark.com/[Newark] is yet another distributor.
+They also run the link:https://www.element14.com/[element14] community for electrical engineers and hobbyists, which has forums and online articles related to electronics.
+*  link:https://www.ebay.com/[eBay] is a good place to find _some_ electronics.
+Anything you need in large quantities can be a real bargain on eBay compared to buying from a regular retailer, especially if you can find a Chinese warehouser selling it.
+The downsides of eBay are (a) that eBay's search engine is just miserable at finding generic parts like "100 ohm resistors", (b) only a very limited selection of electronic parts are available at all, (c) there's often no way to know the manufacturer or source of the parts, so quality can be unpredictable, and (d) the listings don't tend to give you the same level of detail you get on Mouser (e.g., the exact size of the part).
+Despite all of those drawbacks, I've had good luck with generic parts like MOSFETs and resistors - those can be much cheaper than buying the equivalent name-brand parts from Mouser.
 
 == Custom circuit boards
 
-*  link:https://www.oshpark.com/[OSH Park] is a US PCB maker that specifically caters to hobbyists like us. They charge by square inch of board space - as of this writing, $5/sq in, for three copies of the board, with shipping included. That makes them a fantastic bargain for small prototype boards. They also make it extremely easy to order, by letting you upload an EAGLE .brd (board layout) file directly (most of the other guys make you do some extra steps to generate special CAD/CAM formats). And they're in the US, so if you're also in the US, turnaround tends to be quick - you don't have to wait for international shipping or customs clearance. The only snag is that the per-square-inch pricing gets really expensive for larger boards.
-*  link:https://www.elecrow.com/[elecrow.com] is a Chinese company that makes custom circuit boards in small batches (lots of 5 to 10 pieces) at bargain prices. Look under "Services" and "PCB Prototyping" in their category list. I've been using them for group orders of the Pinscape Expansion Boards, and all of the batches have turned out well. The downside, if you're not in China, is that the international shipping is expensive - more expensive than the manufacturing cost in most cases. But the boards are cheap enough that the overall price usually comes out to only about $2 to $3 per board when ordering minimum lot sizes. Like most PCB makers, Elecrow requires you to generate "Gerber" files (a special file format for manufacturing use) rather than uploading the EAGLE design files directly. That takes a little extra work and probably seems very intimidating if you haven't done it before, but it's not actually all that hard; the process is explained step-by-step in xref:expanFab.adoc#expanFab[Fabricating the Expansion Boards] .
-*  link:https://pcbshopper.com/[PCB Shopper] is a great comparison site for PCB manufacturers. The site lets you enter the details of your order, then provides quotes from a wide range of vendors.
+*  link:https://www.oshpark.com/[OSH Park] is a US PCB maker that specifically caters to hobbyists like us.
+They charge by square inch of board space - as of this writing, $5/sq in, for three copies of the board, with shipping included.
+That makes them a fantastic bargain for small prototype boards.
+They also make it extremely easy to order, by letting you upload an EAGLE .brd (board layout) file directly (most of the other guys make you do some extra steps to generate special CAD/CAM formats).
+And they're in the US, so if you're also in the US, turnaround tends to be quick - you don't have to wait for international shipping or customs clearance.
+The only snag is that the per-square-inch pricing gets really expensive for larger boards.
+*  link:https://www.elecrow.com/[elecrow.com] is a Chinese company that makes custom circuit boards in small batches (lots of 5 to 10 pieces) at bargain prices.
+Look under "Services" and "PCB Prototyping" in their category list.
+I've been using them for group orders of the Pinscape Expansion Boards, and all of the batches have turned out well.
+The downside, if you're not in China, is that the international shipping is expensive - more expensive than the manufacturing cost in most cases.
+But the boards are cheap enough that the overall price usually comes out to only about $2 to $3 per board when ordering minimum lot sizes.
+Like most PCB makers, Elecrow requires you to generate "Gerber" files (a special file format for manufacturing use) rather than uploading the EAGLE design files directly.
+That takes a little extra work and probably seems very intimidating if you haven't done it before, but it's not actually all that hard; the process is explained step-by-step in xref:expanFab.adoc#expanFab[Fabricating the Expansion Boards] .
+*  link:https://pcbshopper.com/[PCB Shopper] is a great comparison site for PCB manufacturers.
+The site lets you enter the details of your order, then provides quotes from a wide range of vendors.
 
 == 3D printing
 
 If you don't plan to buy a 3D printer at home, there are several excellent online 3D-print services that you can send your design out to.
 
-*  link:https://all3dp.com/[All3DP] is a shopping service for 3D printing. Upload your design, and it'll give you price quotes from multiple vendors for different materials and process options, with direct ordering links. This has become the first place I check because of the excellent price comparison engine.
-*  link:https://shapeways.com/[Shapeways] has been my top vendor for a long time because of their excellent materials and reasonable prices for small jobs. I've had several items made here with good results.
-*  link:https://3dhubs.com/[3D Hubs] is another on-line 3D print service. In the past, they were the "Über for 3D printing" (connecting buyers with local sellers offering 3D printing services), but lately (2019) they seem to have dropped that model and switched to simply offering their own fabrication services.
+*  link:https://all3dp.com/[All3DP] is a shopping service for 3D printing.
+Upload your design, and it'll give you price quotes from multiple vendors for different materials and process options, with direct ordering links.
+This has become the first place I check because of the excellent price comparison engine.
+*  link:https://shapeways.com/[Shapeways] has been my top vendor for a long time because of their excellent materials and reasonable prices for small jobs.
+I've had several items made here with good results.
+*  link:https://3dhubs.com/[3D Hubs] is another on-line 3D print service.
+In the past, they were the "Über for 3D printing" (connecting buyers with local sellers offering 3D printing services), but lately (2019) they seem to have dropped that model and switched to simply offering their own fabrication services.
 
-The online services cost more than home printing in terms of materials, but of course that doesn't count the cost of buying the printer itself. Plus, the commercial vendors offer far superior materials to what you can use in a home printer. Home printers mostly use ABS and PLA, which are fine for prototyping, but not for functional parts, since they're brittle and tend to disintegrate if exposed to any friction. The commercial services offer nylon materials (such as PA12 and PA11) that are much more durable. Many also offer the newer MJF (multi-jet fusion) process, which seems to produce particularly tough and durable parts. I'd highly recommend considering MJF for any functional mechanical parts.
+The online services cost more than home printing in terms of materials, but of course that doesn't count the cost of buying the printer itself.
+Plus, the commercial vendors offer far superior materials to what you can use in a home printer.
+Home printers mostly use ABS and PLA, which are fine for prototyping, but not for functional parts, since they're brittle and tend to disintegrate if exposed to any friction.
+The commercial services offer nylon materials (such as PA12 and PA11) that are much more durable.
+Many also offer the newer MJF (multi-jet fusion) process, which seems to produce particularly tough and durable parts.
+I'd highly recommend considering MJF for any functional mechanical parts.
 
 == Custom laser cutting and CNC fabrication
 

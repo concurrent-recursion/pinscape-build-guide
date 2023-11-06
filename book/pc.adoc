@@ -1,54 +1,104 @@
 [#pc]
 =  Designing the PC
 
-The core of a pin cab is a PC running Windows. You could theoretically build a pin cab around a Mac, an iPad, a Raspberry Pi, or just about any other sort of computer. But for our purposes in this guide, the only real option is a Windows PC, because that's where all of the software runs.
+The core of a pin cab is a PC running Windows.
+You could theoretically build a pin cab around a Mac, an iPad, a Raspberry Pi, or just about any other sort of computer.
+But for our purposes in this guide, the only real option is a Windows PC, because that's where all of the software runs.
 
-I've observed that most pin cab builders like to start their projects by building the PC and setting up the software, before they've even started thinking about what's needed to build the pinball machine body that'll house it. This is a natural first step for most of us, because most of us know our way around PCs at least a little bit - the way that most people discover the pin cab world in the first place is through the PC pinball simulation community. It's also an attractive place to start because you can see some immediate results, before getting into the more daunting parts of the project.
+I've observed that most pin cab builders like to start their projects by building the PC and setting up the software, before they've even started thinking about what's needed to build the pinball machine body that'll house it.
+This is a natural first step for most of us, because most of us know our way around PCs at least a little bit - the way that most people discover the pin cab world in the first place is through the PC pinball simulation community.
+It's also an attractive place to start because you can see some immediate results, before getting into the more daunting parts of the project.
 
 == Off-the-shelf or custom build
 
-The easiest and most obvious way to get a PC is to buy one from a retail PC maker, or even re-use one you already have. But most pin cab builders come from a PC gaming background, so you probably already know enough about PCs to know the benefits of building one yourself rather than buying off-the-shelf. If you've built your own PCs in the past, you know what's involved. If you haven't built one before, you might be surprised at how easy it is. Modern PCs snap together out of components practically like Lego blocks. The hardest part is often the shopping, since there are so many options out there.
+The easiest and most obvious way to get a PC is to buy one from a retail PC maker, or even re-use one you already have.
+But most pin cab builders come from a PC gaming background, so you probably already know enough about PCs to know the benefits of building one yourself rather than buying off-the-shelf.
+If you've built your own PCs in the past, you know what's involved.
+If you haven't built one before, you might be surprised at how easy it is.
+Modern PCs snap together out of components practically like Lego blocks.
+The hardest part is often the shopping, since there are so many options out there.
 
-The big benefit of building your own PC is that you get to pick exactly what you want for each component. The retail PC makers usually give you a few options for CPU speed, hard disk size, graphics card, and so on, but they're usually pretty limited choices from a small pre-set list. If you build your own, you can choose exactly what you want from the whole universe of available products in each category.
+The big benefit of building your own PC is that you get to pick exactly what you want for each component.
+The retail PC makers usually give you a few options for CPU speed, hard disk size, graphics card, and so on, but they're usually pretty limited choices from a small pre-set list.
+If you build your own, you can choose exactly what you want from the whole universe of available products in each category.
 
-The rest of this chapter proceeds from the assumption that you're going to build a custom PC, because that's what most pin cab builders do. But that's not a must; if you're not comfortable building your own PC, you can definitely build a perfectly good pin cab around a retail PC. If you go that route, I'd suggest you focus on PCs that are specifically designed and marketed for gaming. PC pinball is fundamentally a video game, and it benefits from exactly the same hardware upgrades that mainstream video gamers need. Pay particular attention to the graphics card: that's the hardware element that makes the biggest different for PC pinball performance. You might find the material in this chapter helpful even for picking out a pre-built PC, just for the background knowledge of what to look for and which elements are the most important to pin cab performance.
+The rest of this chapter proceeds from the assumption that you're going to build a custom PC, because that's what most pin cab builders do.
+But that's not a must; if you're not comfortable building your own PC, you can definitely build a perfectly good pin cab around a retail PC.
+If you go that route, I'd suggest you focus on PCs that are specifically designed and marketed for gaming.
+PC pinball is fundamentally a video game, and it benefits from exactly the same hardware upgrades that mainstream video gamers need.
+Pay particular attention to the graphics card: that's the hardware element that makes the biggest different for PC pinball performance.
+You might find the material in this chapter helpful even for picking out a pre-built PC, just for the background knowledge of what to look for and which elements are the most important to pin cab performance.
 
 
 == Performance considerations
 
-I can't give you any hard numbers for performance metrics, since things change too quickly in this business and any benchmarks I quote would be obsolete in a couple of months. I can offer some general advice, though.
+I can't give you any hard numbers for performance metrics, since things change too quickly in this business and any benchmarks I quote would be obsolete in a couple of months.
+I can offer some general advice, though.
 
-The first bit of advice is that you should consider the virtual cab PC to be a gaming PC. That might seem obvious, but my point isn't merely that you're going to use it to play games, but rather that "gaming PC" is a special category of PC. The thing that makes a gaming PC different from a run-of-the-mill home or business PC is upgraded performance, particularly for graphics. Gamers use special disks, special memory, and most of all special graphics cards.
+The first bit of advice is that you should consider the virtual cab PC to be a gaming PC.
+That might seem obvious, but my point isn't merely that you're going to use it to play games, but rather that "gaming PC" is a special category of PC.
+The thing that makes a gaming PC different from a run-of-the-mill home or business PC is upgraded performance, particularly for graphics.
+Gamers use special disks, special memory, and most of all special graphics cards.
 
-The second bit of advice is that you don't have to take this idea of upgraded performance to its logical extreme. You do need good performance, but you don't need the absolute best performance available. Pinball emulation is demanding, but it's not as complex as the latest "triple A" video games at any given time. My rule of thumb is that you should look for the "second best" in most of the product categories. Survey what's available, and don't buy the most expensive thing you can find; focus your attention on the second price tier. Products in that second tier are usually only slightly less capable than the top-tier products, but much cheaper - you often see crazy things like 90% of the performance for half the price. The gamers who want the _very best_ are willing to pay, pay, pay for it. So products in that second tier often offer a much better balance between price and performance.
+The second bit of advice is that you don't have to take this idea of upgraded performance to its logical extreme.
+You do need good performance, but you don't need the absolute best performance available.
+Pinball emulation is demanding, but it's not as complex as the latest "triple A" video games at any given time.
+My rule of thumb is that you should look for the "second best" in most of the product categories.
+Survey what's available, and don't buy the most expensive thing you can find; focus your attention on the second price tier.
+Products in that second tier are usually only slightly less capable than the top-tier products, but much cheaper - you often see crazy things like 90% of the performance for half the price.
+The gamers who want the _very best_ are willing to pay, pay, pay for it.
+So products in that second tier often offer a much better balance between price and performance.
 
-To a first approximation, the CPU and GPU together determine your machine's overall performance. And of the two, the graphics card is generally the more important. These are the parts you should pay the most attention to when researching what to buy.
+To a first approximation, the CPU and GPU together determine your machine's overall performance.
+And of the two, the graphics card is generally the more important.
+These are the parts you should pay the most attention to when researching what to buy.
 
-Other components - motherboard, memory (RAM), disks, USB controllers - also contribute to performance, but to a much lesser degree. How much should you worry about those? If you talk to serious video gamers, they'll tell you that every element is critical, down to the military-grade titanium screws holding their ballistic carbon-fiber cases together. That's true as far as it goes, but "extreme gaming RAM" and the like will only contribute a few percentage on most systems. Most people can't perceive that kind of difference in actual use; you'd only know it's there if you measured it with benchmarking tools. If it's important to you to build the fastest system possible, then by all means do so; that can be fun in its own way. If your main focus is pinball rather than PC benchmarks, I'd focus my research time and cash budget on the CPU and GPU, and I wouldn't go too far out of my way seeking the optimal choices for the other components. Just look for parts from reputable manufacturers that fit the specs you need.
+Other components - motherboard, memory (RAM), disks, USB controllers - also contribute to performance, but to a much lesser degree.
+How much should you worry about those? If you talk to serious video gamers, they'll tell you that every element is critical, down to the military-grade titanium screws holding their ballistic carbon-fiber cases together.
+That's true as far as it goes, but "extreme gaming RAM" and the like will only contribute a few percentage on most systems.
+Most people can't perceive that kind of difference in actual use; you'd only know it's there if you measured it with benchmarking tools.
+If it's important to you to build the fastest system possible, then by all means do so; that can be fun in its own way.
+If your main focus is pinball rather than PC benchmarks, I'd focus my research time and cash budget on the CPU and GPU, and I wouldn't go too far out of my way seeking the optimal choices for the other components.
+Just look for parts from reputable manufacturers that fit the specs you need.
 
 == Operating System
 
-Recommended: Windows 11, 64-bit, Home edition. Windows 10 is also still a good choice.
+Recommended: Windows 11, 64-bit, Home edition.
+Windows 10 is also still a good choice.
 
-Windows is the best operating system option for a pin cab PC, because almost all of the popular pinball software runs only on Windows. This is starting to change, with some of the open-source software being ported to Linux and MacOS, but it will be a while before the ports are as solid as the Windows versions, and most of the commercial games will probably never be ported.
+Windows is the best operating system option for a pin cab PC, because almost all of the popular pinball software runs only on Windows.
+This is starting to change, with some of the open-source software being ported to Linux and MacOS, but it will be a while before the ports are as solid as the Windows versions, and most of the commercial games will probably never be ported.
 
 === Which version
 
-I'd recommend the latest, currently Windows 11. The main reason is that Microsoft only offers full updates to their DirectX technologies (their gaming technlogy layer) on the current OS version at any given time. This means that newer games will increasingly be unable to run on the older Windows versions; if you want to be able to run the latest games, you pretty much have to have the latest Windows.
+I'd recommend the latest, currently Windows 11.
+The main reason is that Microsoft only offers full updates to their DirectX technologies (their gaming technlogy layer) on the current OS version at any given time.
+This means that newer games will increasingly be unable to run on the older Windows versions; if you want to be able to run the latest games, you pretty much have to have the latest Windows.
 
-Older versions: As of this writing, Windows 10 is still well supported, but all of the older versions are now out of support, so they're no longer receiving updates from Microsoft. As I'm sure you've heard from many other people, the big concern when Microsoft terminates updates is that security bugs in the OS won't get fixed, so it will become increasingly vulnerable to malware. For a pin cab PC, I think the termination of DirectX updates is an even bigger problem.
+Older versions: As of this writing, Windows 10 is still well supported, but all of the older versions are now out of support, so they're no longer receiving updates from Microsoft.
+As I'm sure you've heard from many other people, the big concern when Microsoft terminates updates is that security bugs in the OS won't get fixed, so it will become increasingly vulnerable to malware.
+For a pin cab PC, I think the termination of DirectX updates is an even bigger problem.
 
 === Which edition?
 
-The "Home" edition of Windows is fine for a pin cab. You can buy the more expensive "Pro" edition if you prefer, but the added features in the Pro editions are intended more for business users. I don't think there's anything in Pro that's important for a typical pin cab.
+The "Home" edition of Windows is fine for a pin cab.
+You can buy the more expensive "Pro" edition if you prefer, but the added features in the Pro editions are intended more for business users.
+I don't think there's anything in Pro that's important for a typical pin cab.
 
 === 32-bit or 64-bit?
 
-Easy: Use the 64-bit edition. The 32-bit version of Windows is only for old hardware with CPUs from about 2002 or earlier. Every Intel and AMD PC CPU you can buy today is 64-bit. The 64-bit version of the operating system takes full advantage of the CPU's capabilities, and is still fully compatible with 32-bit application software.
+Easy: Use the 64-bit edition.
+The 32-bit version of Windows is only for old hardware with CPUs from about 2002 or earlier.
+Every Intel and AMD PC CPU you can buy today is 64-bit.
+The 64-bit version of the operating system takes full advantage of the CPU's capabilities, and is still fully compatible with 32-bit application software.
 
 === Emulation and virtualization options
 
-Nope. Don't even consider it. Even though it's technically possible to run Windows as a guest operating system using VM software on Linux and MacOS, it's not a viable option for gaming software. 3D gaming performance on virtualized hardware is uniformly unacceptable. The same applies to Wine (a Windows API emulator on Linux).
+Nope.
+Don't even consider it.
+Even though it's technically possible to run Windows as a guest operating system using VM software on Linux and MacOS, it's not a viable option for gaming software.
+3D gaming performance on virtualized hardware is uniformly unacceptable.
+The same applies to Wine (a Windows API emulator on Linux).
 
 == Hardware components
 
@@ -63,74 +113,128 @@ This is obviously an area where any specific product recommendations I make will
 
 First, any current Intel or AMD CPU that's in the middle of the performance range or better should handle most of the pinball software easily.
 
-Second, most gaming software, including pinball simulators, generally benefits more from what they call "scalar performance" than from adding more "cores". Scalar performance refers to how fast each individual CPU core runs, and it's roughly proportional to the clock speed, as long as you're comparing chips that are from the same generation.
+Second, most gaming software, including pinball simulators, generally benefits more from what they call "scalar performance" than from adding more "cores".
+Scalar performance refers to how fast each individual CPU core runs, and it's roughly proportional to the clock speed, as long as you're comparing chips that are from the same generation.
 
-Adding more cores is usually less beneficial for pinball software than scalar performance, because most game software has a single critical path (that can only run on a single core at a time) that determines the overall performance. However, more cores are better to a point; I'd go with a CPU with at least four to six cores.
+Adding more cores is usually less beneficial for pinball software than scalar performance, because most game software has a single critical path (that can only run on a single core at a time) that determines the overall performance.
+However, more cores are better to a point; I'd go with a CPU with at least four to six cores.
 
-Third, the CPU feature called "hyperthreading" is generally considered not very useful for gaming software. Hyperthreading is the main distinguishing feature of some of the highest-end Intel and AMD CPUs, and it improves performance for many types of software, but most gaming software is designed in a way that hyperthreading doesn't do much for it. It might not be worth the cost bump in a pin cab.
+Third, the CPU feature called "hyperthreading" is generally considered not very useful for gaming software.
+Hyperthreading is the main distinguishing feature of some of the highest-end Intel and AMD CPUs, and it improves performance for many types of software, but most gaming software is designed in a way that hyperthreading doesn't do much for it.
+It might not be worth the cost bump in a pin cab.
 
-CPU performance is always a hot topic in the gaming community, so it's easy to find lots of detailed performance data on gaming-related Web sites. Several sites run extensive benchmarking suites and publish their results. You should give the most weight to tests for gaming performance, since pinball simulators are similar to other video games in the way they use the machine's hardware resources.
+CPU performance is always a hot topic in the gaming community, so it's easy to find lots of detailed performance data on gaming-related Web sites.
+Several sites run extensive benchmarking suites and publish their results.
+You should give the most weight to tests for gaming performance, since pinball simulators are similar to other video games in the way they use the machine's hardware resources.
 
 === CPU fan
 
-Most modern CPUs require a special fan mounted directly on top of the chip. If you buy your CPU in retail packaging, it usually includes a suitable fan. However, some vendors sell unpackaged "OEM" versions intended for use by business buyers building systems for resale, and these usually don't include anything but the bare CPU. In that case, you'll need to buy a CPU fan separately. These can be found on Newegg and other sites that sell components by using a search term like "i5 fan". Check the specs on the options you find to make sure your specific CPU type is listed, since these fans usually have to match the exact shape and size of the chip.
+Most modern CPUs require a special fan mounted directly on top of the chip.
+If you buy your CPU in retail packaging, it usually includes a suitable fan.
+However, some vendors sell unpackaged "OEM" versions intended for use by business buyers building systems for resale, and these usually don't include anything but the bare CPU.
+In that case, you'll need to buy a CPU fan separately.
+These can be found on Newegg and other sites that sell components by using a search term like "i5 fan".
+Check the specs on the options you find to make sure your specific CPU type is listed, since these fans usually have to match the exact shape and size of the chip.
 
 === Motherboard
 
 The motherboard is the main system board with all of the core electronics, and connectors for all of the add-in cards, disks, and input devices.
 
-Choose a CPU before looking for motherboards. Any given motherboard only works with specific CPUs. Once you know the CPU you're going to use, you should be able to find suitable motherboards by searching the Web for "xxx motherboard", where "xxx" is your CPU type. Use the detailed CPU part number, like "i5-7600k".
+Choose a CPU before looking for motherboards.
+Any given motherboard only works with specific CPUs.
+Once you know the CPU you're going to use, you should be able to find suitable motherboards by searching the Web for "xxx motherboard", where "xxx" is your CPU type.
+Use the detailed CPU part number, like "i5-7600k".
 
 I've had good results with motherboards from Gigabyte, but several other manufacturers make good motherboards as well.
 
-For a pin cab, your needs from a motherboard aren't very complex. Here are the main features I'd look for:
+For a pin cab, your needs from a motherboard aren't very complex.
+Here are the main features I'd look for:
 
 * Must have: Compatibility with your chosen CPU
 * Must have: At least one fast expansion slot for a graphics card, typically PCI Express x16 (as of this writing).
 * Must have: At least two additional expansion slots, in case you want to add a sound card, Wi-Fi card, USB card, or any other add-ins.
-* Must have: Memory slots for at least 8GB of RAM. (This is almost a given; it's hard to find a board _without_ at least this much capacity these days.)
-* Nice to have: on-board Ethernet port. This is standard on nearly all modern motherboards. Wi-Fi is less important, because you might not be able to use a built-in antenna effectively; the walls of a pin cab are thick enough to significantly block the signal. An external antenna is usually better if you want Wi-Fi on the cab, and for that you'll probably need an add-in card or an external USB Wi-Fi adapter.
-* Nice to have: integrated audio. Nearly all modern motherboards include audio outputs. This isn't required, though, as you can add a sound card via an expansion slot if needed.
-* Nice to have: USB 2 *and* USB 3 connectors. Some older USB devices don't work well with USB 3 ports, so it's helpful to have both types in case you need a USB 2 port for some devices. This isn't required, though, since an external USB 2 hub can serve the same function.
+* Must have: Memory slots for at least 8GB of RAM.
+(This is almost a given; it's hard to find a board _without_ at least this much capacity these days.)
+* Nice to have: on-board Ethernet port.
+This is standard on nearly all modern motherboards.
+Wi-Fi is less important, because you might not be able to use a built-in antenna effectively; the walls of a pin cab are thick enough to significantly block the signal.
+An external antenna is usually better if you want Wi-Fi on the cab, and for that you'll probably need an add-in card or an external USB Wi-Fi adapter.
+* Nice to have: integrated audio.
+Nearly all modern motherboards include audio outputs.
+This isn't required, though, as you can add a sound card via an expansion slot if needed.
+* Nice to have: USB 2 *and* USB 3 connectors.
+Some older USB devices don't work well with USB 3 ports, so it's helpful to have both types in case you need a USB 2 port for some devices.
+This isn't required, though, since an external USB 2 hub can serve the same function.
 
-*Performance considerations:* Not really an issue, unless you're looking to build an extreme gaming system. A motherboard designed for a particular CPU is almost always based on the Intel or AMD chipset mated to that CPU, so you won't see a huge amount of variation among different boards for the same CPU. If you're concerned about finding the fastest motherboard for your CPU, you can do some research on benchmark sites on the Web.
+*Performance considerations:* Not really an issue, unless you're looking to build an extreme gaming system.
+A motherboard designed for a particular CPU is almost always based on the Intel or AMD chipset mated to that CPU, so you won't see a huge amount of variation among different boards for the same CPU.
+If you're concerned about finding the fastest motherboard for your CPU, you can do some research on benchmark sites on the Web.
 
-*What about on-board graphics?* Unimportant, because you'll need a separate graphics card whether or not the motherboard has its own built-in graphics. There might be exceptions, but all of the built-in motherboard graphics chip sets I've ever seen are low-end, suitable for business graphics, not gaming.
+*What about on-board graphics?* Unimportant, because you'll need a separate graphics card whether or not the motherboard has its own built-in graphics.
+There might be exceptions, but all of the built-in motherboard graphics chip sets I've ever seen are low-end, suitable for business graphics, not gaming.
 
-If the motherboard doesn't have on-board graphics, great, that's one less thing to worry about when configuring the BIOS. If it does have on-board graphics, as most modern motherboards do, it's still not a problem because you should be able to disable it in the BIOS setup. In fact, many BIOSes will do this automatically when they detect the presence of a separate video card.
+If the motherboard doesn't have on-board graphics, great, that's one less thing to worry about when configuring the BIOS.
+If it does have on-board graphics, as most modern motherboards do, it's still not a problem because you should be able to disable it in the BIOS setup.
+In fact, many BIOSes will do this automatically when they detect the presence of a separate video card.
 
 
 === Graphics cards
 
-The graphics card is the most important component for game performance. It's even more important than the CPU for games, because it's actually a whole separate computer in its own right that does most of the computing work for displaying 3D graphics. Fast graphics cards are capable of drawing more complex images more rapidly, making for smoother game action.
+The graphics card is the most important component for game performance.
+It's even more important than the CPU for games, because it's actually a whole separate computer in its own right that does most of the computing work for displaying 3D graphics.
+Fast graphics cards are capable of drawing more complex images more rapidly, making for smoother game action.
 
-You should wait until after selecting a motherboard to choose a graphics card, because you need a graphics card that matches the "slot" type on your motherboard. Your motherboard specs should tell you what kind of graphics cards it accepts; look for "graphics cards" or "expansion slots" in the spec sheet. For quite a while now, motherboards have been standardized on "PCI Express" slots for the graphic interface. These are quoted with a speed like "x16", so you might see "PCI Express x16" in the expansion slot list. Once you find that information, that tells you what types of graphic cards are compatible.
+You should wait until after selecting a motherboard to choose a graphics card, because you need a graphics card that matches the "slot" type on your motherboard.
+Your motherboard specs should tell you what kind of graphics cards it accepts; look for "graphics cards" or "expansion slots" in the spec sheet.
+For quite a while now, motherboards have been standardized on "PCI Express" slots for the graphic interface.
+These are quoted with a speed like "x16", so you might see "PCI Express x16" in the expansion slot list.
+Once you find that information, that tells you what types of graphic cards are compatible.
 
-Graphics cards are available from many manufacturers, but most (regardless of manufacturer) use chip sets made by either Nvidia or AMD. The spec sheet should tell you the underlying chip set, and in fact, most cards from most brands include this information right in the name. For example, a "Gigabyte Geforce GTX 1050" is based on the Nvidia 1050 chip set. You'll start to recognize the chip set names if you shop around enough, since you'll see the same numerical designations over and over on different brands of cards. The performance of a graphics card is almost entirely a function of the chip set, not the brand, so you should see reasonably similar performance from cards based on a given chip set even if they're from different brands.
+Graphics cards are available from many manufacturers, but most (regardless of manufacturer) use chip sets made by either Nvidia or AMD.
+The spec sheet should tell you the underlying chip set, and in fact, most cards from most brands include this information right in the name.
+For example, a "Gigabyte Geforce GTX 1050" is based on the Nvidia 1050 chip set.
+You'll start to recognize the chip set names if you shop around enough, since you'll see the same numerical designations over and over on different brands of cards.
+The performance of a graphics card is almost entirely a function of the chip set, not the brand, so you should see reasonably similar performance from cards based on a given chip set even if they're from different brands.
 
-*Which chip set?* Check the forums for advice on current models. This is another area where something in the second tier of the current available performance range is usually a good choice.
+*Which chip set?* Check the forums for advice on current models.
+This is another area where something in the second tier of the current available performance range is usually a good choice.
 
 Note that a 4K main monitor is more demanding than a regular HD (2K) monitor, so you should bias your search towards the higher end if you're planning on 4K.
 
-*Video memory:* Video cards have their own on-board memory, usually 1GB or more on a modern card. The fastest type of memory has a type like "GDDR3" or "GDDR5". A higher number suffix indicates faster memory. Visual Pinball and other gaming software benefits from larger memory sizes with faster memory.
+*Video memory:* Video cards have their own on-board memory, usually 1GB or more on a modern card.
+The fastest type of memory has a type like "GDDR3" or "GDDR5".
+A higher number suffix indicates faster memory.
+Visual Pinball and other gaming software benefits from larger memory sizes with faster memory.
 
-*Display size and refresh rate:* Any modern video card should be able to drive a 1080p main monitor and a couple of additional smaller monitors. (1080p or even 720p is perfectly adequate for a backglass TV.) A higher-end card might be needed if you're using a 4K main monitor.
+*Display size and refresh rate:* Any modern video card should be able to drive a 1080p main monitor and a couple of additional smaller monitors.
+(1080p or even 720p is perfectly adequate for a backglass TV.) A higher-end card might be needed if you're using a 4K main monitor.
 
 *Outputs/connectors:* Be sure you have enough outputs for all of the monitors you plan to connect, taking into account the playfield TV, the backbox TV, and the score display (DMD) TV, if you're using that.
 
-Most higher-end graphics cards offer several output ports with different types of connectors. You can almost always use all of the outputs simultaneously to drive multiple monitors. This lets you use a single graphics card to drive all of the TVs in your system.
+Most higher-end graphics cards offer several output ports with different types of connectors.
+You can almost always use all of the outputs simultaneously to drive multiple monitors.
+This lets you use a single graphics card to drive all of the TVs in your system.
 
-I'd recommend finding a card with at least two of the following connectors, in any combination: HDMI, DVI-D, Display Port (DP). All of these types can be connected (using passive adapters) to HDMI inputs, which is what you'll need on almost any modern TV. As long as you have two ports of these types, you should have no problem connecting two TVs to the card.
+I'd recommend finding a card with at least two of the following connectors, in any combination: HDMI, DVI-D, Display Port (DP).
+All of these types can be connected (using passive adapters) to HDMI inputs, which is what you'll need on almost any modern TV.
+As long as you have two ports of these types, you should have no problem connecting two TVs to the card.
 
-If you're planning to also use a third display for the DMD area, you'll need a third output for that. A VGA or DVI-D connector will usually work for this third output, since DMD monitors are usually implemented with laptop displays or small desktop monitors. Most video cards have a VGA output in addition to one or more of the more modern connectors listed above, so this is fairly easy to find.
+If you're planning to also use a third display for the DMD area, you'll need a third output for that.
+A VGA or DVI-D connector will usually work for this third output, since DMD monitors are usually implemented with laptop displays or small desktop monitors.
+Most video cards have a VGA output in addition to one or more of the more modern connectors listed above, so this is fairly easy to find.
 
-If you're going to use a real pinball DMD instead of a small video display, you *won't* need to connect that the graphics card. Real DMDs aren't video devices, so they don't connect to your graphics card; they connect instead to a special external controller via USB.
+If you're going to use a real pinball DMD instead of a small video display, you *won't* need to connect that the graphics card.
+Real DMDs aren't video devices, so they don't connect to your graphics card; they connect instead to a special external controller via USB.
 
-You should check the specs to confirm that the card you're considering can handle the two or three simultaneous outputs you plan to use. Nearly all modern graphics cards allow this, but it's worth checking to be sure.
+You should check the specs to confirm that the card you're considering can handle the two or three simultaneous outputs you plan to use.
+Nearly all modern graphics cards allow this, but it's worth checking to be sure.
 
-*Port compatibility:* You don't necessarily need an exact match between the output port types on your video card and the input ports on your TVs and monitors. Many of the port types are electrically compatible with each other, meaning you can connect them with a simple cable that has the right plug on each end.
+*Port compatibility:* You don't necessarily need an exact match between the output port types on your video card and the input ports on your TVs and monitors.
+Many of the port types are electrically compatible with each other, meaning you can connect them with a simple cable that has the right plug on each end.
 
-The following combinations of port types are compatible. The only requirement is a cable with the corresponding connector type at each end. These are relatively inexpensive and can be easily found online.
+The following combinations of port types are compatible.
+The only requirement is a cable with the corresponding connector type at each end.
+These are relatively inexpensive and can be easily found online.
 
 [cols="1,1,1"]
 |===
@@ -169,36 +273,60 @@ The following combinations of port types are compatible. The only requirement is
 
 |===
 
-*Two cards for two monitors:* Not advised. It _seems_ like two cards would be better than one - more hardware is always faster, right? But in practice, two cards are actually _slower_ than one. Everyone on the forums who's tried this has had the same results: you get lower frame rates, more stutter, and more lag with multiple video cards.]
+*Two cards for two monitors:* Not advised.
+It _seems_ like two cards would be better than one - more hardware is always faster, right? But in practice, two cards are actually _slower_ than one.
+Everyone on the forums who's tried this has had the same results: you get lower frame rates, more stutter, and more lag with multiple video cards.]
 
 
 
-The technical reasons for this are unclear (my wild guess is that it's due to increased PCIe bus contention). Without understanding the cause, I can't rule out the possibility that _some_ systems exist where two cards would go faster than one. But if there are, they seem to be the exception; many people have tried it and had poor results.
+The technical reasons for this are unclear (my wild guess is that it's due to increased PCIe bus contention).
+Without understanding the cause, I can't rule out the possibility that _some_ systems exist where two cards would go faster than one.
+But if there are, they seem to be the exception; many people have tried it and had poor results.
 
 By far the best way that anyone has found to improve performance of the pinball simulators is to use a faster video card.
 
-*Using the motherboard GPU as a second video card:* Not advised, for exactly the same reasons that you shouldn't add a second video card (above). Enabling the motherboard GPU is exactly the same as adding a second video card in terms of its effect on your overall system performance: you'll see lower frame rates, more stutter, and more lag if you enable the on-board GPU.]
+*Using the motherboard GPU as a second video card:* Not advised, for exactly the same reasons that you shouldn't add a second video card (above).
+Enabling the motherboard GPU is exactly the same as adding a second video card in terms of its effect on your overall system performance: you'll see lower frame rates, more stutter, and more lag if you enable the on-board GPU.]
 
 
 === Memory (RAM)
 
-I'd recommend at least 8GB of motherboard RAM. This is enough memory for Windows plus the pinball simulator to run comfortably without "swapping" to disk. More RAM is generally better - particularly for future-proofing, considering that Windows and other software tends to need more memory on every update. If you have the budget, you can install as much memory as your motherboard can accept.
+I'd recommend at least 8GB of motherboard RAM.
+This is enough memory for Windows plus the pinball simulator to run comfortably without "swapping" to disk.
+More RAM is generally better - particularly for future-proofing, considering that Windows and other software tends to need more memory on every update.
+If you have the budget, you can install as much memory as your motherboard can accept.
 
-The type of RAM chip you use must match the requirements for your motherboard. You can find the RAM type requirements in your motherboard's spec sheet, but it's usually easier to find the right chips by typing your motherboard's model number into a Web store's RAM search. Most online stores that sell RAM let you search for compatible chips by motherboard, narrowing the results to show only compatible products once you enter the motherboard information.
+The type of RAM chip you use must match the requirements for your motherboard.
+You can find the RAM type requirements in your motherboard's spec sheet, but it's usually easier to find the right chips by typing your motherboard's model number into a Web store's RAM search.
+Most online stores that sell RAM let you search for compatible chips by motherboard, narrowing the results to show only compatible products once you enter the motherboard information.
 
-You'll probably be able to find many compatible RAM chips for your motherboard. These will be listed with a speed class like "DDR3-2000" or "DDR4-2133". "DDR3" and "DDR4" are essentially versions of the electrical interfaces, so your motherboard will probably accept exactly one of these types. The suffixes like "-2000" are clock speeds, so higher numbers are faster in terms of the bus clock. These numbers don't translate directly or linearly to overall system throughput, since there are many other factors besides the raw clock speed that affect the actual performance, but using higher-speed RAM will generally increase overall system speed. I'd recommend buying the fastest speed class that your motherboard supports, since the price differences between RAM types aren't usually dramatic, but you can let your budget decide, since the performance differences probably won't be dramatic either.
+You'll probably be able to find many compatible RAM chips for your motherboard.
+These will be listed with a speed class like "DDR3-2000" or "DDR4-2133".
+"DDR3" and "DDR4" are essentially versions of the electrical interfaces, so your motherboard will probably accept exactly one of these types.
+The suffixes like "-2000" are clock speeds, so higher numbers are faster in terms of the bus clock.
+These numbers don't translate directly or linearly to overall system throughput, since there are many other factors besides the raw clock speed that affect the actual performance, but using higher-speed RAM will generally increase overall system speed.
+I'd recommend buying the fastest speed class that your motherboard supports, since the price differences between RAM types aren't usually dramatic, but you can let your budget decide, since the performance differences probably won't be dramatic either.
 
-Note that you might see the "DDR" speed class combined with another class with a "PC" prefix, such as "PC3-16000". These are just different ways of stating the same information. Don't compare "DDR" speeds with "PC" speeds, since they're different systems - only compare "DDR" speeds with other "DDR" speeds, and "PC" speeds with other "PC" speeds.
+Note that you might see the "DDR" speed class combined with another class with a "PC" prefix, such as "PC3-16000".
+These are just different ways of stating the same information.
+Don't compare "DDR" speeds with "PC" speeds, since they're different systems - only compare "DDR" speeds with other "DDR" speeds, and "PC" speeds with other "PC" speeds.
 
-In addition to the "DDR" speed class, you might see a series of other specs, such as "Timing 15-17-17-35" or "CAS Latency 15". These numbers are further details about the memory speed. Hardcore gamers try to optimize these, but I don't recommend worrying about them, because they represent very slight differences in speed that might not even be noticeable in actual use. The "DDR" speed class and the total amount of RAM are much more important.
+In addition to the "DDR" speed class, you might see a series of other specs, such as "Timing 15-17-17-35" or "CAS Latency 15".
+These numbers are further details about the memory speed.
+Hardcore gamers try to optimize these, but I don't recommend worrying about them, because they represent very slight differences in speed that might not even be noticeable in actual use.
+The "DDR" speed class and the total amount of RAM are much more important.
 
 === Hard Disk
 
-The best type of hard disk for a virtual pin cab PC is an SSD, which isn't actually a "disk" at all, but serves the same storage function using flash memory instead of magnetic media. SSDs are much faster than conventional hard disks, especially for booting Windows and loading software. Booting Windows from an SSD typically takes ten or twenty seconds, compared with a minute or more with a conventional hard disk.
+The best type of hard disk for a virtual pin cab PC is an SSD, which isn't actually a "disk" at all, but serves the same storage function using flash memory instead of magnetic media.
+SSDs are much faster than conventional hard disks, especially for booting Windows and loading software.
+Booting Windows from an SSD typically takes ten or twenty seconds, compared with a minute or more with a conventional hard disk.
 
-SSDs also smaller than convention disks, and they're essentially immune to damage from vibration or shock. The shock resistance is good for a pin cab since you'll want to be able to nudge the machine without worrying about damaging the disk.
+SSDs also smaller than convention disks, and they're essentially immune to damage from vibration or shock.
+The shock resistance is good for a pin cab since you'll want to be able to nudge the machine without worrying about damaging the disk.
 
-The main drawback of SSDs is that they're more expensive than conventional hard disk per gigabyte. Fortunately, a pin cab doesn't need a very large disk, so most pin cab builders will find that a suitably sized SSD is well within a reasonable budget for the PC components.
+The main drawback of SSDs is that they're more expensive than conventional hard disk per gigabyte.
+Fortunately, a pin cab doesn't need a very large disk, so most pin cab builders will find that a suitably sized SSD is well within a reasonable budget for the PC components.
 
 How much storage do you need? Let's look at what you'll typically need to install on a pin cab PC:
 
@@ -211,74 +339,136 @@ How much storage do you need? Let's look at what you'll typically need to instal
 * Web browser: 1GB
 * Other software and utilities: varies, hundreds of MB
 
-We obviously can't come up with an exact number here because the total will depend on how many tables you install. But we can still come up with a pretty good upper bound, since there are only so many tables out there (perhaps 1000 in circulation), and they're not all that big individually (perhaps 1MB to 20MB apiece). Even if you install all of the tables you can find, and even if you never delete the less interesting ones, you're probably talking about less than 20GB of total disk space required for them.
+We obviously can't come up with an exact number here because the total will depend on how many tables you install.
+But we can still come up with a pretty good upper bound, since there are only so many tables out there (perhaps 1000 in circulation), and they're not all that big individually (perhaps 1MB to 20MB apiece).
+Even if you install all of the tables you can find, and even if you never delete the less interesting ones, you're probably talking about less than 20GB of total disk space required for them.
 
-Adding all of this up, we come up with about 45GB. Realistically, you'll want to increase that figure to account for the inherent overhead in the way Windows uses disk space, and to leave some room for temporary files, downloads, etc. So I'd recommend an absolute minimum disk size of about 65GB, and preferably at least 120GB. But given current prices, I'd step up to about 250GB - that size is available for about $100 US as of this writing, which makes it the best value in terms of price per gigabyte. 250GB is plenty of space for all current pin cab needs and leaves lots of space for future expansion. Depending on when you read this, the best value size might be even larger, so shop around to see what's available.
+Adding all of this up, we come up with about 45GB.
+Realistically, you'll want to increase that figure to account for the inherent overhead in the way Windows uses disk space, and to leave some room for temporary files, downloads, etc.
+So I'd recommend an absolute minimum disk size of about 65GB, and preferably at least 120GB.
+But given current prices, I'd step up to about 250GB - that size is available for about $100 US as of this writing, which makes it the best value in terms of price per gigabyte.
+250GB is plenty of space for all current pin cab needs and leaves lots of space for future expansion.
+Depending on when you read this, the best value size might be even larger, so shop around to see what's available.
 
 === Power supply
 
-Virtually all motherboards and disk drives are compatible with the standard "ATX" type of power supply. The only exceptions are motherboards designed for very small form factor machines, so as long as you're using a standard full-sized motherboard, you should be able to use any ATX power supply from any manufacturer.
+Virtually all motherboards and disk drives are compatible with the standard "ATX" type of power supply.
+The only exceptions are motherboards designed for very small form factor machines, so as long as you're using a standard full-sized motherboard, you should be able to use any ATX power supply from any manufacturer.
 
-ATX power supplies are so standardized that you don't have to worry about the types of plugs it has or the types of voltages it produces. These are all uniform across all ATX power supplies. The only thing that varies is the total power capacity, expressed as a number of Watts. You'll have to pick a power supply that produces at least the wattage required by your motherboard and other components.
+ATX power supplies are so standardized that you don't have to worry about the types of plugs it has or the types of voltages it produces.
+These are all uniform across all ATX power supplies.
+The only thing that varies is the total power capacity, expressed as a number of Watts.
+You'll have to pick a power supply that produces at least the wattage required by your motherboard and other components.
 
-You can determine your wattage requirement by adding up the power figures in the specs for your motherboard and video card. Those are the two components that draw the most power in your system. Be sure to pay attention to the video card, because it might require even more power than your motherboard does.
+You can determine your wattage requirement by adding up the power figures in the specs for your motherboard and video card.
+Those are the two components that draw the most power in your system.
+Be sure to pay attention to the video card, because it might require even more power than your motherboard does.
 
-For example, if your motherboard spec sheet says that it requires 200W, and your video card requires 300W, you'll need a power supply that provides at least 500W. I'd add about 100W to the total you come up with from the motherboard and video specs, to account for the little bit of extra power that will be drawn by the disk and USB devices, so in this example I'd look for a power supply rated for at least 600W. The number you come up with here is just a minimum: you can buy any power supply rated at this number or higher.
+For example, if your motherboard spec sheet says that it requires 200W, and your video card requires 300W, you'll need a power supply that provides at least 500W.
+I'd add about 100W to the total you come up with from the motherboard and video specs, to account for the little bit of extra power that will be drawn by the disk and USB devices, so in this example I'd look for a power supply rated for at least 600W.
+The number you come up with here is just a minimum: you can buy any power supply rated at this number or higher.
 
 === Sound cards
 
-Most modern motherboards have integrated audio. For a basic setup, this is all you'll need.
+Most modern motherboards have integrated audio.
+For a basic setup, this is all you'll need.
 
-If you want, you can add a separate sound card that plugs into an expansion slot on your motherboard. This will let you set up a second, independent set of speakers on the added card, in addition to the main set of speakers attached to the motherboard audio outputs.
+If you want, you can add a separate sound card that plugs into an expansion slot on your motherboard.
+This will let you set up a second, independent set of speakers on the added card, in addition to the main set of speakers attached to the motherboard audio outputs.
 
-Why would you want two sets of outputs? Visual Pinball has a special feature that lets you take advantage of two audio systems to separate the "music" tracks from the playfield sound effects. Many pin cab builders set things up so that the music plays from the backbox speakers, the same arrangement as in the real machines from the 1990s, and the playfield sound effects play through a separate set of speakers located inside the cabinet under the TV. The playfield effects include the sound of the ball rolling and bumping into things, so it improves the simulation to have these sounds come from the direction of the playfield.
+Why would you want two sets of outputs? Visual Pinball has a special feature that lets you take advantage of two audio systems to separate the "music" tracks from the playfield sound effects.
+Many pin cab builders set things up so that the music plays from the backbox speakers, the same arrangement as in the real machines from the 1990s, and the playfield sound effects play through a separate set of speakers located inside the cabinet under the TV.
+The playfield effects include the sound of the ball rolling and bumping into things, so it improves the simulation to have these sounds come from the direction of the playfield.
 
-If you do want to install a separate sound card for the playfield effects, you don't need anything fancy. Any inexpensive sound card will do. Just make sure that it uses the same type of expansion slot that you have on your motherboard. For most modern motherboards, these will be standard PCI slots.
+If you do want to install a separate sound card for the playfield effects, you don't need anything fancy.
+Any inexpensive sound card will do.
+Just make sure that it uses the same type of expansion slot that you have on your motherboard.
+For most modern motherboards, these will be standard PCI slots.
 
 === Case or caseless
 
-Most pin cab builders house the whole PC inside the cabinet. This makes everything self-contained and adds to the illusion of a real machine. That's not a requirement, though: some cab builders simply put a regular PC on the floor next to the cabinet. This works, but it's not as nicely integrated, and you'll have to run several cables (video and USB) between the external PC and the cab. It's fairly obvious how to set that up, so we'll ignore that option and focus on how to set up a PC inside the cabinet.
+Most pin cab builders house the whole PC inside the cabinet.
+This makes everything self-contained and adds to the illusion of a real machine.
+That's not a requirement, though: some cab builders simply put a regular PC on the floor next to the cabinet.
+This works, but it's not as nicely integrated, and you'll have to run several cables (video and USB) between the external PC and the cab.
+It's fairly obvious how to set that up, so we'll ignore that option and focus on how to set up a PC inside the cabinet.
 
-There are two main options for mounting the PC components inside the cabinet. The first is to build the PC using a conventional tower case, and then put the case inside the cabinet. The second is to skip the case and mount all of the PC components directly inside the cabinet, attaching them to the floor of the cabinet or one of the inside walls. The cabinet itself serves as the case. Each approach has some tradeoffs.
+There are two main options for mounting the PC components inside the cabinet.
+The first is to build the PC using a conventional tower case, and then put the case inside the cabinet.
+The second is to skip the case and mount all of the PC components directly inside the cabinet, attaching them to the floor of the cabinet or one of the inside walls.
+The cabinet itself serves as the case.
+Each approach has some tradeoffs.
 
-The main advantage of using a conventional PC case is that it provides structural support to hold the video card and other add-in cards in place, and provides places to mount the disks. A case also provides physical protection from falling objects, and provides shielding for the radio frequency energy that a PC produces.
+The main advantage of using a conventional PC case is that it provides structural support to hold the video card and other add-in cards in place, and provides places to mount the disks.
+A case also provides physical protection from falling objects, and provides shielding for the radio frequency energy that a PC produces.
 
-The big downside of using a case is that it takes up a lot of space. A typical mid-tower case is about 14x16x7 inches. A standard pin cab is 20.5" wide on the inside, and you'll have about 9 or 10 inches of vertical clearance between the floor and the playfield TV. That leaves enough room for a tower case lying on its side, but just barely.
+The big downside of using a case is that it takes up a lot of space.
+A typical mid-tower case is about 14x16x7 inches.
+A standard pin cab is 20.5" wide on the inside, and you'll have about 9 or 10 inches of vertical clearance between the floor and the playfield TV.
+That leaves enough room for a tower case lying on its side, but just barely.
 
-Note that there's such a thing as a "small form factor" case. These take up less space, as the name suggests, but they're not really a good option for pin cabs. The big problem is that they don't accommodate full-size PCIe video cards. The video card is so critical to performance that you won't want to be limited to the few available small form factor options.
+Note that there's such a thing as a "small form factor" case.
+These take up less space, as the name suggests, but they're not really a good option for pin cabs.
+The big problem is that they don't accommodate full-size PCIe video cards.
+The video card is so critical to performance that you won't want to be limited to the few available small form factor options.
 
 
 
-If you skip the case, it's straightforward to mount the motherboard, disk, and power supply to the floor of the cabinet. The only real complication is that the video card and other add-in cards will need some kind of structural support to keep them from working loose from the motherboard slots. One option is a partial case, known as an "I/O panel" or "I/O tray". You can search for these on the Web by looking for terms like "ATX I/O panel" or "mATX motherboard tray" (use "ATX" or "mATAX" according to your motherboard's "form factor" spec). Another option is to fashion your own ad hoc support from wood or sheet metal. We'll look at specifics in  xref:pcInstall.adoc#pcInstall[Installing the PC] .
+If you skip the case, it's straightforward to mount the motherboard, disk, and power supply to the floor of the cabinet.
+The only real complication is that the video card and other add-in cards will need some kind of structural support to keep them from working loose from the motherboard slots.
+One option is a partial case, known as an "I/O panel" or "I/O tray".
+You can search for these on the Web by looking for terms like "ATX I/O panel" or "mATX motherboard tray" (use "ATX" or "mATAX" according to your motherboard's "form factor" spec).
+Another option is to fashion your own ad hoc support from wood or sheet metal.
+We'll look at specifics in  xref:pcInstall.adoc#pcInstall[Installing the PC] .
 
 === Fans
 
-PC components and TVs generate heat when running, so you'll want to make sure the cabinet interior is well ventilated. Most cab builders do this by installing a couple of PC case fans in specially cut openings in the floor or back wall of the cabinet. See xref:fans.adoc#fans[Cooling Fans] for more.
+PC components and TVs generate heat when running, so you'll want to make sure the cabinet interior is well ventilated.
+Most cab builders do this by installing a couple of PC case fans in specially cut openings in the floor or back wall of the cabinet.
+See xref:fans.adoc#fans[Cooling Fans] for more.
 
 [#pcNetworkConnections]
 === Network
 
 You'll definitely want network connectivity in your cab PC, so that you can download software and pinball tables from the Internet.
 
-Nearly all motherboards have built-in Ethernet ports for wired connections. If you'll have access to a wired router port in your pin cab's ultimate location, the built-in Ethernet port is all you'll need. If not, you'll want to consider another option, such as WiFi or powerline networking.
+Nearly all motherboards have built-in Ethernet ports for wired connections.
+If you'll have access to a wired router port in your pin cab's ultimate location, the built-in Ethernet port is all you'll need.
+If not, you'll want to consider another option, such as WiFi or powerline networking.
 
-If you're already using WiFi for your other devices, you can get your pin cab on the network by adding a WiFi card. Some motherboards have built-in WiFi, so you might not even need to add anything; check your motherboard specs.
+If you're already using WiFi for your other devices, you can get your pin cab on the network by adding a WiFi card.
+Some motherboards have built-in WiFi, so you might not even need to add anything; check your motherboard specs.
 
-If you do add WiFi to your pin cab PC, I'd recommend doing so with a PCI add-in card that has an external antenna with at least a few feet of wire, to allow locating the antenna away from the motherboard. The reason is that the wood walls of a pin cab can substantially block the WiFi radio signal, so you'll get a much better signal if you can move the antenna outside of the cabinet. A built-in antenna or an antenna that's attached directly to the PCI card might not get a strong enough signal.
+If you do add WiFi to your pin cab PC, I'd recommend doing so with a PCI add-in card that has an external antenna with at least a few feet of wire, to allow locating the antenna away from the motherboard.
+The reason is that the wood walls of a pin cab can substantially block the WiFi radio signal, so you'll get a much better signal if you can move the antenna outside of the cabinet.
+A built-in antenna or an antenna that's attached directly to the PCI card might not get a strong enough signal.
 
-Another option is a "powerline" network. These send signals over your house's AC electrical wiring rather than by radio, so they're not susceptible to the interference and blockage problems that make WiFi problematic in some setups. They also don't require any extra wiring, since they use the existing power wiring in your house. To make this work, you'll need one powerline adapter connected to the pin cab PC via the motherboard's Ethernet port, and a second powerline adapter connected to a port on your Ethernet router. Netgear, Linksys, and others make starter kits that come with the necessary equipment to set this up.
+Another option is a "powerline" network.
+These send signals over your house's AC electrical wiring rather than by radio, so they're not susceptible to the interference and blockage problems that make WiFi problematic in some setups.
+They also don't require any extra wiring, since they use the existing power wiring in your house.
+To make this work, you'll need one powerline adapter connected to the pin cab PC via the motherboard's Ethernet port, and a second powerline adapter connected to a port on your Ethernet router.
+Netgear, Linksys, and others make starter kits that come with the necessary equipment to set this up.
 
-I always prefer a wired Ethernet connection when possible, since it's extremely reliable and almost effortless to set up. Powerline is my second choice when a wired Ethernet connection isn't possible, since it tends to be more reliable than WiFi and easier to set up. WiFi is great for mobile devices, but a pin cab has to be plugged into the power outlet anyway, so I think powerline is the way to go if you can't arrange a regular wired Ethernet connection.
+I always prefer a wired Ethernet connection when possible, since it's extremely reliable and almost effortless to set up.
+Powerline is my second choice when a wired Ethernet connection isn't possible, since it tends to be more reliable than WiFi and easier to set up.
+WiFi is great for mobile devices, but a pin cab has to be plugged into the power outlet anyway, so I think powerline is the way to go if you can't arrange a regular wired Ethernet connection.
 
 === Port connections
 
 Assuming you're placing your PC inside the cabinet, you'll need a way to connect the keyboard, mouse, and (if you're using one) the Ethernet cable.
 
-One easy way to deal with the keyboard and mouse is to buy wireless devices. Modern wireless keyboards and mice come with USB transceivers; just plug the transceivers into USB ports on the motherboard and you're set. Similarly, using WiFi or powerline Ethernet (see the xref:#pcNetworkConnections[Network] section above) eliminates the need for external network cabling. Making everything wireless is the most convenient approach, but it's more expensive, and I've never been fully satisfied with the performance of any wireless keyboard or mouse I've used.
+One easy way to deal with the keyboard and mouse is to buy wireless devices.
+Modern wireless keyboards and mice come with USB transceivers; just plug the transceivers into USB ports on the motherboard and you're set.
+Similarly, using WiFi or powerline Ethernet (see the xref:#pcNetworkConnections[Network] section above) eliminates the need for external network cabling.
+Making everything wireless is the most convenient approach, but it's more expensive, and I've never been fully satisfied with the performance of any wireless keyboard or mouse I've used.
 
-If you're using wired devices, a simple solution is to drill a hole in the cabinet big enough for the cables (preferably somewhere inconspicuous, like the floor or back wall), pull the cables through the opening, and plug them into the appropriate motherboard ports. The downsides of this approach are that it uses up a couple of feet of cable inside the cab (which might put your keyboard and mouse on too short a leash), and that it's inconvenient to disconnect and reconnect the devices (you have to open up the machine to get to the plugs).
+If you're using wired devices, a simple solution is to drill a hole in the cabinet big enough for the cables (preferably somewhere inconspicuous, like the floor or back wall), pull the cables through the opening, and plug them into the appropriate motherboard ports.
+The downsides of this approach are that it uses up a couple of feet of cable inside the cab (which might put your keyboard and mouse on too short a leash), and that it's inconvenient to disconnect and reconnect the devices (you have to open up the machine to get to the plugs).
 
-If you want something a little more elegant and flexible, you can install the appropriate port connectors on the exterior of your cabinet and wire them to the motherboard internally. You can set this up pretty easily with parts made for installing data jacks in wall plates that resemble regular electrical outlet plates. These are commonly used for home theater and office installations. Here are the parts I'd recommend:
+If you want something a little more elegant and flexible, you can install the appropriate port connectors on the exterior of your cabinet and wire them to the motherboard internally.
+You can set this up pretty easily with parts made for installing data jacks in wall plates that resemble regular electrical outlet plates.
+These are commonly used for home theater and office installations.
+Here are the parts I'd recommend:
 
 * 1 Keystone wall plate insert with 2 openings, for the keyboard and mouse
 * 1 Keystone wall plate insert with 1 opening, for the Ethernet port
@@ -291,7 +481,10 @@ See xref:pcInstall.adoc#pcInstall[Installing the PC] for installation instructio
 
 === Optical disks
 
-Most pin can builders don't include any optical disks (CD-ROM or DVD-ROM) in their systems. And it almost goes without saying that floppy disks and other removable media are obsolete and can be skipped.
+Most pin can builders don't include any optical disks (CD-ROM or DVD-ROM) in their systems.
+And it almost goes without saying that floppy disks and other removable media are obsolete and can be skipped.
 
-Apart from the operating system, you should be able to load all necessary software by network download. The operating system itself can be installed from a USB thumb drive. Newer versions of Windows can be purchased on a pre-loaded thumb drive, and you can also use your existing desktop PC to create an installable thumb drive image from Windows DVD-ROM install media.
+Apart from the operating system, you should be able to load all necessary software by network download.
+The operating system itself can be installed from a USB thumb drive.
+Newer versions of Windows can be purchased on a pre-loaded thumb drive, and you can also use your existing desktop PC to create an installable thumb drive image from Windows DVD-ROM install media.
 

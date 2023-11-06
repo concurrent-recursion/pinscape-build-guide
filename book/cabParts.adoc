@@ -1,23 +1,34 @@
 [#cabinetPartsList]
 = Cabinet Parts List
 
-When I built my cabinet, one of the unexpectedly big jobs was just figuring out what I needed to buy. This chapter is an attempt to save you some of that legwork by presenting a master list of everything that goes into a virtual pinball machine. The list is organized into categories to make it easier to digest and easier to find things.
+When I built my cabinet, one of the unexpectedly big jobs was just figuring out what I needed to buy.
+This chapter is an attempt to save you some of that legwork by presenting a master list of everything that goes into a virtual pinball machine.
+The list is organized into categories to make it easier to digest and easier to find things.
 
 The list starts xref:#masterPartsList[below] after a few preliminary notes.
 
 == Pinball part references
 
-Many of the items on the list are replacement parts for real pinball machines. When possible, these are listed with the original manufacturer part numbers. This makes it easy to find the exact part you're looking for, since most arcade suppliers include these numbers in their catalogs and databases. You can enter one of these numbers into the search box on most pinball vendor Web sites to find that exact part, without having to wade through a ton of hits for similar items, as is often the case if you search by name or description. Most of the part numbers are even unique enough to yield good results from a Google search.
+Many of the items on the list are replacement parts for real pinball machines.
+When possible, these are listed with the original manufacturer part numbers.
+This makes it easy to find the exact part you're looking for, since most arcade suppliers include these numbers in their catalogs and databases.
+You can enter one of these numbers into the search box on most pinball vendor Web sites to find that exact part, without having to wade through a ton of hits for similar items, as is often the case if you search by name or description.
+Most of the part numbers are even unique enough to yield good results from a Google search.
 
-The part numbers listed are mostly for Williams/Bally 1990s era machines, also known as WPC machines (for "Williams Pinball Controller", the core electronics platform used throughout that generation). Those machines had a very uniform cabinet design, and most of the core cabinet parts used a single design shared across many games. Williams is no longer in the pinball business (much to the regret of pinball enthusiasts), but the modern machines being made by Stern and a few smaller boutique pinball companies still hew very closely to the WPC cabinet design, and use most of the same parts, or equivalents that can be used interchangeably. As a result, it's easy to find new replacement parts for most of the WPC cabinet components, which makes the WPC hardware an excellent basis for building a new cabinet from scratch.
+The part numbers listed are mostly for Williams/Bally 1990s era machines, also known as WPC machines (for "Williams Pinball Controller", the core electronics platform used throughout that generation).
+Those machines had a very uniform cabinet design, and most of the core cabinet parts used a single design shared across many games.
+Williams is no longer in the pinball business (much to the regret of pinball enthusiasts), but the modern machines being made by Stern and a few smaller boutique pinball companies still hew very closely to the WPC cabinet design, and use most of the same parts, or equivalents that can be used interchangeably.
+As a result, it's easy to find new replacement parts for most of the WPC cabinet components, which makes the WPC hardware an excellent basis for building a new cabinet from scratch.
 
 == Fasteners
 
-Pinball machines use a lot of different fasteners, including machine screws, wood screws and sheet-metal screws, carriage bolts, hex nuts, flange nuts, and T-nuts. Most of these are generic parts that you can buy anywhere, but some of them are unusual and can be hard to find outside of the pinball vendors.
+Pinball machines use a lot of different fasteners, including machine screws, wood screws and sheet-metal screws, carriage bolts, hex nuts, flange nuts, and T-nuts.
+Most of these are generic parts that you can buy anywhere, but some of them are unusual and can be hard to find outside of the pinball vendors.
 
 Here's a quick overview of the terminology and sizing specifications for most of the fasteners used in a pin cab.
 
-Wood screws and sheet-metal screws have pointy ends that are designed to penetrate soft material and form threads in the material as you screw them in the first time. Machine screws and bolts have flat ends that can only be used with pre-threaded receptacles, usually nuts.
+Wood screws and sheet-metal screws have pointy ends that are designed to penetrate soft material and form threads in the material as you screw them in the first time.
+Machine screws and bolts have flat ends that can only be used with pre-threaded receptacles, usually nuts.
 
 Machine screw sizes are specified by three quantities, like so:
 
@@ -29,14 +40,25 @@ For example:
 
 There are two unit systems for this:
 
-* The American (also known as Imperial) system, used for most American products, expresses the diameter in inches or "#" units (see below); it gives the length in inches; and the thread pitch is expressed in _threads per inch_ . So a #8-32 x 1" machine screw has a diameter of #8 (about 5/32"), 32 threads per inch, and 1" length.
-* The Metric system, used almost everywhere outside of the US, expresses everything in millimeters. Metric parts are designated with an "M" before the diameter. An M5-0.8 x 12mm machine screw has a diameter of 5mm, thread pitch of 0.8mm between threads, and a length of 12mm.
+* The American (also known as Imperial) system, used for most American products, expresses the diameter in inches or "#" units (see below); it gives the length in inches; and the thread pitch is expressed in _threads per inch_ .
+So a #8-32 x 1" machine screw has a diameter of #8 (about 5/32"), 32 threads per inch, and 1" length.
+* The Metric system, used almost everywhere outside of the US, expresses everything in millimeters.
+Metric parts are designated with an "M" before the diameter.
+An M5-0.8 x 12mm machine screw has a diameter of 5mm, thread pitch of 0.8mm between threads, and a length of 12mm.
 
-Wood screws and sheet metal screws are sized by just the diameter and length, as in #6 x 1". Since they form their own threads when screwed in, you don't need a matching part with the same thread pitch, so that's not usually specified. Sheet metal screws and wood screws are basically the same thing, with subtle differences in the way the threads are shaped. Sheet metal screws come in a bewildering variety of options for the exact shape of the pointy end, with the different shapes being optimized for tapping into particular types of material, but I've never found any virtual pinball situation where this matters. Sheet metal screws often work well with wood, and in fact, they're often used this way in the original pinball machines.
+Wood screws and sheet metal screws are sized by just the diameter and length, as in #6 x 1".
+Since they form their own threads when screwed in, you don't need a matching part with the same thread pitch, so that's not usually specified.
+Sheet metal screws and wood screws are basically the same thing, with subtle differences in the way the threads are shaped.
+Sheet metal screws come in a bewildering variety of options for the exact shape of the pointy end, with the different shapes being optimized for tapping into particular types of material, but I've never found any virtual pinball situation where this matters.
+Sheet metal screws often work well with wood, and in fact, they're often used this way in the original pinball machines.
 
 The length of a screw or bolt is the portion excluding the head.
 
-The "\#" diameter units are used in the American system for sizes less than 1/4", where the fractions become inconvenient to write. (In this context, "#" is pronounced "number". Modern audiences will be tempted to call a \#8 screw a "hashtag eight", but that will get you funny looks from machinists.) Each "#" size represents an exact size in fractions of an inch, but I don't think there's any kind of formula for it; you just have to look it up in a table. Higher "\#" numbers are larger diameters: #10 is bigger than #8, which is bigger than #6. Here's a quick reference to the "#" sizes commonly used in pinball machines (you can find more comprehensive tables on the Web):
+The "\#" diameter units are used in the American system for sizes less than 1/4", where the fractions become inconvenient to write.
+(In this context, "#" is pronounced "number".
+Modern audiences will be tempted to call a \#8 screw a "hashtag eight", but that will get you funny looks from machinists.) Each "#" size represents an exact size in fractions of an inch, but I don't think there's any kind of formula for it; you just have to look it up in a table.
+Higher "\#" numbers are larger diameters: #10 is bigger than #8, which is bigger than #6.
+Here's a quick reference to the "#" sizes commonly used in pinball machines (you can find more comprehensive tables on the Web):
 
 [cols="1,1,1,1"]
 |===
@@ -69,48 +91,84 @@ The "\#" diameter units are used in the American system for sizes less than 1/4"
 
 |===
 
-Every hardware manufacturer and hardware store uses these standard units to label their parts. #6 always means the same thing in a machine screw no matter where you buy it.
+Every hardware manufacturer and hardware store uses these standard units to label their parts.
+#6 always means the same thing in a machine screw no matter where you buy it.
 
-NOTE: M6 and \#6 are different sizes, and can't be used together. This can be confusing because the "M" sizes and "#" sizes happen to look very close to each other when you eyeball them, but they're not close enough to actually mix and match parts.
+NOTE: M6 and \#6 are different sizes, and can't be used together.
+This can be confusing because the "M" sizes and "#" sizes happen to look very close to each other when you eyeball them, but they're not close enough to actually mix and match parts.
 
-For machine screws, the _thread_ number (the "32" in "#10-32", for example) is an important extra spec giving the thread pitch (the number of threads per inch). Screws and nuts will only fit together if they have the same diameter _and_ thread pitch; for example, a ⅜"-20 bolt won't fit into a ⅜"-32 nut, because the threads are spaced differently.
+For machine screws, the _thread_ number (the "32" in "#10-32", for example) is an important extra spec giving the thread pitch (the number of threads per inch).
+Screws and nuts will only fit together if they have the same diameter _and_ thread pitch; for example, a ⅜"-20 bolt won't fit into a ⅜"-32 nut, because the threads are spaced differently.
 
-The terms "machine screw" and "bolt" are basically interchangeable. "Bolt" is usually used for larger parts, above about 1/4", but otherwise a bolt is just a big machine screw.
+The terms "machine screw" and "bolt" are basically interchangeable.
+"Bolt" is usually used for larger parts, above about 1/4", but otherwise a bolt is just a big machine screw.
 
 Here are the most common fastener types you'll see in the parts lists:
 
 * Machine screws with slotted heads for tightening with a screwdriver (usually flat or Phillips)
 * Hex-head machine screws and bolts, for tightening with a socket wrench
 * image:images/carriage-bolt.png["Carriage Bolt"]
-Carriage bolts. These are bolts with smooth rounded heads, for places where an external bolt should be inconspicuous and not easily removable from the outside. They have square necks that fit into square holes on the receiving end, which is what serves in place of a wrench to hold them still when you're tightening a nut on the other end. Most of the carriage bolts used in a pinball machines are available with a black finish that makes them blend better with the artwork.
+Carriage bolts.
+These are bolts with smooth rounded heads, for places where an external bolt should be inconspicuous and not easily removable from the outside.
+They have square necks that fit into square holes on the receiving end, which is what serves in place of a wrench to hold them still when you're tightening a nut on the other end.
+Most of the carriage bolts used in a pinball machines are available with a black finish that makes them blend better with the artwork.
 
 * image:images/flange-nut.png["Flange Nut"]
-Flange nuts are hex nuts with integral washers. Whiz flange nuts or flange lock nuts have serrated surfaces on the bottom of the integrated washer to help lock them in place when tightened.
+Flange nuts are hex nuts with integral washers.
+Whiz flange nuts or flange lock nuts have serrated surfaces on the bottom of the integrated washer to help lock them in place when tightened.
 
 * image:images/t-nut.png["T-Nut"]
-T-nuts are threaded sockets that are installed permanently in a piece of wood. These are used when you need to be able to screw a bolt into an internal location that you can't access to insert a regular nut by hand. Some T-nuts have prongs that let you pound them into like a nail to secure them, while others can be screwed in to their install location with wood screws.
+T-nuts are threaded sockets that are installed permanently in a piece of wood.
+These are used when you need to be able to screw a bolt into an internal location that you can't access to insert a regular nut by hand.
+Some T-nuts have prongs that let you pound them into like a nail to secure them, while others can be screwed in to their install location with wood screws.
 
 === SEMS screws and lock nuts
 
-Almost all of the machine-screw fasteners in a commercial pinball machines are special vibration-resistant variations of the basic types. It's easy to understand why, given the amount of mechanical action in a physical pinball game. I think it's worth using these parts in a virtual cabinet, too, especially if you're including tactile feedback devices. It's annoying to have to keep re-tightening screws that shake loose over time, and parts that work themselves free can cause damage.
+Almost all of the machine-screw fasteners in a commercial pinball machines are special vibration-resistant variations of the basic types.
+It's easy to understand why, given the amount of mechanical action in a physical pinball game.
+I think it's worth using these parts in a virtual cabinet, too, especially if you're including tactile feedback devices.
+It's annoying to have to keep re-tightening screws that shake loose over time, and parts that work themselves free can cause damage.
 
-There are three special fasteners in particular that are used over and over in the commercial machines. You can substitute these just about anywhere that regular machine screws and nuts are called for.
+There are three special fasteners in particular that are used over and over in the commercial machines.
+You can substitute these just about anywhere that regular machine screws and nuts are called for.
 
-*  *SEMS machine screws* are regular machine screws with the addition of an attached lock washer at the head. The lock washer adds a lot of grip between the head and the attached part once once the screw is tightened down. ("SEMS" is reportedly a shortening of "asSEMbled".)
-*  *Elastic Stop Nuts (ESN)s* are steel hex nuts with nylon thread inserts that add a lot of friction, requiring extra torque to turn the nut. Also known by the trade name Nyloc nuts. Note that we're not talking about nuts made entirely of plastic - the nylon part in these is just a lining inside the threading, and the main body is made of steel, zinc, or stainless steel.
-*  *Keps nuts* are hex nuts with permanently attached lock washers. As with SEMS screws, the lock washers add grip between the nut and the attached part when the nut is tightened. In the commercial pinballs, ESNs are much more common and could be considered the default, but Keps nuts are useful in places where you can't (or don't want to) apply a lot of torque to the screw that the nut attaches to. ("Keps" is a trade name, taken from "shaKEProof". They're also called K-lock nuts and washer nuts.)
+*  *SEMS machine screws* are regular machine screws with the addition of an attached lock washer at the head.
+The lock washer adds a lot of grip between the head and the attached part once once the screw is tightened down.
+("SEMS" is reportedly a shortening of "asSEMbled".)
+*  *Elastic Stop Nuts (ESN)s* are steel hex nuts with nylon thread inserts that add a lot of friction, requiring extra torque to turn the nut.
+Also known by the trade name Nyloc nuts.
+Note that we're not talking about nuts made entirely of plastic - the nylon part in these is just a lining inside the threading, and the main body is made of steel, zinc, or stainless steel.
+*  *Keps nuts* are hex nuts with permanently attached lock washers.
+As with SEMS screws, the lock washers add grip between the nut and the attached part when the nut is tightened.
+In the commercial pinballs, ESNs are much more common and could be considered the default, but Keps nuts are useful in places where you can't (or don't want to) apply a lot of torque to the screw that the nut attaches to.
+("Keps" is a trade name, taken from "shaKEProof".
+They're also called K-lock nuts and washer nuts.)
 
 == Cabinet trim hardware variations
 
-The WPC cabinets were basically all the same - Williams came up with a good design and stuck to it for many years. But there was one significant variation to be aware of: a number of titles, marketed as the "Superpin" games, had extra-wide bodies for the main cabinet, allowing a wider-than-normal playfield. All of extra-wide titles came in the same extra-wide size, so even taking these into account, there are still only two widths we need to concern ourselves with: the standard machines and the widebody machines. What's more, the only thing that's different about the widebody machines is the width of the main cabinet; the other dimensions (including the backbox dimensions) and all design elements are identical between the regular and widebody machines. As a result, the widebodies share all of the same hardware with the standard machines except for the main front-top metal trim piece, known as the lockdown bar, and of course the glass cover.
+The WPC cabinets were basically all the same - Williams came up with a good design and stuck to it for many years.
+But there was one significant variation to be aware of: a number of titles, marketed as the "Superpin" games, had extra-wide bodies for the main cabinet, allowing a wider-than-normal playfield.
+All of extra-wide titles came in the same extra-wide size, so even taking these into account, there are still only two widths we need to concern ourselves with: the standard machines and the widebody machines.
+What's more, the only thing that's different about the widebody machines is the width of the main cabinet; the other dimensions (including the backbox dimensions) and all design elements are identical between the regular and widebody machines.
+As a result, the widebodies share all of the same hardware with the standard machines except for the main front-top metal trim piece, known as the lockdown bar, and of course the glass cover.
 
-If you go back further in time, before the 1990s, the cabinets become increasingly different from WPC machines. You should be aware of this when you go shopping, particularly if you shop on eBay for used parts. If you're building from scratch to the WPC plans, you'll want to make sure that any used parts you buy are compatible with WPC cabinets.
+If you go back further in time, before the 1990s, the cabinets become increasingly different from WPC machines.
+You should be aware of this when you go shopping, particularly if you shop on eBay for used parts.
+If you're building from scratch to the WPC plans, you'll want to make sure that any used parts you buy are compatible with WPC cabinets.
 
-By the same token, if you're refurbishing a used cabinet from the 1980s or before, check carefully when buying new replacement parts from arcade suppliers, because arcade suppliers mostly stock parts for 1990s machines. New parts probably won't fit a 1970s cabinet unless they're specifically listed as such. If you are trying to refurbish an old cabinet, one particularly good arcade vendor to try is Marco Specialties. They have an unusually deep catalog with parts for lots of older machines. Find the original operator's manual for the machine you're restoring, if possible, since that will usually include a detailed list of the machine's parts, with manufacturer part numbers that you can look up on pinball vendor Web sites to find the exact version. If you shop on eBay, it's harder to be sure of compatibility. Ideally, look for parts for the exact title you're refurbishing, but failing that, go by manufacturer and year; the pinball makers mostly re-used parts across their product lines for a few years at a time, so a part of the same vintage from the same manufacturer will usually fit.
+By the same token, if you're refurbishing a used cabinet from the 1980s or before, check carefully when buying new replacement parts from arcade suppliers, because arcade suppliers mostly stock parts for 1990s machines.
+New parts probably won't fit a 1970s cabinet unless they're specifically listed as such.
+If you are trying to refurbish an old cabinet, one particularly good arcade vendor to try is Marco Specialties.
+They have an unusually deep catalog with parts for lots of older machines.
+Find the original operator's manual for the machine you're restoring, if possible, since that will usually include a detailed list of the machine's parts, with manufacturer part numbers that you can look up on pinball vendor Web sites to find the exact version.
+If you shop on eBay, it's harder to be sure of compatibility.
+Ideally, look for parts for the exact title you're refurbishing, but failing that, go by manufacturer and year; the pinball makers mostly re-used parts across their product lines for a few years at a time, so a part of the same vintage from the same manufacturer will usually fit.
 
 == Where to buy
 
-Most of the parts in the master list are fairly standardized, interchangeable parts used in most WPC-era machines, and in most cases, used in 2000s machines from Stern, Jersey Jack, and others. Most of these parts are readily available on the Web from pinball parts vendors and arcade machine dealers. If you live in a major metro area, you might even be able to find a local arcade dealer who stocks some parts, although you'll probably need to look to the Web for the more obscure stuff.
+Most of the parts in the master list are fairly standardized, interchangeable parts used in most WPC-era machines, and in most cases, used in 2000s machines from Stern, Jersey Jack, and others.
+Most of these parts are readily available on the Web from pinball parts vendors and arcade machine dealers.
+If you live in a major metro area, you might even be able to find a local arcade dealer who stocks some parts, although you'll probably need to look to the Web for the more obscure stuff.
 
 Some of the vendors I've used:
 
@@ -119,37 +177,69 @@ Some of the vendors I've used:
 *  link:https://planetarypinball.com/[Planetary Pinball Supply]
 *  link:https://virtuapin.net/[VirtuaPin]
 
-Most of the generic hardware (nuts, bolts, screws) can also be found at hardware stores, Amazon, and eBay. Note that some of these are available in special finishes from the pinball vendors that you might not find at regular hardware stores (e.g., carriage bolts in black, chrome bolts for attaching the legs).
+Most of the generic hardware (nuts, bolts, screws) can also be found at hardware stores, Amazon, and eBay.
+Note that some of these are available in special finishes from the pinball vendors that you might not find at regular hardware stores (e.g., carriage bolts in black, chrome bolts for attaching the legs).
 
-Custom-cut pieces of glass can be found locally almost anywhere from window glass stores. Check for local businesses that install and repair residential windows. Custom sizes of acrylic and other plastics can be found locally at plastics stores and some hardware stores. (If you're on the west coast, check for a local link:https://tapplastics.com/[TAP Plastics] .) You can also buy an uncut acrylic sheet from a hardware store and cut it to size yourself with a special plastic cutter knife, but that doesn't produce as clean a cut as you can get from a pro at a plastics store.
+Custom-cut pieces of glass can be found locally almost anywhere from window glass stores.
+Check for local businesses that install and repair residential windows.
+Custom sizes of acrylic and other plastics can be found locally at plastics stores and some hardware stores.
+(If you're on the west coast, check for a local link:https://tapplastics.com/[TAP Plastics] .) You can also buy an uncut acrylic sheet from a hardware store and cut it to size yourself with a special plastic cutter knife, but that doesn't produce as clean a cut as you can get from a pro at a plastics store.
 
 == VirtuaPin part bundles
 
-If you're building a cab from scratch, you can save some time on shopping (and possibly save money as well) by buying a pre-packaged parts bundle from link:https://www.virtuapin.net/[VirtuaPin] . You can find these on their Web site under "Bundle Deals". They offer two packages of particular interest to new cab builders:
+If you're building a cab from scratch, you can save some time on shopping (and possibly save money as well) by buying a pre-packaged parts bundle from link:https://www.virtuapin.net/[VirtuaPin] .
+You can find these on their Web site under "Bundle Deals".
+They offer two packages of particular interest to new cab builders:
 
-*VirtuaPin Cab Builder's Kit:* This includes most of the standard cabinet hardware items used on typical 1990s era machines (the "Williams WPC" style). The kit comes in standard-body and wide-body versions, so choose the one matching your cabinet plans. Parts included in these kits are marked in the lists below with #VP Cab Kit#
+*VirtuaPin Cab Builder's Kit:* This includes most of the standard cabinet hardware items used on typical 1990s era machines (the "Williams WPC" style).
+The kit comes in standard-body and wide-body versions, so choose the one matching your cabinet plans.
+Parts included in these kits are marked in the lists below with #VP Cab Kit#
 
-I recommend this kit. It's cheaper than buying the same parts individually, and it gets you about 80% of the way to a complete cab in terms of the accessories.
+I recommend this kit.
+It's cheaper than buying the same parts individually, and it gets you about 80% of the way to a complete cab in terms of the accessories.
 
-The only downside is that the kit is only available in the standard chrome/stainless steel finishes for the trim parts. That's exactly what most people want, since it's the standard look on most real machines. But some of the newer Stern machines come with a powder-coat finish on most of the metal trim, color-coordinated to complement the artwork. That's a nice upgraded look that you might want for your own build. Other metallic finishes are possible as well, such as brass. Another custom upgrade that some people want is a lock bar with a "Fire" button in the middle. That requires a special lock bar and matching "receiver", which you can't currently get with the VirtuaPin kit. If you want to choose your own finishes (see "Custom finishes" below) or include a "Fire" button on the lock bar, you're better off skipping the kit and buying everything _à la carte_ , since you'd throw away most of the kit.
+The only downside is that the kit is only available in the standard chrome/stainless steel finishes for the trim parts.
+That's exactly what most people want, since it's the standard look on most real machines.
+But some of the newer Stern machines come with a powder-coat finish on most of the metal trim, color-coordinated to complement the artwork.
+That's a nice upgraded look that you might want for your own build.
+Other metallic finishes are possible as well, such as brass.
+Another custom upgrade that some people want is a lock bar with a "Fire" button in the middle.
+That requires a special lock bar and matching "receiver", which you can't currently get with the VirtuaPin kit.
+If you want to choose your own finishes (see "Custom finishes" below) or include a "Fire" button on the lock bar, you're better off skipping the kit and buying everything _à la carte_ , since you'd throw away most of the kit.
 
-It's also possible to adapt the standard lockbar hardware for a Fire button, but it takes a bit of work. See xref:cabHardware.adoc#FireButtonWithStandardLockbar[Cabinet Hardware Installation] for details.
+It's also possible to adapt the standard lockbar hardware for a Fire button, but it takes a bit of work.
+See xref:cabHardware.adoc#FireButtonWithStandardLockbar[Cabinet Hardware Installation] for details.
 
-*VirtuaPin Button Kit:* This includes most of the buttons in a typical virtual cab. In the list below, we've marked the items in this kit with #VP Button Kit#
+*VirtuaPin Button Kit:* This includes most of the buttons in a typical virtual cab.
+In the list below, we've marked the items in this kit with #VP Button Kit#
 
-I'm ambivalent on this kit. It'll save you some time, but it's less of a bargain than the cab builder's kit because it includes some buttons you probably won't use. It also lacks some that you might want to add. If you don't mind doing the extra planning and shopping, I'd skip this kit and buy buttons individually, so that you can get exactly what you want.
+I'm ambivalent on this kit.
+It'll save you some time, but it's less of a bargain than the cab builder's kit because it includes some buttons you probably won't use.
+It also lacks some that you might want to add.
+If you don't mind doing the extra planning and shopping, I'd skip this kit and buy buttons individually, so that you can get exactly what you want.
 
 == Custom finishes
 
-Most of the exterior metal trim - legs, side rails, lockdown bar - is available in multiple finishes. The "standard" finishes are chrome for the legs, brushed stainless steel for the lock bar and side rails, and black powder-coat for the coin door. With some extra work, you can get all of these parts in other finishes, such as brass, gold, or just about any powder-coat color.
+Most of the exterior metal trim - legs, side rails, lockdown bar - is available in multiple finishes.
+The "standard" finishes are chrome for the legs, brushed stainless steel for the lock bar and side rails, and black powder-coat for the coin door.
+With some extra work, you can get all of these parts in other finishes, such as brass, gold, or just about any powder-coat color.
 
-The big vendors mostly just offer the standard finishes, but Marco Specialties often has a few alternatives available to match recent Stern titles. Stern typically releases a Limited Edition version of each new title, with upgraded trim, usually in a powder-coat color that complements the cabinet art. Marco usually stocks a selection of such trim, but it's hit or miss. If you're lucky, you might be able to find a full set of trim in a color featured on a past Stern LE game.
+The big vendors mostly just offer the standard finishes, but Marco Specialties often has a few alternatives available to match recent Stern titles.
+Stern typically releases a Limited Edition version of each new title, with upgraded trim, usually in a powder-coat color that complements the cabinet art.
+Marco usually stocks a selection of such trim, but it's hit or miss.
+If you're lucky, you might be able to find a full set of trim in a color featured on a past Stern LE game.
 
-You might also be able to find trim in alternative finishes from pinball "mod" sellers. A number of small vendors sell upgrade parts, including custom-finished trim, to the pinball collector market. These guys all sell online and on eBay; try a Web search for "pinball side rail" (for example) plus the type of finish you're seeking.
+You might also be able to find trim in alternative finishes from pinball "mod" sellers.
+A number of small vendors sell upgrade parts, including custom-finished trim, to the pinball collector market.
+These guys all sell online and on eBay; try a Web search for "pinball side rail" (for example) plus the type of finish you're seeking.
 
-If you have a specific idea for the look you want, your best option might be to buy "raw" or "unfinished" trim and find someone to apply the desired custom finish. link:https://www.pinballlife.com/[Pinball Life] sells unfinished legs, side rails, and backbox hinges, specifically as a base for custom finishes. This is a much better starting point than the standard parts, because a refinisher would have to strip the existing finish off first, which is expensive and time-consuming.
+If you have a specific idea for the look you want, your best option might be to buy "raw" or "unfinished" trim and find someone to apply the desired custom finish.
+link:https://www.pinballlife.com/[Pinball Life] sells unfinished legs, side rails, and backbox hinges, specifically as a base for custom finishes.
+This is a much better starting point than the standard parts, because a refinisher would have to strip the existing finish off first, which is expensive and time-consuming.
 
-You can find services online that offer custom powder coat and metallic finishes - you ship them the parts, and they do the work and ship them back. You might also be able to find a local business that does this, if you live in a major metro area. Try looking for local shops that refinish antiques and/or auto and motorcycle parts.
+You can find services online that offer custom powder coat and metallic finishes - you ship them the parts, and they do the work and ship them back.
+You might also be able to find a local business that does this, if you live in a major metro area.
+Try looking for local shops that refinish antiques and/or auto and motorcycle parts.
 
 [#masterPartsList]
 == Master parts list for a virtual pinball machine
@@ -161,33 +251,50 @@ Miscellaneous supplies
 |Item|Description|Quantity
 
 |Wire: 22-24 AWG stranded
-|You'll use a surprising amount of wire to connect various parts of the machine together: buttons, lights, feedback devices. It's convenient to have a few spools of wire on hand throughout the build. You can use 22 or 24 gauge wire for practically everything, and it's cheaper (by the foot) to buy wire in large spools, so I'd pick one size and buy lots of it. If you're only installing buttons, 100ft should be adequate; if you're installing feedback devices, you'll probably want at least 200ft on hand. Buy several assorted insulation colors to make the wiring easier to trace.
+|You'll use a surprising amount of wire to connect various parts of the machine together: buttons, lights, feedback devices.
+It's convenient to have a few spools of wire on hand throughout the build.
+You can use 22 or 24 gauge wire for practically everything, and it's cheaper (by the foot) to buy wire in large spools, so I'd pick one size and buy lots of it.
+If you're only installing buttons, 100ft should be adequate; if you're installing feedback devices, you'll probably want at least 200ft on hand.
+Buy several assorted insulation colors to make the wiring easier to trace.
 |100ft+
 
 |Wire: 18 AWG stranged
-|You'll also need some thicker wire for some of the power wires and speaker wires. I recommend 18 AWG as a good general-purpose choice for these higher power wires. 50 to 100 feet should be adequate for most pin cabs. I'd start with two 25' spools, one with white insulation and one with black.
+|You'll also need some thicker wire for some of the power wires and speaker wires.
+I recommend 18 AWG as a good general-purpose choice for these higher power wires.
+50 to 100 feet should be adequate for most pin cabs.
+I'd start with two 25' spools, one with white insulation and one with black.
 |50ft
 
 |Solder
-|A good quality solder makes a surprising difference in the ease of work and the quality of your results. I really like Kester 44 rosin core solder. You can get it in 1oz tubes, but the 1lb rolls are a much better deal if you think you might do any significant amount of soldering in the future.
+|A good quality solder makes a surprising difference in the ease of work and the quality of your results.
+I really like Kester 44 rosin core solder.
+You can get it in 1oz tubes, but the 1lb rolls are a much better deal if you think you might do any significant amount of soldering in the future.
 |1oz-1lb
 
 |#6 wood screws, various lengths
-|I found that I used an amazing number of wood screws for all sorts of random tasks. The vast majority were #6 wood screws - these are the right size for all sorts of miscellaneous jobs. Keep an ample supply on hand so that you don't have to keep running to Home Depot. Recommendation: buy 100 #6 x ½", 100 in ¾", 100 in 1", 100 in ¾", and perhaps 25 1¼".
+|I found that I used an amazing number of wood screws for all sorts of random tasks.
+The vast majority were #6 wood screws - these are the right size for all sorts of miscellaneous jobs.
+Keep an ample supply on hand so that you don't have to keep running to Home Depot.
+Recommendation: buy 100 #6 x ½", 100 in ¾", 100 in 1", 100 in ¾", and perhaps 25 1¼".
 |Lots
 
 |Nails
-|As with #6 screws, it's convenient to have a supply of various nails on hand. You'll mostly need finishing nails rather than anything heavy-duty. I mostly used 1" and ¾" brads, so I'd recommend buying a bunch of each.
+|As with #6 screws, it's convenient to have a supply of various nails on hand.
+You'll mostly need finishing nails rather than anything heavy-duty.
+I mostly used 1" and ¾" brads, so I'd recommend buying a bunch of each.
 
 |Lots
 
 |Wood glue
-|If you're doing your own woodworking or building from a flat pack, you'll need a good wood glue for the joints. It's a good thing to have on hand for miscellaneous jobs even if you have a pre-assembled cab.
+|If you're doing your own woodworking or building from a flat pack, you'll need a good wood glue for the joints.
+It's a good thing to have on hand for miscellaneous jobs even if you have a pre-assembled cab.
 
 |1 tube
 
 |Epoxy
-|Some things are easiest to assemble or attach with a strong glue. Get a two-component epoxy (the type with two tubes of goo that you mix together just before use). I don't recommend "superglues" (cyanoacrylate glues) for most cab uses.
+|Some things are easiest to assemble or attach with a strong glue.
+Get a two-component epoxy (the type with two tubes of goo that you mix together just before use).
+I don't recommend "superglues" (cyanoacrylate glues) for most cab uses.
 |1 tube
 |===
 
@@ -198,21 +305,36 @@ Cabinet wood shell
 |Item|Description|Quantity
 
 |Hardwood plywood, ¾", 4'x8' sheet
-|If you're doing your own woodworking from scratch, I recommend using a furniture-quality hardwood plywood for all of the cabinet pieces. This is what they used on the real machines. The ¾" thickness is important for making the accessories fit properly. Some people use particle board or melamine, which are cheaper, but I prefer plywood. MDO plywood (a hybrid sheet product with a plywood core and an MDF veneer) is an excellent alternative if you can find it. It combines plywood's superior strength with the perfectly smooth surface finish of MDF, so there's essentially no prep work needed for paint or decals. It's possible to make do with a single 4'x8' sheet, but it's easier with two sheets. See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] .
+|If you're doing your own woodworking from scratch, I recommend using a furniture-quality hardwood plywood for all of the cabinet pieces.
+This is what they used on the real machines.
+The ¾" thickness is important for making the accessories fit properly.
+Some people use particle board or melamine, which are cheaper, but I prefer plywood.
+MDO plywood (a hybrid sheet product with a plywood core and an MDF veneer) is an excellent alternative if you can find it.
+It combines plywood's superior strength with the perfectly smooth surface finish of MDF, so there's essentially no prep work needed for paint or decals.
+It's possible to make do with a single 4'x8' sheet, but it's easier with two sheets.
+See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] .
 |1 or 2
 
 |Plywood, ½", 4'x8' sheet
-|The cabinet floor and the back wall of the backbox are typically made from 1/2" material. Most commercial machines use particle board for these parts, since they're not cosmetic. I prefer plywood since it's stronger and lighter.
+|The cabinet floor and the back wall of the backbox are typically made from 1/2" material.
+Most commercial machines use particle board for these parts, since they're not cosmetic.
+I prefer plywood since it's stronger and lighter.
 |1
 
 |Flat pack kit
-|As an alternative to raw lumber, you can buy a pre-cut flat pack kit. VirtuaPin and others sell these. A flat pack has all of the cabinet pieces cut to size and ready to assemble.
+|As an alternative to raw lumber, you can buy a pre-cut flat pack kit.
+VirtuaPin and others sell these.
+A flat pack has all of the cabinet pieces cut to size and ready to assemble.
 |1
 |===
 
 Cabinet artwork
 
-Most cab builders opt for decals printed with custom artwork. You can create your own artwork with a computer graphics program. Decals are popular because they can make your cab look just like a real machine - done properly, they make for a very professional finish. Some people prefer a simple black paint job or natural wood finish, and some go with stenciled paint decoration for a more vintage look (like machines from the 1960s or 1970s). See xref:cabArt.adoc#cabinetArt[Cabinet Art] for ideas and resources.
+Most cab builders opt for decals printed with custom artwork.
+You can create your own artwork with a computer graphics program.
+Decals are popular because they can make your cab look just like a real machine - done properly, they make for a very professional finish.
+Some people prefer a simple black paint job or natural wood finish, and some go with stenciled paint decoration for a more vintage look (like machines from the 1960s or 1970s).
+See xref:cabArt.adoc#cabinetArt[Cabinet Art] for ideas and resources.
 [cols="1,3,1"]
 |===
 |Item|Description|Quantity

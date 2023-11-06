@@ -1,99 +1,215 @@
 [#ioControllers]
 = I/O Controllers
 
-One of the big things that elevates the virtual cabinet experience above ordinary desktop computer pinball is the ability to use real pinball controls: flipper buttons, coin slots, a plunger, "nudging" by actually nudging the cabinet. An equally big enhancement is feedback devices that create tactile effects, lighting effects, and mechanical sound effects that aren't just coming from a speaker.
+One of the big things that elevates the virtual cabinet experience above ordinary desktop computer pinball is the ability to use real pinball controls: flipper buttons, coin slots, a plunger, "nudging" by actually nudging the cabinet.
+An equally big enhancement is feedback devices that create tactile effects, lighting effects, and mechanical sound effects that aren't just coming from a speaker.
 
-If you're new to virtual pinball, you might wonder how all of this is possible, since normal PCs don't have any provisions for connecting any of these unusual devices. There's no "flipper button" connector on a Dell desktop. The secret ingredient is something called an I/O Controller ("I/O" for "Input/Output"). These are special hardware devices that plug in to the standard PC ports (usually USB) and provide the special wiring needed to connect buttons, accelerometers, plunger sensors, solenoids, lights, and so on. They provide the physical bridge between the PC and the unique pinball hardware.
+If you're new to virtual pinball, you might wonder how all of this is possible, since normal PCs don't have any provisions for connecting any of these unusual devices.
+There's no "flipper button" connector on a Dell desktop.
+The secret ingredient is something called an I/O Controller ("I/O" for "Input/Output").
+These are special hardware devices that plug in to the standard PC ports (usually USB) and provide the special wiring needed to connect buttons, accelerometers, plunger sensors, solenoids, lights, and so on.
+They provide the physical bridge between the PC and the unique pinball hardware.
 
-This chapter gets into the details of what these devices do, and offers some suggestions for what to buy. The subject can seem overwhelming at first, because there are lots of product options, and they all have different combinations of features and functions. We'll try to make it easier by breaking things down by function, and giving you a comprehensive list of the products available and which functions they offer. Towards the end of the chapter, you'll find a product/feature matrix that shows everything at a glance.
+This chapter gets into the details of what these devices do, and offers some suggestions for what to buy.
+The subject can seem overwhelming at first, because there are lots of product options, and they all have different combinations of features and functions.
+We'll try to make it easier by breaking things down by function, and giving you a comprehensive list of the products available and which functions they offer.
+Towards the end of the chapter, you'll find a product/feature matrix that shows everything at a glance.
 
 == I/O controller functions
 
 Let's start by looking at the main categories of functions that these devices can handle.
 
-Button input:: A device that lets you wire regular pinball buttons to the PC is called a "key encoder". These devices are pretty easy to set up. You just run a pair of wires to each button (flipper, Start, etc) and connect them to the encoder. The encoder attaches to the PC with a USB cable. When you press a connected button, the encoder emulates either a keyboard key press or a joystick button press. As far as the PC software is concerned, you're just typing on the keyboard or using a joystick.
+Button input:: A device that lets you wire regular pinball buttons to the PC is called a "key encoder".
+These devices are pretty easy to set up.
+You just run a pair of wires to each button (flipper, Start, etc) and connect them to the encoder.
+The encoder attaches to the PC with a USB cable.
+When you press a connected button, the encoder emulates either a keyboard key press or a joystick button press.
+As far as the PC software is concerned, you're just typing on the keyboard or using a joystick.
 
-Nudge input:: This type of device uses an electronic accelerometer to sense the motion of the cabinet. Good accelerometers are sensitive enough and accurate enough to detect when you nudge the cabinet and to measure how hard each nudge is. The pinball software can use this information to apply a corresponding acceleration to the virtual ball - in proportion to the strength of the nudge, so you can get realistic reactions for soft nudges, hard nudges, and a continuum in between. Nudge devices usually connect to the PC via a USB cable and emulate joysticks, so a physical nudge looks to the PC software like a momentary deflection on a joystick handle. The strength of the nudge is indicated by the magnitude of the deflection, which is what allows the software to differentiate between soft nudges and hard nudges.
+Nudge input:: This type of device uses an electronic accelerometer to sense the motion of the cabinet.
+Good accelerometers are sensitive enough and accurate enough to detect when you nudge the cabinet and to measure how hard each nudge is.
+The pinball software can use this information to apply a corresponding acceleration to the virtual ball - in proportion to the strength of the nudge, so you can get realistic reactions for soft nudges, hard nudges, and a continuum in between.
+Nudge devices usually connect to the PC via a USB cable and emulate joysticks, so a physical nudge looks to the PC software like a momentary deflection on a joystick handle.
+The strength of the nudge is indicated by the magnitude of the deflection, which is what allows the software to differentiate between soft nudges and hard nudges.
 
-Plunger input:: This is a very specialized type of input device, because it has to use some type of position sensor to track the motion of the plunger, and then translate the readings from that sensor into a format that the PC can understand. Plunger devices usually attach to the PC via a USB cable and emulate joystick input. This is the same way most nudge sensors work, so we need a way for the PC to tell the two apart. This is usually accomplished by using different "joystick axis" assignments for each device.
+Plunger input:: This is a very specialized type of input device, because it has to use some type of position sensor to track the motion of the plunger, and then translate the readings from that sensor into a format that the PC can understand.
+Plunger devices usually attach to the PC via a USB cable and emulate joystick input.
+This is the same way most nudge sensors work, so we need a way for the PC to tell the two apart.
+This is usually accomplished by using different "joystick axis" assignments for each device.
 
-Feedback output:: Output controllers let you connect feedback devices to the PC so that the software can control them. As with the other devices, these usually use USB connections to the PC. Unlike the various input controllers, which all emulate ordinary PC input devices (mainly keyboards and joysticks), output controllers all need special software on the PC. Fortunately, the required special software is already integrated with the main pinball player programs.
+Feedback output:: Output controllers let you connect feedback devices to the PC so that the software can control them.
+As with the other devices, these usually use USB connections to the PC.
+Unlike the various input controllers, which all emulate ordinary PC input devices (mainly keyboards and joysticks), output controllers all need special software on the PC.
+Fortunately, the required special software is already integrated with the main pinball player programs.
 
 == Available devices
 
-Now let's look at the available devices. Some of the devices fall neatly into single categories, and others can perform multiple functions.
+Now let's look at the available devices.
+Some of the devices fall neatly into single categories, and others can perform multiple functions.
 
-*Pinscape Controller, running on just the KL25Z (no expansion boards).* Open source software, DIY hardware; about $15 for the main microcontroller board. Key encoder, plunger input, nudge input, feedback device control.
+*Pinscape Controller, running on just the KL25Z (no expansion boards).* Open source software, DIY hardware; about $15 for the main microcontroller board.
+Key encoder, plunger input, nudge input, feedback device control.
 
-This is an open source project that can handle all of the I/O controller functions with a single device. The main hardware required is a KL25Z, which is a $15 microcontroller that comes fully assembled and ready to use. By itself, the KL25Z can handle button input and nudging (it has an excellent built-in accelerometer). Plunger input and feedback device control require additional hardware that's described later in this Build Guide. The Pinscape software does just about everything the various single-function commercial devices do, with some added bells and whistles of its own. It includes fully assignable button inputs (using keyboard keys and/or joystick buttons), a "shift button" feature, LedWiz emulation for universal software compatibility, "night mode", high-precision nudge input, high-precision plunger input, and numerous other features. It's highly configurable via its setup program (which runs on Windows, and is free and open-source), and the firmware itself is open-source, so you're free to customize it if you need to do anything beyond what the configuration options allow, or if you want to add whole new features. The firmware includes built-in support for several types of plunger sensor technologies, so you have a choice of different plunger setups.
+This is an open source project that can handle all of the I/O controller functions with a single device.
+The main hardware required is a KL25Z, which is a $15 microcontroller that comes fully assembled and ready to use.
+By itself, the KL25Z can handle button input and nudging (it has an excellent built-in accelerometer).
+Plunger input and feedback device control require additional hardware that's described later in this Build Guide.
+The Pinscape software does just about everything the various single-function commercial devices do, with some added bells and whistles of its own.
+It includes fully assignable button inputs (using keyboard keys and/or joystick buttons), a "shift button" feature, LedWiz emulation for universal software compatibility, "night mode", high-precision nudge input, high-precision plunger input, and numerous other features.
+It's highly configurable via its setup program (which runs on Windows, and is free and open-source), and the firmware itself is open-source, so you're free to customize it if you need to do anything beyond what the configuration options allow, or if you want to add whole new features.
+The firmware includes built-in support for several types of plunger sensor technologies, so you have a choice of different plunger setups.
 
-The standalone KL25Z can handle button, nudge, and plunger input with little more work than attaching wires. It gets a little more complicated if you want to use it with feedback devices, because it needs some additional electronics to do that, as explained in xref:psOutputsStandalone.adoc#psOutputsStandalone[Pinscape Outputs Setup (Standalone KL25Z)] .
+The standalone KL25Z can handle button, nudge, and plunger input with little more work than attaching wires.
+It gets a little more complicated if you want to use it with feedback devices, because it needs some additional electronics to do that, as explained in xref:psOutputsStandalone.adoc#psOutputsStandalone[Pinscape Outputs Setup (Standalone KL25Z)] .
 
-*Pinscape Controller with expansion boards.* Open source software and hardware design; components cost about $100 for a full build. Key encoder, plunger input, nudge input, feedback device control.
+*Pinscape Controller with expansion boards.* Open source software and hardware design; components cost about $100 for a full build.
+Key encoder, plunger input, nudge input, feedback device control.
 
-This is an extension of the basic Pinscape Controller project that adds a set of circuit boards, primarily to provide more feedback device outputs. The boards make it possible to control a much larger number of feedback devices than the KL25Z can control on its own. The boards also provide built-in handling for high-power devices, so that you can connect things like motors, solenoids, replay knockers, fans, and flashers without any additional booster circuits. The hardware design is open-source, so you can build everything yourself from components, which add up to about $100 for a full-featured build. You can also opt to build only sections of the boards if you only need a subset of the features, which reduces the cost accordingly.
+This is an extension of the basic Pinscape Controller project that adds a set of circuit boards, primarily to provide more feedback device outputs.
+The boards make it possible to control a much larger number of feedback devices than the KL25Z can control on its own.
+The boards also provide built-in handling for high-power devices, so that you can connect things like motors, solenoids, replay knockers, fans, and flashers without any additional booster circuits.
+The hardware design is open-source, so you can build everything yourself from components, which add up to about $100 for a full-featured build.
+You can also opt to build only sections of the boards if you only need a subset of the features, which reduces the cost accordingly.
 
-*Zeb's Boards plunger kit.* Commercial, about $140 from link:https://www.zebsboards.com/[zebsboards.com] . Plunger input, nudge sensor, key encoder.
+*Zeb's Boards plunger kit.* Commercial, about $140 from link:https://www.zebsboards.com/[zebsboards.com] .
+Plunger input, nudge sensor, key encoder.
 
-This kit comes with the control board and plunger sensor that attaches to a standard pinball plunger (available separately for about $30). In addition to plunger input, Zeb's kit also handles nudging via an on-board accelerometer, and provides key encoding for up to 20 buttons (with fixed key mappings). Zeb's plunger gets the best user reviews of the commercial plunger options. It uses a high-precision sensor for the plunger that provides realistic plunger motion in the pinball simulation.
+This kit comes with the control board and plunger sensor that attaches to a standard pinball plunger (available separately for about $30).
+In addition to plunger input, Zeb's kit also handles nudging via an on-board accelerometer, and provides key encoding for up to 20 buttons (with fixed key mappings).
+Zeb's plunger gets the best user reviews of the commercial plunger options.
+It uses a high-precision sensor for the plunger that provides realistic plunger motion in the pinball simulation.
 
-*VirtuaPin plunger kit.* Commercial, $140 to $160 from link:https://www.virtuapin.net/[virtuapin.net] . Plunger input, nudge sensor, key encoder.
+*VirtuaPin plunger kit.* Commercial, $140 to $160 from link:https://www.virtuapin.net/[virtuapin.net] .
+Plunger input, nudge sensor, key encoder.
 
-The VirtuaPin kit comes with a control board and plunger sensor, and optionally includes the physical plunger assembly. Like other commercial plunger kits, the VP kit is very easy to set up, with little assembly required beyond attaching the sensor to the plunger. The control board has an excellent on-board accelerometer for nudge sensing, and has wiring for up to 16 button inputs. Button inputs are hard-coded as joystick buttons and can't be assigned to keyboard keys. If you're picky about realism in the plunger, be aware that this kit uses an IR proximity sensor to detect plunger position, and these sensors have relatively poor distance resolution. Some users have reported that the plunger animation can be choppy.
+The VirtuaPin kit comes with a control board and plunger sensor, and optionally includes the physical plunger assembly.
+Like other commercial plunger kits, the VP kit is very easy to set up, with little assembly required beyond attaching the sensor to the plunger.
+The control board has an excellent on-board accelerometer for nudge sensing, and has wiring for up to 16 button inputs.
+Button inputs are hard-coded as joystick buttons and can't be assigned to keyboard keys.
+If you're picky about realism in the plunger, be aware that this kit uses an IR proximity sensor to detect plunger position, and these sensors have relatively poor distance resolution.
+Some users have reported that the plunger animation can be choppy.
 
-*i-Pac 2 and i-Pac 4.* Commercial, $39/$59 from link:https://www.ultimarc.com/[ultimarc.com] . Key encoder.
+*i-Pac 2 and i-Pac 4.* Commercial, $39/$59 from link:https://www.ultimarc.com/[ultimarc.com] .
+Key encoder.
 
-The i-Pac devices are full-featured key encoders. Their target market is video game cabinet builders, but they work equally well for virtual pinball, since the needs are basically the same. Buttons are fully assignable (via a setup program on the PC) to keyboard keys and joystick buttons. The devices have a "shift button" feature that lets you assign two meanings to each physical button by holding down a designated shift button to activate the second meaning.
+The i-Pac devices are full-featured key encoders.
+Their target market is video game cabinet builders, but they work equally well for virtual pinball, since the needs are basically the same.
+Buttons are fully assignable (via a setup program on the PC) to keyboard keys and joystick buttons.
+The devices have a "shift button" feature that lets you assign two meanings to each physical button by holding down a designated shift button to activate the second meaning.
 
-*i-Pac Ultimate I/O.* Commercial, $99 from link:https://www.ultimarc.com/[ultimarc.com] . Key encoder, feedback device control.
+*i-Pac Ultimate I/O.* Commercial, $99 from link:https://www.ultimarc.com/[ultimarc.com] .
+Key encoder, feedback device control.
 
-This is a hybrid of the i-Pac and PacLED devices that provides button input encoding and feedback device control. The key encoder features are just like the i-Pac devices, with 48 button inputs. The feedback output controller is designed specifically for attaching 32 small (20mA) RGB LEDs. For a virtual pinball cabinet, you'll want to attach other devices that require higher power, so you'll need external booster circuitry, such as Zeb's booster board. One warning: as of this writing, this device's output controller feature isn't as well supported in the standard virtual pinball software as the LedWiz and PacLed devices, so you might encounter some difficulty setting up the software to take advantage of it. The button input feature will work seamlessly, though.
+This is a hybrid of the i-Pac and PacLED devices that provides button input encoding and feedback device control.
+The key encoder features are just like the i-Pac devices, with 48 button inputs.
+The feedback output controller is designed specifically for attaching 32 small (20mA) RGB LEDs.
+For a virtual pinball cabinet, you'll want to attach other devices that require higher power, so you'll need external booster circuitry, such as Zeb's booster board.
+One warning: as of this writing, this device's output controller feature isn't as well supported in the standard virtual pinball software as the LedWiz and PacLed devices, so you might encounter some difficulty setting up the software to take advantage of it.
+The button input feature will work seamlessly, though.
 
-*LedWiz.* Commercial, $45 from link:https://groovygamegear.com/[GroovyGameGear.com] . Feedback device control.
+*LedWiz.* Commercial, $45 from link:https://groovygamegear.com/[GroovyGameGear.com] .
+Feedback device control.
 
-The LedWiz was the first output controller widely adopted among virtual pinball cabinet builders, and as a result, it's the most universally supported option. This device is aimed at video game cabinet builders, so it was designed especially for controlling LEDs (thus the name), but it's not limited to LEDs. It can control just about any type of device. The caveat is that it has a low limit on how much current it can control per device (500mA), so you can't connect high-power devices directly. You can work around that by adding an external booster board to increase its power limits. That 500mA limit is adequate for most types of lights, including flasher LEDs and button lamps. A booster is needed for most mechanical devices, like knockers, motors, and solenoids.
+The LedWiz was the first output controller widely adopted among virtual pinball cabinet builders, and as a result, it's the most universally supported option.
+This device is aimed at video game cabinet builders, so it was designed especially for controlling LEDs (thus the name), but it's not limited to LEDs.
+It can control just about any type of device.
+The caveat is that it has a low limit on how much current it can control per device (500mA), so you can't connect high-power devices directly.
+You can work around that by adding an external booster board to increase its power limits.
+That 500mA limit is adequate for most types of lights, including flasher LEDs and button lamps.
+A booster is needed for most mechanical devices, like knockers, motors, and solenoids.
 
-*PacLed-64.* Commercial, $59 from link:https://www.ultimarc.com/[ultimarc.com] . Feedback device control.
+*PacLed-64.* Commercial, $59 from link:https://www.ultimarc.com/[ultimarc.com] .
+Feedback device control.
 
-This device is well supported by the newer open-source pinball software systems (including Visual Pinball and PinballX), but it's not as compatible with older systems like Future Pinball as the LedWiz is. It provides 64 outputs for small LEDs. Like the LedWiz, this device was designed for video game cabinet builders, but its power handling is even more limited and isn't sufficient for high-powered lights like flashers and strobes. So you'll need to combine this with a booster board for almost anything in a virtual pinball cabinet.
+This device is well supported by the newer open-source pinball software systems (including Visual Pinball and PinballX), but it's not as compatible with older systems like Future Pinball as the LedWiz is.
+It provides 64 outputs for small LEDs.
+Like the LedWiz, this device was designed for video game cabinet builders, but its power handling is even more limited and isn't sufficient for high-powered lights like flashers and strobes.
+So you'll need to combine this with a booster board for almost anything in a virtual pinball cabinet.
 
-*SainSmart USB relay boards.* Commercial, about $20-$40. Feedback device control.
+*SainSmart USB relay boards.* Commercial, about $20-$40.
+Feedback device control.
 
-SainSmart makes USB-controlled relay board with 8 relay outputs. Software on the PC can send USB commands to turn attached devices on and off through relay switches. The relays can be used to control devices that use high power levels, so they're good for devices like solenoids, contactors, and replay knockers. However, these boards aren't a good choice for lighting devices, since relays on simple on/off switches and thus can't control brightness. For lights (especially flashers and button lights), you'll want to be able to control the intensity level of each output. The other slight disadvantage of relays is that they add a small lag time for switching devices on and off, which can make the device response slightly out of sync with the game action. Most people don't find this noticeable, though.
+SainSmart makes USB-controlled relay board with 8 relay outputs.
+Software on the PC can send USB commands to turn attached devices on and off through relay switches.
+The relays can be used to control devices that use high power levels, so they're good for devices like solenoids, contactors, and replay knockers.
+However, these boards aren't a good choice for lighting devices, since relays on simple on/off switches and thus can't control brightness.
+For lights (especially flashers and button lights), you'll want to be able to control the intensity level of each output.
+The other slight disadvantage of relays is that they add a small lag time for switching devices on and off, which can make the device response slightly out of sync with the game action.
+Most people don't find this noticeable, though.
 
-WARNING: DOF is currently only compatible with the *8-relay* Sainsmart boards. Sainsmart makes the boards in different sizes, from 4 to 16 channels, but DOF *only* works with the 8-relay version.
+WARNING: DOF is currently only compatible with the *8-relay* Sainsmart boards.
+Sainsmart makes the boards in different sizes, from 4 to 16 channels, but DOF *only* works with the 8-relay version.
 
-WARNING: There seem to be some no-brand devices out there that look ridiculously similar to the Sainsmarts, with the same blue lays laid out the same way, but which aren't compatible at the software level. That means they won't work with the existing pinball software, unless you can do some additional programming to add support yourself. I'd avoid look-alike boards that aren't clearly branded as Sainsmart products.
+WARNING: There seem to be some no-brand devices out there that look ridiculously similar to the Sainsmarts, with the same blue lays laid out the same way, but which aren't compatible at the software level.
+That means they won't work with the existing pinball software, unless you can do some additional programming to add support yourself.
+I'd avoid look-alike boards that aren't clearly branded as Sainsmart products.
 
-*Zeb's Boards booster board.* Commercial, $75 from link:https://www.zebsboards.com/[zebsboards.com] . Feedback device add-on.
+*Zeb's Boards booster board.* Commercial, $75 from link:https://www.zebsboards.com/[zebsboards.com] .
+Feedback device add-on.
 
-This board lets boost the power from 16 outputs on an LedWiz or PacLed output controller. The booster board itself isn't an output controller, so you can't use it alone; it has to be used in conjunction with one of the output controllers. The booster board raises the power level on 16 of the output controller's ports to 6A, which is enough to control anything in a pin cab, including high-power devices like replay knockers, shaker motors, gear motors, fans, beacons, and solenoids. If you need more than 16 boosted ports, you can add more of these boards to boost an additional 16 ports per board.
+This board lets boost the power from 16 outputs on an LedWiz or PacLed output controller.
+The booster board itself isn't an output controller, so you can't use it alone; it has to be used in conjunction with one of the output controllers.
+The booster board raises the power level on 16 of the output controller's ports to 6A, which is enough to control anything in a pin cab, including high-power devices like replay knockers, shaker motors, gear motors, fans, beacons, and solenoids.
+If you need more than 16 boosted ports, you can add more of these boards to boost an additional 16 ports per board.
 
-*SainSmart (non-USB) relay board.* Commercial, $20 to $40. Feedback device add-on.
+*SainSmart (non-USB) relay board.* Commercial, $20 to $40.
+Feedback device add-on.
 
-These boards are similar to the SainSmart USB relay boards, but they're not controlled by USB. Instead, they're controlled by individual inputs to the relays. You can connect the relay control inputs to the output ports of an LedWiz or PacLed unit to boost the power handling capability of the controller via the relays. You can then attach a high-power device, such as a replay knocker or solenoid, to the relay. The controller unit will switch the relay on and off, and the relay will in turn switch your high-power device on and off. This is a simple way to boost the power handling of an LedWiz or PacLed unit. Note that the relay switching adds a small amount of lag time, which can make the feedback response slightly out of sync with the game action, although most people who have set these up don't find this to be noticeable.
+These boards are similar to the SainSmart USB relay boards, but they're not controlled by USB.
+Instead, they're controlled by individual inputs to the relays.
+You can connect the relay control inputs to the output ports of an LedWiz or PacLed unit to boost the power handling capability of the controller via the relays.
+You can then attach a high-power device, such as a replay knocker or solenoid, to the relay.
+The controller unit will switch the relay on and off, and the relay will in turn switch your high-power device on and off.
+This is a simple way to boost the power handling of an LedWiz or PacLed unit.
+Note that the relay switching adds a small amount of lag time, which can make the feedback response slightly out of sync with the game action, although most people who have set these up don't find this to be noticeable.
 
-*Zeb's Boards output kits.* Commercial, $550 to $900 from link:https://www.zebsboards.com/[zebsboards.com] . Feedback system including controller _and_ feedback devices.
+*Zeb's Boards output kits.* Commercial, $550 to $900 from link:https://www.zebsboards.com/[zebsboards.com] .
+Feedback system including controller _and_ feedback devices.
 
-These kits offer turnkey feedback setups that include not only the output controller device but also all of the feedback devices themselves, all fully assembled and wired. Everything comes pre-mounted to a couple of modular panels for easy installation in a cabinet.
+These kits offer turnkey feedback setups that include not only the output controller device but also all of the feedback devices themselves, all fully assembled and wired.
+Everything comes pre-mounted to a couple of modular panels for easy installation in a cabinet.
 
 == Recommendations
 
-*For the DIYer:* I'm biased, obviously, but if you like building things yourself, my pick would be Pinscape. For a fully decked-out system with all the feedback devices, go with the expansion boards. For the input features only (buttons, plunger, nudging), the standalone KL25Z is all you need. I'm pretty sure Pinscape has all of the features of the best-of-breed commercial products (plus some extra features they don't have), equal or better performance, and a lower price tag. And the open-source design puts you in complete control. You can change anything that's not to your exact liking; and if you take "DIY" especially seriously, you can use my code as a starting point and rewrite as much of it as you want from scratch.
+*For the DIYer:* I'm biased, obviously, but if you like building things yourself, my pick would be Pinscape.
+For a fully decked-out system with all the feedback devices, go with the expansion boards.
+For the input features only (buttons, plunger, nudging), the standalone KL25Z is all you need.
+I'm pretty sure Pinscape has all of the features of the best-of-breed commercial products (plus some extra features they don't have), equal or better performance, and a lower price tag.
+And the open-source design puts you in complete control.
+You can change anything that's not to your exact liking; and if you take "DIY" especially seriously, you can use my code as a starting point and rewrite as much of it as you want from scratch.
 
-*If you want "no compromises":* Again, I'm biased, but I think the answer here is Pinscape. It has the most full-featured and highest performance implementation I'm aware of for each of the components. It's highly configurable through its Config Tool, so you can set it up exactly how you want it. And again, it's open-source, so if there is anything you want it to do that it doesn't already do, you can add it; or if there's anything it does do that's not quite the way you want it, you can change it.
+*If you want "no compromises":* Again, I'm biased, but I think the answer here is Pinscape.
+It has the most full-featured and highest performance implementation I'm aware of for each of the components.
+It's highly configurable through its Config Tool, so you can set it up exactly how you want it.
+And again, it's open-source, so if there is anything you want it to do that it doesn't already do, you can add it; or if there's anything it does do that's not quite the way you want it, you can change it.
 
-*If you're uncomfortable with DIY:* You'll probably be happier with the commercial options if you're not comfortable building this sort of thing yourself. The commercial products come ready to install, with only some basic setup required. The big challenge is figuring out which devices you need, since their functions overlap in somewhat confusing ways. Here are my recommendations for some common scenarios:
+*If you're uncomfortable with DIY:* You'll probably be happier with the commercial options if you're not comfortable building this sort of thing yourself.
+The commercial products come ready to install, with only some basic setup required.
+The big challenge is figuring out which devices you need, since their functions overlap in somewhat confusing ways.
+Here are my recommendations for some common scenarios:
 
-*For a simple feedback system with lights only:* If the only feedback devices you want are lighting devices (flashers, strobes, and button lights, for example), I'd recommend an LedWiz as the output controller. The LedWiz is inexpensive, and for just lights, it's simple to set up, since that's exactly what it's designed for. A single LedWiz has plenty of ports for a pin cab's lighting needs. The LedWiz is a good choice for lighting devices because it can display a range of brightness levels, which allows for fades, flash patterns, and RGB color mixing effects. The LedWiz isn't as ideal for high-power devices like solenoids and motors, since it can only handle limited power to each port; while it's possible to use it for these devices, you need additional hardware add-ons, which largely negates the whole "it's simple" advantage.
+*For a simple feedback system with lights only:* If the only feedback devices you want are lighting devices (flashers, strobes, and button lights, for example), I'd recommend an LedWiz as the output controller.
+The LedWiz is inexpensive, and for just lights, it's simple to set up, since that's exactly what it's designed for.
+A single LedWiz has plenty of ports for a pin cab's lighting needs.
+The LedWiz is a good choice for lighting devices because it can display a range of brightness levels, which allows for fades, flash patterns, and RGB color mixing effects.
+The LedWiz isn't as ideal for high-power devices like solenoids and motors, since it can only handle limited power to each port; while it's possible to use it for these devices, you need additional hardware add-ons, which largely negates the whole "it's simple" advantage.
 
-*For a simple feedback system with solenoids and motors only:* If you want a feedback system consisting only of tactile effects (replay knocker, flipper and bumper solenoids, shaker motor), get a SainSmart USB relay board. I'd get the 16-output type so that you have plenty of outputs for extras you might want to add later. The SainSmart board is the easiest thing to set up for high-power devices. The downside is that relays are strictly On/Off switches, so the SainSmart can't display different brightness levels if you use it to control lights - it can only turn them fully on and fully off. That makes it good for devices like solenoids and motors, but not so good for lamps and LEDs, where you need brightness control to get the full range of effects. The other disadvantage is that the relays are mechanical, so they can eventually wear out; some people on the forums have reported having to replace their SainSmart boards every couple of years due to relay failure.
+*For a simple feedback system with solenoids and motors only:* If you want a feedback system consisting only of tactile effects (replay knocker, flipper and bumper solenoids, shaker motor), get a SainSmart USB relay board.
+I'd get the 16-output type so that you have plenty of outputs for extras you might want to add later.
+The SainSmart board is the easiest thing to set up for high-power devices.
+The downside is that relays are strictly On/Off switches, so the SainSmart can't display different brightness levels if you use it to control lights - it can only turn them fully on and fully off.
+That makes it good for devices like solenoids and motors, but not so good for lamps and LEDs, where you need brightness control to get the full range of effects.
+The other disadvantage is that the relays are mechanical, so they can eventually wear out; some people on the forums have reported having to replace their SainSmart boards every couple of years due to relay failure.
 
-*For a plunger-less system:* If you don't want to include a plunger in your setup, use a KL25Z running Pinscape as the input device. You don't need the expansion boards if you're just using the input features. The installation work for buttons and nudge input is pretty much the same as for any of the commercial options, and Pinscape is a lot cheaper and has more features.
+*For a plunger-less system:* If you don't want to include a plunger in your setup, use a KL25Z running Pinscape as the input device.
+You don't need the expansion boards if you're just using the input features.
+The installation work for buttons and nudge input is pretty much the same as for any of the commercial options, and Pinscape is a lot cheaper and has more features.
 
-*For a turn-key plunger:* If you want a plunger but don't want to build the electronics yourself, buy Zeb's plunger kit. It's easy to set up and gets generally good reviews from users.
+*For a turn-key plunger:* If you want a plunger but don't want to build the electronics yourself, buy Zeb's plunger kit.
+It's easy to set up and gets generally good reviews from users.
 
-*For a turn-key feedback system:* If you're the opposite of a DIYer, and you don't want to do a lot of planning or parts sourcing or assembly work, buy one of Zeb's pre-built feedback kits. They're expensive, but they'll save you a lot of work, and they'll eliminate any anxiety you might feel about the things going wrong if you build it yourself.
+*For a turn-key feedback system:* If you're the opposite of a DIYer, and you don't want to do a lot of planning or parts sourcing or assembly work, buy one of Zeb's pre-built feedback kits.
+They're expensive, but they'll save you a lot of work, and they'll eliminate any anxiety you might feel about the things going wrong if you build it yourself.
 
 == Feature matrix
 
@@ -127,7 +243,11 @@ Here's a summary of the key features of the available controllers, to help you d
 |High
 |✓
 |65- +128
-|4Afootnote:footnote-1[The 4 Amp limit applies to the general purpose outputs on the power board. There are 32 of these on each power board. In addition, the main board has 16 flasher/strobe outputs that can handle 1.5A each, and 16 outputs for button LEDs that can handle 20-50mA each. The typical setup uses one main board and one power board, which gives you 65 total outputs, plenty for a decked-out cab. If you need more, you can add extra power boards for another 32 of the high-power outputs per, up to the software limit of 128 total outputs.]
+|4Afootnote:footnote-1[The 4 Amp limit applies to the general purpose outputs on the power board.
+There are 32 of these on each power board.
+In addition, the main board has 16 flasher/strobe outputs that can handle 1.5A each, and 16 outputs for button LEDs that can handle 20-50mA each.
+The typical setup uses one main board and one power board, which gives you 65 total outputs, plenty for a decked-out cab.
+If you need more, you can add extra power boards for another 32 of the high-power outputs per, up to the software limit of 128 total outputs.]
 |✓
 |No
 
@@ -194,7 +314,8 @@ Here's a summary of the key features of the available controllers, to help you d
 |96
 |20mA +6@1A
 |✓
-|Yes footnote:footnote-2[This device's outputs are designed to drive low-power LEDs, which it can do without any extra booster circuitry. A booster board is needed to drive anything needing higher power, such as flasher LEDs or mechanical feedback devices.]
+|Yes footnote:footnote-2[This device's outputs are designed to drive low-power LEDs, which it can do without any extra booster circuitry.
+A booster board is needed to drive anything needing higher power, such as flasher LEDs or mechanical feedback devices.]
 
 |LedWiz
 |Commercial +$45
@@ -207,7 +328,8 @@ Here's a summary of the key features of the available controllers, to help you d
 |32
 |0.5A
 |✓
-|Yes footnote:footnote-3[The LedWiz can handle 500mA per output, which is sufficient for most types of lights, including LED flashers and button lamps. A booster board is required for most non-lighting devices, such as contactors, replay knockers, solenoids, fans, shakers, and gear motors.]
+|Yes footnote:footnote-3[The LedWiz can handle 500mA per output, which is sufficient for most types of lights, including LED flashers and button lamps.
+A booster board is required for most non-lighting devices, such as contactors, replay knockers, solenoids, fans, shakers, and gear motors.]
 
 |PacLed-64
 |Commercial +$59
@@ -246,7 +368,8 @@ Here's a summary of the key features of the available controllers, to help you d
 |16
 |6A
 |✓
-|No footnote:footnote-4[This device works in conjunction with one of the output controllers (LedWiz, PacLed-64, etc). It can't be used alone; it has to be used in combination with an output controller.]
+|No footnote:footnote-4[This device works in conjunction with one of the output controllers (LedWiz, PacLed-64, etc).
+It can't be used alone; it has to be used in combination with an output controller.]
 
 |SainSmart relay board (non-USB)
 |Commercial +$20-$40

@@ -1,28 +1,55 @@
 [#cabinetBody]
 = Cabinet Body
 
-On the forums, virtual pinball machines are always called "pin cabs". It's appropriate that the cabinet is the defining feature of these projects, since it's what sets them apart from video pinball on an ordinary PC. This chapter is about the literal _cabinet_ part of that - building the physical housing of the machine.
+On the forums, virtual pinball machines are always called "pin cabs".
+It's appropriate that the cabinet is the defining feature of these projects, since it's what sets them apart from video pinball on an ordinary PC.
+This chapter is about the literal _cabinet_ part of that - building the physical housing of the machine.
 
-The bulk of this section consists of detailed plans for building a replica of a 1990s-era Williams pinball cabinet, with some slight changes to accommodate video pinball instead of a mechanical playfield. With some tweaks, you can use the plans here to build a replacement cabinet for an actual WPC-era pinball machine. The plans are complete enough to build the whole thing from scratch, starting with a couple of sheets of plywood.
+The bulk of this section consists of detailed plans for building a replica of a 1990s-era Williams pinball cabinet, with some slight changes to accommodate video pinball instead of a mechanical playfield.
+With some tweaks, you can use the plans here to build a replacement cabinet for an actual WPC-era pinball machine.
+The plans are complete enough to build the whole thing from scratch, starting with a couple of sheets of plywood.
 
-Before we get to the building plans, we'll discuss the reasons behind the design of the cabinet (both the original pinball machine design and our "virtual" modifications), and some important things you should consider before finalizing your own design. Every pin cab project is unique, and I think most people will want to make at least some customizations to the generic plans I provide.
+Before we get to the building plans, we'll discuss the reasons behind the design of the cabinet (both the original pinball machine design and our "virtual" modifications), and some important things you should consider before finalizing your own design.
+Every pin cab project is unique, and I think most people will want to make at least some customizations to the generic plans I provide.
 
-This section has a lot of background information and digressions on small (sometimes trivial) details, so it's rather lengthy. When you're ready to go out to your workshop and get building, you might prefer a more concise step-by-step list of dimensions and tasks. I've tried to provide something along those lines in a couple of appendices:
+This section has a lot of background information and digressions on small (sometimes trivial) details, so it's rather lengthy.
+When you're ready to go out to your workshop and get building, you might prefer a more concise step-by-step list of dimensions and tasks.
+I've tried to provide something along those lines in a couple of appendices:
 
 *  xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction]
 *  xref:cabBodyQuickRef.adoc#cabinetConstructionQuickRef[Cabinet Construction Quick Reference]
 
 == Design goals
 
-The goal for most of us is to replicate the exterior appearance of a real pinball machine. That's what I set out to do with my own virtual cab, and I'm assuming in this section that it's your goal as well. This chapter is therefore mostly a guide to building a replica of a Williams pinball machine cabinet from the 1990s, using the same materials and parts. The plan here isn't an _exact_ replica, because some modest changes are needed to make the virtual-pinball elements fit better, but most of the differences are small. For the most part, you could use the plans here to build a replacement cabinet for a real machine (and just in case you actually want to do that, I've tried to point out where and how my plans diverge from the WPC design).
+The goal for most of us is to replicate the exterior appearance of a real pinball machine.
+That's what I set out to do with my own virtual cab, and I'm assuming in this section that it's your goal as well.
+This chapter is therefore mostly a guide to building a replica of a Williams pinball machine cabinet from the 1990s, using the same materials and parts.
+The plan here isn't an _exact_ replica, because some modest changes are needed to make the virtual-pinball elements fit better, but most of the differences are small.
+For the most part, you could use the plans here to build a replacement cabinet for a real machine (and just in case you actually want to do that, I've tried to point out where and how my plans diverge from the WPC design).
 
-Even though the WPC design is more than 30 years old now, it's still more or less the most "modern" pinball cabinet design, since most new pinball titles today are built with essentially the same cabinet plan and trim hardware as in the 1990s. Pinball is a much smaller industry today than it was then, and I don't think the manufacturers have the scale these days to do as much custom designing and machining, so they keep re-using a lot of the time-tested parts and designs from the 90s. Plus, the WPC cabinet design simply got most things right; there's not much practical reason to change it. So newer machines look very much like machines from the 1990s, as far as the basic cabinet shell goes. The only major change on the outside is the audio/video panel in the backbox, which on newer machines usually features a video screen in place of a dot matrix display, but that's not really a change to the cabinet; it's just something that drops in to the standard cabinet layout. You can build the basic WPC cabinet plan and take your pick of speaker/display panel styles.
+Even though the WPC design is more than 30 years old now, it's still more or less the most "modern" pinball cabinet design, since most new pinball titles today are built with essentially the same cabinet plan and trim hardware as in the 1990s.
+Pinball is a much smaller industry today than it was then, and I don't think the manufacturers have the scale these days to do as much custom designing and machining, so they keep re-using a lot of the time-tested parts and designs from the 90s.
+Plus, the WPC cabinet design simply got most things right; there's not much practical reason to change it.
+So newer machines look very much like machines from the 1990s, as far as the basic cabinet shell goes.
+The only major change on the outside is the audio/video panel in the backbox, which on newer machines usually features a video screen in place of a dot matrix display, but that's not really a change to the cabinet; it's just something that drops in to the standard cabinet layout.
+You can build the basic WPC cabinet plan and take your pick of speaker/display panel styles.
 
-When I was building my own virtual machine, I discovered that the design of the 1990s pinball cabinets is something of a secret art. It's not secret due to any conspiracy of silence; it's just that there's a lot of knowledge and experience that went into the design that no one bothered to write down anywhere. Not anywhere public, anyway; I imagine that there are still a lot of old engineering diagrams and blueprints gathering dust in a basement file cabinet somewhere, but those documents aren't available to hobbyists.
+When I was building my own virtual machine, I discovered that the design of the 1990s pinball cabinets is something of a secret art.
+It's not secret due to any conspiracy of silence; it's just that there's a lot of knowledge and experience that went into the design that no one bothered to write down anywhere.
+Not anywhere public, anyway; I imagine that there are still a lot of old engineering diagrams and blueprints gathering dust in a basement file cabinet somewhere, but those documents aren't available to hobbyists.
 
-Owners of the real machines can learn a lot of the design details of the original cabinets through observation, but if you don't have a real machine to take apart and examine, you pretty much have to guess. I'm fortunate to have some real machines at home, and that turned out to be a huge help for building a virtual cab. Whenever I was unclear on something, I could look at a couple of actual examples to see how they did it, and see some of the variations in different model years. I took advantage of that many times. So my goal in this section is to pass along as much of that otherwise undocumented knowledge as I can, in this one place, in an order that essentially provides a recipe for building one of these cabinets.
+Owners of the real machines can learn a lot of the design details of the original cabinets through observation, but if you don't have a real machine to take apart and examine, you pretty much have to guess.
+I'm fortunate to have some real machines at home, and that turned out to be a huge help for building a virtual cab.
+Whenever I was unclear on something, I could look at a couple of actual examples to see how they did it, and see some of the variations in different model years.
+I took advantage of that many times.
+So my goal in this section is to pass along as much of that otherwise undocumented knowledge as I can, in this one place, in an order that essentially provides a recipe for building one of these cabinets.
 
-I know that not everyone wants their cab to look exactly like a modern commercial pinball machine. You might be basing your project on the classic Gottlieb wedge-head machines of the 1970s, for example, or you might want to create something completely novel. Even if you're aiming for a different look, though, you might find it helpful to understand how the 1990s WPC cabinet design works. Those cabinets are the result of decades of refinement. Pin cabs have to solve a number of geometry and functional constraints, and you'll face many of the same issues in creating a wholly new cabinet design. It can be helpful to see what the pros came up with after many iterations.
+I know that not everyone wants their cab to look exactly like a modern commercial pinball machine.
+You might be basing your project on the classic Gottlieb wedge-head machines of the 1970s, for example, or you might want to create something completely novel.
+Even if you're aiming for a different look, though, you might find it helpful to understand how the 1990s WPC cabinet design works.
+Those cabinets are the result of decades of refinement.
+Pin cabs have to solve a number of geometry and functional constraints, and you'll face many of the same issues in creating a wholly new cabinet design.
+It can be helpful to see what the pros came up with after many iterations.
 
 == Build, buy, or convert?
 
@@ -32,30 +59,63 @@ There are three main options for creating the body of your cabinet:
 * Buy a new empty pinball cabinet, pre-built or as a kit
 * Convert an old real pinball machine into a virtual cabinet
 
-If you're new to virtual pinball, the approach that might seem most appealing at first glance is to convert an old real machine. Indeed, some of the earliest virtual cabs were built as conversions from machines that would otherwise have been scrapped, and it was a popular approach in the early years. It has the advantage that it starts off from the very beginning looking exactly like a real pinball machine, and it saves you the trouble of coming up with your own cabinet design and sourcing parts.
+If you're new to virtual pinball, the approach that might seem most appealing at first glance is to convert an old real machine.
+Indeed, some of the earliest virtual cabs were built as conversions from machines that would otherwise have been scrapped, and it was a popular approach in the early years.
+It has the advantage that it starts off from the very beginning looking exactly like a real pinball machine, and it saves you the trouble of coming up with your own cabinet design and sourcing parts.
 
-The conversion approach has become a lot less appealing lately because of increasing prices. Almost every pinball machine is a collector's item these days; old machines command surprisingly high prices even when they're beat up, since there are plenty of people looking for restoration projects. If you're lucky enough to find a donor machine that no one wants to restore, it'll probably be in such bad cosmetic condition that it might actually be cheaper and easier to start from scratch. (You should also be prepared for some negative comments on the forums, since there's a preservationist sentiment even among the virtual pinball crowd. Many people see pinballs from past decades as works of historical significance that can't be fully or genuinely re-created once lost.)
+The conversion approach has become a lot less appealing lately because of increasing prices.
+Almost every pinball machine is a collector's item these days; old machines command surprisingly high prices even when they're beat up, since there are plenty of people looking for restoration projects.
+If you're lucky enough to find a donor machine that no one wants to restore, it'll probably be in such bad cosmetic condition that it might actually be cheaper and easier to start from scratch.
+(You should also be prepared for some negative comments on the forums, since there's a preservationist sentiment even among the virtual pinball crowd.
+Many people see pinballs from past decades as works of historical significance that can't be fully or genuinely re-created once lost.)
 
-Happily, the "build" and "buy new" alternatives are both quite practical, and I consider both of them superior to conversion, even without the price considerations. You can buy high-quality reproduction cabinets that look exactly like the real thing, in kit form or fully assembled. Or, if you have some basic woodworking skills, you can build an excellent reproduction cabinet yourself. The real machines use fairly simple designs that you don't have to be a master carpenter to reproduce. This section provides ready-made plans, so there's no research required.
+Happily, the "build" and "buy new" alternatives are both quite practical, and I consider both of them superior to conversion, even without the price considerations.
+You can buy high-quality reproduction cabinets that look exactly like the real thing, in kit form or fully assembled.
+Or, if you have some basic woodworking skills, you can build an excellent reproduction cabinet yourself.
+The real machines use fairly simple designs that you don't have to be a master carpenter to reproduce.
+This section provides ready-made plans, so there's no research required.
 
-What's more, it's easy to obtain all of the genuine cabinet hardware (metal rails, legs, etc) needed to fit out a custom-built cabinet and make it look exactly like a real machine. All of the hardware is standardized across machines, and several big online pinball suppliers sell the parts. You can thank the collectors for that - they buy these parts to repair and restore their machines, so there's a healthy market in the parts that keeps them readily available.
+What's more, it's easy to obtain all of the genuine cabinet hardware (metal rails, legs, etc) needed to fit out a custom-built cabinet and make it look exactly like a real machine.
+All of the hardware is standardized across machines, and several big online pinball suppliers sell the parts.
+You can thank the collectors for that - they buy these parts to repair and restore their machines, so there's a healthy market in the parts that keeps them readily available.
 
 Here are my recommendations:
 
-* For most people, I recommend using a VirtuaPin flat-pack kit. I used this approach myself, and I'm very happy with the results. It's not the cheapest option, but it's reasonably priced, and it yields an excellent finished product. It's about the same level of difficulty as assembling an Ikea product. With a little care, the result will be essentially indistinguishable from a brand new commercial pinball machine cabinet.
-* If you enjoy woodworking and have a decently equipped workshop, consider a scratch build. Doing it yourself is much cheaper than buying a VirtuaPin flat pack, assuming you already have the tools, and you should be able to get equally professional results with a little care. Pinball cabinets are relatively simple as woodworking projects go; they're built out of ordinary plywood, and they're all straight lines and (mostly) easy joinery. But it does require some tools beyond the home-handyman basics, and it's a fair amount of work, so don't choose this option just because of the potential cost savings - choose it because you enjoy this sort of construction project.
-* If you don't want to do any woodworking, and you don't even want to assemble a kit, you can order a fully built cabinet from VirtuaPin or from a number of other vendors. VirtuaPin's pre-assembled product is the best one I've seen, and it's the only one I know of that faithfully reproduces the design of the real pinball machines. (It's good enough that some collectors restoring real machines buy this kit to use as their replacement cabinets.) The products I've seen from other vendors use idiosyncratic designs and non-standard trim hardware, so they don't look quite like the real thing. If a realistic appearance is important to you, take a close look before buying to make sure you like the design.
-* I generally don't recommend trying to re-purpose an old real pinball as a virtual cab, in part because old cabinets tend to be so beat up that restoration would be more labor-intensive than building a new one, and in part because the economics rarely pan out. More on that below.
+* For most people, I recommend using a VirtuaPin flat-pack kit.
+I used this approach myself, and I'm very happy with the results.
+It's not the cheapest option, but it's reasonably priced, and it yields an excellent finished product.
+It's about the same level of difficulty as assembling an Ikea product.
+With a little care, the result will be essentially indistinguishable from a brand new commercial pinball machine cabinet.
+* If you enjoy woodworking and have a decently equipped workshop, consider a scratch build.
+Doing it yourself is much cheaper than buying a VirtuaPin flat pack, assuming you already have the tools, and you should be able to get equally professional results with a little care.
+Pinball cabinets are relatively simple as woodworking projects go; they're built out of ordinary plywood, and they're all straight lines and (mostly) easy joinery.
+But it does require some tools beyond the home-handyman basics, and it's a fair amount of work, so don't choose this option just because of the potential cost savings - choose it because you enjoy this sort of construction project.
+* If you don't want to do any woodworking, and you don't even want to assemble a kit, you can order a fully built cabinet from VirtuaPin or from a number of other vendors.
+VirtuaPin's pre-assembled product is the best one I've seen, and it's the only one I know of that faithfully reproduces the design of the real pinball machines.
+(It's good enough that some collectors restoring real machines buy this kit to use as their replacement cabinets.) The products I've seen from other vendors use idiosyncratic designs and non-standard trim hardware, so they don't look quite like the real thing.
+If a realistic appearance is important to you, take a close look before buying to make sure you like the design.
+* I generally don't recommend trying to re-purpose an old real pinball as a virtual cab, in part because old cabinets tend to be so beat up that restoration would be more labor-intensive than building a new one, and in part because the economics rarely pan out.
+More on that below.
 
 === Economics of new vs used
 
-If you're set on the idea of re-purposing a used cabinet, I'd suggest doing a little research first to make sure you don't overpay. The question you want to ask is: would I actually save money buying the used cab, or would it be cheaper to buy the same parts new?
+If you're set on the idea of re-purposing a used cabinet, I'd suggest doing a little research first to make sure you don't overpay.
+The question you want to ask is: would I actually save money buying the used cab, or would it be cheaper to buy the same parts new?
 
-To answer this, ask the seller for a list of all the hardware parts that the used cabinet includes - the legs, side rails, lockbar, etc. Don't assume that everything is included, because a lot of eBay sellers strip all of the parts out and sell them separately; a used cabinet might not come with anything beyond the wood box. And only consider the hardware that you'll actually use on your virtual cab, since those are the only parts you'd have to buy if you were starting from scratch. Only count parts that you actually need in the virtual cab (e.g., don't count the playfield, bumper caps, etc), and only count used parts if they're in usable condition.
+To answer this, ask the seller for a list of all the hardware parts that the used cabinet includes - the legs, side rails, lockbar, etc.
+Don't assume that everything is included, because a lot of eBay sellers strip all of the parts out and sell them separately; a used cabinet might not come with anything beyond the wood box.
+And only consider the hardware that you'll actually use on your virtual cab, since those are the only parts you'd have to buy if you were starting from scratch.
+Only count parts that you actually need in the virtual cab (e.g., don't count the playfield, bumper caps, etc), and only count used parts if they're in usable condition.
 
-To help you get started here's a list of the main parts that real machines and virtual cabs have in common. See xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] for a more detailed parts list with descriptions. We left the price column blank, since prices obviously vary over time and from one vendor to the next, so you'll have to fill that in by checking current prices at your preferred vendor(s) (such as link:https://virtuapin.net/[VirtuaPin] , link:https://www.pinballlife.com/[PinballLife] , or link:https://www.marcospecialties.com/[Marco Specialities] ). For the "wood body" line item, you can use VirtuaPin's flat pack or unfinished cab body offerings for comparison. Remember, only include the parts that the seller is including with the new cab, since you want to compare new-vs-used for what you're actually getting from the seller.
+To help you get started here's a list of the main parts that real machines and virtual cabs have in common.
+See xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] for a more detailed parts list with descriptions.
+We left the price column blank, since prices obviously vary over time and from one vendor to the next, so you'll have to fill that in by checking current prices at your preferred vendor(s) (such as link:https://virtuapin.net/[VirtuaPin] , link:https://www.pinballlife.com/[PinballLife] , or link:https://www.marcospecialties.com/[Marco Specialities] ).
+For the "wood body" line item, you can use VirtuaPin's flat pack or unfinished cab body offerings for comparison.
+Remember, only include the parts that the seller is including with the new cab, since you want to compare new-vs-used for what you're actually getting from the seller.
 
-Add up the prices of the new parts, and compare the result to the seller's asking price for the used cab. If the asking price for the used cab is cheaper than the new parts, and everything's in good enough shape that you can actually use it, you've found a good bargain. If the seller is asking more for a beat-up used cab than what you'd pay new, I'd pass on the deal.
+Add up the prices of the new parts, and compare the result to the seller's asking price for the used cab.
+If the asking price for the used cab is cheaper than the new parts, and everything's in good enough shape that you can actually use it, you've found a good bargain.
+If the seller is asking more for a beat-up used cab than what you'd pay new, I'd pass on the deal.
 
 [cols="1,3,1"]
 |===
@@ -201,76 +261,164 @@ Add up the prices of the new parts, and compare the result to the seller's askin
 
 === Where to find used machines
 
-Your best bet for finding a used machine at a good price will be local sellers. Search your local craigslist and local newspaper classified ads. A particularly good place to find a deal is at an estate sale. Heirs often want to clear out the house quickly and won't have any sentimental attachment to an old pinball.
+Your best bet for finding a used machine at a good price will be local sellers.
+Search your local craigslist and local newspaper classified ads.
+A particularly good place to find a deal is at an estate sale.
+Heirs often want to clear out the house quickly and won't have any sentimental attachment to an old pinball.
 
-If you can't find anything locally, eBay will give you access to sellers nationally (and even internationally). But I wouldn't get my hopes up; it's hard to find a good deal on a used cab on eBay these days. For one thing, shipping a cabinet is expensive due to the size and weight; shipping can add about $400 to the price. For another, eBay sellers know they can get top dollar for used cabs, so the base price is unlikely to be a bargain. Most eBay sellers are also savvy enough to strip a machine of all of the parts and sell them off separately, which largely defeats the purpose of reusing an old machine.
+If you can't find anything locally, eBay will give you access to sellers nationally (and even internationally).
+But I wouldn't get my hopes up; it's hard to find a good deal on a used cab on eBay these days.
+For one thing, shipping a cabinet is expensive due to the size and weight; shipping can add about $400 to the price.
+For another, eBay sellers know they can get top dollar for used cabs, so the base price is unlikely to be a bargain.
+Most eBay sellers are also savvy enough to strip a machine of all of the parts and sell them off separately, which largely defeats the purpose of reusing an old machine.
 
 === Kits and pre-built cabinets
 
-If you can't find or don't want to use a salvage machine, but you also don't want to build everything from scratch, there are several companies that will sell you a brand new cabinet. For options, search the web for "new pinball cabinet" or "pinball cabinet restoration". One vendor I can recommend from personal experience is link:http://mjrnet.org/pinscape/BuildGuideV2/virtuapin.com[VirtuaPin] . They sell cabinets in both kit form and fully assembled, and can customize them to your specifications.
+If you can't find or don't want to use a salvage machine, but you also don't want to build everything from scratch, there are several companies that will sell you a brand new cabinet.
+For options, search the web for "new pinball cabinet" or "pinball cabinet restoration".
+One vendor I can recommend from personal experience is link:http://mjrnet.org/pinscape/BuildGuideV2/virtuapin.com[VirtuaPin] .
+They sell cabinets in both kit form and fully assembled, and can customize them to your specifications.
 
 You should be able to find options ranging from "flat pack" kits that you assemble yourself, to fully assembled cabinets with all of the hardware and artwork installed.
 
-The cheapest and most DIY option is a flat pack kit. This is like an Ikea bookshelf: it consists of the wood parts, pre-cut and pre-drilled, ready for you to assemble. This is the cheapest kit option, since you provide the assembly labor, and because shipping is cheaper than for a bulky assembled cab. The degree of difficulty is slightly higher than for assembling Ikea furniture, but only slightly; no real woodworking skills are required, and you'll just need basic tools like screwdrivers and hammers. You might also have to do some sanding to even out corners and edges. And you'll have to do your own finish work (painting, staining, or applying decals). I used the VirtuaPin flat-pack kit for my own cabinet, and I highly recommend it. They use a good furniture-grade plywood, and the design is a faithful reproduction of the WPC cabinets that Williams shipped in the 1990s, so the result is exactly like a brand new real machine.
+The cheapest and most DIY option is a flat pack kit.
+This is like an Ikea bookshelf: it consists of the wood parts, pre-cut and pre-drilled, ready for you to assemble.
+This is the cheapest kit option, since you provide the assembly labor, and because shipping is cheaper than for a bulky assembled cab.
+The degree of difficulty is slightly higher than for assembling Ikea furniture, but only slightly; no real woodworking skills are required, and you'll just need basic tools like screwdrivers and hammers.
+You might also have to do some sanding to even out corners and edges.
+And you'll have to do your own finish work (painting, staining, or applying decals).
+I used the VirtuaPin flat-pack kit for my own cabinet, and I highly recommend it.
+They use a good furniture-grade plywood, and the design is a faithful reproduction of the WPC cabinets that Williams shipped in the 1990s, so the result is exactly like a brand new real machine.
 
-The next step up in price and completeness is an assembled cabinet shell. This is just the wood shell, typically unfinished (ready for you to paint, stain, or apply decals), and without any of the cabinet hardware accessories installed. This eliminates the assembly work required for a flat pack. It's considerably more expensive to ship because it's so bulky.
+The next step up in price and completeness is an assembled cabinet shell.
+This is just the wood shell, typically unfinished (ready for you to paint, stain, or apply decals), and without any of the cabinet hardware accessories installed.
+This eliminates the assembly work required for a flat pack.
+It's considerably more expensive to ship because it's so bulky.
 
-At the high end price-wise, you can buy a fully assembled cabinet with all of the hardware and graphics pre-installed. VirtuaPin sells these in addition to their flat-pack and assembled-but-unfinished products. All of the VirtuaPin options use the same materials and design as their flat pack, so they all yield excellent reproductions of the 1990s Williams machines. There are other vendors selling pre-built cabinets as well, but check their designs carefully before buying, because I've seen a couple of other vendors who use their own ad hoc designs that look a bit cheap and cheesy to my eye.
+At the high end price-wise, you can buy a fully assembled cabinet with all of the hardware and graphics pre-installed.
+VirtuaPin sells these in addition to their flat-pack and assembled-but-unfinished products.
+All of the VirtuaPin options use the same materials and design as their flat pack, so they all yield excellent reproductions of the 1990s Williams machines.
+There are other vendors selling pre-built cabinets as well, but check their designs carefully before buying, because I've seen a couple of other vendors who use their own ad hoc designs that look a bit cheap and cheesy to my eye.
 
-TIP: *Ask about the button hole layout.* If you order a kit or pre-built cabinet, ask the seller for details on the locations of button holes they pre-drill, and ask them to customize the drilling to your plans if you have something else in mind. The vendor might drill holes by default that you don't want. Pay particular attention to the placement of the plunger and flipper button holes. Many virtual cab builders choose non-standard locations for these to accommodate the playfield TV (see "The dreaded plunger space conflict" in xref:playfieldMounting.adoc#plungerTVSpaceConfict[Playfield TV Mounting] and "Positioning the plunger" in xref:plunger.adoc#positioningThePlunger[Plunger] ). If you're not sure how you want to handle this at the time of your order, you can simply ask the vendor not to drill any holes for the plunger or other controls. That will give you the flexibility to drill them yourself later when you know how everything will fit together.
+TIP: *Ask about the button hole layout.* If you order a kit or pre-built cabinet, ask the seller for details on the locations of button holes they pre-drill, and ask them to customize the drilling to your plans if you have something else in mind.
+The vendor might drill holes by default that you don't want.
+Pay particular attention to the placement of the plunger and flipper button holes.
+Many virtual cab builders choose non-standard locations for these to accommodate the playfield TV (see "The dreaded plunger space conflict" in xref:playfieldMounting.adoc#plungerTVSpaceConfict[Playfield TV Mounting] and "Positioning the plunger" in xref:plunger.adoc#positioningThePlunger[Plunger] ).
+If you're not sure how you want to handle this at the time of your order, you can simply ask the vendor not to drill any holes for the plunger or other controls.
+That will give you the flexibility to drill them yourself later when you know how everything will fit together.
 
 === Scratch build
 
-A scratch build is the cheapest option if you already have most of the tools required. The raw materials consist mostly of a couple of sheets of plywood. If you don't already have the tools, it's probably cheaper to buy a pre-built cabinet, but not by a huge margin - you don't need a huge set of tools. A scratch build also lets you build exactly what you want.
+A scratch build is the cheapest option if you already have most of the tools required.
+The raw materials consist mostly of a couple of sheets of plywood.
+If you don't already have the tools, it's probably cheaper to buy a pre-built cabinet, but not by a huge margin - you don't need a huge set of tools.
+A scratch build also lets you build exactly what you want.
 
 *Lumber:*
 
-* 3/4" (nominal) plywood, two 4'x8' sheets, for almost all of the main cabinet and backbox. Choose a quality hardwood plywood that's graded for furniture or cabinetry use. Commercial pin cabs are typically birch. The ¾" thickness is important, as many of the trim parts and controls (like flipper buttons and plunger) are designed to fit into ¾" walls.
+* 3/4" (nominal) plywood, two 4'x8' sheets, for almost all of the main cabinet and backbox.
+Choose a quality hardwood plywood that's graded for furniture or cabinetry use.
+Commercial pin cabs are typically birch.
+The ¾" thickness is important, as many of the trim parts and controls (like flipper buttons and plunger) are designed to fit into ¾" walls.
 
-MDO plywood is even nicer, if you can find it. MDO is a hybrid product with a plywood core and an MDF veneer, so it has the strength and lightness of plywood and the flat, grainless surface finish of MDF. The MDF veneer saves hours of prep work for painting and decals.
+MDO plywood is even nicer, if you can find it.
+MDO is a hybrid product with a plywood core and an MDF veneer, so it has the strength and lightness of plywood and the flat, grainless surface finish of MDF.
+The MDF veneer saves hours of prep work for painting and decals.
 
-It's just barely possible to fit a standard-width cab into a single 4' x 8' sheet, but it's much easier with two sheets. See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] for layout suggestions.
+It's just barely possible to fit a standard-width cab into a single 4' x 8' sheet, but it's much easier with two sheets.
+See xref:plywoodCuttingPlans.adoc#plywoodCuttingPlans[Plywood Cutting Plans for Cabinet Construction] for layout suggestions.
 
-* 1/2" (nominal) plywood or particle board, one 4'x8' sheet, for the cabinet floor and the back wall of the backbox. Most commercial machines use particle board, to cut costs, since these pieces aren't cosmetic. Plywood is a nice upgrade if your budget permits. It's stronger and lighter.
-* A length of 2x2 (nominal) board, for corner braces. A nominal 2x2 is actually 1.5" on a side. It usually comes in 8-foot lengths. You need at least 5 feet, so one 8-foot board will leave you with some spare material for test cuts and do-overs.
-* A length of 1x2 (nominal) board, for a trim piece for the backbox. You can also fashion this out of the same 2x2 as the leg braces, but it's easier with a 1x2. This board needs to be at least 28" long.
+* 1/2" (nominal) plywood or particle board, one 4'x8' sheet, for the cabinet floor and the back wall of the backbox.
+Most commercial machines use particle board, to cut costs, since these pieces aren't cosmetic.
+Plywood is a nice upgrade if your budget permits.
+It's stronger and lighter.
+* A length of 2x2 (nominal) board, for corner braces.
+A nominal 2x2 is actually 1.5" on a side.
+It usually comes in 8-foot lengths.
+You need at least 5 feet, so one 8-foot board will leave you with some spare material for test cuts and do-overs.
+* A length of 1x2 (nominal) board, for a trim piece for the backbox.
+You can also fashion this out of the same 2x2 as the leg braces, but it's easier with a 1x2.
+This board needs to be at least 28" long.
 
-"Nominal" lumber dimensions refer to what the lumber yard calls it, not the true size. Plywood is generally 1/32" thinner than the nominal thickness, and dimensional lumber, such as 1x2 or 2x2 strips, is generally 1/4" to 1/2" less in each dimension than the nominal size. So when the list above calls for 3/4" plywood, it means you should buy what the lumber yard calls 3/4" plywood, even though the true thickness will be slightly less than that.
+"Nominal" lumber dimensions refer to what the lumber yard calls it, not the true size.
+Plywood is generally 1/32" thinner than the nominal thickness, and dimensional lumber, such as 1x2 or 2x2 strips, is generally 1/4" to 1/2" less in each dimension than the nominal size.
+So when the list above calls for 3/4" plywood, it means you should buy what the lumber yard calls 3/4" plywood, even though the true thickness will be slightly less than that.
 
-Some cab builders use MDF (fiberboard) instead of plywood for the whole build. I prefer plywood, but MDF works too. Each material has some advantages over the other. MDF is cheaper, and it's nearly perfectly uniform in thickness and composition. MDF sheets also tend to be perfectly flat, whereas plywood often has some warping, even fresh from the factory. The downsides of MDF are that it's heavier, it's not as sturdy or as durable as plywood, it doesn't hold screws as well, and it can sag over time.
+Some cab builders use MDF (fiberboard) instead of plywood for the whole build.
+I prefer plywood, but MDF works too.
+Each material has some advantages over the other.
+MDF is cheaper, and it's nearly perfectly uniform in thickness and composition.
+MDF sheets also tend to be perfectly flat, whereas plywood often has some warping, even fresh from the factory.
+The downsides of MDF are that it's heavier, it's not as sturdy or as durable as plywood, it doesn't hold screws as well, and it can sag over time.
 
-Most commercial cabinets use a mix of plywood and particle board: plywood for the cab and backbox walls, and particle board for the cabinet floor and the back of the backbox. I'm normally in favor of faithfully replicating the original details, but in this case I see no benefit, since the particle board in the originals was purely for cost reduction and not for any functional reason. It's a worthwhile upgrade to use plywood for everything.
+Most commercial cabinets use a mix of plywood and particle board: plywood for the cab and backbox walls, and particle board for the cabinet floor and the back of the backbox.
+I'm normally in favor of faithfully replicating the original details, but in this case I see no benefit, since the particle board in the originals was purely for cost reduction and not for any functional reason.
+It's a worthwhile upgrade to use plywood for everything.
 
 *Hardware:* See xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] .
 
-I personally prefer to use real pinball parts wherever possible, instead of trying to improvise something out of common hardware parts. It can be a bit more expensive to use the real parts, but they tend to look better, and in many cases they're easier to work with because they're purpose-built for a specialized job. An exception is that many of the fasteners and generic nuts and bolts that you can buy anywhere. But even some of the generic-sounding hardware can be hard to find outside of pinball vendors. Anything that I listed with a Williams part number in the master list ( xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] ) is probably hard to find outside of pinball suppliers.
+I personally prefer to use real pinball parts wherever possible, instead of trying to improvise something out of common hardware parts.
+It can be a bit more expensive to use the real parts, but they tend to look better, and in many cases they're easier to work with because they're purpose-built for a specialized job.
+An exception is that many of the fasteners and generic nuts and bolts that you can buy anywhere.
+But even some of the generic-sounding hardware can be hard to find outside of pinball vendors.
+Anything that I listed with a Williams part number in the master list ( xref:cabParts.adoc#cabinetPartsList[Cabinet Parts List] ) is probably hard to find outside of pinball suppliers.
 
 *Tools:* See xref:cabTools.adoc#cabTools[Cabinet Building Tools] for recommendations on the woodworking tools you'll need for building the cabinet.
 
 == Choosing a cabinet design
 
-As far as I'm concerned, there's only one cabinet design that we need to concern ourselves with: the WPC cabinet. This is the cabinet that Williams (and its co-brands Bally and Midway) used for nearly all of their machines made during the 1990s, which were based on the electronics platform known as WPC, for Williams Pinball Controller. Thus the name "WPC cab". I don't know if Williams ever had an official internal name for this series of cabinets, but probably not; I don't think they thought of it like that. My guess is that they treated each game's cabinet as unique, as suggested by the unique part number assigned to each game's cab. So "WPC cabinet" is a made-up term of convenience, not an official name - and it's also not quite precise, in that the last dozen or so System 11 titles also used the same design. The wood shop apparently didn't coordinate their updates in lock-step with the electronics department. But even so, "WPC cab" is a pretty good name for our purposes, and other pinball people will probably know what you're talking about if you refer to it.
+As far as I'm concerned, there's only one cabinet design that we need to concern ourselves with: the WPC cabinet.
+This is the cabinet that Williams (and its co-brands Bally and Midway) used for nearly all of their machines made during the 1990s, which were based on the electronics platform known as WPC, for Williams Pinball Controller.
+Thus the name "WPC cab".
+I don't know if Williams ever had an official internal name for this series of cabinets, but probably not; I don't think they thought of it like that.
+My guess is that they treated each game's cabinet as unique, as suggested by the unique part number assigned to each game's cab.
+So "WPC cabinet" is a made-up term of convenience, not an official name - and it's also not quite precise, in that the last dozen or so System 11 titles also used the same design.
+The wood shop apparently didn't coordinate their updates in lock-step with the electronics department.
+But even so, "WPC cab" is a pretty good name for our purposes, and other pinball people will probably know what you're talking about if you refer to it.
 
-One good reason to use the WPC cabinet design is that it's by far the easiest to find parts for. Machines from this generation are still widely deployed, and they share a lot of the same parts (Williams quite intentionally re-used parts across titles to keep their own costs down), so there's plenty of demand for most of the common cabinet parts even today. If you design to the WPC specs, you'll be able to take advantage of that, since your machine will be compatible with the same readily-available parts. Using real pinball parts gives your machine an authentic look, and it's a lot easier than engineering and fabricating your own custom metal parts.
+One good reason to use the WPC cabinet design is that it's by far the easiest to find parts for.
+Machines from this generation are still widely deployed, and they share a lot of the same parts (Williams quite intentionally re-used parts across titles to keep their own costs down), so there's plenty of demand for most of the common cabinet parts even today.
+If you design to the WPC specs, you'll be able to take advantage of that, since your machine will be compatible with the same readily-available parts.
+Using real pinball parts gives your machine an authentic look, and it's a lot easier than engineering and fabricating your own custom metal parts.
 
-Another reason to use the WPC cabinet plan is that it still looks up-to-date, because most newer commercial machines are still using the same exterior design. Stern's latest machines still look almost identical, as do the machines from the boutique pinball makers like Jersey Jack and Spooky Pinball. This cabinet style is what you'll see almost every time you encounter a recent pinball title in an arcade or bar. A virtual cab following the same plan will look exactly like what everyone expects a real pinball machine to look like.
+Another reason to use the WPC cabinet plan is that it still looks up-to-date, because most newer commercial machines are still using the same exterior design.
+Stern's latest machines still look almost identical, as do the machines from the boutique pinball makers like Jersey Jack and Spooky Pinball.
+This cabinet style is what you'll see almost every time you encounter a recent pinball title in an arcade or bar.
+A virtual cab following the same plan will look exactly like what everyone expects a real pinball machine to look like.
 
-For a DIY project, you're always free to come up with something completely different, either to fit your particular needs or purely to be unique. If you have other ideas for how your cabinet should look, you can take as much or as little from the WPC design as suits you.
+For a DIY project, you're always free to come up with something completely different, either to fit your particular needs or purely to be unique.
+If you have other ideas for how your cabinet should look, you can take as much or as little from the WPC design as suits you.
 
-We provide detailed plans for the WPC design later in this section. Before we get to the plans, though, there are some variations that you might want to consider, so that you can customize the plans for your project's specific goals.
+We provide detailed plans for the WPC design later in this section.
+Before we get to the plans, though, there are some variations that you might want to consider, so that you can customize the plans for your project's specific goals.
 
 [#cabinetWidths]
 ===  Standard and Widebody cabinets
 
-The WPC design is what we usually call the "standard" cabinet, because Williams/Bally/Midway used this for most of the machines they shipped in the 1990s. However, they also used a variation of the plan with a slightly wider main cabinet, to accommodate a larger playfield. This wider variation was used for seven titles in all: _The Twilight Zone_ (1993), _Indiana Jones: The Pinball Adventure_ (1993), _Judge Dredd_ (1993), _Star Trek: The Next Generation_ (1993), _Popeye Saves the Earth_ (1994), _Demolition Man_ (1994), and _Red & Ted's Road Show_ (1994). The official marketing name for these games was "Superpin", but no one ever uses that term; everyone in the virtual pinball world calls these the "widebody" machines.
+The WPC design is what we usually call the "standard" cabinet, because Williams/Bally/Midway used this for most of the machines they shipped in the 1990s.
+However, they also used a variation of the plan with a slightly wider main cabinet, to accommodate a larger playfield.
+This wider variation was used for seven titles in all: _The Twilight Zone_ (1993), _Indiana Jones: The Pinball Adventure_ (1993), _Judge Dredd_ (1993), _Star Trek: The Next Generation_ (1993), _Popeye Saves the Earth_ (1994), _Demolition Man_ (1994), and _Red & Ted's Road Show_ (1994).
+The official marketing name for these games was "Superpin", but no one ever uses that term; everyone in the virtual pinball world calls these the "widebody" machines.
 
-The widebody design is identical to the standard WPC cabinet in almost every detail, except that the main cabinet is 2¾ inches wider than the standard body. All of the other dimensions are exactly the same as in the standard body.
+The widebody design is identical to the standard WPC cabinet in almost every detail, except that the main cabinet is 2¾ inches wider than the standard body.
+All of the other dimensions are exactly the same as in the standard body.
 
-A lot of people assume that the widebody WPC cabinet design had a corresponding "widebody backbox", but not so. Williams used the same backbox dimensions for their standard and widebody machines. In fact, my guess is that they chose the widebody width they did precisely because it's as wide as you can go without making the backbox wider. That doesn't mean that you can't customize the backbox size if you're using a widebody design, just that you don't necessarily have to. If you're going wider than wide, though - if your main cabinet outer width goes over about 25" - then you will have to widen the backbox, assuming you plan to use the WPC-style hinges. The backbox has to be at least 3.5" wider than the cabinet for the WPC-style hinges to work.
+A lot of people assume that the widebody WPC cabinet design had a corresponding "widebody backbox", but not so.
+Williams used the same backbox dimensions for their standard and widebody machines.
+In fact, my guess is that they chose the widebody width they did precisely because it's as wide as you can go without making the backbox wider.
+That doesn't mean that you can't customize the backbox size if you're using a widebody design, just that you don't necessarily have to.
+If you're going wider than wide, though - if your main cabinet outer width goes over about 25" - then you will have to widen the backbox, assuming you plan to use the WPC-style hinges.
+The backbox has to be at least 3.5" wider than the cabinet for the WPC-style hinges to work.
 
-Widebody machines require a wider lockbar and cover glass. Pinball vendors sell widebody versions of both that fit the Superpin cabinet dimensions, so you can still use off-the-shelf parts with this design. The widebody lockbar fits the standard lockbar receiver (the hardware piece that mounts in the cabinet to hold the lockbar in place), so you don't need a special version of the receiver. All of the other hardware is interchangeable with the standard body machines.
+Widebody machines require a wider lockbar and cover glass.
+Pinball vendors sell widebody versions of both that fit the Superpin cabinet dimensions, so you can still use off-the-shelf parts with this design.
+The widebody lockbar fits the standard lockbar receiver (the hardware piece that mounts in the cabinet to hold the lockbar in place), so you don't need a special version of the receiver.
+All of the other hardware is interchangeable with the standard body machines.
 
-Note that my plans in this section peg the standard-body cabinet exterior width at 21-7/8", which is what I read on the tape when I carefully measure my own original Williams cabinets, whereas most other Internet plans I've seen say it's 22". Maybe everyone else is rounding up, or maybe my cabs have shrunk a little bit over the years (they did all leave the factory more than 30 years ago). It's a pretty trivial difference, but I thought I'd mention it. The standard lockbar will fit in either case, but it might be a little snug on a 22" wide cabinet.
+Note that my plans in this section peg the standard-body cabinet exterior width at 21-7/8", which is what I read on the tape when I carefully measure my own original Williams cabinets, whereas most other Internet plans I've seen say it's 22".
+Maybe everyone else is rounding up, or maybe my cabs have shrunk a little bit over the years (they did all leave the factory more than 30 years ago).
+It's a pretty trivial difference, but I thought I'd mention it.
+The standard lockbar will fit in either case, but it might be a little snug on a 22" wide cabinet.
 
 ===  Custom width
 
@@ -278,17 +426,27 @@ In addition to the WPC standard-body and Superpin widebody designs, there's a th
 
 The main reasons to build to a custom width are to get an exact fit for your playfield TV, or to accommodate a TV that's even wider than what will fit in a WPC widebody cabinet.
 
-A custom width requires a custom lockbar and custom glass cover. As long as you use the standard cabinet length, you can still use all of the other off-the-shelf hardware.
+A custom width requires a custom lockbar and custom glass cover.
+As long as you use the standard cabinet length, you can still use all of the other off-the-shelf hardware.
 
-To order a custom lockbar, contact link:https://www.virtuapin.net/[VirtuaPin] . They're the only current source I know of, so hopefully they'll keep selling them. Expect to pay about double the price of the standard lockbar (which I think is a pretty reasonable premium for a made-to-order metal part that has to look nice).
+To order a custom lockbar, contact link:https://www.virtuapin.net/[VirtuaPin] .
+They're the only current source I know of, so hopefully they'll keep selling them.
+Expect to pay about double the price of the standard lockbar (which I think is a pretty reasonable premium for a made-to-order metal part that has to look nice).
 
-The lockbar is mated with a second part known as the "lockbar receiver". The receiver does _not_ need to be customized for different widths; the standard receiver will work with any lockbar width, as long as your cabinet is wide enough to accommodate it (a minimum of 19½ inches inside width) . Keep the minimum size in mind if you're designing a mini-cab that's narrower than the standard-body cabinets.
+The lockbar is mated with a second part known as the "lockbar receiver".
+The receiver does _not_ need to be customized for different widths; the standard receiver will work with any lockbar width, as long as your cabinet is wide enough to accommodate it (a minimum of 19½ inches inside width) .
+Keep the minimum size in mind if you're designing a mini-cab that's narrower than the standard-body cabinets.
 
-Pinball vendors don't sell custom glass, but you should be able to order it from a local window glass dealer. Any glass shop should be able to fabricate a custom glass sheet for you in almost any desired size. Once you know the inside width of your cabinet, order a tempered glass sheet in the required width, by 43" length, by 3/16" thickness.
+Pinball vendors don't sell custom glass, but you should be able to order it from a local window glass dealer.
+Any glass shop should be able to fabricate a custom glass sheet for you in almost any desired size.
+Once you know the inside width of your cabinet, order a tempered glass sheet in the required width, by 43" length, by 3/16" thickness.
 
-When calculating the required width of your glass, take into account the overhang beyond the inside dimensions. The easy rule of thumb is to make the glass *½" wider* than the *inside width* of your cabinet (that is, the distance between the insides of the side walls). For example, the standard body cabinet has an inside wall-to-wall width of 20½ inches, so the standard playfield glass is 21" wide.
+When calculating the required width of your glass, take into account the overhang beyond the inside dimensions.
+The easy rule of thumb is to make the glass *½" wider* than the *inside width* of your cabinet (that is, the distance between the insides of the side walls).
+For example, the standard body cabinet has an inside wall-to-wall width of 20½ inches, so the standard playfield glass is 21" wide.
 
-One more tip about ordering custom glass: ask the vendor to omit any marking that identifies the glass as tempered. Glass shops sometimes include a certification marking on tempered glass, in case you're planning to use it for something like a shower enclosure where tempered glass is legally required by building codes. You don't need any such marking for legal purposes in a virtual cab, so you'll probably prefer to avoid the visual clutter.
+One more tip about ordering custom glass: ask the vendor to omit any marking that identifies the glass as tempered.
+Glass shops sometimes include a certification marking on tempered glass, in case you're planning to use it for something like a shower enclosure where tempered glass is legally required by building codes. You don't need any such marking for legal purposes in a virtual cab, so you'll probably prefer to avoid the visual clutter.
 
 ===  How to choose a cabinet width
 

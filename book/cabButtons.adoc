@@ -5,13 +5,24 @@ One of the top ten questions that every new cab builder asks on the forums is:
 
 "Which buttons should I include?"
 
-I think most of us start off thinking the answer is so obvious that it's not even worth asking the question: why, the same buttons they put on _real_ pinball machines, of course! But as soon as you start actually designing your cab, it becomes apparent that it's not as simple as it seems. Some of the complications:
+I think most of us start off thinking the answer is so obvious that it's not even worth asking the question: why, the same buttons they put on _real_ pinball machines, of course! But as soon as you start actually designing your cab, it becomes apparent that it's not as simple as it seems.
+Some of the complications:
 
-* Real machines don't all have the same buttons. There are three buttons that are pretty much universal: the two flipper buttons and the Start button. Beyond that, different machines have their own extra buttons, some common and some unique. Some common buttons that appear on many machines are the Magna Save buttons (alongside the flipper buttons), a flipper-like button on top of the lock bar (often labeled "Fire"), an Extra Ball or "Buy In" button on the front of the cabinet, and a Launch Ball button in place of the plunger. If you want to be able to play re-creations of tables with those extra buttons, you'll need some equivalent of the extra buttons on your cab.
-* Modern pinball machines have some additional, hidden buttons, inside the coin door, that let the operator access the game's setup menus. It's useful to have these on a virtual cab, too, because you're going to be the operator and will want to be able to access the setup menus.
-* Virtual pinball needs some additional controls for the "virtual" aspect, such as inserting virtual coins, navigating the game selection menus, viewing game instruction cards, viewing flyers, exiting an active game and returning to the game selection menu, and controlling the PC audio volume. Many of these functions can be comfortably assigned to the regular pinball buttons (flippers, Start, etc), so you don't actually need a big array of extra controls, but most people find it necessary to have at least one extra button, for the special function unique to virtual pinball of exiting out of the current table.
+* Real machines don't all have the same buttons.
+There are three buttons that are pretty much universal: the two flipper buttons and the Start button.
+Beyond that, different machines have their own extra buttons, some common and some unique.
+Some common buttons that appear on many machines are the Magna Save buttons (alongside the flipper buttons), a flipper-like button on top of the lock bar (often labeled "Fire"), an Extra Ball or "Buy In" button on the front of the cabinet, and a Launch Ball button in place of the plunger.
+If you want to be able to play re-creations of tables with those extra buttons, you'll need some equivalent of the extra buttons on your cab.
+* Modern pinball machines have some additional, hidden buttons, inside the coin door, that let the operator access the game's setup menus.
+It's useful to have these on a virtual cab, too, because you're going to be the operator and will want to be able to access the setup menus.
+* Virtual pinball needs some additional controls for the "virtual" aspect, such as inserting virtual coins, navigating the game selection menus, viewing game instruction cards, viewing flyers, exiting an active game and returning to the game selection menu, and controlling the PC audio volume.
+Many of these functions can be comfortably assigned to the regular pinball buttons (flippers, Start, etc), so you don't actually need a big array of extra controls, but most people find it necessary to have at least one extra button, for the special function unique to virtual pinball of exiting out of the current table.
 
-This section will try to help you answer that big question about which buttons to include. I don't want to presume to dictate a single slate of buttons that everyone should use. Tastes vary about whether you should have lots of buttons or as few as possible, and some cabs have more space than others available for buttons. So instead of trying to answer the question with a list of "these are the buttons you should include", we'll go over all of the buttons commonly used on virtual cabs, even the ones only rarely seen, and we'll explain each one's purpose and offer an opinion on each one's importance. (There is, however, a summary of recommendations xref:#summaryOfButtonRecs[below] , in case you want to cut to the case.)
+This section will try to help you answer that big question about which buttons to include.
+I don't want to presume to dictate a single slate of buttons that everyone should use.
+Tastes vary about whether you should have lots of buttons or as few as possible, and some cabs have more space than others available for buttons.
+So instead of trying to answer the question with a list of "these are the buttons you should include", we'll go over all of the buttons commonly used on virtual cabs, even the ones only rarely seen, and we'll explain each one's purpose and offer an opinion on each one's importance.
+(There is, however, a summary of recommendations xref:#summaryOfButtonRecs[below] , in case you want to cut to the case.)
 
 Later in the section, after surveying all of the button functions, we'll get into the details of the equipment to use for each type of button, including what to buy and how to install it.
 
@@ -19,81 +30,164 @@ Later in the section, after surveying all of the button functions, we'll get int
 
 When you add up all of the buttons used across different real pinball machines, plus all of the special buttons for virtual pinball needs, you get a pretty long list.
 
-One way to cover all the bases is to simply include every button you can think of. It's impractical to include every unique button on every machine - there are just too many of those - but you can include all of the special buttons for all of the games you think you might want to play. This "maximalist" approach gives you the best chance of replicating the original playing experience for all of the different games. It also gives you lots of blinking lights, and we all like shiny things.
+One way to cover all the bases is to simply include every button you can think of.
+It's impractical to include every unique button on every machine - there are just too many of those - but you can include all of the special buttons for all of the games you think you might want to play.
+This "maximalist" approach gives you the best chance of replicating the original playing experience for all of the different games.
+It also gives you lots of blinking lights, and we all like shiny things.
 
-Some cab builders prefer a more "minimalist" approach, with the aim of replicating the appearance of a real pinball machine more closely. Most real pinballs have only a few buttons, so a cabinet with too many extra buttons can start to look conspicuously "virtual". The minimalist tries to limit exterior buttons to about the same number found on most real machine, for a more authentic appearance.
+Some cab builders prefer a more "minimalist" approach, with the aim of replicating the appearance of a real pinball machine more closely.
+Most real pinballs have only a few buttons, so a cabinet with too many extra buttons can start to look conspicuously "virtual".
+The minimalist tries to limit exterior buttons to about the same number found on most real machine, for a more authentic appearance.
 
 Fortunately for the minimalists, the modern software environment makes it possible to access all of the important functions with only a few extra buttons beyond the core set found on all real pinballs.
 
-If you're a determined maximalist, note that the practical limits of available space might cramp your style a bit. A standard cabinet with a coin door can really only fit a maximum of four buttons on the front panel, in addition to the plunger, the Launch Ball button, and the coin door controls.
+If you're a determined maximalist, note that the practical limits of available space might cramp your style a bit.
+A standard cabinet with a coin door can really only fit a maximum of four buttons on the front panel, in addition to the plunger, the Launch Ball button, and the coin door controls.
 
-I personally favor a middle path, closer to the minimalist side, but allowing a few extra buttons for the sake of the broadest playability. With this in mind, the list below has my recommendations for which buttons to include and which to skip, or at least find a way to hide.
+I personally favor a middle path, closer to the minimalist side, but allowing a few extra buttons for the sake of the broadest playability.
+With this in mind, the list below has my recommendations for which buttons to include and which to skip, or at least find a way to hide.
 
 == Master list of buttons
 
-To help you decide which buttons you need, whichever camp you're in, here's a list of all of the common and less common virtual cab buttons, how important they are (in my opinion), and where they're usually situated. The list is roughly in order of importance, from most important to least.
+To help you decide which buttons you need, whichever camp you're in, here's a list of all of the common and less common virtual cab buttons, how important they are (in my opinion), and where they're usually situated.
+The list is roughly in order of importance, from most important to least.
 
-*  *Power button:*  _Essential._ Pushbutton, bottom of cab, front right side. +On the real machines, the power is controlled with a toggle switch wired to the main power supply line, located in a little recess on the bottom of the cab at the front right corner. In a virtual cab, we usually replace this with a "soft" power button in the same location, wired to the PC motherboard's power control header. See "Floor" in xref:cabBody.adoc#softPowerButton[Cabinet Body] for details on installing a pushbutton in the proper spot, and xref:powerSwitching.adoc#powerSwitching[Power Switching] for more on setting up the PC soft power controls.
+*  *Power button:*  _Essential._ Pushbutton, bottom of cab, front right side.
++On the real machines, the power is controlled with a toggle switch wired to the main power supply line, located in a little recess on the bottom of the cab at the front right corner.
+In a virtual cab, we usually replace this with a "soft" power button in the same location, wired to the PC motherboard's power control header.
+See "Floor" in xref:cabBody.adoc#softPowerButton[Cabinet Body] for details on installing a pushbutton in the proper spot, and xref:powerSwitching.adoc#powerSwitching[Power Switching] for more on setting up the PC soft power controls.
 * image:images/start-button-small.png[""]
-*Start:*  _Essential._ Round pushbutton, front panel, top left. +This is a core button found on every real pinball. Push it to start the game. Most "front ends" (the game menu software that lets you select games to play) also use this as a "select" button when navigating through menus.
-*  *Flippers:*  _Essential._ Standard flipper buttons, sides of cab. +These are core buttons found on every real pinball.
+*Start:*  _Essential._ Round pushbutton, front panel, top left.
++This is a core button found on every real pinball.
+Push it to start the game.
+Most "front ends" (the game menu software that lets you select games to play) also use this as a "select" button when navigating through menus.
+*  *Flippers:*  _Essential._ Standard flipper buttons, sides of cab.
++These are core buttons found on every real pinball.
 * image:images/exit-button-small.png[""]
-*Exit:*  _Essential._ Round pushbutton, front panel, below Start. +You won't find this button on real pinballs; you "exit" a real pinball game by walking away. But it's a must for a virtual cab. This button exits the current game and returns to the "front end" game selection menu. Front ends typically also use this to navigate within their menu structure (to back out of a menu or acknowledge a pop-up message, for example).
+*Exit:*  _Essential._ Round pushbutton, front panel, below Start.
++You won't find this button on real pinballs; you "exit" a real pinball game by walking away.
+But it's a must for a virtual cab.
+This button exits the current game and returns to the "front end" game selection menu.
+Front ends typically also use this to navigate within their menu structure (to back out of a menu or acknowledge a pop-up message, for example).
 * image:images/coin-in-button-small.png[""]
-*Coin In:*  _Essential._ No standard location, but commonly either a round pushbutton on the front panel, or repurposing the Coin Reject buttons on the coin door slots. +This button lets you simulate inserting a coin to add credits to the current game. Even though you'll probably be setting most of your games on Free Play via the operator menus, a Coin button is still needed in some cases, since some older tables simply don't have a Free Play option.
+*Coin In:*  _Essential._ No standard location, but commonly either a round pushbutton on the front panel, or repurposing the Coin Reject buttons on the coin door slots.
++This button lets you simulate inserting a coin to add credits to the current game.
+Even though you'll probably be setting most of your games on Free Play via the operator menus, a Coin button is still needed in some cases, since some older tables simply don't have a Free Play option.
 
-If you have a full coin door with coin slots, you don't absolutely need a separate button for this, since you can use actual coins instead, just like in a real arcade machine. Most coin doors don't come with coin mechs installed, so you'll probably have to separately purchase the mechs (about $10 each for US quarter acceptors) and install them yourself. You'll also have to wire the coin slot microswitches to your key encoder, which is just like wiring a button switch. This is all covered in detail in xref:coinDoor.adoc#coinDoor[Coin Door] .
+If you have a full coin door with coin slots, you don't absolutely need a separate button for this, since you can use actual coins instead, just like in a real arcade machine.
+Most coin doors don't come with coin mechs installed, so you'll probably have to separately purchase the mechs (about $10 each for US quarter acceptors) and install them yourself.
+You'll also have to wire the coin slot microswitches to your key encoder, which is just like wiring a button switch.
+This is all covered in detail in xref:coinDoor.adoc#coinDoor[Coin Door] .
 
-Even if you do install and wire physical coin acceptors, you might still want to add a separate Coin In button, since a lot of people find it tedious to feed in quarters once the novelty wears off. The most obvious way to add a Coin In function is to simply add one more round pushbutton to the front panel. If you don't like the added visual clutter of another button, though, there's a neat way to hide it in plain sight. Specifically, you can use the "Reject Coin" buttons in your coin slots as your virtual coin buttons. To do that, you have to add microswitches behind the buttons, as explained in xref:coinDoor.adoc#coinDoor[Coin Door] .
+Even if you do install and wire physical coin acceptors, you might still want to add a separate Coin In button, since a lot of people find it tedious to feed in quarters once the novelty wears off.
+The most obvious way to add a Coin In function is to simply add one more round pushbutton to the front panel.
+If you don't like the added visual clutter of another button, though, there's a neat way to hide it in plain sight.
+Specifically, you can use the "Reject Coin" buttons in your coin slots as your virtual coin buttons.
+To do that, you have to add microswitches behind the buttons, as explained in xref:coinDoor.adoc#coinDoor[Coin Door] .
 
-My favorite option is to include _both_ the real coin mechanisms _and_ the Reject button switches. That way you can use real coins when you're in the mood for the full arcade experience, and just push the buttons when you're not.
+My favorite option is to include _both_ the real coin mechanisms _and_ the Reject button switches.
+That way you can use real coins when you're in the mood for the full arcade experience, and just push the buttons when you're not.
 
-*  *Magna Save:*  _Essential-ish._ Standard flipper buttons, sides of cab. +This is a second set of buttons on the sides of the cabinet, just behind or below the flipper buttons, using the same button style as the flipper buttons. Everyone calls these "Magna Save" buttons, because a few games in the 1980s famously used such buttons for a magnetic ball-save feature with that trademarked name. Calling them Magna Save buttons is a little misleading, because similar buttons were used on many other pinball machines over the years for all sorts of different special features, but we really don't have a better name, so Magna Save it is.
+*  *Magna Save:*  _Essential-ish._ Standard flipper buttons, sides of cab.
++This is a second set of buttons on the sides of the cabinet, just behind or below the flipper buttons, using the same button style as the flipper buttons.
+Everyone calls these "Magna Save" buttons, because a few games in the 1980s famously used such buttons for a magnetic ball-save feature with that trademarked name.
+Calling them Magna Save buttons is a little misleading, because similar buttons were used on many other pinball machines over the years for all sorts of different special features, but we really don't have a better name, so Magna Save it is.
 
-I'm grading these "Essential-ish", because you can get by without them in the majority of games. But if you omit them, you'll give up some important features in a lot of games - many more games than you'd think based on the Magna Save name. Dozens of real tables featured similar buttons. Even if you're a hard-core minimalist about buttons on your cab, there's a case to be made that these buttons appear on enough real pinball machines to be considered part of the basic set of authentic pinball controls. But the real reason to include them is that an even greater number of Visual Pinball tables rely on them for special game-specific features, because these buttons have become the standard fallback for emulating unique controls. You really need these buttons on your cab if you want to enjoy full playability for many Visual Pinball tables. To see what I mean, take a look at the lists in xref:magnaSaveButtons.adoc#magnaSaveButtons[Tables with MagnaSave Buttons] .
+I'm grading these "Essential-ish", because you can get by without them in the majority of games.
+But if you omit them, you'll give up some important features in a lot of games - many more games than you'd think based on the Magna Save name.
+Dozens of real tables featured similar buttons.
+Even if you're a hard-core minimalist about buttons on your cab, there's a case to be made that these buttons appear on enough real pinball machines to be considered part of the basic set of authentic pinball controls.
+But the real reason to include them is that an even greater number of Visual Pinball tables rely on them for special game-specific features, because these buttons have become the standard fallback for emulating unique controls.
+You really need these buttons on your cab if you want to enjoy full playability for many Visual Pinball tables.
+To see what I mean, take a look at the lists in xref:magnaSaveButtons.adoc#magnaSaveButtons[Tables with MagnaSave Buttons] .
 
 * image:images/tiltbob-small.png[""]
-*Tilt bob:*  _Essential-ish._ Inside the cab. +The tilt bob is a little mechanical pendulum that detects excess cabinet motion. This isn't exactly a button, but it acts like one in almost every way - you connect it to the key encoder like a button, and it provides input to the software as though it were a button.
+*Tilt bob:*  _Essential-ish._ Inside the cab.
++The tilt bob is a little mechanical pendulum that detects excess cabinet motion.
+This isn't exactly a button, but it acts like one in almost every way - you connect it to the key encoder like a button, and it provides input to the software as though it were a button.
 
-Don't confuse the tilt bob with a nudge sensor. The purpose of a tilt bob isn't to simulate nudges in the software, but rather to detect when you're nudging _too much_ . The tilt bob serves exactly the same function in a virtual cab that it serves in a real pinball machine. See xref:tilt.adoc#tilt[Nudge & Tilt] for a full discussion of the distinction between "nudging" and "tilting", and the tilt bob's role in this.
+Don't confuse the tilt bob with a nudge sensor.
+The purpose of a tilt bob isn't to simulate nudges in the software, but rather to detect when you're nudging _too much_ .
+The tilt bob serves exactly the same function in a virtual cab that it serves in a real pinball machine.
+See xref:tilt.adoc#tilt[Nudge & Tilt] for a full discussion of the distinction between "nudging" and "tilting", and the tilt bob's role in this.
 
-Visual Pinball has its own simulated tilt bob, but I strongly recommend installing a physical tilt bob anyway. VP's version just isn't very realistic. The interaction between a real cabinet's motion and the tilt bob's motion is complex; it's one of those compound pendulums that's rather difficult to model, and VP doesn't really try. And I don't see why it should, when we can so easily get _exactly_ the right handling by just hooking up a real tilt bob! That's why I rank this as practically essential. And it doesn't affect aesthetics, since it goes inside the cab.
+Visual Pinball has its own simulated tilt bob, but I strongly recommend installing a physical tilt bob anyway.
+VP's version just isn't very realistic.
+The interaction between a real cabinet's motion and the tilt bob's motion is complex; it's one of those compound pendulums that's rather difficult to model, and VP doesn't really try.
+And I don't see why it should, when we can so easily get _exactly_ the right handling by just hooking up a real tilt bob! That's why I rank this as practically essential.
+And it doesn't affect aesthetics, since it goes inside the cab.
 
 *  *Launch Ball:*  _Nice to have if you have a plunger; essential if not._  image:images/LaunchBallSmall.png[""]
 Large round pushbutton, front panel, right.
 
-A fair number of games from the 1990s used a Launch Ball button in place of a regular plunger. This was usually a large round pushbutton, but some games used unique devices instead, such as a gun trigger on _Terminator 2: Judgment Day_ or a gear shift lever on _The Getaway: High Speed 2_ . On the real machines that use such a thing, the button or device is typically positioned exactly where the plunger would normally go, at the top right corner of the front panel.
+A fair number of games from the 1990s used a Launch Ball button in place of a regular plunger.
+This was usually a large round pushbutton, but some games used unique devices instead, such as a gun trigger on _Terminator 2: Judgment Day_ or a gear shift lever on _The Getaway: High Speed 2_ .
+On the real machines that use such a thing, the button or device is typically positioned exactly where the plunger would normally go, at the top right corner of the front panel.
 
-For a virtual cab, this button is optional if you're going to install a plunger using the Pinscape Controller or the plunger kit from Zeb's Boards. Both of those let you simulate the Launch Ball button using the plunger, so you don't absolutely need the button. Even so, I still recommend including the button in addition to the plunger, since it replicates the original playing experience more faithfully for Launch Ball tables.
+For a virtual cab, this button is optional if you're going to install a plunger using the Pinscape Controller or the plunger kit from Zeb's Boards.
+Both of those let you simulate the Launch Ball button using the plunger, so you don't absolutely need the button.
+Even so, I still recommend including the button in addition to the plunger, since it replicates the original playing experience more faithfully for Launch Ball tables.
 
-Alternatively, you can use a Launch button _instead of_ a regular plunger. All of the PC pinball simulators are designed with desktop use in mind, so they all let you control the on-screen plunger with a key press. You can simply map the Launch Ball button to the software plunger key and dispense with the real plunger. This saves front panel space and the complexity and cost of a real plunger.
+Alternatively, you can use a Launch button _instead of_ a regular plunger.
+All of the PC pinball simulators are designed with desktop use in mind, so they all let you control the on-screen plunger with a key press.
+You can simply map the Launch Ball button to the software plunger key and dispense with the real plunger.
+This saves front panel space and the complexity and cost of a real plunger.
 
-In my opinion, the best option is to have _both_ a regular plunger and a Launch Ball button. Controlling the on-screen plunger with a button is possible, but it's a really poor substitute for a genuine plunger. Besides, the plunger is a defining feature of pinball; for me it's simply a must in a virtual cab. If you do choose to include both the plunger and the button, the button can go just above or just below the plunger. I prefer to put the plunger in its standard location on a real pinball, which means the button has to go below it. But some people prefer putting the button above the plunger to make it easier to see and reach, which requires lowering the plunger by a couple of inches from the standard position to make room for the button. I'm not wild about the unusual appearance of the lowered plunger, but some cab builders have to lower the plunger anyway because the normal position is blocked by the playfield TV.
+In my opinion, the best option is to have _both_ a regular plunger and a Launch Ball button.
+Controlling the on-screen plunger with a button is possible, but it's a really poor substitute for a genuine plunger.
+Besides, the plunger is a defining feature of pinball; for me it's simply a must in a virtual cab.
+If you do choose to include both the plunger and the button, the button can go just above or just below the plunger.
+I prefer to put the plunger in its standard location on a real pinball, which means the button has to go below it.
+But some people prefer putting the button above the plunger to make it easier to see and reach, which requires lowering the plunger by a couple of inches from the standard position to make room for the button.
+I'm not wild about the unusual appearance of the lowered plunger, but some cab builders have to lower the plunger anyway because the normal position is blocked by the playfield TV.
 
-*  *Audio volume:*  _Recommended._ No standard location; preferably hidden. +I find that I adjust the audio volume quite frequently on my cab, so I very much like have a way to do this conveniently. Getting out the keyboard or mouse or opening up the cab don't count as convenient, so some kind of external control for this is recommended.
+*  *Audio volume:*  _Recommended._ No standard location; preferably hidden.
++I find that I adjust the audio volume quite frequently on my cab, so I very much like have a way to do this conveniently.
+Getting out the keyboard or mouse or opening up the cab don't count as convenient, so some kind of external control for this is recommended.
 
 Some people like to use the straightforward approach of adjusting the volume via the amplifier's volume knob, so they locate the amp somewhere easily accessible.
 
-My preference is to control the audio volume via external cabinet buttons for Volume Up and Volume Down. This is possible if you use some software to provide a keyboard interface to the Windows master line-out volume level, such as my link:http://mjrnet.org/pinscape/PinVol.html[PinVol] utility.
+My preference is to control the audio volume via external cabinet buttons for Volume Up and Volume Down.
+This is possible if you use some software to provide a keyboard interface to the Windows master line-out volume level, such as my link:http://mjrnet.org/pinscape/PinVol.html[PinVol] utility.
 
-If your keyboard encoder has the concept of a "Shift" button (Pinscape and the i-Pac encoders do), you don't need separate physical buttons for volume. You can instead double up some of the regular buttons, using them as volume controls in addition to their normal functions. This is the approach I use myself, and I like it because it makes the volume controls easily accessible without requiring any extra physical buttons. I use the right MagnaSave/flipper buttons as Volume Up/Down buttons, in combination with my Extra Ball button as the Shift button. That is, when I press and hold Extra Ball, I can use the right buttons to adjust the volume. Easy, convenient, and requires no extra buttons.
+If your keyboard encoder has the concept of a "Shift" button (Pinscape and the i-Pac encoders do), you don't need separate physical buttons for volume.
+You can instead double up some of the regular buttons, using them as volume controls in addition to their normal functions.
+This is the approach I use myself, and I like it because it makes the volume controls easily accessible without requiring any extra physical buttons.
+I use the right MagnaSave/flipper buttons as Volume Up/Down buttons, in combination with my Extra Ball button as the Shift button.
+That is, when I press and hold Extra Ball, I can use the right buttons to adjust the volume.
+Easy, convenient, and requires no extra buttons.
 
-If you prefer separate, physical Volume Up/Down buttons, where do they go? There's no standard location for these, but even the maximalists seem to agree that these particular buttons should be hidden. Some cab builders accomplish this by putting them inside the coin door. That's a little too inconvenient, in my opinion, for something I access so often. A better option is the bottom of the cabinet, near the front edge: that puts them out of sight, but they're easily accessible and you can find them by feel.
+If you prefer separate, physical Volume Up/Down buttons, where do they go? There's no standard location for these, but even the maximalists seem to agree that these particular buttons should be hidden.
+Some cab builders accomplish this by putting them inside the coin door.
+That's a little too inconvenient, in my opinion, for something I access so often.
+A better option is the bottom of the cabinet, near the front edge: that puts them out of sight, but they're easily accessible and you can find them by feel.
 
-Another option that you might prefer is a knob that sends volume up/down keystrokes to the PC. See the vpforums thread link:https://www.vpforums.org/index.php?showtopic=42665.html[Coin Door Volume Control] for a way to build such a knob and mount it on the coin door.
+Another option that you might prefer is a knob that sends volume up/down keystrokes to the PC.
+See the vpforums thread link:https://www.vpforums.org/index.php?showtopic=42665.html[Coin Door Volume Control] for a way to build such a knob and mount it on the coin door.
 
-*  *Coin door position switch:*  _Recommended._ Inside the coin door. +The real machines have a switch inside the coin door that senses whether the door is open or closed, like the switch in a refrigerator that turns on the light when you open the door. I'm sure this seems like a ridiculously nitpicky detail, but it's actually important, because a lot of the ROM software on the modern games requires the signal from this switch to access the service menus. (They're so insistent about it because they use it as a safety measure, to cut off the high voltage power supply when the operator is working inside the machine.) Installing the switch to match the software's expectations just makes things easier, and it's not difficult or expensive to install. For full details, see "Coin door position switch" in xref:coinDoor.adoc#coinDoorPositionSwitch[Coin Door] .
+*  *Coin door position switch:*  _Recommended._ Inside the coin door.
++The real machines have a switch inside the coin door that senses whether the door is open or closed, like the switch in a refrigerator that turns on the light when you open the door.
+I'm sure this seems like a ridiculously nitpicky detail, but it's actually important, because a lot of the ROM software on the modern games requires the signal from this switch to access the service menus.
+(They're so insistent about it because they use it as a safety measure, to cut off the high voltage power supply when the operator is working inside the machine.) Installing the switch to match the software's expectations just makes things easier, and it's not difficult or expensive to install.
+For full details, see "Coin door position switch" in xref:coinDoor.adoc#coinDoorPositionSwitch[Coin Door] .
 
 [#fireButton]
-*  *Fire!:*  _Nice to have; essential for Stern fans._ Top center of lockdown bar. image:images/FireButton.png[""]
-Many newer Stern games (2005 to present) feature this extra button on top of the lockdown bar, usually centered side to side. (The lockdown bar is the metal piece at the front edge holding the cover glass down.) The button itself is usually a clear flipper button and usually has a lamp inside.
+*  *Fire!:*  _Nice to have; essential for Stern fans._ Top center of lockdown bar.
+image:images/FireButton.png[""]
+Many newer Stern games (2005 to present) feature this extra button on top of the lockdown bar, usually centered side to side.
+(The lockdown bar is the metal piece at the front edge holding the cover glass down.) The button itself is usually a clear flipper button and usually has a lamp inside.
 
-Up until recently, I think many cab builders considered the Fire button to be one of those special, game-specific buttons that isn't widely enough used to justify including it as a physical button. But it's not _that_ game-specific any more, given that nearly every newer Stern title has one. I think it's on its way to becoming a new core button on the strength of Stern's consistent use, and because it's just a good location for an extra button. It's visually appealing even if you're in the minimalist camp, and it's easy to reach during play.
+Up until recently, I think many cab builders considered the Fire button to be one of those special, game-specific buttons that isn't widely enough used to justify including it as a physical button.
+But it's not _that_ game-specific any more, given that nearly every newer Stern title has one.
+I think it's on its way to becoming a new core button on the strength of Stern's consistent use, and because it's just a good location for an extra button.
+It's visually appealing even if you're in the minimalist camp, and it's easy to reach during play.
 
-The complication is that you either need a special (more expensive) version of both the lockbar and receiver that are pre-drilled to accept the button, or you need to modify the standard ones. See "Fire button" in xref:cabHardware.adoc#lockbarFireButton[Cabinet Hardware Installation] for more on finding the required parts.
+The complication is that you either need a special (more expensive) version of both the lockbar and receiver that are pre-drilled to accept the button, or you need to modify the standard ones.
+See "Fire button" in xref:cabHardware.adoc#lockbarFireButton[Cabinet Hardware Installation] for more on finding the required parts.
 
 * image:images/ServiceButtons.png[""]
-*Service buttons:*  _Nice to have._ Inside the coin door. +If you're using a real coin door, it will probably come with a little "service button" panel pre-installed on the inside of the door. Modern coin doors for WPC and Stern machines have four buttons here; older 1980s games usually had three buttons. On a real machine, these let the operator access the setup menus for the game, which are used adjust pricing and feature settings and to access self-diagnostics. These menus are where you set up Free Play, for example, or change from 3-ball to 5-ball play. In a virtual cab, you can access the same menus via the authentic buttons if you have them, by connecting the buttons to your key encoder.
+*Service buttons:*  _Nice to have._ Inside the coin door.
++If you're using a real coin door, it will probably come with a little "service button" panel pre-installed on the inside of the door. Modern coin doors for WPC and Stern machines have four buttons here; older 1980s games usually had three buttons. On a real machine, these let the operator access the setup menus for the game, which are used adjust pricing and feature settings and to access self-diagnostics. These menus are where you set up Free Play, for example, or change from 3-ball to 5-ball play. In a virtual cab, you can access the same menus via the authentic buttons if you have them, by connecting the buttons to your key encoder.
 
 If you don't have a real coin door, or it doesn't include the service buttons, you can access the service menus via your PC keyboard. This isn't something you have to do very often, so I don't consider these buttons to be essential. But I do consider them to be a big convenience that I wouldn't want to do without on my own machine. Assuming you have a coin door, these buttons don't affect the aesthetics, since they're hidden inside the machine.
 

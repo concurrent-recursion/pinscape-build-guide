@@ -2,65 +2,133 @@
 = Coin Door
 
 image::images/CoinDoor.png[""]
-If you want your pin cab to look authentic, a standard coin door is a must. The coin door has been a fixture on pinballs since the 1950s, and the design has been fairly uniform since the 1980s. It's so ubiquitous that I'd consider it part of what makes a pinball machine look like a pinball machine. Even if you haven't taken conscious notice of the coin doors on real machines up until now, you've probably seen them often enough that you'd notice that something was missing if you didn't include one on your virtual cab.
+If you want your pin cab to look authentic, a standard coin door is a must.
+The coin door has been a fixture on pinballs since the 1950s, and the design has been fairly uniform since the 1980s.
+It's so ubiquitous that I'd consider it part of what makes a pinball machine look like a pinball machine.
+Even if you haven't taken conscious notice of the coin doors on real machines up until now, you've probably seen them often enough that you'd notice that something was missing if you didn't include one on your virtual cab.
 
-Beyond the cosmetic value, the coin door also has some practical, functional features that make it worth including. If you've only experienced pinball as a player, as opposed to as an owner or operator, you probably only see the coin door as the place you feed in quarters. But for a machine you own and operate, which your cab will be, the coin door actually has some other important functions.
+Beyond the cosmetic value, the coin door also has some practical, functional features that make it worth including.
+If you've only experienced pinball as a player, as opposed to as an owner or operator, you probably only see the coin door as the place you feed in quarters.
+But for a machine you own and operate, which your cab will be, the coin door actually has some other important functions.
 
-For one thing, the coin door is the access port for opening the machine up for maintenance work. Opening the coin door lets you access the lever that releases the lock bar, which in turn lets you take off the top glass, which in turn lets access the playfield, and (on a real machine) lift up the playfield to get access to its underside and to the interior of the cabinet.
+For one thing, the coin door is the access port for opening the machine up for maintenance work.
+Opening the coin door lets you access the lever that releases the lock bar, which in turn lets you take off the top glass, which in turn lets access the playfield, and (on a real machine) lift up the playfield to get access to its underside and to the interior of the cabinet.
 
-The coin door is also the place where you'll find the "service buttons": a cluster of three or four push-buttons inside the coin door, which are let you access the operator menus in ROM-based tables. These menus are where you set the game options: Free Play mode, 3 ball or 5 ball mode, replays as extra balls, and so on. In a virtual cab, you can always use your PC keyboard to access the menus, so the physical menu buttons inside the coin door aren't absolutely required, but I think they're a lot more convenient.
+The coin door is also the place where you'll find the "service buttons": a cluster of three or four push-buttons inside the coin door, which are let you access the operator menus in ROM-based tables.
+These menus are where you set the game options: Free Play mode, 3 ball or 5 ball mode, replays as extra balls, and so on.
+In a virtual cab, you can always use your PC keyboard to access the menus, so the physical menu buttons inside the coin door aren't absolutely required, but I think they're a lot more convenient.
 
-The inside of the coin door is also an excellent place to conceal any added custom controls of your own. Some people put the volume knob for their audio amplifier here, for example. It's obviously not a great place for anything you'll access frequently, but it's ideal for any operator controls that you only need to access once in a while for setup purposes.
+The inside of the coin door is also an excellent place to conceal any added custom controls of your own.
+Some people put the volume knob for their audio amplifier here, for example.
+It's obviously not a great place for anything you'll access frequently, but it's ideal for any operator controls that you only need to access once in a while for setup purposes.
 
-Finally, the coin door is useful for its nominal purpose as the place to insert coins. Even for a virtual cab, it's useful to be able to feed in quarters - either for real or in a virtual way, such as by pushing a button. In either case, the coin door is the ideal place for the coin chutes and/or coin buttons. The reason it's important to have some kind of coin feature in a virtual cab is that some tables don't have a Free Play mode, so the only convenient way to play them is to make them think you're adding quarters. The early solid-state ROM-based games in particular tend to have very primitive software with few or no configurable options. A lot of the older EM (electro-mechanical) tables also lack coinless play options, although for those you can at least add it yourself via scripting. In any case, it's nice to have an easy way to add coins to deal with tables you can't set to Free Play. One way is to make the physical coin chutes functional, and another is to add a button that simulates inserting a coin. I personally like having both options. Both approaches are covered later in this chapter.
+Finally, the coin door is useful for its nominal purpose as the place to insert coins.
+Even for a virtual cab, it's useful to be able to feed in quarters - either for real or in a virtual way, such as by pushing a button.
+In either case, the coin door is the ideal place for the coin chutes and/or coin buttons.
+The reason it's important to have some kind of coin feature in a virtual cab is that some tables don't have a Free Play mode, so the only convenient way to play them is to make them think you're adding quarters.
+The early solid-state ROM-based games in particular tend to have very primitive software with few or no configurable options.
+A lot of the older EM (electro-mechanical) tables also lack coinless play options, although for those you can at least add it yourself via scripting.
+In any case, it's nice to have an easy way to add coins to deal with tables you can't set to Free Play.
+One way is to make the physical coin chutes functional, and another is to add a button that simulates inserting a coin.
+I personally like having both options.
+Both approaches are covered later in this chapter.
 
 == Buying a coin door
 
-If you're salvaging an old pinball machine to use as your cab's body, and it already has a coin door installed, you're set. If you're building a new cab from scratch, you can buy a new pinball coin door from an arcade parts supplier (see xref:resources.adoc#resources[Resources] ). You can also look for used ones on eBay, although as always, check prices for new parts first: used pinball parts on eBay tend for whatever perverse reasons to be more expensive than new ones.
+If you're salvaging an old pinball machine to use as your cab's body, and it already has a coin door installed, you're set.
+If you're building a new cab from scratch, you can buy a new pinball coin door from an arcade parts supplier (see xref:resources.adoc#resources[Resources] ).
+You can also look for used ones on eBay, although as always, check prices for new parts first: used pinball parts on eBay tend for whatever perverse reasons to be more expensive than new ones.
 
-One really nice feature when you're buying a coin door is that most of the different types can be used interchangeably, since they're all designed to fit the same cutout. They've been using a standard size since about the mid 1980s. Doors designed for Data East, Stern, Williams, and Bally machines will all fit the same the standard cutout, as long as they're for machines from the 1980s or later. However, the different makes do have some differences on the inside, such as the type of service buttons and the type of wiring plugs used.
+One really nice feature when you're buying a coin door is that most of the different types can be used interchangeably, since they're all designed to fit the same cutout.
+They've been using a standard size since about the mid 1980s.
+Doors designed for Data East, Stern, Williams, and Bally machines will all fit the same the standard cutout, as long as they're for machines from the 1980s or later.
+However, the different makes do have some differences on the inside, such as the type of service buttons and the type of wiring plugs used.
 
 Here are the top options currently available commercially:
 
-* Williams/Bally WPC-era coin door, Williams part numbers 09-17002-26, 09-23002-1, 09-37001, 09-46000, 09-61000-1, 09-61000-1, and 90-96017. These typically come fully assembled, with the lock and key, slam tilt switch, brackets for two coin mechanisms, coin chute lamps, coin switches, and service buttons. All of the electronics are pre-wired to a 13-pin connector. The only parts not included are the coin mechs (the little Rube Goldberg devices that check inserted coins to make sure they're real). You can buy those for about $10 apiece and pop them into the chutes if you want to be able to use real coins.
+* Williams/Bally WPC-era coin door, Williams part numbers 09-17002-26, 09-23002-1, 09-37001, 09-46000, 09-61000-1, 09-61000-1, and 90-96017.
+These typically come fully assembled, with the lock and key, slam tilt switch, brackets for two coin mechanisms, coin chute lamps, coin switches, and service buttons.
+All of the electronics are pre-wired to a 13-pin connector.
+The only parts not included are the coin mechs (the little Rube Goldberg devices that check inserted coins to make sure they're real).
+You can buy those for about $10 apiece and pop them into the chutes if you want to be able to use real coins.
 
-This is the door I used on my cab. I like it because it exactly replicates the look of the Williams 1990s machines, which is the cohort that includes most of my all-time favorite games. It does have a couple of downsides, though: it's more expensive than the SuzoHapp door below, and the design makes it way more difficult than it should be to replace the coin inserts (the little lighted coin chute labels saying "insert quarters").
+This is the door I used on my cab.
+I like it because it exactly replicates the look of the Williams 1990s machines, which is the cohort that includes most of my all-time favorite games.
+It does have a couple of downsides, though: it's more expensive than the SuzoHapp door below, and the design makes it way more difficult than it should be to replace the coin inserts (the little lighted coin chute labels saying "insert quarters").
 
 image::images/wpc-coin-door.jpg[""]
 
 WPC coin door (with my custom Pinscape coin slot inserts!)
 
-* SuzoHapp universal coin door, manufacturer part number 40-0696-30. This is a third-party replacement part compatible with OEM parts for almost any machine from the mid 1980s or later. It's also the factory-installed part on some of the newer Stern and Jersey Jack machines. This one comes with all of the coin slot hardware installed, including the coin mechs (for quarters), but it doesn't have any pre-installed wiring and doesn't include service buttons.
+* SuzoHapp universal coin door, manufacturer part number 40-0696-30.
+This is a third-party replacement part compatible with OEM parts for almost any machine from the mid 1980s or later.
+It's also the factory-installed part on some of the newer Stern and Jersey Jack machines.
+This one comes with all of the coin slot hardware installed, including the coin mechs (for quarters), but it doesn't have any pre-installed wiring and doesn't include service buttons.
 
-This is my top pick for the DIYer. It's about 40% cheaper than the pre-assembled Williams door above, and it's functionally equivalent after you add the service buttons. The lack of pre-installed wiring might actually be a plus in a pin cab, since you can wire it with your own connectors instead of the obscure Molex connector used on the WPC doors. The design is also nicer in some ways than that of the WPC doors: it's easier to install the coin mechs in this door, and it's _much_ easier to install custom coin slot inserts. The only downside, really, is that it doesn't look exactly like the original WPC doors, although it's close enough that most people wouldn't know the difference.
+This is my top pick for the DIYer.
+It's about 40% cheaper than the pre-assembled Williams door above, and it's functionally equivalent after you add the service buttons.
+The lack of pre-installed wiring might actually be a plus in a pin cab, since you can wire it with your own connectors instead of the obscure Molex connector used on the WPC doors.
+The design is also nicer in some ways than that of the WPC doors: it's easier to install the coin mechs in this door, and it's _much_ easier to install custom coin slot inserts.
+The only downside, really, is that it doesn't look exactly like the original WPC doors, although it's close enough that most people wouldn't know the difference.
 
-If you want service buttons (which I think you do!), you can easily add them as an extra part. Buy the *Stern 4-button service assembly* (part number 515-1963-00). Note that there's a similar service button panel designed for the WPC doors, but it has a different mounting bracket that won't fit this door, so be sure to buy the Stern version. You get the same set of buttons with either assembly, so there's no functional difference; it's just the mounting hardware that's different.
+If you want service buttons (which I think you do!), you can easily add them as an extra part.
+Buy the *Stern 4-button service assembly* (part number 515-1963-00).
+Note that there's a similar service button panel designed for the WPC doors, but it has a different mounting bracket that won't fit this door, so be sure to buy the Stern version.
+You get the same set of buttons with either assembly, so there's no functional difference; it's just the mounting hardware that's different.
 
-One other minor feature missing in this door vs. the WPC door is a slam tilt switch. You can add that separately if you want 100% parity with the Williams door. I personally don't see any functional reason to include a slam tilt switch on a virtual cab, since it's only present on the real machines to discourage extreme abuse that you'd never subject your home machine to. But you can certainly include it for the sake of completeness if you like.
+One other minor feature missing in this door vs.
+the WPC door is a slam tilt switch.
+You can add that separately if you want 100% parity with the Williams door.
+I personally don't see any functional reason to include a slam tilt switch on a virtual cab, since it's only present on the real machines to discourage extreme abuse that you'd never subject your home machine to.
+But you can certainly include it for the sake of completeness if you like.
 
 image::images/suzohapp-coin-door.jpg[""]
 
 SuzoHapp coin door, also used on most modern Stern machines
 
-* Stern coin doors, for SAM machines (Stern part 501-5018-172) or SPIKE machines (501-5018-173). SAM and SPIKE refer to the last two generations of the Stern platform, not to specific table titles. These are functionally about the same as the Williams door listed above. The main difference from the Williams door is that these use different connector plugs for the electronics. The SPIKE version is actually the same equipment as the SuzoHapp option above, but adds pre-installed service buttons and wiring.
-* Data East coin door. These come bare-bones, with nothing installed except for the key and the basic coin slot brackets (no coin mechs). As a result, they're cheap. They're a good budget option if you only want the facade of a door (without all the functional bits) for cosmetics. I wouldn't recommend this if you _do_ want all of the functional elements, though: you probably won't save any money after adding all of the parts it's missing compared to the turn-key options above, and it'll be a lot of hassle to source the parts and assemble everything.
-* Smaller video game coin doors. If you're building a mini-cab, the regular pinball coin door might be too large. There's a narrower type of door commonly used in video games. Try link:https://suzohapp.com/[SuzoHapp] for a variety of options.
-* Fakes/Decals. If you only want the cosmetic effect of a coin door without any functionality, you could use a 3D-printed plastic façade, or simply a custom-printed decal with a photo of a coin door (see xref:cabArt.adoc#cabinetArt[Cabinet Art] for more on decals). This might let you squeeze out a little cost if you're on a tight budget, or if your cab is too small for a real coin door.
+* Stern coin doors, for SAM machines (Stern part 501-5018-172) or SPIKE machines (501-5018-173).
+SAM and SPIKE refer to the last two generations of the Stern platform, not to specific table titles.
+These are functionally about the same as the Williams door listed above.
+The main difference from the Williams door is that these use different connector plugs for the electronics.
+The SPIKE version is actually the same equipment as the SuzoHapp option above, but adds pre-installed service buttons and wiring.
+* Data East coin door.
+These come bare-bones, with nothing installed except for the key and the basic coin slot brackets (no coin mechs).
+As a result, they're cheap.
+They're a good budget option if you only want the facade of a door (without all the functional bits) for cosmetics.
+I wouldn't recommend this if you _do_ want all of the functional elements, though: you probably won't save any money after adding all of the parts it's missing compared to the turn-key options above, and it'll be a lot of hassle to source the parts and assemble everything.
+* Smaller video game coin doors.
+If you're building a mini-cab, the regular pinball coin door might be too large.
+There's a narrower type of door commonly used in video games.
+Try link:https://suzohapp.com/[SuzoHapp] for a variety of options.
+* Fakes/Decals.
+If you only want the cosmetic effect of a coin door without any functionality, you could use a 3D-printed plastic façade, or simply a custom-printed decal with a photo of a coin door (see xref:cabArt.adoc#cabinetArt[Cabinet Art] for more on decals).
+This might let you squeeze out a little cost if you're on a tight budget, or if your cab is too small for a real coin door.
 
 [#coinMechs]
 == Coin mechs
 
-Coin "mechs" (mechanisms) are the gadgets that validate coins inserted through the slots in the door. These use a modular design, with a standardized physical form factor, that lets you swap in mechs for different types of coins or tokens. If you want to use quarters, you install a mech that takes quarters; if you want to accept arcade tokens, you install a token mech.
+Coin "mechs" (mechanisms) are the gadgets that validate coins inserted through the slots in the door.
+These use a modular design, with a standardized physical form factor, that lets you swap in mechs for different types of coins or tokens.
+If you want to use quarters, you install a mech that takes quarters; if you want to accept arcade tokens, you install a token mech.
 
-Your new coin door assembly probably came without any mechs installed - just empty brackets where the mechs go. So if you want your pin cab to accept quarters or other coins, you'll have to buy the mechs separately and install them in your coin door.
+Your new coin door assembly probably came without any mechs installed - just empty brackets where the mechs go.
+So if you want your pin cab to accept quarters or other coins, you'll have to buy the mechs separately and install them in your coin door.
 
-US coin doors (anything from the 1990s to present) are almost always set up with two coin slots fitted with brackets for the standard coin mechanisms. The pinball vendors (Pinball Life, Marco Specialties) sell mechs that accept US quarters. Those run about $10 each.
+US coin doors (anything from the 1990s to present) are almost always set up with two coin slots fitted with brackets for the standard coin mechanisms.
+The pinball vendors (Pinball Life, Marco Specialties) sell mechs that accept US quarters.
+Those run about $10 each.
 
-You can also find mechs that accept other coin types besides US quarters, but not at the pinball vendors; they only sell the quarter mechs. Here are some leads on where to find mechs for other coin types:
+You can also find mechs that accept other coin types besides US quarters, but not at the pinball vendors; they only sell the quarter mechs.
+Here are some leads on where to find mechs for other coin types:
 
-*  link:https://suzohapp.com/[SuzoHapp] sells mechs that accept Canadian coins (quarters, loonies, and toonies), plus mechs for several types of arcade tokens. They also sell matching arcade tokens.
-*  link:https://coinmech.com/[Coin Mechanisms, Inc.] sells acceptors for nearly all types of US coins, plus acceptors for numerous other countries' coins. Navigate to *Coin Doors, Coin Mechs & Face Plates* > *Mechanism Coin Mechanisms* .
-* You might also find mechs for various coin types on eBay, but be careful that you're buying a compatible mechanism. I'd consider only *mechanical* coin acceptors, not anything electronic. The electronic mechs are usually meant only for Asian and European markets, where the coin doors have a different setup. The electronic mechs usually won't fit a US coin door, and even if they do, they might not interface easily to a virtual cab's key encoder.
+*  link:https://suzohapp.com/[SuzoHapp] sells mechs that accept Canadian coins (quarters, loonies, and toonies), plus mechs for several types of arcade tokens.
+They also sell matching arcade tokens.
+*  link:https://coinmech.com/[Coin Mechanisms, Inc.] sells acceptors for nearly all types of US coins, plus acceptors for numerous other countries' coins.
+Navigate to *Coin Doors, Coin Mechs & Face Plates* > *Mechanism Coin Mechanisms* .
+* You might also find mechs for various coin types on eBay, but be careful that you're buying a compatible mechanism.
+I'd consider only *mechanical* coin acceptors, not anything electronic.
+The electronic mechs are usually meant only for Asian and European markets, where the coin doors have a different setup.
+The electronic mechs usually won't fit a US coin door, and even if they do, they might not interface easily to a virtual cab's key encoder.
 
 Here are a few pictures to help you identify the right type by physical form factor, if you're looking for a non-quarter denomination on eBay:
 
@@ -70,57 +138,92 @@ image::images/coin-mech-front.jpg[""]
 
 image::images/coin-mech-back.jpg[""]
 
-Note that your mechs might have the stubby little posts coming out of both sides. The SuzoHapp/Stern doors need all four posts to seat properly, whereas the WPC doors only use the rear posts. The pictures above show the WPC configuration with only the rear posts in place. If your mech has all four posts, and you have a WPC door, no problem: you can easily remove the unwanted extra posts by unscrewing them.
+Note that your mechs might have the stubby little posts coming out of both sides.
+The SuzoHapp/Stern doors need all four posts to seat properly, whereas the WPC doors only use the rear posts.
+The pictures above show the WPC configuration with only the rear posts in place.
+If your mech has all four posts, and you have a WPC door, no problem: you can easily remove the unwanted extra posts by unscrewing them.
 
 === "Any Coin" dummy coin mech
 
-The standard coin mechs described above are designed to accept specific coins or tokens. Since they're sold for commercial use, they're designed to validate the coin's authenticity by size and weight. They'll reject anything besides the correct coin type.
+The standard coin mechs described above are designed to accept specific coins or tokens.
+Since they're sold for commercial use, they're designed to validate the coin's authenticity by size and weight.
+They'll reject anything besides the correct coin type.
 
-For home use, you might not care about the validation part, since you might want to use tokens or assorted coins instead of keeping a supply of quarters on hand. In that case, there's an alternative dummy coin mech available that accepts just about anything resembling a coin, without trying to validate it:
+For home use, you might not care about the validation part, since you might want to use tokens or assorted coins instead of keeping a supply of quarters on hand.
+In that case, there's an alternative dummy coin mech available that accepts just about anything resembling a coin, without trying to validate it:
 
 link:https://www.arcadeplastics.com/any-coin-v3-replacement-arcade-coin-mechs.html[ArcadePlastics.com "Any Coin" replacement mechs]
 
-The Any Coin mechs are drop-in replacements for the standard mechs, so you should be able to use them in any of the common coin doors. The price is about the same as the standard mechs, so the main reason to buy them would be that you like the option of using assorted coins and tokens instead of just quarters. They might also be less likely to jam than the standard mechs, since they don't need the intricate internal maze that the standard mechs use to reject invalid coins (although I don't find that the real mechs jam much either).
+The Any Coin mechs are drop-in replacements for the standard mechs, so you should be able to use them in any of the common coin doors.
+The price is about the same as the standard mechs, so the main reason to buy them would be that you like the option of using assorted coins and tokens instead of just quarters.
+They might also be less likely to jam than the standard mechs, since they don't need the intricate internal maze that the standard mechs use to reject invalid coins (although I don't find that the real mechs jam much either).
 
-I'm personally happier with the standard mechs, just for the sake of authenticity. But then again, I rarely use coins anyway when playing games on the machine, so it makes little difference at a practical level.
+I'm personally happier with the standard mechs, just for the sake of authenticity.
+But then again, I rarely use coins anyway when playing games on the machine, so it makes little difference at a practical level.
 
 === How to install a mech in a WPC door
 
-If your coin mech has *four* of the little stubby posts, remove the ones on the front side - the side that faces the coin door. Simply unscrew the posts and set them aside (you can put them in your misc parts drawer, or just discard them). The mechs often come with all four posts installed, because some other coin doors require them, but they won't fit into the WPC-style doors.
+If your coin mech has *four* of the little stubby posts, remove the ones on the front side - the side that faces the coin door.
+Simply unscrew the posts and set them aside (you can put them in your misc parts drawer, or just discard them).
+The mechs often come with all four posts installed, because some other coin doors require them, but they won't fit into the WPC-style doors.
 
 image::images/coin-door-mech-with-four-posts.png[""]
 
-Coin mech with all four posts installed. You'll have to remove the posts on the front (door) side before installing the mech in a WPC-style door.
+Coin mech with all four posts installed.
+You'll have to remove the posts on the front (door) side before installing the mech in a WPC-style door.
 
-Open your coin door and find the brackets that hold the mechs. These are right behind the coin slots. You should see a couple of big latch levers near the top of the door, as pictured below.
+Open your coin door and find the brackets that hold the mechs.
+These are right behind the coin slots.
+You should see a couple of big latch levers near the top of the door, as pictured below.
 
 image::images/coin-mech-install-1.jpg[""]
 
-There might be a cotter pin installed in each latch to lock it in place; if there is, remove it. Pull the latch outward from the bottom and flip it all the way up. (It might offer a little resistance when all the way down, but you shouldn't have to exert too much force.)
+There might be a cotter pin installed in each latch to lock it in place; if there is, remove it.
+Pull the latch outward from the bottom and flip it all the way up.
+(It might offer a little resistance when all the way down, but you shouldn't have to exert too much force.)
 
 image::images/coin-mech-install-2.png[""]
 
-The coin mechs fit in the space below the latch, in the area marked in the photos (above and below) as the "seating slot". This area isn't very well delineated - figuring out exactly where the mechs should land is the hardest part of installing them, in my opinion. The picture below shows more of a head-on view that might help. The "slot", such as it is, is that open space between the two stubby little protrusions along the front wall. You want to fit the front bottom corner of the mech between those nubs.
+The coin mechs fit in the space below the latch, in the area marked in the photos (above and below) as the "seating slot".
+This area isn't very well delineated - figuring out exactly where the mechs should land is the hardest part of installing them, in my opinion.
+The picture below shows more of a head-on view that might help.
+The "slot", such as it is, is that open space between the two stubby little protrusions along the front wall.
+You want to fit the front bottom corner of the mech between those nubs.
 
-That big adjoining opening in the floor is *not* part of the seating slot, by the way. It's the opening that the coins drop through. Don't try to squeeze the mech in there; it'll end up resting right on top of that opening.
+That big adjoining opening in the floor is *not* part of the seating slot, by the way.
+It's the opening that the coins drop through.
+Don't try to squeeze the mech in there; it'll end up resting right on top of that opening.
 
 image::images/coin-mech-install-3.png[""]
 
-To orient the mech, find the big plastic lever that's alongside one of the edges. (The lever is engaged when you press the "push to reject" button to clear a coin jam.) When you install the coin mech, install it with the lever facing up, and the hinge towards the back, facing away from the coin door. The hinge side should also be the side with the two posts.
+To orient the mech, find the big plastic lever that's alongside one of the edges.
+(The lever is engaged when you press the "push to reject" button to clear a coin jam.) When you install the coin mech, install it with the lever facing up, and the hinge towards the back, facing away from the coin door.
+The hinge side should also be the side with the two posts.
 
 image::images/coin-mech-orientation.png[""]
 
-Insert the coin mech into the slot. You'll have to insert it an angle, as shown below, to get around the back end of the bottom bracket. Orient it as shown, with the little metal posts sticking out the back, and the metallic side of the unit facing you. At this stage, there won't be any sensation that you're fitting the mech into a slot; it just kind of sits there. But the bottom front corner should be nestled between those two little nubs we pointed out above, and you should push the mech as far forward as you can against the door.
+Insert the coin mech into the slot.
+You'll have to insert it an angle, as shown below, to get around the back end of the bottom bracket.
+Orient it as shown, with the little metal posts sticking out the back, and the metallic side of the unit facing you.
+At this stage, there won't be any sensation that you're fitting the mech into a slot; it just kind of sits there.
+But the bottom front corner should be nestled between those two little nubs we pointed out above, and you should push the mech as far forward as you can against the door.
 
 image::images/coin-mech-install-4.jpg[""]
 
-If everything's aligned correctly, you should now be able to push the bottom rear of the mech - the part where the bottom post is sticking out in back - into the bottom bracket. This should straighten things out so that the mech is square with the door. This will be a fairly tight fit, but it shouldn't take a lot of force. If it doesn't slide into the bracket fairly easily, the mech is probably sticking out too far in back because you don't have the front aligned correctly with the nubs. Try wiggling the front to get it more completely into the little recess between the nubs. You might also have to slide it upwards slightly to fully seat.
+If everything's aligned correctly, you should now be able to push the bottom rear of the mech - the part where the bottom post is sticking out in back - into the bottom bracket.
+This should straighten things out so that the mech is square with the door.
+This will be a fairly tight fit, but it shouldn't take a lot of force.
+If it doesn't slide into the bracket fairly easily, the mech is probably sticking out too far in back because you don't have the front aligned correctly with the nubs.
+Try wiggling the front to get it more completely into the little recess between the nubs.
+You might also have to slide it upwards slightly to fully seat.
 
 image::images/coin-mech-install-4a.png[""]
 
 image::images/coin-mech-install-5.jpg[""]
 
-Now flip down the top latch (the one we flipped up in the first step). It should fit over the top post at the back of the mech. If it doesn't seat, try sliding the mech upwards a little, and try moving the top back and forth a little to fit into the lever.
+Now flip down the top latch (the one we flipped up in the first step).
+It should fit over the top post at the back of the mech.
+If it doesn't seat, try sliding the mech upwards a little, and try moving the top back and forth a little to fit into the lever.
 
 If you took out a cotter pin at the start of the procedure, re-install it now.
 
@@ -128,15 +231,20 @@ image::images/coin-mech-install-6.jpg[""]
 
 Done! If you have a second coin mech for a second slot, the procedure is exactly the same for that.
 
-The blank space in the left half of the WPC-style door is designed to accommodate a paper dollar bill acceptor. I haven't installed one of those myself, so I don't have any installation instructions to offer (and I doubt that most virtual cab builders would be interested anyway). Some cab builders use the space for other purposes, such as audio volume knobs or extra buttons.
+The blank space in the left half of the WPC-style door is designed to accommodate a paper dollar bill acceptor.
+I haven't installed one of those myself, so I don't have any installation instructions to offer (and I doubt that most virtual cab builders would be interested anyway).
+Some cab builders use the space for other purposes, such as audio volume knobs or extra buttons.
 
 === How to install a coin mech in a SuzoHapp/Stern door
 
-Open the coin door and find the brackets that hold the mechs. They're right behind the coin slots.
+Open the coin door and find the brackets that hold the mechs.
+They're right behind the coin slots.
 
 image::images/suzo-coin-mech-install-1.png[""]
 
-Make sure the metal tabs at the top and bottom of the slot are in the "open" position, meaning they're out of the way of the slot. Slide the upper tab all the way up, and slide the lower tab all the way down. Loosen the set-screws if necessary. (The brackets might take a little effort to slide up and down even after loosening the screws, but of course don't force anything.)
+Make sure the metal tabs at the top and bottom of the slot are in the "open" position, meaning they're out of the way of the slot.
+Slide the upper tab all the way up, and slide the lower tab all the way down.
+Loosen the set-screws if necessary. (The brackets might take a little effort to slide up and down even after loosening the screws, but of course don't force anything.)
 
 image::images/suzo-coin-mech-install-2.png[""]
 

@@ -1,121 +1,269 @@
 [#plungerTech]
 = Plunger Sensor Technical Notes
 
-Tracking a plunger for pinball simulation is a surprisingly difficult technical challenge. At first glance, it looks like a pretty easy problem with some simple solutions: it's just a linear position sensor, and there are some standard approaches for that. But there are two details to pinball simulation that make the problem harder: you need fine spatial resolution, and you need to be able to take readings quickly.
+Tracking a plunger for pinball simulation is a surprisingly difficult technical challenge.
+At first glance, it looks like a pretty easy problem with some simple solutions: it's just a linear position sensor, and there are some standard approaches for that.
+But there are two details to pinball simulation that make the problem harder: you need fine spatial resolution, and you need to be able to take readings quickly.
 
 == Spatial resolution and sampling speed
 
-How well a plunger performs in a pinball simulator depends upon its spatial resolution and sampling speed. I consider a sensor suitable if it can determine the true plunger position to within 1/100", and produce at least 200 such position readings per second.
+How well a plunger performs in a pinball simulator depends upon its spatial resolution and sampling speed.
+I consider a sensor suitable if it can determine the true plunger position to within 1/100", and produce at least 200 such position readings per second.
 
-Spatial resolution refers to how precisely you can locate the current position of the physical plunger. The pinball simulator uses the position reading from the sensor to draw the on-screen plunger on the video display in real time, so that the player can see the on-screen plunger animated in sync with the physical plunger. For that animation to be realistic and smooth, the on-screen position has to track the physical position as finely as the video display can draw it. On an HD screen at playfield size, the spacing between pixels is about 1/50 of an inch, and on a 4K monitor it's about 1/100 of an inch. On a full-sized pin cab, the on-screen plunger should be roughly the same size as the real plunger, so if you want smooth, pixel-accurate animation, the sensor has to be able to pick up movement of the physical plunger on the same scale as the size of the on-screen pixels. That requires 1/100" precision from the sensor.
+Spatial resolution refers to how precisely you can locate the current position of the physical plunger.
+The pinball simulator uses the position reading from the sensor to draw the on-screen plunger on the video display in real time, so that the player can see the on-screen plunger animated in sync with the physical plunger.
+For that animation to be realistic and smooth, the on-screen position has to track the physical position as finely as the video display can draw it.
+On an HD screen at playfield size, the spacing between pixels is about 1/50 of an inch, and on a 4K monitor it's about 1/100 of an inch.
+On a full-sized pin cab, the on-screen plunger should be roughly the same size as the real plunger, so if you want smooth, pixel-accurate animation, the sensor has to be able to pick up movement of the physical plunger on the same scale as the size of the on-screen pixels.
+That requires 1/100" precision from the sensor.
 
-Spatial resolution also affects the quality of the physics simulation. All of the pinball simulators read the plunger position via the Windows USB joystick interface, which is capable of representing high precisions. Visual Pinball can handle 16-bit resolution, which translates to one part in 65,536, or about 50 microns (millionths of an inch) over the 3" travel of a physical plunger. That's a lot finer than the 1/100" resolution required for smooth animation, and much finer than any virtual pinball plunger sensors currently available (for Pinscape or any other system). The point is that there are practical benefits to working on better sensor designs than we have today, since VP's physics model can take advantage of a lot finer spatial resolution than today's sensors provide.
+Spatial resolution also affects the quality of the physics simulation.
+All of the pinball simulators read the plunger position via the Windows USB joystick interface, which is capable of representing high precisions.
+Visual Pinball can handle 16-bit resolution, which translates to one part in 65,536, or about 50 microns (millionths of an inch) over the 3" travel of a physical plunger.
+That's a lot finer than the 1/100" resolution required for smooth animation, and much finer than any virtual pinball plunger sensors currently available (for Pinscape or any other system).
+The point is that there are practical benefits to working on better sensor designs than we have today, since VP's physics model can take advantage of a lot finer spatial resolution than today's sensors provide.
 
-Sensor speed is also critically important. The plunger moves really fast when you pull it back and release it, so in order to track that motion in real-time, the sensor has to be able to take readings quickly. My measurements with the AEDR-8300 sensor indicate that the plunger in my test rig, which is a standard Williams/Bally plunger with a medium-tension spring, moves at a peak speed of about 4.5 meters per second. That means that the plunger covers its full 80mm travel range in about 25ms. To keep up with that fast motion, the sensor has to be able to take readings at least about every 5ms, or 200 times per second. Sensors with slower sampling rates than that will suffer from "aliasing", where they mistake retrograde motion for forward motion (or vice versa) when the plunger bounces back after hitting the barrel spring. When aliasing occurs, VP can't calculate the speed of the plunger correctly, which screws up the physics simulation. Aliasing can lead to wildly erroneous speed calculations. The Pinscape firmware has special handling to detect and correct for aliasing in slower sensors, but that necessarily loses information about the true instantaneous speed and position, so it's better if the sensor can produce readings frequently enough that the aliasing filter is never triggered.
+Sensor speed is also critically important.
+The plunger moves really fast when you pull it back and release it, so in order to track that motion in real-time, the sensor has to be able to take readings quickly.
+My measurements with the AEDR-8300 sensor indicate that the plunger in my test rig, which is a standard Williams/Bally plunger with a medium-tension spring, moves at a peak speed of about 4.5 meters per second.
+That means that the plunger covers its full 80mm travel range in about 25ms.
+To keep up with that fast motion, the sensor has to be able to take readings at least about every 5ms, or 200 times per second.
+Sensors with slower sampling rates than that will suffer from "aliasing", where they mistake retrograde motion for forward motion (or vice versa) when the plunger bounces back after hitting the barrel spring.
+When aliasing occurs, VP can't calculate the speed of the plunger correctly, which screws up the physics simulation.
+Aliasing can lead to wildly erroneous speed calculations.
+The Pinscape firmware has special handling to detect and correct for aliasing in slower sensors, but that necessarily loses information about the true instantaneous speed and position, so it's better if the sensor can produce readings frequently enough that the aliasing filter is never triggered.
 
 == Potentiometer
 
-This is one of the simplest ways to measure a linear position, and it actually compares pretty well to more complicated approaches. It's used in a lot of industrial applications where you need fast readings without extremely high resolution.
+This is one of the simplest ways to measure a linear position, and it actually compares pretty well to more complicated approaches.
+It's used in a lot of industrial applications where you need fast readings without extremely high resolution.
 
-Physically, a potentiometer consists of a fine electrode that moves across a resistive conductor such as graphite - something that conducts electricity, but with relatively high resistance. Resistance in a material like graphite is a function of the distance between measuring points, so as you move the electrode across the graphite, the resistance between the electrode and any fixed point on the graphite varies with the distance between the two points. If you measure the resistance at point A as higher than the resistance at point B, you know that point A is further away from the fixed end than point B.
+Physically, a potentiometer consists of a fine electrode that moves across a resistive conductor such as graphite - something that conducts electricity, but with relatively high resistance.
+Resistance in a material like graphite is a function of the distance between measuring points, so as you move the electrode across the graphite, the resistance between the electrode and any fixed point on the graphite varies with the distance between the two points.
+If you measure the resistance at point A as higher than the resistance at point B, you know that point A is further away from the fixed end than point B.
 
-For our purposes, we use "linear taper" potentiometers, which are built so that the electrical resistance varies linearly with the electrode position. Voltage and resistance are also linearly related (through Ohm's Law), so if we supply a fixed voltage across the fixed ends of the pot, the voltage we read at the electrode will vary linearly with the resistance, which varies linearly with the position of the electrode. The KL25Z has an on-board analog-to-digital converter (ADC) that can sample an analog voltage level and report it to the software as a digital reading.
+For our purposes, we use "linear taper" potentiometers, which are built so that the electrical resistance varies linearly with the electrode position.
+Voltage and resistance are also linearly related (through Ohm's Law), so if we supply a fixed voltage across the fixed ends of the pot, the voltage we read at the electrode will vary linearly with the resistance, which varies linearly with the position of the electrode.
+The KL25Z has an on-board analog-to-digital converter (ADC) that can sample an analog voltage level and report it to the software as a digital reading.
 
-How accurate is a potentiometer? The one that we recommend in the parts list is readable to about 1% accuracy with the KL25Z ADC. That translates to about 3/100". So it's not quite as good as we need for perfectly smooth animation, and it means that the "jitter filter" in the Pinscape firmware is usually needed to get steady readings when the plunger is standing still.
+How accurate is a potentiometer? The one that we recommend in the parts list is readable to about 1% accuracy with the KL25Z ADC.
+That translates to about 3/100".
+So it's not quite as good as we need for perfectly smooth animation, and it means that the "jitter filter" in the Pinscape firmware is usually needed to get steady readings when the plunger is standing still.
 
 This could be improved by using a different potentiometers with higher accuracy, but I haven't found anything available that looks like it would do better.
 
-The potentiometer's spatial resolution might not be perfect, but its sampling speed is extremely fast. The potentiometer itself can be sampled in arbitrarily short intervals, as it provides an analog voltage level that adjusts to changes in position effectively instantaneously. Everything at the analog level moves at the speed of electric field propagation in the conductors, which is close to the speed of light. So the limiting factor isn't the analog signal, but rather the ADC sampling time. The ADC works by charging a small capacitor internally, and this takes a more macroscopic amount of time. The fastest possible ADC sampling time on the KL25Z is about 10µs, although there's a significant trade-off between speed and accuracy, so we use a slower mode that takes more like 30µs for each reading. That's still about 100 times faster than we need it to be (as discussed earlier, we only need readings about every 5ms), so we can take many readings over the sampling period and average them together, to further reduce noise and improve accuracy. Since the January 2020 version, the firmware takes readings continuously, and computes a rolling average each time a result needs to be sent to the PC. Each reading sent to the PC represents the average of 128 ADC samples. This smooths out the noise and makes for highly stable readings.
+The potentiometer's spatial resolution might not be perfect, but its sampling speed is extremely fast.
+The potentiometer itself can be sampled in arbitrarily short intervals, as it provides an analog voltage level that adjusts to changes in position effectively instantaneously.
+Everything at the analog level moves at the speed of electric field propagation in the conductors, which is close to the speed of light.
+So the limiting factor isn't the analog signal, but rather the ADC sampling time.
+The ADC works by charging a small capacitor internally, and this takes a more macroscopic amount of time.
+The fastest possible ADC sampling time on the KL25Z is about 10µs, although there's a significant trade-off between speed and accuracy, so we use a slower mode that takes more like 30µs for each reading.
+That's still about 100 times faster than we need it to be (as discussed earlier, we only need readings about every 5ms), so we can take many readings over the sampling period and average them together, to further reduce noise and improve accuracy.
+Since the January 2020 version, the firmware takes readings continuously, and computes a rolling average each time a result needs to be sent to the PC.
+Each reading sent to the PC represents the average of 128 ADC samples.
+This smooths out the noise and makes for highly stable readings.
 
 == Quadrature sensors
 
-Quadrature is an electrical engineering term describing two signals that are 90° out of phase with each other. This has numerous applications in signal processing, but the one we're concerned with here is its use for motion sensing. A quadrature motion encoder works by observing transitions between "on" and "off" zones marked along a "measuring stick", using two sensors that are offset slightly from one another. The measuring stick is more formally called a "scale".
+Quadrature is an electrical engineering term describing two signals that are 90° out of phase with each other.
+This has numerous applications in signal processing, but the one we're concerned with here is its use for motion sensing.
+A quadrature motion encoder works by observing transitions between "on" and "off" zones marked along a "measuring stick", using two sensors that are offset slightly from one another.
+The measuring stick is more formally called a "scale".
 
-The 90° phase difference in this case refers to the size of the offset between the two sensors: it's arranged so that it's half the size of the marked on/off zones on the scale. If you observe the on/off signal from each sensor as they move across the scale, you'll see the leading sensor make its on/off transitions 90° of phase ahead of the trailing sensor. Which sensor is the "leading" sensor and which is the "trailing" one depends on which direction they're moving across the scale, so you can tell which direction you're moving by observing the phase between the two signals and seeing which sensor is making its transitions first at each step. Or, equivalently, you can look to see if the signals are 90° or 270° out of phase with each other.
+The 90° phase difference in this case refers to the size of the offset between the two sensors: it's arranged so that it's half the size of the marked on/off zones on the scale.
+If you observe the on/off signal from each sensor as they move across the scale, you'll see the leading sensor make its on/off transitions 90° of phase ahead of the trailing sensor.
+Which sensor is the "leading" sensor and which is the "trailing" one depends on which direction they're moving across the scale, so you can tell which direction you're moving by observing the phase between the two signals and seeing which sensor is making its transitions first at each step.
+Or, equivalently, you can look to see if the signals are 90° or 270° out of phase with each other.
 
-The scale can be implemented in many ways, but the common element is that it has to have a series of on/off zones of about equal size across the range of travel. These can be electrically conductive and non-conductive regions, for example, or magnetic north/south poles, or optical black/white or transparent/opaque bars. The specific quadrature sensors that we use in the Pinscape projects are optical sensors, so our scales use the transparent/opaque approach. In other words, our scale is simply a series of black bars printed on transparent film.
+The scale can be implemented in many ways, but the common element is that it has to have a series of on/off zones of about equal size across the range of travel.
+These can be electrically conductive and non-conductive regions, for example, or magnetic north/south poles, or optical black/white or transparent/opaque bars.
+The specific quadrature sensors that we use in the Pinscape projects are optical sensors, so our scales use the transparent/opaque approach.
+In other words, our scale is simply a series of black bars printed on transparent film.
 
-A quadrature sensor isn't actually a _position_ sensor - it's a _motion_ sensor. This type of sensor can only detect when it's moving from one bar to the next on the scale, and the direction of that motion (using the signal phase). If we combine these two capabilities - detecting a change from one bar to the next, and knowing which direction we went during that change - we can keep count of how many bars we are away from our starting point. So if we have a known starting point, and we know the length of each bar, we can infer our current position: our position at any given time is the starting position plus or minus the net distance we've moved since then.
+A quadrature sensor isn't actually a _position_ sensor - it's a _motion_ sensor.
+This type of sensor can only detect when it's moving from one bar to the next on the scale, and the direction of that motion (using the signal phase).
+If we combine these two capabilities - detecting a change from one bar to the next, and knowing which direction we went during that change - we can keep count of how many bars we are away from our starting point.
+So if we have a known starting point, and we know the length of each bar, we can infer our current position: our position at any given time is the starting position plus or minus the net distance we've moved since then.
 
-For the plunger application in particular, we have an excellent "known starting point", namely the plunger rest position. It's usually safe to assume that the plunger starts at the rest position, so we take that to be the initial position at startup. All subsequent inferred positions are relative to this starting point.
+For the plunger application in particular, we have an excellent "known starting point", namely the plunger rest position.
+It's usually safe to assume that the plunger starts at the rest position, so we take that to be the initial position at startup.
+All subsequent inferred positions are relative to this starting point.
 
-There's an inherent drawback to using a quadrature sensor as a position sensor by way of the net travel distance, which is the possibility for missed transitions. If the sensor ever misses a transition, the count will no longer be in sync with reality, so the inferred position that we figure based on the count will differ from the actual position by the number of missed counts. Sensors in practice do tend to miss some fraction of transitions, so the error between inferred and actual position tends to increase over time. To mitigate this in our application, the Pinscape software can be set, optionally, to reset the inferred position to the starting (plunger rest) position after any extended period without any motion. Just as it's usually safe to assume that the initial position at system startup is the rest position, it's a good bet that a motionless plunger is in equilibrium at its rest position, since it's difficult to hold it perfectly still anywhere else for any length of time, and there's no reason to do so even if you could.
+There's an inherent drawback to using a quadrature sensor as a position sensor by way of the net travel distance, which is the possibility for missed transitions.
+If the sensor ever misses a transition, the count will no longer be in sync with reality, so the inferred position that we figure based on the count will differ from the actual position by the number of missed counts.
+Sensors in practice do tend to miss some fraction of transitions, so the error between inferred and actual position tends to increase over time.
+To mitigate this in our application, the Pinscape software can be set, optionally, to reset the inferred position to the starting (plunger rest) position after any extended period without any motion.
+Just as it's usually safe to assume that the initial position at system startup is the rest position, it's a good bet that a motionless plunger is in equilibrium at its rest position, since it's difficult to hold it perfectly still anywhere else for any length of time, and there's no reason to do so even if you could.
 
-Interfacing a quadrature sensor to the KL25Z is straightforward. We treat the two sensor output channels as digital inputs (high/low signal levels, corresponding to the on/off zones in the scale), and set them up to trigger interrupts. The interrupt handler for each channel uses a lookup table to figure the direction increment represented by the current channel signal levels, adding or subtracting one from a running counter.
+Interfacing a quadrature sensor to the KL25Z is straightforward.
+We treat the two sensor output channels as digital inputs (high/low signal levels, corresponding to the on/off zones in the scale), and set them up to trigger interrupts.
+The interrupt handler for each channel uses a lookup table to figure the direction increment represented by the current channel signal levels, adding or subtracting one from a running counter.
 
-A fast-moving plunger can result in extremely rapid signal transitions on the channels - fast enough to overwhelm the KL25Z's interrupt response time. The quadrature sensor software interface in the Pinscape firmware uses custom hardware interrupt handlers to optimize the response time, and with that it requires 6.5µs to process each channel interrupt. When considering new quadrature sensors, we have to calculate the signal rate at peak plunger speeds (about 4.5 mm/ms) to make sure it doesn't exceed the 6.5µs response time, or equivalently, about 150kHz. In many cases, the quadrature sensor itself might be the limiting factor - most of the ones I've looked at quote peak signal rates in their data sheet far below 150kHz (it's usually closer to 20kHz to 30kHz).
+A fast-moving plunger can result in extremely rapid signal transitions on the channels - fast enough to overwhelm the KL25Z's interrupt response time.
+The quadrature sensor software interface in the Pinscape firmware uses custom hardware interrupt handlers to optimize the response time, and with that it requires 6.5µs to process each channel interrupt.
+When considering new quadrature sensors, we have to calculate the signal rate at peak plunger speeds (about 4.5 mm/ms) to make sure it doesn't exceed the 6.5µs response time, or equivalently, about 150kHz.
+In many cases, the quadrature sensor itself might be the limiting factor - most of the ones I've looked at quote peak signal rates in their data sheet far below 150kHz (it's usually closer to 20kHz to 30kHz).
 
 === AEDR-8300
 
-The AEDR-8300 is a reflective optical sensor. It has an LED emitter that shines a narrow light beam towards the scale, and a pair of photoreceptors that capture the light reflected back from the scale. The photoreceptors use the usual quadrature arrangement where they're slightly offset from one another.
+The AEDR-8300 is a reflective optical sensor.
+It has an LED emitter that shines a narrow light beam towards the scale, and a pair of photoreceptors that capture the light reflected back from the scale.
+The photoreceptors use the usual quadrature arrangement where they're slightly offset from one another.
 
-The AEDR-8300 product line has parts available with different bar spacings. The particular sensor we use has 75 line-per-inch bars, meaning that each black/white pair is 1/75" wide. The nature of quadrature sensing means that we can tell our position to within 1/4 of a line pair, so we effectively get 1/300" resolution.
+The AEDR-8300 product line has parts available with different bar spacings.
+The particular sensor we use has 75 line-per-inch bars, meaning that each black/white pair is 1/75" wide.
+The nature of quadrature sensing means that we can tell our position to within 1/4 of a line pair, so we effectively get 1/300" resolution.
 
-At peak speeds, the 75 LPI spacing results in quadrature pulses from the sensor about every 19µs. That's safely above the 6.5µs interrupt response time I've measured on the KL25Z. Note that the finer-pitched sensors in the AEDR-8300 line would likely overwhelm the KL25Z, and probably wouldn't be able to keep up with the peak plunger speeds anyway, as these sensors have their own maximum signal rates that are below the KL25Z's limit. But that's okay, since the 75 LPI spacing gives us such high precision that we really have no need for a finer pitch.
+At peak speeds, the 75 LPI spacing results in quadrature pulses from the sensor about every 19µs.
+That's safely above the 6.5µs interrupt response time I've measured on the KL25Z.
+Note that the finer-pitched sensors in the AEDR-8300 line would likely overwhelm the KL25Z, and probably wouldn't be able to keep up with the peak plunger speeds anyway, as these sensors have their own maximum signal rates that are below the KL25Z's limit.
+But that's okay, since the 75 LPI spacing gives us such high precision that we really have no need for a finer pitch.
 
 == Linear image sensors
 
-The first Pinscape plunger sensor was based on a linear image sensor, the TSL1410R (and the similar TSL1412S). These sensors are no longer available. The TCD1103 works on a similar principle, but it requires a focusing lens, which makes it more complex to set up.
+The first Pinscape plunger sensor was based on a linear image sensor, the TSL1410R (and the similar TSL1412S).
+These sensors are no longer available.
+The TCD1103 works on a similar principle, but it requires a focusing lens, which makes it more complex to set up.
 
-The principal of operation of these sensors is pretty simple. The sensor consisted of a single row of light sensor pixels about the same length as the plunger travel distance. We arranged the sensor so that the row of pixels ran along the axis of the plunger travel, and placed it directly adjacent to the plunger, with the pixels facing the plunger. We put a light source on the opposite side of the plunger, facing the pixels. This caused the plunger to cast a shadow on the pixel array. We'd then read the pixel array and find the location of the shadow, by looking for an edge between a light area and a dark area in the image. The edge tells us where the plunger is currently positioned.
+The principal of operation of these sensors is pretty simple.
+The sensor consisted of a single row of light sensor pixels about the same length as the plunger travel distance.
+We arranged the sensor so that the row of pixels ran along the axis of the plunger travel, and placed it directly adjacent to the plunger, with the pixels facing the plunger.
+We put a light source on the opposite side of the plunger, facing the pixels.
+This caused the plunger to cast a shadow on the pixel array.
+We'd then read the pixel array and find the location of the shadow, by looking for an edge between a light area and a dark area in the image.
+The edge tells us where the plunger is currently positioned.
 
-In principle, a sensor of this type could achieve spatial resolution equal to its pixel size. In practice, though, the shadow cast by the plunger isn't perfectly sharp. Shadows always have a little fuzzy area when the light source isn't a perfect point source, because the light source is only partially blocked at the leading edge of the shadow. So we can't tell exactly where the plunger was; we have to guess based on the midpoint of the shadow. The best possible resolution in my setup is about 1/50". That's a bit below the ideal needed for pixel-level resolution on the TV display, so there's a little bit of jitter (by a pixel or two) as the guess about the shadow position would vary from frame to frame.
+In principle, a sensor of this type could achieve spatial resolution equal to its pixel size.
+In practice, though, the shadow cast by the plunger isn't perfectly sharp.
+Shadows always have a little fuzzy area when the light source isn't a perfect point source, because the light source is only partially blocked at the leading edge of the shadow.
+So we can't tell exactly where the plunger was; we have to guess based on the midpoint of the shadow.
+The best possible resolution in my setup is about 1/50".
+That's a bit below the ideal needed for pixel-level resolution on the TV display, so there's a little bit of jitter (by a pixel or two) as the guess about the shadow position would vary from frame to frame.
 
 The TCD1103 can perform much closer to its theoretical pixel limit thanks to the requirement for focusing optics.
 
-The Pinscape software uses a simple edge-detection algorithm with these sensors, where it looks for a region with a rapid transition from a run of bright pixels to a run of dark pixels. This algorithm inherently compensates to some extent for exposure levels, since it works based on the difference in brightness across pixels rather than looking for absolute brightness levels.
+The Pinscape software uses a simple edge-detection algorithm with these sensors, where it looks for a region with a rapid transition from a run of bright pixels to a run of dark pixels.
+This algorithm inherently compensates to some extent for exposure levels, since it works based on the difference in brightness across pixels rather than looking for absolute brightness levels.
 
 === TSL1410R/TSL1412S
 
-The TSL1410R happened to be perfectly designed for this application. Its pixel row was 3" long, with 1280 pixels across the file. That's 400 pixels per inch.
+The TSL1410R happened to be perfectly designed for this application.
+Its pixel row was 3" long, with 1280 pixels across the file.
+That's 400 pixels per inch.
 
-The TSL1412S was almost exactly the same, with the only difference being a slightly longer sensor window and a correspondingly larger number of pixels (1536). The pixel spacing was the same on both sensors, and they were identical in their electronic interface.
+The TSL1412S was almost exactly the same, with the only difference being a slightly longer sensor window and a correspondingly larger number of pixels (1536).
+The pixel spacing was the same on both sensors, and they were identical in their electronic interface.
 
-These sensors work by using photoreceptors to charge capacitors. The electronic interface lets the host microcontroller connect the individual integrating capacitors to an analog output port, one at a time through a shift register. The capacitor charge is an analog voltage level, so we use the KL25Z's ADC to sample each pixel's charge level and convert it to to a digital reading.
+These sensors work by using photoreceptors to charge capacitors.
+The electronic interface lets the host microcontroller connect the individual integrating capacitors to an analog output port, one at a time through a shift register.
+The capacitor charge is an analog voltage level, so we use the KL25Z's ADC to sample each pixel's charge level and convert it to to a digital reading.
 
-The KL25Z has the capability to control the ADC through its DMA (direct memory access) controller, which was key to making the image capture fast enough to work as a plunger sensor. The DMA runs concurrently with the CPU, so the firmware was able to start the DMA reading process and then return to other work while the pixels were clocked into memory by the DMA controller. This allowed a full reading to be taken in about 2.5ms, or 400 frames per second, which is fast enough to keep up with the peak plunger release speed.
+The KL25Z has the capability to control the ADC through its DMA (direct memory access) controller, which was key to making the image capture fast enough to work as a plunger sensor.
+The DMA runs concurrently with the CPU, so the firmware was able to start the DMA reading process and then return to other work while the pixels were clocked into memory by the DMA controller.
+This allowed a full reading to be taken in about 2.5ms, or 400 frames per second, which is fast enough to keep up with the peak plunger release speed.
 
 === TCD1103
 
-This is a tiny CCD sensor made by Toshiba, with 1500 pixels arranged in a single linear file. It works using the same edge detection algorithm as the TSL1410R/TSL1412S, but its pixel window is only about 8mm long, so it requires a lens to focus a reduced image of the plunger on the sensor. If the lens is properly aimed and focused, this sensor can resolve the edge at the end of the plunger to a single pixel, so it achieves spatial resolution of nearly its full 1500 pixels across the 80mm travel range of the plunger, which translates to about 1/400" resolution.
+This is a tiny CCD sensor made by Toshiba, with 1500 pixels arranged in a single linear file.
+It works using the same edge detection algorithm as the TSL1410R/TSL1412S, but its pixel window is only about 8mm long, so it requires a lens to focus a reduced image of the plunger on the sensor.
+If the lens is properly aimed and focused, this sensor can resolve the edge at the end of the plunger to a single pixel, so it achieves spatial resolution of nearly its full 1500 pixels across the 80mm travel range of the plunger, which translates to about 1/400" resolution.
 
-The electronic interface to this sensor is similar to that of the TSL141x sensors. Like those sensors, the TCD1103 has an electronic shutter function that moves the pixel charges onto capacitors, which the microcontroller reads out by sampling an analog voltage output one pixel at a time. With DMA transfer, the KL25Z can transfer the pixel file in about 3ms.
+The electronic interface to this sensor is similar to that of the TSL141x sensors.
+Like those sensors, the TCD1103 has an electronic shutter function that moves the pixel charges onto capacitors, which the microcontroller reads out by sampling an analog voltage output one pixel at a time.
+With DMA transfer, the KL25Z can transfer the pixel file in about 3ms.
 
 == Distance and proximity sensors
 
-The original commercial plunger kits (e.g., the Nanotech Mot-ION controller, and the various generations of the VirtuaPin plunger kits) and all used IR-based proximity sensors. IR proximity sensors work by emitting an IR light signal and sensing the brightness of the reflection from a nearby object via a photoreceptor.
+The original commercial plunger kits (e.g., the Nanotech Mot-ION controller, and the various generations of the VirtuaPin plunger kits) and all used IR-based proximity sensors.
+IR proximity sensors work by emitting an IR light signal and sensing the brightness of the reflection from a nearby object via a photoreceptor.
 
-Technically, proximity sensors are only meant to detect _proximity_ - a yes/no question, "is an object is within range of the sensor?" However, most of these sensors don't answer the yes/no question directly, but rather just give you their raw analog brightness reading, leaving it up to the application to interpret that by comparing it to a calibrated threshold. The commercial plunger kits don't just treat the brightness as a binary value above or below a threshold, however. They instead interpret it as a continuous quantity that correlates to the distance to the target (which, in this case, is the end of the plunger rod). At a basic physics level, the brightness of a light source (or of a reflection) varies inversely with the distance to the source, so by applying some math to the brightness reading, we can infer the distance.
+Technically, proximity sensors are only meant to detect _proximity_ - a yes/no question, "is an object is within range of the sensor?" However, most of these sensors don't answer the yes/no question directly, but rather just give you their raw analog brightness reading, leaving it up to the application to interpret that by comparing it to a calibrated threshold.
+The commercial plunger kits don't just treat the brightness as a binary value above or below a threshold, however.
+They instead interpret it as a continuous quantity that correlates to the distance to the target (which, in this case, is the end of the plunger rod).
+At a basic physics level, the brightness of a light source (or of a reflection) varies inversely with the distance to the source, so by applying some math to the brightness reading, we can infer the distance.
 
-Proximity sensors as a class aren't meant to be used this way, though. Their brightness sensors aren't designed to be fine measurement instruments, and attempting to interpret the brightness reading as a proxy for distance doesn't always yield very good results. The relationship between reflected brightness and distance is inherently non-linear at the physics level, even with an idealized theoretical model. It's worse in a practical setup, since the sensor is subjected to interference from stray light, reflections from other surfaces besides the target, variations due to ambient temperature, and electronic noise. The early commercial plungers, which were based on Sharp analog IR proximity sensors, could only achieve a spatial resolution about 1/2".
+Proximity sensors as a class aren't meant to be used this way, though.
+Their brightness sensors aren't designed to be fine measurement instruments, and attempting to interpret the brightness reading as a proxy for distance doesn't always yield very good results.
+The relationship between reflected brightness and distance is inherently non-linear at the physics level, even with an idealized theoretical model.
+It's worse in a practical setup, since the sensor is subjected to interference from stray light, reflections from other surfaces besides the target, variations due to ambient temperature, and electronic noise.
+The early commercial plungers, which were based on Sharp analog IR proximity sensors, could only achieve a spatial resolution about 1/2".
 
-A newer IR proximity sensor chip, Vishay's VCNL4010, performs quite a lot better. This chip has its own on-board ADC for the brightness signal (the older Sharp chips produced an analog voltage that had to be sampled externally, on the microcontroller), which seems to make for much higher resolutions. This is reportedly the sensor used in the VirtuaPin v3 plunger kit, so I recently (May 2021) added support for it to the Pinscape firmware, to help out some VirtuaPin customers who had requested it because they switched to the Pinscape firmware on their controller boards. This sensor is actually pretty good: in my testing, it reliably resolved distances to less than 1mm over most of its range. (It gets coarser at the "far" end where the plunger is farthest away from the sensor; this region is the most challenging for the sensor because very little light is reflected back at that distance.) That's not as good as some of the other sensors (potentiometer, quadrature, linear imaging), but it's good enough to be usable. The tricky part of this sensor is that its response curve (the relationship between measured brightness and object distance) is a little bit erratic. But it's close enough to a power law relationship that the distance conversions come out looking plausibly linear, if you don't look too closely.
+A newer IR proximity sensor chip, Vishay's VCNL4010, performs quite a lot better.
+This chip has its own on-board ADC for the brightness signal (the older Sharp chips produced an analog voltage that had to be sampled externally, on the microcontroller), which seems to make for much higher resolutions.
+This is reportedly the sensor used in the VirtuaPin v3 plunger kit, so I recently (May 2021) added support for it to the Pinscape firmware, to help out some VirtuaPin customers who had requested it because they switched to the Pinscape firmware on their controller boards.
+This sensor is actually pretty good: in my testing, it reliably resolved distances to less than 1mm over most of its range.
+(It gets coarser at the "far" end where the plunger is farthest away from the sensor; this region is the most challenging for the sensor because very little light is reflected back at that distance.) That's not as good as some of the other sensors (potentiometer, quadrature, linear imaging), but it's good enough to be usable.
+The tricky part of this sensor is that its response curve (the relationship between measured brightness and object distance) is a little bit erratic.
+But it's close enough to a power law relationship that the distance conversions come out looking plausibly linear, if you don't look too closely.
 
-There's a related but different type of sensor that uses reflected IR light to actually measure distance - by design, not just incidentally. These are called "time-of-flight" sensors, because they measure distance by timing the round-trip time for light pulses to be returned from the target, instead of just measuring the brightness of the reflection. In principle, this should yield much more precise distance measurements, because the time measurement isn't affected by the reflectivity of the target, which is obviously a huge factor for the brightness sensors. In addition, the underlying physical quantity being measured - round-trip travel time of the IR photons - has an inherently linear relationship with the distance, so the conversion from measured quantity to distance is straightforward and doesn't lose precision or magnify uncertainties, the way that the inverse power-law relationship does for brightness-to-distance conversions.
+There's a related but different type of sensor that uses reflected IR light to actually measure distance - by design, not just incidentally.
+These are called "time-of-flight" sensors, because they measure distance by timing the round-trip time for light pulses to be returned from the target, instead of just measuring the brightness of the reflection.
+In principle, this should yield much more precise distance measurements, because the time measurement isn't affected by the reflectivity of the target, which is obviously a huge factor for the brightness sensors.
+In addition, the underlying physical quantity being measured - round-trip travel time of the IR photons - has an inherently linear relationship with the distance, so the conversion from measured quantity to distance is straightforward and doesn't lose precision or magnify uncertainties, the way that the inverse power-law relationship does for brightness-to-distance conversions.
 
-The Pinscape software supports the current best-of-breed sensor in the time-of-flight class (as far as I've found), the VL6180X. Unfortunately, in my testing, this sensor is inferior to the VCNL4010, despite the more sophisticated technology. The VL6180X has a nominal resolution of 1mm (1/25"), which I'd consider just barely usable. Unfortunately, that's only the nominal resolution; the actual accuracy in my measurements is more like 5mm to 10mm. That's too coarse to be usable, in my view; it gives you some semblance of plunger operation, but isn't good enough for smooth animation, and definitely isn't good enough for skill shots. The sensor is also too slow; it takes it at least 14ms to produce a sample, in its fastest and least accurate averaging mode.
+The Pinscape software supports the current best-of-breed sensor in the time-of-flight class (as far as I've found), the VL6180X.
+Unfortunately, in my testing, this sensor is inferior to the VCNL4010, despite the more sophisticated technology.
+The VL6180X has a nominal resolution of 1mm (1/25"), which I'd consider just barely usable.
+Unfortunately, that's only the nominal resolution; the actual accuracy in my measurements is more like 5mm to 10mm.
+That's too coarse to be usable, in my view; it gives you some semblance of plunger operation, but isn't good enough for smooth animation, and definitely isn't good enough for skill shots.
+The sensor is also too slow; it takes it at least 14ms to produce a sample, in its fastest and least accurate averaging mode.
 
-I'm planning to keep an eye out for new time-of-flight sensors coming onto the market, since this seems like a promising design approach that could eventually yield high-precision non-contact distance sensors. But right now there doesn't seem to be a production chip available that performs well enough for our purposes. By the same token, given that the VCNL4010 is already passably good, it would be worth monitoring developments in that product line; it wouldn't take a huge amount of improvement for that type of sensor to become a top choice.
+I'm planning to keep an eye out for new time-of-flight sensors coming onto the market, since this seems like a promising design approach that could eventually yield high-precision non-contact distance sensors.
+But right now there doesn't seem to be a production chip available that performs well enough for our purposes.
+By the same token, given that the VCNL4010 is already passably good, it would be worth monitoring developments in that product line; it wouldn't take a huge amount of improvement for that type of sensor to become a top choice.
 
 == Bar code absolution position sensing
 
-This is an experimental approach that I've been looking at but haven't yet made work well enough. The idea is to do *absolute* position sensing using an optical Gray code and a suitable small image sensor. We create an optical scale with a Gray code printed on it with a unique code in each position across the 3" plunger travel range, then we use an optical sensor to reach the code at the current position. We translate the bar code by looking it up in a table to get the absolute position.
+This is an experimental approach that I've been looking at but haven't yet made work well enough.
+The idea is to do *absolute* position sensing using an optical Gray code and a suitable small image sensor.
+We create an optical scale with a Gray code printed on it with a unique code in each position across the 3" plunger travel range, then we use an optical sensor to reach the code at the current position.
+We translate the bar code by looking it up in a table to get the absolute position.
 
-The principle here is simple, and a suitable sensor is available: TSL1401CL. As you might guess from the name, this sensor comes from the same series as the late, great TSL1410R that we mentioned earlier, but it has a much smaller window - only about 128 pixels over 1cm. That makes it unsuitable for the straightforward "shadow edge" method we used with the larger sensor. But 128 pixels is more than enough to read a bar code. With 128 pixels to work with, we could easily come up with a bar code that could represent perhaps 20 bits. That would be much more than we need; just 10 bits would be enough to encode 1000 unique positions along a scale. If we spread 1000 codes over 3", we'd be able to resolve about 300 positions per inch. That's at the high end of the resolution requirements we laid out earlier.
+The principle here is simple, and a suitable sensor is available: TSL1401CL.
+As you might guess from the name, this sensor comes from the same series as the late, great TSL1410R that we mentioned earlier, but it has a much smaller window - only about 128 pixels over 1cm.
+That makes it unsuitable for the straightforward "shadow edge" method we used with the larger sensor.
+But 128 pixels is more than enough to read a bar code.
+With 128 pixels to work with, we could easily come up with a bar code that could represent perhaps 20 bits.
+That would be much more than we need; just 10 bits would be enough to encode 1000 unique positions along a scale.
+If we spread 1000 codes over 3", we'd be able to resolve about 300 positions per inch.
+That's at the high end of the resolution requirements we laid out earlier.
 
-This all works nicely in principle, and the Pinscape firmware already has support for a form of this, since I've done some experiments with it. The challenge is making the optics work. I haven't been able to find a way to get a sharp enough image of the bar code to read it reliably at the required resolution. So the open area of research is how to arrange a lens or other optics to get a good enough image on the sensor.
+This all works nicely in principle, and the Pinscape firmware already has support for a form of this, since I've done some experiments with it.
+The challenge is making the optics work.
+I haven't been able to find a way to get a sharp enough image of the bar code to read it reliably at the required resolution.
+So the open area of research is how to arrange a lens or other optics to get a good enough image on the sensor.
 
-If I can get this working, I think it would make a really great sensor option. It should have the excellent spatial resolution and sample-to-sample stability of the quadrature sensors, plus the absolute position sensing of all of the other types, which would be a powerful combination.
+If I can get this working, I think it would make a really great sensor option.
+It should have the excellent spatial resolution and sample-to-sample stability of the quadrature sensors, plus the absolute position sensing of all of the other types, which would be a powerful combination.
 
 == Rotary absolute position sensing
 
-Absolute sensing like that described above is available in commercial position sensors that do _rotary_ position sensing - that is, they measure the turn angle of a shaft, rather than a linear offset. There are some magnetic rotary absolute sensors available with very high angular resolutions.
+Absolute sensing like that described above is available in commercial position sensors that do _rotary_ position sensing - that is, they measure the turn angle of a shaft, rather than a linear offset.
+There are some magnetic rotary absolute sensors available with very high angular resolutions.
 
 The trick is to translate the linear motion of the plunger into a rotational angle.
 
-One possibility is a lever between the plunger and rotating shaft. A lever connects to a shaft at one end and to the plunger at the other end; moving the plunger rotates the shaft through the lever. One complication is that the distance between the shaft and plunger would vary over the plunger's range of motion, so a sliding connector at one end would be required. The other complication is that the rotational angle wouldn't vary linearly with the plunger's position - it would be sinusoidal. The sine curve approaches closer to linearity the longer you make the lever, so one solution could be to make a very long lever. On the other hand, that would require a very high-res sensor, since you'd only be using a small fraction of its angular range. A better solution might be to use calibration in the software to figure out where you are on the sine curve, and translate mathematically from the sine curve to the linear position. That's easy in principle, but it seems challenging to make the mechanics of the calibration user-friendly.
+One possibility is a lever between the plunger and rotating shaft.
+A lever connects to a shaft at one end and to the plunger at the other end; moving the plunger rotates the shaft through the lever.
+One complication is that the distance between the shaft and plunger would vary over the plunger's range of motion, so a sliding connector at one end would be required.
+The other complication is that the rotational angle wouldn't vary linearly with the plunger's position - it would be sinusoidal.
+The sine curve approaches closer to linearity the longer you make the lever, so one solution could be to make a very long lever.
+On the other hand, that would require a very high-res sensor, since you'd only be using a small fraction of its angular range.
+A better solution might be to use calibration in the software to figure out where you are on the sine curve, and translate mathematically from the sine curve to the linear position.
+That's easy in principle, but it seems challenging to make the mechanics of the calibration user-friendly.
 
-Another possibility is to translate the linear motion to angular motion through a belt that wraps around a pair of wheels. The belt moves with the plunger, and as it moves, it turns the wheels. The angular sensor is connected to the axle of one of the wheels. This would yield a very straightforward linear relationship between position and angle, so it wouldn't have any of the calibration problems of the lever approach. This seems like a pretty straightforward mechanism, but I haven't tried to realize it physically yet. I think the main challenge would be ensuring a solid connection between the plunger, belt, and wheels, so that the plunger motion directly translates to wheel motion without any play or hysteresis. Any mechanical play in the system would manifest as loss of precision in the readings, so this would all have to be very solidly connected.
+Another possibility is to translate the linear motion to angular motion through a belt that wraps around a pair of wheels.
+The belt moves with the plunger, and as it moves, it turns the wheels.
+The angular sensor is connected to the axle of one of the wheels.
+This would yield a very straightforward linear relationship between position and angle, so it wouldn't have any of the calibration problems of the lever approach.
+This seems like a pretty straightforward mechanism, but I haven't tried to realize it physically yet.
+I think the main challenge would be ensuring a solid connection between the plunger, belt, and wheels, so that the plunger motion directly translates to wheel motion without any play or hysteresis.
+Any mechanical play in the system would manifest as loss of precision in the readings, so this would all have to be very solidly connected.
 
-If the mechanics could be worked out, selecting a suitable absolute rotary encoder and connecting to the software should be relatively simple. There are a number of high-res magnetic encoders available with 12-bit or higher resolution, which means 4096 counts per turn. With the wheel arrangement describe above and 1" diameter wheels, the 3" of plunger motion would turn into almost one full turn, so we'd get perhaps 75% of the range of the sensor. That means we could achieve as many as 1000 counts on the sensor per inch, or 1/1000" linear resolution. That would be far higher than any of the other sensors. Interfacing one of these sensors to the software should be pretty easy, as the newer ones use modern microcontroller-friendly interfaces like SPI or I2C.
+If the mechanics could be worked out, selecting a suitable absolute rotary encoder and connecting to the software should be relatively simple.
+There are a number of high-res magnetic encoders available with 12-bit or higher resolution, which means 4096 counts per turn.
+With the wheel arrangement describe above and 1" diameter wheels, the 3" of plunger motion would turn into almost one full turn, so we'd get perhaps 75% of the range of the sensor.
+That means we could achieve as many as 1000 counts on the sensor per inch, or 1/1000" linear resolution.
+That would be far higher than any of the other sensors.
+Interfacing one of these sensors to the software should be pretty easy, as the newer ones use modern microcontroller-friendly interfaces like SPI or I2C.
 

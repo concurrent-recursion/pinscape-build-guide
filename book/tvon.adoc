@@ -1,50 +1,81 @@
 [#tvon]
 = TV ON Switch
 
-The Pinscape Controller has a feature that lets you send a "Power On" command to your TV(s) when the overall system powers up. This feature can solve the problem that some TVs have when used in pin cabs, namely that they don't power on automatically when they're plugged in again after being unplugged.
+The Pinscape Controller has a feature that lets you send a "Power On" command to your TV(s) when the overall system powers up. 
+This feature can solve the problem that some TVs have when used in pin cabs, namely that they don't power on automatically when they're plugged in again after being unplugged.
 
-This feature is only needed if your TV doesn't remember its power state when you plug it back in after it's unplugged, _and_ you're using the sort of one-button power control setup as described in xref:powerSwitching.adoc#powerSwitching[Power Switching] . That power control setup effectively unplugs the TVs and other devices from AC power when the PC is off, so each time you turn the PC back on, the TV thinks it's being plugged back in to the wall outlet after being unplugged. Some TVs automatically power up and return to displaying the last video source when this happens, but many just go into standby mode. The Pinscape TV ON feature is meant to solve this problem for TVs that go into standby mode, by explicitly sending a "Power On" command to the TV at system startup to get it back into operation.
+This feature is only needed if your TV doesn't remember its power state when you plug it back in after it's unplugged, _and_ you're using the sort of one-button power control setup as described in xref:powerSwitching.adoc#powerSwitching[Power Switching] . 
+That power control setup effectively unplugs the TVs and other devices from AC power when the PC is off, so each time you turn the PC back on, the TV thinks it's being plugged back in to the wall outlet after being unplugged. 
+Some TVs automatically power up and return to displaying the last video source when this happens, but many just go into standby mode. 
+The Pinscape TV ON feature is meant to solve this problem for TVs that go into standby mode, by explicitly sending a "Power On" command to the TV at system startup to get it back into operation.
 
 == Do I need it?
 
-Before going on, you should make sure you actually need this feature. Some TVs need it and others don't. And regardless of TV, there's no need for it unless you're using one-button power control of the sort described in xref:powerSwitching.adoc#powerSwitching[Power Switching] .
+Before going on, you should make sure you actually need this feature. 
+Some TVs need it and others don't. 
+And regardless of TV, there's no need for it unless you're using one-button power control of the sort described in xref:powerSwitching.adoc#powerSwitching[Power Switching] .
 
 Assuming you're using that sort of power switching, here's how to test your TV to see if it needs help powering on at system startup:
 
-* Set up the TV as a monitor on your PC, using the input on the TV (HDMI, etc) that you intend to use when it's in your cab. Turn everything ON and make sure it's all configured so that you see the Windows desktop on the TV.
+* Set up the TV as a monitor on your PC, using the input on the TV (HDMI, etc) that you intend to use when it's in your cab. 
+Turn everything ON and make sure it's all configured so that you see the Windows desktop on the TV.
 * With the TV still ON, pull the plug out of the wall socket.
 * Wait a few minutes.
 * Plug it back in, and *don't push any buttons on the TV* .
 * Did the TV turn back on and show the Windows desktop again?
 
-If the answer is yes, you *don't* need the "TV ON" feature. A smart power strip is all you need to control this TV and get it to power up in sync with the PC.
+If the answer is yes, you *don't* need the "TV ON" feature. 
+A smart power strip is all you need to control this TV and get it to power up in sync with the PC.
 
-If the TV stays off or goes into standby mode, you *do* need the TV ON feature. This TV won't turn on after being unplugged until it receives an explicit "Power On" command, which is exactly what the TV ON feature provides. You'll still need the switched outlet to control its line power, but you'll *also* need the TV ON feature to get it to wake up again each time power is restored.
+If the TV stays off or goes into standby mode, you *do* need the TV ON feature. 
+This TV won't turn on after being unplugged until it receives an explicit "Power On" command, which is exactly what the TV ON feature provides. 
+You'll still need the switched outlet to control its line power, but you'll *also* need the TV ON feature to get it to wake up again each time power is restored.
 
 Be sure to check each TV you plan to use in your cab, since some might need the TV ON feature even if others don't.
 
-You can approximate this test without the PC if necessary. Just tune the TV to an over-the-air channel instead of using the PC as a video input. The important thing is that there's some kind of active video source, since some TVs will go into standby mode when there's no input and wake up when there is. The test with the PC as video source is the most reliable, because that's the exact setup you'll have in the cab, but most TVs will behave the same way with all video sources.
+You can approximate this test without the PC if necessary. 
+Just tune the TV to an over-the-air channel instead of using the PC as a video input. 
+The important thing is that there's some kind of active video source, since some TVs will go into standby mode when there's no input and wake up when there is. 
+The test with the PC as video source is the most reliable, because that's the exact setup you'll have in the cab, but most TVs will behave the same way with all video sources.
 
 == What if I'm still shopping for a TV?
 
-Some cab builders try to avoid this whole issue by only buying TVs that pass the test above. So you might be wondering if there's an easy way to tell when shopping. Unfortunately, I've never seen a manufacturer or store mention it anywhere, and I don't think it would occur to most buyers to ask. It's not even safe to assume that similar models from the same manufacturer will behave the same way. If you want to be sure before you buy, you'll have to either find a store that's willing to let you test a floor model, or find a friend or forum member who has the exact model you're considering.
+Some cab builders try to avoid this whole issue by only buying TVs that pass the test above. 
+So you might be wondering if there's an easy way to tell when shopping. 
+Unfortunately, I've never seen a manufacturer or store mention it anywhere, and I don't think it would occur to most buyers to ask. 
+It's not even safe to assume that similar models from the same manufacturer will behave the same way. 
+If you want to be sure before you buy, you'll have to either find a store that's willing to let you test a floor model, or find a friend or forum member who has the exact model you're considering.
 
 == What this feature doesn't do
 
-The TV ON feature *doesn't* control power at the plug, and it can't turn OFF your TVs. For both of those functions, use the techniques described in xref:powerSwitching.adoc#powerSwitching[Power Switching] . The TV ON feature is meant to be used *in conjunction with* the switched power strip described in that chapter. TV ON isn't a replacement for the switched power strip; it's just an add-on to deal with TVs that don't automatically turn back on after being unplugged.
+The TV ON feature *doesn't* control power at the plug, and it can't turn OFF your TVs. 
+For both of those functions, use the techniques described in xref:powerSwitching.adoc#powerSwitching[Power Switching] . 
+The TV ON feature is meant to be used *in conjunction with* the switched power strip described in that chapter. 
+TV ON isn't a replacement for the switched power strip; it's just an add-on to deal with TVs that don't automatically turn back on after being unplugged.
 
 == How it works
 
-The TV ON feature works by having the Pinscape software send a "Power On" command to the TV a short time after the computer turns on. To physically send the command to the TV, there are two possibilities:
+The TV ON feature works by having the Pinscape software send a "Power On" command to the TV a short time after the computer turns on. 
+To physically send the command to the TV, there are two possibilities:
 
-* By wires soldered to the switch terminals of the ON button on the TV itself. We connect these wires to a relay controlled by the Pinscape device. The Pinscape software pulses the relay shortly after the computer turns on. The TV registers this as an ON button press.
-* By IR remote control. We connect an IR LED to the Pinscape unit, and position the LED so that it points at the TV's remote control sensor. The Pinscape software can be programmed to transmit the TV's remote control ON code at the proper time.
+* By wires soldered to the switch terminals of the ON button on the TV itself. 
+We connect these wires to a relay controlled by the Pinscape device. 
+The Pinscape software pulses the relay shortly after the computer turns on. 
+The TV registers this as an ON button press.
+* By IR remote control. 
+We connect an IR LED to the Pinscape unit, and position the LED so that it points at the TV's remote control sensor. 
+The Pinscape software can be programmed to transmit the TV's remote control ON code at the proper time.
 
-The Pinscape software sends the ON command a few seconds after the computer starts up. The delay is necessary because most TVs ignore commands for a few seconds after being plugged in. The exact amount of time needed varies by TV, so the delay can be can be adjusted in the Pinscape software configuration.
+The Pinscape software sends the ON command a few seconds after the computer starts up. 
+The delay is necessary because most TVs ignore commands for a few seconds after being plugged in. 
+The exact amount of time needed varies by TV, so the delay can be can be adjusted in the Pinscape software configuration.
 
 === Using Windows commands
 
-The normal way to use the TV ON feature is to let Pinscape do everything automatically using the *power sensing circuit* described below. If you're using the expansion boards, that's built in, so I'd go that route. If you're using a standalone KL25Z, though, the sensor circuit might be more trouble than you want to go to. So let me offer an easier alternative: use Windows commands.
+The normal way to use the TV ON feature is to let Pinscape do everything automatically using the *power sensing circuit* described below. 
+If you're using the expansion boards, that's built in, so I'd go that route. 
+If you're using a standalone KL25Z, though, the sensor circuit might be more trouble than you want to go to. 
+So let me offer an easier alternative: use Windows commands.
 
 Here's the idea:
 
@@ -52,9 +83,12 @@ Here's the idea:
 * Put commands in the .BAT file to turn on the TV (see below)
 * Put a shortcut to the .BAT file in your Start Menu > Startup folder
 
-When Windows starts up, it'll run this .BAT file because it's in your Startup folder, so this will have roughly the same effect as the power sensor circuit. We just let Windows tell us when the system is starting up rather than detecting it electronically.
+When Windows starts up, it'll run this .BAT file because it's in your Startup folder, so this will have roughly the same effect as the power sensor circuit. 
+We just let Windows tell us when the system is starting up rather than detecting it electronically.
 
-The commands all involve the utility program `PinscapeCmd.exe` , which you'll find in your Pinscape Config Tool folder. In the command examples below, we'll pretend this folder is named `C:\Pinscape` , but it doesn't have to use that exact name. Just substitute your folder path into the commands below if you're using something different.
+The commands all involve the utility program `PinscapeCmd.exe` , which you'll find in your Pinscape Config Tool folder. 
+In the command examples below, we'll pretend this folder is named `C:\Pinscape` , but it doesn't have to use that exact name. 
+Just substitute your folder path into the commands below if you're using something different.
 
 If you're using the hard-wired TV ON switch, the command looks like this:
 [source,shell]
@@ -66,16 +100,23 @@ If you're using an IR remote control instead of the hard-wired switch, do this:
 [source,shell]
 C:\Pinscape\PinscapeCmd SendIR=1
 
-That transmits the IR code in "slot 1" in your learned IR command list. If you're going to teach Pinscape multiple IR commands, change the "1" in `SendIR=1` to whichever slot contains the right ON command for your TV.
+That transmits the IR code in "slot 1" in your learned IR command list. 
+If you're going to teach Pinscape multiple IR commands, change the "1" in `SendIR=1` to whichever slot contains the right ON command for your TV.
 
-One more detail: if you have more than one Pinscape unit in your system at the same time, you have to tell PinscapeCmd which unit you want to send the command to. You do this by adding `Unit=2` (or whichever unit number you want to address) right after the `PinscapeCmd` command name:
+One more detail: if you have more than one Pinscape unit in your system at the same time, you have to tell PinscapeCmd which unit you want to send the command to. 
+You do this by adding `Unit=2` (or whichever unit number you want to address) right after the `PinscapeCmd` command name:
 [source,shell]
 C:\Pinscape\PinscapeCmd Unit=2 TVON
 
 [#powerSensingCircuit]
 === Power sensing circuit
 
-The Pinscape expansion boards have some special circuitry built-in that detects when the system is powering up. This is a little more complicated than it sounds because of the way PC power supplies work. USB-powered devices like the KL25Z generally continue to receive 5V power even when the PC is off. That means that the Pinscape software can't tell from USB power alone when the system is powered on or off. As far as Pinscape's USB power goes, the power is always on, even when the overall system is off. Similarly, the Pinscape software can't assume that a KL25Z reboot means that the power status has changed, since the KL25Z can be rebooted at random times, such as when you update option settings, or if you should unplug it for some reason.
+The Pinscape expansion boards have some special circuitry built-in that detects when the system is powering up. 
+This is a little more complicated than it sounds because of the way PC power supplies work. 
+USB-powered devices like the KL25Z generally continue to receive 5V power even when the PC is off. 
+That means that the Pinscape software can't tell from USB power alone when the system is powered on or off. 
+As far as Pinscape's USB power goes, the power is always on, even when the overall system is off. 
+Similarly, the Pinscape software can't assume that a KL25Z reboot means that the power status has changed, since the KL25Z can be rebooted at random times, such as when you update option settings, or if you should unplug it for some reason.
 
 If you want to use Pinscape's automatic TV ON system *without* the expansion boards, you have two choices:
 
@@ -84,15 +125,18 @@ If you want to use Pinscape's automatic TV ON system *without* the expansion boa
 
 The first option (a Windows batch script) is easier, but if you prefer to let Pinscape handle things automatically, read on for details on building the power sensing circuit.
 
-Note that this entire scheme depends on following the switched 120V power plan outlined in xref:powerSwitching.adoc#powerSwitching[Power Switching] . In order for this to work, you must be using:
+Note that this entire scheme depends on following the switched 120V power plan outlined in xref:powerSwitching.adoc#powerSwitching[Power Switching] . 
+In order for this to work, you must be using:
 
 * A "soft" power switch for the main PC
 * A switched outlet that's controlled by the PC power
 * A secondary ATX power supply that's plugged into the switched outlet, for powering feedback devices and other systems apart from the PC motherboard
 
-If you're already familiar with that design, read on. If not, you should go back and read about it in xref:powerSwitching.adoc#powerSwitching[Power Switching] , because some of the material below won't make sense if you're not using the same design for the main power switching system.
+If you're already familiar with that design, read on. 
+If not, you should go back and read about it in xref:powerSwitching.adoc#powerSwitching[Power Switching] , because some of the material below won't make sense if you're not using the same design for the main power switching system.
 
-Here's the schematic for the sensing circuit. Again, this is built in to the expansion boards, so you won't have to build this separately if you're using the expansion boards.
+Here's the schematic for the sensing circuit. 
+Again, this is built in to the expansion boards, so you won't have to build this separately if you're using the expansion boards.
 
 image::images/PSU2PowerSense.png[""]
 
@@ -103,25 +147,36 @@ image::images/PSU2PowerSense.png[""]
 * Connect PSU2_STATUS_SENSE to the KL25Z GPIO port assigned as "Power status input" in the Pinscape Config Tool settings
 * Connect PSU2_STATUS_SET to the KL25Z GPIO port assigned as "Status latch output" in the settings
 
-You can use any free GPIO ports for the connections listed. The expansion boards use PTD2 for the power status input (PSU2_STATUS_SENSE) and PTE0 for the latch output (PSU2_STATUS_SET).
+You can use any free GPIO ports for the connections listed. 
+The expansion boards use PTD2 for the power status input (PSU2_STATUS_SENSE) and PTE0 for the latch output (PSU2_STATUS_SET).
 
 ====  Configuring settings for the power sensing circuit
 
-To configure your standalone TV ON circuit, run the Pinscape Config Tool. Go to the Settings page, and scroll down to the *TV ON Switch* section.
+To configure your standalone TV ON circuit, run the Pinscape Config Tool. 
+Go to the Settings page, and scroll down to the *TV ON Switch* section.
 
 image::images/TVON-config.png[""]
 
-Click on the *Power status input* box to select the GPIO pin you wired to PSU2_STATUS_SENSE. Then click on the *Power latch output* box to select the pin wired to PSU2_STATUS_SET.
+Click on the *Power status input* box to select the GPIO pin you wired to PSU2_STATUS_SENSE. 
+Then click on the *Power latch output* box to select the pin wired to PSU2_STATUS_SET.
 
 If you're using the IR transmitter instead of the hard-wired TV ON relay switch, you can simply set the *Relay output* box to *Not Connected* , to tell the software that no pin is connected to that function.
 
-The *Startup delay time* is the amount of time in seconds that the software will wait after system startup to send the TV ON signals to the TVs. This is used for both the relay switch and the IR signals. Adjust this as needed to make sure that the system waits long enough for your TVs to initialize. Most TVs aren't responsive to any control inputs for a few seconds after they're plugged in, so this delay is intended to give the TVs long enough that they're ready to handle the ON signal when Pinscape sends it. If your TVs usually work but seem to miss the signal some of the time, adding a few seconds to the delay might make it more reliable.
+The *Startup delay time* is the amount of time in seconds that the software will wait after system startup to send the TV ON signals to the TVs. 
+This is used for both the relay switch and the IR signals. 
+Adjust this as needed to make sure that the system waits long enough for your TVs to initialize. 
+Most TVs aren't responsive to any control inputs for a few seconds after they're plugged in, so this delay is intended to give the TVs long enough that they're ready to handle the ON signal when Pinscape sends it. 
+If your TVs usually work but seem to miss the signal some of the time, adding a few seconds to the delay might make it more reliable.
 
 When you've entered all of the settings, click "Program KL25Z" at the bottom of the page to save the changes to the device.
 
 === Setting up an IR transmitter/receiver
 
-If you're going the IR route, the minimum requirement is an IR transmitter, to send IR commands to your TV(s). But you'll almost certainly want to set up an IR receiver as well, so that Pinscape can "learn" commands from your remotes. It's possible in principle to program the remote control codes by hand, without the learning function, but it's surprisingly difficult to find published information for the exact model of TV you're trying to control. And even if you can find published codes, they're hard to make sense of because no one can agree on a universal standard format. The learning function is by far the easiest way to figure out what codes your exact TV is using, because it lets Pinscape read the codes directly from your remote control.
+If you're going the IR route, the minimum requirement is an IR transmitter, to send IR commands to your TV(s). 
+But you'll almost certainly want to set up an IR receiver as well, so that Pinscape can "learn" commands from your remotes. 
+It's possible in principle to program the remote control codes by hand, without the learning function, but it's surprisingly difficult to find published information for the exact model of TV you're trying to control. 
+And even if you can find published codes, they're hard to make sense of because no one can agree on a universal standard format. 
+The learning function is by far the easiest way to figure out what codes your exact TV is using, because it lets Pinscape read the codes directly from your remote control.
 
 See xref:irRemote.adoc#irRemote[IR Remote Control] for instructions on setting up the IR remote control features with Pinscape.
 
@@ -132,31 +187,40 @@ Once you've installed the IR transmitter and receiver hardware, you can set up t
 ) in the row for the "ON" button code
 * Be sure to save settings by clicking "Program KL25Z"
 
-Once you activate the TV ON icon for a code, Pinscape will automatically transmit that code at system startup, when the power sensing circuit detects that power has just been turned on. Remember that you *must* use and configure the power-sensing circuit for this to work (the circuit is built in to the expansion boards, but you have to build it separately if you're using a standalone KL25Z).
+Once you activate the TV ON icon for a code, Pinscape will automatically transmit that code at system startup, when the power sensing circuit detects that power has just been turned on. 
+Remember that you *must* use and configure the power-sensing circuit for this to work (the circuit is built in to the expansion boards, but you have to build it separately if you're using a standalone KL25Z).
 
 === Connecting a hard-wired TV ON switch
 
-WARNING: I no longer recommend this approach. Even though it's the original solution I used in my own cab, I'd recommend avoiding it and using the IR transmitter solution instead. Hard-wiring the power switch requires opening up the TV, and modern flat-panel TVs are just too delicate for this to be a good idea. The IR solution is completely non-invasive.
+WARNING: I no longer recommend this approach. 
+Even though it's the original solution I used in my own cab, I'd recommend avoiding it and using the IR transmitter solution instead. 
+Hard-wiring the power switch requires opening up the TV, and modern flat-panel TVs are just too delicate for this to be a good idea. 
+The IR solution is completely non-invasive.
 
 If you're absolutely dead set on this approach, though, read on.
 
 ====  Expansion boards
 
-The main expansion board has wiring for up to two TV switches. The connectors are on the JP4 pin header, labeled "TV ON".
+The main expansion board has wiring for up to two TV switches. 
+The connectors are on the JP4 pin header, labeled "TV ON".
 
 image::images/TVON-expan.png[""]
 
-Connect the first TV's power switch to the pair of pins in the "column" under the label TV1. Connect the second TV's power switch to the pair of pins in the column under the label TV2.
+Connect the first TV's power switch to the pair of pins in the "column" under the label TV1. 
+Connect the second TV's power switch to the pair of pins in the column under the label TV2.
 
 image::images/TVON-expan-TV1.png[""]
 
 image::images/TVON-expan-TV2.png[""]
 
-You can just run ordinary wire between the expansion board pins and the switch on the TV. These carry only low-power switch signals, so you can use a fairly thin wire like you'd use for wiring cabinet buttons, such as 24 AWG.
+You can just run ordinary wire between the expansion board pins and the switch on the TV. 
+These carry only low-power switch signals, so you can use a fairly thin wire like you'd use for wiring cabinet buttons, such as 24 AWG.
 
 ====  Standalone wiring (no expansion boards)
 
-If you're using the expansion boards, the relay switch is built in. If you're not using the expansion board, you can build the same circuit yourself. Here's the schematic:
+If you're using the expansion boards, the relay switch is built in. 
+If you're not using the expansion board, you can build the same circuit yourself. 
+Here's the schematic:
 
 image::images/TVON-relay.png[""]
 
@@ -165,33 +229,69 @@ image::images/TVON-relay.png[""]
 * Connect GND2 to the ground (black wire) of your secondary power supply
 * Connect TV_SWITCH to the GPIO pin you're using for the TV relay
 
-You can use any GPIO pin to control the TV relay. The default used on the expansion boards is PTD3, but you can use a different pin if that one is in use. You'll have to configure whichever pin you select in the Pinscape Config Tool. In the Config Tool, go to the Settings page, then scroll down to the TV ON section. Click the *Relay output* box to set the appropriate GPIO pin.
+You can use any GPIO pin to control the TV relay. 
+The default used on the expansion boards is PTD3, but you can use a different pin if that one is in use. 
+You'll have to configure whichever pin you select in the Pinscape Config Tool. 
+In the Config Tool, go to the Settings page, then scroll down to the TV ON section. 
+Click the *Relay output* box to set the appropriate GPIO pin.
 
 ====  Wiring the TV switch
 
 You'll have to be comfortable with taking the TV apart at this stage, because we have to connect some wires to the On/Off button.
 
-There are no generic instructions for taking a TV case apart, so you're on your own for this part. Your goal is to open the case and expose the little circuit board containing the On/Off button.
+There are no generic instructions for taking a TV case apart, so you're on your own for this part. 
+Your goal is to open the case and expose the little circuit board containing the On/Off button.
 
-CAUTION: Needless to say, use extreme caution with this step. In modern LCD TVs, the LCD panel and polarizing filter are very thin, brittle plastic sheets and often have no structural support other than the outer case, so it's very easy to crack them during the removal process or after the case is off. Removing the case will also void the warranty, so you're assuming the entire risk of breaking something by proceeding.
+CAUTION: Needless to say, use extreme caution with this step. 
+In modern LCD TVs, the LCD panel and polarizing filter are very thin, brittle plastic sheets and often have no structural support other than the outer case, so it's very easy to crack them during the removal process or after the case is off. 
+Removing the case will also void the warranty, so you're assuming the entire risk of breaking something by proceeding.
 
-Once you get the case open, you should find a little circuit board located under the area where the buttons on the case are situated. It's usually long and narrow, and looks something like this:
+Once you get the case open, you should find a little circuit board located under the area where the buttons on the case are situated. 
+It's usually long and narrow, and looks something like this:
 
 image::images/TVButtonPCB.png[""]
 
-The red arrows in the photo above show the soldering points for the button leads. The little squarish silver objects are the buttons. These are normally situated immediately under the exterior plastic buttons on the TV's bezel; pressing on the exterior plastic button has the effect of pushing down on this metal part, which is the real button.
+The red arrows in the photo above show the soldering points for the button leads. 
+The little squarish silver objects are the buttons. 
+These are normally situated immediately under the exterior plastic buttons on the TV's bezel; pressing on the exterior plastic button has the effect of pushing down on this metal part, which is the real button.
 
-Once you find this circuit board, identify which button corresponds to the On/Off button on the outer case. Do this by position: just find the inner button that's situated underneath the On/Off button on the case. You can also do this by counting buttons from right to left, since there should be the same number of silver buttons on the circuit board as plastic buttons on the case.
+Once you find this circuit board, identify which button corresponds to the On/Off button on the outer case. 
+Do this by position: just find the inner button that's situated underneath the On/Off button on the case. 
+You can also do this by counting buttons from right to left, since there should be the same number of silver buttons on the circuit board as plastic buttons on the case.
 
-Next, identify the switch leads. There are probably four leads to these switches, one at each corner. On the TVs I've looked at, the leads are in pairs that are electrically connected together, so there are really only two wires here even though it looks like four. Put your multimeter in continuity test mode and check the leads in pairs. Find a pair that are *not* connected normally, but that become connected when you press the button. These are the leads you want to solder to.
+Next, identify the switch leads. 
+There are probably four leads to these switches, one at each corner. 
+On the TVs I've looked at, the leads are in pairs that are electrically connected together, so there are really only two wires here even though it looks like four. 
+Put your multimeter in continuity test mode and check the leads in pairs. 
+Find a pair that are *not* connected normally, but that become connected when you press the button. 
+These are the leads you want to solder to.
 
-The next step is possibly even more delicate and tricky than opening the case. You have to solder wires to the button leads you just identified. To do this, use fine hookup wire, 24 AWG or thinner. Strip a very short length of insulation from the ends, around 1/8". Melt a little solder onto the end of the wire. Position the end of the wire at the desired contact point. Now get out some tape (I used thin strips of masking tape here) and secure the wire to the board a couple of inches away from the contact point. The idea is to hold it in place at the desired position before soldering so that the solder can just flow over the junction with everything already positioned properly. Once everything is in place, heat the end of the wire for a few moments, long enough for the solder to melt and flow onto the switch lead. Remove the soldering iron carefully and try to hold everything very still for a few moments so that the solder can solidify over the junction point. If all went well, the wire should stick to the switch lead. The connection will be delicate at best, so you'll want to secure the wire with a couple more pieces of tape to minimize mechanical stress on it.
+The next step is possibly even more delicate and tricky than opening the case. 
+You have to solder wires to the button leads you just identified. 
+To do this, use fine hookup wire, 24 AWG or thinner. 
+Strip a very short length of insulation from the ends, around 1/8". 
+Melt a little solder onto the end of the wire. 
+Position the end of the wire at the desired contact point. 
+Now get out some tape (I used thin strips of masking tape here) and secure the wire to the board a couple of inches away from the contact point. 
+The idea is to hold it in place at the desired position before soldering so that the solder can just flow over the junction with everything already positioned properly. 
+Once everything is in place, heat the end of the wire for a few moments, long enough for the solder to melt and flow onto the switch lead. 
+Remove the soldering iron carefully and try to hold everything very still for a few moments so that the solder can solidify over the junction point. 
+If all went well, the wire should stick to the switch lead. 
+The connection will be delicate at best, so you'll want to secure the wire with a couple more pieces of tape to minimize mechanical stress on it.
 
 image::images/TVOnSoldering.png[""]
 
 TV On/Off switch with wires soldered to leads
 
-Repeat this process for the second lead. Once both are soldered and held securely in place with tape, test your work with the multimeter. Use continuity test again. Connect the meter leads to the free ends of the wires you just soldered. The meter should read open/no connection. Press the button, and the meter should read closed/connected. If that works, you're set. Put the TV case back together, taking care to run your newly attached wires out a suitable opening.
+Repeat this process for the second lead. 
+Once both are soldered and held securely in place with tape, test your work with the multimeter. 
+Use continuity test again. 
+Connect the meter leads to the free ends of the wires you just soldered. 
+The meter should read open/no connection. 
+Press the button, and the meter should read closed/connected. 
+If that works, you're set. 
+Put the TV case back together, taking care to run your newly attached wires out a suitable opening.
 
-Now just connect the two wires from the TV's switch to the appropriate TV ON pin pair on JP4 on the expansion board (see the illustrations above). The order of the wires doesn't matter: you can connect either switch terminal to either pin in the TV ON pair.
+Now just connect the two wires from the TV's switch to the appropriate TV ON pin pair on JP4 on the expansion board (see the illustrations above). 
+The order of the wires doesn't matter: you can connect either switch terminal to either pin in the TV ON pair.
 

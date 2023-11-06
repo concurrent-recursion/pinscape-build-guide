@@ -1,11 +1,15 @@
 [#expanFab]
 = Fabricating the Expansion Boards
 
-The Pinscape expansion boards were designed using a software package called link:https://www.autodesk.com/products/eagle/overview.html[EAGLE] , from link:https://www.autodesk.com/[Autodesk] . One of the things EAGLE can do is to convert a circuit plan into a set of Computer Aided Manufacturing files that you can upload to a PCB manufacturer to have a physical board made from the plans.
+The Pinscape expansion boards were designed using a software package called link:https://www.autodesk.com/products/eagle/overview.html[EAGLE] , from link:https://www.autodesk.com/[Autodesk] .
+One of the things EAGLE can do is to convert a circuit plan into a set of Computer Aided Manufacturing files that you can upload to a PCB manufacturer to have a physical board made from the plans.
 
 This section explains how to do that, so that you can have your own copies of the Pinscape boards made by a PCB maker.
 
-You can also use this process to create custom versions of the Pinscape boards with any modifications you want to make. The Pinscape EAGLE files are all open-source, meaning you're free to customize them as needed, and free to manufacture your own versions. EAGLE itself is available in a free hobbyist version; see the Autodesk site for downloads. (The free version of EAGLE has some limitations; if you need a less restricted version, Autodesk sells EAGLE on a monthly subscription basis, so you can use it for a small job without a huge investment.)
+You can also use this process to create custom versions of the Pinscape boards with any modifications you want to make.
+The Pinscape EAGLE files are all open-source, meaning you're free to customize them as needed, and free to manufacture your own versions.
+EAGLE itself is available in a free hobbyist version; see the Autodesk site for downloads.
+(The free version of EAGLE has some limitations; if you need a less restricted version, Autodesk sells EAGLE on a monthly subscription basis, so you can use it for a small job without a huge investment.)
 
 == Where to download the board plans
 
@@ -13,24 +17,38 @@ The EAGLE plans for the Pinscape boards are available here:
 
 link:http://mjrnet.org/pinscape/expansion_board/download.php[mjrnet.org/pinscape/expansion_board/download.php]
 
-That page may show multiple versions. I'd recommend downloading the latest "Release" version listed, unless you have a reason to use one of the older releases. The "latest working snapshot" version reflects work in progress, so it might have changes that haven't been finalized or tested yet. It's usually better to use a version specifically identified as a release version.
+That page may show multiple versions.
+I'd recommend downloading the latest "Release" version listed, unless you have a reason to use one of the older releases.
+The "latest working snapshot" version reflects work in progress, so it might have changes that haven't been finalized or tested yet.
+It's usually better to use a version specifically identified as a release version.
 
 === EAGLE files in the downloads
 
 In the board plan downloads, you'll find two main EAGLE file types:
 
-*  *.sch* files are the schematics for the boards. A schematic is an abstract circuit plan showing the components and their connections, without any information on how they're physically arranged on a board.
+*  *.sch* files are the schematics for the boards.
+A schematic is an abstract circuit plan showing the components and their connections, without any information on how they're physically arranged on a board.
 *  *.brd* files represent the physical layouts for the printed circuit boards, showing how the parts are arranged, where all the holes are drilled, and how the copper traces on the board are laid out.
 
-The .sch and .brd files are always paired. When you open one of the other type of file in EAGLE, it will look for the counterpart and open it as well, to keep the two in sync.
+The .sch and .brd files are always paired.
+When you open one of the other type of file in EAGLE, it will look for the counterpart and open it as well, to keep the two in sync.
 
 === Other files in the downloads
 
-*  *BOM.csv* files are spreadsheets (in comma-separated value or CSV format) with the "Bill of Materials" for the boards. These were geneated by EAGLE from the schematics to list all of the parts used in the schematics. These can be useful for uploading to a vendor like Mouser or DigiKey to order the parts needed to populate the board. (These can also be used with PCB manufacturers who can assemble the complete boards, but don't get your hopes up that you'll be able to get a PCB maker to assemble the boards for, as this service is prohibitively expensive unless you're ordering large quantities of the boards.) You can open these files in a spreadsheet program like Excel. This is only for reference; to place an order, it's better to use the xref:partslist.adoc#electronicPartsList[Electronic Parts List] in this guide.
-*  *MouserCart.csv* is another CSV file that contains a version of the parts list in the Mouser shopping cart export format. This is only for reference; to place an order, it's better to use the xref:partslist.adoc#electronicPartsList[Electronic Parts List] in this guide.
-*  *Schematic.pdf* contains a print-out of the schematics in PDF format, for viewing in Adobe Acrobat or a Web browser. These are provided in case you want to look at the schematics without bothering to install EAGLE.
+*  *BOM.csv* files are spreadsheets (in comma-separated value or CSV format) with the "Bill of Materials" for the boards.
+These were geneated by EAGLE from the schematics to list all of the parts used in the schematics.
+These can be useful for uploading to a vendor like Mouser or DigiKey to order the parts needed to populate the board.
+(These can also be used with PCB manufacturers who can assemble the complete boards, but don't get your hopes up that you'll be able to get a PCB maker to assemble the boards for, as this service is prohibitively expensive unless you're ordering large quantities of the boards.) You can open these files in a spreadsheet program like Excel.
+This is only for reference; to place an order, it's better to use the xref:partslist.adoc#electronicPartsList[Electronic Parts List] in this guide.
+*  *MouserCart.csv* is another CSV file that contains a version of the parts list in the Mouser shopping cart export format.
+This is only for reference; to place an order, it's better to use the xref:partslist.adoc#electronicPartsList[Electronic Parts List] in this guide.
+*  *Schematic.pdf* contains a print-out of the schematics in PDF format, for viewing in Adobe Acrobat or a Web browser.
+These are provided in case you want to look at the schematics without bothering to install EAGLE.
 *  *Layout snapshot.jpg* contains a JPG screen image of the board layout from EAGLE, so that you can view these without installing EAGLE.
-*  *Gerbers (Elecrow).zip* contains the Gerber files (see below) generated for Elecrow.com, which is the manufacturer I've been using to make copies of the boards. See below for an explanation of what the Gerber files are. You can use these files to place your own order from Elecrow without going through the whole Gerber generation process. You probably can't use these with any other vendor, since each vendor has its own design rules that you should use to generate a new set of Gerbers specific to your chosen vendor.
+*  *Gerbers (Elecrow).zip* contains the Gerber files (see below) generated for Elecrow.com, which is the manufacturer I've been using to make copies of the boards.
+See below for an explanation of what the Gerber files are.
+You can use these files to place your own order from Elecrow without going through the whole Gerber generation process.
+You probably can't use these with any other vendor, since each vendor has its own design rules that you should use to generate a new set of Gerbers specific to your chosen vendor.
 
 == Selecting a vendor
 
@@ -53,21 +71,40 @@ If you want to shop around for the best price, go there and plug in the appropri
 * No quality certifications required
 * 1 design
 
-For quantity, the most common minimum order size is 10 copies, but some go as low as 5 copies. You can try pricing with 5 and 10 copies to check options. It might be cheaper to order 10 copies than 5, paradoxically, so I'd try both options even if you don't actually need 10 copies.
+For quantity, the most common minimum order size is 10 copies, but some go as low as 5 copies.
+You can try pricing with 5 and 10 copies to check options.
+It might be cheaper to order 10 copies than 5, paradoxically, so I'd try both options even if you don't actually need 10 copies.
 
-For any of the options you're not sure about, you can just leave them with the default settings. The Pinscape boards don't have any unusual requirements. The default options offered by most manufacturers will work just fine.
+For any of the options you're not sure about, you can just leave them with the default settings.
+The Pinscape boards don't have any unusual requirements.
+The default options offered by most manufacturers will work just fine.
 
 === Recommendations
 
-I've used link:https://www.elecrow.com/[Elecrow] for most of my PCB orders. Elecrow is a Chinese electronics e-tailer with a decent Web site and good prices on PCB manufacturing in small quantities for hobbyists. The board quality for my orders has been consistently good. I've heard from a couple of other people who weren't entirely happy with Elecrow's quality, although their complaints weren't about severe problems, just that the manufacturing precision wasn't up to their expectations. So far I've been satisfied that Elecrow's product is precise enough for the Pinscape boards (which aren't extremely dense by modern standards).
+I've used link:https://www.elecrow.com/[Elecrow] for most of my PCB orders.
+Elecrow is a Chinese electronics e-tailer with a decent Web site and good prices on PCB manufacturing in small quantities for hobbyists.
+The board quality for my orders has been consistently good.
+I've heard from a couple of other people who weren't entirely happy with Elecrow's quality, although their complaints weren't about severe problems, just that the manufacturing precision wasn't up to their expectations.
+So far I've been satisfied that Elecrow's product is precise enough for the Pinscape boards (which aren't extremely dense by modern standards).
 
-There are numerous other Chinese manufacturers with prices and capabilities similar to Elecrow's. There seems to be a large enough hobbyist market that many vendors offer small-quantity production at low prices. There are also some American and European fabricators. The prices at the Chinese companies are much lower than their Western counterparts, although shipping prices from China are quite high; in most of my Elecrow orders, the shipping charges have been on par with or even higher than the manufacturing cost. You should also take into account any import duties you'll have to pay in your country. (If you're in the United States, you don't have to pay any import duties on goods received below $200 per day.) If you can find a domestic company, you might save enough on shipping and duty charges to make up for the higher PCB prices.
+There are numerous other Chinese manufacturers with prices and capabilities similar to Elecrow's.
+There seems to be a large enough hobbyist market that many vendors offer small-quantity production at low prices.
+There are also some American and European fabricators.
+The prices at the Chinese companies are much lower than their Western counterparts, although shipping prices from China are quite high; in most of my Elecrow orders, the shipping charges have been on par with or even higher than the manufacturing cost.
+You should also take into account any import duties you'll have to pay in your country.
+(If you're in the United States, you don't have to pay any import duties on goods received below $200 per day.) If you can find a domestic company, you might save enough on shipping and duty charges to make up for the higher PCB prices.
 
-One American company I'll call out specifically is link:https://www.oshpark.com/[OSH Park] . They make it extremely easy to order, by letting you upload an EAGLE .brd file directly, without going through the Gerber generation process described below. They have great, fast service, free shipping, and a minimum order size of only 3 copies of a board design. They're fantastic for prototyping small boards. The downside is that they're quite expensive for larger boards like the Pinscape expansion boards. I'd highly recommend them for tiny boards, such as the sensor board for the xref:aedr8300.adoc#aedr8300[AEDR-8300 plunger] - that only costs about $5 to make at OSH Park, including shipping.
+One American company I'll call out specifically is link:https://www.oshpark.com/[OSH Park] .
+They make it extremely easy to order, by letting you upload an EAGLE .brd file directly, without going through the Gerber generation process described below.
+They have great, fast service, free shipping, and a minimum order size of only 3 copies of a board design.
+They're fantastic for prototyping small boards.
+The downside is that they're quite expensive for larger boards like the Pinscape expansion boards.
+I'd highly recommend them for tiny boards, such as the sensor board for the xref:aedr8300.adoc#aedr8300[AEDR-8300 plunger] - that only costs about $5 to make at OSH Park, including shipping.
 
 == PCB ordering process
 
-Once you've selected a vendor, you can follow the basic process below to order copies of the Pinscape PCBs. There might be some variations at different vendors, so be sure to read your chosen vendor's instructions as well.
+Once you've selected a vendor, you can follow the basic process below to order copies of the Pinscape PCBs.
+There might be some variations at different vendors, so be sure to read your chosen vendor's instructions as well.
 
 * Select the PCB manufacturing options
 ** 10x10 cm (be sure to select centimeters, not inches)
@@ -78,53 +115,95 @@ Once you've selected a vendor, you can follow the basic process below to order c
 ** Copper weight 1 oz, or any higher value if it's cheaper (but don't go below 1 oz)
 ** No stencil required
 * Upload the design files that the vendor requires:
-** If you're using Elecrow, you can upload the appropriate *xxx Gerber (Elecrow).zip* files from the Pinscape downloads. Elecrow wants you to upload the .zip file itself, so there's no need to unpack it on your system.
-** If you're using a vendor other than Elecrow, and they require Gerber format files, generate a set of Gerbers as described below and upload those. Most vendors will want you to combine all of the Gerber output files into a single .zip file before uploading.
+** If you're using Elecrow, you can upload the appropriate *xxx Gerber (Elecrow).zip* files from the Pinscape downloads.
+Elecrow wants you to upload the .zip file itself, so there's no need to unpack it on your system.
+** If you're using a vendor other than Elecrow, and they require Gerber format files, generate a set of Gerbers as described below and upload those.
+Most vendors will want you to combine all of the Gerber output files into a single .zip file before uploading.
 ** If your vendor accepts EAGLE *.brd* files, simply upload the appropriate .brd file from the Pinscape downloads.
 
-Note! For the Expansion Boards only, you might want to upload Gerber files, generated using the procedure below, _even if_ your vendor accepts .brd files directly. The reason is that the Expansion Boards have some custom printing layers for the silkscreen (which controls the white text printed on the board, showing the part names and outlines and so forth), which the PCB vendor probably won't include by default if you just give them the .brd files. Those extra printing layers are purely cosmetic, so the boards will still function the same way without them, but it might be harder to figure out which parts go where without the extra guide markings. This only applies to the expansion boards; I don't think any of my other board designs (such as the plunger interface boards) have any special printing layers, so those should all be fine to upload as .brd files.
+Note! For the Expansion Boards only, you might want to upload Gerber files, generated using the procedure below, _even if_ your vendor accepts .brd files directly.
+The reason is that the Expansion Boards have some custom printing layers for the silkscreen (which controls the white text printed on the board, showing the part names and outlines and so forth), which the PCB vendor probably won't include by default if you just give them the .brd files.
+Those extra printing layers are purely cosmetic, so the boards will still function the same way without them, but it might be harder to figure out which parts go where without the extra guide markings.
+This only applies to the expansion boards; I don't think any of my other board designs (such as the plunger interface boards) have any special printing layers, so those should all be fine to upload as .brd files.
 
 * Place the order!
 
 === Generating vendor-specific Gerbers
 
-Most PCB manufacturers require you to submit the plans using a file format known as Gerber files. These files describe the various elements that go into manufacturing the boards, such as the placement of the drill holes, copper traces, and silkscreen markings.
+Most PCB manufacturers require you to submit the plans using a file format known as Gerber files.
+These files describe the various elements that go into manufacturing the boards, such as the placement of the drill holes, copper traces, and silkscreen markings.
 
-The thing that's a little tricky about Gerber files is that they contain manufacturer-specific information. That means that the Gerber files have to be created specially for each manufacturer. That's why the Gerber files included in the Pinscape downloads are specifically labeled as Elecrow Gerbers: these are the Gerbers I use to submit orders to Elecrow, and they're only for Elecrow.
+The thing that's a little tricky about Gerber files is that they contain manufacturer-specific information.
+That means that the Gerber files have to be created specially for each manufacturer.
+That's why the Gerber files included in the Pinscape downloads are specifically labeled as Elecrow Gerbers: these are the Gerbers I use to submit orders to Elecrow, and they're only for Elecrow.
 
-Fortunately, EAGLE provides an automated to generate the Gerber files for a given PCB maker. EAGLE's .sch and .brd files are universal, so we do all of our design work in that format so that it can be used with any PCB maker. When it comes time to actually manufacture the boards, we pick our PCB maker, and then use EAGLE's generator process to convert the .brd file into a Gerber specifically for our chosen manufacturer.
+Fortunately, EAGLE provides an automated to generate the Gerber files for a given PCB maker.
+EAGLE's .sch and .brd files are universal, so we do all of our design work in that format so that it can be used with any PCB maker.
+When it comes time to actually manufacture the boards, we pick our PCB maker, and then use EAGLE's generator process to convert the .brd file into a Gerber specifically for our chosen manufacturer.
 
 Here's the procedure:
 
-*  link:https://www.autodesk.com/products/eagle/overview.html[Download EAGLE] . Autodesk offers a free hobbyist version that you can use for this process.
+*  link:https://www.autodesk.com/products/eagle/overview.html[Download EAGLE] .
+Autodesk offers a free hobbyist version that you can use for this process.
 * Choose your PCB maker.
-* On your PCB maker's Web site, read their instructions for submitting orders. As part of this, they should provide an EAGLE *.cam* file that you can download. Do so. The *.cam* file is the key to generating the Gerbers. Some vendors have multiple .cam files for different board types, such as 2-layer or 4-layer boards; if you're offered such a choice, use the 2-layer option for the Pinscape boards.
+* On your PCB maker's Web site, read their instructions for submitting orders.
+As part of this, they should provide an EAGLE *.cam* file that you can download.
+Do so.
+The *.cam* file is the key to generating the Gerbers.
+Some vendors have multiple .cam files for different board types, such as 2-layer or 4-layer boards; if you're offered such a choice, use the 2-layer option for the Pinscape boards.
 * Open the appropriate Pinscape .brd file in EAGLE.
 * In the EAGLE board editor window, go to the menu and select *File* > *CAM Processor* .
 * In the CAM Processor dialog, go to the menu within the dialog window and select *File* > *Open* > *Job* .
 * Select the .cam file that you downloaded from your PCB vendor site and click Open.
-* Find the "Silk Top" tab and select it. In the Layer list on the right, make sure that layers 200 and 201 are selected. These are the layers containing the snazzy Pinscape logo.
-* Also in the "Silk Top" tab, select *either* layer 100, US-Transistor, *or* layer 101, EU-Transistor, according to whether you want to use the US or European transistor option. If you're using the standard parts list, the correct option is layer 100. Layer 101 is only if you want to use the European substitute parts for the small signal transistors; see xref:eurotrans.adoc#eurotrans[European Transistor Substitutions] for details.
+* Find the "Silk Top" tab and select it.
+In the Layer list on the right, make sure that layers 200 and 201 are selected.
+These are the layers containing the snazzy Pinscape logo.
+* Also in the "Silk Top" tab, select *either* layer 100, US-Transistor, *or* layer 101, EU-Transistor, according to whether you want to use the US or European transistor option.
+If you're using the standard parts list, the correct option is layer 100.
+Layer 101 is only if you want to use the European substitute parts for the small signal transistors; see xref:eurotrans.adoc#eurotrans[European Transistor Substitutions] for details.
 
-(This choice doesn't affect anything about the actual electronics, so you can't screw things up too badly here. It only affects the printed orientation guide markings for the transistors. The European transistor substitutes have their legs arranged in the reverse order of the US versions, so they have to be installed "backwards". We offer the two marking options so that you can use the markings that match your choice of parts, to make it easier to insert them the right way when assembling the boards.)
+(This choice doesn't affect anything about the actual electronics, so you can't screw things up too badly here.
+It only affects the printed orientation guide markings for the transistors.
+The European transistor substitutes have their legs arranged in the reverse order of the US versions, so they have to be installed "backwards".
+We offer the two marking options so that you can use the markings that match your choice of parts, to make it easier to insert them the right way when assembling the boards.)
 
 * Click the Process Job button at the bottom.
 * Close the dialog and exit EAGLE.
-* In the folder containing the .brd file, you'll find a bunch of new files with the same name as the .brd file but with different extensions, including some or all of the following: .GBL, .GPI, .GTL, .GTO, .DRI, .GBO, .GBP, .GBS, .GML, .GTP, .GTS, .TXT. There might be some others as well - the exact set of files you get will depend on your manufacturer. Sorry I can't just give you a list, but it varies by PCB maker! The other obnoxious thing here is that EAGLE just dumps these files into your .brd folder rather than grouping them somewhere else. So the easiest way to identify the files is by "Modified Date" in the Windows Explorer listing. Open the folder in Windows Explorer, switch to the Details view, and select Sort by > Date Modified. You should now see all of the new files grouped together at the top of the listing, all with Modified dates moments ago. These are the Gerber files we've been talking about!
+* In the folder containing the .brd file, you'll find a bunch of new files with the same name as the .brd file but with different extensions, including some or all of the following: .GBL, .GPI, .GTL, .GTO, .DRI, .GBO, .GBP, .GBS, .GML, .GTP, .GTS, .TXT.
+There might be some others as well - the exact set of files you get will depend on your manufacturer.
+Sorry I can't just give you a list, but it varies by PCB maker! The other obnoxious thing here is that EAGLE just dumps these files into your .brd folder rather than grouping them somewhere else.
+So the easiest way to identify the files is by "Modified Date" in the Windows Explorer listing.
+Open the folder in Windows Explorer, switch to the Details view, and select Sort by > Date Modified.
+You should now see all of the new files grouped together at the top of the listing, all with Modified dates moments ago.
+These are the Gerber files we've been talking about!
 * Once you've identified the collection of new files, create a .ZIP file and add all of the new Gerber files to the ZIP.
 * You're done! The .ZIP file is what most PCB vendors will want you to upload.
 
-Note that it's a good idea to read fully through your PCB maker's instructions for submitting orders to make sure there aren't any extra steps they require that we've left out. You should also check to see if your PCB maker accepts .brd files directly: if so, you should be able to skip this whole Gerberfication process and just upload the .brd file.
+Note that it's a good idea to read fully through your PCB maker's instructions for submitting orders to make sure there aren't any extra steps they require that we've left out.
+You should also check to see if your PCB maker accepts .brd files directly: if so, you should be able to skip this whole Gerberfication process and just upload the .brd file.
 
 === Checking that your vendor can make the boards properly
 
-If you want to double-check that your chosen vendor has the necessary manufacturing capabilities to make a working set of Pinscape boards, EAGLE provides another automated process that can help. It's known as a "design rules check". Your vendor can provide you with a special file, known as a Design Rules or DRU file, that specifies their manufacturing limits, such as the thinnest copper trace width, minimum spacing between traces, and smallest drill hole. EAGLE can read this file and check it against the board layout, to make sure that the board layout is within the tolerances and limits that the manufacturer specifies. If EAGLE finds any problems, it'll show you warning messages explaining what's wrong. These warnings indicate places where the board design might not turn out correctly in the manufacturing process. Every vendor has their own limits, so these checks have to be made on a vendor-by-vendor basis.
+If you want to double-check that your chosen vendor has the necessary manufacturing capabilities to make a working set of Pinscape boards, EAGLE provides another automated process that can help.
+It's known as a "design rules check".
+Your vendor can provide you with a special file, known as a Design Rules or DRU file, that specifies their manufacturing limits, such as the thinnest copper trace width, minimum spacing between traces, and smallest drill hole.
+EAGLE can read this file and check it against the board layout, to make sure that the board layout is within the tolerances and limits that the manufacturer specifies.
+If EAGLE finds any problems, it'll show you warning messages explaining what's wrong.
+These warnings indicate places where the board design might not turn out correctly in the manufacturing process.
+Every vendor has their own limits, so these checks have to be made on a vendor-by-vendor basis.
 
-It's up to you whether or not you want to go to the extra trouble of running the design check. I personally would do it when working with a new manufacturer, but only because I'm meticulous about these things. I don't actually think it's that important to run separate tests for each vendor, because the Pinscape boards are pretty low-tech by modern standards. All of the manufacturers I've looked at have better tolerances than are required for the Pinscape boards. Most people making PCBs today are using very high densities with tiny little surface-mounted parts that are intended to be assembled by robots. The Pinscape boards intentionally use larger "through-hole" parts (the type with leads and pins that get inserted into holes in the board) to make them easier for us hobbyists to assemble by hand. The PCB makers all use processes that accommodate those denser surface-mount boards, so the Pinscape boards shouldn't faze any of them.
+It's up to you whether or not you want to go to the extra trouble of running the design check.
+I personally would do it when working with a new manufacturer, but only because I'm meticulous about these things.
+I don't actually think it's that important to run separate tests for each vendor, because the Pinscape boards are pretty low-tech by modern standards.
+All of the manufacturers I've looked at have better tolerances than are required for the Pinscape boards.
+Most people making PCBs today are using very high densities with tiny little surface-mounted parts that are intended to be assembled by robots.
+The Pinscape boards intentionally use larger "through-hole" parts (the type with leads and pins that get inserted into holes in the board) to make them easier for us hobbyists to assemble by hand.
+The PCB makers all use processes that accommodate those denser surface-mount boards, so the Pinscape boards shouldn't faze any of them.
 
 If you do want to run the validation process, it's similar to the Gerber generation process described earlier:
 
-* Find the EAGLE .DRU ("design rules") file on your PCB vendor's site. Most vendors include this on their submission instructions page, alongside the .CAM file for generating Gerbers. Download the .DRU file.
+* Find the EAGLE .DRU ("design rules") file on your PCB vendor's site.
+Most vendors include this on their submission instructions page, alongside the .CAM file for generating Gerbers. Download the .DRU file.
 * Open the .brd file in EAGLE.
 * In the EAGLE board editor window, go to the menu and select *Tools* > *DRC* . ("DRC" stands for Design Rules Check. Autodesk really knows how to make things intuitive, don't they?)
 * In the dialog, click the Load button. Select the .DRU file you downloaded from the PCB vendor and click Open.

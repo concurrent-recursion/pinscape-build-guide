@@ -10,9 +10,7 @@ GEM
       asciidoctor (>= 1.5.6, < 3.0.0)
       gepub (~> 1.0.0)
       mime-types (~> 3.0)
-    asciidoctor-html5s (0.5.1)
-      asciidoctor (>= 1.5.7, < 3.0)
-      thread_safe (~> 0.3.4)
+    asciidoctor-lazy-images (0.0.6)
     asciidoctor-pdf (2.3.9)
       asciidoctor (~> 2.0)
       concurrent-ruby (~> 1.1)
@@ -65,7 +63,6 @@ GEM
     rouge (4.2.0)
     ruby-rc4 (0.1.5)
     rubyzip (2.3.2)
-    thread_safe (0.3.6)
     treetop (1.6.12)
       polyglot (~> 0.3)
     ttfunk (1.7.0)
@@ -76,7 +73,7 @@ PLATFORMS
 DEPENDENCIES
   asciidoctor
   asciidoctor-epub3
-  asciidoctor-html5s
+  asciidoctor-lazy-images
   asciidoctor-pdf
   asciimath
   rouge

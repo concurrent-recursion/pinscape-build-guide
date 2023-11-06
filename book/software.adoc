@@ -3,31 +3,68 @@
 
 Now let's look at the software needed to transform this from a plain Windows PC to a pin cab machine.
 
-The main software you need, of course, is the pinball simulator. To take advantage of the special features of a cab, you also need some add-ons to display the backglass artwork and control the feedback devices. You'll also want a "front end" program that provides an interactive menu for selecting tables to play. We'll look at the options for all of these in this chapter.
+The main software you need, of course, is the pinball simulator.
+To take advantage of the special features of a cab, you also need some add-ons to display the backglass artwork and control the feedback devices.
+You'll also want a "front end" program that provides an interactive menu for selecting tables to play.
+We'll look at the options for all of these in this chapter.
 
 
 == Should I use "Run as Administrator" for everything?
 
-The simple answer is No. You might find advice in the forums or FAQs or other guides saying that you should routinely run everything in Admin Mode. My advice is to ignore that other advice, because it's usually outdated or misinformed.
+The simple answer is No.
+You might find advice in the forums or FAQs or other guides saying that you should routinely run everything in Admin Mode.
+My advice is to ignore that other advice, because it's usually outdated or misinformed.
 
-What is "Admin Mode" anyway? Microsoft divided things into "Admin" and "User" spaces to protect the internals of the system from being accidentally damaged by software bugs or user errors, or intentionally damaged by malware. Programs running in User Mode have some restrictions on what they can access, but Admin Mode programs can access everything. Admin Mode is supposed to be reserved for special system programs that have a legitimate reason to modify your system internals - programs like installers, disk management tools, and system control panels. Everything else is supposed to run in regular "User" mode.
+What is "Admin Mode" anyway? Microsoft divided things into "Admin" and "User" spaces to protect the internals of the system from being accidentally damaged by software bugs or user errors, or intentionally damaged by malware.
+Programs running in User Mode have some restrictions on what they can access, but Admin Mode programs can access everything.
+Admin Mode is supposed to be reserved for special system programs that have a legitimate reason to modify your system internals - programs like installers, disk management tools, and system control panels.
+Everything else is supposed to run in regular "User" mode.
 
-So why do so some people on the forums tell you that you _should_ use Admin Mode routinely, when Microsoft says you shouldn't? The reason is mostly "history". In the old days, there were a few isolated software components in the pinball simulation ecosystem that really did require Admin Mode to work properly. The snag is that Windows erects protective barriers around an Admin Mode program. Those barriers prevent it from interacting with regular User programs. But the pinball ecosystem is made up of a bunch of programs that were designed to interact with each other. So if you run program X in Admin Mode, and program Y needs to interact with it, then you _also_ have to run program Y in Admin Mode. I think you can see where this idea that "you've got to just run everything in Admin Mode all the time" came from - it was a blunt instrument, but it was a way to get around these program interaction problems that Admin Mode created.
+So why do so some people on the forums tell you that you _should_ use Admin Mode routinely, when Microsoft says you shouldn't? The reason is mostly "history".
+In the old days, there were a few isolated software components in the pinball simulation ecosystem that really did require Admin Mode to work properly.
+The snag is that Windows erects protective barriers around an Admin Mode program.
+Those barriers prevent it from interacting with regular User programs.
+But the pinball ecosystem is made up of a bunch of programs that were designed to interact with each other.
+So if you run program X in Admin Mode, and program Y needs to interact with it, then you _also_ have to run program Y in Admin Mode.
+I think you can see where this idea that "you've got to just run everything in Admin Mode all the time" came from - it was a blunt instrument, but it was a way to get around these program interaction problems that Admin Mode created.
 
-Okay, so if "Admin Mode everywhere all the time" is a simple way to solve thorny problems, why am I saying you _shouldn't_ use it? The main reason is that, while it might solve some problems, it creates others. Microsoft doesn't want you to use Admin Mode routinely for everything, so you're always somewhat fighting with Windows if you do. It also reduces your system's security by defeating all of the protective mechanisms that Microsoft designed into Admin Mode in the first place.
+Okay, so if "Admin Mode everywhere all the time" is a simple way to solve thorny problems, why am I saying you _shouldn't_ use it? The main reason is that, while it might solve some problems, it creates others.
+Microsoft doesn't want you to use Admin Mode routinely for everything, so you're always somewhat fighting with Windows if you do.
+It also reduces your system's security by defeating all of the protective mechanisms that Microsoft designed into Admin Mode in the first place.
 
-The right solution - from a security perspective, and in terms of simplicity - is to stop using Admin Mode for _any_ of your pinball software. If you run everything in regular User Mode, everything will be able to interact as it was designed to, with no hassles at the system level. Remember how I said that this whole Admin Mode fiasco is historical, because it was a requirement for certain components _in the old days_ ? Fortunately, it really is mostly relegated to the past now. Those old Admin Mode requirements were almost all due to software bugs, not actual engineering requirements, and all of the cases that I'm aware of have been fixed in modern versions. As of 2020, I don't think that any of the common pin sim components require Admin Mode, as long as you've updated to current versions.
+The right solution - from a security perspective, and in terms of simplicity - is to stop using Admin Mode for _any_ of your pinball software.
+If you run everything in regular User Mode, everything will be able to interact as it was designed to, with no hassles at the system level.
+Remember how I said that this whole Admin Mode fiasco is historical, because it was a requirement for certain components _in the old days_ ? Fortunately, it really is mostly relegated to the past now.
+Those old Admin Mode requirements were almost all due to software bugs, not actual engineering requirements, and all of the cases that I'm aware of have been fixed in modern versions.
+As of 2020, I don't think that any of the common pin sim components require Admin Mode, as long as you've updated to current versions.
 
-If you do encounter any up-to-date pinball-related programs that say "Admin mode required", you should take a critical look at them and make sure the requirement is real, not just a misunderstanding. There's still a lot of confusion about this, so you can't always trust the FAQs and guides. My personal policy is that I simply won't run programs with unnecessary Admin Mode dependencies until the developer fixes them. I realize that not everyone can bring themselves to be so ruthless, when faced with a fun new feature that they really want. If you find a program that you can't live without, and there's just no way around its "requires Admin Mode" problem, I'd at least try to hold firm on one thing: don't let it "infect" the rest of your system with its Admin Mode requirement. One concrete thing you can do is to use link:http://mjrnet.org/pinscape/PinballY.php[PinballY] as your front end. It has the ability to launch Admin Mode programs _without_ running in Admin Mode itself. A major cause of the Admin Mode infection is that none of the other front ends can launch Admin Mode programs unless you also run them in Admin Mode, and of course if you do that, everything they launch will be in Admin Mode. And as I said, that might _seem_ like it works for a while, but it's likely to eventually cause its own problems.
+If you do encounter any up-to-date pinball-related programs that say "Admin mode required", you should take a critical look at them and make sure the requirement is real, not just a misunderstanding.
+There's still a lot of confusion about this, so you can't always trust the FAQs and guides.
+My personal policy is that I simply won't run programs with unnecessary Admin Mode dependencies until the developer fixes them.
+I realize that not everyone can bring themselves to be so ruthless, when faced with a fun new feature that they really want.
+If you find a program that you can't live without, and there's just no way around its "requires Admin Mode" problem, I'd at least try to hold firm on one thing: don't let it "infect" the rest of your system with its Admin Mode requirement.
+One concrete thing you can do is to use link:http://mjrnet.org/pinscape/PinballY.php[PinballY] as your front end.
+It has the ability to launch Admin Mode programs _without_ running in Admin Mode itself.
+A major cause of the Admin Mode infection is that none of the other front ends can launch Admin Mode programs unless you also run them in Admin Mode, and of course if you do that, everything they launch will be in Admin Mode.
+And as I said, that might _seem_ like it works for a while, but it's likely to eventually cause its own problems.
 
 [#SoftwareCustomizationLog]
 == Customization log
 
-Before you do anything else, I think it's a good idea to create "customization log" file. This is just text file for your own use - you can create it with Notepad and leave it empty for now. Put it someplace where you'll be able to find it easily in the future, such as right on the Windows desktop on your cab PC.
+Before you do anything else, I think it's a good idea to create "customization log" file.
+This is just text file for your own use - you can create it with Notepad and leave it empty for now.
+Put it someplace where you'll be able to find it easily in the future, such as right on the Windows desktop on your cab PC.
 
-The point of this file is to jot down all of the special customizations you make to Visual Pinball and other software. VP in particular forces you to make some customizations in ways that you'll have to repeat each time you update to a new version. For example, some customizations require that you hand-edit VP's shared script files, and those changes will be lost on each update because VP will overwrite the scripts with its own updated copies. That's not a very friendly design on VP's part, I know, but it's just the way some things in VP work.
+The point of this file is to jot down all of the special customizations you make to Visual Pinball and other software.
+VP in particular forces you to make some customizations in ways that you'll have to repeat each time you update to a new version.
+For example, some customizations require that you hand-edit VP's shared script files, and those changes will be lost on each update because VP will overwrite the scripts with its own updated copies.
+That's not a very friendly design on VP's part, I know, but it's just the way some things in VP work.
 
-I'll mention this file again in other chapters when these sorts of changes come up, with a suggestion that you make a note in your customization log file. For now, just create the file so it'll be ready when you need it. In the future, whenever you make a change that warrants inclusion, add a note about it to the file. When it comes time to update VP or other software, you can refer back to this file to reinstate any customizations that got lost in the update process. The same goes if you ever have to rebuild your Windows system due to a system upgrade or disk failure.
+I'll mention this file again in other chapters when these sorts of changes come up, with a suggestion that you make a note in your customization log file.
+For now, just create the file so it'll be ready when you need it.
+In the future, whenever you make a change that warrants inclusion, add a note about it to the file.
+When it comes time to update VP or other software, you can refer back to this file to reinstate any customizations that got lost in the update process.
+The same goes if you ever have to rebuild your Windows system due to a system upgrade or disk failure.
 
 == Free pinball players
 
@@ -37,39 +74,65 @@ There are three main free pinball player programs for Windows:
 * Visual Pinball 10 (also known as VP X)
 * Future Pinball
 
-Visual Pinball is the essential program for a virtual cab. VP is an open-source project with an active developer community and frequent updates. Hundreds of tables are available, including re-creations of a pretty good percentage of all of the real pinball machines across the decades, plus many original tables. VP has excellent support for the whole gamut of special pin cab features: backglass monitors, DMDs, feedback devices, plunger inputs, accelerometer nudging.
+Visual Pinball is the essential program for a virtual cab.
+VP is an open-source project with an active developer community and frequent updates.
+Hundreds of tables are available, including re-creations of a pretty good percentage of all of the real pinball machines across the decades, plus many original tables.
+VP has excellent support for the whole gamut of special pin cab features: backglass monitors, DMDs, feedback devices, plunger inputs, accelerometer nudging.
 
-I counted VP 9 and 10 as two separate programs because they're not compatible with each other's tables, so you really have to install both. There's also a much older version 8, plus a couple of different, mutually incompatible versions of VP 9. Some people like to keep all of these installed because, again, individual tables are all tied to specific VP versions, so you need all of the VP versions if you want the ability to play all of the tables out there. (VP isn't very good at compatibility.) Fortunately, there's a combined installer that sets up the whole collection of VP versions with a single download and a single install process.
+I counted VP 9 and 10 as two separate programs because they're not compatible with each other's tables, so you really have to install both.
+There's also a much older version 8, plus a couple of different, mutually incompatible versions of VP 9.
+Some people like to keep all of these installed because, again, individual tables are all tied to specific VP versions, so you need all of the VP versions if you want the ability to play all of the tables out there.
+(VP isn't very good at compatibility.) Fortunately, there's a combined installer that sets up the whole collection of VP versions with a single download and a single install process.
 
-Future Pinball is another free player, but unlike VP, it's no longer being maintained or updated. Its original creator abandoned it a long time ago and never released the source code, so it's basically a dead end. Even so, you might want to install it to gain access to its tables, since there are a few re-creation tables (particularly from the 1970s or before) where there's an FP version but no VP version.
+Future Pinball is another free player, but unlike VP, it's no longer being maintained or updated.
+Its original creator abandoned it a long time ago and never released the source code, so it's basically a dead end.
+Even so, you might want to install it to gain access to its tables, since there are a few re-creation tables (particularly from the 1970s or before) where there's an FP version but no VP version.
 
 === Visual Pinball 9 and 10
 
-Visual Pinball 10, or "VP X", is the latest version, and VP 9 is the previous version. You'll want to install *both* versions because they're not compatible with each other's table files, and you'll want to be able to run both kinds of tables.
+Visual Pinball 10, or "VP X", is the latest version, and VP 9 is the previous version.
+You'll want to install *both* versions because they're not compatible with each other's table files, and you'll want to be able to run both kinds of tables.
 
-You can recognize VP 9 tables by the ".vpt" filename suffix. VP 10 tables use the ".vpx" suffix.
+You can recognize VP 9 tables by the ".vpt" filename suffix.
+VP 10 tables use the ".vpx" suffix.
 
-The easiest way to set up both versions is to use the VP Installer. VP is actually a collection of about five programs that work together, and in the old days, you had to go download them all individually and then go through a complex series of steps to configure them. The VP Installer bundles everything into a single download, and provides a Windows Setup program that configures it all automatically.
+The easiest way to set up both versions is to use the VP Installer.
+VP is actually a collection of about five programs that work together, and in the old days, you had to go download them all individually and then go through a complex series of steps to configure them.
+The VP Installer bundles everything into a single download, and provides a Windows Setup program that configures it all automatically.
 
 Here are the steps to install VP (both versions 9 and 10) with the VP Installer:
 
 * Go to link:https://www.vpforums.org/[vpforums] .
-* On the navigation bar near the top, click Getting Started. This will pop up a menu. Under "Install Visual Pinball", click "VP Installer".
+* On the navigation bar near the top, click Getting Started.
+This will pop up a menu.
+Under "Install Visual Pinball", click "VP Installer".
 * Even though this is called the "VP X Installer", it's actually the combined installer for VP 9 _and_ 10.
-* Click the Download button and follow the instructions to download the file. If you see several version options, pick the one with the highest number, since it should be the latest. You might need to create an account and log in before you can start the download.
+* Click the Download button and follow the instructions to download the file.
+If you see several version options, pick the one with the highest number, since it should be the latest.
+You might need to create an account and log in before you can start the download.
 * Unzip the downloaded file into a temporary folder on your hard disk.
 * Double-click the Setup program.
 *  *Important:* when the program asks for a destination folder, use a folder in your hard disk's root folder, such as `C:\Visual Pinball` .
 
-You can use a folder different name, but *don't* use anything within the Windows "Program Files" folder tree. Yes, that's the _normal_ location for installing programs, but don't use it for VP. You'll create huge headaches for yourself if you do. The issue is that some VP components need to write files to their own install folders, and Windows has security restrictions against programs writing within the Program Files tree. The simple solution is to install VP somewhere else.
+You can use a folder different name, but *don't* use anything within the Windows "Program Files" folder tree.
+Yes, that's the _normal_ location for installing programs, but don't use it for VP.
+You'll create huge headaches for yourself if you do.
+The issue is that some VP components need to write files to their own install folders, and Windows has security restrictions against programs writing within the Program Files tree.
+The simple solution is to install VP somewhere else.
 
-* If the program asks which DMD components to install, it's talking about the special "Dot Matrix Display" hardware devices that you can optionally install in your cab to re-create the plasma scoring display on 1990s pinballs. If you're using a video monitor (such as a small TV or laptop display) for this, or you don't have a DMD panel at all, use the default option. If you're using a special external DMD device (PinDMD 2, PinDMD3, or Pin2dmd), select the corresponding option.
+* If the program asks which DMD components to install, it's talking about the special "Dot Matrix Display" hardware devices that you can optionally install in your cab to re-create the plasma scoring display on 1990s pinballs.
+If you're using a video monitor (such as a small TV or laptop display) for this, or you don't have a DMD panel at all, use the default option.
+If you're using a special external DMD device (PinDMD 2, PinDMD3, or Pin2dmd), select the corresponding option.
 
-The VP Installer asks this question because each of the external hardware DMD devices require their own special software. The VP developers are working to combine all of this into a single unified system, which will eventually make it unnecessary to choose which one to use. If the installer doesn't ask this question, don't worry - it means you have a newer version with the unified software.
+The VP Installer asks this question because each of the external hardware DMD devices require their own special software.
+The VP developers are working to combine all of this into a single unified system, which will eventually make it unnecessary to choose which one to use.
+If the installer doesn't ask this question, don't worry - it means you have a newer version with the unified software.
 
 === Future Pinball
 
-Future Pinball isn't as essential as VP. It's an older system that hasn't been updated since 2010, and it's unlikely that it ever will be updated again, since its author abandoned the project without ever publishing the source code. I don't find its physics as convincing as VP's, and due to its age, FP's support for special cabinet features is limited.
+Future Pinball isn't as essential as VP.
+It's an older system that hasn't been updated since 2010, and it's unlikely that it ever will be updated again, since its author abandoned the project without ever publishing the source code.
+I don't find its physics as convincing as VP's, and due to its age, FP's support for special cabinet features is limited.
 
 Even so, many cab builders think FP is worth installing, since it's free and it has lots of tables available.
 
@@ -84,73 +147,118 @@ To install FP:
 
 == Commercial pinball players
 
-Some good commercial pinball games are also available. Here are the main commercial titles popular with cabinet builders:
+Some good commercial pinball games are also available.
+Here are the main commercial titles popular with cabinet builders:
 
-*  link:https://www.pinballfx.com/[Pinball FX] . A commercial pinball simulation available on Windows and other platforms. In 2018, this company acquired the Williams licenses that Farsight (see below) formerly held. They're gradually releasing table packs featuring re-creations of Williams/Bally/Midway titles. Pinball FX also offers a large collection of "fantasy" titles (original tables that never existed as real machines) from before they bought the Williams licenses, many based on popular media themes including the _Star Wars_ movies and Marvel comics. Their older fantasy games had a decidedly unreal flavor, as they chose to fully embrace their video-game-ness by including elements that would have been impossible in a physical table. For some people that's a positive, since it makes the game action more diverse than in a real pinball machine, but it can be a negative if your tastes run more toward simulation and realism. Recognizing this, the FX developers say they've made changes to the physics engine in the new re-creations to make them play more realistically. This product has a Pin Cab mode available; to get it, you have to send a request to the publisher's tech support staff and provide proof that your cab is operated non-commercially.
-*  link:https://www.pinballarcade.com/[The Pinball Arcade] by Farsight Studios. Detailed and accurate re-creations of real machines from the 1960s through the 2000s, available on Windows and other platforms. TPA _formerly_ boasted a large collection of Williams/Bally/Midway titles that included many of the best pinballs ever made. But Farsight's license to those titles was terminated in 2018 (to be taken over by the Pinball FX developers), so the editions you can buy now only include Gottlieb and Stern titles. Gottlieb dominated the EM era, so there are some great classics in there if you like the older machines, and Stern has been steadily producing newer machines since Williams withdrew from the market, many of which are popular and well-regarded.
+*  link:https://www.pinballfx.com/[Pinball FX] .
+A commercial pinball simulation available on Windows and other platforms.
+In 2018, this company acquired the Williams licenses that Farsight (see below) formerly held.
+They're gradually releasing table packs featuring re-creations of Williams/Bally/Midway titles.
+Pinball FX also offers a large collection of "fantasy" titles (original tables that never existed as real machines) from before they bought the Williams licenses, many based on popular media themes including the _Star Wars_ movies and Marvel comics.
+Their older fantasy games had a decidedly unreal flavor, as they chose to fully embrace their video-game-ness by including elements that would have been impossible in a physical table.
+For some people that's a positive, since it makes the game action more diverse than in a real pinball machine, but it can be a negative if your tastes run more toward simulation and realism.
+Recognizing this, the FX developers say they've made changes to the physics engine in the new re-creations to make them play more realistically.
+This product has a Pin Cab mode available; to get it, you have to send a request to the publisher's tech support staff and provide proof that your cab is operated non-commercially.
+*  link:https://www.pinballarcade.com/[The Pinball Arcade] by Farsight Studios.
+Detailed and accurate re-creations of real machines from the 1960s through the 2000s, available on Windows and other platforms.
+TPA _formerly_ boasted a large collection of Williams/Bally/Midway titles that included many of the best pinballs ever made.
+But Farsight's license to those titles was terminated in 2018 (to be taken over by the Pinball FX developers), so the editions you can buy now only include Gottlieb and Stern titles.
+Gottlieb dominated the EM era, so there are some great classics in there if you like the older machines, and Stern has been steadily producing newer machines since Williams withdrew from the market, many of which are popular and well-regarded.
 
-The commercial games are playable on pin cabs, but they cater mostly to desktop users, and have limited support for pin cab features (DOF, multiple monitors, real DMDs, etc). Pin cab users aren't a big enough market to attract much commercial support, and of course the open-source developers who created all of the pin cab technologies are unable to modify closed-source commercial products.
+The commercial games are playable on pin cabs, but they cater mostly to desktop users, and have limited support for pin cab features (DOF, multiple monitors, real DMDs, etc).
+Pin cab users aren't a big enough market to attract much commercial support, and of course the open-source developers who created all of the pin cab technologies are unable to modify closed-source commercial products.
 
 == Cabinet enhancements
 
-Visual Pinball and the other pinball player programs are basically PC video games. To take full advantage of a cabinet, there are some additional pieces of software that you need.
+Visual Pinball and the other pinball player programs are basically PC video games.
+To take full advantage of a cabinet, there are some additional pieces of software that you need.
 
 === Backglass display software
 
-To display backglass artwork when playing Visual Pinball games, you need an add-on program called B2S Backglass Server. B2S is installed automatically along with VP if you used the VP Installer. If you set up VP manually, you'll have to install B2S separately.
+To display backglass artwork when playing Visual Pinball games, you need an add-on program called B2S Backglass Server.
+B2S is installed automatically along with VP if you used the VP Installer.
+If you set up VP manually, you'll have to install B2S separately.
 
-Getting B2S working takes a few additional steps beyond just installing the software. We cover the details in xref:b2s.adoc#b2s[Backglass Software Setup] .
+Getting B2S working takes a few additional steps beyond just installing the software.
+We cover the details in xref:b2s.adoc#b2s[Backglass Software Setup] .
 
 === Tactile feedback and lights
 
 If you're installing any feedback devices in your cab - solenoids, shaker motors, flashing lights - then you need some additional software called DOF (DirectOutput Framework) to control the feedback devices.
 
-DOF is an add-on program that lets Visual Pinball and other software access your output controller. DOF acts as the coordinator between the simulated game and the physical feedback devices, to synchronize feedback effects with the game action: firing your flipper solenoids when the flipper flips, activating the shaker motor when the castle is destroyed, etc.
+DOF is an add-on program that lets Visual Pinball and other software access your output controller.
+DOF acts as the coordinator between the simulated game and the physical feedback devices, to synchronize feedback effects with the game action: firing your flipper solenoids when the flipper flips, activating the shaker motor when the castle is destroyed, etc.
 
 DOF is a fairly big subject, so it gets its own chapter: xref:DOF.adoc#dofSetup[DOF Setup] .
 
 == PinVol
 
-PinVol is a utility I wrote to make it easier to control the audio volume during play. It lets you adjust the volume using cabinet buttons, and its special ability is that it helps equalize the volume level across different tables. It remembers your volume settings for each table individually, and automatically restores the table-specific settings whenever you switch tables. It has some additional special features for pin cabs, such as "night mode" (to reduce volume across all tables for late-night play) and individual level controls for multiple sound cards, all accessible from cabinet buttons.
+PinVol is a utility I wrote to make it easier to control the audio volume during play.
+It lets you adjust the volume using cabinet buttons, and its special ability is that it helps equalize the volume level across different tables.
+It remembers your volume settings for each table individually, and automatically restores the table-specific settings whenever you switch tables.
+It has some additional special features for pin cabs, such as "night mode" (to reduce volume across all tables for late-night play) and individual level controls for multiple sound cards, all accessible from cabinet buttons.
 
 You can find the download link and installation instructions on the link:http://mjrnet.org/pinscape/pinvol.html[PinVol page] .
 
 == Game selectors, or "front ends"
 
-When your pin cab is finished, you'll probably want it to give the appearance of being a full-fledged arcade machine, not a plain old Windows PC. When you turn on the power, you won't want to see the Windows desktop at any point; you'll want something that looks more like a video game instead. It's also important to be able to operate all controls with the basic set of pin cab buttons - flipper buttons, Start, Exit.
+When your pin cab is finished, you'll probably want it to give the appearance of being a full-fledged arcade machine, not a plain old Windows PC.
+When you turn on the power, you won't want to see the Windows desktop at any point; you'll want something that looks more like a video game instead.
+It's also important to be able to operate all controls with the basic set of pin cab buttons - flipper buttons, Start, Exit.
 
-This can all be accomplished with a program known on the forums as a "front end", so-called because it's the first thing you see when you walk up to the pin cab. A front end program serves as a replacement for the Windows desktop. It provides a video game-style user interface that lets you browse through your installed tables, launch tables, and switch between tables. A good front end will let you operate everything with the pin cab buttons so that you don't have to reach for the mouse or keyboard.
+This can all be accomplished with a program known on the forums as a "front end", so-called because it's the first thing you see when you walk up to the pin cab.
+A front end program serves as a replacement for the Windows desktop.
+It provides a video game-style user interface that lets you browse through your installed tables, launch tables, and switch between tables.
+A good front end will let you operate everything with the pin cab buttons so that you don't have to reach for the mouse or keyboard.
 
-The most widely used front end currently is PinballX, which is free but closed-source. The original front end, HyperPin (also free-but-closed-source), is still around, but it's not very widely used any more; most people consider PinballX's user interface to be more modern and more pin-cab-friendly. There are also two newer options: PinUp Popper, another free/closed-source program; and my own PinballY, free and open-source.
+The most widely used front end currently is PinballX, which is free but closed-source.
+The original front end, HyperPin (also free-but-closed-source), is still around, but it's not very widely used any more; most people consider PinballX's user interface to be more modern and more pin-cab-friendly.
+There are also two newer options: PinUp Popper, another free/closed-source program; and my own PinballY, free and open-source.
 
 === PinballY
 
-This is my own project, brand new in late 2018. I tried to make it easy and quick to set up so that you can try it out without a lot of hassle. It's designed specifically for pin cabs, and has built-in integration with most of the pin cab ecosystem, including xref:DOF.adoc#dofSetup[DOF] , real DMD devices, joysticks (for button input), and multiple monitors. It's also highly customizable via a built-in Javascript scripting engine.
+This is my own project, brand new in late 2018.
+I tried to make it easy and quick to set up so that you can try it out without a lot of hassle.
+It's designed specifically for pin cabs, and has built-in integration with most of the pin cab ecosystem, including xref:DOF.adoc#dofSetup[DOF] , real DMD devices, joysticks (for button input), and multiple monitors.
+It's also highly customizable via a built-in Javascript scripting engine.
 
 Downloads and more information are available at the link:http://mjrnet.org/pinscape/PinballY.php[PinballY Project Page] .
 
-PinballY is similar to the other front ends in terms of user interface appearance and functionality. The main reason I wrote it was that I wanted an open-source option (all of the other front ends I know of are closed-source).
+PinballY is similar to the other front ends in terms of user interface appearance and functionality.
+The main reason I wrote it was that I wanted an open-source option (all of the other front ends I know of are closed-source).
 
 === PinUp Popper
 
-This is a newer program released in early 2018. It's free, but closed-source. See link:https://www.nailbuster.com/wikipinup/doku.php[www.nailbuster.com/wikipinup/doku.php] for download and install information.
+This is a newer program released in early 2018.
+It's free, but closed-source.
+See link:https://www.nailbuster.com/wikipinup/doku.php[www.nailbuster.com/wikipinup/doku.php] for download and install information.
 
 === PinballX
 
-PinballX is currently the most popular front end for pin cabs. It has a minimalistic user interface that's well designed for pin cabs, letting you access all functionality with just four buttons (flippers, Start, and Exit), but also letting you use other buttons if you have them (e.g., MagnaSave).
+PinballX is currently the most popular front end for pin cabs.
+It has a minimalistic user interface that's well designed for pin cabs, letting you access all functionality with just four buttons (flippers, Start, and Exit), but also letting you use other buttons if you have them (e.g., MagnaSave).
 
-You can download PinballX from its home site, link:https://www.pinballx.com/[pinballx.com] . It's free to download, but it's closed-source, and installed versions "expire" after a period of time, requiring you to update. Follow the Download link from the main page to download the installer.
+You can download PinballX from its home site, link:https://www.pinballx.com/[pinballx.com] .
+It's free to download, but it's closed-source, and installed versions "expire" after a period of time, requiring you to update.
+Follow the Download link from the main page to download the installer.
 
-After running the installer program, you have to run the *Settings.exe* program in the PinballX folder. PinballX needs to know a bunch of things about your system before it will work properly. You should go through at least the Basic settings. Pay particular attention to the following:
+After running the installer program, you have to run the *Settings.exe* program in the PinballX folder.
+PinballX needs to know a bunch of things about your system before it will work properly.
+You should go through at least the Basic settings.
+Pay particular attention to the following:
 
-* Display Settings page: Assign the monitors you're using for the playfield (which PinballX calls the "main display"), backglass, and DMD (dot matrix display). Also set the rotations.
+* Display Settings page: Assign the monitors you're using for the playfield (which PinballX calls the "main display"), backglass, and DMD (dot matrix display).
+Also set the rotations.
 * Startup Settings: Set "Start with Windows" to Yes if you want the program to launch automatically when you boot the system.
-* Keyboard Input Settings: set the key assignments to match the keys assigned to your cabinet buttons. If you're mapping the buttons to joystick buttons, you can assign those on the next page, Joystick Input Settings.
-* Future Pinball, Visual Pinball: Set the directory paths for these programs. The "Working Path" field should be set to the folder containing each program.
+* Keyboard Input Settings: set the key assignments to match the keys assigned to your cabinet buttons.
+If you're mapping the buttons to joystick buttons, you can assign those on the next page, Joystick Input Settings.
+* Future Pinball, Visual Pinball: Set the directory paths for these programs.
+The "Working Path" field should be set to the folder containing each program.
 
 ====  Adding tables to the PinballX menu
 
-PinballX doesn't go out and find your tables by itself. You have to enter each table into PinballX's menu list yourself. You do this using the Game List Manager program in the PinballX program directory. Before running this, make sure you configured the directory locations with the PinballX Settings program as described above.
+PinballX doesn't go out and find your tables by itself.
+You have to enter each table into PinballX's menu list yourself. You do this using the Game List Manager program in the PinballX program directory. Before running this, make sure you configured the directory locations with the PinballX Settings program as described above.
 
 The PBX installer will pre-populate the menu list with a few games for demo purposes, so the first thing you'll probably want to do is delete these. Simply click the Delete button next to each game in the list. Note that there are multiple game lists (Visual Pinball, Future Pinball, MAME), so you'll have to select each list with the drop list at the top of the window and delete its games.
 

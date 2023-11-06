@@ -1,78 +1,135 @@
 [#contactors]
 = Flippers, Bumpers, and Slingshots
 
-Real pinball machines are mechanical contraptions with lots of moving parts. It's what makes them stand apart from just about every other kind of arcade game. When you translate pinball into a video game, you lose that physicality. In a virtual pin cab, you can bring back some of the mechanical feel of the real thing by adding similar moving parts that can be actuated in sync with the game action.
+Real pinball machines are mechanical contraptions with lots of moving parts.
+It's what makes them stand apart from just about every other kind of arcade game.
+When you translate pinball into a video game, you lose that physicality.
+In a virtual pin cab, you can bring back some of the mechanical feel of the real thing by adding similar moving parts that can be actuated in sync with the game action.
 
-The moving parts on a real machine that produce most of the tactile experience for the player are the ones controlled by solenoids: flippers, slingshots, bumpers, kickers. All of these are driven by powerful magnetic coils that propel the metal parts at high speed. The kick of the solenoids is palpable while playing. This chapter is about reproducing that tactile solenoid effect in a virtual cab.
+The moving parts on a real machine that produce most of the tactile experience for the player are the ones controlled by solenoids: flippers, slingshots, bumpers, kickers.
+All of these are driven by powerful magnetic coils that propel the metal parts at high speed.
+The kick of the solenoids is palpable while playing.
+This chapter is about reproducing that tactile solenoid effect in a virtual cab.
 
 == How many? Where do they go?
 
-It's up to you which devices to include in your setup. The common setups, which DOF supports most readily, use two devices to simulate flippers, two to simulate slingshots, and four to six devices to simulate pop bumpers.
+It's up to you which devices to include in your setup.
+The common setups, which DOF supports most readily, use two devices to simulate flippers, two to simulate slingshots, and four to six devices to simulate pop bumpers.
 
-*Flippers:* The most basic solenoid setup uses just two solenoids, one for each flipper. These should be positioned near the location where the actual flippers appear in the video presentation, near the bottom of the TV. You can mount these inset a bit from the sides of the cabinet, where the actual flipper solenoids would be on a real machine, or you can mount them directly to the cabinet walls. If you're using slingshot solenoids in addition to the flippers, you might want to use the inset positioning for the flippers, and position the slings further apart, to make the sounds more noticeably separated in space.
+*Flippers:* The most basic solenoid setup uses just two solenoids, one for each flipper.
+These should be positioned near the location where the actual flippers appear in the video presentation, near the bottom of the TV.
+You can mount these inset a bit from the sides of the cabinet, where the actual flipper solenoids would be on a real machine, or you can mount them directly to the cabinet walls.
+If you're using slingshot solenoids in addition to the flippers, you might want to use the inset positioning for the flippers, and position the slings further apart, to make the sounds more noticeably separated in space.
 
-*Slingshots:* These go just behind the flipper devices. Most people mount these directly to the side walls of the cabinet, since real slingshots are also close to the walls.
+*Slingshots:* These go just behind the flipper devices.
+Most people mount these directly to the side walls of the cabinet, since real slingshots are also close to the walls.
 
-*Bumpers:* There are two common configurations for bumpers. The "deluxe" arrangement uses six devices, arranged as a row of three across roughly the middle of the playfield TV, and a second row of three closer to the rear of the TV. This provides devices at enough different places that DOF can do a good job of placing each sound effect close to its simulated origin in the game. The other common arrangement uses a single row of three across the middle of the TV, and one more near the rear center.
+*Bumpers:* There are two common configurations for bumpers.
+The "deluxe" arrangement uses six devices, arranged as a row of three across roughly the middle of the playfield TV, and a second row of three closer to the rear of the TV.
+This provides devices at enough different places that DOF can do a good job of placing each sound effect close to its simulated origin in the game.
+The other common arrangement uses a single row of three across the middle of the TV, and one more near the rear center.
 
-DOF refers to these two common bumper configurations as "10-Bumper" and "8-Bumper" setups. That's a bit confusing, because it doesn't really mean _bumpers_ . In both cases, two of the devices are flippers and two are slingshots. So what DOF really means is "10-Solenoid" and "8-Solenoid".
+DOF refers to these two common bumper configurations as "10-Bumper" and "8-Bumper" setups.
+That's a bit confusing, because it doesn't really mean _bumpers_ .
+In both cases, two of the devices are flippers and two are slingshots.
+So what DOF really means is "10-Solenoid" and "8-Solenoid".
 
 Here's what the two arrangements typically look like in a cab.
 
 image::images/10BumperPlacement.png[""]
 
-"10-Bumper" placement. The actual "bumpers" are the six devices across the middle and back playfield area. The two devices at the front are the flippers, and the two just behind those are the slingshots.
+"10-Bumper" placement.
+The actual "bumpers" are the six devices across the middle and back playfield area.
+The two devices at the front are the flippers, and the two just behind those are the slingshots.
 
 image::images/8BumperPlacement.png[""]
 
-"8-Bumper" placement. The actual "bumpers" are the four devices across the middle and back playfield area. The flipper and slingshot devices are the same as in the "10-Bumper" layout.
+"8-Bumper" placement.
+The actual "bumpers" are the four devices across the middle and back playfield area.
+The flipper and slingshot devices are the same as in the "10-Bumper" layout.
 
 == Parts
 
 The most effective way to reproduce the sensory effects of a pinball solenoid is to use some of kind of solenoid.
 
-In a real pinball machine, they have to use a specific mechanism for each job, because each mechanism has to do the actual work of propelling the ball (or whatever it's meant to do). In a virtual cab, we don't have that constraint. Our devices don't have to actually do anything physical in the game; they just have to produce the right sensory impression. So we're free to substitute anything that sounds and feels similar. That opens up our options and lets us consider other properties when we're selecting devices, such as cost, size, durability, and power needs.
+In a real pinball machine, they have to use a specific mechanism for each job, because each mechanism has to do the actual work of propelling the ball (or whatever it's meant to do).
+In a virtual cab, we don't have that constraint.
+Our devices don't have to actually do anything physical in the game; they just have to produce the right sensory impression.
+So we're free to substitute anything that sounds and feels similar.
+That opens up our options and lets us consider other properties when we're selecting devices, such as cost, size, durability, and power needs.
 
-If you open up the field to consider anything with a solenoid in it, you have an overwhelming number of options. Fortunately, people have been building pin cabs for long enough now that a few winning options have emerged, so you won't have to spend months doing research on this; you can just pick one of the common solutions below. Like most pin cab features, everything has some tradeoffs, so there's not a perfect one-size-fits-all solution. We'll give you the pros and cons of each to help you decide.
+If you open up the field to consider anything with a solenoid in it, you have an overwhelming number of options.
+Fortunately, people have been building pin cabs for long enough now that a few winning options have emerged, so you won't have to spend months doing research on this; you can just pick one of the common solutions below.
+Like most pin cab features, everything has some tradeoffs, so there's not a perfect one-size-fits-all solution.
+We'll give you the pros and cons of each to help you decide.
 
-Note that you don't have to settle on a single device type! Many pin cab builders do use one device type for everything, but others think it's a plus to use different devices for different roles, so that each type of device sounds a little different. For example, you might use the Siemens contactors for the flippers, and starter relays for the bumpers and slingshots.
+Note that you don't have to settle on a single device type! Many pin cab builders do use one device type for everything, but others think it's a plus to use different devices for different roles, so that each type of device sounds a little different.
+For example, you might use the Siemens contactors for the flippers, and starter relays for the bumpers and slingshots.
 
 === Contactors
 
-A contactor is a type of electrically controlled switch used in high-power applications, such as controlling industrial equipment or large appliances like air conditioners. "Contactor" is just another word for "relay" - they're fundamentally the same thing - but they call it a contactor when it's the higher power type.
+A contactor is a type of electrically controlled switch used in high-power applications, such as controlling industrial equipment or large appliances like air conditioners.
+"Contactor" is just another word for "relay" - they're fundamentally the same thing - but they call it a contactor when it's the higher power type.
 
-On the inside, a contactor is a mechanical switch controlled by a solenoid. The solenoid moves a set of mechanical switch blades when energized. Because of the high power that a contactor is designed to handle, the switch blades have to be hefty, and they have to move across a wide gap when switching.
+On the inside, a contactor is a mechanical switch controlled by a solenoid.
+The solenoid moves a set of mechanical switch blades when energized.
+Because of the high power that a contactor is designed to handle, the switch blades have to be hefty, and they have to move across a wide gap when switching.
 
-It's that big moving switch element that makes contactors useful for our purposes. The large moving parts make a nice "thunk" when the device switches on and off, strong enough to resemble a pinball flipper, slingshot, or bumper.
+It's that big moving switch element that makes contactors useful for our purposes.
+The large moving parts make a nice "thunk" when the device switches on and off, strong enough to resemble a pinball flipper, slingshot, or bumper.
 
 image::images/SiemensContactorExample.png[""]
-*What to buy:* The type of contactor that's popular with pin cab builders is made by Siemens. One particular known quantity that many cab builders use is Siemens model number 3RH1140-1BB40 (pictured at right). It's safest to look for that exact part, but Siemens makes a large number of similar devices, and I suspect that any Siemens model that physically resembles this one will have substantially the same component parts inside and will produce similar sensory effects.
+*What to buy:* The type of contactor that's popular with pin cab builders is made by Siemens.
+One particular known quantity that many cab builders use is Siemens model number 3RH1140-1BB40 (pictured at right).
+It's safest to look for that exact part, but Siemens makes a large number of similar devices, and I suspect that any Siemens model that physically resembles this one will have substantially the same component parts inside and will produce similar sensory effects.
 
-Many other types of contactors are also available from other manufacturers, so there are undoubtedly many more options out there that would work. However, there's no reason to assume that any random contactor would sound "right". If you're considering another device, ask in the forums to see if anyone else has tried it; or try it yourself if you want to be a pioneer, but ideally buy it from someone who will let you return it if it doesn't do the job.
+Many other types of contactors are also available from other manufacturers, so there are undoubtedly many more options out there that would work.
+However, there's no reason to assume that any random contactor would sound "right".
+If you're considering another device, ask in the forums to see if anyone else has tried it; or try it yourself if you want to be a pioneer, but ideally buy it from someone who will let you return it if it doesn't do the job.
 
-*Cost:* You _can_ buy these devices new, but you shouldn't: they're $50 and up apiece new. Given the performance tradeoffs, they're not worth the money; if you have that kind of budget, real pinball parts would be a far better investment. So you should instead buy them used on eBay, where they can be found for about $10 apiece. You might have to be patient to find them at a reasonable price, since they seem to be a fairly low-volume item on eBay.
+*Cost:* You _can_ buy these devices new, but you shouldn't: they're $50 and up apiece new.
+Given the performance tradeoffs, they're not worth the money; if you have that kind of budget, real pinball parts would be a far better investment.
+So you should instead buy them used on eBay, where they can be found for about $10 apiece.
+You might have to be patient to find them at a reasonable price, since they seem to be a fairly low-volume item on eBay.
 
-*Power supply:* The Siemens contactors require 24VDC power. That's not available from a computer ATX power supply, so you'll need a separate power dedicated 24V supply. See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for advice.
+*Power supply:* The Siemens contactors require 24VDC power.
+That's not available from a computer ATX power supply, so you'll need a separate power dedicated 24V supply.
+See xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] for advice.
 
-The Siemens contactors draw about 400mA each. I'd plan on sufficient power for three or four of them to fire simultaneously, so be sure your 24V power supply is rated for at least 2A (equivalent to 48W).
+The Siemens contactors draw about 400mA each.
+I'd plan on sufficient power for three or four of them to fire simultaneously, so be sure your 24V power supply is rated for at least 2A (equivalent to 48W).
 
 *Wiring:* Here's how to hook up the typical Siemens contactors:
 
 image::images/SiemensContactorWiring.png[""]
 
-Note that most of the terminals on the contactor are left unconnected. The other terminals are all intended to be wired to whatever circuits the contactor is controlling, but in our case, we don't control anything at all with the contactor. It's just there for the sound effect it makes when it switches on and off, so we only connect the terminals that control its coil, typically A1 and A2 on the Siemens devices.
+Note that most of the terminals on the contactor are left unconnected.
+The other terminals are all intended to be wired to whatever circuits the contactor is controlling, but in our case, we don't control anything at all with the contactor.
+It's just there for the sound effect it makes when it switches on and off, so we only connect the terminals that control its coil, typically A1 and A2 on the Siemens devices.
 
-The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor. See xref:diodes.adoc#coilDiodes[Coil Diodes] . The stripe on the diode must connect to the positive (+) power side.
+The diode is required to protect the output controller and computer electronics from noise from the magnetic coil inside the contactor.
+See xref:diodes.adoc#coilDiodes[Coil Diodes] .
+The stripe on the diode must connect to the positive (+) power side.
 
-*Pros:* The biggest "pro" with contactors is that they're happy to be left in the "on" position indefinitely. That's not at all true of most solenoids: most solenoids will overheat if left on for long periods, and many can only tolerate a couple of seconds at a time. For simulating flippers, the ability to stay on for long periods is critical, because the player could hold the flipper button indefinitely to trap a ball.
+*Pros:* The biggest "pro" with contactors is that they're happy to be left in the "on" position indefinitely.
+That's not at all true of most solenoids: most solenoids will overheat if left on for long periods, and many can only tolerate a couple of seconds at a time.
+For simulating flippers, the ability to stay on for long periods is critical, because the player could hold the flipper button indefinitely to trap a ball.
 
-The tonal quality of audio/tactile effect of the Siemens contactors is another plus. It's a nice solid mechanical "thunk" that creates the impression of a large device.
+The tonal quality of audio/tactile effect of the Siemens contactors is another plus.
+It's a nice solid mechanical "thunk" that creates the impression of a large device.
 
 Other good features: they're compact, self-contained, easy to install, run on fairly low DC voltages (the Siemens devices referenced above run on 24VDC), and use relatively little power (about 350mA for the common Siemens device).
 
-*Cons:* The biggest negative is that the effect is far weaker than a real pinball solenoid (even though the tonal quality is good). Also, they require 24V, which means you have to add an extra power supply for them. The Siemens devices are pricey, unless you buy them used, and used ones sometimes have a lot of wear that greatly reduces the strength of the "thunk" effect, which is the whole point for our purposes. Used ones might not be entirely reliable, either; a couple of my own Siemens contactors are intermittently "sticky", where they'll stuck in the on or off position for a while and won't make any noise. I've heard from other people seeing the same problem.
+*Cons:* The biggest negative is that the effect is far weaker than a real pinball solenoid (even though the tonal quality is good).
+Also, they require 24V, which means you have to add an extra power supply for them.
+The Siemens devices are pricey, unless you buy them used, and used ones sometimes have a lot of wear that greatly reduces the strength of the "thunk" effect, which is the whole point for our purposes.
+Used ones might not be entirely reliable, either; a couple of my own Siemens contactors are intermittently "sticky", where they'll stuck in the on or off position for a while and won't make any noise.
+I've heard from other people seeing the same problem.
 
-*Recommendation:* The Siemens contactors are a popular way to implement the simulated flippers and other solenoids because they're simple to install and they won't overheat if left activated for long intervals. The tolerance for long activation times makes them especially attractive for flipper effects. They're the best bet if you want to keep things simple. But the effect isn't nearly as strong as the real thing, so if realism is a high priority, look at other options.
+*Recommendation:* The Siemens contactors are a popular way to implement the simulated flippers and other solenoids because they're simple to install and they won't overheat if left activated for long intervals.
+The tolerance for long activation times makes them especially attractive for flipper effects.
+They're the best bet if you want to keep things simple.
+But the effect isn't nearly as strong as the real thing, so if realism is a high priority, look at other options.
 
 === Automotive starter solenoid relays
 

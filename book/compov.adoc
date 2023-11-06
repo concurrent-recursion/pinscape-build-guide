@@ -1,9 +1,13 @@
 [#compov]
 = Field Guide to Components
 
-Or, how to recognize electronic parts from quite a long way away. Here's a quick visual reference guide to the major components used in the Pinscape expansion boards. We'll cover each category in greater detail in the chapters that follow.
+Or, how to recognize electronic parts from quite a long way away.
+Here's a quick visual reference guide to the major components used in the Pinscape expansion boards.
+We'll cover each category in greater detail in the chapters that follow.
 
-Note that the example photos are just that - examples. All of these parts come in an almost infinite variety of shapes, sizes, and colors. These photos should at least look similar to most of the parts used in the Pinscape projects, but there's a lot of variation even in that limited scope, so don't worry if you don't see an exact picture of one of the parts you're using.
+Note that the example photos are just that - examples.
+All of these parts come in an almost infinite variety of shapes, sizes, and colors.
+These photos should at least look similar to most of the parts used in the Pinscape projects, but there's a lot of variation even in that limited scope, so don't worry if you don't see an exact picture of one of the parts you're using.
 
 [cols="1,1,1"]
 |===
