@@ -68,8 +68,8 @@ A better way is build your own mating connectors and just plug into them, the wa
 It's pretty easy to build the matching connectors.
 Here are the parts you need:
 
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260.html[TE/AMP 1-480426-0] 4-pin housing
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201.html[TE/AMP 60620-1] male crimp pins, quantity 4 per housing
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260[TE/AMP 1-480426-0] 4-pin housing
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201[TE/AMP 60620-1] male crimp pins, quantity 4 per housing
 
 Those are crimp-pin housings, so see xref:crimpPins.adoc#crimpPins[Crimp Pins] for instructions on how to assemble them.
 
@@ -116,7 +116,7 @@ These systems are available as separate parts (male and female housings and crim
 You can find the kits on Amazon as well as Mouser.
 Here's a Mouser search that should work:
 
-link:https://www.mouser.com/Connectors/Pin-Socket-Connectors/_/N-ay0mm?P=1z0yxz4.html[Mouser Pin Socket Connectors]
+link:https://www.mouser.com/c/connectors/pin-socket-connectors/[Mouser Pin Socket Connectors]
 
 (That's a search for Connectors > Pin & Socket connectors, product=Kits.)
 

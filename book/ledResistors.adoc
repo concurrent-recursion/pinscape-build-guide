@@ -11,7 +11,8 @@ The simplest and most common way to do this is by placing a resistor in series w
 All LEDs require something to limit current, but some LEDs come with suitable resistors already built in.
 You don't need to add anything external for devices with their own built-in resistors.
 
-How can you tell if resistors are built-in? A rule of thumb is that any LED that you buy as a bare component requires an external resistor, whereas finished products that happen to contain LEDs usually have any necessary resistors built in.
+How can you tell if resistors are built-in?
+A rule of thumb is that any LED that you buy as a bare component requires an external resistor, whereas finished products that happen to contain LEDs usually have any necessary resistors built in.
 
 Here's a handy guide to which is which, for the parts commonly used in pin cabs:
 

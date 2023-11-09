@@ -54,7 +54,7 @@ For a shaker, it's critical to immobilize both ends of the motor body.
 Most of the parts in this plan are ordinary hardware store items.
 The only exceptions are the motor itself, and the "shaft hubs".
 Shaft hubs are fairly easy to find online - they're used a lot in hobby robotics, mostly to attach wheels to motors.
-You can buy them at link:https://www.pololu.com/category/137/pololu-universal-mounting-hubs.html[Pololu] , Amazon, eBay, or Aliexpress.
+You can buy them at link:https://www.pololu.com/category/137/pololu-universal-mounting-hubs[Pololu] , Amazon, eBay, or Aliexpress.
 They currently run about $10 a pair.
 
 Look for something like this:
@@ -113,7 +113,7 @@ Wear heavy leather work gloves.
 
 Instead of the pipe hangers, you might be able to substitute U-bolts.
 U-bolts are easier to work with in some ways, but they're only available in certain sizes.
-My motor has a standard type "775" case, which is about 44mm in diameter; it fits perfectly into 1-3/4" U-bolts, specifically link:https://www.boltdepot.com/Product-Details.aspx?product=12489.html[Bolt Depot #12489] .
+My motor has a standard type "775" case, which is about 44mm in diameter; it fits perfectly into 1-3/4" U-bolts, specifically link:https://www.boltdepot.com/Product-Details.aspx?product=12489[Bolt Depot #12489] .
 You can also look for "exhaust clamps" or "muffler clamps" at an auto parts store - those are basically the same as U-bolts and might give you some additional size options, if you can't find a hardware store U-bolt in the right size.
 
 == Construction step-by-step

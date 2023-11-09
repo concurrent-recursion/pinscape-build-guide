@@ -201,7 +201,8 @@ Do this test with the power on.
 There's no need to shut down before making the LED connections for this test.
 
 You _might_ also need the 220Ω resistor, but probably not.
-Remember the option to set a custom current regulator level for the Small LED outputs, in xref:expanAssembly.adoc#configureSmallLedRegulator[Building the Expansion Boards] ? If you followed the procedure there to set a custom current regulation level above 20mA, you should use a 220Ω resistor with this LED.
+Remember the option to set a custom current regulator level for the Small LED outputs, in xref:expanAssembly.adoc#configureSmallLedRegulator[Building the Expansion Boards] ?
+If you followed the procedure there to set a custom current regulation level above 20mA, you should use a 220Ω resistor with this LED.
 You don't need the resistor now if you used the default current regulator resistor when you built the board.
 If you don't know what I'm talking about, you probably used the default one, so you don't need the extra resistor now.
 
@@ -463,7 +464,8 @@ Keep one end of the LED attached to the +5V output on the RGB Flasher header on 
 
 image::images/power-board-test.png[""]
 
-You might wonder: why are we using +5V flasher pin from the _main_ board to test the _power_ board outputs? There's nothing magic going on here.
+You might wonder: why are we using +5V flasher pin from the _main_ board to test the _power_ board outputs?
+There's nothing magic going on here.
 The reason this works is that +5V flasher pin is simply a direct connection to the 5V rail on your secondary ATX power supply.
 You could just as well connect to the ATX 5V wire (the red wire in the disk power connectors) directly.
 That's more like what you're going to do with the actual deployed devices that you connect to the power board.

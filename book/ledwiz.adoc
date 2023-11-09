@@ -27,7 +27,8 @@ Some high-power LEDs can exceed it, too.
 So whatever you're connecting, be sure you know how much current it uses, and be sure it's safely under the 500mA limit.
 If you can't find information on a device's power usage in its instructions or spec sheet, you can measure it with a multimeter set to Current (Amps) mode.
 
-What should you do if a device exceeds the 500mA limit? Well, for starters, *don't* connect it directly to the LedWiz.
+What should you do if a device exceeds the 500mA limit?
+Well, for starters, *don't* connect it directly to the LedWiz.
 If you do, you'll likely destroy at least the one LedWiz port that you connected the device to, and possibly a whole group of eight ports (because each group of eight ports is controlled by a single chip on the LedWiz, and an overload on one port can destroy the whole chip).
 
 What you need in this case is a "booster" circuit of some kind.
@@ -235,7 +236,8 @@ If you need help decoding the schematic, see xref:electronics.adoc#electronics[A
 The resistors can all be filled with any ordinary resistor of the specified "Ohms" size, except for the 220Ω resistor, which should have a power rating of 1/4 Watt or higher.
 (You can always use a higher wattage than specified with resistors.)
 
-Which MOSFET to use? Here's a list of parts I've tried that work well:
+Which MOSFET to use?
+Here's a list of parts I've tried that work well:
 
 * BUK7575-55A
 * FQP13N06L
@@ -253,7 +255,7 @@ If you want to cast a wider net by looking on Mouser, the basic type of part you
 Here's a Mouser search for those characteristics.
 This still matched about 1,400 parts when I tried it, so it doesn't exactly narrow things down to a trivial selection, but I'd sort by price, pick one of the cheaper ones, and scan the data sheet to make sure it looks like a suitable part for logic applications.
 
-link:https://www.mouser.com/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sfZ1yzvvqx?P=1z0y3zrZ1yiaumvZ1z0z63xZ1z0y4ci&Rl=ax1sfZgjdhp3Z1yw78ezZ1ypyijjSGgjdhozZ1yw76gfZ1yvixgtSGgjdhp2Z1y9673jZ1yw76gjSGT&Ns=Pricing|0.html[Mouser MOSFETs]
+link:https://www.mouser.com/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sfZ1yzvvqx?P=1z0y3zrZ1yiaumvZ1z0z63xZ1z0y4ci&Rl=ax1sfZgjdhp3Z1yw78ezZ1ypyijjSGgjdhozZ1yw76gfZ1yvixgtSGgjdhp2Z1y9673jZ1yw76gjSGT&Ns=Pricing|0[Mouser MOSFETs]
 
 === Individual relay booster
 

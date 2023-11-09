@@ -99,7 +99,7 @@ If you do get to a point where we ask you to go to the board plans, here's how t
 
 * Download and install the free personal-use version of EAGLE from link:https://www.autodesk.com/[Autodesk] :
 
-link:https://www.autodesk.com/products/eagle/overview.html[www.autodesk.com/products/eagle/overview]
+link:https://www.autodesk.com/products/eagle/overview[www.autodesk.com/products/eagle/overview]
 
 * Download and UNZIP the board plans:
 
@@ -250,7 +250,8 @@ You'll need the EAGLE .BRD plans to trace these connections:
 
 * Right-click the red line sticking out of the ULN2064BN box for that pin and select *Show*
 * Click on the Board window's title bar to bring it to the front. You should now see two new pins highlighted: a ULN2064BN pin, and a pin on a PC847 chip. Check continuity between those two pins. If it's bad, re-solder both pins - this might fix it, so do a new power-on test of the output.
-* Still not there? Click on the Schematic window's title bar to bring it to the front, and find the PC847 pin that's now highlighted as part of the circuit trace. This should be the "emitter" of a PC847 - a line with a little arrow pointing out of the box. Find the pin on the opposite side of the PC847 box - right click it and select *Show* .image:images/pc847-trace.png[""]
+* Still not there?
+Click on the Schematic window's title bar to bring it to the front, and find the PC847 pin that's now highlighted as part of the circuit trace. This should be the "emitter" of a PC847 - a line with a little arrow pointing out of the box. Find the pin on the opposite side of the PC847 box - right click it and select *Show* .image:images/pc847-trace.png[""]
 
 * Go back to the Board view. Yet another pair of pins should be highlighted: one on the PC847, and one on the TLC5940. Check continuity between these pins. If it's bad, re-solder both pins, and do another power-on test of the output.
 

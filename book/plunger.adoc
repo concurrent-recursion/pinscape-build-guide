@@ -83,7 +83,8 @@ If you do decide on a plunger, I personally think it's best to include a Launch 
 But if your plunger can simulate a Launch button (as Pinscape and Zeb's Boards plungers can), this is only a slight edge functionally.
 You can choose according to whether you think more buttons will make your cab look cooler or make it look cheesier.
 
-Why do I give the plunger such high priority? There are two main reasons.
+Why do I give the plunger such high priority?
+There are two main reasons.
 The first is aesthetics: a plunger makes your pin cab look more like a real pinball machine.
 The plunger is practically a defining feature of pinball, so its presence will instantly convey to anyone looking at your cab that it's a pinball machine.
 Yes, there are some real arcade pinballs that use launch buttons or gun triggers or something else in place of a plunger, but to some extent they do that to stand out from the crowd.
@@ -265,7 +266,7 @@ If you want to make it a little tidier (at slightly higher cost), the plans in t
 I don't think this is available any longer, because Oak Micros announced in June 2021 that they're no longer shipping any of their products.
 You can check the original announcement on vpforums to see if there are any updates:
 
-link:https://www.vpforums.org/index.php?showtopic=44795.html[Announcement: Oak Micros Plunger Kit Mk II]
+link:https://www.vpforums.org/index.php?showtopic=44795[Announcement: Oak Micros Plunger Kit Mk II]
 
 * VCNL4010: An IR proximity sensor that can measure the distance to a nearby object, such as the end of the plunger.
 For a Pinscape setup, you mount the sensor near the end of the plunger, so that it can measure the distance between itself and the plunger; that serves as a measurement of the plunger's current position.
@@ -331,13 +332,14 @@ But purely to spark your imagination, I'll mention some approaches I've heard ab
 
 * Use a computer mouse that's either attached to the plunger rod, or positioned so that it can scan something attached to the plunger rod.
 See "My Mouse Plunger Setup (aka...
-Cheap :)": link:https://www.vpforums.org/index.php?showtopic=38064.html[www.vpforums.org/index.php?showtopic=38064] .
+Cheap :)": link:https://www.vpforums.org/index.php?showtopic=38064[www.vpforums.org/index.php?showtopic=38064] .
 * Some early pin cab builders created a sort of hybrid of the plunger and launch button by using a microswitch at the end of the plunger travel as the sensor.
 The switch was connected to a button encoder as the Enter key, so that pulling back the plunger by any amount acted like pressing Enter, and releasing it would hit the switch again and release the Enter key.
 You launched the ball using the desktop convention of a timed plunger pull based on how long you held down the Enter key.
 This isn't a position sensor by any means, but it's simple and at least creates the appearance of a plunger.
 * One person on the forums several years ago used an LVDT (liner variable differential transformer), a type of position sensor that uses inductive coils to sense the position of a metal rod.
-Sounds perfect for a plunger sensor, doesn't it? The snag is LVDTs are super expensive (hundreds or even thousands of dollars) and hard to come by.
+Sounds perfect for a plunger sensor, doesn't it?
+The snag is LVDTs are super expensive (hundreds or even thousands of dollars) and hard to come by.
 LVDTs were apparently popular in industrial applications ten or twenty years ago, but they seem to have been largely replaced by optical and magnetic quadrature sensors in more recent times.
 The ones still on the market are ridiculously expensive specialty products that are way out of range for a pin cab project.
 It also looks like the electronics to interface one to a microcontroller are pretty complex.
@@ -439,7 +441,7 @@ There's also a special mounting plate that goes with the ball assembly, which fo
 
 *Custom knobs:* Pinball Life sells a "knobless" shooter rod, which gives you the option to create your own completely custom knob. Use your 3D printer to create something unique. Fasten it with epoxy.
 
-*  link:https://www.pinballlife.com/index.php?p=product&id=1608.html[www.pinballlife.com/index.php?p=product&id=1608]
+*  link:https://www.pinballlife.com/index.php?p=product&id=1608[www.pinballlife.com/index.php?p=product&id=1608]
 
 Custom knobs are popular "mods" for real machines. You can find lots of after-market options on the Web by searching for "custom pinball shooter". These will work just as well for virtual cabs.
 

@@ -99,7 +99,8 @@ If all goes well with the automatic setup, you can skip all the "manual setup" s
 The installer takes care of everything for you.
 Skip directly to xref:#VerifyDofSetup[Check that it's working] below.
 
-*Troubleshooting:* The automatic setup is usually pretty reliable, but there are a couple of issues that sometimes come up.
+==== Troubleshooting
+The automatic setup is usually pretty reliable, but there are a couple of issues that sometimes come up.
 If you run into any error messages that aren't self-explanatory, try these steps:
 
 * Check that UAC is *enabled* .
@@ -136,7 +137,7 @@ The automated installer has proven to be much more reliable.
 
 If you insist on doing it the hard way, though, here's my recommended manual setup procedure.
 
-*Note!* To keep things as simple as possible, the instructions below leave out some details that most people don't need.
+NOTE: To keep things as simple as possible, the instructions below leave out some details that most people don't need.
 If you want the full story, see the DOF documentation, which you can find via the xref:#DOFManualLinks[DOF documentation links] later in this chapter.
 In addition, the DOF version we link below isn't the only one available.
 There are some other modified versions with slightly different extra features available.
@@ -286,7 +287,8 @@ If you haven't already started installing your feedback devices, you might want 
 
 The basic thing we have to do is tell DOF which type of device is connected to each port number on your output controller.
 
-What's a "port number"? Every output controller is a little different, but they all give you a set of wiring terminals where you connect your output devices.
+What's a "port number"?
+Every output controller is a little different, but they all give you a set of wiring terminals where you connect your output devices.
 For example, the LedWiz gives you two rows of screw terminals that look like this:
 
 image::images/LedWizTerminals.png[""]
@@ -299,7 +301,8 @@ Those are the port numbers we mentioned.
 Every physical wiring terminal has a port number assigned.
 
 You'll also notice that there's _not_ anything printed on the LedWiz about "Left Flipper", "Shaker Motor", "RGB Flasher #1", or anything like that.
-So which terminal are you supposed to connect the shaker motor to? The answer is easy: it's up to you, so just pick one! As far as the LedWiz (or other controller) is concerned, all the ports are the same.
+So which terminal are you supposed to connect the shaker motor to?
+The answer is easy: it's up to you, so just pick one! As far as the LedWiz (or other controller) is concerned, all the ports are the same.
 They're just general-purpose outputs that you can connect to just about anything.
 The LedWiz doesn't have to know anything about what's connected, because its only job is to turn the port on and off when commanded by the software.
 
@@ -310,92 +313,87 @@ The Config Tool lets you set up exactly this connection between port numbers and
 Which is why we said earlier that you should have already mapped out your device wiring before you get into this step.
 You need to be able to tell the Config Tool which device you're going to attach to which port number, so you'll need at least a plan for how your ports are laid out.
 
-*Step 1: Log in*
-
+Step 1: Log in::
 The DOF Config Tool is an online tool that you access from a Web browser.
 Here's the link:
-
++
 link:https://configtool.vpuniverse.com/[configtool.vpuniverse.com]
-
++
 If this is your first time here, click "Create Account" in the top navigation bar to set up a new account.
 An account is required because the Config Tool has to store each user's unique cabinet setup data separately.
 
-*Step 2: Select your output controllers*
-
+Step 2: Select your output controllers::
 After creating an account, the next step is to click "My Account" on the navigation bar.
 This takes you to a page where you can tell the tool which output devices you have.
-
++
 Go through the list and tell the tool which devices you have.
 If you have only one type of controller, all you have to do is find that type in the list and set its drop-down to "1".
 The number simply indicates *how many units* you have of each type, so if you have a single unit, set it to "1".
-
++
 If you're using a Pinscape controller, set *Number of Pinscape devices* to 1 and leave "Number of FRDM-KL25Z Devices" set to 0.
 This is a little confusing: Pinscape runs on a KL25Z, so it might seem like, technically, you do have one of those as well.
 But the "FRDM-KL25Z" listing in the Config Tool really should be labeled "old Pinscape v1 firmware".
 Assuming you're planning to use the modern Pinscape firmware, just say that you have one Pinscape unit and zero KL25Z's.
-
++
 When finish setting the output controller selections, click "Save Settings" to save the updates.
 Note that, throughout the Config Tool, you always have to click the Save button before leaving the current page if you want changes to stick.
 If you navigate away from a page before saving, any changes made on that page are usually discarded.
-
++
 Note that your settings in the Config Tool are never set it stone.
 You can always come back to this page later to make changes, if you ever add a new output controller, for example, or change to a different one.
 
-*Step 3: Set up your port assignments*
-
+Step 3: Set up your port assignments::
 After saving, click "Port Assignments" in the nav bar.
 This will take you to the page where set up the mappings between output port numbers and specific devices.
 We've finally reached the point where we're talking about concrete, specific devices!
-
++
 This page lets you work on one output controller at a time.
 If you have more than one controller in your system, you simply set up each one separately.
 The "Device" drop-down at the top of the page lets you select the one you want to work on.
 As always, remember to save any changes before selecting a different device.
-
++
 For now, ignore the boxed items on the right side of the page ("Shaker Motor - Min Intensity - Max Intensity", etc).
 These are for fine-tuning your setup once you have everything working.
 It's best to leave the defaults in place initially.
-
++
 During this step, we're going to set up the "Port _number_ " items on the left side.
-
++
 The number of "Port" items shown on the page depends on the type of output controller you're using.
 For an LedWiz, for example, there should be 32 ports, Port 1 through Port 32, because that's how many physical ports an LedWiz has.
-
++
 For a Pinscape controller, the page will show 128 ports.
 You might not have that many physical ports in your setup, but that's the maximum that the firmware can handle.
 Your actual number of ports depends on how whether or not you're using the expansion boards, and if so, which ones you're using and how many of each.
 To keep things simple, though, the Config Tool ignores all of that and just gives you the theoretical maximum of 128 slots.
 You should simply treat any slots beyond the ones in your actual system as "reserved for future expansion", in case you add more expansion boards later, for example.
 Just leave any extra slots blank on the Config Tool page.
-
++
 To set up the port mappings, all you need to do is go through the ports one by one, and select the device type attached to each port from its drop-down list.
 If you've already connected your feedback devices to their output ports, hopefully you kept notes on which device was wired to which port! Get out those notes now and enter the same information the Config Tool port list.
-
++
 If you're not sure what any of the terms in the drop-down list mean, see xref:dofDeviceList.adoc#dofDeviceList[DOF Config Tool Device Descriptions] .
 That provides a full list of all the devices in the drop-down lists, with detailed explanations of how they're usually implemented in virtual cabs.
 The devices in the drop lists are mostly self-explanatory, but some of them are pretty obscure, plus there's a certain amount of "virtual pinball jargon" that probably won't make much sense if you haven't spent a lot of time in the forums.
-
++
 Once you enter all the devices, click Save.
 
-*Step 4: Generate your config files*
-
+Step 4: Generate your config files::
 If you're still on the Port Assignments page, you should see a button near the top called Generate Config.
 Click it.
 The Config Tool will now create your customized configuration files and download them to your PC as a ZIP file.
-
++
 Wait for the download to complete.
 Open the ZIP file.
 Unzip the contents into your `C:\DirectOutput` folder (or wherever you installed the DOF files back at the start of this process).
-
-*Important:* Unpack *all* of the .ini files from the ZIP file generated by the Config Tool, and *don't rename any of them* .
++
+IMPORTANT: Unpack *all* the .ini files from the ZIP file generated by the Config Tool, and *don't rename any of them* .
 Some people get confused by the multiple files and think you're supposed to choose one of them.
 You're not.
 You need *all* of them, with the exact names generated.
 Each file corresponds to one output controller, and the number in the name (if any) tells DOF which controller the file goes with.
 If you don't unpack all them, or if you rename any of them, DOF won't work correctly.
 
-*Step 5: Test it*
-
+Step 5: Test it::
 You should now have a fully working DOF setup! You should try running a DOF testing table to check that the commands can make it all the way through from Visual Pinball to your devices.
 See xref:#DOFTestTable[testing] below for instructions.
 
@@ -569,7 +567,7 @@ As of this writing, it has every feature of every alternative version, so you do
 This is the one I recommend because it has everything all the other versions offer.
 * My original link:http://mjrnet.org/pinscape/dll-updates.html["Grand Unified" DOF R3+] incorporated all of Swiss Lizard's final published code, plus some necessary changes to support Pinscape devices.
 This also contains my LedWiz enhancements.
-* Swiss Lizard's own beta R3 releases are badly out of date at this point, but if you want to find them anyway, try this Web search: link:https://www.google.com/search?q=site%3Avpforums.org+dof+r3+beta.html[site:vpforums.org DOF R3 beta] .
+* Swiss Lizard's own beta R3 releases are badly out of date at this point, but if you want to find them anyway, try this Web search: link:https://www.google.com/search?q=site%3Avpforums.org+dof+r3+beta[site:vpforums.org DOF R3 beta] .
 That should turn up the DOF R3 beta announcement thread on the forums, which contains links to the download files.
 Look towards the end of the thread for the newest updates.
 * The last "official" (non-beta test) release from Swiss Lizard himself was the R2 version.
@@ -581,7 +579,7 @@ Click on the link.
 This will take you to a download page.
 (If Swiss Lizard ever officially releases a final R3 build, it should also appear here in due course.)
 * Three other developers (as of January 2018) have created their own forked versions of the R3 code on GitHub, to add their own extensions.
-Check the link:https://github.com/DirectOutput/DirectOutput.html[main DOF page on GitHub] to see the current list of forks.
+Check the link:https://github.com/DirectOutput/DirectOutput[main DOF page on GitHub] to see the current list of forks.
 all the forks that were active up through January 2018 were merged into my Grander Unified R3++ mentioned above, and I'm not currently aware of any further work on any of those forks beyond what I merged.
 
 My intention with the Grander Unified R3++ version of January 2018 is provide a One True DOF, re-unifying all the forks and eliminating any confusion about which one to use.
@@ -601,44 +599,50 @@ Instead, follow the steps below.
 DOF does offer a few subtle clues about the nature of the problem when something goes wrong, if you know where to look.
 We'll try to help you read the tea leaves to figure out what's going wrong and how to fix it.
 
-*Step 0: Check your Windows configuration.* Make sure that UAC (User Account Control) is *enabled* .
+Step 0: Check your Windows configuration::
+Make sure that UAC (User Account Control) is *enabled* .
 Some people disable it because of old/bad advice on the forums. Don't. Turning off UAC doesn't do what people think; it changes some Windows internals in subtle ways, and some people have had DOF problems as a result.
 
-*Step 1: Make sure you only have one copy of B2S installed.* For whatever reason, a lot of people have run into the bizarre situation where they have multiple copies of B2S installed on their system. This can send you down blind alleys for hours. You spend a lot of time trying to get the B2S configuration files right only to find that you're changing an old copy that's no longer in use.
-
+Step 1: Make sure you only have one copy of B2S installed::
+For whatever reason, a lot of people have run into the bizarre situation where they have multiple copies of B2S installed on their system. This can send you down blind alleys for hours. You spend a lot of time trying to get the B2S configuration files right only to find that you're changing an old copy that's no longer in use.
++
 So before wasting a lot of time, *search your entire hard disk* for the main B2S files and make sure you only have one copy installed. A good file to look for is *B2SBackglassServer.dll* .
-
++
 If you do find extra copies, delete them. Then go to the correct folder - which should have the one remaining copy - and run *B2SBackglassServerRegisterApp.exe* by double-clicking the file. It's important to run this step because it updates some Windows Registry settings to point to this copy. If you had an old copy somewhere else, the Registry settings might have left been pointing to the (now deleted) old copy.
 
-*Step 2: Check the B2S Plugins button.* Open the B2S settings dialog by running a VPX table and right-clicking the mouse in the backglass area. Check the status of the *Plugins* button.
-
+Step 2: Check the B2S Plugins button::
+Open the B2S settings dialog by running a VPX table and right-clicking the mouse in the backglass area. Check the status of the *Plugins* button.
++
 image::images/B2SPluginsEnabled.png[""]
-
++
 If it's disabled, it means that the DOF .dll files aren't being loaded at all. In this case, don't even think about what might be wrong with your DOF config files or anything like that. You have a very basic problem where DOF isn't even getting into memory. Here are the main things that can cause this, and how you might be able to fix them:
-
++
 * The B2S backglass program doesn't know that you want it to load DOF in the first place. Make sure that the *Activate plugins* box is checked. If not, check it now, click Save Settings, quit out of the table, exit out of VP, and try checking again with a new VP session.
 * B2S can't find the DOF .dll files. Check the *DirectOutput* shortcut in the *Visual Pinball > Tables > Plugins* directory. Make sure the shortcut points to the correct folder, the one where you installed the Direct Output .dll files. Make sure that everything is named correctly: the *Plugins* folder itself, the *DirectOutput* shortcut file, and the directory link within the shortcut file. The exact names are critical, so put on your proof-reading glasses and check carefully.
 * B2S can find the .dll files, but it can't load them. Go back to the Direct Output folder and bring up the Properties window for each .dll file (right click on the file and select Properties from the context menu). Make absolutely sure that you've unblocked every file. Many people who have problems getting DOF to load find that the culprit was blocked .dll files, even though they were certain they unblocked everything the first time through. Double-and triple-check the files, and make sure you look at every single one with a .dll suffix.
 * Search your entire hard disk (using the Windows desktop search tools) for extra copies of Direct Output that you might have installed by accident or at different times. Some people have had this experience: they keep checking and re-checking the .dll files to make sure everything's unblocked, and it is. And after the umpteenth time, they realize they've been unblocking a second copy of the files in a whole separate location from the ones that B2S is trying to load.
-
++
 If none of that helps, you might want to try deleting everything in your Direct Output folder and downloading a fresh copy of the files.
 
-*Step 3: Check the DOF plugin status.* Click the *Plugin Status* button above (if it's disabled, go back to step 1). This should bring up a new dialog showing the status of each plugin.
-
+Step 3: Check the DOF plugin status::
+Click the *Plugin Status* button above (if it's disabled, go back to step 1). This should bring up a new dialog showing the status of each plugin.
++
 image::images/B2SPluginStatus.png[""]
-
++
 Find the entry for *DirectOutput* in the list. If there is no DirectOutput entry, it means the same thing as a disabled *Plugin Status* button: B2S never managed to load DOF in the first place. Go back to step 1 above, because this is exactly the same problem described there with exactly the same possible causes.
-
++
 If the DirectOutput entry is there, it means that DOF has been loaded. Now check the rest of the entry. If the *Status* column says *Active* and the *Last Exception* column is empty, it means that DOF was successfully loaded and started without any fatal errors and is running properly, at least as far as B2S is concerned.
-
++
 If the status is *Disabled* , and an error message is displayed in the *Last Exception* box, it means that a fatal error occurred trying to load the DOF program files. Right-click on the Last Exception box and select *Show Exception Details* on the menu to see the full text of the exception. These messages are usually much too long to fit into the little box. Unfortunately, they're also much too technical to be of any help unless you're familiar with the inner workings of DOF's source code. Even so, it's worth taking a look at the message to see if there's anything in it that suggests to you what the problem might be. Don't feel bad if it looks like so much nonsense, though; B2S makes no attempt at all to interpret these internal system error codes into anything meaningful to humans.
++
+So what do you do with these error codes that were never meant for you to see?
+I'm afraid there's not much you can do with them other than copy them into a forum posting asking for help. There are people on the forums who know the internals of B2S and DOF who can often help you track down the problem given these technical details, so you can try posting to see if someone can help you out. Post the full text of the exception message, along with details about your directory layout and anything you've already tried to fix the problem.
 
-So what do you do with these error codes that were never meant for you to see? I'm afraid there's not much you can do with them other than copy them into a forum posting asking for help. There are people on the forums who know the internals of B2S and DOF who can often help you track down the problem given these technical details, so you can try posting to see if someone can help you out. Post the full text of the exception message, along with details about your directory layout and anything you've already tried to fix the problem.
-
-*Step 4: Check the log file.* If B2S says that DOF is loading properly, but it's not controlling your devices properly, you can check DOF's log files to see if there are any errors there. If you tell it to, DOF will write a bunch of status information to a log file as it runs. This can be helpful when a problem occurs, since the status information sometimes has details about the specific cause.
-
+Step 4: Check the log file::
+If B2S says that DOF is loading properly, but it's not controlling your devices properly, you can check DOF's log files to see if there are any errors there. If you tell it to, DOF will write a bunch of status information to a log file as it runs. This can be helpful when a problem occurs, since the status information sometimes has details about the specific cause.
++
 First, make sure logging is enabled:
-
++
 * Open your DirectOutput folder in Windows Explorer
 * Run the program file GlobalConfigEditor.exe by double-clicking on it
 * On the menu at the top of the window, select *File > Load*
@@ -648,7 +652,7 @@ First, make sure logging is enabled:
 * Type `.\DirectOutput.log` into the Log File box
 * On the menu at the type, select *File > Save*
 * Select the same file we started with `GlobalConfig_B2SServer.xml` and confirm
-
++
 DOF will now create a log file called *DirectOutput.log* in your *Visual Pinball > Tables* folder each time you run a game. To test this out:
 
 * Start a new VP session
@@ -659,7 +663,7 @@ DOF will now create a log file called *DirectOutput.log* in your *Visual Pinball
 * Look for a file called `DirectOutput.log`
 * Bring up the file's properties and check its Date Modified: it should be moments ago, since it should have been created or updated during the VP session you just finished
 * This is an ordinary text file, so you can open it in Notepad to view its contents
-
++
 Look through the file to see if there are an ERROR or EXCEPTION messages. If so, read the messages to see if they mean anything to you. Many of these messages are of a technical nature that are meaningful only to someone familiar with DOF's program source code, but some will tell you about straightforward problems like missing files. If the messages give you any indication what's wrong, try correcting the indicated problem; if there are error messages that you don't understand, you can post them to the forums and see if anyone there can decipher them.
 
 [#ManuallyCreateDofGlobalConfigFile]
@@ -674,4 +678,3 @@ If you don't see the *config > examples* folder or the `GlobalConfig_B2SServer.x
 * Name the new folder `config`
 * Open the `config` folder
 * Download this file into the `config` folder: link:http://mjrnet.org/pinscape/downloads/DOFConfigSamples/GlobalConfig_B2SServer.xml[GlobalConfig_B2SServer.xml]
-

@@ -140,7 +140,8 @@ If you need help decoding the schematic, see xref:electronics.adoc#electronics[A
 The resistor slots can all be filled with ordinary resistors with the specified "Ohms" values.
 There's no special Wattage rating needed for any of these.
 
-Which MOSFET to use? Here's a list of parts I've tried that work well:
+Which MOSFET to use?
+Here's a list of parts I've tried that work well:
 
 * BUK7575-55A
 * FQP13N06L
@@ -158,7 +159,7 @@ If you want to cast a wider net by looking on Mouser, the basic type of part you
 Here's a Mouser search for those characteristics.
 This still matched about 1,400 parts when I tried it, so it doesn't exactly narrow things down to a trivial selection, but I'd sort by price, pick one of the cheaper ones, and scan the data sheet to make sure it looks like a suitable part for logic applications.
 
-link:https://www.mouser.com/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sfZ1yzvvqx?P=1z0y3zrZ1yiaumvZ1z0z63xZ1z0y4ci&Rl=ax1sfZgjdhp3Z1yw78ezZ1ypyijjSGgjdhozZ1yw76gfZ1yvixgtSGgjdhp2Z1y9673jZ1yw76gjSGT&Ns=Pricing|0.html[Mouser MOSFETs]
+link:https://www.mouser.com/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sfZ1yzvvqx?P=1z0y3zrZ1yiaumvZ1z0z63xZ1z0y4ci&Rl=ax1sfZgjdhp3Z1yw78ezZ1ypyijjSGgjdhozZ1yw76gfZ1yvixgtSGgjdhp2Z1y9673jZ1yw76gjSGT&Ns=Pricing|0[Mouser MOSFETs]
 
 As with the NPN booster above, the power supply (+) and GND connections are meant to connect to the secondary power supply that you're using for the feedback devices.
 (Don't connect "Power Supply GND" through a KL25Z Ground pin.)
@@ -308,7 +309,8 @@ That's just the recommended order for the widest software compatibility.
 You should, however, use Pinscape unit numbers 1, 2, and so on, in that order.
 The DOF Config Tool is difficult to set up otherwise.)
 
-Why disable the joystick input? Because you want to make sure that only one of the KL25Z units is sending accelerometer (nudge) readings to the PC.
+Why disable the joystick input?
+Because you want to make sure that only one of the KL25Z units is sending accelerometer (nudge) readings to the PC.
 Pinscape sends those readings by default, so you have to turn off the readings in all of your secondary units to avoid confusing the PC with a barrage of different information from different units.
 
 *DOF setup:* To set up a second Pinscape unit with DOF:

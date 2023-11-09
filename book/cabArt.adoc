@@ -40,21 +40,26 @@ You'll want to be able to flip the cabinet onto different sides while working on
 As a virtual pin cab builder, you have several good options available.
 The right option is a matter of taste and budget.
 
-*Natural wood style.* This isn't common, but some people choose to make their cabs look like a piece of fine furniture or cabinetry, to better fit into a home environment.
+Natural wood style::
+This isn't common, but some people choose to make their cabs look like a piece of fine furniture or cabinetry, to better fit into a home environment.
 If you want this kind of look, you can use a wood stain or a natural clear finish with cabinet-grade plywood.
 You can even buy pre-finished plywood to skip the staining step.
 
-*Single-color painting.* This is another simple, understated look that some people use to make their machine relatively inconspicuous for the home environment (as inconspicuous as a six-foot-tall, five-foot-long, three hundred pound wood box can be, anyway).
+Single-color painting::
+This is another simple, understated look that some people use to make their machine relatively inconspicuous for the home environment (as inconspicuous as a six-foot-tall, five-foot-long, three hundred pound wood box can be, anyway).
 The most common single-color paint job is solid black, since that tends to disappear into the background nicely.
 
-*Stencil graphics.* To a lot of people, the electromechanical era (1950s through 1970s) is the Golden Age of pinball, and tables from that era define what a pinball machine is supposed to look like.
+Stencil graphics::
+To a lot of people, the electromechanical era (1950s through 1970s) is the Golden Age of pinball, and tables from that era define what a pinball machine is supposed to look like.
 To be sure, the EM era's graphical style is unmistakeably distinctive, and it's iconic of pinball in popular culture.
 The stencil graphic style that these machines used is also something that you can reproduce on your own, at low cost and without any special equipment.
 You just need to make a stencil mask out of cardboard and masking tape, and then apply spray paint in as many colors as desired.
 
-*Full-color decals.* Many pin cab builders want to reproduce the look of machines from the modern era (1990s and onwards).
+Full-color decals::
+Many pin cab builders want to reproduce the look of machines from the modern era (1990s and onwards).
 These machines use elaborate designs printed in full color at high resolution.
 The real machines from the 1990s used high-res screen printing; newer machines almost all use plastic decals to achieve the same look.
++
 Happily, professional custom decal printing is readily available for one-off print jobs, and is even relative affordable.
 This isn't something you can do at home with DIY equipment, since it requires special industrial printers, but there are lots of print shops that have the equipment and can do the job for a reasonable fee.
 And since the printing is done on what's essentially a giant industrial version of an ink-jet printer, you can print virtually any custom design by preparing the graphics with a PC photo editor program.
@@ -274,7 +279,7 @@ image::images/PinscapeSideArt.jpg[""]
 *Commission original custom art.* If you're not interested in creating your own artwork, but you still want something original, you can find an artist to create something custom for you.
 For example, stuzza on link:https://www.vpforums.org/[vpforums] creates original art for forum members, for a fee.
 A stuzza design is generally a pastiche of pop culture clip art based on a theme you provide.
-See the long-running thread " link:https://www.vpforums.org/index.php?showtopic=26497.html[Cabinet Artwork I have created] " for his contact information and examples of his work.
+See the long-running thread " link:https://www.vpforums.org/index.php?showtopic=26497[Cabinet Artwork I have created] " for his contact information and examples of his work.
 link:https://virtuapin.net/[VirtuaPin] also offers custom graphic design services for a fee.
 
 *Use a pre-made design.* Stuzza on vpforums has also released a number of free designs that you can download and use without a commission fee.

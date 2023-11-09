@@ -596,7 +596,7 @@ Note that the horizontal locations are measured from the front outside corner of
 No joinery adjustment is needed for mitered joins, since the outer face of the panel extends all the way to the finished corner.
 
 NOTE: I think the pivot nut locations are the same for all titles using the sliders, but I've only verified it against a couple of machines ( _Theatre of Magic_ and _Medieval Madness_ ).
-link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed.html[Swinks's plans on Pinside] make the same assumption, although they differ from mine on the exact locations of the drills by 1/8" to 1/4".
+link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed[Swinks's plans on Pinside] make the same assumption, although they differ from mine on the exact locations of the drills by 1/8" to 1/4".
 That might be due to measurement error, manufacturing variations, or actual design differences in the titles we sampled.
 (The titles mentioned in the Swinks thread are _Bram Stoker's Dracula_ , _Creature from the Black Lagoon_ , and Stern's _Iron Man_ .) I think the slider system can tolerate this much variation without any functional impact, but even so, I'd measure a factory original of your particular title before drilling to make sure it really is in this range.
 If you know of a title that's significantly different from my figures, please let me know, so I can include it in this section.

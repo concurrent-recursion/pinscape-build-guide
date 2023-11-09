@@ -32,7 +32,11 @@ These elements (or some subset of them) form the top layer in the main cabinet.
 image::images/inside-playfield.png[""]
 
 The basic arrangement is pretty straightforward, but the details can be surprisingly hairy.
-First, there's the placement of the TV: do you place it flush with the top of the cab, or recessed like a real playfield? How far in? At what angle? All the way at the front, or set back to make room for the plunger? These are all among the most frequent questions that new cab builders ask.
+First, there's the placement of the TV: do you place it flush with the top of the cab, or recessed like a real playfield?
+How far in?
+At what angle?
+All the way at the front, or set back to make room for the plunger?
+These are all among the most frequent questions that new cab builders ask.
 You can see from the diagram what I prefer, but this is a matter of aesthetics, and there are other schools of thought.
 Second, once you've decided upon the desired look, you still have to implement it physically.
 That's trickier than it might look, especially if you want to fulfill my admonition to make the machine serviceable ( xref:serviceability.adoc#serviceability[Serviceable Design] ).
@@ -71,7 +75,8 @@ I like to put these at the very back of the cabinet.
 
 image::images/inside-power-strips.png[""]
 
-Why at the back? For one thing, that's where the power cord customarily comes in.
+Why at the back?
+For one thing, that's where the power cord customarily comes in.
 For another, it's a really good fit for the geometry: most power strips are long and narrow, which is a shape that fits nicely along the bottom of the back wall.
 And finally, it's good to put something low-maintenance back there, because that area is relatively difficult to reach into once everything's assembled.
 The very back is blocked from above by the backbox shelf, so it's a little bit of an inconvenience to access.
@@ -232,7 +237,7 @@ image::images/inside-flippers-2.png[""]
 Note that if you drilled the flipper button holes straight through at 1⅛" (which is what I recommend), the Palnuts will be about the same size as the holes, so they won't clamp the buttons down very well.
 Don't worry - this will be fine as long as you're using one or both of the following:
 
-*  link:https://virtuapin.net/index.php?main_page=product_info&cPath=26&products_id=40.html[VirtuaPin leaf switch holders]
+*  link:https://virtuapin.net/index.php?main_page=product_info&cPath=26&products_id=40[VirtuaPin leaf switch holders]
 * LightMite LED boards
 
 If you're planning to install one of those, you can just leave the Palnuts loose for now and come back to this later.
@@ -326,7 +331,7 @@ You can buy these from pinball vendors.
 On Pinball Life, search for "Ultimate Leaf Adjuster Tool".
 I bought one of those a while back for work on my real pinball machines, and I highly recommend it.
 
-link:https://www.vpforums.org/index.php?showuser=109738.html[Dennis Miller on vpforums] sent me a great description of how he created his own leaf switch tool from scratch, so I'll pass that along in case you'd like to build one yourself as well:
+link:https://www.vpforums.org/index.php?showuser=109738[Dennis Miller on vpforums] sent me a great description of how he created his own leaf switch tool from scratch, so I'll pass that along in case you'd like to build one yourself as well:
 
 All leaf bending needs to be done with the proper tool.
 I made mine out of 1/8" steel rod.

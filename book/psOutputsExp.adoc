@@ -35,7 +35,8 @@ The Pinscape boards switch power on the "Ground" (negative or 0V) side of the co
 This means that it's okay to mix different devices with different power supply voltages.
 
 This is confusing to a lot of people because they only see power inputs on the Pinscape boards for 5V and 12V.
-But what if you want to connect a 24V device? Or a 50V device?
+But what if you want to connect a 24V device?
+Or a 50V device?
 
 Here's how you have to think about this.
 The 5V and 12V power supply connections to the Pinscape boards are there _to power the Pinscape boards themselves_ .

@@ -44,7 +44,8 @@ Let's look at the options.
 
 *Number of flashers:* Most pin cab builders use a panel with three or five flashers.
 
-What's magical about the numbers 3 and 5? History, mostly.
+What's magical about the numbers 3 and 5?
+History, mostly.
 The DOF Config Tool database has specific support for 3- and 5-flasher setups, because those are the most common setups that people build.
 (And now everyone goes with those setups because they're what's supported.) The 5-flasher setup also has a somewhat deeper significance in that it maps well to the original physical flasher layout in most real tables.
 Most of the 1980s and 90s machines used about five flashers total, so a 5-flasher panel lets DOF map the flasher effects from the original games directly to your physical lights.
@@ -110,9 +111,9 @@ image::images/FlasherDome.png[""]
 They come in two main types, which are different only in how you attach them.
 Here are the Williams part numbers:
 
-*  link:https://www.pinballlife.com/index.php?p=product&id=309.html[Screw tab style (03-8149-13)]
-*  link:https://www.pinballlife.com/index.php?p=product&id=310.html[Twist-on style (03-8171-13)]
-*  link:https://www.pinballlife.com/index.php?p=product&id=548.html[Base for twist-on domes (03-8172-13)]
+*  link:https://www.pinballlife.com/index.php?p=product&id=309[Screw tab style (03-8149-13)]
+*  link:https://www.pinballlife.com/index.php?p=product&id=310[Twist-on style (03-8171-13)]
+*  link:https://www.pinballlife.com/index.php?p=product&id=548[Base for twist-on domes (03-8172-13)]
 
 The screw tab type is a little easier to install; the twist-on type looks a little cleaner since the fasteners are hidden under the dome.
 You can easily make either type work as long as you plan for it.
@@ -125,10 +126,12 @@ If you want a particular color for some reason, the last two digits of the part 
 A lot of new cab builders find LED voltage specs confusing.
 LEDs always quote a "forward voltage", and it's always something weird like 2.2V or 3.4V.
 And it's usually a range, like 2.2-2.4V.
-Does this mean that you're supposed to find a 2.2V power supply? Fortunately not! The "forward voltage" for an LED *isn't* the supply voltage required.
+Does this mean that you're supposed to find a 2.2V power supply?
+Fortunately not! The "forward voltage" for an LED *isn't* the supply voltage required.
 It's the amount of voltage that the LED "drops" when operating, which is sort of the amount it uses or consumes.
 That's why it's often quoted as a range; the manufacturer is just saying that the exact number varies a little bit from one individual part to the next, but it should always be in this range, and will usually gravitate to the middle of the range.
-What does this mean for the supply voltage, then? It's really simple: the supply voltage can be _any voltage higher than_ the forward voltage.
+What does this mean for the supply voltage, then?
+It's really simple: the supply voltage can be _any voltage higher than_ the forward voltage.
 So if the forward voltage is "3.2-3.4V", it means that you can use pretty much anything higher than 3.4V.
 It's best to pick the lowest conveniently available voltage higher than the required minimum, because the higher the voltage, the more energy will get burned up in heating the resistors.
 In a pin cab, you usually have a 5V supply readily available, (see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] ), so 5V is the best option for almost every LED.

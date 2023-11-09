@@ -93,7 +93,8 @@ If you're basing your design on a pre-determined cabinet size, you need to pick 
 
 TV sizes are always stated in terms of the "diagonal" size, which is the distance between diagonal corners on the display area.
 However, recall that the relevant dimension for fitting to a pin cab is the TV's *height* .
-How do you translate between height and diagonal size? You can get a rough approximation using this formula:
+How do you translate between height and diagonal size?
+You can get a rough approximation using this formula:
 
 stem:[D = 2.04 × (W − 1)]
 
@@ -178,7 +179,9 @@ I consider these to be important features.
 
 Okay, I tried.
 I know some people just can't be convinced of this.
-So what if you have your heart set on a TV that's a little too big? Is there any way you can squeeze it in without redesigning the whole cab? Yes, there are some options.
+So what if you have your heart set on a TV that's a little too big?
+Is there any way you can squeeze it in without redesigning the whole cab?
+Yes, there are some options.
 
 === De-case it
 

@@ -28,7 +28,7 @@ If you have the right crimp tool, the crimping step is quick and easy.
 
 This is the tool I use:
 
-link:https://www.pololu.com/product/1928.html[Pololu crimping tool, 16-28 AWG, item #1928]
+link:https://www.pololu.com/product/1928[Pololu crimping tool, 16-28 AWG, item #1928]
 
 They also have a similar but slightly cheaper option, item #1929, which is basically the same tool with a more limited size range of 20-28 AWG.
 Either one of these will work with the parts needed for the Pinscape boards, but I'd spend the extra $5 on the wider-range model.

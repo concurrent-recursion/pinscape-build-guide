@@ -11,7 +11,8 @@ all these are driven by powerful magnetic coils that propel the metal parts at h
 The kick of the solenoids is palpable while playing.
 This chapter is about reproducing that tactile solenoid effect in a virtual cab.
 
-== How many? Where do they go?
+== How many?
+Where do they go?
 
 It's up to you which devices to include in your setup.
 The common setups, which DOF supports most readily, use two devices to simulate flippers, two to simulate slingshots, and four to six devices to simulate pop bumpers.
@@ -299,7 +300,8 @@ CAUTION: always monitor the device for heating! Once you find a setting that's h
 [#flipper-feedback-control]
 == Flipper button feedback control
 
-One question that a lot of new pin cab builders ask on the forums is: how do I make the flipper buttons control the feedback solenoids for the flippers? In other words, how do I wire it so that pressing the flipper buttons activates the flipper solenoids?
+One question that a lot of new pin cab builders ask on the forums is: how do I make the flipper buttons control the feedback solenoids for the flippers?
+In other words, how do I wire it so that pressing the flipper buttons activates the flipper solenoids?
 
 There are two ways to go about this. The way that most people do it these days, which I consider the correct way, is to let DOF handle it. Happily, this is also the easiest approach, because it doesn't require any extra wiring or any extra configuration beyond the normal DOF setup you're going to do anyway.
 
@@ -321,9 +323,11 @@ If you're trying to picture how the flipper solenoids actually operate with a DO
 * The output controller activates the output port wired to your flipper solenoid
 * The flipper solenoid fires
 
-This approach is better than hard-wiring the solenoid for two reasons. First, it keeps the wiring simpler. The flipper button switch is only wired to the key encoder, and the flipper solenoid is only wired to the output controller - exactly the same wiring as for all of your other buttons and feedback devices. Second, it allows full software control over the flipper. That's the way it works on a real machine: try walking up to a real pinball machine some time and pressing the flipper button while GAME OVER is showing on the display. Does anything happen? No, of course not: the flippers are dead when a game isn't in progress. By wiring the flipper solenoids through the output controller, you'll get exactly the same effect. Hard-wired flipper solenoids would fire every time you press the buttons, whether or not a game was in progress.
+This approach is better than hard-wiring the solenoid for two reasons. First, it keeps the wiring simpler. The flipper button switch is only wired to the key encoder, and the flipper solenoid is only wired to the output controller - exactly the same wiring as for all of your other buttons and feedback devices. Second, it allows full software control over the flipper. That's the way it works on a real machine: try walking up to a real pinball machine some time and pressing the flipper button while GAME OVER is showing on the display. Does anything happen?
+No, of course not: the flippers are dead when a game isn't in progress. By wiring the flipper solenoids through the output controller, you'll get exactly the same effect. Hard-wired flipper solenoids would fire every time you press the buttons, whether or not a game was in progress.
 
-What about latency? When DOF was new, and people started switching over to the DOF approach, there was some worry about the extra software steps adding a noticeable lag time between pressing the flipper buttons and hearing the feedback effects. Fortunately, it turns out that DOF is fast enough that this isn't a problem. You could measure the added latency using lab equipment, but it's not enough to be perceptible to a human. The human nervous system has a latency perception limit of about 30 milliseconds, and DOF in a properly working system is comfortably faster than that.
+What about latency?
+When DOF was new, and people started switching over to the DOF approach, there was some worry about the extra software steps adding a noticeable lag time between pressing the flipper buttons and hearing the feedback effects. Fortunately, it turns out that DOF is fast enough that this isn't a problem. You could measure the added latency using lab equipment, but it's not enough to be perceptible to a human. The human nervous system has a latency perception limit of about 30 milliseconds, and DOF in a properly working system is comfortably faster than that.
 
 === The old-fashioned way: hard-wire the buttons to the solenoids
 

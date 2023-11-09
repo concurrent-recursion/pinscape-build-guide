@@ -70,7 +70,8 @@ image::images/keyEncoderBasicWiring.png[""]
 Electrically, each button is really just a switch that connects two wires together when pressed.
 So at the button end, we're connecting two wires, one to each terminal of the switch.
 
-What about buttons with more than two terminals? No problem: you still only connect two wires.
+What about buttons with more than two terminals?
+No problem: you still only connect two wires.
 It's just a matter of figuring out which two terminals to connect.
 See "How to identify button terminals" xref:#identifyButtonTerminals[below] for help figuring out which two terminals to use.
 
@@ -289,7 +290,8 @@ Match the markings to the diagram above, and take into account any changes.
 
 If there aren't any markings, or the terminals are laid out differently, you might have to resort to the xref:#experimentalButtonTerminalId[experimental method] described below.
 
-What about the lamp terminals? That's a whole separate subject, because even though the lamp is part of the button assembly, it's controlled by a whole separate electrical system on your virtual cab.
+What about the lamp terminals?
+That's a whole separate subject, because even though the lamp is part of the button assembly, it's controlled by a whole separate electrical system on your virtual cab.
 That's covered in xref:buttonLamps.adoc#buttonLamps[Button Lamps] .
 
 === Microswitches

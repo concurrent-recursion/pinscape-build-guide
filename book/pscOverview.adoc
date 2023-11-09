@@ -94,11 +94,11 @@ The following options were available:
 
 * Pinscape All-in-One board.
 This combines all the functions of the DIY version's main board, power board, and chime board into a single circuit board, which makes it a little more compact and tidier to install than the DIY version.
-See this thread on vpforums.org for full details: link:https://www.vpforums.org/index.php?showtopic=42631.html[Announcement: Pinscape All-in-One product] .
+See this thread on vpforums.org for full details: link:https://www.vpforums.org/index.php?showtopic=42631[Announcement: Pinscape All-in-One product] .
 * Pinscape Lite board.
 This is a less expensive board that includes a subset of the DIY board features: 24 input buttons, plunger sensor input, 12 high-power outputs for solenoids and motors (2 with PWM, 10 without), 16 low-power PWM outputs for LEDs, and the standard built-in accelerometer (nudge) sensor.
 This board isn't expandable, so it's best for mini-cabs and more basic cabs where you only plan to install a limited set of feedback toys.
-Details: link:https://www.vpforums.org/index.php?showtopic=45071.html[Announcement: Oak Micros Pinscape Lite] .
+Details: link:https://www.vpforums.org/index.php?showtopic=45071[Announcement: Oak Micros Pinscape Lite] .
 
 == Plunger sensors
 

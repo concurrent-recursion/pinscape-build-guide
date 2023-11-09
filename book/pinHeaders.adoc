@@ -78,11 +78,11 @@ It also simplifies things a little by cutting down on the number of different pa
 *  link:https://www.pololu.com/[Pololu] has inexpensive unbranded single-row and double-row strips.
 These are under Electronics > Connectors > 0.1" Male Headers.
 * TE Connectivity (at Mouser):
-** link:https://www.mouser.com/search/ProductDetail.aspx?R=571-5-826629-0.html[5-826629-0] (1x50)
-** link:https://www.mouser.com/search/ProductDetail.aspx?R=571-5-826925-0.html[5-826925-0] (2x50)
+** link:https://www.mouser.com/search/ProductDetail.aspx?R=571-5-826629-0[5-826629-0] (1x50)
+** link:https://www.mouser.com/search/ProductDetail.aspx?R=571-5-826925-0[5-826925-0] (2x50)
 * Molex (at Mouser):
-** link:https://www.mouser.com/search/ProductDetail.aspx?R=538-90120-0160.html[90120-0160] (1x40)
-** link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70280-0448.html[70280-0448] (2x50)
+** link:https://www.mouser.com/search/ProductDetail.aspx?R=538-90120-0160[90120-0160] (1x40)
+** link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70280-0448[70280-0448] (2x50)
 
 == Shrouded pin headers
 
@@ -115,13 +115,13 @@ They're spaced too tightly.
 
 Molex 70246 series:
 
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-0801.html[70246-0801] (2x04)
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1001.html[70246-1001] (2x05)
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1201.html[70246-1201] (2x06)
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1401.html[70246-1401] (2x07)
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1601.html[70246-1601] (2x08)
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-2001.html[70246-2001] (2x10)
-* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-2401.html[70246-2401] (2x12)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-0801[70246-0801] (2x04)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1001[70246-1001] (2x05)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1201[70246-1201] (2x06)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1401[70246-1401] (2x07)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-1601[70246-1601] (2x08)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-2001[70246-2001] (2x10)
+* link:https://www.mouser.com/search/ProductDetail.aspx?R=538-70246-2401[70246-2401] (2x12)
 
 == Matching connectors
 

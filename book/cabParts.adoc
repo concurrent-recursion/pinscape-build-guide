@@ -975,7 +975,7 @@ a|Most output controllers can only handle devices with low power, such as LEDs. 
 |1
 
 |Fan
-|Usually placed on the top of the backbox, _à la_  link:https://ipdb.org/machine.cgi?id=2765.html[Whirlwind] .
+|Usually placed on the top of the backbox, _à la_  link:https://ipdb.org/machine.cgi?id=2765[Whirlwind] .
 |1
 
 |Beacons

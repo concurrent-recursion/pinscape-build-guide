@@ -87,7 +87,8 @@ The problem is that the plunger sticks into the cabinet by about 3", so if the T
 
 image::images/plunger-tv-conflict.png[""]
 
-Why isn't this a problem on the real machines? In part, it's because the plunger sits just above the playfield on a real machine, so they're in different planes vertically and thus don't collide.
+Why isn't this a problem on the real machines?
+In part, it's because the plunger sits just above the playfield on a real machine, so they're in different planes vertically and thus don't collide.
 In addition, on the real playfields, they cut a notch out of the playfield at that corner specifically to make room for the plunger.
 That lets you lift up the playfield without hitting the plunger.
 
@@ -548,7 +549,8 @@ image::images/tv-install-measure-5.png[""]
 Now we come to the question of exactly where to position the pivot point.
 It should be pretty apparent that the vertical position is purely determined by the desired TV depth.
 But the front-to-back position doesn't have to go at a fixed point.
-It has to go somewhere _near_ the back to make the balance work, but beyond that, should it go at the very back, or somewhere closer to the midpoint? Remember from the picture earlier of the real pinball playfield that _they_ positioned it quite a ways from the back.
+It has to go somewhere _near_ the back to make the balance work, but beyond that, should it go at the very back, or somewhere closer to the midpoint?
+Remember from the picture earlier of the real pinball playfield that _they_ positioned it quite a ways from the back.
 And they did that for a reason, which will become clear shortly.
 
 I'm going to give you a one-size-fits-all location for the hinges, but I also want to let you know how I came up with it, and explain the trade-offs involved.
@@ -765,7 +767,8 @@ image::images/playfield-hanger-brackets.png[""]
 In terms of the main job of holding up the playfield at the front, our front stops work just as well.
 However, the hanger brackets serve another function that our stops don't accomplish: the brackets also serve to keep the playfield from tilting _up_ whenever the lockbar is in place.
 
-Why is that important? Most of the time it's not, since gravity is enough to hold the playfield down.
+Why is that important?
+Most of the time it's not, since gravity is enough to hold the playfield down.
 However, there's one situation where this changes: if you want to tip the machine up onto its back for transport.
 When you do that, the playfield will want to tip away from the lockbar.
 On the real machines, the hanger brackets will prevent it from going anywhere, since the lockbar will hold them in place.
@@ -899,7 +902,7 @@ Here are the Stern parts you'd need:
 * #10 lock washers (quantity 6)
 * Playfield slides (attach to the rear outside bottom edges of the playfield), 535-5988-01 (quantity 2)
 
-Also see the link:https://back-alley-creations.myshopify.com/blogs/whats-new/ez-slide-playfield-support-and-slide-bracket-set.html[EZ slide playfield support brackets] at Back Alley Creations.
+Also see the link:https://back-alley-creations.myshopify.com/blogs/whats-new/ez-slide-playfield-support-and-slide-bracket-set[EZ slide playfield support brackets] at Back Alley Creations.
 That's an after-market replacement for the original Stern support rails that's supposed to offer smoother operation.
 (The Stern parts are all metal, without any wheels or bearings, so there's a lot of metal-on-metal scraping involved.
 The "EZ slide" replacements use a smooth plastic for the rails to make it less of a nails-on-chalkboard experience.)

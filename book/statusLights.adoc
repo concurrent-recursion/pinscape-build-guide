@@ -45,7 +45,8 @@ If you do assign an LED element as a DOF-controlled output port, the Pinscape so
 That means that the flash patterns listed above won't appear if you take over the LED for output port use.
 Obviously, the LED can't serve two masters, so the Pinscape software gives precedence to your settings.
 
-Why would you want to use the LED as a feedback device? The main use case I see is testing.
+Why would you want to use the LED as a feedback device?
+The main use case I see is testing.
 If you want to test a new DOF configuration on your PC, for example, and you haven't set up any external feedback devices yet, the on-board LED could be used for a quick test that DOF signals are getting through to the KL25Z.
 
 Finally, I'll point out a couple of odd quirks to the way the LED is wired on the KL25Z.

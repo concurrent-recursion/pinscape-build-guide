@@ -152,7 +152,7 @@ They'll reject anything besides the correct coin type.
 For home use, you might not care about the validation part, since you might want to use tokens or assorted coins instead of keeping a supply of quarters on hand.
 In that case, there's an alternative dummy coin mech available that accepts just about anything resembling a coin, without trying to validate it:
 
-link:https://www.arcadeplastics.com/any-coin-v3-replacement-arcade-coin-mechs.html[ArcadePlastics.com "Any Coin" replacement mechs]
+link:https://www.arcadeplastics.com/any-coin-v3-replacement-arcade-coin-mechs[ArcadePlastics.com "Any Coin" replacement mechs]
 
 The Any Coin mechs are drop-in replacements for the standard mechs, so you should be able to use them in any of the common coin doors.
 The price is about the same as the standard mechs, so the main reason to buy them would be that you like the option of using assorted coins and tokens instead of just quarters.
@@ -379,7 +379,7 @@ Whether you use the pre-attached connector or cut it off and connect the bare wi
 === Williams 13-pin connector
 
 image::images/WiliamsCoinDoorPlug.png[""]
-The Williams coin door comes with a pre-wired 13-pin connector of this type: link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3131.html[Molex 09-50-3131] . This connector is designed to plug into a circuit board that has the mating header: link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4130.html[Molex 26-60-4130] .
+The Williams coin door comes with a pre-wired 13-pin connector of this type: link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3131[Molex 09-50-3131] . This connector is designed to plug into a circuit board that has the mating header: link:https://www.mouser.com/search/ProductDetail.aspx?R=538-26-60-4130[Molex 26-60-4130] .
 
 Here's how the pins in the connector are wired:
 
@@ -422,7 +422,7 @@ It might seem like too much work to build a whole separate circuit board just to
 
 You can find these at pinball suppliers and some electronics vendors. Search for part number MWWS156-1624. Get the version with at least 13 pins (MWWS156-1624-13). A version with more pins will work if you can't find the 13-pin version.
 
-Once you have that part in hand, you can build your own cable connector using the same connector that's on the coin door harness ( link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3131.html[Molex 09-50-3131] ). Then just plug the two cables together using the "Z" adapter.
+Once you have that part in hand, you can build your own cable connector using the same connector that's on the coin door harness ( link:https://www.mouser.com/search/ProductDetail.aspx?R=538-09-50-3131[Molex 09-50-3131] ). Then just plug the two cables together using the "Z" adapter.
 
 This option is marginally less work than the circuit board approach above, and slightly cheaper. I don't think it's quite as tidy, since it leaves these two big cable plugs loose in the cab, but you can fix that easily enough with some cable ties.
 
@@ -441,7 +441,7 @@ Alternatively, you can create your own wiring harness using a different connecto
 
 === Stern SAM connector
 
-The SAM-era coin doors use a 12-pin Molex connector for their switch wiring. Unfortunately, I haven't yet been able to confirm the gender or pin pitch - it looks like a Molex .063" plug ( link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-2122.html[Molex 03-06-2122] ), which makes the matching connector the .063" 12-position receptacle ( link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-1122.html[Molex 03-06-1122] ). But it could be the other way around. If you're buying one of these doors, you'll have to wait until you have it in hand to determine the exact plug type - and when you do, please let me know which it is so that I can improve the advice here!
+The SAM-era coin doors use a 12-pin Molex connector for their switch wiring. Unfortunately, I haven't yet been able to confirm the gender or pin pitch - it looks like a Molex .063" plug ( link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-2122[Molex 03-06-2122] ), which makes the matching connector the .063" 12-position receptacle ( link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-1122[Molex 03-06-1122] ). But it could be the other way around. If you're buying one of these doors, you'll have to wait until you have it in hand to determine the exact plug type - and when you do, please let me know which it is so that I can improve the advice here!
 
 image::images/SternCoinDoorConnector.png[""]
 These are connected as follows (refer to the diagram at right for pin numbering):
@@ -676,7 +676,8 @@ The ROM software on machines from the 1990s and later also monitors the switch. 
 
 Which brings us to the reason to include a coin door switch in your virtual cab. When you're running a re-creation of a modern game, you'll have to send the "coin door is open" signal to the VPinMAME emulator before the software will allow access to the menus. That might seem like a ridiculous restriction to replicate in a simulated version, but remember, we're usually running the original ROM software, so _everything_ in the software works just like on the real machines. Even odd things like this.
 
-If you really want to avoid installing a coin door switch, there are ways to work around the ROM warnings, such as pressing keys on the keyboard to simulate the door switch. But why bother? Installing the switch is pretty easy and cheap, and it makes things work exactly like they're supposed to. I think it's easier in the long run to set it up like the software expects.
+If you really want to avoid installing a coin door switch, there are ways to work around the ROM warnings, such as pressing keys on the keyboard to simulate the door switch. But why bother?
+Installing the switch is pretty easy and cheap, and it makes things work exactly like they're supposed to. I think it's easier in the long run to set it up like the software expects.
 
 image::images/OpenCoinDoorMsg.png[""]
 
@@ -743,7 +744,9 @@ image::images/CoinDoorSwitchWiring.png[""]
 
 image::images/QQQIcon.png[""]
 
-*Why use the Normally Closed side? Don't people usually use Normally Open when wiring a switch?* Yes, that would be more typical, but in this case VP lets you wire it either way, and our VP setup instructions below assume you're wiring to NC. Given that it's all the same to VP, we suggest wiring to NC because of the effect it will have on your regular keyboard input. Wired this way, the key encoder input will be OFF whenever the coin door is closed, which it probably will be most of the time. That means the key encoder won't be sending any key presses on behalf of the coin door as long as the door stays closed. When you open the door, it will return the switch to its default position, connecting the NC side of the switch and turning the key encoder input ON. So your key encoder will tell the PC that you're holding down the End key whenever the coin door is open. When running VP, this won't make any difference. But when you're _not_ running VP, wouldn't you rather _not_ have the key encoder sending the extra End key press all the time, so that you can use the End key on the keyboard for text editing and other functions? That's why we suggest wiring things this way: as long as the coin door is closed, the coin door won't cause any extra key presses to register on the PC.
+*Why use the Normally Closed side?
+Don't people usually use Normally Open when wiring a switch?* Yes, that would be more typical, but in this case VP lets you wire it either way, and our VP setup instructions below assume you're wiring to NC. Given that it's all the same to VP, we suggest wiring to NC because of the effect it will have on your regular keyboard input. Wired this way, the key encoder input will be OFF whenever the coin door is closed, which it probably will be most of the time. That means the key encoder won't be sending any key presses on behalf of the coin door as long as the door stays closed. When you open the door, it will return the switch to its default position, connecting the NC side of the switch and turning the key encoder input ON. So your key encoder will tell the PC that you're holding down the End key whenever the coin door is open. When running VP, this won't make any difference. But when you're _not_ running VP, wouldn't you rather _not_ have the key encoder sending the extra End key press all the time, so that you can use the End key on the keyboard for text editing and other functions?
+That's why we suggest wiring things this way: as long as the coin door is closed, the coin door won't cause any extra key presses to register on the PC.
 
 === How to choose which key encoder input to use
 

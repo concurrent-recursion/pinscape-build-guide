@@ -459,7 +459,8 @@ But sadly, TV manufacturers don't always cooperate with our virtual pinball plan
 TV manufacturers only make TVs in certain sizes, so we're stuck with whatever sizes are on offer. 
 The TV you pick based on price and performance might not be available in exactly the right size for a standard cabinet.
 
-What size TVs will the standard cabinet sizes accommodate? There's no absolute rule here, since the nominal diagonal size of a TV doesn't tell you the exact exterior dimensions - the only way to be sure is to measure the TV. 
+What size TVs will the standard cabinet sizes accommodate?
+There's no absolute rule here, since the nominal diagonal size of a TV doesn't tell you the exact exterior dimensions - the only way to be sure is to measure the TV.
 You might also be able to find the dimensions listed in the specs on the manufacturer's Website or on a retailer site. 
 Generally speaking, a standard-body cab will accommodate most TVs up to 39" diagonal, and you might be able to squeeze in some 40" models; and a widebody should handle most TVs up to 45".
 
@@ -543,7 +544,7 @@ image::images/BackboxPartsDetails.png[""]
 A popular variation on the basic cab design is to scale things down a bit from the real machines. 
 This can be especially attractive if you don't have a lot of space, and might help gain acceptance from skeptical spouses or housemates.
 
-There's no "standard" mini-cab design, but you can find ideas from other people's builds by searching the cab forums at sites like link:https://www.vpforums.org/index.php?showforum=29.html[vpforums] . 
+There's no "standard" mini-cab design, but you can find ideas from other people's builds by searching the cab forums at sites like link:https://www.vpforums.org/index.php?showforum=29[vpforums] .
 Many people who've built their own cabs post build logs with details of their design.
 
 If you want to design a mini-cab from scratch, you can start with the basic WPC design, and just scale down all the dimensions based on the playfield monitor you choose. 
@@ -578,7 +579,7 @@ Most of the details can be changed in small ways without much affecting the usab
 
 One set of plans I'll call out in particular is Jonas Kello's Sketchup model, available on link:https://www.github.com/[GitHub] :
 
-* link:https://github.com/jonaskello/wpc-cabinet.html[github.com/jonaskello/wpc-cabinet]
+* link:https://github.com/jonaskello/wpc-cabinet[github.com/jonaskello/wpc-cabinet]
 
 The nice thing about his 3D model is that you can look at it from all angles, which might be helpful whenever my illustrations leave something unclear about the spatial relationships between components. 
 Jonas's model appears to have been prepared with excellent attention to detail. 
@@ -589,7 +590,7 @@ In addition, even where our measurements essentially agree, there are a number o
 
 Another set of plans worth mentioning can be found in this Pinside thread by Swinks, which has measurements from original WPC standard-body machines (per the thread, mostly taken from _Creature from the Black Lagoon_ , with some corroboration against _Bram Stoker's Dracula_ and Stern's _Iron Man_ ):
 
-* link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed.html[pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed]
+* link:https://pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed[pinside.com/pinball/forum/topic/bally-wms-cabinet-designs-help-needed]
 
 Finally, Greg Butcher, a/k/a mameman, drew up a set of WPC widebody plans many years ago that's often referenced in the virtual cab forums. 
 They have some inaccuracies in the details of the construction, but they're still a useful reference. 
@@ -1910,7 +1911,8 @@ image::images/sample-t-nut.png[""]
 On the real machines, they install the lock plate with #8-32 "security" Torx machine screws, which have a special version of the Torx head that's meant to be tamper-resistant. 
 These are *machine* screws, not wood screws, so they can't self-tap in wood; they need to be fastened with nuts.
 If you look at the arrangement pictured above, you can see that there's no way to install ordinary hex nuts by hand with this setup, because you'd have to get behind the wood trim somehow - and that's going to be glued in place by the time you're ready to install the screws. 
-So the question is: how do you install a nut in a place you can't reach? The answer is a T-nut. 
+So the question is: how do you install a nut in a place you can't reach?
+The answer is a T-nut.
 A T-nut is threaded like a hex nut, but it's permanently installed in the wood rather than being screwed on by hand. 
 They're specifically for this type of situation where you need to pre-install a nut someplace that'll be inaccessible after assembly.
 

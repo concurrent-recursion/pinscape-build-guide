@@ -26,7 +26,8 @@ It's actually kind of mnemonic: shorter = minus.
 
 The negative lead of an LED is also known as the cathode; the positive lead is the anode.
 (Here's my handy trick for remembering which is which.
-Remember CRT TVs? CRT stands for Cathode Ray Tube.
+Remember CRT TVs?
+CRT stands for Cathode Ray Tube.
 We know that a "Cathode Ray" is actually an electron, and that electrons have negative charge.
 So the cathode is the negative side.)
 

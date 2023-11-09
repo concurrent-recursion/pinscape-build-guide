@@ -51,7 +51,8 @@ So newer tables - those written later in VP 9's tenure, and anything written for
 The only exceptions among newer tables are a few written by authors who were accustomed to the bad old way of doing things and didn't get the memo about the built-in plunger overhaul. 
 But those should be increasingly rare as time goes on, and I certainly hope no one is still using the bad old way for new tables at this point.
 
-How do you fix a table that ignores the joystick input? Unfortunately, it's not easy - but it can be done. 
+How do you fix a table that ignores the joystick input?
+Unfortunately, it's not easy - but it can be done.
 Basically, you have to rip out all the scripted plunger code in the table, and substitute the "real" built-in plunger object instead.
 The thing that makes this difficult is that there's not a simple, rote procedure you can follow, because every table that re-invented the plunger re-invented it in its own way. 
 You have to look at each table individually to find its plunger scripting code and the associated table objects so you can remove all of that. 
@@ -67,7 +68,8 @@ At any rate, I'll try to give you the outline of a procedure that works for many
 There's actually one more reason that plungers don't always work in VP. 
 This one's a lot easier to fix than the first one.
 
-Remember how I said that the built-in plunger in older versions of VP had bad physics? The situation was so bad that the bad physics actually interfered with ordinary desktop use, even if you didn't have a joystick attached. 
+Remember how I said that the built-in plunger in older versions of VP had bad physics?
+The situation was so bad that the bad physics actually interfered with ordinary desktop use, even if you didn't have a joystick attached.
 So a lot of table authors who used the built-in plunger as the basis of their scripted re-inventions _explicitly disabled the joystick input_ so that desktop users wouldn't have to put up with the bugs.
 
 So for some tables, you'll find that there's already a proper built-in plunger object present, and that all you have to do is tick a box in the settings to re-enable joystick input.

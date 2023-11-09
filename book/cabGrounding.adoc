@@ -9,7 +9,7 @@ Grounding serves several puproses:
 If a wire inside the cab carrying voltage ever comes loose, it could come into contact with one of the exposed metal parts, which would create an electric shock risk to anyone using the cab.
 Grounding all the metal parts reduces shock risk by shunting any stray voltages directly to ground.
 It also reduces the chances of a fire or other damage from an electrical mishap, in that a short to ground should quickly trip a fuse or circuit breaker and cut off power at the source, hopefully before anything can get red-hot inside the cab.
-
++
 This alone makes grounding a must, since the combination of electricity and exposed metal surfaces creates a real risk to human safety in the absence of proper grounding.
 
 * Static electricity protection.
@@ -17,12 +17,13 @@ Semiconductors are extremely sensitive to static electricity.
 You can destroy a computer chip or transistor just by touching it if you have a static charge on your body.
 The cab itself can accumulate a static charge as well, which can likewise be a threat to the chips inside the cab.
 Grounding the metal parts in the cab neutralizes any charge on them, and neutralizes the charge on your body when you touch them.
-
++
 Grounding the metal parts is a huge convenience any time you're working inside the cab, because it lets you discharge any static on your body simply by touching the side rails or lockbar.
 That greatly reduces the chance that you'll zap any chips you touch.
 
 * Radio interference shielding.
 Virtual cabs have computer motherboards and other electronics inside that both generate radio frequencies and can be affected by radio waves in the air.
++
 The big metal parts in a cab can act like antennas to transmit and receive this energy.
 Grounding the metal parts prevents that, and reduces the ability of radio waves to penetrate in or out of the cabinet.
 This will reduce the chances that your cab will interfere with nearby Wi-Fi networks or garage door openers or cell phones, and it'll help avoid things like picking up local radio stations on your cab speakers.

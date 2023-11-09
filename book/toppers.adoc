@@ -94,7 +94,8 @@ Most cabs have at least one of these, and many use all them.
 They're all great additions functionally. 
 Beacons, flashers, and strobes all make nice light shows, and a fan adds a wonderful tactile element that movie theaters would market as a "4D experience" with a $10 ticket surcharge.
 
-But does a big pile of devices make for a "theme"? Well, from one perspective, it actually does. 
+But does a big pile of devices make for a "theme"?
+Well, from one perspective, it actually does.
 One way to see a virtual cab is as a whole arcade's worth of pinball tables in one box. 
 So you could say that the theme is "all the pinballs" - which makes "all the topper toys" an apt fit.
 
@@ -168,7 +169,7 @@ Note that the ZIP file contains "front half" and "back half" models in addition 
 I created the half models to fit the limits of the specific manufacturing process I used, so these probably won't be useful unless you happen to use a printer with very similar constraints, but I included them just in case.
 
 There's one more detail worth mentioning: the fan enclosure is decked out with lighting. 
-(If you want to see it in action, I made a short video: link:https://www.youtube.com/watch?v=wJ1czPnjvDQ.html[www.youtube.com/watch?v=wJ1czPnjvDQ] .)
+(If you want to see it in action, I made a short video: link:https://www.youtube.com/watch?v=wJ1czPnjvDQ[www.youtube.com/watch?v=wJ1czPnjvDQ] .)
 
 The fan enclosure has two types of lighting. 
 The first is one of those common 5050 RGB LED strips, installed around the perimeter of the front fan opening. 

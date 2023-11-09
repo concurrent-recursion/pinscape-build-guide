@@ -46,7 +46,8 @@ For our purposes, we use "linear taper" potentiometers, which are built so that 
 Voltage and resistance are also linearly related (through Ohm's Law), so if we supply a fixed voltage across the fixed ends of the pot, the voltage we read at the electrode will vary linearly with the resistance, which varies linearly with the position of the electrode.
 The KL25Z has an on-board analog-to-digital converter (ADC) that can sample an analog voltage level and report it to the software as a digital reading.
 
-How accurate is a potentiometer? The one that we recommend in the parts list is readable to about 1% accuracy with the KL25Z ADC.
+How accurate is a potentiometer?
+The one that we recommend in the parts list is readable to about 1% accuracy with the KL25Z ADC.
 That translates to about 3/100".
 So it's not quite as good as we need for perfectly smooth animation, and it means that the "jitter filter" in the Pinscape firmware is usually needed to get steady readings when the plunger is standing still.
 

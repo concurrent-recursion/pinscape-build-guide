@@ -14,12 +14,14 @@ First, though, some background information to explain why you want this.
 _Nudging_ and _tilting_ are two separate things to pinball people, but this can be a little confusing because casual players often use them interchangeably. 
 To be sure we're all talking about the same thing, let's define our terms.
 
-*Nudging* is an attempt to influence the motion of the ball by pushing, bumping, wiggling, shaking, lifting, and otherwise moving the pinball machine. 
+Nudging::
+An attempt to influence the motion of the ball by pushing, bumping, wiggling, shaking, lifting, and otherwise moving the pinball machine.
 A reasonable amount of nudging is fair play. 
 It's one more way of interacting with the game. 
 It's integral to pinball's uniquely mechanical nature; it's part of what makes pinball different from video games.
 
-*Tilting* is the result of too much nudging. 
+Tilting::
+The result of too much nudging.
 A tilt occurs when the machine decides that the player is nudging too aggressively. 
 The machine penalizes the player by immediately ending the current ball and canceling any bonus.
 
@@ -138,10 +140,13 @@ image::images/kl25zOrientation.png[""]
 Valid orientations for the KL25Z, as viewed from above. 
 Position with the edges of the card parallel to the sides of the cabinet, around the front middle of the cab.
 
-*Do I need to add rubber foam to isolate it from vibration?* Probably not. 
-I've seen a lot of posts on the forums suggesting that you need some kind of soft padding to isolate the accelerometer from vibrations coming from the speakers, solenoids, and so on, as though it were an LP player in an audiophile's stereo system. 
+Do I need to add rubber foam to isolate it from vibration?::
+Probably not.
++
+I've seen a lot of posts on the forums suggesting that you need some kind of soft padding to isolate the accelerometer from vibrations coming from the speakers, solenoids, and so on, as though it were an LP player in an audiophile's stereo system.
 But I think that advice is based on the mistaken idea that the accelerometer is "triggered" by motion. 
-That might have been true of the older, kludgier nudge devices that people used before accelerometers became popular, but it's not true with accelerometers. 
+That might have been true of the older, kludgier nudge devices that people used before accelerometers became popular, but it's not true with accelerometers.
++
 An accelerometer is a measuring instrument, not an alarm. 
 It isn't _triggered_ by motion - it _measures_ motion, quantitatively. 
 It distinguishes between a little motion and a lot of motion, and all points in between, and the data it sends to the pinball simulator reflects the amount of motion measured, on a linear scale. 
@@ -159,7 +164,8 @@ Visual Pinball handles accelerometer input via the joystick interface.
 all the pinball nudge devices (including Pincsape and all the commercial plunger kits) are set up to work this way by default, so there's usually nothing you have to do with the device other than plug it in to a USB port.
 The only configuration you have to do is to VP itself.
 
-*Quick device test:* Before firing up VP, it's a good idea to make sure your accelerometer device is working properly. 
+=== Quick Device Test
+Before firing up VP, it's a good idea to make sure your accelerometer device is working properly.
 VP doesn't give you any feedback at all about whether there's even a device present, let alone if it's working, so you can save yourself some frustration by checking to make sure Windows recognizes the device and can see the acceleration input.
 
 First, make sure the device is plugged in to a USB port. 
@@ -173,7 +179,7 @@ image::images/setUpUsb0.png[""]
 image::images/QQQIcon.png[""]
 
 If you don't see your device listed, Windows didn't recognize it as a joystick. 
-Check your device's documentation or contact the vendor for advice, or ask on one the forums (e.g., the link:https://www.vpforums.org/index.php?showforum=29.html[vpforums cab builders group] ). 
+Check your device's documentation or contact the vendor for advice, or ask on one the forums (e.g., the link:https://www.vpforums.org/index.php?showforum=29[vpforums cab builders group] ).
 I'd advise against messing around with Device Manager or trying to install or update device drivers. 
 Joysticks don't usually need device drivers in the first place, so that's almost never the problem (unless your device's documentation specifically says otherwise).
 
@@ -221,7 +227,7 @@ Joysticks send position data to Windows saying how far left-to-right they are an
 The joystick defines the range of those readings in whatever quirky unit system it wants to use. 
 For example, it might say that fully left equals -1000 units and fully right equals +1000 units. 
 But many mechanical joysticks can't actually reach the limits of their defined ranges, simply because the stick hits the physical stops before getting all the way to +/-1000 units. 
-The point of the Windows calibration is to measure the _actual_ range that the mechanal stick can traverse, by asking you to move your joystick to each limit point and observing the reading. 
+The point of the Windows calibration is to measure the _actual_ range that the mechanical stick can traverse, by asking you to move your joystick to each limit point and observing the reading.
 Windows then stores those min/max measurements, and applies a correction factor to all subsequent readings so that whatever reading the joystick reported at the maximum position is translated into the nominal -1000/+1000 maximum point of the joystick's desired unit system. 
 This works great with real joysticks, but it's both unnecessary and harmful for accelerometers. 
 It's unnecessary because accelerometers are pre-calibrated to report physically accurate numbers; applying any "correction" factor to a number that's already physically accurate will only make the number less accurate. 
@@ -275,14 +281,15 @@ The rule of thumb is that VP 9 settings should be approximately 10 times higher 
 For example, if a Gain of 100 works well for you in VP 10, you'll probably set the VP 9 Gain to about 1000. 
 The ratio might not end up being exactly 10 to 1 on your machine, since the ideal settings vary by system and according to your taste, but it should be in that ballpark.
 
-*Finding the ideal X/Y Gain settings:* I'm afraid I can't just give you one-size-fits-all numbers to plug in to the X/Y Gain boxes. 
+Finding the ideal X/Y Gain settings::
+I'm afraid I can't just give you one-size-fits-all numbers to plug in to the X/Y Gain boxes.
 The ideal settings for your system depend on the particulars of your machine: which nudge device you're using, your CPU speed, your graphics card, your personal taste, and even which games you're playing.
-
++
 The way to find the right settings is by experimenting, by running a game and testing different nudges to see what kind of effect they have on the ball. 
 It's easiest to do this when a ball is sitting in the plunger chute or captured with a flipper. 
 Give the cabinet a push and see how strong the reaction is. 
 Try different strengths of pushes and see if the reaction seems natural or not.
-
++
 Follow this procedure to adjust settings:
 
 * Open a game of your choice in the VP editor
@@ -297,7 +304,7 @@ Follow this procedure to adjust settings:
 *  *Close all VP windows* . 
 This step is crucial because VP won't load the new settings until you *completely* exit the program and restart it.
 * Re-launch VP from the desktop and start over
-
++
 While you're testing the nudge strength, also observe the _direction_ of the ball's response and make sure it seems appropriate. 
 A forward push should make the ball move up/down, not side-to-side, and a sideways push should make the ball move side-to-side rather than up/down. 
 If these seem backwards, you might either have your device oriented incorrectly, or you might need to adjust the "Axis Assignments" in the VP setup.
@@ -334,9 +341,12 @@ One of the frequently asked questions by new cab builders is whether cabinet vib
 This seems like a reasonable worry when you consider that accelerometers are designed to pick up tiny motions.
 
 Here's a sanity-check question to ask yourself. 
-Do real pinball machines have the same sources of vibration? Obviously they do. 
-Do these same vibrations on a real pinball affect the ball noticeably? Obviously they don't. 
-So, should vibrations that don't affect the ball in a real game affect the ball in a virtual game? Or put another way: is the simulation accurate if it responds differently from a real game to the same vibrations?
+Do real pinball machines have the same sources of vibration?
+Obviously they do.
+Do these same vibrations on a real pinball affect the ball noticeably?
+Obviously they don't.
+So, should vibrations that don't affect the ball in a real game affect the ball in a virtual game?
+Or put another way: is the simulation accurate if it responds differently from a real game to the same vibrations?
 
 This brings us back to the point above in "What's realistic?", that virtual pinball tends to exaggerate the effect of nudging. 
 If you _do_ see interference from your shaker motor or audio system, it's a very good sign that you have the Gain settings turned up well above realistic levels. 
@@ -478,7 +488,8 @@ Lots of people on the forums are adept at coding these scripts, so someone shoul
 
 == How to configure VP for a "virtual" tilt bob
 
-What if you don't want to install a physical tilt bob, but you still want VP to detect tilt conditions when players get too aggressive with nudging? In this case, you can enable VP's simulated software tilt bob. 
+What if you don't want to install a physical tilt bob, but you still want VP to detect tilt conditions when players get too aggressive with nudging?
+In this case, you can enable VP's simulated software tilt bob.
 The simulated tilt bob will monitor the accelerometer nudge input, and will generate a press of the space bar key when the simulated tilt bob swings too far.
 
 We're talking about this situation:

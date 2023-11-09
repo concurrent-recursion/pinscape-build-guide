@@ -12,3 +12,9 @@ services:
     working_dir: /pinscape-build-guide
     stdin_open: true
     tty: true
+  nginx:
+    image: nginx
+    volumes:
+      - ./dist/html:/usr/share/nginx/html:ro
+    ports:
+      - "80:80"

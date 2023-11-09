@@ -37,7 +37,7 @@ Doing so will cause a short circuit that will blow a fuse (or worse).
 
 == Choosing a diode
 
-I'll just cut to the chase here: link:https://www.mouser.com/search/ProductDetail.aspx?R=621-1N4007.html[1N4007] .
+I'll just cut to the chase here: link:https://www.mouser.com/search/ProductDetail.aspx?R=621-1N4007[1N4007] .
 
 1N4007 diodes are cheap (15¢ apiece) and have pretty ideal electrical specs for this job.
 Buy one for each coil-type device in your cab.
@@ -56,48 +56,53 @@ The 1N4007 has good properties for this job because it has a very high reverse v
 Each coil-type device in your system should have its own diode.
 That's one diode per motor, one per solenoid, one per contactor, and so on.
 
-*Type of device:* Use a diode for everything with a coil, magnet, motor, or really anything with moving parts: relays, contactors, solenoids, knockers, motors, bells, chimes, rotating beacons.
+Type of Device::
+Use a diode for everything with a coil, magnet, motor, or really anything with moving parts: relays, contactors, solenoids, knockers, motors, bells, chimes, rotating beacons.
 You *don't* need to add diodes to lights with no moving parts (incandescent lamps, LEDs, LED strips, strobes, flashers).
 
-*Location:* Install each diode as close to the coil as is convenient.
+Location::
+Install each diode as close to the coil as is convenient.
 The diode's purpose is to shunt the voltage surge from the coil back into the coil, to keep the surge from propagating into the rest of the wiring.
 As such, you want it physically close to the coil.
 I recommend installing the diode directly across the coil's terminals or connecting wires.
-
++
 Don't worry about getting _extremely_ close to the coil.
 I've talked to a few people who took the advice about getting close to the coil very seriously, to the extent of disassembling the packaging around a motor or solenoid so that they could get a few centimeters closer.
 It's really not necessary to do that.
 Just attach the diode at a convenient place where the device's terminals or wires are exposed for connecting externally.
 The same terminals where you attach the power wires to the coil are perfect for the diode.
 
-*Orientation:* The striped end of the diode *must* be attached to the positive (+) supply voltage to the device.
+Orientation:: The striped end of the diode *must* be attached to the positive (+) supply voltage to the device.
 The other end must be attached to the (-) terminal, which you'll connect to a port on your output controller.
 
-*Orientation is critical!* Always double-check that you get it right.
+CAUTION: *Orientation is critical!*
+Always double-check that you get it right.
 If you get it wrong, it'll create a short circuit as soon as you turn on the device, which will most likely damage your output controller.
 
 image::images/DiodeWiring.png[""]
 
 image::images/QQQIcon.png[""]
 
-*"But doesn't the stripe on a diode always go to minus???"* In _normal_ uses for diodes, you're exactly right.
+But doesn't the stripe on a diode always go to minus?::
+In _normal_ uses for diodes, you're exactly right.
 But this is a somewhat unusual use case, and in this case we really do want the diode to go *against* the normal flow of current.
 The striped end really must go to the *positive* voltage.
 
-*How to attach them:* The best way to attach a diode to a particular device can vary depending on the type of terminals it has.
+How to attach them::
+The best way to attach a diode to a particular device can vary depending on the type of terminals it has.
 No matter what, though, I recommend always *soldering* the diode to _something_ .
 This creates a permanent connection, which is much more reliable than temporary connections like screw terminals.
 It will also help protect against accidentally reversing the diode if you should ever have to disconnect the wires, since the diode itself will be permanently installed.
-
++
 If you're using contactors, or anything else with screw terminals, I recommend soldering the diode to your wiring.
 Put it a few inches from the ends that you connect the screw terminals.
-
++
 For devices with solder terminals, such as pinball coils and DC motors, you can usually solder the diode directly to the device's terminals.
 If they're not close enough together, simply add a short piece of wire to connect one end.
-
++
 If you're using a genuine pinball coil, such as a replay knocker, it might already have a factory-installed diode.
 If so, you don't need to add another one.
-
++
 Wherever the diode ends up, you should take care that the bare wire leads of the diode can't come into contact with any other metal or wires.
 I recommend wrapping any exposed wire or solder with electrical tape to insulate it.
 
@@ -144,7 +149,8 @@ Just install the diodes as outlined above and you'll be set.
 If you know a thing or two about electronics, you might have noticed that the diode is installed "backwards" from how you'd normally use it, in that we have the stripe attached to the positive side.
 
 Good catch if you noticed that, but it's not an error! We really do want the diode to be installed *opposite to the normal current flow* .
-Why? Think about what would happen if it were installed the other way: when the power goes on, the diode would happily conduct all the current straight through, bypassing the load.
+Why?
+Think about what would happen if it were installed the other way: when the power goes on, the diode would happily conduct all the current straight through, bypassing the load.
 In other words, it would create a short circuit from the power supply directly to the output controller.
 This would instantly fry something - the diode, the power supply, or the output controller - with the unrestrained current.
 
@@ -152,7 +158,8 @@ With the diode installed opposite to the flow, though, it doesn't conduct at all
 It's like it's not even there.
 all the power goes through the load (the feedback device) just like we want it to, and nothing gets fried.
 
-So if the diode never conducts, what good is it? Well, it's not quite true that the diode _never_ conducts.
+So if the diode never conducts, what good is it?
+Well, it's not quite true that the diode _never_ conducts.
 It never conducts _in the power supply direction_ .
 But it does kick in when the power turns *off* .
 That's when the coil releases the current surge we've been talking about.
@@ -167,10 +174,12 @@ So the surge fizzles out without damaging any sensitive components at the ends o
 
 There might appear to be a couple of contradictions in what we've just said.
 Let's address any lingering doubts.
-First, if it would have fried something to run the _original_ current through the diode, why doesn't it fry something when we run the _reverse_ current through it? The answer is that the total energy in the reverse current is much lower, because it's not being driven by a power supply; it's limited to the energy stored in the magnetic field, which is fairly small in absolute terms.
+First, if it would have fried something to run the _original_ current through the diode, why doesn't it fry something when we run the _reverse_ current through it?
+The answer is that the total energy in the reverse current is much lower, because it's not being driven by a power supply; it's limited to the energy stored in the magnetic field, which is fairly small in absolute terms.
 The surge does heat up the coil a tiny bit - that's where the excess energy goes - but only a tiny bit.
 Not enough that you'd be able to feel it by touch, and not enough to do any damage.
-Second, if the flyback current is so dangerous, why doesn't it hurt the coil, or the diode itself? In this case, the answer is in the different natures of the different components.
+Second, if the flyback current is so dangerous, why doesn't it hurt the coil, or the diode itself?
+In this case, the answer is in the different natures of the different components.
 Transistors and IC chips are extremely sensitive to voltage, even at very low total energies, because their internal structures are so tiny.
 Exposing them to high voltages can punch holes in their internal structures and destroy them.
 Coils and wires, on the other hand, are relatively indifferent to voltage levels as long as the total power is limited.
@@ -210,5 +219,5 @@ Those devices are physically so tiny that it doesn't take much energy to damage 
 It only takes a brief blast of high voltage.
 It's the same thing that makes static electricity discharge such a danger for many electronic devices.
 
-You can find more about this in the Wikipedia article about link:https://en.wikipedia.org/wiki/Flyback_diode.html[flyback diodes] .
+You can find more about this in the Wikipedia article about link:https://en.wikipedia.org/wiki/Flyback_diode[flyback diodes] .
 

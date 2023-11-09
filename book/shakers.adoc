@@ -59,9 +59,9 @@ A DIY shaker also gives you more control to tweak the effect to your liking, by 
 Hare are some detailed DIY plans you can find online:
 
 *  xref:shakerPlan.adoc#shakerPlan[My shaker design]
-*  link:https://www.vpforums.org/index.php?showtopic=14734&p=143713.html[Darkfall's plans on vpforums]
-*  link:https://pinside.com/pinball/forum/topic/building-a-shaker-motor-i-have-a-couple-questions.html[RacerRik's plans on Pinside]
-*  link:https://pinside.com/pinball/forum/topic/my-home-made-shaker.html#post-2408089[Waldo34's plans on Pinside] (a variation on RacerRik's plans)
+*  link:https://www.vpforums.org/index.php?showtopic=14734&p=143713[Darkfall's plans on vpforums]
+*  link:https://pinside.com/pinball/forum/topic/building-a-shaker-motor-i-have-a-couple-questions[RacerRik's plans on Pinside]
+*  link:https://pinside.com/pinball/forum/topic/my-home-made-shaker#post-2408089[Waldo34's plans on Pinside] (a variation on RacerRik's plans)
 
 The two Pinside plans closely replicate the mechanical design of the Williams and Stern shaker units (which are themselves nearly identical), so they yield nicely professional-looking results, but they're challenging to build because they require cutting, drilling, and thread-tapping steel bar stock.
 They also require some sheet-metal work.
@@ -98,8 +98,8 @@ Those are more expensive than comparable generic motors from eBay or Aliexpress,
 The pinball parts vendors currently (2022) stock several such motors:
 
 *  link:https://www.pinballlife.com/replacement-motor-for-stern-shaker-kits.html[Pinball Life - replacement motor for Stern shaker kits]
-*  link:https://www.marcospecialties.com/pinball-parts/041-5029-04.html[Marco Specialties - replacement motor for Stern shaker kits]
-*  link:https://www.marcospecialties.com/pinball-parts/14-7951.html[Marco Specialties - replacement motor for 1990s Williams shakers, part 14-7951]
+*  link:https://www.marcospecialties.com/pinball-parts/041-5029-04[Marco Specialties - replacement motor for Stern shaker kits]
+*  link:https://www.marcospecialties.com/pinball-parts/14-7951[Marco Specialties - replacement motor for 1990s Williams shakers, part 14-7951]
 
 If you want something less expensive, or you just enjoy the hunt, here are the properties to look for in a generic motor:
 
@@ -137,7 +137,7 @@ For reference, here are some specific motors that virtual cab builders have used
 It's probably impossible to find anything on this list that's more than a couple of years old - the manufacturers generally seem to do a single large production run for each model, and once that's sold out, they're gone.
 But it might still be worth checking, since you can sometimes the older models as remnants and used items on eBay.
 
-* Generic 775 12V/24V 50W dual-shaft motor (available on link:https://www.amazon.com/dp/B07MBB5LBQ.html[Amazon] and link:https://www.aliexpress.com/item/2251832641125340.html[Aliexpress] as of June 2022; note that the "775" is *not* a model number or brand, but is simply a standard designation for the motor's dimensions; many other "775" motors are available that look similar but which have very different electromechanical characteristics)
+* Generic 775 12V/24V 50W dual-shaft motor (available on link:https://www.amazon.com/dp/B07MBB5LBQ[Amazon] and link:https://www.aliexpress.com/item/2251832641125340[Aliexpress] as of June 2022; note that the "775" is *not* a model number or brand, but is simply a standard designation for the motor's dimensions; many other "775" motors are available that look similar but which have very different electromechanical characteristics)
 * Pittman 9414H255-R2 (last seen around 2015)
 * Buehler 480-0211-01 (last seen around 2015)
 
@@ -231,7 +231,9 @@ If you're having a problem with your nudge device going crazy when your shaker i
 * Turn down the intensity of the shaker
 * Turn down the sensitivity of the nudge device
 
-Before taking either action, you should ask yourself: What would a real pinball machine do? In other words, would that same exact shaker motor affect the ball on a real pinball machine the way it's affecting your virtual game? If the answer is yes, then the shaking effect is probably too intense, and the solution is to reduce the shaker motor speed.
+Before taking either action, you should ask yourself: What would a real pinball machine do?
+In other words, would that same exact shaker motor affect the ball on a real pinball machine the way it's affecting your virtual game?
+If the answer is yes, then the shaking effect is probably too intense, and the solution is to reduce the shaker motor speed.
 Shakers on the real machines don't send the ball flying around.
 If your shaker is at a level where it wouldn't affect the ball on a real machine, but it's affecting the virtual game to a troublesome degree, then the problem is in your nudge sensor calibration: you've turned up the sensitivity to unrealistic levels.
 
@@ -240,7 +242,8 @@ The easiest way to adjust the shaking intensity is to adjust the speed of the mo
 If you built a DIY shaker, you might also be able to change the shaking intensity by increasing or decreasing the amount of weight in the counterweights.
 
 If the shaker is still causing excessive nudge interference after you've adjusted the intensity of the tactile effect to your liking, the next step is to adjust the sensitivity of your nudge device.
-You might balk at this suggestion, but go back to that question about real machines: does the ball fly around wildly on a real machine when the shaker is on? No, it doesn't.
+You might balk at this suggestion, but go back to that question about real machines: does the ball fly around wildly on a real machine when the shaker is on?
+No, it doesn't.
 The thing is, most virtual cab builders initially set their nudge devices to be far too sensitive.
 This is natural - you want to see an immediate and obvious effect from the new toy.
 But it's easy to overdo this.
@@ -336,7 +339,7 @@ image::images/ShakerWiring2.png[""]
 
 Try a 4.7 µH inductor, with an amperage rating equal to or higher than your motor's operating current. Here's an example part from Mouser that should work well:
 
-Coilcraft DR0608-472L 4.7µH, 5.8A radial inductor - link:https://www.mouser.com/search/ProductDetail.aspx?R=994-DR0608-472L.html[at Mouser]
+Coilcraft DR0608-472L 4.7µH, 5.8A radial inductor - link:https://www.mouser.com/search/ProductDetail.aspx?R=994-DR0608-472L[at Mouser]
 
 Inductors aren't polarized, meaning they don't have a special orientation when you install them. It doesn't matter which lead connects to the "\+" side and which connects to the "-" side. (The diode, in contrast, has to be installed with its striped side going to the "+" voltage, as shown in the diagram.)
 

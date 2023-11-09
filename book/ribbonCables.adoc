@@ -28,7 +28,7 @@ Mouser sells it by the foot, and you can also buy it on eBay, Amazon, and at Fry
 
 Here's a Mouser search that will turn up some suitable options:
 
-link:https://www.mouser.com/Wire-Cable/Cable-Assemblies/Ribbon-Cables-IDC-Cables/_/N-bkree?P=1y8vnl9Z1z0wxo9Z1yzi10l&Ns=Pricing%7c0.html[Mouser Ribbon Cables]
+link:https://www.mouser.com/Wire-Cable/Cable-Assemblies/Ribbon-Cables-IDC-Cables/_/N-bkree?P=1y8vnl9Z1z0wxo9Z1yzi10l&Ns=Pricing%7c0[Mouser Ribbon Cables]
 
 (That's a search for IDC ribbon cables, no connectors, 1.27mm pitch.)
 

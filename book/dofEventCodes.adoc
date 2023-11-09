@@ -111,7 +111,8 @@ So the first event, `S8 300 I32` , means that we fire this effect when Solenoid 
 The second one, `W37 600 I32` , fires when sWitch 37 closes.
 And so on.
 
-What does "fire this effect" mean, exactly? To a first approximation, it just means "turn on this device".
+What does "fire this effect" mean, exactly?
+To a first approximation, it just means "turn on this device".
 For example, if we had a trigger in here that *only* said `L11` and nothing else, it would mean "turn on the shaker motor whenever lamp 11 is lit, and keep it on the whole time it's lit." Most triggers aren't quite that simple, though.
 The ones we're looking at for the shaker all have some extra gibberish at the end, which modifies the simple "turn the device on when this table object is on" and makes it a little more subtle.
 
@@ -129,7 +130,8 @@ None of the _Medieval Madness_ shaker events use the min/max limits, but you'll 
 
 The final item in all these definitions is `I32` .
 "I" is another modifier meaning "run with this intensity".
-The intensity is on the rather odd scale of 0-48 (why? because DOF was originally designed around the LedWiz, and the LedWiz uses a 0-48 brightness scale).
+The intensity is on the rather odd scale of 0-48 (why?
+because DOF was originally designed around the LedWiz, and the LedWiz uses a 0-48 brightness scale).
 So I32 is about 2/3 of full intensity.
 
 There's another common detail that's worth calling out.
@@ -536,15 +538,15 @@ The following all apply to "area effects", for addressable light strip matrices.
 
 |APC _color_ 
 |apcRED
-|Sets the color for a plasma effect; see link:https://www.bidouille.org/prog/plasma.html[www.bidouille.org/prog/plasma] .
+|Sets the color for a plasma effect; see link:https://www.bidouille.org/prog/plasma[www.bidouille.org/prog/plasma] .
 
 |APD _density_ 
 |APD25
-|Sets the density for a plasma effect, 0 to 100; see link:https://www.bidouille.org/prog/plasma.html[www.bidouille.org/prog/plasma] .
+|Sets the density for a plasma effect, 0 to 100; see link:https://www.bidouille.org/prog/plasma[www.bidouille.org/prog/plasma] .
 
 |APS _speed_ 
 |APS10
-|Sets the speed for a plasma effect; see link:https://www.bidouille.org/prog/plasma.html[www.bidouille.org/prog/plasma] .
+|Sets the speed for a plasma effect; see link:https://www.bidouille.org/prog/plasma[www.bidouille.org/prog/plasma] .
 
 |AS _speed_ 
 |AS5

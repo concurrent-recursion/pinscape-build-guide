@@ -5,7 +5,8 @@ image::images/WhirlwindAndTwister.png[alt="Backboxs of Twister and Whirlwind tha
 
 At least two real pinball machines featured fans mounted on top of the backbox: _Whirlwind_ (Williams, 1990), _Twister_ (Sega, 1996).
 Two titles might seem like an awfully skimpy reason to include a fan on a virtual cab, yet this has become one of the more popular toys, and I'd highly recommend it.
-The reason? Fans are uniquely tactile.
+The reason?
+Fans are uniquely tactile.
 They add a completely new sensory effect to the playing experience.
 
 As you'd expect, the DOF database replicates the authentic fan action in _Whirlwind_ and _Twister_ .
@@ -77,7 +78,7 @@ Newer coin doors made for the US market tend to include a large square opening i
 
 Here's a particularly amusing take on this theme:
 
-link:https://pinside.com/pinball/forum/topic/heavily-modified-whirlwind-topper-fan-this-is-a-must-see.html[Heavily modified whirlwind topper fan] ( link:https://pinside.com/[Pinside] pinball forums)
+link:https://pinside.com/pinball/forum/topic/heavily-modified-whirlwind-topper-fan-this-is-a-must-see[Heavily modified whirlwind topper fan] ( link:https://pinside.com/[Pinside] pinball forums)
 
 I personally like the effect of the fan blowing at you from the backbox, but at least one person who built the coin door version commented on the surprise value of the sneaky placement.
 

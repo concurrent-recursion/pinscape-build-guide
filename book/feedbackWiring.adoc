@@ -19,7 +19,8 @@ Even on a real pinball machine, those are just hard-wired to power all the time.
 But for just about everything else, you'll want the software to control the device state, so this simple circuit plan simply won't do.
 But you already knew that - the whole point of this section is output controller wiring, after all!
 
-So how exactly do we insert an output controller into this picture? The exact details can vary a little bit depending on the type of controller you're using - and we'll show you those exact details for each type of controller in the chapters ahead - but the principle is always the same.
+So how exactly do we insert an output controller into this picture?
+The exact details can vary a little bit depending on the type of controller you're using - and we'll show you those exact details for each type of controller in the chapters ahead - but the principle is always the same.
 The basic idea is that we "cut" one of the power wires, and stick the output controller into that gap.
 
 == Basic plan for solid-state controllers
@@ -81,7 +82,8 @@ We didn't have to run a separate wire all the way from the second device back to
 This can save you a lot of wire, since you'll probably have a few devices that are fairly far away from the power supply.
 
 This is all well and good if you want to hook up a bunch of devices that run on the same voltage.
-But what about devices that run on different power supplies that use other voltages? If you already read through xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , you know that you might need as many as five or six different voltages if you're using a diverse mix of devices:
+But what about devices that run on different power supplies that use other voltages?
+If you already read through xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] , you know that you might need as many as five or six different voltages if you're using a diverse mix of devices:
 
 * 5V for flasher LEDs
 * 6.3V for incandescent button lamps
@@ -90,7 +92,8 @@ But what about devices that run on different power supplies that use other volta
 * 24V for contactors and chimes
 * 30V or more for the the replay knocker
 
-So how do you hook up all these different devices, when each one has to be connected to its own power supply? What happens to that common wire back to the (-) on the power supply when we have five power supplies?
+So how do you hook up all these different devices, when each one has to be connected to its own power supply?
+What happens to that common wire back to the (-) on the power supply when we have five power supplies?
 
 Happily, this turns out to be easy.
 If you go back and review the section on xref:powerSupplies.adoc#InterconnectingGrounds[Interconnecting Grounds] in the Power Supplies chapter, you'll find the answer.

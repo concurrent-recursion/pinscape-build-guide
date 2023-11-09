@@ -24,7 +24,8 @@ You might wonder what's so different about the manual approach that makes it wor
 The difference is the size of the tongue-and-groove features.
 The features are about twice as large when you use the manual approach.
 The smaller features in the router bit approach are just too delicate for most plywood.
-Follow-up question: why can't they make the router bit's features as big as the manual method's features? That's because the router bit has to cut a mirror-image pattern.
+Follow-up question: why can't they make the router bit's features as big as the manual method's features?
+That's because the router bit has to cut a mirror-image pattern.
 That's only way that you can use the same router bit to cut both sides of each corner - one side has to be the mirror image of the other for the pieces to fit together.
 The mirror image means that every feature has to be there twice.
 And this all has to fit into the thickness of the board.
@@ -103,7 +104,8 @@ After pointing out all those flaws, I should clarify that the end result still u
 The flaws are mostly on the inside, where the glue goes, and where you can't see them in a finished cab.
 Most of my attempts have yielded nice sharp corners and unblemished outer veneer.
 
-Will you get decent results with the plywood you're using? I can't say for sure, given the mixed experiences I've seen on the Web.
+Will you get decent results with the plywood you're using?
+I can't say for sure, given the mixed experiences I've seen on the Web.
 The lock miter clearly works with some plywood, but maybe not all plywood.
 It's probably a function of the particular material and/or the particular router bit.
 I think the only way to find out if it'll work for your batch of plywood is to test it.

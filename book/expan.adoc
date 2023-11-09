@@ -51,14 +51,15 @@ Once you have the blank PCBs and the components, you solder the components onto 
 I know it sounds complex, but the individual steps are all pretty straightforward, and they're explained in detail in the pages ahead.
 
 If you don't like the idea of building the boards yourself, though, there's at least one option footnote:[In the past, there was another source for pre-built boards, Oak Micros, which sold a couple of boards based directly on the Pinscape expansion boards.
-Those are no longer available, but for historical reference, here's the original announcement: link:https://www.vpforums.org/index.php?showtopic=42631.html[Pinscape All-in-One product]](as of this writing) for buying pre-built boards that come fully assembled and ready to use:
+Those are no longer available, but for historical reference, here's the original announcement: link:https://www.vpforums.org/index.php?showtopic=42631[Pinscape All-in-One product]](as of this writing) for buying pre-built boards that come fully assembled and ready to use:
 
-*  link:https://shop.arnoz.com/en/16-pinscape-boards.html[L'atelier d'Arnoz] (Arnoz's Pin Cab Shop).
+*  link:https://shop.arnoz.com/en/16-pinscape-boards[L'atelier d'Arnoz] (Arnoz's Pin Cab Shop).
 Arnoz sells a collection of circuit boards of his own design that work with the Pinscape software and replicate many of the functions of the DIY expansion boards.
 Like the original expansion boards, Arnoz's boards comprise a set of modules that you can combine to build your overall system.
 See his site for details and purchase options.
 
-Which is better, DIY or pre-built? They both have their trade-offs.
+Which is better, DIY or pre-built?
+They both have their trade-offs.
 The big advantage of the DIY approach is that you can customize everything, from the hardware to the software, since the entire design is open-source.
 But it requires a lot of time and effort.
 Buying something ready-to-use is probably a better option if you don't have a hobby interest in building your own electronics.
@@ -157,7 +158,7 @@ You can use any combination of chime boards and power boards that suits your sys
 
 == Schematics and board layouts
 
-The boards were designed using a CAD program called link:https://www.autodesk.com/products/eagle/overview.html[EAGLE] , from link:https://www.autodesk.com/[Autodesk] .
+The boards were designed using a CAD program called link:https://www.autodesk.com/products/eagle/overview[EAGLE] , from link:https://www.autodesk.com/[Autodesk] .
 EAGLE works in terms of schematics and board layouts.
 A schematic is a symbolic, visual representation of the components in a circuit and how they're connected to one another.
 A board layout is the physical design of the circuit board, showing the locations of drill holes, solder pads, copper traces, and so on.

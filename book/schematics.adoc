@@ -153,7 +153,8 @@ That's not quite the way engineers think of power supplies, though: they think o
 That's the reference point, and all the other supply voltages are relative to that reference point - so the disk connectors on an ATX power supply, for example, have a +5V supply line and a +12V supply line, relative to that 0V.
 This 0V point is what we call "ground" in a DC circuit.
 
-Why do we have two different ground symbols, and what's "GND3"? I'm sure you already guessed that "GND" is an abbreviation for "Ground".
+Why do we have two different ground symbols, and what's "GND3"?
+I'm sure you already guessed that "GND" is an abbreviation for "Ground".
 "GND3" stands for "Ground 3", which is a separate DC ground point in the circuit from the regular "GND".
 You'll see "GND2" in other places, which is a second one.
 
@@ -469,7 +470,8 @@ image::images/schematic-pc847-1.png[""]
 
 If you didn't already see what we meant about how schematic symbols are "abstract", this probably really drives it home.
 
-Two questions: Why in the world do they do this? And how are you supposed to tell that those four boxes are really one physical IC chip?
+Two questions: Why in the world do they do this?
+And how are you supposed to tell that those four boxes are really one physical IC chip?
 
 First the "why".
 They do this to make the schematics more readable.
@@ -488,13 +490,15 @@ Now to the second question, how you're supposed to relate the four boxes back to
 The trick is to look for matching tags.
 You can see that each individual opto in the diagram above has its own separate set of labels - each one is tagged "PC847" (the chip name) and "OK1x" (the reference designator for the parts list lookup) - as though it were a standalone part.
 The designator is what gives away the secret that all these "OK1" elements are part of the same physical chip.
-And why is that? Because a designator is *always* unique across the whole schematic - like Highlander, there can be only one OK1.
+And why is that?
+Because a designator is *always* unique across the whole schematic - like Highlander, there can be only one OK1.
 The fact that the same designator appears on four symbols means that the symbols are all portions of the same physical component.
 
 Okay, back up a sec...
 I'm sure you noticed that these _aren't_ actually all labeled "OK1".
 They're labeled OK1A, OK1B, OK1C, and OK1D.
-But when have we ever seen a letter _after_ a number in a designator before? Never.
+But when have we ever seen a letter _after_ a number in a designator before?
+Never.
 Tags until now always ended in a number.
 You've probably already guessed what it means when you add a letter to the end: it means that we're talking about a sub-block of a multi-gang chip like this.
 The physical chip is still called "OK1", but they've given these additional "A" through "D" suffixes to the individual optos within OK1 to help us distinguish them.

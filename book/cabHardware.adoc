@@ -57,7 +57,8 @@ image::images/glass-channel-slot.png[""]
 
 Some virtual cab builders forego routing the slot, because it seems too difficult, or just because they don't want to buy a special tool that they'll only ever use once.
 But they still want to install the channels.
-How do you make the spine fit without the slot? You can't, but you _can_ chop off the spine to take it out of the picture.
+How do you make the spine fit without the slot?
+You can't, but you _can_ chop off the spine to take it out of the picture.
 The glass channels are a fairly strong plastic, but they are just plastic, so it's possible to remove the spine with a sharp utility knife, a Dremel tool, or something similar.
 With the spine removed, you can install the channel with staples or glue.
 You don't have to go overboard with a super-strong attachment, since the metal rail will sit directly on top of the channel, and that by itself will largely keep it from going anyway.
@@ -82,7 +83,8 @@ image::images/glass-channel-insertion.png[""]
 
 === Alternatives to the glass channels
 
-What if you don't want to include the glass channels? Not all virtual pin cab builders do, either because they're not using the cover glass at all, or because they want to install it some other way.
+What if you don't want to include the glass channels?
+Not all virtual pin cab builders do, either because they're not using the cover glass at all, or because they want to install it some other way.
 
 My own recommendation is to use cover glass and use the standard glass channels.
 That'll look the most authentic and it'll be easier to set up than something improvised.
@@ -166,7 +168,8 @@ You might wonder (I sure did) why you can't use the same carriage bolts as at th
 The answer is that the shelf gets in the way on the inside - you can't access the fastener from the inside to attach a nut.
 So you need a fastener that screws in or pounds in purely from the outside, without the need to attach anything on the inside.
 Spiral nails fit the bill, but so would a plain nail or wood screw.
-The next question, then, is why not just use regular wood screws? You could simply unscrew them if you ever wanted to remove them.
+The next question, then, is why not just use regular wood screws?
+You could simply unscrew them if you ever wanted to remove them.
 Part of the rationale at the factory might be tamper resistance, which you probably don't care about for home use, but the other reason is that whatever fastener you use has to fit into the tiny gap between the side rails and the backbox hinge arms.
 Most nails (including the spiral nails) meet this need.
 Most regular screws don't; the heads are too thick.
@@ -517,13 +520,13 @@ The closest starting point might be an "L" bar, which you can buy from hardware 
 If you're going for a furniture look with wood trim all around, it's possible to craft a wood version using fairly ordinary wood-working tools.
 Here are some vpforums threads that might be helpful:
 
-*  link:https://www.vpforums.org/index.php?showtopic=40245.html[Wooden custom lockdown bar]
-*  link:https://www.vpforums.org/index.php?showtopic=39523.html[Alternative for a custom lockdown bar]
+*  link:https://www.vpforums.org/index.php?showtopic=40245[Wooden custom lockdown bar]
+*  link:https://www.vpforums.org/index.php?showtopic=39523[Alternative for a custom lockdown bar]
 
 Another possibility is to use a 3D printer to fabricate a plastic lockbar.
 Here's a vpforum thread about that, with advice about materials and finishes to make it look like a metal lockbar:
 
-*  link:https://www.vpforums.org/index.php?showtopic=42759.html[Alternative for a custom lockdown bar]
+*  link:https://www.vpforums.org/index.php?showtopic=42759[Alternative for a custom lockdown bar]
 
 === DIY alternatives to a real lockbar receiver
 
@@ -539,7 +542,7 @@ This would hold the lockbar reasonably well, although obviously not in a truly "
 
 A more elaborate home-made alternative is described here:
 
-link:https://www.vpforums.org/index.php?showtopic=38841&p=390452.html[Question about lockdown bars and receivers for mini cabinet (message #5)]
+link:https://www.vpforums.org/index.php?showtopic=38841&p=390452[Question about lockdown bars and receivers for mini cabinet (message #5)]
 
 Briefly, the idea is to place a pair of toggle latches on the inside front wall the cabinet, positioned to align with the hooked prongs that stick out of the bottom of the lockbar.
 To fasten, you reach in through the coin door, hook the latches to the prongs, and engage the latches.

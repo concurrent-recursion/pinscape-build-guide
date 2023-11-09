@@ -41,7 +41,7 @@ The Teensy isn't a light strip controller by itself.
 It's just a microcontroller (a small single-board computer).
 To turn it into a light strip controller, you need some special software:
 
-link:https://github.com/DirectOutput/TeensyStripController.html[TeensyStrip Controller] (GitHub)
+link:https://github.com/DirectOutput/TeensyStripController[TeensyStrip Controller] (GitHub)
 
 Follow the instructions there to download the software onto your Teensy.
 The project Wiki linked there also has more information about setting up your light strip hardware, so you might look there if you run into any issues not covered in this chapter.
@@ -266,11 +266,11 @@ The light strip entries in Cabinet.xml file are quite complex, and they're cover
 If I copied it here, it would just gradually drift out of date and become more confusing than helpful.
 Better to go straight to the source:
 
-link:https://github.com/DirectOutput/TeensyStripController/wiki.html[github.com/DirectOutput/TeensyStripController/wiki] - see "Software: DirectOutput Framework"
+link:https://github.com/DirectOutput/TeensyStripController/wiki[github.com/DirectOutput/TeensyStripController/wiki] - see "Software: DirectOutput Framework"
 
 Another helpful resource is this VPForums thread, which has examples of the cabinet config file.
 
-link:https://www.vpforums.org/index.php?showtopic=36156.html[How to Set Up Addressable LED Strips] (at VPForums)
+link:https://www.vpforums.org/index.php?showtopic=36156[How to Set Up Addressable LED Strips] (at VPForums)
 
 *Part II: DOF Config Tool settings.* Once you have the Cabinet.xml file set up, DOF will be able to find your hardware.
 But wait! There's more! You have to go through yet another procedure now to tell DOF to actually use that hardware.
@@ -344,5 +344,5 @@ If so, the solution is to add a jumper wire that shorts together pins 15 and 16 
 
 Here's a thread on the forums about it:
 
-link:https://www.vpforums.org/index.php?showtopic=41655.html[DOF addressable LEDs "all white" problem [SOLVED\]]
+link:https://www.vpforums.org/index.php?showtopic=41655[DOF addressable LEDs "all white" problem [SOLVED\]]
 

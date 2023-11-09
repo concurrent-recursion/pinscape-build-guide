@@ -54,7 +54,8 @@ And of the two, the graphics card is generally the more important.
 These are the parts you should pay the most attention to when researching what to buy.
 
 Other components - motherboard, memory (RAM), disks, USB controllers - also contribute to performance, but to a much lesser degree.
-How much should you worry about those? If you talk to serious video gamers, they'll tell you that every element is critical, down to the military-grade titanium screws holding their ballistic carbon-fiber cases together.
+How much should you worry about those?
+If you talk to serious video gamers, they'll tell you that every element is critical, down to the military-grade titanium screws holding their ballistic carbon-fiber cases together.
 That's true as far as it goes, but "extreme gaming RAM" and the like will only contribute a few percentage on most systems.
 Most people can't perceive that kind of difference in actual use; you'd only know it's there if you measured it with benchmarking tools.
 If it's important to you to build the fastest system possible, then by all means do so; that can be fun in its own way.
@@ -162,17 +163,14 @@ An external antenna is usually better if you want Wi-Fi on the cab, and for that
 * Nice to have: integrated audio.
 Nearly all modern motherboards include audio outputs.
 This isn't required, though, as you can add a sound card via an expansion slot if needed.
-* Nice to have: USB 2 *and* USB 3 connectors.
-Some older USB devices don't work well with USB 3 ports, so it's helpful to have both types in case you need a USB 2 port for some devices.
-This isn't required, though, since an external USB 2 hub can serve the same function.
-
-*Performance considerations:* Not really an issue, unless you're looking to build an extreme gaming system.
+* Nice to have: USB 2 *andPerformance considerations:* Not really an issue, unless you're looking to build an extreme gaming system.
 A motherboard designed for a particular CPU is almost always based on the Intel or AMD chipset mated to that CPU, so you won't see a huge amount of variation among different boards for the same CPU.
 If you're concerned about finding the fastest motherboard for your CPU, you can do some research on benchmark sites on the Web.
 
-*What about on-board graphics?* Unimportant, because you'll need a separate graphics card whether or not the motherboard has its own built-in graphics.
+What about on-board graphics?::
+Unimportant, because you'll need a separate graphics card whether or not the motherboard has its own built-in graphics.
 There might be exceptions, but all the built-in motherboard graphics chip sets I've ever seen are low-end, suitable for business graphics, not gaming.
-
++
 If the motherboard doesn't have on-board graphics, great, that's one less thing to worry about when configuring the BIOS.
 If it does have on-board graphics, as most modern motherboards do, it's still not a problem because you should be able to disable it in the BIOS setup.
 In fact, many BIOSes will do this automatically when they detect the presence of a separate video card.
@@ -196,40 +194,41 @@ For example, a "Gigabyte Geforce GTX 1050" is based on the Nvidia 1050 chip set.
 You'll start to recognize the chip set names if you shop around enough, since you'll see the same numerical designations over and over on different brands of cards.
 The performance of a graphics card is almost entirely a function of the chip set, not the brand, so you should see reasonably similar performance from cards based on a given chip set even if they're from different brands.
 
-*Which chip set?* Check the forums for advice on current models.
+Which chipset?::
+Check the forums for advice on current models.
 This is another area where something in the second tier of the current available performance range is usually a good choice.
 
 Note that a 4K main monitor is more demanding than a regular HD (2K) monitor, so you should bias your search towards the higher end if you're planning on 4K.
 
-*Video memory:* Video cards have their own on-board memory, usually 1GB or more on a modern card.
+Video memory:: Video cards have their own on-board memory, usually 1GB or more on a modern card.
 The fastest type of memory has a type like "GDDR3" or "GDDR5".
 A higher number suffix indicates faster memory.
 Visual Pinball and other gaming software benefits from larger memory sizes with faster memory.
 
-*Display size and refresh rate:* Any modern video card should be able to drive a 1080p main monitor and a couple of additional smaller monitors.
+Display size and refresh rate:: Any modern video card should be able to drive a 1080p main monitor and a couple of additional smaller monitors.
 (1080p or even 720p is perfectly adequate for a backglass TV.) A higher-end card might be needed if you're using a 4K main monitor.
 
-*Outputs/connectors:* Be sure you have enough outputs for all the monitors you plan to connect, taking into account the playfield TV, the backbox TV, and the score display (DMD) TV, if you're using that.
-
+Outputs/Connectors:: Be sure you have enough outputs for all the monitors you plan to connect, taking into account the playfield TV, the backbox TV, and the score display (DMD) TV, if you're using that.
++
 Most higher-end graphics cards offer several output ports with different types of connectors.
 You can almost always use all the outputs simultaneously to drive multiple monitors.
 This lets you use a single graphics card to drive all the TVs in your system.
-
++
 I'd recommend finding a card with at least two of the following connectors, in any combination: HDMI, DVI-D, Display Port (DP).
 all these types can be connected (using passive adapters) to HDMI inputs, which is what you'll need on almost any modern TV.
 As long as you have two ports of these types, you should have no problem connecting two TVs to the card.
-
++
 If you're planning to also use a third display for the DMD area, you'll need a third output for that.
 A VGA or DVI-D connector will usually work for this third output, since DMD monitors are usually implemented with laptop displays or small desktop monitors.
 Most video cards have a VGA output in addition to one or more of the more modern connectors listed above, so this is fairly easy to find.
-
++
 If you're going to use a real pinball DMD instead of a small video display, you *won't* need to connect that the graphics card.
 Real DMDs aren't video devices, so they don't connect to your graphics card; they connect instead to a special external controller via USB.
-
++
 You should check the specs to confirm that the card you're considering can handle the two or three simultaneous outputs you plan to use.
 Nearly all modern graphics cards allow this, but it's worth checking to be sure.
 
-*Port compatibility:* You don't necessarily need an exact match between the output port types on your video card and the input ports on your TVs and monitors.
+Port compatibility:: You don't necessarily need an exact match between the output port types on your video card and the input ports on your TVs and monitors.
 Many of the port types are electrically compatible with each other, meaning you can connect them with a simple cable that has the right plug on each end.
 
 The following combinations of port types are compatible.
@@ -273,19 +272,20 @@ These are relatively inexpensive and can be easily found online.
 
 |===
 
-*Two cards for two monitors:* Not advised.
-It _seems_ like two cards would be better than one - more hardware is always faster, right? But in practice, two cards are actually _slower_ than one.
+Two cards for two monitors::
+Not advised.
+It _seems_ like two cards would be better than one - more hardware is always faster, right?
+But in practice, two cards are actually _slower_ than one.
 Everyone on the forums who's tried this has had the same results: you get lower frame rates, more stutter, and more lag with multiple video cards.]
-
-
-
++
 The technical reasons for this are unclear (my wild guess is that it's due to increased PCIe bus contention).
 Without understanding the cause, I can't rule out the possibility that _some_ systems exist where two cards would go faster than one.
 But if there are, they seem to be the exception; many people have tried it and had poor results.
-
++
 By far the best way that anyone has found to improve performance of the pinball simulators is to use a faster video card.
 
-*Using the motherboard GPU as a second video card:* Not advised, for exactly the same reasons that you shouldn't add a second video card (above).
+Using the motherboard GPU as a second video card::
+Not advised, for exactly the same reasons that you shouldn't add a second video card (above).
 Enabling the motherboard GPU is exactly the same as adding a second video card in terms of its effect on your overall system performance: you'll see lower frame rates, more stutter, and more lag if you enable the on-board GPU.]
 
 
@@ -328,7 +328,8 @@ The shock resistance is good for a pin cab since you'll want to be able to nudge
 The main drawback of SSDs is that they're more expensive than conventional hard disk per gigabyte.
 Fortunately, a pin cab doesn't need a very large disk, so most pin cab builders will find that a suitably sized SSD is well within a reasonable budget for the PC components.
 
-How much storage do you need? Let's look at what you'll typically need to install on a pin cab PC:
+How much storage do you need?
+Let's look at what you'll typically need to install on a pin cab PC:
 
 * Windows operating system: about 20GB
 * Visual Pinball: about 20MB
@@ -376,7 +377,8 @@ For a basic setup, this is all you'll need.
 If you want, you can add a separate sound card that plugs into an expansion slot on your motherboard.
 This will let you set up a second, independent set of speakers on the added card, in addition to the main set of speakers attached to the motherboard audio outputs.
 
-Why would you want two sets of outputs? Visual Pinball has a special feature that lets you take advantage of two audio systems to separate the "music" tracks from the playfield sound effects.
+Why would you want two sets of outputs?
+Visual Pinball has a special feature that lets you take advantage of two audio systems to separate the "music" tracks from the playfield sound effects.
 Many pin cab builders set things up so that the music plays from the backbox speakers, the same arrangement as in the real machines from the 1990s, and the playfield sound effects play through a separate set of speakers located inside the cabinet under the TV.
 The playfield effects include the sound of the ball rolling and bumping into things, so it improves the simulation to have these sounds come from the direction of the playfield.
 

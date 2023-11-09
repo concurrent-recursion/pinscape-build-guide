@@ -215,5 +215,5 @@ A "system" in the front ends serves as an association with a Windows program (an
 Then you just create a pseudo "game" that represents the player and add it to your game list.
 To launch into music mode, you just navigate to the pseudo-game entry and launch it like any other game; that fires up the music program that you associated with the system.
 
-For specific recommendations for music players and details on setting them up with the front ends, search for "jukebox" on the link:https://www.vpforums.org/index.php?showforum=29.html[vpforums pin cab forum] .
+For specific recommendations for music players and details on setting them up with the front ends, search for "jukebox" on the link:https://www.vpforums.org/index.php?showforum=29[vpforums pin cab forum] .
 

@@ -96,8 +96,8 @@ image::images/ATXDiskConnector2.png[""]
 
 This is a standard connector - the brand name is AMP Mate-N-Lok. (It's commonly misidentified as a Molex connector. There is in fact a similar-looking Molex connector, but it has a slightly different plug shape that's not compatible.) The connector that's attached to your ATX power supply is female, so to connect to this, you need the male side:
 
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260.html[TE/AMP 1-480426-0] Mate-n-Lok 4-pin housing
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201.html[TE/AMP 60620-1] male crimp pins, quantity 4 per connector
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260[TE/AMP 1-480426-0] Mate-n-Lok 4-pin housing
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201[TE/AMP 60620-1] male crimp pins, quantity 4 per connector
 
 These are crimp pin housings, so they require some assembly. See xref:crimpPins.adoc#crimpPins[Crimp Pins] for details on how to build this kind of connector.
 

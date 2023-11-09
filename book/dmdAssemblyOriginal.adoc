@@ -154,7 +154,8 @@ In the original design that Williams used, and in both our plans and VirtuaPin's
 The speaker openings _are_ cut out, by necessity, but not the DMD area.
 This was intentional in the Williams machines, probably mostly to protect the display physically, but it also creates a cleaner appearance.
 
-So if it's impossible to use the X-acto knife tracing technique, what can we do? There are a couple of potential ways to handle this, but really only one good way:
+So if it's impossible to use the X-acto knife tracing technique, what can we do?
+There are a couple of potential ways to handle this, but really only one good way:
 
 * Not so good: Print the whole decal on transparent film.
 This is what I thought of first when I was building my cab, but Brad Bowman (the printing pro who did my decals) set me straight on this, explaining why it's not a good idea.

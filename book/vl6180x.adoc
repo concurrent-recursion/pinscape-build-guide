@@ -37,9 +37,9 @@ The pre-fab boards make them easy to use.
 
 Here are three options:
 
-*  link:https://www.pololu.com/product/2489.html[Pololu] ($12)
-*  link:https://www.adafruit.com/product/3316.html[Adafruit] ($14)
-*  link:https://www.sparkfun.com/products/12785.html[Sparkfun] ($25, also sold at Mouser.com)
+*  link:https://www.pololu.com/product/2489[Pololu] ($12)
+*  link:https://www.adafruit.com/product/3316[Adafruit] ($14)
+*  link:https://www.sparkfun.com/products/12785[Sparkfun] ($25, also sold at Mouser.com)
 
 all these options are pretty much equivalent.
 They all provide easy-to-solder terminals for all connections, and they all have the necessary on-board voltage regulators and level shifters to interface the VL6180X with the KL25Z. 
@@ -90,7 +90,7 @@ In either case, just leave this terminal unconnected.
 [#expHdrDiagram_vl6180]
 === Expansion board wiring
 
-For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ).
+For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042[pins] ).
 First crimp a pin to the end of each wire (see xref:crimpPins.adoc#crimpPins[Crimp Pins] ).
 Insert the pins in the housing, following the diagram below for the pin placement.
 

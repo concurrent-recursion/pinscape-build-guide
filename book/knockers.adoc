@@ -72,8 +72,8 @@ The Williams/Bally knocker assemblies come with a Molex 3-pin .093" cable connec
 You can cut this off and solder your own wires if you like, or you can buy a matching connector.
 The matching connector is available from pinball vendors and from electronics companies like Mouser:
 
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-09-1032.html[Molex .093" 3-position receptacle]
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=538-02-09-1119.html[Crimp socket (female)]
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-09-1032[Molex .093" 3-position receptacle]
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=538-02-09-1119[Crimp socket (female)]
 
 If you're using the Pinscape expansion boards, connect this to the "Knocker" pin on the JP9 pin header.
 This is a "timer protected" output, to prevent the knocker coil from getting stuck on.

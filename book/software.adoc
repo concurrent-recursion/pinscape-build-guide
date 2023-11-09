@@ -15,12 +15,14 @@ The simple answer is No.
 You might find advice in the forums or FAQs or other guides saying that you should routinely run everything in Admin Mode.
 My advice is to ignore that other advice, because it's usually outdated or misinformed.
 
-What is "Admin Mode" anyway? Microsoft divided things into "Admin" and "User" spaces to protect the internals of the system from being accidentally damaged by software bugs or user errors, or intentionally damaged by malware.
+What is "Admin Mode" anyway?
+Microsoft divided things into "Admin" and "User" spaces to protect the internals of the system from being accidentally damaged by software bugs or user errors, or intentionally damaged by malware.
 Programs running in User Mode have some restrictions on what they can access, but Admin Mode programs can access everything.
 Admin Mode is supposed to be reserved for special system programs that have a legitimate reason to modify your system internals - programs like installers, disk management tools, and system control panels.
 Everything else is supposed to run in regular "User" mode.
 
-So why do so some people on the forums tell you that you _should_ use Admin Mode routinely, when Microsoft says you shouldn't? The reason is mostly "history".
+So why do so some people on the forums tell you that you _should_ use Admin Mode routinely, when Microsoft says you shouldn't?
+The reason is mostly "history".
 In the old days, there were a few isolated software components in the pinball simulation ecosystem that really did require Admin Mode to work properly.
 The snag is that Windows erects protective barriers around an Admin Mode program.
 Those barriers prevent it from interacting with regular User programs.
@@ -28,13 +30,15 @@ But the pinball ecosystem is made up of a bunch of programs that were designed t
 So if you run program X in Admin Mode, and program Y needs to interact with it, then you _also_ have to run program Y in Admin Mode.
 I think you can see where this idea that "you've got to just run everything in Admin Mode all the time" came from - it was a blunt instrument, but it was a way to get around these program interaction problems that Admin Mode created.
 
-Okay, so if "Admin Mode everywhere all the time" is a simple way to solve thorny problems, why am I saying you _shouldn't_ use it? The main reason is that, while it might solve some problems, it creates others.
+Okay, so if "Admin Mode everywhere all the time" is a simple way to solve thorny problems, why am I saying you _shouldn't_ use it?
+The main reason is that, while it might solve some problems, it creates others.
 Microsoft doesn't want you to use Admin Mode routinely for everything, so you're always somewhat fighting with Windows if you do.
 It also reduces your system's security by defeating all the protective mechanisms that Microsoft designed into Admin Mode in the first place.
 
 The right solution - from a security perspective, and in terms of simplicity - is to stop using Admin Mode for _any_ of your pinball software.
 If you run everything in regular User Mode, everything will be able to interact as it was designed to, with no hassles at the system level.
-Remember how I said that this whole Admin Mode fiasco is historical, because it was a requirement for certain components _in the old days_ ? Fortunately, it really is mostly relegated to the past now.
+Remember how I said that this whole Admin Mode fiasco is historical, because it was a requirement for certain components _in the old days_ ?
+Fortunately, it really is mostly relegated to the past now.
 Those old Admin Mode requirements were almost all due to software bugs, not actual engineering requirements, and all the cases that I'm aware of have been fixed in modern versions.
 As of 2020, I don't think that any of the common pin sim components require Admin Mode, as long as you've updated to current versions.
 

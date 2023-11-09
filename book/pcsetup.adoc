@@ -18,7 +18,8 @@ Professional engineers do this with something called a grounding strap, which is
 That keeps you connected to the earth ground the whole time you're working.
 You probably don't have one of these unless you do a lot of electronics work, but you can achieve the same thing by simply touching a metal surface that's connected to earth ground periodically while you're working.
 
-Where do you find a grounded metal surface to touch while working? When you're working on a PC, there's one that's always close at hand: the power supply case.
+Where do you find a grounded metal surface to touch while working?
+When you're working on a PC, there's one that's always close at hand: the power supply case.
 
 Here's what I suggest.
 Before you start any other work, get your power supply out of the box and *plug it in* .

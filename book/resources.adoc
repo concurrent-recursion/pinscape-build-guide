@@ -52,7 +52,7 @@ I used a VirtuaPin flat pack as the basis for my own machine and couldn't be hap
 
 == Pinball cabinet artwork - design
 
-*  link:https://www.vpforums.org/index.php?showuser=50917.html[Stuzza on VP Forums] has long been designing custom cabinet artwork for other forum members.
+*  link:https://www.vpforums.org/index.php?showuser=50917[Stuzza on VP Forums] has long been designing custom cabinet artwork for other forum members.
 You can commission a custom project through him for a fee.
 He doesn't do the printing, just the graphic design work, providing the artwork in digital form ready for printing.
 He also has a large collection of past work that he makes available for free.
@@ -218,7 +218,7 @@ I'd highly recommend considering MJF for any functional mechanical parts.
 Many of the core software components in a virtual pinball machine are open source, meaning that the source code is published for anyone to inspect, customize, and contribute to.
 
 *  link:https://sourceforge.net/projects/vpinball/[Visual Pinball] . The leading open-source pinball simulator and table design tool.
-*  link:https://github.com/mjrgh/DirectOutput.html[DirectOutput Framework (DOF)] . System software that allows applications (Visual Pinball, PinballX) to control feedback devices in the cabinet (lights, solenoids, etc).
+*  link:https://github.com/mjrgh/DirectOutput[DirectOutput Framework (DOF)] . System software that allows applications (Visual Pinball, PinballX) to control feedback devices in the cabinet (lights, solenoids, etc).
 *  link:https://sourceforge.net/projects/b2s-backglass/[B2S Backglass] . Software that works with Visual Pinball to display animated backglass artwork, with the animations synchronized to the game play.
 *  link:https://developer.mbed.org/users/mjr/code/Pinscape_Controller_V2/[Pinscape controller] . KL25Z firmware for an all-in-one virtual pinball I/O controller, with plunger sensing, button input, accelerometer nudge sensing, and feedback device control.
 *  link:http://mjrnet.org/pinscape/PinballY.php[PinballY] . A menu system and game launcher (also known as a "front end") for virtual pin cabs. This lets you browse your games, start games, and switch between games using a graphical arcade-style UI rather than the Windows desktop, to give your cab more of a finished arcade machine feel and disguise the fact that it's a Windows PC under the covers.

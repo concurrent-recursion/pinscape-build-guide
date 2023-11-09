@@ -50,7 +50,8 @@ The actual time it takes to produce any individual frame can vary quite a lot fr
 Some frames might take two or three times as long as the average frame to produce.
 If your average FPS rate is only marginally above the TV's refresh rate, all of those slower-than-average frames will take longer than one refresh cycle to generate, so you'll see a lot of repeated frames and jerky motion.
 
-What makes a frame take longer than average? It's a matter of the complexity of the physics and graphics models that go into making up the frame.
+What makes a frame take longer than average?
+It's a matter of the complexity of the physics and graphics models that go into making up the frame.
 You'll typically see the frame rate slow down during multiball sequences, for example, since the physics engine has to compute the motion of the additional balls.
 
 === How to check your graphics card refresh rate
@@ -178,9 +179,11 @@ I recommend the following basic configuration:
 
 PinAffinity uses those settings by default.
 
-Why three cores for VP? You might have read that Visual Pinball is single-threaded, so it might not seem like it would benefit from more than one core.
+Why three cores for VP?
+You might have read that Visual Pinball is single-threaded, so it might not seem like it would benefit from more than one core.
 It's true that VP's core physics and graphics run on a single thread, but if you look at a VP process with a tool like Process Explorer, you'll see that it has about 20 threads running.
-Where are they all coming from if VP is single-threaded? Mostly from the external subsystems that VP uses.
+Where are they all coming from if VP is single-threaded?
+Mostly from the external subsystems that VP uses.
 VPinMAME runs on its own thread; DirectInput and DirectSound create multiple threads to service I/O events; DOF creates a thread for each output controller it accesses; and most video card graphics drivers create several additional threads.
 
 The main VP physics/rendering thread and the VPinMAME thread each consume significant CPU time; the rest of the threads do little actual computing work, as they only exist to service I/O events and timed events as they occur.
@@ -200,14 +203,16 @@ One of the frequently asked questions on the forums is whether it's better to us
 (Most pin cabs have either two or three monitors: the main playfield TV, the backglass TV, and possibly a third monitor for the score display or "DMD" - the dot matrix display.)
 
 This question actually contains two components, so let's unpack it.
-The first part is: can my video card handle multiple monitors? The second part is: would I get better performance by adding an extra video card for the second and third monitors?
+The first part is: can my video card handle multiple monitors?
+The second part is: would I get better performance by adding an extra video card for the second and third monitors?
 
 The answer to the first part is basically always yes.
 All modern gaming cards have support for multiple monitors and provide built-in ports for connecting two to four monitors.
 And Windows has excellent, fully automatic support for multiple monitors built in.
 When you're setting up your system, there shouldn't be anything special you have to do with either your video card or Windows to configure multiple monitors; you shouldn't have to do anything more than just plugging them all in.
 
-What about performance, though? Intuitively, it seems like more video hardware should translate to faster performance, for the same reasons that CPUs with more cores run faster.
+What about performance, though?
+Intuitively, it seems like more video hardware should translate to faster performance, for the same reasons that CPUs with more cores run faster.
 It seems like an extra card would take some load off the main graphics card.
 In practice, though, adding a second card makes most systems run slower.
 I can only speculate about the reasons for this, but I suspect that it has to do with contention for the data bus that connects the CPU and GPU.

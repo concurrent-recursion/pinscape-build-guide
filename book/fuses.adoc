@@ -79,7 +79,7 @@ LedWiz output port (no boosters)
 |0.5A
 |≥50VDC**
 |Fast
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ500-R.html[Bel Fuse 2JQ 500-R]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ500-R[Bel Fuse 2JQ 500-R]
 
 .2+|image:images/LedWizWBooster-thumb.png[""]
 
@@ -87,7 +87,7 @@ Zeb's LedWiz booster board output port
 |4A
 |≥50VDC**
 |Fast
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ4-R.html[Bel Fuse 2JQ 4-R]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ4-R[Bel Fuse 2JQ 4-R]
 
 .2+|image:images/PinscapePower-thumb.png[""]
 
@@ -95,7 +95,7 @@ Pinscape power board output port
 |5A
 |≥50VDC**
 |Normal
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ5-R.html[Bel Fuse 2JQ 5-R]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ5-R[Bel Fuse 2JQ 5-R]
 
 .2+|image:images/RelayBoard-thumb.png[""]
 
@@ -104,7 +104,7 @@ USB relay board (e.g., Sainsmart) output port
 |≥50VDC**
 |Normal
 
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ5-R.html[Bel Fuse 2JQ 5-R]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ5-R[Bel Fuse 2JQ 5-R]
 
 .2+|image:images/Knocker-thumb.png[""]
 
@@ -113,7 +113,7 @@ Replay knocker & other pinball coils
 |≥50VDC**
 |Slow-blow
 
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-3JS1.5-RTR.html[Bel Fuse 3JS 1.5-R TR]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-3JS1.5-RTR[Bel Fuse 3JS 1.5-R TR]
 
 .2+|image:images/OEM-PSU-thumb.png[""]
 
@@ -122,7 +122,7 @@ OEM/eBay/generic power supply
 |≥PSU output volts DC
 |Normal
 
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=576-0AGC010.V.html[Littelfuse 0AGC010.V]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=576-0AGC010.V[Littelfuse 0AGC010.V]
 
 .2+|image:images/StepUpDown-thumb.png[""]
 
@@ -131,7 +131,7 @@ Step-up/Step-down DC-to-DC voltage converter
 |≥Converter output volts DC
 |Normal
 
-3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ5-R.html[Bel Fuse 2JQ 5-R]
+3+| link:https://www.mouser.com/search/ProductDetail.aspx?R=530-2JQ5-R[Bel Fuse 2JQ 5-R]
 
 |===
 
@@ -185,7 +185,8 @@ Some sellers use "fast" to refer to the extra-fast type, whereas others simply u
 When extra-fast fuses are in the mix, sellers will usually also offer "medium" or "normal" fuses, which refer to the regular fast-blow type, as opposed to extra-fast.
 If a site you're shopping at only offers "fast" and "slow" categories, you can probably assume that the "fast" ones are only the normally fast type.
 
-Which speed class is best for a pin cab? It depends on the type of circuit you're protecting.
+Which speed class is best for a pin cab?
+It depends on the type of circuit you're protecting.
 For most circuits, normal fuses (not time-delayed and not extra-fast) will work well.
 You might consider extra-fast fuses in a few situations where small IC chips are part of the power circuit, specifically for LedWiz controllers, since the small driver chips on those devices can fail quickly when overloaded.
 Slow-blow fuses are useful for circuits driving pinball solenoids, such as replay knockers or chimes.
@@ -243,8 +244,8 @@ image::images/FuseHolder.png[""]
 Note that there are several different sizes of cartridge fuses, so you'll need holders that match the size you're using.
 Here are example holders for the most common sizes (these cover all the fuses linked in this chapter):
 
-**  link:https://www.mouser.com/search/ProductDetail.aspx?R=576-02540201Z.html[5x15mm (2AG)]
-**  link:https://www.mouser.com/search/ProductDetail.aspx?R=576-03540601ZXGY.html[6.3x32mm (3AG)]
+**  link:https://www.mouser.com/search/ProductDetail.aspx?R=576-02540201Z[5x15mm (2AG)]
+**  link:https://www.mouser.com/search/ProductDetail.aspx?R=576-03540601ZXGY[6.3x32mm (3AG)]
 
 These have a screw hole for mounting to just about any surface, so you can mount them directly to your cabinet wall or floor or to a separate piece of plywood that you can later mount in the cabinet.
 If you're using an output controller, I recommend mounting the controller plus the fuses for all of is outputs on its own plywood carrier.
@@ -264,7 +265,7 @@ You can see one of the connectors I use in the lower right of the picture above;
 
 image::images/ControllerAndFusePlug.png[""]
 
-That's a connector from the link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-1122.html[Molex .062"] series, which I found useful for many of the interconnects in my cabinet.
+That's a connector from the link:https://www.mouser.com/search/ProductDetail.aspx?R=538-03-06-1122[Molex .062"] series, which I found useful for many of the interconnects in my cabinet.
 There's more information on these and other options in xref:connectors.adoc#connectors[Connectors] .
 The thing I like about pluggable connectors like this is that they help avoid dumb mistakes.
 You only have to plan out and wire the connectors once, and from then on it's just a matter of plugging the mating connectors back together any time you have to do any work that involves removing something.
@@ -342,7 +343,9 @@ To protect against this danger, we can use a special type of fuse called a "slow
 A slow-blow fuse allows a surge of current to flow briefly, but if the current is sustained for too long, the fuse blows.
 This is exactly what we need to protect pinball coils, which are likewise designed for brief bursts of power, but can't withstand sustained use.
 
-Why are we even worried about this? We only use these coils to simulate bumpers and other things that fire momentarily, so why would the software ever leave them on for long periods? Normally, it wouldn't.
+Why are we even worried about this?
+We only use these coils to simulate bumpers and other things that fire momentarily, so why would the software ever leave them on for long periods?
+Normally, it wouldn't.
 The danger is that the software doesn't always work perfectly.
 Sometimes it crashes, and if it crashes at the wrong moment, it can leave an output stuck on.
 This isn't just a theoretical possibility, either: this has actually happened to other cab builders.
@@ -367,7 +370,8 @@ The types of pinball coils that can benefit from fuses include:
 
 Flippers are more complicated; more on them below.
 
-How do you choose the right slow-blow fuse to protect a pinball coil? It takes a little research and some guesswork.
+How do you choose the right slow-blow fuse to protect a pinball coil?
+It takes a little research and some guesswork.
 
 The first step is to figure the normal operating current for the coil.
 
@@ -391,7 +395,8 @@ They don't give you an exact delay time, just a range of times.
 
 Pinball coils on real machines fire for a fraction of a second, anywhere from a few milliseconds to about half a second.
 We can consider times in this range to be safe for the coil, so we don't want our fuse to blow within the first half-second.
-But how long is too long? Unfortunately, I don't have any hard data on that.
+But how long is too long?
+Unfortunately, I don't have any hard data on that.
 I haven't been willing to sacrifice a bunch of coils to methodically measure burn-out times experimentally, and as far as I know, neither has anyone else.
 So this is where a bit of guesswork comes in.
 Anecdotally, I've heard from a few people who've had their coils get stuck on and burn out.
@@ -422,7 +427,7 @@ The timing chart tells the full story, and in this case the timing chart says th
 In case you're still not convinced, I've been running with this fuse protecting my own AE-26-1200 replay coil, and it hasn't ever blown on a false alarm.
 
 Since this is such a common coil in virtual pinball machines, I'll save you the trouble of finding the 1.5A version of this family.
-Here's the part number and a Mouser link: link:https://www.mouser.com/search/ProductDetail.aspx?R=530-3JS1.5-RTR.html[Bel Fuse 3JS 1.5-R TR] .
+Here's the part number and a Mouser link: link:https://www.mouser.com/search/ProductDetail.aspx?R=530-3JS1.5-RTR[Bel Fuse 3JS 1.5-R TR] .
 
 Wiring the fuse for a knocker is just like wiring a fuse for any other output device.
 The fuse goes between the output port on the controller board and the knocker coil.
@@ -443,7 +448,8 @@ The reason is that flipper coils for real machines are built to tolerate being a
 They have to be, because players routinely hold a flipper up to trap a ball.
 So unlike other pinball coils, these coils are designed to withstand continuous power, and thus don't need to be protected from getting stuck on.
 
-How do they accomplish this, when other coils can't? Their trick is a clever two-coil design.
+How do they accomplish this, when other coils can't?
+Their trick is a clever two-coil design.
 Flipper coils are really two coils in one: two separate coils of wire wrapped around the same core.
 One coil is the high-power "lift" coil, which generates the strong initial force that lifts the flipper from the rest position and propels it (and the ball) through the flipper's arc.
 The other coil is the low-power "hold" coil, which only kicks in when the flipper reaches the top of its arc.

@@ -49,7 +49,7 @@ To order from OSH Park:
 == Parts
 
 * The board (see above)
-* One 2x4-pin 0.1" pin header, such as link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760446.html[Harwin M20-9760446] , or a 2x4 section of a breakaway header (see xref:pinHeaders.adoc#pinHeaders[0.1" Pin Headers] )
+* One 2x4-pin 0.1" pin header, such as link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-9760446[Harwin M20-9760446] , or a 2x4 section of a breakaway header (see xref:pinHeaders.adoc#pinHeaders[0.1" Pin Headers] )
 
 == How to assemble
 

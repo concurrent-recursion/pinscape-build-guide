@@ -4,7 +4,8 @@
 Next time you're watching a TV show or movie, and you notice a pinball machine being played in the background, pay attention to the sound effects.
 I can almost guarantee you that the sound effects will mimic the bells and chimes from a 1960s electromechanical machine, even if the on-screen machine is a 1980s or 1990s solid-state table.
 You and I know that those solid-state machines actually have electronic sound systems that include speech and music, but when you see them in TV and movies, the sound effects will almost always be EM chimes.
-Why is this weird technical gaffe so comically predictable? Maybe in part to avoid music licensing costs, but the main reason, I think, is that the sound designers know that those chimes are what most people think of when think of pinball.
+Why is this weird technical gaffe so comically predictable?
+Maybe in part to avoid music licensing costs, but the main reason, I think, is that the sound designers know that those chimes are what most people think of when think of pinball.
 They're not going for technical accuracy with those sound effects; they're trying to create a sonic impression.
 EM chimes are the "audio icon" for pinball.
 
@@ -82,7 +83,7 @@ More on the acoustics of xylophone-type chimes: link:https://www.mmdigest.com/Ga
 Aside from the xylophone keys, a good chime unit also needs a resonance chamber: a rigid box with an opening on the side facing the chime.
 This serves to sustain the ringing sound for a time after each hammer strike, which creates a more sonorous effect than the chimes alone.
 The size of the box has to be chosen according to the frequency of the adjacent chime, so each bar needs its own box.
-You can find formulas for calculating the resonant frequencies of chambers with various shapes in the Wikipedia article on link:https://en.wikipedia.org/wiki/Acoustic_resonance.html[acoustic resonance] .
+You can find formulas for calculating the resonant frequencies of chambers with various shapes in the Wikipedia article on link:https://en.wikipedia.org/wiki/Acoustic_resonance[acoustic resonance] .
 
 The resonator boxes in the original chime units were made of some kind of hard plastic.
 I don't think the material is critical, as long as it's something rigid and fairly smooth, so that it doesn't absorb much of the sound energy.
@@ -90,7 +91,7 @@ I imagine that you could make this work with 3D-printed plastic.
 
 Here's a forum post about a DIY chime unit (using metal pipes rather than the more conventional bars):
 
-link:https://www.vpforums.org/index.php?showtopic=43988.html[Homemade Tubular Pinball Chimes]
+link:https://www.vpforums.org/index.php?showtopic=43988[Homemade Tubular Pinball Chimes]
 
 === How many chimes?
 
@@ -137,7 +138,8 @@ Chimes and bells were mutually exclusive in the real machines, as far as I've se
 They serve exactly the same purpose and worked the same way, the only difference being the shape of the ringing element.
 The pinball manufacturers probably chose whether to use chimes or bells in a given machine according to parts cost and availability, and perhaps the whims of the game designers.
 
-For a virtual cabinet, should you install bells, chimes, or both? In my opinion, a chime unit should be your first choice.
+For a virtual cabinet, should you install bells, chimes, or both?
+In my opinion, a chime unit should be your first choice.
 Chimes were by far the most common noisemaker in the real EM machines over the years, so a chime unit will create the most authentic simulation for most games; and a chime unit can easily stand in for shell bells for games that used those instead.
 My second choice would be a chime unit _plus_ a pair of shell bells (one large and one small), if your budget allows it and you have space in your cabinet.
 Shell bells do have a different tonal quality compared to chimes, so they'll add some variety to your EM games, and they'll give you better authenticity for games that used them.

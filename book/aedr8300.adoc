@@ -126,7 +126,7 @@ I think the current Stern plungers are the same size as well, but I haven't conf
 You should also buy the special mounting plate for the shooter assembly, Williams part #01-3535.
 It's only about $2 and it makes it much easier to install.
 +
-Buy at PinballLife: link:https://www.pinballlife.com/index.php?p=product&id=133.html[Plunger assembly] | link:https://www.pinballlife.com/index.php?p=product&id=127.html[Mounting plate]
+Buy at PinballLife: link:https://www.pinballlife.com/index.php?p=product&id=133[Plunger assembly] | link:https://www.pinballlife.com/index.php?p=product&id=127[Mounting plate]
 
 Fasteners:: The following fasteners are recommended:
 
@@ -165,7 +165,8 @@ Read through the installation steps before you open the pouch, and make sure you
 There's no need to panic, though.
 The guidelines for this chip say that it's okay to solder for up to 168 hours (7 days) after opening the package.
 
-What happens if you go past the 168-hour deadline, or the moisture indicator card in the packaging shows a breach? The data sheet has a straightforward solution: "bake" the chip, placing it in an oven at 60° C (140° F) for 48 hours.
+What happens if you go past the 168-hour deadline, or the moisture indicator card in the packaging shows a breach?
+The data sheet has a straightforward solution: "bake" the chip, placing it in an oven at 60° C (140° F) for 48 hours.
 That'll gently exorcise any trapped moisture and restore the chip to a happily desiccated state.
 That'll give you a fresh 168-hour window to complete soldering.
 
@@ -233,7 +234,7 @@ This is surprisingly easy even if you've never done it before.
 Solder paste is a special mixture of solder and glue that you can spread onto the pads like Cheez Whiz.
 Regular solder is solid at room temperature, but solder paste is a tacky goo - very much like paste, as the name suggests.
 
-Here's the solder paste I use: link:https://www.amazon.com/gp/product/B00M1RC0YY/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1.html[MG Chemicals 4860P-35G] .
+Here's the solder paste I use: link:https://www.amazon.com/gp/product/B00M1RC0YY/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1[MG Chemicals 4860P-35G] .
 
 The first step is to smear the paste onto the pads.
 If you use the MG paste, it comes in a syringe with a needle dispenser.
@@ -657,7 +658,8 @@ If you're using the standalone KL25Z, select the pins you wired to the sensor's 
 I recommend enabling the "auto-zeroing" feature, and setting a fairly long delay time, perhaps 60 seconds. 
 If this feature is enabled, the Pinscape firmware will "zero" the plunger when it hasn't moved at all in the amount of time you specify. 
 Zeroing means that the firmware assumes the plunger is exactly at the normal rest position. 
-Why do this? Because the AEDR-8300 is a purely "relative" position sensor. 
+Why do this?
+Because the AEDR-8300 is a purely "relative" position sensor.
 That means it doesn't ever know the plunger's true position; it only knows how far it's moved since the system was turned on. 
 If the sensor ever misses a tiny bit of physical motion, the sensor's notion of the relative position will get a little out of sync with the true position. 
 Auto-zeroing corrects for this by forcing the internal position counter back to the starting position whenever the plunger is motionless for a long time. 

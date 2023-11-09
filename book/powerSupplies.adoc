@@ -88,7 +88,7 @@ The easiest way is to simply daisy-chain a hookup wire from one power supply gro
 
 A somewhat neater approach is to install a "power distribution block" or "ground bar".
 This is basically a metal bar with a number of screw terminals for attaching wires; since it's one big metal bar, all the terminals are electrically connected, so any wires you connect will all be shorted together, exactly as we want.
-Adafruit makes a nice power block that you can buy directly from their site or via retailers like Mouser.com: link:https://www.mouser.com/search/ProductDetail.aspx?R=485-737.html[Adafruit 737] .
+Adafruit makes a nice power block that you can buy directly from their site or via retailers like Mouser.com: link:https://www.mouser.com/search/ProductDetail.aspx?R=485-737[Adafruit 737] .
 It looks like this:
 
 image::images/Adafruit737.png[""]
@@ -238,7 +238,7 @@ Like the soft-on circuit, you can work around this and force the PSU to operate,
 You can't just cross a pair of wires in this case; what you have to do is provide the minimum load that the sensor is looking for.
 
 The easiest way to set up a minimum load is by installing a resistor between a *red* and *black* wire in the motherboard connector (the same connector that has the green wire for the soft-on circuit).
-Use a *10Ω, 10W* resistor, such as a link:https://www.mouser.com/search/ProductDetail.aspx?R=280-CR10-10-RC.html[Xicon 280-CR10-10-RC] .
+Use a *10Ω, 10W* resistor, such as a link:https://www.mouser.com/search/ProductDetail.aspx?R=280-CR10-10-RC[Xicon 280-CR10-10-RC] .
 
 As with the soft-on circuit, you can wire this to the ATX motherboard connector plug by inserting wires into the sockets, or you can clip the wires and solder them to the resistor leads.
 There are several black wires and several red wires going to the 24-pin connector; you can pick any of them, since they're all wired together inside the power supply.
@@ -292,8 +292,8 @@ The slightly more difficult, but neater and cleaner, way to use these is to buil
 The official brand name for the connectors is Amp Mate-N-Lok.
 Here are the parts you need to build a housing with crimp pins:
 
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260.html[TE/AMP 1-480426-0] 4-pin housing
-*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201.html[TE/AMP 60620-1] male crimp pins, quantity 4 per housing
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-14804260[TE/AMP 1-480426-0] 4-pin housing
+*  link:https://www.mouser.com/search/ProductDetail.aspx?R=571-606201[TE/AMP 60620-1] male crimp pins, quantity 4 per housing
 
 These are crimp-pin housing, so it's best to use a crimping tool to assemble them.
 See xref:crimpPins.adoc#crimpPins[Crimp Pins] .
@@ -541,7 +541,8 @@ See xref:#OEMPowerSupplies[OEM power supplies] earlier in this chapter for instr
 Follow the instructions in the 6.3V converter section, except that when you search for the part on eBay, look for a "DC-to-DC *step-up* converter".
 The "step-up" part is key, because you need a converter that can convert from 24V to a higher voltage.
 
-Which option is better? It depends on your setup, since each solutions has pros and cons.
+Which option is better?
+It depends on your setup, since each solutions has pros and cons.
 A dedicated 48V supply is easier to set up and will have much higher power limits (Amps/Watts).
 But a step-up converter is cheaper and takes up less space.
 

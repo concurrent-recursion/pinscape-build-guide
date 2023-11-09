@@ -42,7 +42,7 @@ If you're not fond of soldering, you might prefer this to soldering the extra pa
 
 This is a new version of the board that I drew up in February, 2021.
 I had to come up with this new design because the 6.3V regulator chip used in the original version 1 design is no longer in production.
-The old design is still available, of course; see xref:html#CoinDoorBoardVersion1[Version 1] below.
+The old design is still available, of course; see xref:#CoinDoorBoardVersion1[Version 1] below.
 Feel free to use the old design if you prefer it, but just be aware that you might not be able to find the 6.3V regulator chip it calls for.
 
 WARNING: This new version hasn't been tested yet.
@@ -53,12 +53,13 @@ If you're not feeling so adventurous, you might want to stick with the version 1
 
 *Parts list:* See xref:partslist.adoc#WilliamsCoinDoorConnectorV2PartsList[Electronic Parts List] .
 
-*Screw terminals or pin headers:* The parts list calls for Phoenix Contact screw terminals for JP1 and JP2, which are the places where you connect the wiring that goes out to your key encoder and power supply.
+=== Screw Terminals or Pin Headers
+The parts list calls for Phoenix Contact screw terminals for JP1 and JP2, which are the places where you connect the wiring that goes out to your key encoder and power supply.
 I used the screw terminals in the design because many pin cab builders like the simplicity of wiring them.
 With screw terminals, you just strip a quarter inch or so from the end of the wire, insert the end of the wire into the terminal, and tighten the screw to clamp it in place.
 No special tools are required.
 
-The parts list links to Phoenix Contact parts on Mouser.com for the screw terminals, but you can also find cheaper generic versions here: link:https://www.pololu.com/category/177/0.1-2.54-mm-screw-terminal-blocks.html[www.pololu.com/category/177/0.1-2.54-mm-screw-terminal-blocks] .
+The parts list links to Phoenix Contact parts on Mouser.com for the screw terminals, but you can also find cheaper generic versions here: link:https://www.pololu.com/category/177/0.1-2.54-mm-screw-terminal-blocks[www.pololu.com/category/177/0.1-2.54-mm-screw-terminal-blocks] .
 
 If you prefer, you can use standard 0.1" straight pin headers in place of the screw terminals.
 I personally prefer pin headers in most cases, because they mate with pluggable connectors that can be easily plugged and unplugged.
@@ -85,42 +86,46 @@ Connect power for the coin chute lamps as described above (use a 12V power suppl
 Plug the 13-pin connector from the coin door into the mating pin header on the board.
 
 The terminals on JP1 all connect to your key encoder, to allow the switches in the coin door to send button input signals to the virtual pinball software on the PC.
+
 The switch outputs on the board are labeled as follows:
 
-* L = left coin switch
-* M = middle coin switch (not used on US two-chute coin doors)
-* R = right coin switch
-* Cn = Service Cancel/Escape
-* - = Service Down/-
-* + = Service Up/+
-* En = Service Enter/Select
-* T = Slam tilt switch
-* Co = all-switch common wire
+`L`:: Left coin switch
+`M`:: Middle coin switch (not used on US two-chute coin doors)
+`R`:: Right coin switch
+`Cn`:: Service Cancel/Escape
+`-`:: Service Down/-
+`+`:: Service Up/+
+`En`:: Service Enter/Select
+`T`:: Slam tilt switch
+`Co`:: All-switch common wire
 
 The terminals on JP2 connect to power for the coin slot lamps.
 There are several ways to connect these terminals, depending on (a) whether or not you installed the 6.3V regulator parts, and (b) whether you want the coin slot lamps to be on all the time or controlled by software on the PC (via xref:DOF.adoc#dofSetup[DOF] ).
 Here are the instructions for each combination:
 
-*  *With 6.3V regulator, lamps always ON:*
-** +LAMP not connected, *or* you can use +LAMP as a 6.3V power source for up to four additional #555 bulbs
-** LAMP- to 12V power supply (-) terminal (0V/GND, black wire on ATX disk plugs)
-** -12V same as LAMP-
-** 12V+ to 12V power supply (+) terminal (yellow wire on ATX disk plugs)
-*  *With 6.3V regulator, lamps controlled by DOF:*
-** +LAMP not connected, *or* you can use +LAMP as a 6.3V power source for up to four additional #555 bulbs
-** LAMP- to feedback controller output port (LedWiz, Pinscape, etc) assigned to coin slot lamps
-** -12V same as LAMP-
-** 12V+ to 12V power supply (+) terminal (yellow wire on ATX disk plugs)
-*  *No 6.3V regulator, lamps always ON:*
-** +LAMP to your 5V or 6.3V power supply (+) terminal (red wire on ATX disk plugs)
-** LAMP- to your 5V or 6.3V power supply (-) terminal (0V/GND, black wire on ATX disk plugs)
-** -12V not connected
-** 12V+ not connected
-*  *No 6.3V regulator, lamps controlled by DOF:*
-** +LAMP to your 5V or 6.3V power supply (+) terminal (red wire on ATX disk plugs)
-** LAMP- to feedback controller output port (LedWiz, Pinscape, etc) assigned to coin slot lamps
-** -12V not connected
-** 12V+ not connected
+With 6.3V regulator, lamps always ON::
+* +LAMP not connected, *or* you can use +LAMP as a 6.3V power source for up to four additional #555 bulbs
+* LAMP- to 12V power supply (-) terminal (0V/GND, black wire on ATX disk plugs)
+* -12V same as LAMP-
+* 12V\+ to 12V power supply (\+) terminal (yellow wire on ATX disk plugs)
+
+With 6.3V regulator, lamps controlled by DOF::
+* +LAMP not connected, *or* you can use +LAMP as a 6.3V power source for up to four additional #555 bulbs
+* LAMP- to feedback controller output port (LedWiz, Pinscape, etc) assigned to coin slot lamps
+* -12V same as LAMP-
+* 12V\+ to 12V power supply (\+) terminal (yellow wire on ATX disk plugs)
+
+No 6.3V regulator, lamps always ON::
+* \+LAMP to your 5V or 6.3V power supply (\+) terminal (red wire on ATX disk plugs)
+* LAMP- to your 5V or 6.3V power supply (-) terminal (0V/GND, black wire on ATX disk plugs)
+* -12V not connected
+* 12V+ not connected
+
+No 6.3V regulator, lamps controlled by DOF::
+* +LAMP to your 5V or 6.3V power supply (\+) terminal (red wire on ATX disk plugs)
+* LAMP- to feedback controller output port (LedWiz, Pinscape, etc) assigned to coin slot lamps
+* -12V not connected
+* 12V+ not connected
 
 If you didn't build the 6.3V regulator, you can use either a 5V or 6.3V power supply to power the coin slot lamps.
 6.3V is preferable since that's the voltage the bulbs are designed for; they'll work at 5V but won't be as bright.
@@ -132,7 +137,7 @@ That's safe for any Pinscape flasher port or power board port, and it's right at
 (So it might work with an LedWiz, but you'll be pushing your luck a bit; a booster circuit in this case would be a good idea.
 See the xref:ledwiz.adoc#ledwizSetup[LedWiz] chapter for help on adding booster circuits.) If you replaced the bulbs with LEDs, they'll use much less power, probably about 30mA per bulb at most, which makes them safe to use with an LedWiz directly, with no booster.
 
-
+[#CoinDoorBoardVersion1]
 == Version 1
 
 This section covers my original version of the board.
@@ -152,15 +157,19 @@ It might still be possible to find surplus parts on eBay, although that can be s
 Unfortunately, I don't know of any suitable substitute for the chip that will work with this board design.
 That's the whole reason I designed the new version 2 board above; there _are_ other chips that will do the job, but they all require slightly different circuit designs, so I had to change the board layout a bit.
 
-*To manufacturer the board:* simply upload the .brd file from the plans above to link:https://www.oshpark.com/[OSH Park] , or a different PCB maker or your choice.
+=== To manufacturer the board
+Simply upload the .brd file from the plans above to link:https://www.oshpark.com/[OSH Park] , or a different PCB maker or your choice.
 (Other PCB makers usually require Gerber files rather than .brd files.
 You can create those with the free version of EAGLE.)
 
-*To build the board _with_ the 6.3V regulator:* Solder all the listed parts to the board.
+=== To build the board _with_ the 6.3V regulator
+Solder all the listed parts to the board.
 Connect 12V from your secondary ATX power supply (the one you use for feedback devices: see xref:powerSupplies.adoc#powerSupplies[Power Supplies for Feedback] ) to the two-pin header labeled "12V IN".
 You can use the two-pin header marked *6.3V* as a power supply for other 6.3V button lamps, as long as you don't exceed 1.5A, or a total of 6 incandescent #555 bulbs (including the ones in the coin chutes).
 
-*To build it _without_ the 6.3V regulator:* Don't install any of the voltage regulator parts (C1, C11, Q1, or the 12V input pin header).
+=== To build it _without_ the 6.3V regulator
+Don't install any of the voltage regulator parts (C1, C11, Q1, or the 12V input pin header).
+
 Install only the main 13-pin header, the 10-pin header for the switch outputs, and the 2-pin header marked *6.3V* .
 Connect the 6.3V header on the board to your external 6.3V power supply; this will feed the 6.3V directly to the coin chute lamps.
 
@@ -174,16 +183,16 @@ See xref:connectors.adoc#connectors[Connectors] for details on building the plug
 image::images/WilliamsCoinDoorPCBPinOut.png[""]
 The switch outputs on the board are labeled as follows:
 
-* L = left coin switch
-* M = middle coin switch (not used on US two-chute coin doors)
-* R = right coin switch
-* Cn = Service Cancel/Escape
-* - = Service Down/-
-* + = Service Up/+
-* En = Service Enter/Select
-* T = Slam tilt switch
-* Co = all-switch common wire
+`L`:: Left coin switch
+`M`:: Middle coin switch (not used on US two-chute coin doors)
+`R`:: Right coin switch
+`Cn`:: Service Cancel/Escape
+`-`:: Service Down/-
+`+`:: Service Up/+
+`En`:: Service Enter/Select
+`T`:: Slam tilt switch
+`Co`:: All-switch common wire
 
-Note that the pin between "T" and "Co" isn't connected to anything on the board.
+Note that the pin between `T` and `Co` isn't connected to anything on the board.
 9-pin housings aren't readily available, so I added an extra unused pin to make it easier to find the matching connector.
 

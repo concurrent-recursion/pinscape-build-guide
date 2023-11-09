@@ -71,7 +71,8 @@ The gauge scale is kind of backwards: larger AWG numbers mean thinner wire.
 
 18 AWG is thicker than 22 AWG.
 
-How do you choose a gauge? There are two constraints that generally bracket the size of wire you can use for a given function:
+How do you choose a gauge?
+There are two constraints that generally bracket the size of wire you can use for a given function:
 
 * The current carrying requirement of the function, which sets a minimum thickness
 * What kind of connectors the wire will fit into
@@ -269,7 +270,7 @@ Some of the home-brew pinball people use this.
 
 (Yes, there really is such a thing as home-brew pinball - people who build _physical_ pinball machines of their own design from scratch.) Here's a page on the subject on one of the DIY pinball sites:
 
-link:https://pinballmakers.com/wiki/index.php?title=Construction.html#Color_Coding[Color coding - pinballmakers.com]
+link:https://pinballmakers.com/wiki/index.php?title=Construction#Color_Coding[Color coding - pinballmakers.com]
 
 Their approach is as follows:
 

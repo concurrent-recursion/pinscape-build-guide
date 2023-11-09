@@ -250,7 +250,8 @@ VP lets you override it on an effect-by-effect basis.
 First, let's think about why the rule is set up this way in the first place.
 The ROM soundtrack is the game's original soundtrack from the arcade game, so on the _real_ version of the machine, all the sounds from the ROM were played back through the real machine's backbox speakers.
 So it makes sense that we'd want to do the same thing in a virtual cab.
-What about the "non-ROM" sounds? Those are sound effects that the VP table author added into the simulation of the table.
+What about the "non-ROM" sounds?
+Those are sound effects that the VP table author added into the simulation of the table.
 These are almost all meant to simulate the sound made by something mechanical on the playfield, like the ball rolling around and bumping into things, bumpers bumping, etc.
 So in almost all cases, you want these to sound like they're coming from the playfield area rather than from the backbox.
 
@@ -279,7 +280,8 @@ The process in VP 9 is rather ugly: you have to export the sound effect to a WAV
 What's more, some VP versions have a bug that won't let you export a sound that's been set to the backglass output, so you're kind of stuck.
 The best workaround would be to download a fresh copy of the table, export the sound from that fresh copy, and import the sound into your modified version of the game.
 
-What about changing some of the ROM sounds to play back through the table effects speakers? Sorry; it can't be done.
+What about changing some of the ROM sounds to play back through the table effects speakers?
+Sorry; it can't be done.
 all the ROM sounds are handled by VPinMAME, which doesn't have any options for changing the speakers for a specific sound.
 Remember that the ROM software is more of a "black box" than a VP table, since it's emulating an old arcade machine that didn't work like a PC with modern abstractions like WAV files.
 VPinMAME doesn't have any way to make a simple list of the sounds in a ROM that you could use to choose speakers like you can with the table sounds in VP.

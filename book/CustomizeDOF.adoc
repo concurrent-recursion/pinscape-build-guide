@@ -25,12 +25,13 @@ You can always come back to it later.
 If you're creating your own original table, or a re-creation of a real table that no one has implemented in VP before, you'll want an entry for the table in your DOF config files.
 And assuming you're generating your files with the link:https://configtool.vpuniverse.com/[DOF config tool] , that means adding an entry to the online database.
 
-So how do you add a new table to the online database? Well, you can't - not directly, at least.
+So how do you add a new table to the online database?
+Well, you can't - not directly, at least.
 There's no provision for users to add new tables, even private ones.
 Only the site administrators can do that.
 Fortunately, said administrators' attitude is that every table under the sun should be included in the master list, and they've always been quick to respond when I've suggested missing tables.
 So the way to get a new table added is to request it from the site admins.
-The best way I've found to reach them is to post the request to the following forum on link:https://vpuniverse.com/forums/forums.html[VPUniverse] : Digital Pinball Cabinets > Direct Output Framework > Direct Output Support.
+The best way I've found to reach them is to post the request to the following forum on link:https://vpuniverse.com/forums[VPUniverse] : Digital Pinball Cabinets > Direct Output Framework > Direct Output Support.
 
 == How to customize an existing table
 
@@ -122,7 +123,8 @@ So unlike the old EM tables, you _won't_ find anything in the Visual Basic scrip
 Most DOF events are instead keyed to the things that the ROM controls through VPinMAME: the kicker solenoids, the playfield lamps, the rollover switches, etc.
 There's no point in searching through the Visual Basic script for _Medieval Madness_ to find out where the script deploys the trolls, because it doesn't; the ROM software deploys the trolls.
 
-If you can't find this stuff in the Visual Basic scripts, where do you look for it, then? Well, we _could_ look at the Visual Basic equivalent in these games - namely the ROM scripts themselves.
+If you can't find this stuff in the Visual Basic scripts, where do you look for it, then?
+Well, we _could_ look at the Visual Basic equivalent in these games - namely the ROM scripts themselves.
 And you can, if you're good at reading 6802 machine language in binary/hex format.
 But you sure wouldn't want to.
 And fortunately we don't have to.
@@ -250,7 +252,8 @@ The solenoid numbers displayed there are the PinMAME solenoid numbers, and thus 
 If the window says "Solenoid 19 is on", we know we're talking about DOF "S19".
 So what we're going to do is load the table that you want to map into VPinMameTest and then fire each of its solenoids in turn.
 
-But how do we get the solenoids to fire? We're going to use the game's own built-in test menu.
+But how do we get the solenoids to fire?
+We're going to use the game's own built-in test menu.
 Almost every electronic pinball from the mid 1980s onward has a set of operator menus for adjusting game settings and running diagnostics.
 The diagnostics usually include a solenoid test mode, which lets you cycle through all the solenoids in the game and fire each one.
 On the real machines, repair people would use this to test the mechanical action on the playfield to make sure that each coil is firing like it should be.
@@ -339,7 +342,8 @@ Good luck!
 The second thing you have to know about AUTO/UP - MANUAL/DOWN is that it means three different things, depending on context.
 What they mean by the name is this: sometimes it's the UP/DOWN button, and sometimes it's the AUTO/MANUAL button.
 And they didn't even have room to print this on the label, but sometimes it's the ADJUST/TEST button.
-Got it? Probably not...
+Got it?
+Probably not...
 so here are the contexts where the modes apply:
 
 * When you're *not in any menu* (in other words, when the game is in attract mode), it's the TEST/ADJUST button.

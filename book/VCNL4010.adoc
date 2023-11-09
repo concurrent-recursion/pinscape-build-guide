@@ -11,7 +11,8 @@ I added support for this sensor mainly because several people who owned the Virt
 The VirtuaPin controller is based on the same retail KL25Z board that Pinscape runs on, so you can re-flash the board with the Pinscape firmware if you really want to, but until recently, doing so required replacing the Virtuapin plunger sensor with a different sensor that the older Pinscape software supported, such as a potentiometer or a quadrature sensor. 
 Now that the Pinscape firmware also supports the VCNL4010, you can migrate without changing any of the hardware.
 
-What if you don't own the VirtuaPin plunger kit - should you still consider this sensor? My answer is a qualified "yes": it has some really good features, but it also has some drawbacks. 
+What if you don't own the VirtuaPin plunger kit - should you still consider this sensor?
+My answer is a qualified "yes": it has some really good features, but it also has some drawbacks.
 If you've read the chapter on the somewhat similar VL6180X sensor, or if you've seen some of my posts on the forums related to IR sensors, you probably know that I'm not too keen on the various IR sensors in general as pin cab plunger sensors. 
 Most of them just aren't very good at measuring distance. 
 But this chip actually produces pretty decent results. 
@@ -37,7 +38,7 @@ You can buy a fully assembled VCNL4010 circuit board from link:https://www.adafr
 This is lucky for us, because the bare chips are challenging to solder by hand (they're really intended for machine soldering). 
 The pre-fab boards make them easy to use.
 
-link:https://www.adafruit.com/product/466.html[Adafruit VCNL4010 breakout board] ($7.50 + shipping)
+link:https://www.adafruit.com/product/466[Adafruit VCNL4010 breakout board] ($7.50 + shipping)
 
 The Adafruit board has easy-to-use solder terminals, and it can be wired directly to the KL25Z. 
 No other hardware is required (besides wire).
@@ -79,7 +80,7 @@ Don't connect anything to those terminals.
 
 === Expansion board wiring
 
-For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ). 
+For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042[pins] ).
 First crimp a pin to the end of each wire (see xref:crimpPins.adoc#crimpPins[Crimp Pins] ). 
 Insert the pins in the housing, following the diagram below for the pin placement.
 
@@ -167,17 +168,18 @@ If you can see that pattern reliably with the sensor near the all-the-way-back e
 
 == Plug it in
 
-*Expansion boards:* Once you've built the connector as shown above, simply plug it into the plunger connector on the main expansion board. 
+Expansion boards::
+Once you've built the connector as shown above, simply plug it into the plunger connector on the main expansion board.
 Make sure the plug orientation is correct by match pin 1 in the housing (see the xref:#expHdrDiagram[diagram] ) with the pin 1 triangle printed on the expansion board.
-
++
 image::images/MainBoardPlungerHeader.png[""]
 
-*Standalone KL25Z:* If you're using the plunger sensor breakout board (recommended), build the expansion board connector as described above, and just plug it in to the pin header on the breakout board. 
-Be sure pin 1 on the plug (see the xref:html#expHdrDiagram[diagram] ) to pin 1 on the board, which is marked with a little white triangle printed next to the header.
-
+Standalone KL25Z:: If you're using the plunger sensor breakout board (recommended), build the expansion board connector as described above, and just plug it in to the pin header on the breakout board.
+Be sure pin 1 on the plug (see the xref:#expHdrDiagram[diagram] ) to pin 1 on the board, which is marked with a little white triangle printed next to the header.
++
 image::images/plunger-breakout-pin1.png[""]
-
-If you prefer to use your own ad hoc wiring, connect the wires between the board and the KL25Z as shown below.
++
+If you prefer to use your own ad-hoc wiring, connect the wires between the board and the KL25Z as shown below.
 
 [cols="1,1"]
 |===
@@ -358,7 +360,8 @@ Technically, that's all the information this sensor is supposed to give us; we'r
 But we could "abuse" the brightness reading by treating it as a continuous quantity, instead of just comparing it to a single threshold, using the physics principle that the amount of reflected light should be inversely related to the distance to the reflecting object. 
 The reflected brightness is essentially a proxy for the distance.
 
-That might seem perfectly reasonable, so why do I call this an "abuse"? Simply because it's not what the chip is designed for. 
+That might seem perfectly reasonable, so why do I call this an "abuse"?
+Simply because it's not what the chip is designed for.
 The brightness might be usable as a proxy for distance, but it's not necessarily a _good_ proxy. 
 A good proxy would have a well-defined relationship to distance, so that we can precisely calculate the distance corresponding to any given sensor reading. 
 This chip's designers weren't at all trying to achieve that, and the chip's data sheet is silent on exactly what the relationship to distance might be, other than providing some rough plots of test data for a simple reference setup.

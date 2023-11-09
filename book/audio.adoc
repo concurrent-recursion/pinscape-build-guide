@@ -257,7 +257,8 @@ This type of setup is actually easy to implement on Windows, as long as your mot
 The secret is to *let Windows handle the crossover* , so that you don't need a separate crossover circuit in the amplifier, which a 2.1-channel amp would normally provide.
 Your PC audio outputs should include a jack with "Center/Subwoofer" output, usually color-coded orange.
 
-Why would you want to do this? Because it gives you more options when shopping for amplifiers.
+Why would you want to do this?
+Because it gives you more options when shopping for amplifiers.
 You don't have to limit yourself to the small number of 2.1 amplifiers available; you can use just about any car amp.
 
 ====  Wiring with a monoblock amp
@@ -517,7 +518,8 @@ Key features to note:
 * Let me say that again, because it's too crazy to read right the first time: the *Front* speakers plug into the *Rear Surround* jack
 * The amp for the *rear speakers* connects to the *Side Surround* audio jack on the PC
 
-What's up with that bizarre wiring with the *Front* speakers connected to the *Rear* surround jack on the PC? I know it sounds crazy.
+What's up with that bizarre wiring with the *Front* speakers connected to the *Rear* surround jack on the PC?
+I know it sounds crazy.
 The way to make sense of it is to think about the way surround sound works in a *home theater* setup.
 The surround sound feature in Windows is all designed around the home theater way of thinking.
 Home theater people think in terms of a speaker layout like this, with the listener at the center, and speakers placed around the perimeter of the room:
@@ -530,7 +532,8 @@ This is an overhead view; the figure at the center is the listener.
 
 Windows is very attached to the idea that the speakers have this specific spatial layout.
 When the Visual Pinball developers were adding the surround sound feature, they had to work with that layout.
-So how does this map onto a pin cab most easily? Like this:
+So how does this map onto a pin cab most easily?
+Like this:
 
 image::images/home-theater-to-pinball-mapping.png[alt="Diagram showing surround sound speaker placement overlayed with pinball cabinet"]
 
@@ -602,7 +605,8 @@ I personally prefer discrete feedback devices for the solenoid effects, as I fin
 
 == Volume controls
 
-Your amplifiers probably have volume knobs. But here's the problem: do you think you're going to want to open up your cabinet and adjust those knobs every time you want to turn the sound up or down? Certainly not. You're going to want some kind of external volume controls instead.
+Your amplifiers probably have volume knobs. But here's the problem: do you think you're going to want to open up your cabinet and adjust those knobs every time you want to turn the sound up or down?
+Certainly not. You're going to want some kind of external volume controls instead.
 
 Pin cab builders over the years have come up with several ways to approach this. Some of the early cab builders were stuck on the idea that you had to use the volume knob to adjust loudness, so they came up with ways to accomplish that without having to take apart the cab every time:
 
@@ -673,7 +677,7 @@ This is my favorite approach because it's so convenient, and it doesn't require 
 
 * Add a rotary encoder dial. This can be mounted anywhere a button can be mounted, but it gives you a combined Up/Down control in one small knob, so it's somewhat less conspicuous than a pair or trio of buttons. Some dials can also act as a pushbutton when you press the knob, which makes an intuitive place for the Mute button, giving you three controls in one. See this thread on vpforums:
 
-link:https://www.vpforums.org/index.php?showtopic=42812.html[www.vpforums.org/index.php?showtopic=42812]
+link:https://www.vpforums.org/index.php?showtopic=42812[www.vpforums.org/index.php?showtopic=42812]
 
 This is my second-favorite option after using "Shifted" buttons. A lot of people consider it their top choice because a knob is so natural as a volume control. The only reason I rank it second-best is that it _is_ , after all, another control.
 

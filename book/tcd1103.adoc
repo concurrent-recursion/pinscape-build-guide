@@ -768,7 +768,8 @@ image::images/tcd1103-align-1.png[""]
 
 image::images/tcd1103-align-2.png[""]
 
-How precise do we have to be? The sensor's field of view side-to-side is only one pixel wide, which translates to a fraction of a millimeter along the plunger. 
+How precise do we have to be?
+The sensor's field of view side-to-side is only one pixel wide, which translates to a fraction of a millimeter along the plunger.
 The "target" that we're trying to image - the white paper reflector - is about a centimeter wide. 
 So we only have to get our little one-pixel sliver to overlap that centimeter-wide target. 
 It's a broadside-of-the-barn situation.
@@ -817,11 +818,13 @@ If either end is out of view, try adjusting the mounting bracket rotation again 
 
 Things to watch out for:
 
-* What if you simply can't get both ends of the range in view, because the field of view isn't wide enough for the travel range? This means that the sensor is too close to the plunger. 
+* What if you simply can't get both ends of the range in view, because the field of view isn't wide enough for the travel range?
+This means that the sensor is too close to the plunger.
 The positioning I recommended is based on testing with my M12 lens with 16mm focal length, but I'm not sure how consistent these cheap no-brand lenses are from batch to batch. 
 It's possible that the field of view won't be quite the same with different lenses, which might mean you have to adjust the distance between the sensor and the plunger. 
 If the field of view isn't wide enough, you'll have to increase the distance.
-* What if the bright region starts disappearing halfway along the travel range? This probably means that the sensor's pixel window isn't close enough to parallel to the plunger, so that the plunger moves "diagonally", relative to the sensor, as you pull it back. 
+* What if the bright region starts disappearing halfway along the travel range?
+This probably means that the sensor's pixel window isn't close enough to parallel to the plunger, so that the plunger moves "diagonally", relative to the sensor, as you pull it back.
 In this case, you'll have to try to get the sensor lined up better with the plunger axis, by rotating the sensor slightly on the mounting bracket.
 
 *Focus:* We're almost done. 

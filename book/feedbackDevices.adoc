@@ -20,36 +20,46 @@ We'll try to cover all the details: how to set up the PC software, what to buy f
 The whole idea of feedback devices is completely outside of our everyday experience as PC users, so if you're new to pin cabs, you probably have a lot of questions about how this works.
 I'll try to answer the big ones here.
 
-*How can a PC control all this stuff? Lights, motors, solenoids, etc?* Using a special hardware device called an "output controller".
+How can a PC control all this stuff? Lights, motors, solenoids, etc?::
+Using a special hardware device called an "output controller".
 You have to buy one of these (or build one, if you're using Pinscape) and connect it to your PC, usually with a USB cable.
 The controller is the bridge between the PC and the physical devices.
 The controller has wiring terminals, called "ports", where you connect the lights, motors, and solenoids.
 Once the feedback devices are wired to the ports, and the output controller is connected to the PC, software on the PC can send commands to the output controller to turn the attached feedback devices on and off or to different intensity (brightness) levels.
-
++
 You can find a list of the available output controller options, with a detailed comparison of features, in xref:ioControllers.adoc#ioControllers[I/O Controllers] .
 
-*Does that output controller need device drivers?* Not in most cases, but it depends on which type of controller you're using.
+
+Does that output controller need device drivers?::
+Not in most cases, but it depends on which type of controller you're using.
 The LedWiz, PacLed, and Pinscape don't require any device drivers; the SainSmart relay boards do.
 If your device needs drivers, its documentation should cover that.
 
-*How many different feedback devices can I have?* There's no upper limit as far as the PC is concerned, but each controller has its own limit for how many devices it can connect to.
+How many different feedback devices can I have?::
+There's no upper limit as far as the PC is concerned, but each controller has its own limit for how many devices it can connect to.
 A single LedWiz can control 32 devices.
 Most of the SainSmart relay boards can handle 8 outputs.
 The Pinscape expansion boards can handle 65 outputs in the typical setup, but you can add modules for up to 128 outputs if you need more (which you probably won't!).
 You're not limited to a single controller, either, so if you need more ports, you can usually just add another controller.
 all the controllers can coexist with one another, too, so you can mix and match them if you need different capabilities.
 
-*How do games know about my shaker motor? My flippers? Etc?* That's handled in some software you run on the PC.
+How do games know about my shaker motor?
+My flippers?
+Etc?::
+That's handled in some software you run on the PC.
 There's a suite of software that almost everyone uses to make this all work, and it has a setup procedure where you enter information about your feedback devices.
 You tell the software if you have a shaker motor, flipper solenoids, flasher lights, etc, and you enter information on how they're wired to your output controller (more on this shortly).
 
-*Do I have to program every game with my devices?* No.
+Do I have to program every game with my devices?::
+No.
 The device setup information is shared by all games, so you only have to enter this information once.
 
-*What if I install some devices but not others?* That's fine.
+What if I install some devices but not others?::
+That's fine.
 Games will use the devices you have, and won't care that others aren't present.
 
-*Do I have to program feedback into every game?* No.
+Do I have to program feedback into every game?::
+No.
 Most VP 10 tables are pre-programmed to use feedback and will activate it automatically if your cab supports it.
 For VP 9, most games are pre-programmed to use feedback, but many require a couple of extra steps to enable it.
 We'll cover that in xref:DOF.adoc#dofSetup[DOF Setup] .

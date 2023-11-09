@@ -96,7 +96,8 @@ The fan itself will simply mount flush against the inside surface of the cabinet
 
 Before installing the fans, figure out which way it blows air so that you can install it with the air flowing in the right direction, into or out of the cabinet.
 
-How do you tell the direction the fan goes? Look for an arrow printed or stamped on the side of the housing: if you can find one, it should indicate the direction of air flow.
+How do you tell the direction the fan goes?
+Look for an arrow printed or stamped on the side of the housing: if you can find one, it should indicate the direction of air flow.
 Failing that, you can simply connect the fan to power and check which way the air is blowing.
 
 Once you determine which direction the fan goes, simply position it over the opening with the appropriate side facing outwards, according to whether you want it to serve as an intake fan or an exhaust fan.
@@ -162,7 +163,8 @@ Note that the standard backbox design allows for some air movement between the m
 That's why the ventilation holes are only needed at the top of the backbox: as warm air rises through the backbox and exits via the top vent holes, cooler air will be drawn in through the cabinet opening.
 If you don't use the standard design with the opening between the backbox and main cabinet, you should add some air intake holes at the bottom of the backbox.
 
-Is passive ventilation really enough for a TV? Let's consider how much heat the traditional design was intended to handle in a real machine, and compare that to our needs for a virtual cab.
+Is passive ventilation really enough for a TV?
+Let's consider how much heat the traditional design was intended to handle in a real machine, and compare that to our needs for a virtual cab.
 We'll use electrical power as a proxy for heat.
 The real machines housed their main control electronics in the backbox, along with their score displays and about a dozen small incandescent bulbs for lighting the backglass artwork.
 The total power usage of all of this equipment adds up to about 50W.

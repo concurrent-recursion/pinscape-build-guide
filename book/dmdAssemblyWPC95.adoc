@@ -179,7 +179,7 @@ Also drill holes at the corners that match the pattern of the eight posts on the
 Fasten with push nuts.
 * For more detailed instructions, try link:https://www.dziedzic.us/[Joseph "Tony" Dziedzic's] tutorial for upgrading original WPC-95 speakers:
 
-link:https://www.dziedzic.us/wpc_speaker_plastic_display_panel.html[www.dziedzic.us/wpc_speaker_plastic_display_panel.html]
+link:http://www.dziedzic.us/wpc_speaker_plastic_display_panel[www.dziedzic.us/wpc_speaker_plastic_display_panel.html]
 
 == Lighting the speakers
 

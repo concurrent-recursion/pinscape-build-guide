@@ -24,7 +24,8 @@ This is pretty typical, but it's not any kind of standard; some chips might have
 Whatever the format, the chip name should always be in there somewhere.
 That should match the name that's used in the schematic and printed on the board.
 Anything else is usually opaque manufacturing codes not meant for our eyes, such as lot numbers and date codes.
-How do you pick out the chip name from the other stuff? You pretty much have to figure it from context, by looking for a chip name you recognize.
+How do you pick out the chip name from the other stuff?
+You pretty much have to figure it from context, by looking for a chip name you recognize.
 Somewhere in there, you should find the name of the chip as shown in the schematic and on the PCB silkscreen.
 
 Note that the name printed on the chip sometimes has slight variations from the name used in the schematics.

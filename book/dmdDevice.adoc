@@ -159,7 +159,8 @@ Pay attention to connectors.
 Most of the interface boards will have a VGA input and either a DVI-D or HDMI input.
 If you've already picked out a graphics card for your cabinet PC, be careful to pick an interface board that has a connector matching an available output on your graphics card, taking into account the outputs you'll be using for your main playfield TV and backbox TV.
 
-How do you know if a panel is good in terms of video quality, reliability, etc.? You're not going to find reviews (professional or user-written) for any of these OEM parts, so it's a bit of a crapshoot.
+How do you know if a panel is good in terms of video quality, reliability, etc.?
+You're not going to find reviews (professional or user-written) for any of these OEM parts, so it's a bit of a crapshoot.
 Fortunately, laptop panels in this class have gotten to be good enough that you should be okay with anything that meets the specs.
 Do pay attention to the resolution, though: the WUXGA laptop displays seem to be uniformly good, but the lower res displays are uniformly bad.
 

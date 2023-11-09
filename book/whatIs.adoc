@@ -6,7 +6,8 @@ Someone must have been playing around with a pinball program on their desktop PC
 
 Then they thought to lay it down flat, so they could stand over it like a real pinball playfield.
 
-And then what about switching to a big flat-panel TV that's the same overall size as a real pinball table? The finishing touch was putting the big TV inside an old cabinet salvaged from a defunct real pinball, right where the playfield used to go, for the full life-sized experience.
+And then what about switching to a big flat-panel TV that's the same overall size as a real pinball table?
+The finishing touch was putting the big TV inside an old cabinet salvaged from a defunct real pinball, right where the playfield used to go, for the full life-sized experience.
 
 At its most basic, that pretty much sums up a virtual pin cab.
 
@@ -20,7 +21,8 @@ Connect some speakers in the backbox to the PC sound card, and you have the full
 
 Okay, you're thinking, so a pin cab is just a desktop pinball player in the guise of a real machine.
 Maybe that sounds _somewhat_ interesting: the idea of playing on a full-size playfield is pretty novel if you're used to playing pinball in a cramped little perspective window on a PC monitor.
-But in the end, isn't it just the same game on a bigger screen? Wouldn't the novelty wear off pretty quickly?
+But in the end, isn't it just the same game on a bigger screen?
+Wouldn't the novelty wear off pretty quickly?
 
 As they say in the infomercials, "but wait, there's more..."
 
@@ -55,7 +57,8 @@ Like the timed plunger, it's nice that they tried, but it's nothing like the rea
 
 A pin cab makes it possible to bring back real physical interaction.
 A virtual cab already has the same heft and feel of a real cab, so you'll find yourself unconsciously nudging it like the real thing, your brain expecting it to influence the ball.
-But what if you really could influence the ball that way? Good news: you can! There's a device called an accelerometer that can measure exactly the sort of motion you impart to the cabinet by nudging.
+But what if you really could influence the ball that way?
+Good news: you can! There's a device called an accelerometer that can measure exactly the sort of motion you impart to the cabinet by nudging.
 Accelerometers are cheap and ubiquitous these days, thanks to smart phones.
 The microcontroller board used in the Pinscape Controller has an accelerometer built in, and the Pinscape software is set up to read the acceleration data and send it to the pinball simulator program.
 Most of the available commercial plunger kits offer the same capability.

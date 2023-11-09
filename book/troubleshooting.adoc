@@ -104,7 +104,7 @@ lace the first one in series with the positive voltage power connection to the m
 ry 4.7 µH inductors, with an amperage rating higher than the motor's actual amperage. 
 µH stands for micro-Henry, a measure of inductance.) Here's an example:
 
-Coilcraft DR0608-472L 4.7µH, 5.8A radial inductor - link:https://www.mouser.com/search/ProductDetail.aspx?R=994-DR0608-472L.html[at Mouser]
+Coilcraft DR0608-472L 4.7µH, 5.8A radial inductor - link:https://www.mouser.com/search/ProductDetail.aspx?R=994-DR0608-472L[at Mouser]
 
 See "Electrical Interference" in xref:shakers.adoc#shakerElectricalInterference[Shaker motors] for a sample wiring diagram.
 
@@ -193,7 +193,8 @@ t stops when I pull back the plunger.
 This is usually a problem with plunger calibration.
 
 * First, make sure that you *don't* have any Windows joystick control panel calibration in effect. 
-veryone tries the Windows joystick calibration process because it just sounds like something you should do, right? But it's actually designed for joysticks, _real joysticks_ , the kind with a stick and some buttons on top, and Pinscape isn't one of those. 
+veryone tries the Windows joystick calibration process because it just sounds like something you should do, right?
+But it's actually designed for joysticks, _real joysticks_ , the kind with a stick and some buttons on top, and Pinscape isn't one of those.
 t only pretends to be a joystick for the sake of the software interface. 
 he Windows calibration process wreaks havoc with Pinscape and makes all of its input wildly random and wildly wrong. 
 f you've ever run it, it will make your nudge and plunger inputs act erratically. 
@@ -219,7 +220,8 @@ ou can also repeat it any time it seems out of whack, as sensors can change elec
 
 * If the ball is still bouncing around, and you can also see the plunger itself jumping around erratically (while you're not touching anything), you might have to add some "jitter filtering". 
 o back to the Pinscape Config Tool and click the plunger icon again. 
-ithout touching the plunger, is the green bar in the sensor viewer dancing around visibly? If so, try increasing the "jitter filter" number until the random motion stabilizes.
+ithout touching the plunger, is the green bar in the sensor viewer dancing around visibly?
+If so, try increasing the "jitter filter" number until the random motion stabilizes.
 
 The jitter filter is there to smooth out the random motion that can come from analog sensors like potentiometers and IR distance sensors. 
 nalog sensors tend to have a little bit of variation from one reading to the next, even when the plunger is perfectly still, because a digital reading from an analog sensor is always an approximation. 

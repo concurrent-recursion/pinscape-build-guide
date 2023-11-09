@@ -73,7 +73,8 @@ My ideal would be a narrow tape like the bottom one with every tick mark clearly
 
 == Sawing on the "right" side of the line
 
-If you start with a board that's 12" wide, and you use a saw to cut it exactly in half, how wide are the two resulting pieces? Strangely, the answer isn't 6". 
+If you start with a board that's 12" wide, and you use a saw to cut it exactly in half, how wide are the two resulting pieces?
+Strangely, the answer isn't 6".
 It's actually more like 5-15/16".
 What happened to the missing 1/8"?
 It basically vanished into thin air. 

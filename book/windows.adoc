@@ -22,7 +22,7 @@ I recommend *against* disabling UAC because doing so can cause software compatib
 
 UAC is an integral part of modern Windows systems, and removing it actually changes the way Windows works internally, which can break some application software.
 
-If you're technically inclined and curious about the details, see Mark Russinovich's article in Microsoft's TechNet Magazine, June 2007, link:https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc138019(v=msdn.10).html[Inside Windows Vista User Account Control] .
+If you're technically inclined and curious about the details, see Mark Russinovich's article in Microsoft's TechNet Magazine, June 2007, link:https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc138019(v=msdn.10)[Inside Windows Vista User Account Control] .
 
 For a less technical explanation, try a Google search for "Why not disable UAC".
 

@@ -104,7 +104,8 @@ In the diagram above, we showed the wiring with the (+) connection from the powe
 If you look at the "general purpose" wiring diagram for other controllers in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , though, you'll see the opposite setup, with the (-) connection going to the controller port, and the (+) power supply connection going directly to the feedback device.
 We show the same polarity in our diagrams for the individual device types as well.
 
-So why did we show this as different for Sainsmart? It turns out that you can do it either way with Sainsmart boards.
+So why did we show this as different for Sainsmart?
+It turns out that you can do it either way with Sainsmart boards.
 For the solid-state boards, you _must_ use the polarity shown in xref:feedbackWiring.adoc#feedbackDeviceWiring[Feedback Device Wiring] , because the solid-state boards use transistors, which only allow current to flow in one direction.
 The Sainsmart uses mechanical relay switches, though, which don't care about the direction of the current.
 That makes them more flexible, letting you hook up the power wiring in either direction.

@@ -1,7 +1,9 @@
 = A Visual Guide to the Virtual Pinball Cabinet
 
 When I first started building my own pin cab, I found it hard to get a handle on all the pieces involved.
-I knew I wanted real flipper buttons, but how do you connect them to the PC? I wanted a plunger, but how the heck do you make a PC take input from a plunger? I wanted feedback devices to simulate the flipper solenoids and replay knocker and so on, and I understood that I needed an LedWiz for that, but beyond that I didn't really know what it could do or how to connect anything to it.
+I knew I wanted real flipper buttons, but how do you connect them to the PC?
+I wanted a plunger, but how the heck do you make a PC take input from a plunger?
+I wanted feedback devices to simulate the flipper solenoids and replay knocker and so on, and I understood that I needed an LedWiz for that, but beyond that I didn't really know what it could do or how to connect anything to it.
 And knowing how many questions I had, I shuddered to think about the questions I didn't even know enough to ask.
 
 The diagram below will, I hope, clear up some of that fog, especially the unknown unknowns.

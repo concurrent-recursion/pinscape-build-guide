@@ -25,7 +25,8 @@ You can also press the plunger forward slightly to simulate pressing the Launch 
 
 Pressing the plunger forward and holding it there simulates pressing and holding the button, which is useful for a few tables (such as _Championship Pub_) that do something special on long presses of the button.
 
-How does Pinscape know that the table is plunger-less?  That's the clever part.
+How does Pinscape know that the table is plunger-less?
+ That's the clever part.
 
 Zeb's idea was to use a fake LedWiz feedback device to let the pinball software switch the feature on and off in the plunger controller.
 
@@ -84,7 +85,8 @@ If you scroll back up to the ZB Launch Ball setup section, you'll see that this 
 * In your browser, go to the DOF config tool (link:https://configtool.vpuniverse.com[configtool.vpuniverse.com])
 * Go to the Port Assignments page.
  Select your Pinscape unit from the "Device" drop list.
-* Remember the *big red marker* number we wrote down a minute ago?  Find that same port number in the list.
+* Remember the *big red marker* number we wrote down a minute ago?
+ Find that same port number in the list.
  Open its drop list and select "ZB Launch Ball".
 * Click the Generate Config button, download the ZIP file that creates, and unpack it into your DirectOutput folder.
  This will install updated DOF files with the new port assignment.

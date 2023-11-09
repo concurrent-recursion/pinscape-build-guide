@@ -29,7 +29,7 @@ No longer available as of June 2021.
 Oak Micros formerly sold a kit with all the parts needed for the plunger setup, including an easy-to-install mounting bracket, but announced in June 2021 that they're no longer selling their products.
 Here's the original announcement on vpforums, if you want to check for any updates:
 
-link:https://www.vpforums.org/index.php?showtopic=44795.html[Announcement: Oak Micros Plunger Kit Mk II]
+link:https://www.vpforums.org/index.php?showtopic=44795[Announcement: Oak Micros Plunger Kit Mk II]
 
 == Selecting a potentiometer
 
@@ -40,7 +40,7 @@ You can use any slide potentiometer that meets these guidelines:
 * Linear taper
 * About 100mm travel length
 
-*Important:* Pay special attention to the "linear taper" part.
+WARNING: Pay special attention to the "linear taper" part.
 It's *not* a reference to the physical arrangement with the sliding control lever.
 It's an electrical spec that describes how the pot's resistance varies across its range.
 There are two main types of pots: "linear taper" and "audio taper".
@@ -110,7 +110,7 @@ It'll make things easier in the long run by giving you a pluggable connector bet
 
 === Expansion board wiring
 
-For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400.html[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042.html[pins] ).
+For the expansion board connector, build a 4x2 crimp pin housing ( link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1070400[housing] , link:https://www.mouser.com/search/ProductDetail.aspx?R=855-M20-1160042[pins] ).
 First crimp a pin to the end of each wire (see xref:crimpPins.adoc#crimpPins[Crimp Pins] ).
 Insert the pins in the housing, following the diagram below for the pin placement.
 

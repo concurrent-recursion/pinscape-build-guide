@@ -36,7 +36,8 @@ The black wire to the GND pin remains the same.
 
 image::images/klButtonExample.png[""]
 
-How do you tell which KL25Z pin to use for which button? The Pinscape Config Tool will show you.
+How do you tell which KL25Z pin to use for which button?
+The Pinscape Config Tool will show you.
 Run the Config Tool and click on the Buttons icon.
 This will show you the list of buttons and their assigned ports.
 Roll the mouse over a button in the list on the left to highlight the pin on the KL25Z diagram.
@@ -95,7 +96,8 @@ For help with this, see "How to identify button terminals" in xref:cabButtonWiri
 
 == How to assign keys to buttons
 
-What do you do with all these buttons once you've wired them up? You can assign each one of them to send a keyboard key or joystick button press to Windows.
+What do you do with all these buttons once you've wired them up?
+You can assign each one of them to send a keyboard key or joystick button press to Windows.
 The Pinscape software can emulate a standard PC keyboard, or a joystick, or both, so you can assign any mix of keyboard keys and joystick buttons to your physical pushbuttons.
 
 For a list of "standard" key assignments for the main pinball simulator programs, see "Common key assignments" in xref:cabButtonWiring.adoc#commonKeyAssignments[Button Wiring] .
@@ -138,7 +140,8 @@ During the time in between, when you're holding down the button, Windows thinks 
 As far as Windows is concerned, there's a brief press-and-release when you press the button, and a second brief press-and-release when you release the button.
 So it's as though you had briefly pushed the button twice, instead of holding it down once.
 
-What's the point of this? It's mostly to accommodate Visual Pinball's _old_ coin-door handling, which required a momentary press of the End key when you opened the door, and another momentary press when you closed the door.
+What's the point of this?
+It's mostly to accommodate Visual Pinball's _old_ coin-door handling, which required a momentary press of the End key when you opened the door, and another momentary press when you closed the door.
 The normal way to implement the coin door switch physically is with a toggle switch that's ON the whole time the door is open.
 Pulse Mode was designed to translate that physical switch arrangement to VP's former need for a pulse each time the switch changed from OFF to ON or vice versa.
 There's actually a better way to handle this now, which is to make some changes in VP scripting so that it can work with the physical coin door ON/OFF switch directly.
@@ -163,7 +166,8 @@ You can choose any button you want for this function, and it's perfectly okay to
 Let's say we designate the "Extra Ball" button as the Shift Button (that's the one I use on my cab).
 * You assign a normal meaning to each button as usual: "Start" sends the "1" key to Windows, "Exit" sends the "Esc" key to Windows
 * You even assign a normal meaning to your designated Shift Button, so in our example we assign "Extra Ball" to send the "2" key to Windows
-* You can even assign the keyboard SHIFT keys as usual! You know how I said this was going to get confusing? Well, here it is! The Pinscape Shift Button doesn't have anything to do with the Windows keyboard SHIFT keys.
+* You can even assign the keyboard SHIFT keys as usual! You know how I said this was going to get confusing?
+Well, here it is! The Pinscape Shift Button doesn't have anything to do with the Windows keyboard SHIFT keys.
 So we're still going to assign the Left Flipper button to send the LEFT SHIFT keyboard key to Windows, and we're still going to assign the Right Flipper button to send the RIGHT SHIFT key to Windows.
 * You can now _also_ assign a _second_ meaning, the "Shifted" meaning, to each button _other than_ the Shift Button itself
 * For example, I use the right flipper and MagnaSave as "shifted" Volume Up and Down keys.
@@ -173,7 +177,8 @@ They send the LEFT SHIFT and RIGHT SHIFT keyboard keys as usual.
 * When I want to use my Volume Up and Volume Down keys, I press and hold the Extra Ball button (my Shift Button).
 As long as I'm holding Extra Ball down, all of my other buttons get their second, "Shifted" meanings.
 So now when I press Right Flipper, I'm sending a Media Volume Down key to Windows instead of a RIGHT SHIFT key.
-* How about if I want to send an Extra Ball ("2") key press to Windows? Easy: I just press and release the Extra Ball button.
+* How about if I want to send an Extra Ball ("2") key press to Windows?
+Easy: I just press and release the Extra Ball button.
 The button only acts like the Shift Button as long as you're holding it down; if you just press it and release it, its normal key mapping is used instead.
 
 === How to designate a Shift Button
@@ -212,7 +217,8 @@ That lets you control how the Shift Button works when you press it on its own.
 *"Shift OR Key mode"* means that each press of the Shift Button will act as an invocation of the Shift Button feature, _or_ it'll send the Windows key associated with the button.
 Never both.
 
-How is this decided? Easy: if you press another key while holding down the Shift button, the Shift button has fulfilled its Shift function and _won't_ send its regularly assigned key.
+How is this decided?
+Easy: if you press another key while holding down the Shift button, the Shift button has fulfilled its Shift function and _won't_ send its regularly assigned key.
 If not, it hasn't acted as a Shift Button this time, so it sends its regular key _when you release it_ .
 
 This is how I have my Extra Ball button set up.
